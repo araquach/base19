@@ -9,8 +9,15 @@ func home(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w,"<h1>Base Hairdressing</h1>")
 }
 
-func main() {
-	http.HandleFunc("/", home)
+func contact(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprint(w,"<h1>Contact Us</h1>")
+}
 
-	http.ListenAndServe(":8080", nil)
+func main() {
+	r := http.NewServeMux()
+
+	r.HandleFunc("/", home)
+	r.HandleFunc("/contact", contact)
+
+	http.ListenAndServe(":8080", r)
 }
