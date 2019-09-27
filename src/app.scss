@@ -1,0 +1,9 @@
+@import "node_modules/bulma/bulma.sass";
+
+html {
+  background-color: black;
+}
+
+#home {
+  background: url("/dist/img/bground.jpg") center center;
+}

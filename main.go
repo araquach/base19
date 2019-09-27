@@ -18,7 +18,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	var err error
-
 	port := ":8080"
 
 	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/home.gohtml"))
@@ -27,17 +26,16 @@ func main() {
 	}
 
 	r := mux.NewRouter()
-
 	r.HandleFunc("/", home).Methods("GET")
 
 	// Styles
-	assetHandler := http.FileServer(http.Dir("./public/css/"))
-	assetHandler = http.StripPrefix("/public/css/", assetHandler)
-	r.PathPrefix("/public/css/").Handler(assetHandler)
+	assetHandler := http.FileServer(http.Dir("./dist/"))
+	assetHandler = http.StripPrefix("/dist/", assetHandler)
+	r.PathPrefix("/dist/").Handler(assetHandler)
 
 	// JS
-	jsHandler := http.FileServer(http.Dir("./public/js/"))
-	jsHandler = http.StripPrefix("/public/js/", jsHandler)
+	jsHandler := http.FileServer(http.Dir("./dist/"))
+	jsHandler = http.StripPrefix("/dist/", jsHandler)
 	r.PathPrefix("/public/js/").Handler(jsHandler)
 
 	//Images
