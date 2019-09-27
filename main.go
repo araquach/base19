@@ -7,11 +7,11 @@ import (
 	"net/http"
 )
 
-var homeTemplate *template.Template
+var tplHome *template.Template
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	if err := homeTemplate.Execute(w, nil); err != nil {
+	if err := tplHome.Execute(w, nil); err != nil {
 		panic(err)
 	}
 }
@@ -21,14 +21,14 @@ func main() {
 
 	port := ":8080"
 
-	homeTemplate, err = template.ParseFiles("views/pages/home.gohtml")
+	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/home.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	r := mux.NewRouter()
 
-	r.HandleFunc("/", home)
+	r.HandleFunc("/", home).Methods("GET")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./public/css/"))
