@@ -1,43 +1,50 @@
 package main
 
 import (
-	"fmt"
+	"github.com/gorilla/mux"
 	"html/template"
 	"log"
 	"net/http"
 )
 
+var homeTemplate *template.Template
+
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
-	files := []string{
-		"./views/layouts/main.gohtml",
-		"./views/pages/home.gohtml",
+	if err := homeTemplate.Execute(w, nil); err != nil {
+		panic(err)
 	}
-
-	ts, err := template.ParseFiles(files...)
-	if err != nil {
-		log.Println(err.Error())
-		http.Error(w, "Internal Server Error", 500)
-		return
-	}
-
-	err = ts.Execute(w, nil)
-	if err !=nil {
-		log.Println(err.Error())
-		http.Error(w, "Internal Server Error", 500)
-	}
-
-}
-
-func contact(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w,"<h1>Contact Us</h1>")
 }
 
 func main() {
-	r := http.NewServeMux()
+	var err error
+
+	port := ":8080"
+
+	homeTemplate, err = template.ParseFiles("views/pages/home.gohtml")
+	if err != nil {
+		panic(err)
+	}
+
+	r := mux.NewRouter()
 
 	r.HandleFunc("/", home)
-	r.HandleFunc("/contact", contact)
 
-	http.ListenAndServe(":8060", r)
+	// Styles
+	assetHandler := http.FileServer(http.Dir("./public/css/"))
+	assetHandler = http.StripPrefix("/public/css/", assetHandler)
+	r.PathPrefix("/public/css/").Handler(assetHandler)
+
+	// JS
+	jsHandler := http.FileServer(http.Dir("./public/js/"))
+	jsHandler = http.StripPrefix("/public/js/", jsHandler)
+	r.PathPrefix("/public/js/").Handler(jsHandler)
+
+	//Images
+	imageHandler := http.FileServer(http.Dir("./public/images/"))
+	r.PathPrefix("/images/").Handler(http.StripPrefix("/images/", imageHandler))
+
+	log.Printf("Starting server on %s", port)
+
+	http.ListenAndServe(port, r)
 }
