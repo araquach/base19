@@ -27,6 +27,10 @@ h1, h2 {
   font-style: normal;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 #home {
   background: url("/dist/img/bground.jpg") center -6rem no-repeat;
   background-size: cover;
@@ -42,6 +46,10 @@ h1, h2 {
 
 #about {
   background-color: $light-grey;
+
+  img {
+    margin-bottom: 1.3rem;
+  }
 }
 
 #team {

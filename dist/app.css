@@ -11734,6 +11734,10 @@ h2 {
   font-style: normal;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 #home {
   background: url("/dist/img/bground.jpg") center -6rem no-repeat;
   background-size: cover;
@@ -11752,6 +11756,10 @@ h2 {
 
 #about {
   background-color: #99aabf;
+}
+
+#about img {
+  margin-bottom: 1.3rem;
 }
 
 #team {
