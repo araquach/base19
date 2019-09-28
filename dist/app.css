@@ -11721,7 +11721,18 @@ html {
   background-color: black;
 }
 
+h2 {
+  font-family: poynter-oldstyle-display, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #home {
-  background: url("/dist/img/bground.jpg") center center;
+  background: url("/dist/img/bground.jpg") top center;
+  background-size: cover;
+}
+
+#home figure {
+  margin-bottom: 3rem;
 }
 
