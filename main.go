@@ -18,7 +18,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	var err error
-	port := ":8080"
+	port := ":8060"
 
 	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/home.gohtml"))
 	if err != nil {
