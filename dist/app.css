@@ -11721,12 +11721,6 @@ html {
   background-color: black;
 }
 
-a.navbar-item {
-  font-family: itc-american-typewriter, serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
 h1,
 h2 {
   font-family: itc-american-typewriter, serif;
@@ -11755,7 +11749,7 @@ p {
 }
 
 #about {
-  background-color: #99aabf;
+  background-color: #425559;
 }
 
 #about img {

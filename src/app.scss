@@ -15,12 +15,6 @@ html {
   background-color: black;
 }
 
-a.navbar-item {
-  font-family: itc-american-typewriter, serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
 h1, h2 {
   font-family: itc-american-typewriter, serif;
   font-weight: 500;
@@ -45,7 +39,7 @@ p {
 }
 
 #about {
-  background-color: $light-grey;
+  background-color: $dark-arctic;
 
   img {
     margin-bottom: 1.3rem;
