@@ -11750,13 +11750,25 @@ h2 {
   margin-bottom: 3rem;
 }
 
+#about {
+  background-color: #99aabf;
+}
+
 #team {
   background: url("/dist/img/bground2.jpg") center top no-repeat;
   background-size: cover;
 }
 
+#joinus {
+  background-colour: #425559;
+}
+
 #contact {
   background: url("/dist/img/bground3.jpg") center top no-repeat;
   background-size: cover;
+}
+
+#models {
+  background-color: #0d0d0d;
 }
 

@@ -3,6 +3,12 @@ $navbar-item-color: #FFF;
 $navbar-item-hover-background-color: rgba(25,25,25,.7);
 $navbar-dropdown-background-color: rgba(25,25,25,.7);
 
+$lightest-grey: #dce2f2;
+$light-grey: #99aabf;
+$light-arctic: #6d808c;
+$dark-arctic: #425559;
+$darkest-arctic: #0d0d0d;
+
 @import "node_modules/bulma/bulma.sass";
 
 html {
@@ -34,12 +40,24 @@ h1, h2 {
   }
 }
 
+#about {
+  background-color: $light-grey;
+}
+
 #team {
   background: url("/dist/img/bground2.jpg") center top no-repeat;
   background-size: cover;
 }
 
+#joinus {
+  background-colour: $dark-arctic;
+}
+
 #contact {
   background: url("/dist/img/bground3.jpg") center top no-repeat;
   background-size: cover;
+}
+
+#models {
+  background-color: $darkest-arctic;
 }
