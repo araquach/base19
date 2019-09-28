@@ -11750,3 +11750,13 @@ h2 {
   margin-bottom: 3rem;
 }
 
+#team {
+  background: url("/dist/img/bground2.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#contact {
+  background: url("/dist/img/bground3.jpg") center top no-repeat;
+  background-size: cover;
+}
+
