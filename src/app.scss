@@ -1,3 +1,7 @@
+$navbar-item-color: #FFF;
+$navbar-item-hover-background-color: rgba(25,25,25,.7);
+$navbar-dropdown-background-color: rgba(25,25,25,.7);
+
 @import "node_modules/bulma/bulma.sass";
 
 html {
@@ -5,13 +9,13 @@ html {
 }
 
 h2 {
-  font-family: poynter-oldstyle-display, serif;
-  font-weight: 400;
+  font-family: itc-american-typewriter, serif;
+  font-weight: 500;
   font-style: normal;
 }
 
 #home {
-  background: url("/dist/img/bground.jpg") top center;
+  background: url("/dist/img/bground.jpg") center -6rem no-repeat;
   background-size: cover;
 
   figure {
