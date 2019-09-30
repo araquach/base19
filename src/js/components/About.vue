@@ -1,6 +1,17 @@
 <template>
     <section id="about" class="hero is-fullheight is-dark">
-        <div class="hero-body">
+        <!--Pre Click-->
+        <div v-show="!showInfo" class="hero-body">
+            <div class="container columns">
+                <div class="section column is-6">
+                    <h1 class="title">It's All about the Base</h1>
+                    <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
+                    <button @click="showInfo = true" class="button">Find out more</button>
+                </div>
+            </div>
+        </div>
+            <!--Post Click-->
+        <div v-show="showInfo" class="hero-body">
             <div class="container columns">
                 <div class="section column is-6">
                     <h1 class="title">It's All about the Base</h1>
@@ -11,6 +22,7 @@
                     <p>We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate</p>
                     <p>All of our <strong>apprentices</strong> and <strong>graduate stylists</strong> are now located at Base where we can offer our full selection of hair services at a fraction of the cost.
                         All services are fully supervised by Senior Stylists and all our usual high quality products are used.</p>
+                    <button @click="showInfo = false" class="button">Show less</button>
                 </div>
                 <div class="section column">
                     <div class="columns">
@@ -38,5 +50,12 @@
 </template>
 
 <script>
+    export default {
 
+        data() {
+            return {
+                showInfo: false
+            }
+        }
+    }
 </script>

@@ -1,12 +1,12 @@
 <template>
-    <section id="booking" class="hero is-fullheight is-dark">
+    <section id="blog" class="hero is-fullheight is-dark">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Make a booking
+                    Blog
                 </h1>
                 <h2 class="subtitle">
-                    Use our online booking system to arrange your appointment
+                    All the latest news from Base
                 </h2>
             </div>
         </div>
@@ -14,12 +14,5 @@
 </template>
 
 <script>
-    export default {
 
-        data() {
-            return {
-
-            }
-        }
-    }
 </script>

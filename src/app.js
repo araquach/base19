@@ -1,18 +1,18 @@
 import smoothscroll from 'smoothscroll-polyfill'
 import Vue from "vue"
-import Test from './js/components/Test.vue'
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
 import Team from './js/components/Team.vue'
+import Blog from './js/components/Blog.vue'
 import Joinus from './js/components/Joinus.vue'
 import Contact from './js/components/Contact.vue'
 import Model from './js/components/Model.vue'
 import Booking from './js/components/Booking.vue'
 
-Vue.component('test', Test);
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
+Vue.component('blog-component', Blog)
 Vue.component('joinus-component', Joinus)
 Vue.component('contact-component', Contact)
 Vue.component('model-component', Model)
@@ -51,6 +51,12 @@ window.addEventListener('load', function() {
     document.querySelector('.js-scroll-to-team').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // scroll to blog
+    document.querySelector('.js-scroll-to-blog').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#blog').scrollIntoView({ behavior: 'smooth' });
     });
 
     // scroll to joinus
