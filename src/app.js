@@ -1,4 +1,26 @@
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from 'smoothscroll-polyfill'
+import Vue from "vue"
+import Test from './js/components/Test.vue'
+import Home from './js/components/Home.vue'
+import About from './js/components/About.vue'
+import Team from './js/components/Team.vue'
+import Joinus from './js/components/Joinus.vue'
+import Contact from './js/components/Contact.vue'
+import Model from './js/components/Model.vue'
+import Booking from './js/components/Booking.vue'
+
+Vue.component('test', Test);
+Vue.component('home-component', Home)
+Vue.component('about-component', About)
+Vue.component('team-component', Team)
+Vue.component('joinus-component', Joinus)
+Vue.component('contact-component', Contact)
+Vue.component('model-component', Model)
+Vue.component('booking-component', Booking)
+
+const app = new Vue({
+    el: '#app'
+});
 
 // kick off the polyfill!
 smoothscroll.polyfill();

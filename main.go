@@ -20,7 +20,7 @@ func main() {
 	var err error
 	port := ":8060"
 
-	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/home.gohtml"))
+	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/index.gohtml"))
 	if err != nil {
 		panic(err)
 	}

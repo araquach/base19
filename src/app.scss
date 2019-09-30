@@ -11,6 +11,10 @@ $darkest-arctic: #0d0d0d;
 
 @import "node_modules/bulma/bulma.sass";
 
+.navbar {
+  background-color: transparent;
+}
+
 html {
   background-color: black;
 }
