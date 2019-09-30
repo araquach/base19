@@ -11733,7 +11733,7 @@ p {
 }
 
 #home {
-  background: url("/dist/img/bground.jpg") center -6rem no-repeat;
+  background: url("/dist/img/bground2.jpg") center -6rem no-repeat;
   background-size: cover;
 }
 
@@ -11757,7 +11757,7 @@ p {
 }
 
 #team {
-  background: url("/dist/img/bground2.jpg") center top no-repeat;
+  background: url("/dist/img/bground.jpg") center top no-repeat;
   background-size: cover;
 }
 
