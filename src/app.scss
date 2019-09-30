@@ -15,6 +15,13 @@ $darkest-arctic: #0d0d0d;
   background-color: transparent;
 }
 
+.hero.is-fullheight .hero-body {
+  align-items: flex-end;
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 html {
   background-color: black;
 }

@@ -11721,6 +11721,14 @@ label.panel-block:hover {
   background-color: transparent;
 }
 
+.hero.is-fullheight .hero-body {
+  align-items: flex-end;
+}
+
+.hero.is-fullheight .hero-body h1 {
+  font-size: 4rem;
+}
+
 html {
   background-color: black;
 }
