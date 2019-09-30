@@ -1,5 +1,7 @@
 <template>
+
     <section id="about" class="hero is-fullheight is-dark">
+
         <!--Pre Click-->
         <div v-show="!showInfo" class="hero-body">
             <div class="container columns">
@@ -10,7 +12,8 @@
                 </div>
             </div>
         </div>
-            <!--Post Click-->
+
+        <!--Post Click-->
         <div v-show="showInfo" class="hero-body">
             <div class="container columns">
                 <div class="section column is-6">
@@ -59,3 +62,7 @@
         }
     }
 </script>
+
+<style>
+
+</style>

@@ -1,6 +1,5 @@
 <template>
     <section id="team" class="hero is-fullheight is-dark">
-        <!--Pre Click-->
         <div v-show="!showInfo" class="hero-body">
             <div class="container">
                 <h1 class="title">Meet the Base Team</h1>
@@ -8,7 +7,6 @@
                 <button @click="showInfo = true" class="button">Find out more</button>
             </div>
         </div>
-
         <!--Post Click-->
         <div v-show="showInfo" class="hero-body">
             <div class="container">
@@ -31,3 +29,7 @@
         }
     }
 </script>
+
+<style>
+
+</style>
