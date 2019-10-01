@@ -62,15 +62,23 @@ p {
   background-size: cover;
 }
 
+#blog {
+
+}
+
 #joinus {
   background-colour: $dark-arctic;
+}
+
+#models {
+  background-color: $darkest-arctic;
+}
+
+#booking {
+
 }
 
 #contact {
   background: url("/dist/img/bground3.jpg") center top no-repeat;
   background-size: cover;
-}
-
-#models {
-  background-color: $darkest-arctic;
 }
