@@ -9,6 +9,7 @@
             </div>
         </div>
         <!--Post Click-->
+        <transition name="fade">
         <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body">
             <div class="section column is-6">
                 <h1 class="title">Join Base</h1>
@@ -17,6 +18,7 @@
                 <button @click="showInfo = false" class="button">Show less</button>
             </div>
         </div>
+        </transition>
     </section>
 </template>
 

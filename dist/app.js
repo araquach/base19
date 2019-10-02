@@ -143,6 +143,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -204,6 +206,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -333,6 +337,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -352,6 +358,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -425,6 +433,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -444,6 +454,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -1463,144 +1475,128 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showInfo,
-              expression: "showInfo"
-            }
-          ],
-          staticClass: "hero-body columns",
-          class: { showInfo: _vm.showInfo }
-        },
-        [
-          _c("div", { staticClass: "section column is-6" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("It's All about the Base")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("An amazing creative space for upcoming hair stylists")
-            ]),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "We decided to centralise our training and put all of our apprentices and graduate stylists under one roof in our brand new Base Hair Academy!"
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate"
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "button",
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
               {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showInfo,
+                expression: "showInfo"
+              }
+            ],
+            staticClass: "hero-body columns",
+            class: { showInfo: _vm.showInfo }
+          },
+          [
+            _c("div", { staticClass: "section column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("It's All about the Base")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("An amazing creative space for upcoming hair stylists")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Training and developing our team to the highest possible standard has always been a major priority for us.\n                Through "
+                ),
+                _c("strong", [_vm._v("Jakata & Paul Kemp Hairdressing")]),
+                _vm._v(
+                  " we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level."
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "We decided to centralise our training and put all of our apprentices and graduate stylists under one roof in our brand new Base Hair Academy!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("All of our "),
+                _c("strong", [_vm._v("apprentices")]),
+                _vm._v(" and "),
+                _c("strong", [_vm._v("graduate stylists")]),
+                _vm._v(
+                  " are now located at Base where we can offer our full selection of hair services at a fraction of the cost.\n                All services are fully supervised by Senior Stylists and all our usual high quality products are used."
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
-          ]),
-          _vm._v(" "),
-          _vm._m(2)
-        ]
-      )
-    ]
+                },
+                [_vm._v("Show less")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "section column" }, [
+              _c("div", { staticClass: "columns" }, [
+                _c("div", { staticClass: "column" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/dist/img/about/base-1.jpg",
+                        alt: "The salon pic 1"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/dist/img/about/base-2.jpg",
+                        alt: "The Salon pic 2"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "column" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/dist/img/about/base-3.jpg",
+                        alt: "The salon pic 3"
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/dist/img/about/base-4.jpg",
+                        alt: "The salon pic 4"
+                      }
+                    })
+                  ])
+                ])
+              ])
+            ])
+          ]
+        )
+      ])
+    ],
+    1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v(
-        "Training and developing our team to the highest possible standard has always been a major priority for us.\n                Through "
-      ),
-      _c("strong", [_vm._v("Jakata & Paul Kemp Hairdressing")]),
-      _vm._v(
-        " we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level."
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [
-      _vm._v("All of our "),
-      _c("strong", [_vm._v("apprentices")]),
-      _vm._v(" and "),
-      _c("strong", [_vm._v("graduate stylists")]),
-      _vm._v(
-        " are now located at Base where we can offer our full selection of hair services at a fraction of the cost.\n                All services are fully supervised by Senior Stylists and all our usual high quality products are used."
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section column" }, [
-      _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/about/base-1.jpg",
-                alt: "The salon pic 1"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/about/base-2.jpg",
-                alt: "The Salon pic 2"
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/about/base-3.jpg",
-                alt: "The salon pic 3"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/about/base-4.jpg",
-                alt: "The salon pic 4"
-              }
-            })
-          ])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -1753,48 +1749,51 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showInfo,
-              expression: "showInfo"
-            }
-          ],
-          staticClass: "hero-body columns",
-          class: { showInfo: _vm.showInfo }
-        },
-        [
-          _c("div", { staticClass: "section column is-6" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
               {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showInfo,
+                expression: "showInfo"
+              }
+            ],
+            staticClass: "hero-body columns",
+            class: { showInfo: _vm.showInfo }
+          },
+          [
+            _c("div", { staticClass: "section column is-6" }, [
+              _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show Less")]
-            )
-          ])
-        ]
-      )
-    ]
+                },
+                [_vm._v("Show Less")]
+              )
+            ])
+          ]
+        )
+      ])
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -2066,48 +2065,51 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showInfo,
-              expression: "showInfo"
-            }
-          ],
-          staticClass: "hero-body",
-          class: { showInfo: _vm.showInfo }
-        },
-        [
-          _c("div", { staticClass: "section column is-6" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Join Base")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("Could you be the next big thing in hairdressing")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
               {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showInfo,
+                expression: "showInfo"
+              }
+            ],
+            staticClass: "hero-body",
+            class: { showInfo: _vm.showInfo }
+          },
+          [
+            _c("div", { staticClass: "section column is-6" }, [
+              _c("h1", { staticClass: "title" }, [_vm._v("Join Base")]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("Could you be the next big thing in hairdressing")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
-          ])
-        ]
-      )
-    ]
+                },
+                [_vm._v("Show less")]
+              )
+            ])
+          ]
+        )
+      ])
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -2173,50 +2175,53 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showInfo,
-              expression: "showInfo"
-            }
-          ],
-          staticClass: "hero-body columns",
-          class: { showInfo: _vm.showInfo }
-        },
-        [
-          _c("div", { staticClass: "section column is-6" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("Sign Up to be a model")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
               {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showInfo,
+                expression: "showInfo"
+              }
+            ],
+            staticClass: "hero-body columns",
+            class: { showInfo: _vm.showInfo }
+          },
+          [
+            _c("div", { staticClass: "section column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Sign Up to be a model")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
-          ])
-        ]
-      )
-    ]
+                },
+                [_vm._v("Show less")]
+              )
+            ])
+          ]
+        )
+      ])
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -2286,54 +2291,57 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showInfo,
-              expression: "showInfo"
-            }
-          ],
-          staticClass: "hero-body columns",
-          class: { showInfo: _vm.showInfo }
-        },
-        [
-          _c("div", { staticClass: "section column is-6" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                    The Salon\n                ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v(
-                "\n                    A creative space to bring out the best in our stylists\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
               {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showInfo,
+                expression: "showInfo"
+              }
+            ],
+            staticClass: "hero-body columns",
+            class: { showInfo: _vm.showInfo }
+          },
+          [
+            _c("div", { staticClass: "section column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("\n                    The Salon\n                ")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v(
+                  "\n                    A creative space to bring out the best in our stylists\n                "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
-          ])
-        ]
-      )
-    ]
+                },
+                [_vm._v("Show less")]
+              )
+            ])
+          ]
+        )
+      ])
+    ],
+    1
   )
 }
 var staticRenderFns = []
@@ -2399,48 +2407,53 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.showInfo,
-              expression: "showInfo"
-            }
-          ],
-          staticClass: "hero-body columns",
-          class: { showInfo: _vm.showInfo }
-        },
-        [
-          _c("div", { staticClass: "section column is-6" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("from Junior Stylists through to experienced graduates")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("More info kjsdhf sldjfhsk kdsjhfkjsd ksjdfhksdh")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
               {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showInfo,
+                expression: "showInfo"
+              }
+            ],
+            staticClass: "hero-body columns",
+            class: { showInfo: _vm.showInfo }
+          },
+          [
+            _c("div", { staticClass: "section column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Meet the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("from Junior Stylists through to experienced graduates")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("More info kjsdhf sldjfhsk kdsjhfkjsd ksjdfhksdh")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
-          ])
-        ]
-      )
-    ]
+                },
+                [_vm._v("Show less")]
+              )
+            ])
+          ]
+        )
+      ])
+    ],
+    1
   )
 }
 var staticRenderFns = []

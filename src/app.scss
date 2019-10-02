@@ -98,3 +98,22 @@ p {
 .showInfo {
   background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
 }
+
+/* Transition Styling */
+
+.fade-enter-active
+{
+  transition: opacity .6s;
+}
+
+.fade-leave-active {
+  transition: none;
+}
+
+.fade-enter,
+.fade-leave-to
+  /* .fade-leave-active in <2.1.8 */
+
+{
+  opacity: 0
+}

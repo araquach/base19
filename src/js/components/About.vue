@@ -1,5 +1,6 @@
 <template>
     <section id="about" class="hero is-fullheight is-dark">
+
         <!--Pre Click-->
         <div v-show="!showInfo" class="hero-body show columns">
             <div class="section column is-5">
@@ -8,8 +9,8 @@
                 <button @click="showInfo = true" class="button">Find out more</button>
             </div>
         </div>
-
         <!--Post Click-->
+        <transition name="fade">
         <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body columns">
             <div class="section column is-6">
                 <h1 class="title">It's All about the Base</h1>
@@ -43,6 +44,7 @@
                 </div>
             </div>
         </div>
+        </transition>
     </section>
 </template>
 
@@ -56,7 +58,3 @@
         }
     }
 </script>
-
-<style>
-
-</style>

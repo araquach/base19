@@ -11803,3 +11803,18 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
+/* Transition Styling */
+
+.fade-enter-active {
+  transition: opacity 0.6s;
+}
+
+.fade-leave-active {
+  transition: none;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
