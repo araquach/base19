@@ -1,6 +1,5 @@
 <template>
     <section id="about" class="hero is-fullheight is-dark">
-
         <!--Pre Click-->
         <div v-show="!showInfo" class="hero-body show columns">
             <div class="section column is-5">

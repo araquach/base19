@@ -143,7 +143,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -205,10 +204,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -338,10 +333,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -361,16 +352,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -444,10 +425,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -467,10 +444,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -1756,28 +1729,26 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show"
+          staticClass: "hero-body show columns"
         },
         [
-          _c("div", { staticClass: "container coluns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = true
-                    }
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = true
                   }
-                },
-                [_vm._v("More info")]
-              )
-            ])
+                }
+              },
+              [_vm._v("More info")]
+            )
           ])
         ]
       ),
@@ -1793,35 +1764,33 @@ var render = function() {
               expression: "showInfo"
             }
           ],
-          staticClass: "hero-body",
+          staticClass: "hero-body columns",
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-6" }, [
-              _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
-                  }
-                },
-                [_vm._v("Show Less")]
+          _c("div", { staticClass: "section column is-6" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = false
+                  }
+                }
+              },
+              [_vm._v("Show Less")]
+            )
           ])
         ]
       )
@@ -2071,32 +2040,28 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show"
+          staticClass: "hero-body show columns"
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("Join the Base Team")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("Could you be the next big thing in hairdressing")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = true
-                    }
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Join Base ")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("Could you be the next big thing in hairdressing")
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = true
                   }
-                },
-                [_vm._v("Find out more")]
-              )
-            ])
+                }
+              },
+              [_vm._v("Find out more")]
+            )
           ])
         ]
       ),
@@ -2116,33 +2081,29 @@ var render = function() {
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-6" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("Join the Base Team")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("Could you be the next big thing in hairdressing")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
+          _c("div", { staticClass: "section column is-6" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Join Base")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("Could you be the next big thing in hairdressing")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = false
                   }
-                },
-                [_vm._v("Show less")]
-              )
-            ])
+                }
+              },
+              [_vm._v("Show less")]
+            )
           ])
         ]
       )
@@ -2186,34 +2147,28 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show"
+          staticClass: "hero-body show columns"
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v(
-                  "\n                    Sign Up to be a model\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("\n                    Large subtitle\n                ")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = true
-                    }
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("\n                Sign Up to be a model\n            ")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = true
                   }
-                },
-                [_vm._v("Find out more")]
-              )
-            ])
+                }
+              },
+              [_vm._v("Find out more")]
+            )
           ])
         ]
       ),
@@ -2229,41 +2184,35 @@ var render = function() {
               expression: "showInfo"
             }
           ],
-          staticClass: "hero-body",
+          staticClass: "hero-body columns",
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-6" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v(
-                  "\n                    Sign Up to be a model\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("\n                    Large subtitle\n                ")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
-                  }
-                },
-                [_vm._v("Show less")]
+          _c("div", { staticClass: "section column is-6" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("Sign Up to be a model")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = false
+                  }
+                }
+              },
+              [_vm._v("Show less")]
+            )
           ])
         ]
       )
@@ -2307,36 +2256,32 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show"
+          staticClass: "hero-body show columns"
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v(
-                  "\n                        The Salon\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v(
-                  "\n                        A creative space to bring out the best in our stylists\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = true
-                    }
-                  }
-                },
-                [_vm._v("Find out more")]
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("\n                    The Salon\n                ")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v(
+                "\n                    A creative space to bring out the best in our stylists\n                "
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = true
+                  }
+                }
+              },
+              [_vm._v("Find out more")]
+            )
           ])
         ]
       ),
@@ -2352,43 +2297,39 @@ var render = function() {
               expression: "showInfo"
             }
           ],
-          staticClass: "hero-body",
+          staticClass: "hero-body columns",
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-6" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v(
-                  "\n                        The Salon\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v(
-                  "\n                        A creative space to bring out the best in our stylists\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
-                  }
-                },
-                [_vm._v("Show less")]
+          _c("div", { staticClass: "section column is-6" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("\n                    The Salon\n                ")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v(
+                "\n                    A creative space to bring out the best in our stylists\n                "
               )
-            ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = false
+                  }
+                }
+              },
+              [_vm._v("Show less")]
+            )
           ])
         ]
       )
@@ -2432,32 +2373,28 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show"
+          staticClass: "hero-body show columns"
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("Meet the Base Team")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("from Junior Stylists through to experienced graduates")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = true
-                    }
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("from Junior Stylists through to experienced graduates")
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = true
                   }
-                },
-                [_vm._v("Find out more")]
-              )
-            ])
+                }
+              },
+              [_vm._v("Find out more")]
+            )
           ])
         ]
       ),
@@ -2473,37 +2410,33 @@ var render = function() {
               expression: "showInfo"
             }
           ],
-          staticClass: "hero-body",
+          staticClass: "hero-body columns",
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-6" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("Meet the Base Team")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("from Junior Stylists through to experienced graduates")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("More info kjsdhf sldjfhsk kdsjhfkjsd ksjdfhksdh")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
+          _c("div", { staticClass: "section column is-6" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("from Junior Stylists through to experienced graduates")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("More info kjsdhf sldjfhsk kdsjhfkjsd ksjdfhksdh")
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = false
                   }
-                },
-                [_vm._v("Show less")]
-              )
-            ])
+                }
+              },
+              [_vm._v("Show less")]
+            )
           ])
         ]
       )
