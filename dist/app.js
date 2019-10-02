@@ -180,6 +180,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /***/ }),
 
@@ -192,6 +194,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -224,6 +228,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -353,6 +361,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -372,6 +384,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -453,6 +469,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -472,6 +490,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -1666,15 +1688,17 @@ var staticRenderFns = [
       { staticClass: "hero is-fullheight is-dark", attrs: { id: "blog" } },
       [
         _c("div", { staticClass: "hero-body show" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                Blog\n            ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v(
-                "\n                All the latest news from Base\n            "
-              )
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("\n                    Blog\n                ")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v(
+                  "\n                    All the latest news from Base\n                "
+                )
+              ])
             ])
           ])
         ])
@@ -1715,15 +1739,17 @@ var staticRenderFns = [
       { staticClass: "hero is-fullheight is-dark", attrs: { id: "booking" } },
       [
         _c("div", { staticClass: "hero-body show" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                Make a booking\n            ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v(
-                "\n                Use our online booking system to arrange your appointment\n            "
-              )
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("\n                    Make a booking\n                ")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v(
+                  "\n                    Use our online booking system to arrange your appointment\n                "
+                )
+              ])
             ])
           ])
         ])
@@ -1770,23 +1796,25 @@ var render = function() {
           staticClass: "hero-body show"
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "container coluns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
@@ -1806,29 +1834,31 @@ var render = function() {
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-6" }, [
+              _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [_vm._v("Large subtitle")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show Less")]
-            )
+                },
+                [_vm._v("Show Less")]
+              )
+            ])
           ])
         ]
       )
@@ -2081,25 +2111,29 @@ var render = function() {
           staticClass: "hero-body show"
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Join the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("Could you be the next big thing in hairdressing")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Join the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("Could you be the next big thing in hairdressing")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
@@ -2119,29 +2153,33 @@ var render = function() {
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Join the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("Could you be the next big thing in hairdressing")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Join the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("Could you be the next big thing in hairdressing")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
+                },
+                [_vm._v("Show less")]
+              )
+            ])
           ])
         ]
       )
@@ -2188,27 +2226,31 @@ var render = function() {
           staticClass: "hero-body show"
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                Sign Up to be a model\n            ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("\n                Large subtitle\n            ")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v(
+                  "\n                    Sign Up to be a model\n                "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("\n                    Large subtitle\n                ")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
@@ -2228,33 +2270,37 @@ var render = function() {
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                Sign Up to be a model\n            ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("\n                Large subtitle\n            ")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v(
+                  "\n                    Sign Up to be a model\n                "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("\n                    Large subtitle\n                ")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
+                },
+                [_vm._v("Show less")]
+              )
+            ])
           ])
         ]
       )
@@ -2283,8 +2329,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { attrs: { id: "salon" } }, [
-    _c("div", { staticClass: "hero is-fullheight" }, [
+  return _c(
+    "section",
+    { staticClass: "hero is-fullheight is-dark", attrs: { id: "salon" } },
+    [
       _c(
         "div",
         {
@@ -2299,29 +2347,33 @@ var render = function() {
           staticClass: "hero-body show"
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                    The Salon\n                ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v(
-                "\n                    A creative space to bring out the best in our stylists\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v(
+                  "\n                        The Salon\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v(
+                  "\n                        A creative space to bring out the best in our stylists\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
@@ -2341,40 +2393,44 @@ var render = function() {
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("\n                    The Salon\n                ")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v(
-                "\n                    A creative space to bring out the best in our stylists\n                "
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v(
+                  "\n                        The Salon\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v(
+                  "\n                        A creative space to bring out the best in our stylists\n                    "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
+                },
+                [_vm._v("Show less")]
+              )
+            ])
           ])
         ]
       )
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -2416,25 +2472,29 @@ var render = function() {
           staticClass: "hero-body show"
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("from Junior Stylists through to experienced graduates")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Meet the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("from Junior Stylists through to experienced graduates")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
@@ -2454,29 +2514,33 @@ var render = function() {
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("from Junior Stylists through to experienced graduates")
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("More info kjsdhf sldjfhsk kdsjhfkjsd ksjdfhksdh")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = false
+          _c("div", { staticClass: "container columns" }, [
+            _c("div", { staticClass: "column is-6" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Meet the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("from Junior Stylists through to experienced graduates")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("More info kjsdhf sldjfhsk kdsjhfkjsd ksjdfhksdh")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = false
+                    }
                   }
-                }
-              },
-              [_vm._v("Show less")]
-            )
+                },
+                [_vm._v("Show less")]
+              )
+            ])
           ])
         ]
       )
