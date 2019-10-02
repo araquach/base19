@@ -36,13 +36,8 @@ p {
   margin-bottom: 1rem;
 }
 
-#test {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('/dist/img/bgrounds/b8.jpg');
-  background-size: cover;
-}
-
 #home {
-  background: url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
   background-size: cover;
 
   figure {
@@ -60,12 +55,12 @@ p {
 }
 
 #salon {
-  background: url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #team {
-  background: url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 

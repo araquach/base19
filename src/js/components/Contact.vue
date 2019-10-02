@@ -6,7 +6,7 @@
                 <div class="column is-5">
                     <h1 class="title">Contact Us</h1>
                     <h2 class="subtitle">Large subtitle</h2>
-                    <button @click="showInfo = true" class="button">Find out more</button>
+                    <button @click="showInfo = true" class="button">More info</button>
                 </div>
             </div>
         </div>

@@ -1812,7 +1812,7 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Find out more")]
+                [_vm._v("More info")]
               )
             ])
           ])
@@ -1965,19 +1965,19 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "navbar-item js-scroll-to-team",
-                      attrs: { href: "#team" }
+                      staticClass: "navbar-item js-scroll-to-blog",
+                      attrs: { href: "#blog" }
                     },
-                    [_vm._v("Team")]
+                    [_vm._v("Blog")]
                   ),
                   _vm._v(" "),
                   _c(
                     "a",
                     {
-                      staticClass: "navbar-item js-scroll-to-blog",
-                      attrs: { href: "#blog" }
+                      staticClass: "navbar-item js-scroll-to-team",
+                      attrs: { href: "#team" }
                     },
-                    [_vm._v("Blog")]
+                    [_vm._v("Team")]
                   ),
                   _vm._v(" "),
                   _c(

@@ -14,8 +14,8 @@
                     <a href="#home" class="navbar-item js-scroll-to-top">Home</a>
                     <a href="#about" class="navbar-item js-scroll-to-about">About Us</a>
                     <a href="#salon" class="navbar-item js-scroll-to-salon">The Salon</a>
-                    <a href="#team" class="navbar-item js-scroll-to-team">Team</a>
                     <a href="#blog" class="navbar-item js-scroll-to-blog">Blog</a>
+                    <a href="#team" class="navbar-item js-scroll-to-team">Team</a>
 
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">More</a>
