@@ -11717,10 +11717,6 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
-.navbar {
-  background-color: transparent;
-}
-
 .hero.is-fullheight .hero-body.show {
   align-items: flex-end;
 }
@@ -11742,6 +11738,11 @@ h2 {
 
 p {
   margin-bottom: 1rem;
+}
+
+#test {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b8.jpg");
+  background-size: cover;
 }
 
 #home {
@@ -11795,5 +11796,9 @@ p {
 #contact {
   background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
   background-size: cover;
+}
+
+.showInfo {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
 }
 

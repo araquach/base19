@@ -14,7 +14,7 @@
                 </div>
             </div>
             <!--Post Click-->
-            <div v-show="showInfo" class="hero-body">
+            <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body">
                 <div class="container">
                     <h1 class="title">
                         The Salon

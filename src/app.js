@@ -10,6 +10,8 @@ import Contact from './js/components/Contact.vue'
 import Model from './js/components/Model.vue'
 import Booking from './js/components/Booking.vue'
 
+import Test from './js/components/Test.vue'
+
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('salon-component', Salon)
@@ -19,6 +21,8 @@ Vue.component('joinus-component', Joinus)
 Vue.component('contact-component', Contact)
 Vue.component('model-component', Model)
 Vue.component('booking-component', Booking)
+
+Vue.component('test-component', Test)
 
 const app = new Vue({
     el: '#app'

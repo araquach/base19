@@ -10,12 +10,12 @@
         </div>
 
         <!--Post Click-->
-        <div v-show="showInfo" class="hero-body">
+        <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body">
             <div class="container">
                 <h1 class="title">Contact Us</h1>
                 <h2 class="subtitle">Large subtitle</h2>
                 <p>More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs</p>
-                <button @click="showInfo = false" class="button">Find out more</button>
+                <button @click="showInfo = false" class="button">Show Less</button>
             </div>
         </div>
     </section>

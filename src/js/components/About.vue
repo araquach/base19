@@ -1,11 +1,10 @@
 <template>
-
     <section id="about" class="hero is-fullheight is-dark">
 
         <!--Pre Click-->
         <div v-show="!showInfo" class="hero-body show">
             <div class="container columns">
-                <div class="section column is-6">
+                <div class="section column is-5">
                     <h1 class="title">It's All about the Base</h1>
                     <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
                     <button @click="showInfo = true" class="button">Find out more</button>
@@ -14,7 +13,7 @@
         </div>
 
         <!--Post Click-->
-        <div v-show="showInfo" class="hero-body">
+        <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body">
             <div class="container columns">
                 <div class="section column is-6">
                     <h1 class="title">It's All about the Base</h1>

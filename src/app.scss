@@ -11,9 +11,9 @@ $darkest-arctic: #0d0d0d;
 
 @import "node_modules/bulma/bulma.sass";
 
-.navbar {
-  background-color: transparent;
-}
+//.navbar {
+//  background-color: transparent;
+//}
 
 .hero.is-fullheight .hero-body.show {
   align-items: flex-end;
@@ -36,6 +36,11 @@ p {
   margin-bottom: 1rem;
 }
 
+#test {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url('/dist/img/bgrounds/b8.jpg');
+  background-size: cover;
+}
+
 #home {
   background: url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
   background-size: cover;
@@ -46,8 +51,8 @@ p {
 }
 
 #about {
-  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
-  background-size: cover;
+    background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+    background-size: cover;
 
   img {
     margin-bottom: 1.3rem;
@@ -87,4 +92,8 @@ p {
 #contact {
   background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
   background-size: cover;
+}
+
+.showInfo {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85));
 }

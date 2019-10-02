@@ -9,7 +9,7 @@
             </div>
         </div>
         <!--Post Click-->
-        <div v-show="showInfo" class="hero-body">
+        <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body">
             <div class="container">
                 <h1 class="title">Join the Base Team</h1>
                 <h2 class="subtitle">Could you be the next big thing in hairdressing</h2>
