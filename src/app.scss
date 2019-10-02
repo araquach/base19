@@ -19,6 +19,12 @@ $darkest-arctic: #0d0d0d;
   align-items: flex-end;
   h1 {
     font-size: 4rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+
+  h2 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-size: 1.7rem;
   }
 }
 

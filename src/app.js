@@ -59,16 +59,16 @@ window.addEventListener('load', function() {
         document.querySelector('#salon').scrollIntoView({ behavior: 'smooth' });
     });
 
-    // scroll to team
-    document.querySelector('.js-scroll-to-team').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });
-    });
-
     // scroll to blog
     document.querySelector('.js-scroll-to-blog').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('#blog').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // scroll to team
+    document.querySelector('.js-scroll-to-team').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });
     });
 
     // scroll to joinus
@@ -77,15 +77,46 @@ window.addEventListener('load', function() {
         document.querySelector('#joinus').scrollIntoView({ behavior: 'smooth' });
     });
 
-    // scroll to contact
-    document.querySelector('.js-scroll-to-contact').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
-    });
-
     // scroll to models
     document.querySelector('.js-scroll-to-models').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('#models').scrollIntoView({ behavior: 'smooth' });
     });
+
+    // scroll to booking
+    document.querySelector('.js-scroll-to-booking').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // scroll to contact
+    document.querySelector('.js-scroll-to-contact').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+    }
 });

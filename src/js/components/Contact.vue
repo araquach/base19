@@ -1,25 +1,21 @@
 <template>
     <section id="contact" class="hero is-fullheight is-dark">
         <!--Pre Click-->
-        <div v-show="!showInfo" class="hero-body show">
-            <div class="container coluns">
-                <div class="column is-5">
-                    <h1 class="title">Contact Us</h1>
-                    <h2 class="subtitle">Large subtitle</h2>
-                    <button @click="showInfo = true" class="button">More info</button>
-                </div>
+        <div v-show="!showInfo" class="hero-body show columns">
+            <div class="section column is-5">
+                <h1 class="title">Contact Us</h1>
+                <h2 class="subtitle">Large subtitle</h2>
+                <button @click="showInfo = true" class="button">More info</button>
             </div>
         </div>
 
         <!--Post Click-->
-        <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body">
-            <div class="container columns">
-                <div class="column is-6">
-                    <h1 class="title">Contact Us</h1>
-                    <h2 class="subtitle">Large subtitle</h2>
-                    <p>More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs</p>
-                    <button @click="showInfo = false" class="button">Show Less</button>
-                </div>
+        <div v-bind:class="{ showInfo: showInfo }" v-show="showInfo" class="hero-body columns">
+            <div class="section column is-6">
+                <h1 class="title">Contact Us</h1>
+                <h2 class="subtitle">Large subtitle</h2>
+                <p>More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs</p>
+                <button @click="showInfo = false" class="button">Show Less</button>
             </div>
         </div>
     </section>
