@@ -1,12 +1,12 @@
 <template>
-    <section id="blog" class="hero is-fullheight is-dark">
+    <section id="salon" class="hero is-fullheight is-dark">
         <div class="hero-body show">
             <div class="container">
                 <h1 class="title">
-                    Blog
+                    The Salon
                 </h1>
                 <h2 class="subtitle">
-                    All the latest news from Base
+                    A creative space to bring out the best in our stylists
                 </h2>
             </div>
         </div>

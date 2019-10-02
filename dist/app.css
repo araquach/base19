@@ -11721,11 +11721,11 @@ label.panel-block:hover {
   background-color: transparent;
 }
 
-.hero.is-fullheight .hero-body {
+.hero.is-fullheight .hero-body.show {
   align-items: flex-end;
 }
 
-.hero.is-fullheight .hero-body h1 {
+.hero.is-fullheight .hero-body.show h1 {
   font-size: 4rem;
 }
 
@@ -11745,7 +11745,7 @@ p {
 }
 
 #home {
-  background: url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -11762,6 +11762,11 @@ p {
   margin-bottom: 1.3rem;
 }
 
+#salon {
+  background: url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
+  background-size: cover;
+}
+
 #team {
   background: url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
   background-size: cover;
@@ -11773,22 +11778,22 @@ p {
 }
 
 #joinus {
-  background: url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #models {
-  background: url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #booking {
-  background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #contact {
-  background: url("/dist/img/bgrounds/b8.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
   background-size: cover;
 }
 

@@ -1,7 +1,7 @@
 <template>
     <section id="contact" class="hero is-fullheight is-dark">
         <!--Pre Click-->
-        <div v-show="!showInfo" class="hero-body">
+        <div v-show="!showInfo" class="hero-body show">
             <div class="container">
                 <h1 class="title">Contact Us</h1>
                 <h2 class="subtitle">Large subtitle</h2>
