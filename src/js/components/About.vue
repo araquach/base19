@@ -3,7 +3,7 @@
     <section id="about" class="hero is-fullheight is-dark">
 
         <!--Pre Click-->
-        <div v-show="!showInfo" class="hero-body">
+        <div v-show="!showInfo" class="hero-body show">
             <div class="container columns">
                 <div class="section column is-6">
                     <h1 class="title">It's All about the Base</h1>
