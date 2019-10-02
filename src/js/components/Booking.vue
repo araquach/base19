@@ -1,6 +1,6 @@
 <template>
     <section id="booking" class="hero is-fullheight is-dark">
-        <div class="hero-body">
+        <div class="hero-body show">
             <div class="container">
                 <h1 class="title">
                     Make a booking

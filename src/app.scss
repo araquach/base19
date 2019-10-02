@@ -15,7 +15,7 @@ $darkest-arctic: #0d0d0d;
   background-color: transparent;
 }
 
-.hero.is-fullheight .hero-body {
+.hero.is-fullheight .hero-body.show {
   align-items: flex-end;
   h1 {
     font-size: 4rem;
@@ -37,12 +37,8 @@ p {
 }
 
 #home {
-  background: url("/dist/img/bground2.jpg") center -6rem no-repeat;
+  background: url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
   background-size: cover;
-  @include until($tablet) {
-    background: url("/dist/img/bground.jpg") center center no-repeat;
-    background-size: cover;
-  }
 
   figure {
     margin-bottom: 3rem;
@@ -50,27 +46,45 @@ p {
 }
 
 #about {
-  background-color: $dark-arctic;
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-size: cover;
 
   img {
     margin-bottom: 1.3rem;
   }
 }
 
+#salon {
+  background: url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
+  background-size: cover;
+}
+
 #team {
-  background: url("/dist/img/bground.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#blog {
+  background: url("/dist/img/bgrounds/b4.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #joinus {
-  background-colour: $dark-arctic;
-}
-
-#contact {
-  background: url("/dist/img/bground3.jpg") center top no-repeat;
+  background: url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #models {
-  background-color: $darkest-arctic;
+  background: url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#booking {
+  background: url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+#contact {
+  background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-size: cover;
 }

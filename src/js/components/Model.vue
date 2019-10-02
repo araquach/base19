@@ -1,7 +1,7 @@
 <template>
     <section id="models" class="hero is-fullheight is-dark">
         <!--Pre Click-->
-        <div v-show="!showInfo" class="hero-body">
+        <div v-show="!showInfo" class="hero-body show">
             <div class="container">
                 <h1 class="title">
                     Sign Up to be a model
@@ -22,7 +22,7 @@
                     Large subtitle
                 </h2>
                 <p>More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs</p>
-                <button @click="showInfo = false" class="button">Find out more</button>
+                <button @click="showInfo = false" class="button">Show less</button>
             </div>
         </div>
     </section>
