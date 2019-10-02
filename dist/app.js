@@ -144,10 +144,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -176,12 +172,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /***/ }),
 
@@ -189,11 +179,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/Booking.vue?vue&type=script&lang=js& ***!
   \************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -205,17 +193,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {};
-  }
-});
 
 /***/ }),
 
@@ -1485,32 +1462,30 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show"
+          staticClass: "hero-body show columns"
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "section column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("It's All about the Base")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("An amazing creative space for upcoming hair stylists")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = true
-                    }
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("It's All about the Base")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("An amazing creative space for upcoming hair stylists")
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = true
                   }
-                },
-                [_vm._v("Find out more")]
-              )
-            ])
+                }
+              },
+              [_vm._v("Find out more")]
+            )
           ])
         ]
       ),
@@ -1526,52 +1501,50 @@ var render = function() {
               expression: "showInfo"
             }
           ],
-          staticClass: "hero-body",
+          staticClass: "hero-body columns",
           class: { showInfo: _vm.showInfo }
         },
         [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "section column is-6" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("It's All about the Base")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("An amazing creative space for upcoming hair stylists")
-              ]),
-              _vm._v(" "),
-              _vm._m(0),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "We decided to centralise our training and put all of our apprentices and graduate stylists under one roof in our brand new Base Hair Academy!"
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate"
-                )
-              ]),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
-                  }
-                },
-                [_vm._v("Show less")]
+          _c("div", { staticClass: "section column is-6" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("It's All about the Base")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("An amazing creative space for upcoming hair stylists")
+            ]),
+            _vm._v(" "),
+            _vm._m(0),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "We decided to centralise our training and put all of our apprentices and graduate stylists under one roof in our brand new Base Hair Academy!"
               )
             ]),
             _vm._v(" "),
-            _vm._m(2)
-          ])
+            _c("p", [
+              _vm._v(
+                "We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate"
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    _vm.showInfo = false
+                  }
+                }
+              },
+              [_vm._v("Show less")]
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(2)
         ]
       )
     ]
@@ -1584,7 +1557,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", [
       _vm._v(
-        "Training and developing our team to the highest possible standard has always been a major priority for us.\n                    Through "
+        "Training and developing our team to the highest possible standard has always been a major priority for us.\n                Through "
       ),
       _c("strong", [_vm._v("Jakata & Paul Kemp Hairdressing")]),
       _vm._v(
@@ -1602,7 +1575,7 @@ var staticRenderFns = [
       _vm._v(" and "),
       _c("strong", [_vm._v("graduate stylists")]),
       _vm._v(
-        " are now located at Base where we can offer our full selection of hair services at a fraction of the cost.\n                    All services are fully supervised by Senior Stylists and all our usual high quality products are used."
+        " are now located at Base where we can offer our full selection of hair services at a fraction of the cost.\n                All services are fully supervised by Senior Stylists and all our usual high quality products are used."
       )
     ])
   },
@@ -1687,18 +1660,12 @@ var staticRenderFns = [
       "section",
       { staticClass: "hero is-fullheight is-dark", attrs: { id: "blog" } },
       [
-        _c("div", { staticClass: "hero-body show" }, [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("\n                    Blog\n                ")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v(
-                  "\n                    All the latest news from Base\n                "
-                )
-              ])
+        _c("div", { staticClass: "hero-body show columns" }, [
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Blog")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("All the latest news from Base")
             ])
           ])
         ])
@@ -1738,18 +1705,14 @@ var staticRenderFns = [
       "section",
       { staticClass: "hero is-fullheight is-dark", attrs: { id: "booking" } },
       [
-        _c("div", { staticClass: "hero-body show" }, [
-          _c("div", { staticClass: "container columns" }, [
-            _c("div", { staticClass: "column is-5" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("\n                    Make a booking\n                ")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v(
-                  "\n                    Use our online booking system to arrange your appointment\n                "
-                )
-              ])
+        _c("div", { staticClass: "hero-body show columns" }, [
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [_vm._v("Make a booking")]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v(
+                "Use our online booking system to arrange your appointment"
+              )
             ])
           ])
         ])
@@ -2017,7 +1980,7 @@ var staticRenderFns = [
                       _c(
                         "a",
                         {
-                          staticClass: "button is-primary js-scroll-to-bottom",
+                          staticClass: "button is-primary js-scroll-to-booking",
                           attrs: { href: "#booking" }
                         },
                         [_c("strong", [_vm._v("Book Now")])]
@@ -2026,7 +1989,7 @@ var staticRenderFns = [
                       _c(
                         "a",
                         {
-                          staticClass: "button is-light js-scroll-to-contact",
+                          staticClass: "button is-light js-scroll-to-bottom",
                           attrs: { href: "#contact" }
                         },
                         [_vm._v("Contact Us")]
@@ -14783,18 +14746,18 @@ window.addEventListener('load', function () {
     document.querySelector('#salon').scrollIntoView({
       behavior: 'smooth'
     });
-  }); // scroll to team
-
-  document.querySelector('.js-scroll-to-team').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#team').scrollIntoView({
-      behavior: 'smooth'
-    });
   }); // scroll to blog
 
   document.querySelector('.js-scroll-to-blog').addEventListener('click', function (e) {
     e.preventDefault();
     document.querySelector('#blog').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }); // scroll to team
+
+  document.querySelector('.js-scroll-to-team').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#team').scrollIntoView({
       behavior: 'smooth'
     });
   }); // scroll to joinus
@@ -14804,13 +14767,6 @@ window.addEventListener('load', function () {
     document.querySelector('#joinus').scrollIntoView({
       behavior: 'smooth'
     });
-  }); // scroll to contact
-
-  document.querySelector('.js-scroll-to-contact').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#contact').scrollIntoView({
-      behavior: 'smooth'
-    });
   }); // scroll to models
 
   document.querySelector('.js-scroll-to-models').addEventListener('click', function (e) {
@@ -14818,7 +14774,39 @@ window.addEventListener('load', function () {
     document.querySelector('#models').scrollIntoView({
       behavior: 'smooth'
     });
+  }); // scroll to booking
+
+  document.querySelector('.js-scroll-to-booking').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#booking').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }); // scroll to contact
+
+  document.querySelector('.js-scroll-to-contact').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#contact').scrollIntoView({
+      behavior: 'smooth'
+    });
   });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); // Check if there are any navbar burgers
+
+  if ($navbarBurgers.length > 0) {
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function (el) {
+      el.addEventListener('click', function () {
+        // Get the target from the "data-target" attribute
+        var target = el.dataset.target;
+        var $target = document.getElementById(target); // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
 });
 
 /***/ }),
@@ -14979,14 +14967,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./src/js/components/Booking.vue ***!
   \***************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Booking_vue_vue_type_template_id_b37ac886___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Booking.vue?vue&type=template&id=b37ac886& */ "./src/js/components/Booking.vue?vue&type=template&id=b37ac886&");
 /* harmony import */ var _Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Booking.vue?vue&type=script&lang=js& */ "./src/js/components/Booking.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -15016,13 +15005,15 @@ component.options.__file = "src/js/components/Booking.vue"
 /*!****************************************************************!*\
   !*** ./src/js/components/Booking.vue?vue&type=script&lang=js& ***!
   \****************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Booking.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Booking.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Booking_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

@@ -30,8 +30,8 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a href="#booking" class="button is-primary js-scroll-to-bottom"><strong>Book Now</strong></a>
-                            <a href="#contact" class="button is-light js-scroll-to-contact">Contact Us</a>
+                            <a href="#booking" class="button is-primary js-scroll-to-booking"><strong>Book Now</strong></a>
+                            <a href="#contact" class="button is-light js-scroll-to-bottom">Contact Us</a>
                         </div>
                     </div>
                 </div>

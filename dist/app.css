@@ -11723,6 +11723,12 @@ label.panel-block:hover {
 
 .hero.is-fullheight .hero-body.show h1 {
   font-size: 4rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero.is-fullheight .hero-body.show h2 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.7rem;
 }
 
 html {
