@@ -29,7 +29,7 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a href="#booking" class="button is-primary js-scroll-to-booking"><strong>Book Now</strong></a>
+                            <a href="https://phorest.com/book/salons/basehairacademy" target="_blank" class="button is-primary js-scroll-to-booking"><strong>Book Now</strong></a>
                             <a href="#contact" class="button is-light js-scroll-to-bottom">Contact Us</a>
                         </div>
                     </div>

@@ -7,7 +7,6 @@ import Blog from './js/components/Blog.vue'
 import Joinus from './js/components/Joinus.vue'
 import Contact from './js/components/Contact.vue'
 import Model from './js/components/Model.vue'
-import Booking from './js/components/Booking.vue'
 // test component
 import Test from './js/components/Test.vue'
 
@@ -18,7 +17,6 @@ Vue.component('blog-component', Blog)
 Vue.component('joinus-component', Joinus)
 Vue.component('contact-component', Contact)
 Vue.component('model-component', Model)
-Vue.component('booking-component', Booking)
 // test component
 Vue.component('test-component', Test)
 
@@ -73,12 +71,6 @@ window.addEventListener('load', function() {
     document.querySelector('.js-scroll-to-models').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('#models').scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // scroll to booking
-    document.querySelector('.js-scroll-to-booking').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
     });
 
     // scroll to contact
