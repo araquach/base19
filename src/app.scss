@@ -11,9 +11,6 @@ $darkest-arctic: #0d0d0d;
 
 @import "node_modules/bulma/bulma.sass";
 
-//.navbar {
-//  background-color: transparent;
-//}
 
 .hero.is-fullheight .hero-body.show {
   align-items: flex-end;
@@ -26,6 +23,15 @@ $darkest-arctic: #0d0d0d;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     font-size: 1.7rem;
   }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.columns:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 html {
