@@ -143,8 +143,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1365,7 +1363,7 @@ var render = function() {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "Training and developing our team to the highest possible standard has always been a major priority for us.\n                Through "
+                  "Training and developing our team to the highest possible standard has always been a major priority for us. Through "
                 ),
                 _c("strong", [_vm._v("Jakata & Paul Kemp Hairdressing")]),
                 _vm._v(
@@ -1374,24 +1372,25 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("p", [
+                _c("strong", [_vm._v("Base Hairdressing")]),
                 _vm._v(
-                  "We decided to centralise our training and put all of our apprentices and graduate stylists under one roof in our brand new Base Hair Academy!"
+                  " was created to centralise our training and offer the best training experience for anyone who wants to embark on a career in hairdressing, along with refining the skills of existing stylists."
                 )
               ]),
               _vm._v(" "),
               _c("p", [
+                _vm._v("The Base Team comprises of "),
+                _c("strong", [
+                  _vm._v("Apprentices, Junior Stylists and Graduates")
+                ]),
                 _vm._v(
-                  "We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate"
+                  " all offering cutting edge services at a fraction of the cost! All services are fully supervised by Senior Stylists and all of our usual high quality products are used."
                 )
               ]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v("All of our "),
-                _c("strong", [_vm._v("apprentices")]),
-                _vm._v(" and "),
-                _c("strong", [_vm._v("graduate stylists")]),
+              _c("p", { staticClass: "is-size-5" }, [
                 _vm._v(
-                  " are now located at Base where we can offer our full selection of hair services at a fraction of the cost.\n                All services are fully supervised by Senior Stylists and all our usual high quality products are used."
+                  "If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!"
                 )
               ]),
               _vm._v(" "),
@@ -1979,15 +1978,6 @@ var staticRenderFns = [
               _c(
                 "a",
                 {
-                  staticClass: "navbar-item js-scroll-to-blog",
-                  attrs: { href: "#blog" }
-                },
-                [_vm._v("Blog")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
                   staticClass: "navbar-item js-scroll-to-team",
                   attrs: { href: "#team" }
                 },
@@ -2008,6 +1998,15 @@ var staticRenderFns = [
                         attrs: { href: "#joinus" }
                       },
                       [_vm._v("Join Us")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "navbar-item js-scroll-to-blog",
+                        attrs: { href: "#blog" }
+                      },
+                      [_vm._v("Blog")]
                     ),
                     _vm._v(" "),
                     _c("hr", { staticClass: "navbar-divider" }),
@@ -2033,8 +2032,7 @@ var staticRenderFns = [
                     {
                       staticClass: "button is-primary js-scroll-to-booking",
                       attrs: {
-                        href: "https://phorest.com/book/salons/basehairacademy",
-                        target: "_blank"
+                        href: "https://phorest.com/book/salons/basehairacademy"
                       }
                     },
                     [_c("strong", [_vm._v("Book Now")])]
@@ -14340,10 +14338,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_components_Home_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/components/Home.vue */ "./src/js/components/Home.vue");
 /* harmony import */ var _js_components_About_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/components/About.vue */ "./src/js/components/About.vue");
 /* harmony import */ var _js_components_Team_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/components/Team.vue */ "./src/js/components/Team.vue");
-/* harmony import */ var _js_components_Blog_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/components/Blog.vue */ "./src/js/components/Blog.vue");
-/* harmony import */ var _js_components_Joinus_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/components/Joinus.vue */ "./src/js/components/Joinus.vue");
-/* harmony import */ var _js_components_Contact_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/components/Contact.vue */ "./src/js/components/Contact.vue");
-/* harmony import */ var _js_components_Model_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/components/Model.vue */ "./src/js/components/Model.vue");
+/* harmony import */ var _js_components_Joinus_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/components/Joinus.vue */ "./src/js/components/Joinus.vue");
+/* harmony import */ var _js_components_Blog_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/components/Blog.vue */ "./src/js/components/Blog.vue");
+/* harmony import */ var _js_components_Model_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/components/Model.vue */ "./src/js/components/Model.vue");
+/* harmony import */ var _js_components_Contact_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/components/Contact.vue */ "./src/js/components/Contact.vue");
 /* harmony import */ var _js_components_Test_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./js/components/Test.vue */ "./src/js/components/Test.vue");
 
 
@@ -14361,10 +14359,10 @@ vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('navbar-component', _js_com
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('home-component', _js_components_Home_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('about-component', _js_components_About_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('team-component', _js_components_Team_vue__WEBPACK_IMPORTED_MODULE_5__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('blog-component', _js_components_Blog_vue__WEBPACK_IMPORTED_MODULE_6__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('joinus-component', _js_components_Joinus_vue__WEBPACK_IMPORTED_MODULE_7__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('contact-component', _js_components_Contact_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('model-component', _js_components_Model_vue__WEBPACK_IMPORTED_MODULE_9__["default"]); // test component
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('joinus-component', _js_components_Joinus_vue__WEBPACK_IMPORTED_MODULE_6__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('blog-component', _js_components_Blog_vue__WEBPACK_IMPORTED_MODULE_7__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('model-component', _js_components_Model_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('contact-component', _js_components_Contact_vue__WEBPACK_IMPORTED_MODULE_9__["default"]); // test component
 
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('test-component', _js_components_Test_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_1___default.a({

@@ -5,10 +5,10 @@ import Navbar from './js/components/Navbar.vue'
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
 import Team from './js/components/Team.vue'
-import Blog from './js/components/Blog.vue'
 import Joinus from './js/components/Joinus.vue'
-import Contact from './js/components/Contact.vue'
+import Blog from './js/components/Blog.vue'
 import Model from './js/components/Model.vue'
+import Contact from './js/components/Contact.vue'
 // test component
 import Test from './js/components/Test.vue'
 
@@ -16,10 +16,10 @@ Vue.component('navbar-component', Navbar)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
-Vue.component('blog-component', Blog)
 Vue.component('joinus-component', Joinus)
-Vue.component('contact-component', Contact)
+Vue.component('blog-component', Blog)
 Vue.component('model-component', Model)
+Vue.component('contact-component', Contact)
 // test component
 Vue.component('test-component', Test)
 
