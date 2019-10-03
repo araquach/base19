@@ -1,5 +1,7 @@
 import smoothscroll from 'smoothscroll-polyfill'
 import Vue from "vue"
+
+import Navbar from './js/components/Navbar.vue'
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
 import Team from './js/components/Team.vue'
@@ -10,6 +12,7 @@ import Model from './js/components/Model.vue'
 // test component
 import Test from './js/components/Test.vue'
 
+Vue.component('navbar-component', Navbar)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
