@@ -2,26 +2,22 @@ import smoothscroll from 'smoothscroll-polyfill'
 import Vue from "vue"
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
-import Salon from './js/components/Salon.vue'
 import Team from './js/components/Team.vue'
 import Blog from './js/components/Blog.vue'
 import Joinus from './js/components/Joinus.vue'
 import Contact from './js/components/Contact.vue'
 import Model from './js/components/Model.vue'
-import Booking from './js/components/Booking.vue'
-
+// test component
 import Test from './js/components/Test.vue'
 
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
-Vue.component('salon-component', Salon)
 Vue.component('team-component', Team)
 Vue.component('blog-component', Blog)
 Vue.component('joinus-component', Joinus)
 Vue.component('contact-component', Contact)
 Vue.component('model-component', Model)
-Vue.component('booking-component', Booking)
-
+// test component
 Vue.component('test-component', Test)
 
 const app = new Vue({
@@ -53,12 +49,6 @@ window.addEventListener('load', function() {
         document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
     });
 
-    // scroll to salon
-    document.querySelector('.js-scroll-to-salon').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#salon').scrollIntoView({ behavior: 'smooth' });
-    });
-
     // scroll to blog
     document.querySelector('.js-scroll-to-blog').addEventListener('click', function(e) {
         e.preventDefault();
@@ -81,12 +71,6 @@ window.addEventListener('load', function() {
     document.querySelector('.js-scroll-to-models').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('#models').scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // scroll to booking
-    document.querySelector('.js-scroll-to-booking').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
     });
 
     // scroll to contact
