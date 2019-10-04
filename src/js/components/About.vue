@@ -15,12 +15,10 @@
             <div class="section column is-6">
                 <h1 class="title">It's All about the Base</h1>
                 <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
-                <p>Training and developing our team to the highest possible standard has always been a major priority for us.
-                    Through <strong>Jakata & Paul Kemp Hairdressing</strong> we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level.</p>
-                <p>We decided to centralise our training and put all of our apprentices and graduate stylists under one roof in our brand new Base Hair Academy!</p>
-                <p>We gave our old Jakata premises a major facelift and created an amazing training environment and working space that both our staff and clients can appreciate</p>
-                <p>All of our <strong>apprentices</strong> and <strong>graduate stylists</strong> are now located at Base where we can offer our full selection of hair services at a fraction of the cost.
-                    All services are fully supervised by Senior Stylists and all our usual high quality products are used.</p>
+                <p>Training and developing our team to the highest possible standard has always been a major priority for us. Through <strong>Jakata & Paul Kemp Hairdressing</strong> we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level.</p>
+                <p><strong>Base Hairdressing</strong> was created to centralise our training and offer the best training experience for anyone who wants to embark on a career in hairdressing, along with refining the skills of existing stylists.</p>
+                <p>The Base Team comprises of <strong>Apprentices, Junior Stylists and Graduates</strong> all offering cutting edge services at a fraction of the cost! All services are fully supervised by Senior Stylists and all of our usual high quality products are used.</p>
+                <p class="is-size-5">If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!</p>
                 <button @click="showInfo = false" class="button">Show less</button>
             </div>
             <div class="section column">

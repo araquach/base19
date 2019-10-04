@@ -1,7 +1,10 @@
-$primary: #333;
+// $primary: #333;
 $navbar-item-color: #FFF;
 $navbar-item-hover-background-color: rgba(25,25,25,.7);
 $navbar-dropdown-background-color: rgba(25,25,25,.7);
+
+$card-background-color: rgba(0,0,0,0.8);
+$card-shadow: 0 0 1px 0 rgb(255,255,255);
 
 $lightest-grey: #dce2f2;
 $light-grey: #99aabf;
@@ -11,9 +14,10 @@ $darkest-arctic: #0d0d0d;
 
 @import "node_modules/bulma/bulma.sass";
 
-//.navbar {
-//  background-color: transparent;
-//}
+strong {
+  color: currentColor;
+  font-weight: bolder;
+}
 
 .hero.is-fullheight .hero-body.show {
   align-items: flex-end;
@@ -26,6 +30,15 @@ $darkest-arctic: #0d0d0d;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     font-size: 1.7rem;
   }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.columns:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 html {
@@ -66,7 +79,7 @@ p {
 }
 
 #team {
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -96,24 +109,24 @@ p {
 }
 
 .showInfo {
-  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85));
 }
 
 /* Transition Styling */
 
-.fade-enter-active
-{
-  transition: opacity .6s;
-}
+  .fade-enter-active
+  {
+    transition: opacity .6s;
+  }
 
-.fade-leave-active {
-  transition: none;
-}
+  .fade-leave-active {
+    transition: none;
+  }
 
-.fade-enter,
-.fade-leave-to
-  /* .fade-leave-active in <2.1.8 */
+  .fade-enter,
+  .fade-leave-to
+    /* .fade-leave-active in <2.1.8 */
 
-{
-  opacity: 0
-}
+  {
+    opacity: 0
+  }
