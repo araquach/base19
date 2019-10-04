@@ -1,6 +1,8 @@
-import smoothscroll from 'smoothscroll-polyfill'
 import Vue from "vue"
+import smoothscroll from 'smoothscroll-polyfill'
 
+
+import Cookie from './js/components/Cookie.vue'
 import Navbar from './js/components/Navbar.vue'
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
@@ -12,6 +14,7 @@ import Contact from './js/components/Contact.vue'
 // test component
 import Test from './js/components/Test.vue'
 
+Vue.component('cookie-component', Cookie)
 Vue.component('navbar-component', Navbar)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)

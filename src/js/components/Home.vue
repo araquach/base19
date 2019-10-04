@@ -16,5 +16,8 @@
                 </h2>
             </div>
         </div>
+
+        <cookie-component></cookie-component>
+
     </section>
 </template>
