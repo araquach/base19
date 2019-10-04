@@ -1,12 +1,15 @@
 import Vue from "vue"
 import smoothscroll from 'smoothscroll-polyfill'
-
-
 import Cookie from './js/components/Cookie.vue'
 import Navbar from './js/components/Navbar.vue'
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
 import Team from './js/components/Team.vue'
+import Abi from './js/components/team/Abi.vue'
+import David from './js/components/team/David.vue'
+import LaurenT from './js/components/team/LaurenT.vue'
+import LaurenW from './js/components/team/LaurenW.vue'
+import Lucy from './js/components/team/Lucy.vue'
 import Joinus from './js/components/Joinus.vue'
 import Blog from './js/components/Blog.vue'
 import Model from './js/components/Model.vue'
@@ -19,6 +22,16 @@ Vue.component('navbar-component', Navbar)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
+
+// Individual Team
+
+Vue.component('abi-component', Abi)
+Vue.component('david-component', David)
+Vue.component('laurent-component', LaurenT)
+Vue.component('laurenw-component', LaurenW)
+Vue.component('lucy-component', Lucy)
+
+
 Vue.component('joinus-component', Joinus)
 Vue.component('blog-component', Blog)
 Vue.component('model-component', Model)
@@ -108,5 +121,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
             });
         });
+    }
+
+    var rootEl = document.documentElement;
+    var $modals = getAll('.modal');
+    var $modalButtons = getAll('.modal-button');
+    var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
+
+    if ($modalButtons.length > 0) {
+        $modalButtons.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+                rootEl.classList.add('is-clipped');
+                $target.classList.add('is-active');
+            });
+        });
+    }
+
+    if ($modalCloses.length > 0) {
+        $modalCloses.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+                closeModals();
+            });
+        });
+    }
+
+    document.addEventListener('keydown', function (event) {
+        var e = event || window.event;
+        if (e.keyCode === 27) {
+            closeModals();
+        }
+    });
+
+    function closeModals() {
+        rootEl.classList.remove('is-clipped');
+        $modals.forEach(function ($el) {
+            $el.classList.remove('is-active');
+        });
+    }
+
+    // Functions
+
+    function getAll(selector) {
+        return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
     }
 });

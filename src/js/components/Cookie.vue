@@ -21,7 +21,7 @@
     export default {
         data() {
             return {
-                showCookie: true
+                showCookie: false
             }
         }
     }
@@ -35,5 +35,6 @@
         background-color: rgba(40,60,60,.8);
         padding: 3rem;
         height: 7rem;
+        z-index: 1;
     }
 </style>
