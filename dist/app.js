@@ -479,6 +479,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3066,6 +3067,8 @@ var render = function() {
     "section",
     { staticClass: "hero is-fullheight is-dark", attrs: { id: "team" } },
     [
+      _c("lucy-component"),
+      _vm._v(" "),
       _c(
         "div",
         {
