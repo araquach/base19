@@ -222,15 +222,37 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/Cookie.vue?vue&type=script&lang=js& ***!
   \***********************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 //
 //
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      showCookie: true
+    };
+  }
+});
 
 /***/ }),
 
@@ -458,6 +480,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -501,7 +528,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#cookie {\n    position: absolute;\n    bottom: 0;\n    width: 100%;\n    background-color: white;\n    padding: 3rem;\n    height: 10rem;\n}\n", ""]);
+exports.push([module.i, "\n#cookie {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    background-color: rgba(40,60,60,.8);\n    padding: 3rem;\n    height: 7rem;\n}\n", ""]);
 
 // exports
 
@@ -2398,18 +2425,59 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    {
+      directives: [
+        {
+          name: "show",
+          rawName: "v-show",
+          value: _vm.showCookie,
+          expression: "showCookie"
+        }
+      ],
+      staticClass: "level",
+      attrs: { id: "cookie" }
+    },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c("div", { staticClass: "level-right" }, [
+          _c(
+            "div",
+            {
+              staticClass: "level-item button",
+              on: {
+                click: function($event) {
+                  _vm.showCookie = false
+                }
+              }
+            },
+            [_vm._v("Got it")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "level-item button" }, [_vm._v("Disagree")])
+        ])
+      ])
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "cookie" } }, [
-      _c("p", [
+    return _c("div", { staticClass: "level-left" }, [
+      _c("div", { staticClass: "level-item has-text-white" }, [
         _vm._v(
-          "This website uses cookies to ensure you get the best experience."
+          "\n            This website uses cookies to ensure you get the best experience\n        "
         )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "level-item has-text-white" }, [
+        _vm._v("\n            Privacy policy\n        ")
       ])
     ])
   }
@@ -2885,8 +2953,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "section",
-    { staticClass: "hero is-fullheight is-dark", attrs: { id: "team" } },
+    "div",
     [
       _c(
         "div",
@@ -2899,28 +2966,33 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show columns"
+          staticClass: "hero is-fullheight is-dark",
+          attrs: { id: "team" }
         },
         [
-          _c("div", { staticClass: "section column is-5" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("from Junior Stylists through to experienced graduates")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "hero-body show columns" }, [
+            _c("div", { staticClass: "section column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Meet the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("from Junior Stylists through to experienced graduates")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
@@ -2937,248 +3009,275 @@ var render = function() {
                 expression: "showInfo"
               }
             ],
-            staticClass: "hero-body columns is-multiline",
-            class: { showInfo: _vm.showInfo }
+            staticClass: "hero is-fullheight is-dark",
+            class: { showInfo: _vm.showInfo },
+            attrs: { id: "team" }
           },
           [
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "abi" } },
-              [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("div", { staticClass: "card" }, [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/abi.jpg",
-                            alt: "Abi Clarke"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Abi Clarke")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Stylist")
-                          ])
+            _c("div", { staticClass: "hero-body columns is-multiline" }, [
+              _c(
+                "div",
+                { staticClass: "section column is-4", attrs: { id: "abi" } },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/abi.jpg",
+                              alt: "Abi Clarke"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £90")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Abi Clarke")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Stylist")]
+                            )
                           ])
-                        ]
-                      )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £90")
+                            ])
+                          ]
+                        )
+                      ])
                     ])
                   ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "david" } },
-              [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("div", { staticClass: "card" }, [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: { src: "/dist/img/team/david.jpg", alt: "" }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("David Randles")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Stylist")
-                          ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "section column is-4", attrs: { id: "david" } },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: { src: "/dist/img/team/david.jpg", alt: "" }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £90")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("David Randles")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Stylist")]
+                            )
                           ])
-                        ]
-                      )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £90")
+                            ])
+                          ]
+                        )
+                      ])
                     ])
                   ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "lauren_t" } },
-              [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("div", { staticClass: "card" }, [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: { src: "/dist/img/team/lauren_t.jpg", alt: "" }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Lauren Thompson")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Stylist")
-                          ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "section column is-4",
+                  attrs: { id: "lauren_t" }
+                },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/lauren_t.jpg",
+                              alt: ""
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £90")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Lauren Thompson")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Stylist")]
+                            )
                           ])
-                        ]
-                      )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £90")
+                            ])
+                          ]
+                        )
+                      ])
                     ])
                   ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "lauren_w" } },
-              [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("div", { staticClass: "card" }, [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/lauren_w.jpg",
-                            alt: "Lauren Watson"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Lauren Watson")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Graduate Stylist")
-                          ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "section column is-4",
+                  attrs: { id: "lauren_w" }
+                },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/lauren_w.jpg",
+                              alt: "Lauren Watson"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £30")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Lauren Watson")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Graduate Stylist")]
+                            )
                           ])
-                        ]
-                      )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £30")
+                            ])
+                          ]
+                        )
+                      ])
                     ])
                   ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "lucy" } },
-              [
-                _c("a", { attrs: { href: "#" } }, [
-                  _c("div", { staticClass: "card" }, [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/lucy.jpg",
-                            alt: "Lucy Watson"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Lucy Watson")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Graduate Stylist")
-                          ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "section column is-4", attrs: { id: "lucy" } },
+                [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("div", { staticClass: "card" }, [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/lucy.jpg",
+                              alt: "Lucy Watson"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £30")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Lucy Watson")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Graduate Stylist")]
+                            )
                           ])
-                        ]
-                      )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £30")
+                            ])
+                          ]
+                        )
+                      ])
                     ])
                   ])
-                ])
-              ]
-            )
+                ]
+              )
+            ])
           ]
         )
       ])
@@ -15746,9 +15845,7 @@ component.options.__file = "src/js/components/Cookie.vue"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Cookie.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Cookie.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
