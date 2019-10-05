@@ -13,7 +13,10 @@ import (
 	"os"
 )
 
-var tplHome *template.Template
+var (
+	tplHome *template.Template
+	tplAbout *template.Template
+)
 
 type TeamMember struct {
 	FirstName 	string
@@ -56,6 +59,13 @@ func init() {
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	if err := tplHome.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+func about(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplAbout.Execute(w, nil); err != nil {
 		panic(err)
 	}
 }
@@ -167,8 +177,14 @@ func main() {
 		panic(err)
 	}
 
+	tplAbout = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/about.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
+	r.HandleFunc("/about", about).Methods("GET")
 
 	r.HandleFunc("/api/team", team).Methods("GET")
 
