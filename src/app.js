@@ -5,11 +5,6 @@ import Navbar from './js/components/Navbar.vue'
 import Home from './js/components/Home.vue'
 import About from './js/components/About.vue'
 import Team from './js/components/Team.vue'
-import Abi from './js/components/team/Abi.vue'
-import David from './js/components/team/David.vue'
-import LaurenT from './js/components/team/LaurenT.vue'
-import LaurenW from './js/components/team/LaurenW.vue'
-import Lucy from './js/components/team/Lucy.vue'
 import Joinus from './js/components/Joinus.vue'
 import Blog from './js/components/Blog.vue'
 import Model from './js/components/Model.vue'
@@ -22,16 +17,6 @@ Vue.component('navbar-component', Navbar)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
-
-// Individual Team
-
-Vue.component('abi-component', Abi)
-Vue.component('david-component', David)
-Vue.component('laurent-component', LaurenT)
-Vue.component('laurenw-component', LaurenW)
-Vue.component('lucy-component', Lucy)
-
-
 Vue.component('joinus-component', Joinus)
 Vue.component('blog-component', Blog)
 Vue.component('model-component', Model)
