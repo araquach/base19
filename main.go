@@ -53,6 +53,13 @@ func init() {
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplHome.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+func main() {
 	tm1 := TeamMember{
 		"Lucy",
 		"Watson",
@@ -118,15 +125,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"90",
 	}
 
-	tm := []TeamMember{tm1, tm2, tm3, tm4, tm5}
+	// teamMembers := []TeamMember{tm1, tm2, tm3, tm4, tm5}
 
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplHome.Execute(w, tm); err != nil {
-		panic(err)
-	}
-}
-
-func main() {
 	var err error
 
 	port := os.Getenv("PORT")
@@ -136,6 +136,13 @@ func main() {
 
 	db := dbConn()
 	db.AutoMigrate(&TeamMember{})
+
+	//db.Create(&tm1)
+	//db.Create(&tm2)
+	//db.Create(&tm3)
+	//db.Create(&tm4)
+	//db.Create(&tm5)
+
 	db.Close()
 	db.LogMode(true)
 
