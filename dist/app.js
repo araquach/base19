@@ -528,6 +528,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      teamMembers: [],
       showInfo: false,
       showAbi: false,
       showDavid: false,
@@ -535,6 +536,15 @@ __webpack_require__.r(__webpack_exports__);
       showLaurenW: false,
       showLucy: false
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('/api/team').then(function (response) {
+      return _this.TeamMembers = response.data;
+    })["catch"](function (error) {
+      console.log(error);
+    });
   }
 });
 
@@ -16570,8 +16580,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/imac-work/GoSites/base19/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Users/imac-work/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

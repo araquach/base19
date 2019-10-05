@@ -175,6 +175,7 @@
 
         data() {
             return {
+                teamMembers: [],
                 showInfo: false,
                 showAbi: false,
                 showDavid: false,
@@ -182,6 +183,13 @@
                 showLaurenW: false,
                 showLucy: false
             }
+        },
+
+        mounted() {
+            axios.get('/api/team').then(response => this.TeamMembers = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
         }
     }
 </script>
