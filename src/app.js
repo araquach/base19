@@ -24,6 +24,9 @@ Vue.component('contact-component', Contact)
 // test component
 Vue.component('test-component', Test)
 
+window.axios = require('axios');
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
 const app = new Vue({
     el: '#app'
 });
@@ -75,12 +78,6 @@ window.addEventListener('load', function() {
     document.querySelector('.js-scroll-to-models').addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector('#models').scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // scroll to contact
-    document.querySelector('.js-scroll-to-contact').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
     });
 });
 

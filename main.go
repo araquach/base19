@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
@@ -59,71 +60,86 @@ func home(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func team(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	db := dbConn()
+	team := []TeamMember{}
+	db.Find(&team)
+	db.Close()
+
+	json, err := json.Marshal(team)
+	if err != nil {
+		log.Println(err)
+	}
+	w.Write(json)
+}
+
 func main() {
-	tm1 := TeamMember{
-		"Lucy",
-		"Watson",
-		"Junior Stylist",
-		"/dist/img/team/lucy.jpg",
-		"Lucy is a great stylist",
-		"She's in her second year",
-		"Get Booked in with her!",
-		"Bobs",
-		"Mess Up,",
-		"50",
-	}
-
-	tm2 := TeamMember{
-		"Lauren",
-		"Watson",
-		"Junior Stylist",
-		"/dist/img/team/lauren_w.jpg",
-		"Lauren is an asset to the team ",
-		"She's been hairdressing a while",
-		"She's eager to build her client base",
-		"Long, textured looks",
-		"Dust It",
-		"50",
-	}
-
-	tm3 := TeamMember{
-		"David",
-		"Randles",
-		"Graduate",
-		"/dist/img/team/david.jpg",
-		"David is the latest addition to the team",
-		"He's a great stylist",
-		"Get booked in now!",
-		"Short, choppy looks",
-		"Oil Miracle",
-		"60",
-	}
-
-	tm4 := TeamMember{
-		"Lauren",
-		"Thompson",
-		"Graduate",
-		"/dist/img/team/lauren_w.jpg",
-		"Lauren is temporarily with us from Jakata",
-		"She made the wise choice of coming to us after being at Johnsons",
-		"She's a great asset to the team",
-		"Short, bold styles",
-		"Flex Wax",
-		"60",
-	}
-
-	tm5 := TeamMember{
-		"Abi",
-		"Clarke",
-		"Graduate",
-		"/dist/img/team/lauren_w.jpg",
-		"Abi is with us from PK",
-		"She's a memnber of the GHD style squad",
-		"She will be back to PK soon",
-		"Luscious waves",
-		"Smooth Again",
-		"90",
-	}
+	//tm1 := TeamMember{
+	//	"Lucy",
+	//	"Watson",
+	//	"Junior Stylist",
+	//	"/dist/img/team/lucy.jpg",
+	//	"Lucy is a great stylist",
+	//	"She's in her second year",
+	//	"Get Booked in with her!",
+	//	"Bobs",
+	//	"Mess Up,",
+	//	"50",
+	//}
+	//
+	//tm2 := TeamMember{
+	//	"Lauren",
+	//	"Watson",
+	//	"Junior Stylist",
+	//	"/dist/img/team/lauren_w.jpg",
+	//	"Lauren is an asset to the team ",
+	//	"She's been hairdressing a while",
+	//	"She's eager to build her client base",
+	//	"Long, textured looks",
+	//	"Dust It",
+	//	"50",
+	//}
+	//
+	//tm3 := TeamMember{
+	//	"David",
+	//	"Randles",
+	//	"Graduate",
+	//	"/dist/img/team/david.jpg",
+	//	"David is the latest addition to the team",
+	//	"He's a great stylist",
+	//	"Get booked in now!",
+	//	"Short, choppy looks",
+	//	"Oil Miracle",
+	//	"60",
+	//}
+	//
+	//tm4 := TeamMember{
+	//	"Lauren",
+	//	"Thompson",
+	//	"Graduate",
+	//	"/dist/img/team/lauren_w.jpg",
+	//	"Lauren is temporarily with us from Jakata",
+	//	"She made the wise choice of coming to us after being at Johnsons",
+	//	"She's a great asset to the team",
+	//	"Short, bold styles",
+	//	"Flex Wax",
+	//	"60",
+	//}
+	//
+	//tm5 := TeamMember{
+	//	"Abi",
+	//	"Clarke",
+	//	"Graduate",
+	//	"/dist/img/team/lauren_w.jpg",
+	//	"Abi is with us from PK",
+	//	"She's a memnber of the GHD style squad",
+	//	"She will be back to PK soon",
+	//	"Luscious waves",
+	//	"Smooth Again",
+	//	"90",
+	//}
 
 	// teamMembers := []TeamMember{tm1, tm2, tm3, tm4, tm5}
 
@@ -153,6 +169,8 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
+
+	r.HandleFunc("/api/team", team).Methods("GET")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./dist/"))
