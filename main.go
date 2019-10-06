@@ -16,6 +16,11 @@ import (
 var (
 	tplHome *template.Template
 	tplAbout *template.Template
+	tplBlog *template.Template
+	tplContact *template.Template
+	tplJoinus *template.Template
+	tplModel *template.Template
+	tplTeam *template.Template
 )
 
 type TeamMember struct {
@@ -70,7 +75,44 @@ func about(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func blog(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplBlog.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+func contact(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplContact.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+func joinus(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplJoinus.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+func model(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplModel.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
 func team(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplTeam.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+// api
+
+func apiTeam(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	db := dbConn()
@@ -182,11 +224,41 @@ func main() {
 		panic(err)
 	}
 
+	tplBlog = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/blog.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplContact = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/contact.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplJoinus = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/joinus.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplModel = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/model.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplTeam = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/team.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
 	r.HandleFunc("/about", about).Methods("GET")
+	r.HandleFunc("/blog", blog).Methods("GET")
+	r.HandleFunc("/contact", contact).Methods("GET")
+	r.HandleFunc("/joinus", joinus).Methods("GET")
+	r.HandleFunc("/model", model).Methods("GET")
+	r.HandleFunc("/team", team).Methods("GET")
 	// api roots
-	r.HandleFunc("/api/team", team).Methods("GET")
+	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./dist/"))
