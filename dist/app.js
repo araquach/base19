@@ -1908,6 +1908,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2118,6 +2121,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -3961,11 +3968,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "section",
-    { staticClass: "hero is-fullheight is-dark", attrs: { id: "about" } },
+    "div",
+    { attrs: { id: "about" } },
     [
       _c(
-        "div",
+        "section",
         {
           directives: [
             {
@@ -3975,37 +3982,39 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show columns"
+          staticClass: "about hero is-fullheight is-dark"
         },
         [
-          _c("div", { staticClass: "section column is-5" }, [
-            _c("h1", { staticClass: "title" }, [
-              _vm._v("It's All about the Base")
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("An amazing creative space for upcoming hair stylists")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "hero-body show columns" }, [
+            _c("div", { staticClass: "section column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("It's All about the Base")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("An amazing creative space for upcoming hair stylists")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
       _vm._v(" "),
       _c("transition", { attrs: { name: "fade" } }, [
         _c(
-          "div",
+          "section",
           {
             directives: [
               {
@@ -4015,105 +4024,107 @@ var render = function() {
                 expression: "showInfo"
               }
             ],
-            staticClass: "hero-body columns",
+            staticClass: "about hero is-fullheight is-dark",
             class: { showInfo: _vm.showInfo }
           },
           [
-            _c("div", { staticClass: "section column is-6" }, [
-              _c("h1", { staticClass: "title" }, [
-                _vm._v("It's All about the Base")
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("An amazing creative space for upcoming hair stylists")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Training and developing our team to the highest possible standard has always been a major priority for us. Through "
-                ),
-                _c("strong", [_vm._v("Jakata & Paul Kemp Hairdressing")]),
-                _vm._v(
-                  " we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level."
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("strong", [_vm._v("Base Hairdressing")]),
-                _vm._v(
-                  " was created to centralise our training and offer the best training experience for anyone who wants to embark on a career in hairdressing, along with refining the skills of existing stylists."
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("The Base Team comprises of "),
-                _c("strong", [
-                  _vm._v("Apprentices, Junior Stylists and Graduates")
-                ]),
-                _vm._v(
-                  " all offering cutting edge services at a fraction of the cost! All services are fully supervised by Senior Stylists and all of our usual high quality products are used."
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "is-size-5" }, [
-                _vm._v(
-                  "If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!"
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
-                  }
-                },
-                [_vm._v("Show less")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "section column" }, [
-              _c("div", { staticClass: "columns" }, [
-                _c("div", { staticClass: "column" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/about/base-1.jpg",
-                        alt: "The salon pic 1"
-                      }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/about/base-2.jpg",
-                        alt: "The Salon pic 2"
-                      }
-                    })
-                  ])
+            _c("div", { staticClass: "hero-body columns" }, [
+              _c("div", { staticClass: "section column is-6" }, [
+                _c("h1", { staticClass: "title" }, [
+                  _vm._v("It's All about the Base")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "column" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/about/base-3.jpg",
-                        alt: "The salon pic 3"
+                _c("h2", { staticClass: "subtitle" }, [
+                  _vm._v("An amazing creative space for upcoming hair stylists")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Training and developing our team to the highest possible standard has always been a major priority for us. Through "
+                  ),
+                  _c("strong", [_vm._v("Jakata & Paul Kemp Hairdressing")]),
+                  _vm._v(
+                    " we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("strong", [_vm._v("Base Hairdressing")]),
+                  _vm._v(
+                    " was created to centralise our training and offer the best training experience for anyone who wants to embark on a career in hairdressing, along with refining the skills of existing stylists."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("The Base Team comprises of "),
+                  _c("strong", [
+                    _vm._v("Apprentices, Junior Stylists and Graduates")
+                  ]),
+                  _vm._v(
+                    " all offering cutting edge services at a fraction of the cost! All services are fully supervised by Senior Stylists and all of our usual high quality products are used."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v(
+                    "If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!"
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "button",
+                    on: {
+                      click: function($event) {
+                        _vm.showInfo = false
                       }
-                    })
+                    }
+                  },
+                  [_vm._v("Show less")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "section column" }, [
+                _c("div", { staticClass: "columns" }, [
+                  _c("div", { staticClass: "column" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/about/base-1.jpg",
+                          alt: "The salon pic 1"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/about/base-2.jpg",
+                          alt: "The Salon pic 2"
+                        }
+                      })
+                    ])
                   ]),
                   _vm._v(" "),
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/about/base-4.jpg",
-                        alt: "The salon pic 4"
-                      }
-                    })
+                  _c("div", { staticClass: "column" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/about/base-3.jpg",
+                          alt: "The salon pic 3"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/about/base-4.jpg",
+                          alt: "The salon pic 4"
+                        }
+                      })
+                    ])
                   ])
                 ])
               ])
@@ -4822,11 +4833,11 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "section",
-    { staticClass: "hero is-fullheight is-dark", attrs: { id: "team" } },
+    "div",
+    { attrs: { id: "team" } },
     [
       _c(
-        "div",
+        "section",
         {
           directives: [
             {
@@ -4836,35 +4847,39 @@ var render = function() {
               expression: "!showInfo"
             }
           ],
-          staticClass: "hero-body show columns"
+          staticClass: "team hero is-fullheight is-dark"
         },
         [
-          _c("div", { staticClass: "section column is-5" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("from Junior Stylists through to experienced graduates")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
+          _c("div", { staticClass: "hero-body show columns" }, [
+            _c("div", { staticClass: "section column is-5" }, [
+              _c("h1", { staticClass: "title" }, [
+                _vm._v("Meet the Base Team")
+              ]),
+              _vm._v(" "),
+              _c("h2", { staticClass: "subtitle" }, [
+                _vm._v("from Junior Stylists through to experienced graduates")
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button",
+                  on: {
+                    click: function($event) {
+                      _vm.showInfo = true
+                    }
                   }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
+                },
+                [_vm._v("Find out more")]
+              )
+            ])
           ])
         ]
       ),
       _vm._v(" "),
       _c("transition", { attrs: { name: "fade" } }, [
         _c(
-          "div",
+          "section",
           {
             directives: [
               {
@@ -4874,486 +4889,519 @@ var render = function() {
                 expression: "showInfo"
               }
             ],
-            staticClass: "hero-body columns is-multiline",
+            staticClass: "hero is-fullheight is-dark",
             class: { showInfo: _vm.showInfo }
           },
           [
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "abi" } },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card",
-                    on: {
-                      click: function($event) {
-                        _vm.showAbi = true
+            _c("div", { staticClass: "hero-body columns is-multiline" }, [
+              _c(
+                "div",
+                { staticClass: "section column is-4", attrs: { id: "abi" } },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          _vm.showAbi = true
+                        }
                       }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/abi.jpg",
-                            alt: "Abi Clarke"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Abi Clarke")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Stylist")
-                          ])
+                    },
+                    [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/abi.jpg",
+                              alt: "Abi Clarke"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £90")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Abi Clarke")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Stylist")]
+                            )
                           ])
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "modal", class: { "is-active": _vm.showAbi } },
-              [
-                _c("div", {
-                  staticClass: "modal-background",
-                  on: { click: _vm.showAbi }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/abi.jpg",
-                        alt: "Abi Clarke"
-                      }
-                    })
-                  ]),
-                  _vm._v("\n                This is Abi's Modal\n            ")
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "modal-close is-large",
-                  attrs: { "aria-label": "close" },
-                  on: {
-                    click: function($event) {
-                      _vm.showAbi = false
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "david" } },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card",
-                    on: {
-                      click: function($event) {
-                        _vm.showDavid = true
-                      }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/david.jpg",
-                            alt: "David Randles"
-                          }
-                        })
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £90")
+                            ])
+                          ]
+                        )
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("David Randles")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Stylist")
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £90")
-                          ])
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "modal", class: { "is-active": _vm.showDavid } },
-              [
-                _c("div", {
-                  staticClass: "modal-background",
-                  on: {
-                    click: function($event) {
-                      _vm.showDavid = false
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/david.jpg",
-                        alt: "David Randles"
-                      }
-                    })
-                  ]),
-                  _vm._v(
-                    "\n                This is David's Modal\n            "
+                    ]
                   )
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "modal-close is-large",
-                  attrs: { "aria-label": "close" },
-                  on: {
-                    click: function($event) {
-                      _vm.showDavid = false
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "lauren_t" } },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card",
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "modal", class: { "is-active": _vm.showAbi } },
+                [
+                  _c("div", {
+                    staticClass: "modal-background",
+                    on: { click: _vm.showAbi }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "modal-content" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/team/abi.jpg",
+                          alt: "Abi Clarke"
+                        }
+                      })
+                    ]),
+                    _vm._v(
+                      "\n                This is Abi's Modal\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("button", {
+                    staticClass: "modal-close is-large",
+                    attrs: { "aria-label": "close" },
                     on: {
                       click: function($event) {
-                        _vm.showLaurenT = true
+                        _vm.showAbi = false
                       }
                     }
-                  },
-                  [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/lauren_t.jpg",
-                            alt: "Lauren Thompson"
-                          }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Lauren Thompson")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Stylist")
-                          ])
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "section column is-4", attrs: { id: "david" } },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          _vm.showDavid = true
+                        }
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/david.jpg",
+                              alt: "David Randles"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £90")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("David Randles")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Stylist")]
+                            )
                           ])
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "modal", class: { "is-active": _vm.showLaurenT } },
-              [
-                _c("div", {
-                  staticClass: "modal-background",
-                  on: {
-                    click: function($event) {
-                      _vm.showLaurenT = false
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/lauren_t.jpg",
-                        alt: "Lauren Thompson"
-                      }
-                    })
-                  ]),
-                  _vm._v(
-                    "\n                This is Lauren T's Modal\n            "
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £90")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]
                   )
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "modal-close is-large",
-                  attrs: { "aria-label": "close" },
-                  on: {
-                    click: function($event) {
-                      _vm.showLaurenT = false
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "lauren_w" } },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card",
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "modal", class: { "is-active": _vm.showDavid } },
+                [
+                  _c("div", {
+                    staticClass: "modal-background",
                     on: {
                       click: function($event) {
-                        _vm.showLaurenW = true
+                        _vm.showDavid = false
                       }
                     }
-                  },
-                  [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/lauren_w.jpg",
-                            alt: "Lauren Watson"
-                          }
-                        })
-                      ])
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "modal-content" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/team/david.jpg",
+                          alt: "David Randles"
+                        }
+                      })
                     ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Lauren Watson")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Graduate Stylist")
-                          ])
+                    _vm._v(
+                      "\n                This is David's Modal\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("button", {
+                    staticClass: "modal-close is-large",
+                    attrs: { "aria-label": "close" },
+                    on: {
+                      click: function($event) {
+                        _vm.showDavid = false
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "section column is-4",
+                  attrs: { id: "lauren_t" }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          _vm.showLaurenT = true
+                        }
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/lauren_t.jpg",
+                              alt: "Lauren Thompson"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £30")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Lauren Thompson")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Stylist")]
+                            )
                           ])
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "modal", class: { "is-active": _vm.showLaurenW } },
-              [
-                _c("div", {
-                  staticClass: "modal-background",
-                  on: {
-                    click: function($event) {
-                      _vm.showLaurenW = false
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/lauren_w.jpg",
-                        alt: "Lauren Watson"
-                      }
-                    })
-                  ]),
-                  _vm._v(
-                    "\n                This is Lauren W's Modal\n            "
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £90")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]
                   )
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "modal-close is-large",
-                  attrs: { "aria-label": "close" },
-                  on: {
-                    click: function($event) {
-                      _vm.showLaurenW = false
-                    }
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "section column is-4", attrs: { id: "lucy" } },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass: "card",
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "modal",
+                  class: { "is-active": _vm.showLaurenT }
+                },
+                [
+                  _c("div", {
+                    staticClass: "modal-background",
                     on: {
                       click: function($event) {
-                        _vm.showLucy = true
+                        _vm.showLaurenT = false
                       }
                     }
-                  },
-                  [
-                    _c("div", { staticClass: "card-image" }, [
-                      _c("figure", { staticClass: "image" }, [
-                        _c("img", {
-                          attrs: {
-                            src: "/dist/img/team/lucy.jpg",
-                            alt: "Lucy Watson"
-                          }
-                        })
-                      ])
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "modal-content" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/team/lauren_t.jpg",
+                          alt: "Lauren Thompson"
+                        }
+                      })
                     ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            { staticClass: "title is-4 has-text-white" },
-                            [_vm._v("Lucy Watson")]
-                          ),
-                          _vm._v(" "),
-                          _c("p", { staticClass: "subtitle has-text-white" }, [
-                            _vm._v("Graduate Stylist")
-                          ])
+                    _vm._v(
+                      "\n                This is Lauren T's Modal\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("button", {
+                    staticClass: "modal-close is-large",
+                    attrs: { "aria-label": "close" },
+                    on: {
+                      click: function($event) {
+                        _vm.showLaurenT = false
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "section column is-4",
+                  attrs: { id: "lauren_w" }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          _vm.showLaurenW = true
+                        }
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/lauren_w.jpg",
+                              alt: "Lauren Watson"
+                            }
+                          })
                         ])
                       ]),
                       _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "content is-size-5-mobile has-text-white"
-                        },
-                        [
-                          _c("p", { staticClass: "price" }, [
-                            _vm._v("Average Cut & Colour price £30")
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Lauren Watson")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Graduate Stylist")]
+                            )
                           ])
-                        ]
-                      )
-                    ])
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "modal", class: { "is-active": _vm.showLucy } },
-              [
-                _c("div", {
-                  staticClass: "modal-background",
-                  on: {
-                    click: function($event) {
-                      _vm.showLucy = false
-                    }
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/lucy.jpg",
-                        alt: "Lucy Watson"
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £30")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "modal",
+                  class: { "is-active": _vm.showLaurenW }
+                },
+                [
+                  _c("div", {
+                    staticClass: "modal-background",
+                    on: {
+                      click: function($event) {
+                        _vm.showLaurenW = false
                       }
-                    })
-                  ]),
-                  _vm._v("\n                This is Lucy's Modal\n            ")
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "modal-close is-large",
-                  attrs: { "aria-label": "close" },
-                  on: {
-                    click: function($event) {
-                      _vm.showLucy = false
                     }
-                  }
-                })
-              ]
-            )
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "modal-content" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/team/lauren_w.jpg",
+                          alt: "Lauren Watson"
+                        }
+                      })
+                    ]),
+                    _vm._v(
+                      "\n                This is Lauren W's Modal\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("button", {
+                    staticClass: "modal-close is-large",
+                    attrs: { "aria-label": "close" },
+                    on: {
+                      click: function($event) {
+                        _vm.showLaurenW = false
+                      }
+                    }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "section column is-4", attrs: { id: "lucy" } },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "card",
+                      on: {
+                        click: function($event) {
+                          _vm.showLucy = true
+                        }
+                      }
+                    },
+                    [
+                      _c("div", { staticClass: "card-image" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/lucy.jpg",
+                              alt: "Lucy Watson"
+                            }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-content" }, [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              { staticClass: "title is-4 has-text-white" },
+                              [_vm._v("Lucy Watson")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "subtitle has-text-white" },
+                              [_vm._v("Graduate Stylist")]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content is-size-5-mobile has-text-white"
+                          },
+                          [
+                            _c("p", { staticClass: "price" }, [
+                              _vm._v("Average Cut & Colour price £30")
+                            ])
+                          ]
+                        )
+                      ])
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "modal", class: { "is-active": _vm.showLucy } },
+                [
+                  _c("div", {
+                    staticClass: "modal-background",
+                    on: {
+                      click: function($event) {
+                        _vm.showLucy = false
+                      }
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "modal-content" }, [
+                    _c("figure", { staticClass: "image" }, [
+                      _c("img", {
+                        attrs: {
+                          src: "/dist/img/team/lucy.jpg",
+                          alt: "Lucy Watson"
+                        }
+                      })
+                    ]),
+                    _vm._v(
+                      "\n                This is Lucy's Modal\n            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("button", {
+                    staticClass: "modal-close is-large",
+                    attrs: { "aria-label": "close" },
+                    on: {
+                      click: function($event) {
+                        _vm.showLucy = false
+                      }
+                    }
+                  })
+                ]
+              )
+            ])
           ]
         )
       ])

@@ -214,37 +214,58 @@ func main() {
 	db.Close()
 	db.LogMode(true)
 
-	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav.gohtml", "views/pages/index.gohtml"))
+	tplHome = template.Must(template.ParseFiles(
+	"views/layouts/main.gohtml",
+	"views/layouts/nav.gohtml",
+	"views/pages/index.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
-	tplAbout = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/about.gohtml"))
+	tplAbout = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/layouts/nav-novue.gohtml",
+		"views/pages/about.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
-	tplBlog = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/blog.gohtml"))
+	tplBlog = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/layouts/nav-novue.gohtml",
+		"views/pages/blog.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
-	tplContact = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/contact.gohtml"))
+	tplContact = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/layouts/nav-novue.gohtml",
+		"views/pages/contact.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
-	tplJoinus = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/joinus.gohtml"))
+	tplJoinus = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/layouts/nav-novue.gohtml",
+		"views/pages/joinus.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
-	tplModel = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/model.gohtml"))
+	tplModel = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/layouts/nav-novue.gohtml",
+		"views/pages/model.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
-	tplTeam = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/team.gohtml"))
+	tplTeam = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/layouts/nav-novue.gohtml",
+		"views/pages/team.gohtml"))
 	if err != nil {
 		panic(err)
 	}
