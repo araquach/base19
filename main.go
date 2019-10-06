@@ -177,7 +177,7 @@ func main() {
 		panic(err)
 	}
 
-	tplAbout = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/about.gohtml"))
+	tplAbout = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav-novue.gohtml", "views/pages/about.gohtml"))
 	if err != nil {
 		panic(err)
 	}
@@ -185,7 +185,7 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
 	r.HandleFunc("/about", about).Methods("GET")
-
+	// api roots
 	r.HandleFunc("/api/team", team).Methods("GET")
 
 	// Styles
