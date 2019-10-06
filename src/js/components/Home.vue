@@ -1,8 +1,6 @@
 <template>
     <section id="home" class="hero is-fullheight">
 
-        <navbar-component></navbar-component>
-
         <div class="hero-body columns is-centered">
             <div class="column is-5 is-6-mobile">
                 <h1 class="is-hidden">

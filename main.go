@@ -172,7 +172,7 @@ func main() {
 	db.Close()
 	db.LogMode(true)
 
-	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/pages/index.gohtml"))
+	tplHome = template.Must(template.ParseFiles("views/layouts/main.gohtml", "views/layouts/nav.gohtml", "views/pages/index.gohtml"))
 	if err != nil {
 		panic(err)
 	}
