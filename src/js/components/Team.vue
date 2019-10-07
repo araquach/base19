@@ -1,6 +1,7 @@
 <template>
-    <div id="team">
-    <section v-show="!showInfo" class="team hero is-fullheight is-dark">
+    <div>
+    <!--Pre Click-->
+    <section id="team" v-if="!showInfo" class="hero is-fullheight is-dark">
         <div class="hero-body show columns">
             <div class="section column is-5">
                 <h1 class="title">Meet the Base Team</h1>
@@ -9,10 +10,10 @@
             </div>
         </div>
     </section>
-        <!--Post Click-->
+    <!--Post Click-->
     <transition name="fade">
-    <section v-bind:class="{ showInfo: showInfo }"  v-show="showInfo" class="hero is-fullheight is-dark">
-        <div class="hero-body columns is-multiline">
+    <section id="team" v-if="showInfo" class="hero is-fullheight is-dark">
+        <div class="hero-body columns is-multiline showInfo">
             <!--Abi-->
             <div id="abi" class="section column is-4">
                 <div @click="showAbi = true" class="card">

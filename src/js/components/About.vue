@@ -1,7 +1,7 @@
 <template>
-    <div id="about">
+    <div>
         <!--Pre Click-->
-        <section v-show="!showInfo" class="about hero is-fullheight is-dark">
+        <section id="about" v-if="!showInfo" class="hero is-fullheight is-dark">
             <div class="hero-body show columns">
                 <div class="section column is-5">
                     <h1 class="title">It's All about the Base</h1>
@@ -12,8 +12,8 @@
         </section>
             <!--Post Click-->
         <transition name="fade">
-        <section v-bind:class="{ showInfo: showInfo }" v-show="showInfo"  class="about hero is-fullheight is-dark">
-            <div class="hero-body columns">
+        <section id="about" v-if="showInfo"  class="hero is-fullheight is-dark">
+            <div class="hero-body columns showInfo">
                 <div class="section column is-6">
                     <h1 class="title">It's All about the Base</h1>
                     <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>

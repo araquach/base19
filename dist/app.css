@@ -11773,12 +11773,12 @@ p {
   margin-bottom: 3rem;
 }
 
-.about {
+#about {
   background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat !important;
   background-size: cover;
 }
 
-.about img {
+#about img {
   margin-bottom: 1.3rem;
 }
 
@@ -11787,8 +11787,8 @@ p {
   background-size: cover;
 }
 
-.team {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
+#team {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
