@@ -4179,7 +4179,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "section",
-      { staticClass: "hero is-fullheight is-dark", attrs: { id: "blog" } },
+      { staticClass: "blog hero is-fullheight is-dark", attrs: { id: "blog" } },
       [
         _c("div", { staticClass: "hero-body show columns" }, [
           _c("div", { staticClass: "section column is-5" }, [
@@ -4222,7 +4222,7 @@ var render = function() {
         ? _c(
             "section",
             {
-              staticClass: "hero is-fullheight is-dark",
+              staticClass: "contact hero is-fullheight is-dark",
               attrs: { id: "contact" }
             },
             [
@@ -4257,12 +4257,12 @@ var render = function() {
           ? _c(
               "section",
               {
-                staticClass: "hero is-fullheight is-dark",
+                staticClass: "section contact-info hero is-fullheight is-dark",
                 attrs: { id: "contact" }
               },
               [
-                _c("div", { staticClass: "hero-body columns showInfo" }, [
-                  _c("div", { staticClass: "section column is-6" }, [
+                _c("div", { staticClass: "columns" }, [
+                  _c("div", { staticClass: "section column" }, [
                     _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
                     _vm._v(" "),
                     _c("h2", { staticClass: "subtitle" }, [
@@ -4465,7 +4465,7 @@ var render = function() {
         ? _c(
             "section",
             {
-              staticClass: "hero is-fullheight is-dark",
+              staticClass: "joinus hero is-fullheight is-dark",
               attrs: { id: "joinus" }
             },
             [
@@ -4500,11 +4500,11 @@ var render = function() {
           ? _c(
               "section",
               {
-                staticClass: "hero is-fullheight is-dark",
+                staticClass: "section joinus-info hero is-fullheight is-dark",
                 attrs: { id: "joinus" }
               },
               [
-                _c("div", { staticClass: "hero-body showInfo" }, [
+                _c("div", { staticClass: "columns" }, [
                   _c("div", { staticClass: "section column is-6" }, [
                     _c("h1", { staticClass: "title" }, [_vm._v("Join Base")]),
                     _vm._v(" "),
@@ -4567,7 +4567,7 @@ var render = function() {
         ? _c(
             "section",
             {
-              staticClass: "hero is-fullheight is-dark",
+              staticClass: "models hero is-fullheight is-dark",
               attrs: { id: "models" }
             },
             [
@@ -4613,12 +4613,12 @@ var render = function() {
                 expression: "showInfo"
               }
             ],
-            staticClass: "hero is-fullheight is-dark",
+            staticClass: "section models-info hero is-fullheight is-dark",
             attrs: { id: "models" }
           },
           [
-            _c("div", { staticClass: "hero-body columns showInfo" }, [
-              _c("div", { staticClass: "section column is-6" }, [
+            _c("div", { staticClass: "columns" }, [
+              _c("div", { staticClass: "section column" }, [
                 _c("h1", { staticClass: "title" }, [
                   _vm._v("Sign Up to be a model")
                 ]),
