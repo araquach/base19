@@ -4221,7 +4221,7 @@ var render = function() {
                   _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
                   _vm._v(" "),
                   _c("h2", { staticClass: "subtitle" }, [
-                    _vm._v("Large subtitle")
+                    _vm._v("Find out where we are and how to get in touch")
                   ]),
                   _vm._v(" "),
                   _c(
@@ -4234,7 +4234,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("More info")]
+                    [_vm._v("Info here")]
                   )
                 ])
               ])
@@ -4256,7 +4256,7 @@ var render = function() {
                     _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
                     _vm._v(" "),
                     _c("h2", { staticClass: "subtitle" }, [
-                      _vm._v("Large subtitle")
+                      _vm._v("Find out where we are and how to get in touch")
                     ]),
                     _vm._v(" "),
                     _c("p", [
@@ -4568,7 +4568,9 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("h2", { staticClass: "subtitle" }, [
-                    _vm._v("Large subtitle")
+                    _vm._v(
+                      "Get your hair done for practically FREE on one of our training days"
+                    )
                   ]),
                   _vm._v(" "),
                   _c(
@@ -4581,7 +4583,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("Find out more")]
+                    [_vm._v("More info")]
                   )
                 ])
               ])
@@ -4612,14 +4614,12 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("h2", { staticClass: "subtitle" }, [
-                  _vm._v("Large subtitle")
-                ]),
-                _vm._v(" "),
-                _c("p", [
                   _vm._v(
-                    "More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs"
+                    "Get your hair done for practically FREE on one of our training days"
                   )
                 ]),
+                _vm._v(" "),
+                _c("p"),
                 _vm._v(" "),
                 _c(
                   "button",

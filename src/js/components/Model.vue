@@ -5,8 +5,8 @@
             <div class="hero-body show columns">
                 <div class="section column is-5">
                     <h1 class="title">Sign Up to be a model</h1>
-                    <h2 class="subtitle">Large subtitle</h2>
-                    <button @click="showInfo = true" class="button">Find out more</button>
+                    <h2 class="subtitle">Get your hair done for practically FREE on one of our training days</h2>
+                    <button @click="showInfo = true" class="button">More info</button>
                 </div>
             </div>
         </section>
@@ -16,8 +16,8 @@
             <div class="hero-body columns showInfo">
                 <div class="section column is-6">
                     <h1 class="title">Sign Up to be a model</h1>
-                    <h2 class="subtitle">Large subtitle</h2>
-                    <p>More info asjhdkjhakhsdka  aksjhfdkasjhfa kasjfhkasjhf kjahsfkjhs</p>
+                    <h2 class="subtitle">Get your hair done for practically FREE on one of our training days</h2>
+                    <p></p>
                     <button @click="showInfo = false" class="button">Show less</button>
                 </div>
             </div>
