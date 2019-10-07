@@ -11764,6 +11764,10 @@ p {
   margin-bottom: 1rem;
 }
 
+section.section {
+  padding: 6rem 4rem 4rem 4rem;
+}
+
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/dist/img/bgrounds/b6.jpg") center top no-repeat;
   background-size: cover;
@@ -11773,52 +11777,84 @@ p {
   margin-bottom: 3rem;
 }
 
-#about {
-  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat !important;
+.about {
+  background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#about img {
-  margin-bottom: 1.3rem;
+.about-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-size: cover;
 }
 
-#salon {
+.salon {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#team {
+.salon-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.team {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#blog {
+.team-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.blog {
   background: url("/dist/img/bgrounds/b4.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#joinus {
+.blog-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b4.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.joinus {
   background: url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#models {
+.joinus-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.models {
   background: url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#booking {
+.models-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.booking {
   background: url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
   background-size: cover;
 }
 
-#contact {
+.booking-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.contact {
   background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
   background-size: cover;
 }
 
-.showInfo {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+.contact-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-size: cover;
 }
 
 /* Transition Styling */
@@ -11830,6 +11866,8 @@ p {
 .fade-leave-active {
   transition: none;
 }
+
+/* .fade-leave-active in <2.1.8 */
 
 .fade-enter,
 .fade-leave-to {
