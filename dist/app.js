@@ -4794,7 +4794,7 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "hero-body show columns" }, [
-                _c("div", { staticClass: "section column is-4" }, [
+                _c("div", { staticClass: "section column is-5" }, [
                   _c("h1", { staticClass: "title" }, [
                     _vm._v("Location & Contact Info")
                   ]),
@@ -5411,7 +5411,7 @@ var render = function() {
                           : _vm._e(),
                         _vm._v(" "),
                         _c("div", { staticClass: "field" }, [
-                          _c("label", { staticClass: "label" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
                             _vm._v("Name")
                           ]),
                           _vm._v(" "),
@@ -5445,7 +5445,7 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "field" }, [
-                          _c("label", { staticClass: "label" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
                             _vm._v("Mobile Number")
                           ]),
                           _vm._v(" "),
@@ -5479,7 +5479,7 @@ var render = function() {
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "field" }, [
-                          _c("label", { staticClass: "label" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
                             _vm._v("Current Position")
                           ]),
                           _vm._v(" "),

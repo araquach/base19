@@ -42,19 +42,19 @@
                         </div>
 
                         <div class="field">
-                            <label class="label">Name</label>
+                            <label class="label has-text-white">Name</label>
                             <div class="control">
                                 <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label">Mobile Number</label>
+                            <label class="label has-text-white">Mobile Number</label>
                             <div class="control">
                                 <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
                             </div>
                         </div>
                         <div class="field">
-                            <label class="label">Current Position</label>
+                            <label class="label has-text-white">Current Position</label>
                             <div class="control">
                                 <div class="select">
                                     <select v-model="position" name="position">
