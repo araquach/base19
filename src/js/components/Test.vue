@@ -1,47 +1,54 @@
 <template>
-    <section id="team" class="hero is-fullheight is-dark">
-        <div v-show="!showInfo" class="hero-body show columns">
-            <div class="section column is-5">
-                <h1 class="title">Meet the Base Team</h1>
-                <h2 class="subtitle">from Junior Stylists through to experienced graduates</h2>
-                <button @click="showInfo = true" class="button">Find out more</button>
+    <div>
+        <!--Pre Click-->
+        <section id="team" v-if="!showInfo" class="team hero is-fullheight is-dark">
+            <div class="hero-body show columns">
+                <div class="section column is-5">
+                    <h1 class="title">Meet the Base Team</h1>
+                    <h2 class="subtitle">from Junior Stylists through to experienced graduates</h2>
+                    <button @click="showInfo = true" class="button">Find out more</button>
+                </div>
             </div>
-        </div>
+        </section>
         <!--Post Click-->
         <transition name="fade">
-            <div v-bind:class="{ showInfo: showInfo }"  v-show="showInfo" class="hero-body columns is-multiline">
-                <div v-for="tm in TeamMembers" :id="tm.FirstName" class="section column is-4">
-                    <div @click="showModal = true" class="card">
-                        <div class="card-image">
-                            <figure class="image">
-                                <img :src="tm.Image" :alt="tm.FirsName">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4 has-text-white">{{tm.FirstName}} {{tm.LastName}}</p>
-                                    <p class="subtitle has-text-white">{{tm.Level}}</p>
+            <section id="team" v-if="showInfo" class="section team-info hero is-fullheight is-dark">
+                <div class="columns is-multiline">
+                    <!--Abi-->
+                    <div id="abi" class="section column is-4">
+                        <div @click="showAbi = true" class="card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/dist/img/team/abi.jpg" alt="Abi Clarke">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4 has-text-white">Abi Clarke</p>
+                                        <p class="subtitle has-text-white">Stylist</p>
+                                    </div>
+                                </div>
+                                <div class="content is-size-5-mobile has-text-white">
+                                    <p class="price">Average Cut &amp; Colour price &pound;90</p>
                                 </div>
                             </div>
-                            <div class="content is-size-5-mobile has-text-white">
-                                <p class="price">Average Cut &amp; Colour price &pound;{{tm.Price}}</p>
-                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal" v-bind:class="{ 'is-active': showModal }">
-                    <div class="modal-background" v-on:click="showModal"></div>
-                    <div class="modal-content">
-                        <figure class="image">
-                            <img :src="tm.Image" :alt="tm.FirstName">
-                        </figure>
+                    <div class="modal" v-bind:class="{ 'is-active': showAbi }">
+                        <div class="modal-background" v-on:click="showAbi"></div>
+                        <div class="modal-content">
+                            <figure class="image">
+                                <img src="/dist/img/team/abi.jpg" alt="Abi Clarke">
+                            </figure>
+                            This is Abi's Modal
+                        </div>
+                        <button class="modal-close is-large" aria-label="close" v-on:click="showAbi = false"></button>
                     </div>
-                    <button class="modal-close is-large" aria-label="close" @click="showModal = false"></button>
                 </div>
-            </div>
+            </section>
         </transition>
-    </section>
+    </div>
 </template>
 
 <script>
@@ -49,9 +56,9 @@
 
         data() {
             return {
-                TeamMembers: [],
+                teamMembers: [],
                 showInfo: true,
-                showModal: false,
+                showAbi: false
             }
         },
 

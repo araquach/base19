@@ -2075,6 +2075,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2398,12 +2408,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      TeamMembers: [],
+      teamMembers: [],
       showInfo: true,
-      showModal: false
+      showAbi: false
     };
   },
   mounted: function mounted() {
@@ -4069,7 +4086,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "column" }, [
-                    _c("div", { staticClass: "columns" }, [
+                    _c("div", { staticClass: "columns is-mobile" }, [
                       _c("div", { staticClass: "column" }, [
                         _c("figure", { staticClass: "image" }, [
                           _c("img", {
@@ -4115,7 +4132,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "column" }, [
-                    _c("div", { staticClass: "columns" }, [
+                    _c("div", { staticClass: "columns is-mobile" }, [
                       _c("div", { staticClass: "column" }, [
                         _c("figure", { staticClass: "image" }, [
                           _c("img", {
@@ -4470,11 +4487,17 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "hero-body show columns" }, [
-                _c("div", { staticClass: "section column is-5" }, [
+                _c("div", { staticClass: "section column is-4" }, [
                   _c("h1", { staticClass: "title" }, [_vm._v("Join Base ")]),
                   _vm._v(" "),
                   _c("h2", { staticClass: "subtitle" }, [
                     _vm._v("Could you be the next big thing in hairdressing")
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "is-size-6" }, [
+                    _vm._v(
+                      "If you're just starting out in hairdressing or want to build on your existing skills then Base Hair Academy could be for you!"
+                    )
                   ]),
                   _vm._v(" "),
                   _c(
@@ -4513,7 +4536,57 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("p", [
-                      _vm._v("More info ajshdakjhdkja aksdjhdkjas akdsjhkjash")
+                      _vm._v(
+                        "Are you looking to take up hairdressing as a career? "
+                      ),
+                      _c("strong", [_vm._v("Base Hair Academy")]),
+                      _vm._v(" could be the perfect environment for you!")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v("Base Hairdressing is strongly affiliated with "),
+                      _c("strong", [_vm._v("Jakata")]),
+                      _vm._v(" and "),
+                      _c("strong", [_vm._v("Paul Kemp Hairdressing")]),
+                      _vm._v(
+                        " with the goal of training up the next generation of hairdressers to the highest possible standard!"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "We're a training environment with a focus on you! A salon where you can develop your skills to become a super stylist!"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "is-size-5" }, [
+                      _vm._v("Check out the benefits of being a part of Base…")
+                    ]),
+                    _vm._v(" "),
+                    _c("ul", { staticClass: "box" }, [
+                      _c("li", [
+                        _vm._v(
+                          "Ongoing training and assessments working towards NVQ level 2 & 3"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "The highest quality training and development from experienced stylists"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "A relaxed, friendly working environment designed to unleash your creative talent"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v(
+                          "A solid career ladder with clear goals to strive for"
+                        )
+                      ])
                     ]),
                     _vm._v(" "),
                     _c(
@@ -5442,165 +5515,161 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "section",
-    { staticClass: "hero is-fullheight is-dark", attrs: { id: "team" } },
+    "div",
     [
-      _c(
-        "div",
-        {
-          directives: [
+      !_vm.showInfo
+        ? _c(
+            "section",
             {
-              name: "show",
-              rawName: "v-show",
-              value: !_vm.showInfo,
-              expression: "!showInfo"
-            }
-          ],
-          staticClass: "hero-body show columns"
-        },
-        [
-          _c("div", { staticClass: "section column is-5" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Meet the Base Team")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("from Junior Stylists through to experienced graduates")
-            ]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "button",
-                on: {
-                  click: function($event) {
-                    _vm.showInfo = true
-                  }
-                }
-              },
-              [_vm._v("Find out more")]
-            )
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c("transition", { attrs: { name: "fade" } }, [
-        _c(
-          "div",
-          {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showInfo,
-                expression: "showInfo"
-              }
-            ],
-            staticClass: "hero-body columns is-multiline",
-            class: { showInfo: _vm.showInfo }
-          },
-          [
-            _vm._l(_vm.TeamMembers, function(tm) {
-              return _c(
-                "div",
-                {
-                  staticClass: "section column is-4",
-                  attrs: { id: tm.FirstName }
-                },
-                [
+              staticClass: "team hero is-fullheight is-dark",
+              attrs: { id: "team" }
+            },
+            [
+              _c("div", { staticClass: "hero-body show columns" }, [
+                _c("div", { staticClass: "section column is-5" }, [
+                  _c("h1", { staticClass: "title" }, [
+                    _vm._v("Meet the Base Team")
+                  ]),
+                  _vm._v(" "),
+                  _c("h2", { staticClass: "subtitle" }, [
+                    _vm._v(
+                      "from Junior Stylists through to experienced graduates"
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c(
-                    "div",
+                    "button",
                     {
-                      staticClass: "card",
+                      staticClass: "button",
                       on: {
                         click: function($event) {
-                          _vm.showModal = true
+                          _vm.showInfo = true
                         }
                       }
                     },
+                    [_vm._v("Find out more")]
+                  )
+                ])
+              ])
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "fade" } }, [
+        _vm.showInfo
+          ? _c(
+              "section",
+              {
+                staticClass: "section team-info hero is-fullheight is-dark",
+                attrs: { id: "team" }
+              },
+              [
+                _c("div", { staticClass: "columns is-multiline" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "section column is-4",
+                      attrs: { id: "abi" }
+                    },
                     [
-                      _c("div", { staticClass: "card-image" }, [
-                        _c("figure", { staticClass: "image" }, [
-                          _c("img", {
-                            attrs: { src: tm.Image, alt: tm.FirsName }
-                          })
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "card-content" }, [
-                        _c("div", { staticClass: "media" }, [
-                          _c("div", { staticClass: "media-content" }, [
-                            _c(
-                              "p",
-                              { staticClass: "title is-4 has-text-white" },
-                              [
-                                _vm._v(
-                                  _vm._s(tm.FirstName) +
-                                    " " +
-                                    _vm._s(tm.LastName)
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card",
+                          on: {
+                            click: function($event) {
+                              _vm.showAbi = true
+                            }
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "card-image" }, [
+                            _c("figure", { staticClass: "image" }, [
+                              _c("img", {
+                                attrs: {
+                                  src: "/dist/img/team/abi.jpg",
+                                  alt: "Abi Clarke"
+                                }
+                              })
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "card-content" }, [
+                            _c("div", { staticClass: "media" }, [
+                              _c("div", { staticClass: "media-content" }, [
+                                _c(
+                                  "p",
+                                  { staticClass: "title is-4 has-text-white" },
+                                  [_vm._v("Abi Clarke")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "p",
+                                  { staticClass: "subtitle has-text-white" },
+                                  [_vm._v("Stylist")]
                                 )
-                              ]
-                            ),
+                              ])
+                            ]),
                             _vm._v(" "),
                             _c(
-                              "p",
-                              { staticClass: "subtitle has-text-white" },
-                              [_vm._v(_vm._s(tm.Level))]
+                              "div",
+                              {
+                                staticClass:
+                                  "content is-size-5-mobile has-text-white"
+                              },
+                              [
+                                _c("p", { staticClass: "price" }, [
+                                  _vm._v("Average Cut & Colour price £90")
+                                ])
+                              ]
                             )
                           ])
+                        ]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "modal",
+                      class: { "is-active": _vm.showAbi }
+                    },
+                    [
+                      _c("div", {
+                        staticClass: "modal-background",
+                        on: { click: _vm.showAbi }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "modal-content" }, [
+                        _c("figure", { staticClass: "image" }, [
+                          _c("img", {
+                            attrs: {
+                              src: "/dist/img/team/abi.jpg",
+                              alt: "Abi Clarke"
+                            }
+                          })
                         ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "content is-size-5-mobile has-text-white"
-                          },
-                          [
-                            _c("p", { staticClass: "price" }, [
-                              _vm._v(
-                                "Average Cut & Colour price £" +
-                                  _vm._s(tm.Price)
-                              )
-                            ])
-                          ]
+                        _vm._v(
+                          "\n                        This is Abi's Modal\n                    "
                         )
-                      ])
+                      ]),
+                      _vm._v(" "),
+                      _c("button", {
+                        staticClass: "modal-close is-large",
+                        attrs: { "aria-label": "close" },
+                        on: {
+                          click: function($event) {
+                            _vm.showAbi = false
+                          }
+                        }
+                      })
                     ]
                   )
-                ]
-              )
-            }),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "modal", class: { "is-active": _vm.showModal } },
-              [
-                _c("div", {
-                  staticClass: "modal-background",
-                  on: { click: _vm.showModal }
-                }),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-content" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: { src: _vm.tm.Image, alt: _vm.tm.FirstName }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("button", {
-                  staticClass: "modal-close is-large",
-                  attrs: { "aria-label": "close" },
-                  on: {
-                    click: function($event) {
-                      _vm.showModal = false
-                    }
-                  }
-                })
+                ])
               ]
             )
-          ],
-          2
-        )
+          : _vm._e()
       ])
     ],
     1

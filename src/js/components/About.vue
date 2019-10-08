@@ -21,7 +21,7 @@
                         <p><strong>Base Hairdressing</strong> was created to centralise our training and offer the best training experience for anyone who wants to embark on a career in hairdressing, along with refining the skills of existing stylists.</p>
                     </div>
                     <div class="column">
-                        <div class="columns">
+                        <div class="columns is-mobile">
                             <div class="column">
                                 <figure class="image">
                                     <img src="/dist/img/about/base-1.jpg" alt="The salon pic 1">
@@ -41,7 +41,7 @@
                         <p class="is-size-5">If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!</p>
                     </div>
                     <div class="column">
-                        <div class="columns">
+                        <div class="columns is-mobile">
                             <div class="column">
                                 <figure class="image">
                                     <img src="/dist/img/about/base-3.jpg" alt="The salon pic 3">
