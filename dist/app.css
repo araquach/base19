@@ -11717,6 +11717,12 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+li {
+  line-height: 1.5rem;
+  list-style-type: square;
+  margin-left: 1rem;
+}
+
 .navbar {
   background: transparent;
 }

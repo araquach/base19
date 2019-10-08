@@ -18,7 +18,13 @@
                     <h1 class="title">Contact Us</h1>
                     <h2 class="subtitle">Find out where we are and how to get in touch</h2>
                     <p>More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs</p>
-                    <button @click="showInfo = false" class="button">Show Less</button>
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <button @click="showInfo = false" class="button">Show Less</button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -1922,6 +1922,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1962,6 +1969,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2085,11 +2098,97 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      showInfo: false
+      showInfo: false,
+      errors: [],
+      name: null,
+      mobile: null,
+      position: null
     };
+  },
+  methods: {
+    checkForm: function checkForm(e) {
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push('Name required.');
+      }
+
+      if (!this.mobile) {
+        this.errors.push('Mobile Number required.');
+      } else if (!this.validMobile(this.mobile)) {
+        this.errors.push('Valid Mobile Number required.');
+      }
+
+      if (!this.position) {
+        this.errors.push('Position required');
+      }
+
+      if (!this.errors.length) {
+        return true;
+      }
+
+      e.preventDefault();
+    },
+    validMobile: function validMobile(mobile) {
+      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
+      return re.test(mobile);
+    }
   }
 });
 
@@ -2104,6 +2203,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2328,6 +2432,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2362,6 +2473,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4156,6 +4274,25 @@ var render = function() {
                       ])
                     ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-left" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button",
+                          on: {
+                            click: function($event) {
+                              _vm.showInfo = false
+                            }
+                          }
+                        },
+                        [_vm._v("Show Less")]
+                      )
+                    ])
+                  ])
                 ])
               ]
             )
@@ -4290,20 +4427,26 @@ var render = function() {
                       _vm._v(
                         "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
                       )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "button",
-                        on: {
-                          click: function($event) {
-                            _vm.showInfo = false
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-left" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button",
+                          on: {
+                            click: function($event) {
+                              _vm.showInfo = false
+                            }
                           }
-                        }
-                      },
-                      [_vm._v("Show Less")]
-                    )
+                        },
+                        [_vm._v("Show Less")]
+                      )
+                    ])
                   ])
                 ])
               ]
@@ -4587,20 +4730,226 @@ var render = function() {
                           "A solid career ladder with clear goals to strive for"
                         )
                       ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "section column" }, [
+                    _c("h1", { staticClass: "title is-3" }, [
+                      _vm._v("Apply Here")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "is-size-4" }, [
+                      _vm._v(
+                        "If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!"
+                      )
                     ]),
                     _vm._v(" "),
                     _c(
-                      "button",
+                      "form",
                       {
-                        staticClass: "button",
-                        on: {
-                          click: function($event) {
-                            _vm.showInfo = false
-                          }
-                        }
+                        attrs: { action: "/register", method: "post" },
+                        on: { submit: _vm.checkForm }
                       },
-                      [_vm._v("Show less")]
+                      [
+                        _vm.errors.length
+                          ? _c("div", { staticClass: "box has-text-danger" }, [
+                              _c("p", [
+                                _c("strong", [
+                                  _vm._v("Please correct the following:")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "ul",
+                                _vm._l(_vm.errors, function(error) {
+                                  return _c("li", [_vm._v(_vm._s(error))])
+                                }),
+                                0
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label" }, [
+                            _vm._v("Name")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.name,
+                                  expression: "name"
+                                }
+                              ],
+                              staticClass: "input",
+                              attrs: {
+                                name: "name",
+                                type: "text",
+                                placeholder: "Your Name"
+                              },
+                              domProps: { value: _vm.name },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.name = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label" }, [
+                            _vm._v("Mobile Number")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.mobile,
+                                  expression: "mobile"
+                                }
+                              ],
+                              staticClass: "input",
+                              attrs: {
+                                name: "mobile",
+                                type: "text",
+                                placeholder: "Your Mobile Number"
+                              },
+                              domProps: { value: _vm.mobile },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.mobile = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label" }, [
+                            _vm._v("Current Position")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("div", { staticClass: "select" }, [
+                              _c(
+                                "select",
+                                {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.position,
+                                      expression: "position"
+                                    }
+                                  ],
+                                  attrs: { name: "position" },
+                                  on: {
+                                    change: function($event) {
+                                      var $$selectedVal = Array.prototype.filter
+                                        .call($event.target.options, function(
+                                          o
+                                        ) {
+                                          return o.selected
+                                        })
+                                        .map(function(o) {
+                                          var val =
+                                            "_value" in o ? o._value : o.value
+                                          return val
+                                        })
+                                      _vm.position = $event.target.multiple
+                                        ? $$selectedVal
+                                        : $$selectedVal[0]
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "option",
+                                    { attrs: { value: "default" } },
+                                    [_vm._v("Please select")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "option",
+                                    { attrs: { value: "employed" } },
+                                    [_vm._v("New to hairdressing")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "option",
+                                    { attrs: { value: "chair renter" } },
+                                    [_vm._v("Partway through apprenticeship")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("option", { attrs: { value: "mobile" } }, [
+                                    _vm._v("Already qualified")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("option", { attrs: { value: "other" } }, [
+                                    _vm._v("Other")
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("input", {
+                          attrs: {
+                            type: "hidden",
+                            name: "role",
+                            value: "apprentice"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("div", { staticClass: "control" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "button is-primary",
+                                attrs: { type: "submit", value: "submit" }
+                              },
+                              [_vm._v("Submit")]
+                            )
+                          ])
+                        ])
+                      ]
                     )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-left" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button",
+                          on: {
+                            click: function($event) {
+                              _vm.showInfo = false
+                            }
+                          }
+                        },
+                        [_vm._v("Show Less")]
+                      )
+                    ])
                   ])
                 ])
               ]
@@ -4700,22 +5049,26 @@ var render = function() {
                   _vm._v(
                     "Get your hair done for practically FREE on one of our training days"
                   )
-                ]),
-                _vm._v(" "),
-                _c("p"),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "button",
-                    on: {
-                      click: function($event) {
-                        _vm.showInfo = false
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "level" }, [
+              _c("div", { staticClass: "level-left" }, [
+                _c("div", { staticClass: "level-item" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "button",
+                      on: {
+                        click: function($event) {
+                          _vm.showInfo = false
+                        }
                       }
-                    }
-                  },
-                  [_vm._v("Show less")]
-                )
+                    },
+                    [_vm._v("Show Less")]
+                  )
+                ])
               ])
             ])
           ]
@@ -5482,7 +5835,26 @@ var render = function() {
                         }
                       })
                     ]
-                  )
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "level" }, [
+                    _c("div", { staticClass: "level-left" }, [
+                      _c("div", { staticClass: "level-item" }, [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "button",
+                            on: {
+                              click: function($event) {
+                                _vm.showInfo = false
+                              }
+                            }
+                          },
+                          [_vm._v("Show Less")]
+                        )
+                      ])
+                    ])
+                  ])
                 ])
               ]
             )
@@ -5666,6 +6038,25 @@ var render = function() {
                       })
                     ]
                   )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-left" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button",
+                          on: {
+                            click: function($event) {
+                              _vm.showInfo = false
+                            }
+                          }
+                        },
+                        [_vm._v("Show Less")]
+                      )
+                    ])
+                  ])
                 ])
               ]
             )

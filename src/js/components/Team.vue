@@ -169,6 +169,13 @@
                 </div>
                 <button class="modal-close is-large" aria-label="close" v-on:click="showLucy = false"></button>
             </div>
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <button @click="showInfo = false" class="button">Show Less</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     </transition>

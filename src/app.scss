@@ -14,6 +14,12 @@ $darkest-arctic: #0d0d0d;
 
 @import "node_modules/bulma/bulma.sass";
 
+li {
+  line-height: 1.5rem;
+  list-style-type: square;
+  margin-left: 1rem;
+}
+
 .navbar {
   background: transparent;
 }

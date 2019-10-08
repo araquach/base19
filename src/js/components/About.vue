@@ -55,6 +55,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <button @click="showInfo = false" class="button">Show Less</button>
+                        </div>
+                    </div>
+                </div>
             </section>
     </transition>
     </div>

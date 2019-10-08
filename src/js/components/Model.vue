@@ -17,8 +17,13 @@
                 <div class="section column">
                     <h1 class="title">Sign Up to be a model</h1>
                     <h2 class="subtitle">Get your hair done for practically FREE on one of our training days</h2>
-                    <p></p>
-                    <button @click="showInfo = false" class="button">Show less</button>
+                </div>
+            </div>
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <button @click="showInfo = false" class="button">Show Less</button>
+                    </div>
                 </div>
             </div>
         </section>
