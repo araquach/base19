@@ -1943,9 +1943,11 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/Blog.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 //
 //
 //
@@ -1957,6 +1959,74 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      showInfo: false
+    };
+  }
+});
 
 /***/ }),
 
@@ -2236,11 +2306,107 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      showInfo: false
+      showInfo: false,
+      errors: [],
+      name: null,
+      mobile: null,
+      position: null
     };
+  },
+  methods: {
+    checkForm: function checkForm(e) {
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push('Name required.');
+      }
+
+      if (!this.mobile) {
+        this.errors.push('Mobile Number required.');
+      } else if (!this.validMobile(this.mobile)) {
+        this.errors.push('Valid Mobile Number required.');
+      }
+
+      if (!this.position) {
+        this.errors.push('Position required');
+      }
+
+      if (!this.errors.length) {
+        return true;
+      }
+
+      e.preventDefault();
+    },
+    validMobile: function validMobile(mobile) {
+      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
+      return re.test(mobile);
+    }
   }
 });
 
@@ -2537,7 +2703,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       teamMembers: [],
-      showInfo: true,
+      showInfo: false,
       showAbi: false
     };
   },
@@ -4324,30 +4490,182 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    [
+      !_vm.showInfo
+        ? _c(
+            "section",
+            {
+              staticClass: "blog hero is-fullheight is-dark",
+              attrs: { id: "blog" }
+            },
+            [
+              _c("div", { staticClass: "hero-body show columns" }, [
+                _c("div", { staticClass: "section column is-5" }, [
+                  _c("h1", { staticClass: "title" }, [_vm._v("Blog")]),
+                  _vm._v(" "),
+                  _c("h2", { staticClass: "subtitle" }, [
+                    _vm._v("All the latest new from Base")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "button",
+                      on: {
+                        click: function($event) {
+                          _vm.showInfo = true
+                        }
+                      }
+                    },
+                    [_vm._v("Blog Posts")]
+                  )
+                ])
+              ])
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "fade" } }, [
+        _vm.showInfo
+          ? _c(
+              "section",
+              {
+                staticClass: "section blog-info hero is-fullheight is-dark",
+                attrs: { id: "blog" }
+              },
+              [
+                _c("div", { staticClass: "tile is-ancestor" }, [
+                  _c("div", { staticClass: "tile is-vertical is-8" }, [
+                    _c("div", { staticClass: "tile" }, [
+                      _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                        _c(
+                          "article",
+                          {
+                            staticClass: "tile is-child notification is-primary"
+                          },
+                          [
+                            _c("p", { staticClass: "title" }, [
+                              _vm._v("Vertical...")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "subtitle" }, [
+                              _vm._v("Top tile")
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "article",
+                          {
+                            staticClass: "tile is-child notification is-warning"
+                          },
+                          [
+                            _c("p", { staticClass: "title" }, [
+                              _vm._v("...tiles")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "subtitle" }, [
+                              _vm._v("Bottom tile")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "tile is-parent" }, [
+                        _c(
+                          "article",
+                          { staticClass: "tile is-child notification is-info" },
+                          [
+                            _c("p", { staticClass: "title" }, [
+                              _vm._v("Middle tile")
+                            ]),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "subtitle" }, [
+                              _vm._v("With an image")
+                            ]),
+                            _vm._v(" "),
+                            _c("figure", { staticClass: "image is-4by3" }, [
+                              _c("img", {
+                                attrs: {
+                                  src:
+                                    "https://bulma.io/images/placeholders/640x480.png"
+                                }
+                              })
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "tile is-parent" }, [
+                      _c(
+                        "article",
+                        { staticClass: "tile is-child notification is-danger" },
+                        [
+                          _c("p", { staticClass: "title" }, [
+                            _vm._v("Wide tile")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "subtitle" }, [
+                            _vm._v("Aligned with the right tile")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "content" })
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "tile is-parent" }, [
+                    _c(
+                      "article",
+                      { staticClass: "tile is-child notification is-success" },
+                      [
+                        _c("div", { staticClass: "content" }, [
+                          _c("p", { staticClass: "title" }, [
+                            _vm._v("Tall tile")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "subtitle" }, [
+                            _vm._v("With even more content")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "content" })
+                        ])
+                      ]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-left" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button",
+                          on: {
+                            click: function($event) {
+                              _vm.showInfo = false
+                            }
+                          }
+                        },
+                        [_vm._v("Show Less")]
+                      )
+                    ])
+                  ])
+                ])
+              ]
+            )
+          : _vm._e()
+      ])
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "blog hero is-fullheight is-dark", attrs: { id: "blog" } },
-      [
-        _c("div", { staticClass: "hero-body show columns" }, [
-          _c("div", { staticClass: "section column is-5" }, [
-            _c("h1", { staticClass: "title" }, [_vm._v("Blog")]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle" }, [
-              _vm._v("All the latest news from Base")
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -4989,14 +5307,14 @@ var render = function() {
         ? _c(
             "section",
             {
-              staticClass: "models hero is-fullheight is-dark",
-              attrs: { id: "models" }
+              staticClass: "model hero is-fullheight is-dark",
+              attrs: { id: "model" }
             },
             [
               _c("div", { staticClass: "hero-body show columns" }, [
-                _c("div", { staticClass: "section column is-5" }, [
+                _c("div", { staticClass: "section column is-4" }, [
                   _c("h1", { staticClass: "title" }, [
-                    _vm._v("Sign Up to be a model")
+                    _vm._v("Sign up to be a model")
                   ]),
                   _vm._v(" "),
                   _c("h2", { staticClass: "subtitle" }, [
@@ -5015,7 +5333,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("More info")]
+                    [_vm._v("Find out more")]
                   )
                 ])
               ])
@@ -5024,55 +5342,298 @@ var render = function() {
         : _vm._e(),
       _vm._v(" "),
       _c("transition", { attrs: { name: "fade" } }, [
-        _c(
-          "section",
-          {
-            directives: [
+        _vm.showInfo
+          ? _c(
+              "section",
               {
-                name: "show",
-                rawName: "v-show",
-                value: _vm.showInfo,
-                expression: "showInfo"
-              }
-            ],
-            staticClass: "section models-info hero is-fullheight is-dark",
-            attrs: { id: "models" }
-          },
-          [
-            _c("div", { staticClass: "columns" }, [
-              _c("div", { staticClass: "section column" }, [
-                _c("h1", { staticClass: "title" }, [
-                  _vm._v("Sign Up to be a model")
+                staticClass: "section model-info hero is-fullheight is-dark",
+                attrs: { id: "model" }
+              },
+              [
+                _c("div", { staticClass: "columns" }, [
+                  _c("div", { staticClass: "section column is-6" }, [
+                    _c("h1", { staticClass: "title" }, [
+                      _vm._v("We need models!")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("figure", [
+                      _c("img", {
+                        attrs: {
+                          src: "https://via.placeholder.com/1000x600",
+                          alt: ""
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "section column" }, [
+                    _c("h1", { staticClass: "title is-3" }, [
+                      _vm._v("Apply Here")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "is-size-4" }, [
+                      _vm._v(
+                        "Please provide some info about your hair to allow us to determine which sessions best suit your needs"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [_vm._v("Hair Length")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Hair Texture")]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v("Existing colour (Foils/Balayage/Full Head etc)")
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _vm._v("Any Colour, Cut & Style ideas you would like")
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Call us on 01925 444449 if you would like more information"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("small", [
+                      _vm._v(
+                        "A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "form",
+                      {
+                        attrs: { action: "/register", method: "post" },
+                        on: { submit: _vm.checkForm }
+                      },
+                      [
+                        _vm.errors.length
+                          ? _c("div", { staticClass: "box has-text-danger" }, [
+                              _c("p", [
+                                _c("strong", [
+                                  _vm._v("Please correct the following:")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "ul",
+                                _vm._l(_vm.errors, function(error) {
+                                  return _c("li", [_vm._v(_vm._s(error))])
+                                }),
+                                0
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
+                            _vm._v("Name")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.name,
+                                  expression: "name"
+                                }
+                              ],
+                              staticClass: "input",
+                              attrs: {
+                                name: "name",
+                                type: "text",
+                                placeholder: "Your Name"
+                              },
+                              domProps: { value: _vm.name },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.name = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
+                            _vm._v("Mobile Number")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.mobile,
+                                  expression: "mobile"
+                                }
+                              ],
+                              staticClass: "input",
+                              attrs: {
+                                name: "mobile",
+                                type: "text",
+                                placeholder: "Your Mobile Number"
+                              },
+                              domProps: { value: _vm.mobile },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.mobile = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
+                            _vm._v("Current Position")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("div", { staticClass: "select" }, [
+                              _c(
+                                "select",
+                                {
+                                  directives: [
+                                    {
+                                      name: "model",
+                                      rawName: "v-model",
+                                      value: _vm.position,
+                                      expression: "position"
+                                    }
+                                  ],
+                                  attrs: { name: "position" },
+                                  on: {
+                                    change: function($event) {
+                                      var $$selectedVal = Array.prototype.filter
+                                        .call($event.target.options, function(
+                                          o
+                                        ) {
+                                          return o.selected
+                                        })
+                                        .map(function(o) {
+                                          var val =
+                                            "_value" in o ? o._value : o.value
+                                          return val
+                                        })
+                                      _vm.position = $event.target.multiple
+                                        ? $$selectedVal
+                                        : $$selectedVal[0]
+                                    }
+                                  }
+                                },
+                                [
+                                  _c(
+                                    "option",
+                                    { attrs: { value: "default" } },
+                                    [_vm._v("Please select")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "option",
+                                    { attrs: { value: "employed" } },
+                                    [_vm._v("New to hairdressing")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "option",
+                                    { attrs: { value: "chair renter" } },
+                                    [_vm._v("Partway through apprenticeship")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("option", { attrs: { value: "mobile" } }, [
+                                    _vm._v("Already qualified")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("option", { attrs: { value: "other" } }, [
+                                    _vm._v("Other")
+                                  ])
+                                ]
+                              )
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("input", {
+                          attrs: {
+                            type: "hidden",
+                            name: "role",
+                            value: "apprentice"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("div", { staticClass: "control" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "button is-primary",
+                                attrs: { type: "submit", value: "submit" }
+                              },
+                              [_vm._v("Submit")]
+                            )
+                          ])
+                        ])
+                      ]
+                    )
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("h2", { staticClass: "subtitle" }, [
-                  _vm._v(
-                    "Get your hair done for practically FREE on one of our training days"
-                  )
+                _c("div", { staticClass: "level" }, [
+                  _c("div", { staticClass: "level-left" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button",
+                          on: {
+                            click: function($event) {
+                              _vm.showInfo = false
+                            }
+                          }
+                        },
+                        [_vm._v("Show Less")]
+                      )
+                    ])
+                  ])
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "level" }, [
-              _c("div", { staticClass: "level-left" }, [
-                _c("div", { staticClass: "level-item" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "button",
-                      on: {
-                        click: function($event) {
-                          _vm.showInfo = false
-                        }
-                      }
-                    },
-                    [_vm._v("Show Less")]
-                  )
-                ])
-              ])
-            ])
-          ]
-        )
+              ]
+            )
+          : _vm._e()
       ])
     ],
     1
@@ -18277,9 +18838,9 @@ window.addEventListener('load', function () {
     });
   }); // scroll to models
 
-  document.querySelector('.js-scroll-to-models').addEventListener('click', function (e) {
+  document.querySelector('.js-scroll-to-model').addEventListener('click', function (e) {
     e.preventDefault();
-    document.querySelector('#models').scrollIntoView({
+    document.querySelector('#model').scrollIntoView({
       behavior: 'smooth'
     });
   });
@@ -18477,9 +19038,7 @@ component.options.__file = "src/js/components/Blog.vue"
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Blog.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Blog.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

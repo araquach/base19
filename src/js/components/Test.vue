@@ -64,7 +64,7 @@
         data() {
             return {
                 teamMembers: [],
-                showInfo: true,
+                showInfo: false,
                 showAbi: false
             }
         },

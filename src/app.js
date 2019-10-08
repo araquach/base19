@@ -75,9 +75,9 @@ window.addEventListener('load', function() {
     });
 
     // scroll to models
-    document.querySelector('.js-scroll-to-models').addEventListener('click', function(e) {
+    document.querySelector('.js-scroll-to-model').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('#models').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('#model').scrollIntoView({ behavior: 'smooth' });
     });
 });
 
