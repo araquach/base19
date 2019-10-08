@@ -1,7 +1,7 @@
 <template>
     <div>
         <!--Pre Click-->
-        <section id="model" v-if="!showInfo" class="model hero is-fullheight is-dark">
+        <section id="models" v-if="!showInfo" class="models hero is-fullheight is-dark">
             <div class="hero-body show columns">
                 <div class="section column is-4">
                     <h1 class="title">Sign up to be a model</h1>
@@ -12,16 +12,17 @@
         </section>
         <!--Post Click-->
         <transition name="fade">
-            <section id="model" v-if="showInfo" class="section model-info hero is-fullheight is-dark">
+            <section id="models" v-if="showInfo" class="section models-info hero is-fullheight is-dark">
                 <div class="columns">
                     <div class="section column is-6">
                         <h1 class="title">We need models!</h1>
-                        <p>We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>
-                        <p>If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs</p>
                         <br>
                         <figure>
                             <img src="https://via.placeholder.com/1000x600" alt="">
                         </figure>
+                        <br>
+                        <p>We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>
+                        <p>If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs</p>
                     </div>
                     <div class="section column">
                         <h1 class="title is-3">Apply Here</h1>

@@ -2073,11 +2073,105 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      showInfo: false
+      showInfo: false,
+      errors: [],
+      name: null,
+      mobile: null,
+      position: null
     };
+  },
+  methods: {
+    checkForm: function checkForm(e) {
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push('Name required.');
+      }
+
+      if (!this.mobile) {
+        this.errors.push('Mobile Number required.');
+      } else if (!this.validMobile(this.mobile)) {
+        this.errors.push('Valid Mobile Number required.');
+      }
+
+      if (!this.position) {
+        this.errors.push('Position required');
+      }
+
+      if (!this.errors.length) {
+        return true;
+      }
+
+      e.preventDefault();
+    },
+    validMobile: function validMobile(mobile) {
+      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
+      return re.test(mobile);
+    }
   }
 });
 
@@ -2273,6 +2367,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -4699,11 +4794,15 @@ var render = function() {
             },
             [
               _c("div", { staticClass: "hero-body show columns" }, [
-                _c("div", { staticClass: "section column is-5" }, [
-                  _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
+                _c("div", { staticClass: "section column is-4" }, [
+                  _c("h1", { staticClass: "title" }, [
+                    _vm._v("Location & Contact Info")
+                  ]),
                   _vm._v(" "),
                   _c("h2", { staticClass: "subtitle" }, [
-                    _vm._v("Find out where we are and how to get in touch")
+                    _vm._v(
+                      "If you want to find us or get in touch then click the button!"
+                    )
                   ]),
                   _vm._v(" "),
                   _c(
@@ -4734,18 +4833,242 @@ var render = function() {
               },
               [
                 _c("div", { staticClass: "columns" }, [
-                  _c("div", { staticClass: "section column" }, [
-                    _c("h1", { staticClass: "title" }, [_vm._v("Contact Us")]),
-                    _vm._v(" "),
-                    _c("h2", { staticClass: "subtitle" }, [
-                      _vm._v("Find out where we are and how to get in touch")
-                    ]),
+                  _c("div", { staticClass: "section column is-6" }, [
+                    _c("h1", { staticClass: "title" }, [_vm._v("Location")]),
                     _vm._v(" "),
                     _c("p", [
+                      _c("strong", [_vm._v("Base Hairdressing")]),
                       _vm._v(
-                        "More info cnksjdbvbsdmnv ksjdfhkjhfkjhsd kfjsdhfkhskdfh fjhksdhkfs"
+                        " is located in Warrington Town Centre on the main high street. We're close to the new upcoming development. "
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "The new multi-storey car park is just around the corner from us."
                       )
+                    ]),
+                    _vm._v(" "),
+                    _c("h3", { staticClass: "title is-4" }, [
+                      _vm._v("Address:")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "is-size-5" }, [
+                      _vm._v("90/92 Bridge Street"),
+                      _c("br"),
+                      _vm._v("\n                    Warrington"),
+                      _c("br"),
+                      _vm._v("\n                    WA1 2RF")
+                    ]),
+                    _vm._v(" "),
+                    _c("h3", { staticClass: "title is-4" }, [
+                      _vm._v("Telephone:")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "is-size-4" }, [
+                      _vm._v("01925 444449")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("figure", [
+                      _c("img", {
+                        attrs: {
+                          src: "https://via.placeholder.com/1000x600",
+                          alt: "Map"
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "is-size-4" }, [
+                      _c("h3", { staticClass: "title is-4" }, [
+                        _vm._v("Opening Hours")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v("Monday: Closed"),
+                        _c("br"),
+                        _vm._v(
+                          "\n                            Tuesday: 9am - 6pm"
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                            Wednesday: 11am - 8pm"
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                            Thursday: 11am - 8pm"
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                            Friday: 9am - 6pm"
+                        ),
+                        _c("br"),
+                        _vm._v(
+                          "\n                            Saturday: 8am - 4:30pm"
+                        )
+                      ])
                     ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "section column" }, [
+                    _c("h1", { staticClass: "title is-3" }, [
+                      _vm._v("Contact Us")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "is-size-5" }, [
+                      _vm._v(
+                        "If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("If you")]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "form",
+                      {
+                        attrs: { action: "/register", method: "post" },
+                        on: { submit: _vm.checkForm }
+                      },
+                      [
+                        _vm.errors.length
+                          ? _c("div", { staticClass: "box has-text-danger" }, [
+                              _c("p", [
+                                _c("strong", [
+                                  _vm._v("Please correct the following:")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "ul",
+                                _vm._l(_vm.errors, function(error) {
+                                  return _c("li", [_vm._v(_vm._s(error))])
+                                }),
+                                0
+                              )
+                            ])
+                          : _vm._e(),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
+                            _vm._v("Name")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.name,
+                                  expression: "name"
+                                }
+                              ],
+                              staticClass: "input",
+                              attrs: {
+                                name: "name",
+                                type: "text",
+                                placeholder: "Your Name"
+                              },
+                              domProps: { value: _vm.name },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.name = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
+                            _vm._v("Mobile Number")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.mobile,
+                                  expression: "mobile"
+                                }
+                              ],
+                              staticClass: "input",
+                              attrs: {
+                                name: "mobile",
+                                type: "text",
+                                placeholder: "Your Mobile Number"
+                              },
+                              domProps: { value: _vm.mobile },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.mobile = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("label", { staticClass: "label has-text-white" }, [
+                            _vm._v("Message")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "control" }, [
+                            _c("input", {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.mobile,
+                                  expression: "mobile"
+                                }
+                              ],
+                              staticClass: "textarea",
+                              attrs: {
+                                name: "mobile",
+                                type: "text",
+                                placeholder: "Message"
+                              },
+                              domProps: { value: _vm.mobile },
+                              on: {
+                                input: function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.mobile = $event.target.value
+                                }
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "field" }, [
+                          _c("div", { staticClass: "control" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "button is-primary",
+                                attrs: { type: "submit", value: "submit" }
+                              },
+                              [_vm._v("Submit")]
+                            )
+                          ])
+                        ])
+                      ]
+                    )
                   ])
                 ]),
                 _vm._v(" "),
@@ -5307,8 +5630,8 @@ var render = function() {
         ? _c(
             "section",
             {
-              staticClass: "model hero is-fullheight is-dark",
-              attrs: { id: "model" }
+              staticClass: "models hero is-fullheight is-dark",
+              attrs: { id: "models" }
             },
             [
               _c("div", { staticClass: "hero-body show columns" }, [
@@ -5346,26 +5669,14 @@ var render = function() {
           ? _c(
               "section",
               {
-                staticClass: "section model-info hero is-fullheight is-dark",
-                attrs: { id: "model" }
+                staticClass: "section models-info hero is-fullheight is-dark",
+                attrs: { id: "models" }
               },
               [
                 _c("div", { staticClass: "columns" }, [
                   _c("div", { staticClass: "section column is-6" }, [
                     _c("h1", { staticClass: "title" }, [
                       _vm._v("We need models!")
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)"
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs"
-                      )
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -5377,6 +5688,20 @@ var render = function() {
                           alt: ""
                         }
                       })
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs"
+                      )
                     ])
                   ]),
                   _vm._v(" "),
@@ -18838,9 +19163,9 @@ window.addEventListener('load', function () {
     });
   }); // scroll to models
 
-  document.querySelector('.js-scroll-to-model').addEventListener('click', function (e) {
+  document.querySelector('.js-scroll-to-models').addEventListener('click', function (e) {
     e.preventDefault();
-    document.querySelector('#model').scrollIntoView({
+    document.querySelector('#models').scrollIntoView({
       behavior: 'smooth'
     });
   });
