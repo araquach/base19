@@ -19062,10 +19062,21 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/app.scss":
+/*!**********************!*\
+  !*** ./src/app.scss ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/js/app.js":
+/*!***********************!*\
+  !*** ./src/js/app.js ***!
+  \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -19075,16 +19086,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! smoothscroll-polyfill */ "./node_modules/smoothscroll-polyfill/dist/smoothscroll.js");
 /* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _js_components_Cookie_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/components/Cookie.vue */ "./src/js/components/Cookie.vue");
-/* harmony import */ var _js_components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/components/Navbar.vue */ "./src/js/components/Navbar.vue");
-/* harmony import */ var _js_components_Home_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/components/Home.vue */ "./src/js/components/Home.vue");
-/* harmony import */ var _js_components_About_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/components/About.vue */ "./src/js/components/About.vue");
-/* harmony import */ var _js_components_Team_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/components/Team.vue */ "./src/js/components/Team.vue");
-/* harmony import */ var _js_components_Joinus_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/components/Joinus.vue */ "./src/js/components/Joinus.vue");
-/* harmony import */ var _js_components_Blog_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/components/Blog.vue */ "./src/js/components/Blog.vue");
-/* harmony import */ var _js_components_Model_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/components/Model.vue */ "./src/js/components/Model.vue");
-/* harmony import */ var _js_components_Contact_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./js/components/Contact.vue */ "./src/js/components/Contact.vue");
-/* harmony import */ var _js_components_Test_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./js/components/Test.vue */ "./src/js/components/Test.vue");
+/* harmony import */ var _components_Cookie_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Cookie.vue */ "./src/js/components/Cookie.vue");
+/* harmony import */ var _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Navbar.vue */ "./src/js/components/Navbar.vue");
+/* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Home.vue */ "./src/js/components/Home.vue");
+/* harmony import */ var _components_About_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/About.vue */ "./src/js/components/About.vue");
+/* harmony import */ var _components_Team_vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Team.vue */ "./src/js/components/Team.vue");
+/* harmony import */ var _components_Joinus_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Joinus.vue */ "./src/js/components/Joinus.vue");
+/* harmony import */ var _components_Blog_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Blog.vue */ "./src/js/components/Blog.vue");
+/* harmony import */ var _components_Model_vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/Model.vue */ "./src/js/components/Model.vue");
+/* harmony import */ var _components_Contact_vue__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Contact.vue */ "./src/js/components/Contact.vue");
+/* harmony import */ var _components_Test_vue__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/Test.vue */ "./src/js/components/Test.vue");
 
 
 
@@ -19098,17 +19109,17 @@ __webpack_require__.r(__webpack_exports__);
  // test component
 
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('cookie-component', _js_components_Cookie_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-component', _js_components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home-component', _js_components_Home_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('about-component', _js_components_About_vue__WEBPACK_IMPORTED_MODULE_5__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('team-component', _js_components_Team_vue__WEBPACK_IMPORTED_MODULE_6__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('joinus-component', _js_components_Joinus_vue__WEBPACK_IMPORTED_MODULE_7__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('blog-component', _js_components_Blog_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('model-component', _js_components_Model_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('contact-component', _js_components_Contact_vue__WEBPACK_IMPORTED_MODULE_10__["default"]); // test component
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('cookie-component', _components_Cookie_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-component', _components_Navbar_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home-component', _components_Home_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('about-component', _components_About_vue__WEBPACK_IMPORTED_MODULE_5__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('team-component', _components_Team_vue__WEBPACK_IMPORTED_MODULE_6__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('joinus-component', _components_Joinus_vue__WEBPACK_IMPORTED_MODULE_7__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('blog-component', _components_Blog_vue__WEBPACK_IMPORTED_MODULE_8__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('model-component', _components_Model_vue__WEBPACK_IMPORTED_MODULE_9__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('contact-component', _components_Contact_vue__WEBPACK_IMPORTED_MODULE_10__["default"]); // test component
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', _js_components_Test_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', _components_Test_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
@@ -19235,17 +19246,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./src/app.scss":
-/*!**********************!*\
-  !*** ./src/app.scss ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./src/js/components/About.vue":
 /*!*************************************!*\
   !*** ./src/js/components/About.vue ***!
@@ -19319,15 +19319,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************!*\
   !*** ./src/js/components/Blog.vue ***!
   \************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Blog_vue_vue_type_template_id_1a126f6e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Blog.vue?vue&type=template&id=1a126f6e& */ "./src/js/components/Blog.vue?vue&type=template&id=1a126f6e&");
 /* harmony import */ var _Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Blog.vue?vue&type=script&lang=js& */ "./src/js/components/Blog.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Blog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -19357,7 +19356,7 @@ component.options.__file = "src/js/components/Blog.vue"
 /*!*************************************************************!*\
   !*** ./src/js/components/Blog.vue?vue&type=script&lang=js& ***!
   \*************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19924,13 +19923,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*****************************************!*\
-  !*** multi ./src/app.js ./src/app.scss ***!
-  \*****************************************/
+/*!********************************************!*\
+  !*** multi ./src/js/app.js ./src/app.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.js */"./src/app.js");
+__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
 module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
 
 

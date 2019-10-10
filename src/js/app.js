@@ -1,16 +1,16 @@
 import Vue from "vue"
 import smoothscroll from 'smoothscroll-polyfill'
-import Cookie from './js/components/Cookie.vue'
-import Navbar from './js/components/Navbar.vue'
-import Home from './js/components/Home.vue'
-import About from './js/components/About.vue'
-import Team from './js/components/Team.vue'
-import Joinus from './js/components/Joinus.vue'
-import Blog from './js/components/Blog.vue'
-import Model from './js/components/Model.vue'
-import Contact from './js/components/Contact.vue'
+import Cookie from './components/Cookie.vue'
+import Navbar from './components/Navbar.vue'
+import Home from './components/Home.vue'
+import About from './components/About.vue'
+import Team from './components/Team.vue'
+import Joinus from './components/Joinus.vue'
+import Blog from './components/Blog.vue'
+import Model from './components/Model.vue'
+import Contact from './components/Contact.vue'
 // test component
-import Test from './js/components/Test.vue'
+import Test from './components/Test.vue'
 
 Vue.component('cookie-component', Cookie)
 Vue.component('navbar-component', Navbar)
