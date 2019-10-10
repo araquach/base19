@@ -2414,168 +2414,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
-    return {
-      teamMembers: [],
-      showInfo: false,
-      showAbi: false,
-      showDavid: false,
-      showLaurenT: false,
-      showLaurenW: false,
-      showLucy: false
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get('/api/team').then(function (response) {
-      return _this.TeamMembers = response.data;
-    })["catch"](function (error) {
-      console.log(error);
-    });
+    return {};
   }
 });
 
@@ -6077,244 +5918,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    {
-      staticClass: "section team-info hero is-fullheight is-dark",
-      attrs: { id: "team" }
-    },
-    [
-      _c("div", { staticClass: "columns is-multiline" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "modal", class: { "is-active": _vm.showAbi } },
-          [
-            _c("div", {
-              staticClass: "modal-background",
-              on: { click: _vm.showAbi }
-            }),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c("button", {
-              staticClass: "modal-close is-large",
-              attrs: { "aria-label": "close" },
-              on: {
-                click: function($event) {
-                  _vm.showAbi = false
-                }
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "section column is-4", attrs: { id: "david" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "card",
-                on: {
-                  click: function($event) {
-                    _vm.showDavid = true
-                  }
-                }
-              },
-              [_vm._m(2), _vm._v(" "), _vm._m(3)]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "modal", class: { "is-active": _vm.showDavid } },
-          [
-            _c("div", {
-              staticClass: "modal-background",
-              on: {
-                click: function($event) {
-                  _vm.showDavid = false
-                }
-              }
-            }),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c("button", {
-              staticClass: "modal-close is-large",
-              attrs: { "aria-label": "close" },
-              on: {
-                click: function($event) {
-                  _vm.showDavid = false
-                }
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "section column is-4", attrs: { id: "lauren_t" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "card",
-                on: {
-                  click: function($event) {
-                    _vm.showLaurenT = true
-                  }
-                }
-              },
-              [_vm._m(5), _vm._v(" "), _vm._m(6)]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "modal", class: { "is-active": _vm.showLaurenT } },
-          [
-            _c("div", {
-              staticClass: "modal-background",
-              on: {
-                click: function($event) {
-                  _vm.showLaurenT = false
-                }
-              }
-            }),
-            _vm._v(" "),
-            _vm._m(7),
-            _vm._v(" "),
-            _c("button", {
-              staticClass: "modal-close is-large",
-              attrs: { "aria-label": "close" },
-              on: {
-                click: function($event) {
-                  _vm.showLaurenT = false
-                }
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "section column is-4", attrs: { id: "lauren_w" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "card",
-                on: {
-                  click: function($event) {
-                    _vm.showLaurenW = true
-                  }
-                }
-              },
-              [_vm._m(8), _vm._v(" "), _vm._m(9)]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "modal", class: { "is-active": _vm.showLaurenW } },
-          [
-            _c("div", {
-              staticClass: "modal-background",
-              on: {
-                click: function($event) {
-                  _vm.showLaurenW = false
-                }
-              }
-            }),
-            _vm._v(" "),
-            _vm._m(10),
-            _vm._v(" "),
-            _c("button", {
-              staticClass: "modal-close is-large",
-              attrs: { "aria-label": "close" },
-              on: {
-                click: function($event) {
-                  _vm.showLaurenW = false
-                }
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "section column is-4", attrs: { id: "lucy" } },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "card",
-                on: {
-                  click: function($event) {
-                    _vm.showLucy = true
-                  }
-                }
-              },
-              [_vm._m(11), _vm._v(" "), _vm._m(12)]
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "modal", class: { "is-active": _vm.showLucy } },
-          [
-            _c("div", {
-              staticClass: "modal-background",
-              on: {
-                click: function($event) {
-                  _vm.showLucy = false
-                }
-              }
-            }),
-            _vm._v(" "),
-            _vm._m(13),
-            _vm._v(" "),
-            _c("button", {
-              staticClass: "modal-close is-large",
-              attrs: { "aria-label": "close" },
-              on: {
-                click: function($event) {
-                  _vm.showLucy = false
-                }
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "level" }, [
-          _c("div", { staticClass: "level-left" }, [
-            _c("div", { staticClass: "level-item" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "button",
-                  on: {
-                    click: function($event) {
-                      _vm.showInfo = false
-                    }
-                  }
-                },
-                [_vm._v("Show Less")]
-              )
-            ])
-          ])
-        ])
-      ])
-    ]
-  )
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
@@ -6322,253 +5926,58 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "div",
-      { staticClass: "section column is-4", attrs: { id: "abi" } },
+      "section",
+      {
+        staticClass: "section team-info hero is-fullheight is-dark",
+        attrs: { id: "team" }
+      },
       [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image" }, [
-              _c("img", {
-                attrs: { src: "/dist/img/team/abi.jpg", alt: "Abi Clarke" }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("div", { staticClass: "media" }, [
-              _c("div", { staticClass: "media-content" }, [
-                _c("p", { staticClass: "title is-4 has-text-white" }, [
-                  _vm._v("Abi Clarke")
+        _c("div", { staticClass: "columns is-multiline" }, [
+          _c(
+            "div",
+            { staticClass: "section column is-4", attrs: { id: "abi" } },
+            [
+              _c("div", { staticClass: "card" }, [
+                _c("div", { staticClass: "card-image" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/dist/img/team/abi.jpg",
+                        alt: "Abi Clarke"
+                      }
+                    })
+                  ])
                 ]),
                 _vm._v(" "),
-                _c("p", { staticClass: "subtitle has-text-white" }, [
-                  _vm._v("Stylist")
+                _c("div", { staticClass: "card-content" }, [
+                  _c("div", { staticClass: "media" }, [
+                    _c("div", { staticClass: "media-content" }, [
+                      _c("p", { staticClass: "title is-4 has-text-white" }, [
+                        _vm._v("Abi Clarke")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "subtitle has-text-white" }, [
+                        _vm._v("Stylist")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "content is-size-5-mobile has-text-white" },
+                    [
+                      _c("p", { staticClass: "price" }, [
+                        _vm._v("Average Cut & Colour price £90")
+                      ])
+                    ]
+                  )
                 ])
               ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "content is-size-5-mobile has-text-white" },
-              [
-                _c("p", { staticClass: "price" }, [
-                  _vm._v("Average Cut & Colour price £90")
-                ])
-              ]
-            )
-          ])
+            ]
+          )
         ])
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-content" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/abi.jpg", alt: "Abi Clarke" }
-        })
-      ]),
-      _vm._v("\n                This is Abi's Modal\n            ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-image" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/david.jpg", alt: "David Randles" }
-        })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("div", { staticClass: "media" }, [
-        _c("div", { staticClass: "media-content" }, [
-          _c("p", { staticClass: "title is-4 has-text-white" }, [
-            _vm._v("David Randles")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "subtitle has-text-white" }, [
-            _vm._v("Stylist")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "content is-size-5-mobile has-text-white" }, [
-        _c("p", { staticClass: "price" }, [
-          _vm._v("Average Cut & Colour price £90")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-content" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/david.jpg", alt: "David Randles" }
-        })
-      ]),
-      _vm._v("\n                This is David's Modal\n            ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-image" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/lauren_t.jpg", alt: "Lauren Thompson" }
-        })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("div", { staticClass: "media" }, [
-        _c("div", { staticClass: "media-content" }, [
-          _c("p", { staticClass: "title is-4 has-text-white" }, [
-            _vm._v("Lauren Thompson")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "subtitle has-text-white" }, [
-            _vm._v("Stylist")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "content is-size-5-mobile has-text-white" }, [
-        _c("p", { staticClass: "price" }, [
-          _vm._v("Average Cut & Colour price £90")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-content" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/lauren_t.jpg", alt: "Lauren Thompson" }
-        })
-      ]),
-      _vm._v("\n                This is Lauren T's Modal\n            ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-image" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/lauren_w.jpg", alt: "Lauren Watson" }
-        })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("div", { staticClass: "media" }, [
-        _c("div", { staticClass: "media-content" }, [
-          _c("p", { staticClass: "title is-4 has-text-white" }, [
-            _vm._v("Lauren Watson")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "subtitle has-text-white" }, [
-            _vm._v("Graduate Stylist")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "content is-size-5-mobile has-text-white" }, [
-        _c("p", { staticClass: "price" }, [
-          _vm._v("Average Cut & Colour price £30")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-content" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/lauren_w.jpg", alt: "Lauren Watson" }
-        })
-      ]),
-      _vm._v("\n                This is Lauren W's Modal\n            ")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-image" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/lucy.jpg", alt: "Lucy Watson" }
-        })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-content" }, [
-      _c("div", { staticClass: "media" }, [
-        _c("div", { staticClass: "media-content" }, [
-          _c("p", { staticClass: "title is-4 has-text-white" }, [
-            _vm._v("Lucy Watson")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "subtitle has-text-white" }, [
-            _vm._v("Graduate Stylist")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "content is-size-5-mobile has-text-white" }, [
-        _c("p", { staticClass: "price" }, [
-          _vm._v("Average Cut & Colour price £30")
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-content" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: "/dist/img/team/lucy.jpg", alt: "Lucy Watson" }
-        })
-      ]),
-      _vm._v("\n                This is Lucy's Modal\n            ")
-    ])
   }
 ]
 render._withStripped = true
