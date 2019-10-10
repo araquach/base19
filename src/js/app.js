@@ -1,26 +1,39 @@
 import Vue from "vue"
 import smoothscroll from 'smoothscroll-polyfill'
-import Cookie from './components/Cookie.vue'
-import Navbar from './components/Navbar.vue'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import Team from './components/Team.vue'
-import Joinus from './components/Joinus.vue'
-import Blog from './components/Blog.vue'
-import Model from './components/Model.vue'
-import Contact from './components/Contact.vue'
+import Main from './components/Main'
+import Cookie from './components/Cookie'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import AboutInfo from './components/AboutInfo'
+import Team from './components/Team'
+import TeamInfo from './components/TeamInfo'
+import Joinus from './components/Joinus'
+import JoinusInfo from './components/JoinusInfo'
+import Blog from './components/Blog'
+import BlogInfo from './components/BlogInfo'
+import Model from './components/Model'
+import ModelInfo from './components/ModelInfo'
+import Contact from './components/Contact'
+import ContactInfo from './components/ContactInfo'
 // test component
-import Test from './components/Test.vue'
+import Test from './components/Test'
 
-Vue.component('cookie-component', Cookie)
+Vue.component('main-component', Main)
 Vue.component('navbar-component', Navbar)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
+Vue.component('about-info-component', AboutInfo)
 Vue.component('team-component', Team)
+Vue.component('team-info-component', TeamInfo)
 Vue.component('joinus-component', Joinus)
+Vue.component('joinus-info-component', JoinusInfo)
 Vue.component('blog-component', Blog)
+Vue.component('blog-info-component', BlogInfo)
 Vue.component('model-component', Model)
+Vue.component('model-info-component', ModelInfo)
 Vue.component('contact-component', Contact)
+Vue.component('contact-info-component', ContactInfo)
 // test component
 Vue.component('test-component', Test)
 
