@@ -1,11 +1,24 @@
 <template>
-    <section id="team" class="team hero is-fullheight is-dark">
-        <div class="hero-body show columns">
-            <div class="section column is-5">
-                <h1 class="title">Meet the Base Team</h1>
-                <h2 class="subtitle">from Junior Stylists through to experienced graduates</h2>
-                <button class="button">Find out more</button>
-            </div>
-        </div>
-    </section>
+    <div>
+        <team-front-component v-if="!showTeamInfo"></team-front-component>
+        <team-info-component v-if="showTeamInfo"></team-info-component>
+    </div>
 </template>
+
+<script>
+    import TeamFront from './TeamFront'
+    import TeamInfo from './TeamInfo'
+
+    export default {
+        components: {
+            teamFrontComponent: TeamFront,
+            teamInfoComponent: TeamInfo
+        },
+
+        data() {
+            return {
+                showTeamInfo: true
+            }
+        }
+    }
+</script>
