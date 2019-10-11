@@ -1901,11 +1901,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 
 /***/ }),
 
@@ -4090,8 +4085,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "section",
-    { staticClass: "about hero is-fullheight is-dark", attrs: { id: "about" } },
+    "div",
     [
       !_vm.showAboutInfo ? _c("about-front-component") : _vm._e(),
       _vm._v(" "),
@@ -4129,17 +4123,28 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "hero-body show columns" }, [
-      _c("div", { staticClass: "section column is-5" }, [
-        _c("h1", { staticClass: "title" }, [_vm._v("It's All about the Base")]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "subtitle" }, [
-          _vm._v("An amazing creative space for upcoming hair stylists")
-        ]),
-        _vm._v(" "),
-        _c("button", { staticClass: "button" }, [_vm._v("Find out more")])
-      ])
-    ])
+    return _c(
+      "section",
+      {
+        staticClass: "about hero is-fullheight is-dark",
+        attrs: { id: "about" }
+      },
+      [
+        _c("div", { staticClass: "hero-body show columns" }, [
+          _c("div", { staticClass: "section column is-5" }, [
+            _c("h1", { staticClass: "title" }, [
+              _vm._v("It's All about the Base")
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle" }, [
+              _vm._v("An amazing creative space for upcoming hair stylists")
+            ]),
+            _vm._v(" "),
+            _c("button", { staticClass: "button" }, [_vm._v("Find out more")])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -4310,37 +4315,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "section",
+      { staticClass: "blog hero is-fullheight is-dark", attrs: { id: "blog" } },
+      [_c("blog-front-component"), _vm._v(" "), _c("blog-info-component")],
+      1
+    )
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "section",
-        {
-          staticClass: "blog hero is-fullheight is-dark",
-          attrs: { id: "blog" }
-        },
-        [
-          _c("div", { staticClass: "hero-body show columns" }, [
-            _c("div", { staticClass: "section column is-5" }, [
-              _c("h1", { staticClass: "title" }, [_vm._v("Blog")]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle" }, [
-                _vm._v("All the latest new from Base")
-              ]),
-              _vm._v(" "),
-              _c("button", { staticClass: "button" }, [_vm._v("Blog Posts")])
-            ])
-          ])
-        ]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

@@ -1,8 +1,8 @@
 <template>
-    <section id="about" class="about hero is-fullheight is-dark">
+    <div>
         <about-front-component v-if="!showAboutInfo"></about-front-component>
         <about-info-component v-if="showAboutInfo"></about-info-component>
-    </section>
+    </div>
 </template>
 
 <script>
