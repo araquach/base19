@@ -2583,7 +2583,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     axios.get('/api/team').then(function (response) {
-      return _this.TeamMembers = response.data;
+      return _this.teamMembers = response.data;
     })["catch"](function (error) {
       console.log(error);
     });
@@ -6317,34 +6317,25 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass: "section team-info hero is-fullheight is-dark",
-        attrs: { id: "team" }
-      },
-      [
-        _c("div", { staticClass: "columns is-multiline" }, [
-          _c(
+  return _c(
+    "section",
+    {
+      staticClass: "section team-info hero is-fullheight is-dark",
+      attrs: { id: "team" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "columns is-multiline" },
+        _vm._l(_vm.teamMembers, function(tm) {
+          return _c(
             "div",
-            { staticClass: "section column is-4", attrs: { id: "abi" } },
+            { staticClass: "section column is-4", attrs: { id: tm.FirstName } },
             [
               _c("div", { staticClass: "card" }, [
                 _c("div", { staticClass: "card-image" }, [
                   _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/abi.jpg",
-                        alt: "Abi Clarke"
-                      }
-                    })
+                    _c("img", { attrs: { src: tm.Image, alt: tm.FirstName } })
                   ])
                 ]),
                 _vm._v(" "),
@@ -6352,11 +6343,11 @@ var staticRenderFns = [
                   _c("div", { staticClass: "media" }, [
                     _c("div", { staticClass: "media-content" }, [
                       _c("p", { staticClass: "title is-4 has-text-white" }, [
-                        _vm._v("Abi Clarke")
+                        _vm._v(_vm._s(tm.FirstName) + " " + _vm._s(tm.LastName))
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "subtitle has-text-white" }, [
-                        _vm._v("Stylist")
+                        _vm._v(_vm._s(tm.Level))
                       ])
                     ])
                   ]),
@@ -6366,7 +6357,9 @@ var staticRenderFns = [
                     { staticClass: "content is-size-5-mobile has-text-white" },
                     [
                       _c("p", { staticClass: "price" }, [
-                        _vm._v("Average Cut & Colour price £90")
+                        _vm._v(
+                          "Average Cut & Colour price £" + _vm._s(tm.Price)
+                        )
                       ])
                     ]
                   )
@@ -6374,11 +6367,13 @@ var staticRenderFns = [
               ])
             ]
           )
-        ])
-      ]
-    )
-  }
-]
+        }),
+        0
+      )
+    ]
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
