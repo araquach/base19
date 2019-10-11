@@ -22,6 +22,7 @@
                 </div>
             </div>
         </div>
+        <team-ind-component></team-ind-component>
     </section>
 </template>
 
