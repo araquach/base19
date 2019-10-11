@@ -6,32 +6,23 @@ import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Team from './components/Team'
-import TeamInfo from './components/TeamInfo'
 import Joinus from './components/Joinus'
-import JoinusInfo from './components/JoinusInfo'
 import Blog from './components/Blog'
-import BlogInfo from './components/BlogInfo'
 import Model from './components/Model'
-import ModelInfo from './components/ModelInfo'
 import Contact from './components/Contact'
-import ContactInfo from './components/ContactInfo'
 // test component
 import Test from './components/Test'
 
 Vue.component('main-component', Main)
 Vue.component('navbar-component', Navbar)
+Vue.component('cookie-component', Cookie)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
-Vue.component('team-info-component', TeamInfo)
 Vue.component('joinus-component', Joinus)
-Vue.component('joinus-info-component', JoinusInfo)
 Vue.component('blog-component', Blog)
-Vue.component('blog-info-component', BlogInfo)
 Vue.component('model-component', Model)
-Vue.component('model-info-component', ModelInfo)
 Vue.component('contact-component', Contact)
-Vue.component('contact-info-component', ContactInfo)
 // test component
 Vue.component('test-component', Test)
 

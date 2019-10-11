@@ -4,6 +4,8 @@
 
         <about-component></about-component>
 
+        <blog-component></blog-component>
+
         <team-component v-if="!showTeamInfo"></team-component>
         <team-info-component v-if="showTeamInfo"></team-info-component>
 
