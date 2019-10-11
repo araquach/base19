@@ -26,12 +26,24 @@
 </template>
 
 <script>
+    import TeamInd from './TeamInd'
+
     export default {
+        components: {
+            teamFrontComponent: TeamInd
+        },
 
         data() {
             return {
+                    teamMembers: []
+                }
+        },
 
-            }
+        mounted() {
+            axios.get('/api/team').then(response => this.TeamMembers = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
         }
     }
 </script>
