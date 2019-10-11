@@ -18,8 +18,7 @@
         <model-component v-if="!showModelInfo"></model-component>
         <model-info-component v-if="showModelInfo"></model-info-component>
 
-        <contact-component v-if="!showContactInfo"></contact-component>
-        <contact-info-component v-if="showContactInfo"></contact-info-component>
+        <contact-component></contact-component>
     </div>
 </template>
 
@@ -30,8 +29,7 @@
                 showTeamInfo: false,
                 showJoinusInfo: false,
                 showBlogInfo: false,
-                showModelInfo: false,
-                showContactInfo: false
+                showModelInfo: false
             }
         }
     }
