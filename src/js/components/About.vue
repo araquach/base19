@@ -1,17 +1,24 @@
 <template>
-    <div>
-        <section id="about" class="about hero is-fullheight is-dark">
-            <div class="hero-body show columns">
-                <div class="section column is-5">
-                    <h1 class="title">It's All about the Base</h1>
-                    <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
-                    <button class="button">Find out more</button>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section id="about" class="about hero is-fullheight is-dark">
+        <about-front-component v-if="!showAboutInfo"></about-front-component>
+        <about-info-component v-if="showAboutInfo"></about-info-component>
+    </section>
 </template>
 
 <script>
+    import AboutFront from './AboutFront'
+    import AboutInfo from './AboutInfo'
 
+    export default {
+        components: {
+            aboutFrontComponent: AboutFront,
+            aboutInfoComponent: AboutInfo
+        },
+
+        data() {
+            return {
+                showAboutInfo: false
+            }
+        }
+    }
 </script>

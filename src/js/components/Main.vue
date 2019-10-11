@@ -2,8 +2,7 @@
     <div>
         <home-component></home-component>
 
-        <about-component v-if="!showAboutInfo"></about-component>
-        <about-info-component v-if="showAboutInfo"></about-info-component>
+        <about-component></about-component>
 
         <team-component v-if="!showTeamInfo"></team-component>
         <team-info-component v-if="showTeamInfo"></team-info-component>
@@ -26,7 +25,6 @@
     export default {
         data() {
             return {
-                showAboutInfo: false,
                 showTeamInfo: false,
                 showJoinusInfo: false,
                 showBlogInfo: false,
