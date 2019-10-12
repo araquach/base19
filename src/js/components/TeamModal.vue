@@ -1,5 +1,5 @@
 <template>
-    <div class="modal" :class="{ 'is-active': isShowModal }">
+    <div class="modal isShowModal">
         <div class="modal-background"></div>
         <div class="modal-content">
             <figure class="image">
@@ -11,12 +11,13 @@
 </template>
 
 <script>
+
     export default {
+
         data() {
             return {
-                isShowModal: true
+                showModalView: true
             }
         }
     }
-
 </script>

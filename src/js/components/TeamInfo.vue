@@ -1,7 +1,7 @@
 <template>
     <section id="team" class="section team-info hero is-fullheight is-dark">
         <div class="columns is-multiline">
-            <div v-for="tm in teamMembers"  :id="tm.FirstName" class="section column is-4">
+            <div v-for="tm in teamMembers" @click="showModal = true"  :id="tm.FirstName" class="section column is-4">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image">
@@ -20,23 +20,24 @@
                         </div>
                     </div>
                 </div>
+                <team-modal-component v-if="showModal"></team-modal-component>
             </div>
         </div>
-        <team-ind-component></team-ind-component>
     </section>
 </template>
 
 <script>
-    import TeamInd from './TeamInd'
+    import TeamModal from './TeamModal'
 
     export default {
         components: {
-            teamFrontComponent: TeamInd
+            teamModalComponent: TeamModal
         },
 
         data() {
             return {
-                    teamMembers: []
+                    teamMembers: [],
+                    showModal: false
                 }
         },
 
