@@ -4,8 +4,18 @@
             <div class="section column is-5">
                 <h1 class="title">Meet the Base Team</h1>
                 <h2 class="subtitle">from Junior Stylists through to experienced graduates</h2>
-                <button class="button">Find out more</button>
+                <button @click="switchComponent" class="button">More info</button>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        methods: {
+            switchComponent() {
+                this.$emit('switchComponent')
+            }
+        }
+    }
+</script>

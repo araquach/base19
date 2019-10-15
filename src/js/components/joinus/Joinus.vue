@@ -1,7 +1,6 @@
 <template>
     <div>
-        <joinus-front-component v-if="!showJoinusInfo"></joinus-front-component>
-        <joinus-info-component v-if="showJoinusInfo"></joinus-info-component>
+        <component :is="selectedComponent" @switchComponent="switchComponent"/>
     </div>
 </template>
 
@@ -17,7 +16,17 @@
 
         data() {
             return {
-                showJoinusInfo: false
+                selectedComponent: 'JoinusFrontComponent'
+            }
+        },
+
+        methods: {
+            switchComponent() {
+                if (this.selectedComponent == 'JoinusInfoComponent') {
+                    this.selectedComponent = 'JoinusFrontComponent'
+                } else {
+                    this.selectedComponent = 'JoinusInfoComponent'
+                }
             }
         }
     }

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <model-front-component v-if="!showModelInfo"></model-front-component>
-        <model-info-component v-if="showModelInfo"></model-info-component>
+        <component :is="selectedComponent" @switchComponent="switchComponent"/>
     </div>
 </template>
 
@@ -17,7 +16,17 @@
 
         data() {
             return {
-                showModelInfo: false
+                selectedComponent: 'ModelFrontComponent'
+            }
+        },
+
+        methods: {
+            switchComponent() {
+                if (this.selectedComponent == 'ModelInfoComponent') {
+                    this.selectedComponent = 'ModelFrontComponent'
+                } else {
+                    this.selectedComponent = 'ModelInfoComponent'
+                }
             }
         }
     }

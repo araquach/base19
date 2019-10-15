@@ -5,8 +5,18 @@
                 <h1 class="title">Join Base </h1>
                 <h2 class="subtitle">Could you be the next big thing in hairdressing</h2>
                 <p class="is-size-6">If you're just starting out in hairdressing or want to build on your existing skills then Base Hair Academy could be for you!</p>
-                <button class="button">Find out more</button>
+                <button @click="switchComponent" class="button">Find out more</button>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        methods: {
+            switchComponent() {
+                this.$emit('switchComponent')
+            }
+        }
+    }
+</script>

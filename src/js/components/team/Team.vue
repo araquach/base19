@@ -1,7 +1,6 @@
 <template>
     <div>
-        <team-front-component v-if="!showTeamInfo"></team-front-component>
-        <team-info-component v-if="showTeamInfo"></team-info-component>
+        <component :is="selectedComponent" @switchComponent="switchComponent"/>
     </div>
 </template>
 
@@ -17,7 +16,17 @@
 
         data() {
             return {
-                showTeamInfo: false
+                selectedComponent: 'TeamFrontComponent'
+            }
+        },
+
+        methods: {
+            switchComponent() {
+                if (this.selectedComponent == 'TeamInfoComponent') {
+                    this.selectedComponent = 'TeamFrontComponent'
+                } else {
+                    this.selectedComponent = 'TeamInfoComponent'
+                }
             }
         }
     }

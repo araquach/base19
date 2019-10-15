@@ -66,7 +66,7 @@
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    <button class="button">Show Less</button>
+                    <button @click="switchComponent" class="button">Show Less</button>
                 </div>
             </div>
         </div>
@@ -86,6 +86,10 @@
         },
 
         methods:{
+            switchComponent() {
+                this.$emit('switchComponent')
+            },
+
             checkForm: function (e) {
                 this.errors = [];
 

@@ -23,6 +23,13 @@
                 <team-modal-component v-if="showModal"></team-modal-component>
             </div>
         </div>
+        <div class="level">
+            <div class="level-left">
+                <div class="level-item">
+                    <button @click="switchComponent" class="button">Go Back</button>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -39,6 +46,12 @@
                     teamMembers: [],
                     showModal: false
                 }
+        },
+
+        methods: {
+            switchComponent() {
+                this.$emit('switchComponent')
+            }
         },
 
         mounted() {
