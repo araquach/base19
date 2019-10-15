@@ -1,19 +1,18 @@
 import Vue from "vue"
 import smoothscroll from 'smoothscroll-polyfill'
-import Main from './components/Main'
+import App from './App.vue'
 import Cookie from './components/Cookie'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Team from './components/Team'
-import Joinus from './components/Joinus'
-import Blog from './components/Blog'
-import Model from './components/Model'
-import Contact from './components/Contact'
+import Navbar from './components/layout/Navbar'
+import Home from './components/layout/Home'
+import About from './components/about/About'
+import Team from './components/team/Team'
+import Joinus from './components/joinus/Joinus'
+import Blog from './components/blog/Blog'
+import Model from './components/model/Model'
+import Contact from './components/contact/Contact'
 // test component
 import Test from './components/Test'
 
-Vue.component('main-component', Main)
 Vue.component('navbar-component', Navbar)
 Vue.component('cookie-component', Cookie)
 Vue.component('home-component', Home)
@@ -29,9 +28,10 @@ Vue.component('test-component', Test)
 window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-const app = new Vue({
-    el: '#app'
-});
+new Vue({
+    el: '#app',
+    render: h => h(App)
+})
 
 // kick off the polyfill!
 smoothscroll.polyfill();

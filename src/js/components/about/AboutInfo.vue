@@ -45,9 +45,19 @@
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    <button class="button">Show Less</button>
+                    <button @click="switchComponent" class="button">Go Back</button>
                 </div>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        methods: {
+            switchComponent() {
+                this.$emit('switchComponent')
+            }
+        }
+    }
+</script>

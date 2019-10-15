@@ -6,13 +6,13 @@
 </template>
 
 <script>
-    import ModelFront from './ModelFront'
-    import ModelInfo from './ModelInfo'
+    import ModelFrontComponent from './ModelFront'
+    import ModelInfoComponent from './ModelInfo'
 
     export default {
         components: {
-            modelFrontComponent: ModelFront,
-            modelInfoComponent: ModelInfo
+            ModelFrontComponent,
+            ModelInfoComponent
         },
 
         data() {

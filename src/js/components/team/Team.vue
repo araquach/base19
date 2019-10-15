@@ -6,18 +6,18 @@
 </template>
 
 <script>
-    import TeamFront from './TeamFront'
-    import TeamInfo from './TeamInfo'
+    import TeamFrontComponent from './TeamFront'
+    import TeamInfoComponent from './TeamInfo'
 
     export default {
         components: {
-            teamFrontComponent: TeamFront,
-            teamInfoComponent: TeamInfo
+            TeamFrontComponent,
+            TeamInfoComponent
         },
 
         data() {
             return {
-                showTeamInfo: true
+                showTeamInfo: false
             }
         }
     }

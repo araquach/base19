@@ -6,13 +6,13 @@
 </template>
 
 <script>
-    import JoinusFront from './JoinusFront'
-    import JoinusInfo from './JoinusInfo'
+    import JoinusFrontComponent from './JoinusFront'
+    import JoinusInfoComponent from './JoinusInfo'
 
     export default {
         components: {
-            joinusFrontComponent: JoinusFront,
-            joinusInfoComponent: JoinusInfo
+            JoinusFrontComponent,
+            JoinusInfoComponent
         },
 
         data() {
