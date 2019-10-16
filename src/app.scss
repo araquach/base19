@@ -158,18 +158,12 @@ section.section {
   background-size: cover;
 }
 
-/* Transition Styling */
+/* transition styling */
 
-.fade-enter-active {
-  transition: opacity .6s;
+.fade-enter, .fade-leave-active {
+   opacity: 0;
 }
 
-.fade-leave-active {
-  transition: none;
-}
-
-/* .fade-leave-active in <2.1.8 */
-.fade-enter,
-.fade-leave-to {
-  opacity: 0
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .15s;
 }

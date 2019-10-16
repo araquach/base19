@@ -2027,6 +2027,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2167,6 +2169,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _BlogFront__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BlogFront */ "./src/js/components/blog/BlogFront.vue");
 /* harmony import */ var _BlogInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BlogInfo */ "./src/js/components/blog/BlogInfo.vue");
+//
+//
 //
 //
 //
@@ -2316,6 +2320,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ContactFront__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactFront */ "./src/js/components/contact/ContactFront.vue");
 /* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactInfo */ "./src/js/components/contact/ContactInfo.vue");
+//
+//
 //
 //
 //
@@ -2530,6 +2536,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2728,6 +2736,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ModelFront__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ModelFront */ "./src/js/components/model/ModelFront.vue");
 /* harmony import */ var _ModelInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModelInfo */ "./src/js/components/model/ModelInfo.vue");
+//
+//
 //
 //
 //
@@ -2938,6 +2948,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TeamFront__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamFront */ "./src/js/components/team/TeamFront.vue");
 /* harmony import */ var _TeamInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamInfo */ "./src/js/components/team/TeamInfo.vue");
+//
+//
 //
 //
 //
@@ -5003,10 +5015,17 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(_vm.selectedComponent, {
-        tag: "component",
-        on: { switchComponent: _vm.switchComponent }
-      })
+      _c(
+        "transition",
+        { attrs: { name: "fade", mode: "out-in" } },
+        [
+          _c(_vm.selectedComponent, {
+            tag: "component",
+            on: { switchComponent: _vm.switchComponent }
+          })
+        ],
+        1
+      )
     ],
     1
   )
@@ -5235,10 +5254,17 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(_vm.selectedComponent, {
-        tag: "component",
-        on: { switchComponent: _vm.switchComponent }
-      })
+      _c(
+        "transition",
+        { attrs: { name: "fade", mode: "out-in" } },
+        [
+          _c(_vm.selectedComponent, {
+            tag: "component",
+            on: { switchComponent: _vm.switchComponent }
+          })
+        ],
+        1
+      )
     ],
     1
   )
@@ -5444,10 +5470,17 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(_vm.selectedComponent, {
-        tag: "component",
-        on: { switchComponent: _vm.switchComponent }
-      })
+      _c(
+        "transition",
+        { attrs: { name: "fade", mode: "out-in" } },
+        [
+          _c(_vm.selectedComponent, {
+            tag: "component",
+            on: { switchComponent: _vm.switchComponent }
+          })
+        ],
+        1
+      )
     ],
     1
   )
@@ -5803,10 +5836,17 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(_vm.selectedComponent, {
-        tag: "component",
-        on: { switchComponent: _vm.switchComponent }
-      })
+      _c(
+        "transition",
+        { attrs: { name: "fade", mode: "out-in" } },
+        [
+          _c(_vm.selectedComponent, {
+            tag: "component",
+            on: { switchComponent: _vm.switchComponent }
+          })
+        ],
+        1
+      )
     ],
     1
   )
@@ -6413,10 +6453,17 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(_vm.selectedComponent, {
-        tag: "component",
-        on: { switchComponent: _vm.switchComponent }
-      })
+      _c(
+        "transition",
+        { attrs: { name: "fade", mode: "out-in" } },
+        [
+          _c(_vm.selectedComponent, {
+            tag: "component",
+            on: { switchComponent: _vm.switchComponent }
+          })
+        ],
+        1
+      )
     ],
     1
   )
@@ -6798,10 +6845,17 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(_vm.selectedComponent, {
-        tag: "component",
-        on: { switchComponent: _vm.switchComponent }
-      })
+      _c(
+        "transition",
+        { attrs: { name: "fade", mode: "out-in" } },
+        [
+          _c(_vm.selectedComponent, {
+            tag: "component",
+            on: { switchComponent: _vm.switchComponent }
+          })
+        ],
+        1
+      )
     ],
     1
   )
@@ -20945,8 +20999,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/imac-work/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/imac-work/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

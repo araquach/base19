@@ -1,6 +1,8 @@
 <template>
     <div>
-        <component :is="selectedComponent" @switchComponent="switchComponent"/>
+        <transition name="fade" mode="out-in">
+            <component :is="selectedComponent" @switchComponent="switchComponent"/>
+        </transition>
     </div>
 </template>
 
