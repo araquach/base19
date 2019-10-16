@@ -17,7 +17,7 @@
                     <img src="https://via.placeholder.com/1000x600" alt="Map">
                 </figure>
                 <br>
-                <div class="is-size-4">
+                <div class="is-size-5">
                     <h3 class="title is-4">Opening Hours</h3>
                     <p>Monday: Closed<br>
                         Tuesday: 9am - 6pm<br>

@@ -34,7 +34,7 @@
 </template>
 
 <script>
-    import TeamModal from './TeamModal'
+    import TeamModal from './TeamMember'
 
     export default {
         components: {

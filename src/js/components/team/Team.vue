@@ -8,12 +8,12 @@
 
 <script>
     import TeamFrontComponent from './TeamFront'
-    import TeamInfoComponent from './TeamInfo'
+    import TeamAllComponent from './TeamAll'
 
     export default {
         components: {
             TeamFrontComponent,
-            TeamInfoComponent
+            TeamAllComponent
         },
 
         data() {
@@ -24,10 +24,10 @@
 
         methods: {
             switchComponent() {
-                if (this.selectedComponent == 'TeamInfoComponent') {
+                if (this.selectedComponent == 'TeamAllComponent') {
                     this.selectedComponent = 'TeamFrontComponent'
                 } else {
-                    this.selectedComponent = 'TeamInfoComponent'
+                    this.selectedComponent = 'TeamAllComponent'
                 }
             }
         }

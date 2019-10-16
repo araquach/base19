@@ -14,6 +14,8 @@
 
     export default {
 
+        props: [],
+
         data() {
             return {
                 showModalView: true
