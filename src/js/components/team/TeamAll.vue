@@ -1,57 +1,26 @@
 <template>
-    <section id="team" class="section team-info hero is-fullheight is-dark">
-        <div class="columns is-multiline">
-            <div v-for="tm in teamMembers" @click="showModal = true"  :id="tm.FirstName" class="section column is-4">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image">
-                            <img :src="tm.Image" :alt="tm.FirstName">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4 has-text-white">{{tm.FirstName}} {{tm.LastName}}</p>
-                                <p class="subtitle has-text-white">{{tm.Level}}</p>
-                            </div>
-                        </div>
-                        <div class="content is-size-5-mobile has-text-white">
-                            <p class="price">Average Cut &amp; Colour price &pound;{{tm.Price}}</p>
-                        </div>
-                    </div>
-                </div>
-                <team-modal-component v-if="showModal"></team-modal-component>
-            </div>
-        </div>
-        <div class="level">
-            <div class="level-left">
-                <div class="level-item">
-                    <button @click="switchComponent" class="button">Go Back</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div>
+        <TeamIndComponent
+                v-for="(tm, index) in teamMembers"
+                :firstName=tm.firstName
+                :lastName=tm.lastName
+                :key="index"
+        />
+    </div>
 </template>
 
 <script>
-    import TeamModal from './TeamMember'
+    import TeamIndComponent from './TeamInd'
 
     export default {
         components: {
-            teamModalComponent: TeamModal
+            TeamIndComponent: TeamIndComponent
         },
 
         data() {
             return {
                     teamMembers: [],
-                    showModal: false
                 }
-        },
-
-        methods: {
-            switchComponent() {
-                this.$emit('switchComponent')
-            }
         },
 
         mounted() {

@@ -3,7 +3,6 @@
         <navbar-component/>
         <home-component/>
         <about-component/>
-        <blog-component/>
         <team-component/>
         <joinus-component/>
         <blog-component/>
