@@ -1,12 +1,22 @@
 <template>
-    <div>
-        <TeamIndComponent
-                v-for="(tm, index) in teamMembers"
-                :firstName=tm.firstName
-                :lastName=tm.lastName
-                :key="index"
-        />
-    </div>
+    <section id="team" class="section team-info hero is-fullheight is-dark">
+        <div class="columns is-multiline">
+            <TeamIndComponent
+                    v-for="(tm, index) in teamMembers"
+                    :firstName=tm.FirstName
+                    :lastName=tm.LastName
+                    :image=tm.Image
+                    :level=tm.Level
+                    :para1=tm.Para1
+                    :para2=tm.Para2
+                    :para3=tm.Para3
+                    :price=tm.Price
+                    :product=tm.Product
+                    :style=tm.favStyle
+                    :key="index"
+            />
+        </div>
+    </section>
 </template>
 
 <script>
