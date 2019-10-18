@@ -3117,7 +3117,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['firstName', 'lastName', 'image', 'level', 'para1', 'para2', 'para3', 'price', 'product', 'style'],
+  props: ['firstName', 'lastName', 'image', 'level', 'para1', 'para2', 'para3', 'price', 'product', 'favStyle'],
   data: function data() {
     return {};
   }
@@ -6901,7 +6901,6 @@ var render = function() {
         _vm._l(_vm.teamMembers, function(tm, index) {
           return _c("TeamIndComponent", {
             key: index,
-            style: tm.favStyle,
             attrs: {
               firstName: tm.FirstName,
               lastName: tm.LastName,
@@ -6911,7 +6910,8 @@ var render = function() {
               para2: tm.Para2,
               para3: tm.Para3,
               price: tm.Price,
-              product: tm.Product
+              product: tm.Product,
+              favStyle: tm.Style
             }
           })
         }),
@@ -20972,8 +20972,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

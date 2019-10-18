@@ -52,7 +52,7 @@
             'para3',
             'price',
             'product',
-            'style'
+            'favStyle'
         ],
 
         data() {

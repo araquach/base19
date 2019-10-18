@@ -12,7 +12,7 @@
                     :para3=tm.Para3
                     :price=tm.Price
                     :product=tm.Product
-                    :style=tm.favStyle
+                    :favStyle=tm.Style
                     :key="index"
             />
         </div>
