@@ -3117,7 +3117,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['firstName', 'lastName', 'image', 'level', 'para1', 'para2', 'para3', 'price', 'product', 'favStyle'],
+  props: ['firstName', 'lastName', 'image', 'level', 'para1', 'para2', 'para3', 'price', 'product', 'style'],
   data: function data() {
     return {};
   }
@@ -6891,7 +6891,7 @@ var render = function() {
   return _c(
     "section",
     {
-      staticClass: "section team-info hero is-fullheight is-dark",
+      staticClass: "section team-info is-fullheight is-dark",
       attrs: { id: "team" }
     },
     [
@@ -6986,75 +6986,45 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "div",
-      { staticClass: "section column is-4", attrs: { id: _vm.firstName } },
-      [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image" }, [
-              _c("img", { attrs: { src: _vm.image, alt: _vm.firstName } })
+  return _c(
+    "div",
+    { staticClass: "section column is-4", attrs: { id: _vm.firstName } },
+    [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-image" }, [
+          _c("figure", { staticClass: "image" }, [
+            _c("img", { attrs: { src: _vm.image, alt: _vm.firstName } })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-content" }, [
+          _c("div", { staticClass: "media" }, [
+            _c("div", { staticClass: "media-content" }, [
+              _c("p", { staticClass: "title is-4 has-text-white" }, [
+                _vm._v(_vm._s(_vm.firstName) + " " + _vm._s(_vm.lastName))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "subtitle has-text-white" }, [
+                _vm._v(_vm._s(_vm.level))
+              ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("div", { staticClass: "media" }, [
-              _c("div", { staticClass: "media-content" }, [
-                _c("p", { staticClass: "title is-4 has-text-white" }, [
-                  _vm._v(_vm._s(_vm.firstName) + " " + _vm._s(_vm.lastName))
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "subtitle has-text-white" }, [
-                  _vm._v(_vm._s(_vm.level))
-                ])
+          _c(
+            "div",
+            { staticClass: "content is-size-5-mobile has-text-white" },
+            [
+              _c("p", { staticClass: "price" }, [
+                _vm._v("Average Cut & Colour price £" + _vm._s(_vm.price))
               ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "content is-size-5-mobile has-text-white" },
-              [
-                _c("p", { staticClass: "price" }, [
-                  _vm._v("Average Cut & Colour price £" + _vm._s(_vm.price))
-                ])
-              ]
-            )
-          ])
+            ]
+          )
         ])
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "modal isShowModal" }, [
-      _c("div", { staticClass: "modal-background" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "modal-content" }, [
-        _c("figure", { staticClass: "image" }, [
-          _c("img", { attrs: { src: _vm.image, alt: _vm.firstname } })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("button", {
-        staticClass: "modal-close is-large",
-        attrs: { "aria-label": "close" }
-      })
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-left" }, [
-        _c("div", { staticClass: "level-item" })
       ])
-    ])
-  }
-]
+    ]
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

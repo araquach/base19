@@ -1,5 +1,5 @@
 <template>
-    <div>
+    
         <div :id="firstName" class="section column is-4">
             <div class="card">
                 <div class="card-image">
@@ -20,24 +20,24 @@
                 </div>
             </div>
         </div>
-        <div class="level">
-            <div class="level-left">
-                <div class="level-item">
+<!--        <div class="level">-->
+<!--            <div class="level-left">-->
+<!--                <div class="level-item">-->
 
-                </div>
-            </div>
-        </div>
-        <!-- modal-->
-        <div class="modal isShowModal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <figure class="image">
-                    <img :src="image" :alt="firstname">
-                </figure>
-            </div>
-            <button class="modal-close is-large" aria-label="close"></button>
-        </div>
-    </div>
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; modal&ndash;&gt;-->
+<!--        <div class="modal isShowModal">-->
+<!--            <div class="modal-background"></div>-->
+<!--            <div class="modal-content">-->
+<!--                <figure class="image">-->
+<!--                    <img :src="image" :alt="name">-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--            <button class="modal-close is-large" aria-label="close"></button>-->
+<!--        </div>-->
+
 </template>
 
 <script>
@@ -52,7 +52,7 @@
             'para3',
             'price',
             'product',
-            'favStyle'
+            'style'
         ],
 
         data() {
