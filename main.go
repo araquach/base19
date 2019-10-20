@@ -24,6 +24,7 @@ var (
 )
 
 type TeamMember struct {
+	Id			int
 	FirstName 	string
 	LastName 	string
 	Level 		string
