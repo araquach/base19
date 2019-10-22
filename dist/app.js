@@ -18661,7 +18661,14 @@ var staticRenderFns = [
                 "div",
                 { staticClass: "navbar-item has-dropdown is-hoverable" },
                 [
-                  _c("a", { staticClass: "navbar-link" }, [_vm._v("More")]),
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "navbar-link is-hidden-mobile is-hidden-tablet"
+                    },
+                    [_vm._v("More")]
+                  ),
                   _vm._v(" "),
                   _c("div", { staticClass: "navbar-dropdown" }, [
                     _c(

@@ -25,9 +25,31 @@ li {
   background: transparent;
 }
 
+a.navbar-burger {
+  &:hover {
+      color: #FFF;
+    background-color: rgba(10,10,10,.5);
+  }
+  background-color: rgba(10,10,10,.5);
+}
+
 .navbar-menu {
   @include until($desktop) {
     background-color: rgba(10,10,10,.5);
+
+    .navbar-dropdown {
+      a.navbar-item {
+        font-size: 1rem;
+      }
+    }
+
+    a.navbar-item {
+      padding-left: 0.75rem;
+
+      &:hover {
+        color: #FFF;
+      }
+    }
   }
 }
 
