@@ -19156,7 +19156,7 @@ var render = function() {
   return _c(
     "section",
     {
-      staticClass: "section team-info is-fullheight is-dark",
+      staticClass: "section team-info hero is-fullheight is-dark",
       attrs: { id: "team" }
     },
     [
@@ -19367,13 +19367,17 @@ var render = function() {
               _vm._v(_vm._s(_vm.selectedTM.Level))
             ]),
             _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para1))]),
+            _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
+              _vm._v(_vm._s(_vm.selectedTM.Para1))
+            ]),
             _vm._v(" "),
             _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para2))]),
             _vm._v(" "),
             _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para3))]),
             _vm._v(" "),
-            _c("p", [_vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))])
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))
+            ])
           ])
         ])
       ])
