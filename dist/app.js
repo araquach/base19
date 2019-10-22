@@ -3071,8 +3071,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['selectedTM']
 });
@@ -19392,45 +19390,38 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "modal isShowModal" }, [
-    _c("div", { staticClass: "card" }, [
-      _c("div", { staticClass: "card-content columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: _vm.selectedTM.Image,
-                alt: _vm.selectedTM.FirstName
-              }
-            })
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "media" }, [
-            _c("div", { staticClass: "media-content" }, [
-              _c("h1", { staticClass: "title has-text-primary" }, [
-                _vm._v(
-                  _vm._s(_vm.selectedTM.FirstName) +
-                    " " +
-                    _vm._s(_vm.selectedTM.LastName)
-                )
-              ]),
-              _vm._v(" "),
-              _c("h2", { staticClass: "subtitle has-text-primary" }, [
-                _vm._v(_vm._s(_vm.selectedTM.Level))
-              ]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para1))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para2))]),
-              _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para3))]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))
-              ])
-            ])
+  return _c("div", { staticClass: "card" }, [
+    _c("div", { staticClass: "card-content columns" }, [
+      _c("div", { staticClass: "column" }, [
+        _c("figure", { staticClass: "image" }, [
+          _c("img", {
+            attrs: { src: _vm.selectedTM.Image, alt: _vm.selectedTM.FirstName }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "media" }, [
+          _c("div", { staticClass: "media-content has-text-white" }, [
+            _c("h1", { staticClass: "title has-text-white" }, [
+              _vm._v(
+                _vm._s(_vm.selectedTM.FirstName) +
+                  " " +
+                  _vm._s(_vm.selectedTM.LastName)
+              )
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle has-text-white" }, [
+              _vm._v(_vm._s(_vm.selectedTM.Level))
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para1))]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para2))]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para3))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))])
           ])
         ])
       ])
