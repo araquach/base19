@@ -1,4 +1,5 @@
-import Vue from "vue"
+import Vue from 'vue'
+import Buefy from 'buefy'
 import smoothscroll from 'smoothscroll-polyfill'
 import App from './App.vue'
 import Cookie from './components/Cookie'
@@ -12,6 +13,8 @@ import Model from './components/model/Model'
 import Contact from './components/contact/Contact'
 // test component
 import Test from './components/Test'
+
+Vue.use(Buefy)
 
 Vue.component('navbar-component', Navbar)
 Vue.component('cookie-component', Cookie)

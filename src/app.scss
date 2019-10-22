@@ -13,6 +13,7 @@ $dark-arctic: #425559;
 $darkest-arctic: #0d0d0d;
 
 @import "node_modules/bulma/bulma.sass";
+@import "~buefy/src/scss/buefy";
 
 li {
   line-height: 1.5rem;

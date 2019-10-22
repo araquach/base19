@@ -1,8 +1,12 @@
 <template>
     <section id="team" class="section team-info is-fullheight is-dark">
-        <div class="columns is-multiline">
-            <TeamIndComponent v-for="(tm, index) in teamMembers" key="teamMembers.LastName" :tm="tm"/>
-        </div>
+
+        <TeamIndComponent :TeamMembers="TeamMembers" @emitTM="showTM"/>
+
+        <b-modal :active.sync="isComponentModalActive">
+            <TeamModalComponent :selectedTM="selectedTM"/>
+        </b-modal>
+
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
@@ -15,21 +19,27 @@
 
 <script>
     import TeamIndComponent from './TeamInd'
+    import TeamModalComponent from './TeamModal'
 
     export default {
-        components: {
-            TeamIndComponent: TeamIndComponent
-        },
+        components: {TeamIndComponent, TeamModalComponent},
 
         data() {
             return {
-                    teamMembers: [],
-                    selectedTeamMember: ''
+                    selectedTM: '',
+                    isComponentModalActive: false,
+                    TeamMembers: []
                 }
         },
 
+        methods: {
+            showTM(tm) {
+                this.selectedTM = tm, this.isComponentModalActive = true
+            }
+        },
+
         mounted() {
-            axios.get('/api/team').then(response => this.teamMembers = response.data)
+            axios.get('/api/team').then(response => this.TeamMembers = response.data)
                 .catch(error => {
                     console.log(error)
                 })
