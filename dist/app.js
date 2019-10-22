@@ -2940,7 +2940,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$emit('switchComponent');
     }
   },
-  mounted: function mounted() {
+  created: function created() {
     var _this = this;
 
     axios.get('/api/team').then(function (response) {

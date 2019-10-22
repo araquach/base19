@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -11,6 +12,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
+	"github.com/mailgun/mailgun-go/v3"
 )
 
 var (
@@ -126,6 +129,34 @@ func apiTeam(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 	w.Write(json)
+}
+
+func sendMessage(w http.ResponseWriter, r *http.Request) {
+
+	mg := mailgun.NewMailgun(os.Getenv("MAILGUN_DOMAIN"), os.Getenv("MAILGUN_KEY"))
+
+	sender := "info@basehairdressing.co.uk"
+	subject := "New Message for Base"
+	body := "This is the message body"
+	recipient := "adam@basehairdressing.co.uk"
+
+	// The message object allows you to add attachments and Bcc recipients
+	message := mg.NewMessage(sender, subject, body, recipient)
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+	defer cancel()
+
+	// Send the message	with a 10 second timeout
+	resp, id, err := mg.Send(ctx, message)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("ID: %s Resp: %s\n", id, resp)
+
+	http.Redirect(w, r, "/success", http.StatusSeeOther)
+	return
 }
 
 func main() {
