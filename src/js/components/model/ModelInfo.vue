@@ -5,7 +5,7 @@
                 <h1 class="title">We need models!</h1>
                 <br>
                 <figure>
-                    <img src="https://via.placeholder.com/1000x600" alt="">
+                    <img src="/dist/img/models" alt="">
                 </figure>
                 <br>
                 <p>We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>

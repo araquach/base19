@@ -19083,9 +19083,7 @@ var staticRenderFns = [
       _c("br"),
       _vm._v(" "),
       _c("figure", [
-        _c("img", {
-          attrs: { src: "https://via.placeholder.com/1000x600", alt: "" }
-        })
+        _c("img", { attrs: { src: "/dist/img/models", alt: "" } })
       ]),
       _vm._v(" "),
       _c("br"),
