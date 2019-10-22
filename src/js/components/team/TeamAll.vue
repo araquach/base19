@@ -10,7 +10,7 @@
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    <button class="button">Go Back</button>
+                    <button @click="switchComponent" class="button">Go Back</button>
                 </div>
             </div>
         </div>
@@ -34,7 +34,12 @@
 
         methods: {
             showTM(tm) {
-                this.selectedTM = tm, this.isComponentModalActive = true
+                this.selectedTM = tm
+                this.isComponentModalActive = true
+            },
+
+            switchComponent() {
+                this.$emit('switchComponent')
             }
         },
 
