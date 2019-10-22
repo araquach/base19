@@ -2387,19 +2387,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       showInfo: false,
       errors: [],
       name: null,
-      mobile: null,
-      position: null
+      email: null,
+      message: null
     };
   },
   methods: {
@@ -2413,14 +2408,14 @@ __webpack_require__.r(__webpack_exports__);
         this.errors.push('Name required.');
       }
 
-      if (!this.mobile) {
-        this.errors.push('Mobile Number required.');
-      } else if (!this.validMobile(this.mobile)) {
-        this.errors.push('Valid Mobile Number required.');
+      if (!this.email) {
+        this.errors.push('Email address required.');
+      } else if (!this.validEmail(this.email)) {
+        this.errors.push('Valid Email address required.');
       }
 
-      if (!this.position) {
-        this.errors.push('Position required');
+      if (!this.message) {
+        this.errors.push('Message required');
       }
 
       if (!this.errors.length) {
@@ -2429,9 +2424,9 @@ __webpack_require__.r(__webpack_exports__);
 
       e.preventDefault();
     },
-    validMobile: function validMobile(mobile) {
-      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
-      return re.test(mobile);
+    validEmail: function validEmail(email) {
+      var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
     }
   }
 });
@@ -2802,14 +2797,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2817,7 +2804,7 @@ __webpack_require__.r(__webpack_exports__);
       errors: [],
       name: null,
       mobile: null,
-      position: null
+      info: null
     };
   },
   methods: {
@@ -2837,8 +2824,8 @@ __webpack_require__.r(__webpack_exports__);
         this.errors.push('Valid Mobile Number required.');
       }
 
-      if (!this.position) {
-        this.errors.push('Position required');
+      if (!this.info) {
+        this.errors.push('Additional Information required.');
       }
 
       if (!this.errors.length) {
@@ -17199,8 +17186,6 @@ var render = function() {
       _vm._v(" "),
       _c("joinus-component"),
       _vm._v(" "),
-      _c("blog-component"),
-      _vm._v(" "),
       _c("model-component"),
       _vm._v(" "),
       _c("contact-component")
@@ -17897,14 +17882,18 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v("If you")]),
+          _c("p", [
+            _vm._v(
+              "To book an appointment please use our app or click the 'Book Now' button."
+            )
+          ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c(
             "form",
             {
-              attrs: { action: "/register", method: "post" },
+              attrs: { action: "/api/contact", method: "post" },
               on: { submit: _vm.checkForm }
             },
             [
@@ -17924,7 +17913,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "field" }, [
                 _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Name")
+                  _vm._v("Full Name")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "control" }, [
@@ -17941,7 +17930,7 @@ var render = function() {
                     attrs: {
                       name: "name",
                       type: "text",
-                      placeholder: "Your Name"
+                      placeholder: "Your Full Name"
                     },
                     domProps: { value: _vm.name },
                     on: {
@@ -17958,7 +17947,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "field" }, [
                 _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Mobile Number")
+                  _vm._v("Email Address")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "control" }, [
@@ -17967,23 +17956,23 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.mobile,
-                        expression: "mobile"
+                        value: _vm.email,
+                        expression: "email"
                       }
                     ],
                     staticClass: "input",
                     attrs: {
-                      name: "mobile",
+                      name: "email",
                       type: "text",
-                      placeholder: "Your Mobile Number"
+                      placeholder: "Your Email Address"
                     },
-                    domProps: { value: _vm.mobile },
+                    domProps: { value: _vm.email },
                     on: {
                       input: function($event) {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.mobile = $event.target.value
+                        _vm.email = $event.target.value
                       }
                     }
                   })
@@ -18001,8 +17990,8 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.mobile,
-                        expression: "mobile"
+                        value: _vm.message,
+                        expression: "message"
                       }
                     ],
                     staticClass: "textarea",
@@ -18011,13 +18000,13 @@ var render = function() {
                       type: "text",
                       placeholder: "Message"
                     },
-                    domProps: { value: _vm.mobile },
+                    domProps: { value: _vm.message },
                     on: {
                       input: function($event) {
                         if ($event.target.composing) {
                           return
                         }
-                        _vm.mobile = $event.target.value
+                        _vm.message = $event.target.value
                       }
                     }
                   })
@@ -18057,13 +18046,11 @@ var staticRenderFns = [
       _c("p", [
         _c("strong", [_vm._v("Base Hairdressing")]),
         _vm._v(
-          " is located in Warrington Town Centre on the main high street. We're close to the new upcoming development. "
-        ),
-        _c("br"),
-        _vm._v(
-          "The new multi-storey car park is just around the corner from us."
+          " is located in Warrington Town Centre on Bridge Street. We're just around the corner from the new development along with the new multi-storey car park."
         )
       ]),
+      _vm._v(" "),
+      _c("hr"),
       _vm._v(" "),
       _c("h3", { staticClass: "title is-4" }, [_vm._v("Address:")]),
       _vm._v(" "),
@@ -18079,15 +18066,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("p", { staticClass: "is-size-4" }, [_vm._v("01925 444449")]),
       _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("figure", [
-        _c("img", {
-          attrs: { src: "https://via.placeholder.com/1000x600", alt: "Map" }
-        })
-      ]),
-      _vm._v(" "),
-      _c("br"),
+      _c("hr"),
       _vm._v(" "),
       _c("div", { staticClass: "is-size-5" }, [
         _c("h3", { staticClass: "title is-4" }, [_vm._v("Opening Hours")]),
@@ -18268,7 +18247,7 @@ var render = function() {
           _c(
             "form",
             {
-              attrs: { action: "/register", method: "post" },
+              attrs: { action: "/api/joinus", method: "post" },
               on: { submit: _vm.checkForm }
             },
             [
@@ -18899,7 +18878,7 @@ var render = function() {
           _c(
             "form",
             {
-              attrs: { action: "/register", method: "post" },
+              attrs: { action: "/api/modelApplication", method: "post" },
               on: { submit: _vm.checkForm }
             },
             [
@@ -18919,7 +18898,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "field" }, [
                 _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Name")
+                  _vm._v("Full name")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "control" }, [
@@ -18936,7 +18915,7 @@ var render = function() {
                     attrs: {
                       name: "name",
                       type: "text",
-                      placeholder: "Your Name"
+                      placeholder: "Your Full Name"
                     },
                     domProps: { value: _vm.name },
                     on: {
@@ -18987,62 +18966,31 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "field" }, [
                 _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Current Position")
+                  _vm._v("Additional information")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "control" }, [
-                  _c("div", { staticClass: "select" }, [
-                    _c(
-                      "select",
+                  _c("textarea", {
+                    directives: [
                       {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.position,
-                            expression: "position"
-                          }
-                        ],
-                        attrs: { name: "position" },
-                        on: {
-                          change: function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.position = $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          }
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.info,
+                        expression: "info"
+                      }
+                    ],
+                    staticClass: "textarea",
+                    attrs: { name: "info", placeholder: "Additional Info" },
+                    domProps: { value: _vm.info },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
                         }
-                      },
-                      [
-                        _c("option", { attrs: { value: "default" } }, [
-                          _vm._v("Please select")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "employed" } }, [
-                          _vm._v("New to hairdressing")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "chair renter" } }, [
-                          _vm._v("Partway through apprenticeship")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "mobile" } }, [
-                          _vm._v("Already qualified")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "other" } }, [
-                          _vm._v("Other")
-                        ])
-                      ]
-                    )
-                  ])
+                        _vm.info = $event.target.value
+                      }
+                    }
+                  })
                 ])
               ]),
               _vm._v(" "),
@@ -19083,7 +19031,12 @@ var staticRenderFns = [
       _c("br"),
       _vm._v(" "),
       _c("figure", [
-        _c("img", { attrs: { src: "/dist/img/models", alt: "" } })
+        _c("img", {
+          attrs: {
+            src: "/dist/img/models/model.jpg",
+            alt: "Schwarzkopf Essential Looks"
+          }
+        })
       ]),
       _vm._v(" "),
       _c("br"),

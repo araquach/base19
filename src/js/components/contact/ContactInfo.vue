@@ -3,20 +3,15 @@
         <div class="columns">
             <div class="section column is-6">
                 <h1 class="title">Location</h1>
-                <p><strong>Base Hairdressing</strong> is located in Warrington Town Centre on the main high street. We're close to the new upcoming development. <br>The new multi-storey car park is just around the corner from us.</p>
-
+                <p><strong>Base Hairdressing</strong> is located in Warrington Town Centre on Bridge Street. We're just around the corner from the new development along with the new multi-storey car park.</p>
+                <hr>
                 <h3 class="title is-4">Address:</h3>
                 <p class="is-size-5">90/92 Bridge Street<br>
                     Warrington<br>
                     WA1 2RF</p>
                 <h3 class="title is-4">Telephone:</h3>
                 <p class="is-size-4">01925 444449</p>
-
-                <br>
-                <figure>
-                    <img src="https://via.placeholder.com/1000x600" alt="Map">
-                </figure>
-                <br>
+                <hr>
                 <div class="is-size-5">
                     <h3 class="title is-4">Opening Hours</h3>
                     <p>Monday: Closed<br>
@@ -30,9 +25,9 @@
             <div class="section column">
                 <h1 class="title is-3">Contact Us</h1>
                 <p class="is-size-5">If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can</p>
-                <p>If you</p>
+                <p>To book an appointment please use our app or click the 'Book Now' button.</p>
                 <br>
-                <form @submit="checkForm" action="/register" method="post">
+                <form @submit="checkForm" action="/api/contact" method="post">
 
                     <div v-if="errors.length" class="box has-text-danger">
                         <p><strong>Please correct the following:</strong></p>
@@ -42,21 +37,21 @@
                     </div>
 
                     <div class="field">
-                        <label class="label has-text-white">Name</label>
+                        <label class="label has-text-white">Full Name</label>
                         <div class="control">
-                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
+                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label has-text-white">Mobile Number</label>
+                        <label class="label has-text-white">Email Address</label>
                         <div class="control">
-                            <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
+                            <input class="input" v-model="email" name="email" type="text" placeholder="Your Email Address">
                         </div>
                     </div>
                     <div class="field">
                         <label class="label has-text-white">Message</label>
                         <div class="control">
-                            <input class="textarea" v-model="mobile" name="mobile" type="text" placeholder="Message">
+                            <input class="textarea" v-model="message" name="mobile" type="text" placeholder="Message">
                         </div>
                     </div>
                     <br>
@@ -85,8 +80,8 @@
                 showInfo: false,
                 errors: [],
                 name: null,
-                mobile: null,
-                position: null
+                email: null,
+                message: null
             }
         },
 
@@ -101,13 +96,13 @@
                 if (!this.name) {
                     this.errors.push('Name required.');
                 }
-                if (!this.mobile) {
-                    this.errors.push('Mobile Number required.');
-                } else if (!this.validMobile(this.mobile)) {
-                    this.errors.push('Valid Mobile Number required.');
+                if (!this.email) {
+                    this.errors.push('Email address required.');
+                } else if (!this.validEmail(this.email)) {
+                    this.errors.push('Valid Email address required.');
                 }
-                if (!this.position) {
-                    this.errors.push('Position required')
+                if (!this.message) {
+                    this.errors.push('Message required')
                 }
 
                 if (!this.errors.length) {
@@ -117,9 +112,9 @@
                 e.preventDefault();
             },
 
-            validMobile: function (mobile) {
-                var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
-                return re.test(mobile);
+            validEmail: function (email) {
+                var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                return re.test(email);
             }
         }
     }

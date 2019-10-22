@@ -5,7 +5,7 @@
                 <h1 class="title">We need models!</h1>
                 <br>
                 <figure>
-                    <img src="/dist/img/models" alt="">
+                    <img src="/dist/img/models/model.jpg" alt="Schwarzkopf Essential Looks">
                 </figure>
                 <br>
                 <p>We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>
@@ -25,7 +25,7 @@
                 <small>A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this.</small>
                 <br>
                 <br>
-                <form @submit="checkForm" action="/register" method="post">
+                <form @submit="checkForm" action="/api/modelApplication" method="post">
 
                     <div v-if="errors.length" class="box has-text-danger">
                         <p><strong>Please correct the following:</strong></p>
@@ -35,9 +35,9 @@
                     </div>
 
                     <div class="field">
-                        <label class="label has-text-white">Name</label>
+                        <label class="label has-text-white">Full name</label>
                         <div class="control">
-                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
+                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
                         </div>
                     </div>
                     <div class="field">
@@ -47,17 +47,9 @@
                         </div>
                     </div>
                     <div class="field">
-                        <label class="label has-text-white">Current Position</label>
+                        <label class="label has-text-white">Additional information</label>
                         <div class="control">
-                            <div class="select">
-                                <select v-model="position" name="position">
-                                    <option value="default">Please select</option>
-                                    <option value="employed">New to hairdressing</option>
-                                    <option value="chair renter">Partway through apprenticeship</option>
-                                    <option value="mobile">Already qualified</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
+                            <textarea class="textarea" v-model="info" name="info" placeholder="Additional Info"/>
                         </div>
                     </div>
                     <br>
@@ -88,7 +80,7 @@
                 errors: [],
                 name: null,
                 mobile: null,
-                position: null
+                info: null
             }
         },
 
@@ -108,8 +100,8 @@
                 } else if (!this.validMobile(this.mobile)) {
                     this.errors.push('Valid Mobile Number required.');
                 }
-                if (!this.position) {
-                    this.errors.push('Position required')
+                if (!this.info) {
+                    this.errors.push('Additional Information required.')
                 }
 
                 if (!this.errors.length) {

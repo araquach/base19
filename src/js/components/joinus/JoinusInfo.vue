@@ -18,7 +18,7 @@
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
                 <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                <form @submit="checkForm" action="/register" method="post">
+                <form @submit="checkForm" action="/api/joinus" method="post">
 
                     <div v-if="errors.length" class="box has-text-danger">
                         <p><strong>Please correct the following:</strong></p>
