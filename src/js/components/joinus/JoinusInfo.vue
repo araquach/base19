@@ -18,7 +18,7 @@
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
                 <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                <form @submit="checkForm" action="/api/joinus" method="post">
+                <form @submit="checkForm">
 
                     <div v-if="errors.length" class="box has-text-danger">
                         <p><strong>Please correct the following:</strong></p>
@@ -57,7 +57,7 @@
                     <input type="hidden" name="role" value="apprentice">
                     <div class="field">
                         <div class="control">
-                            <button class="button is-primary" type="submit" value="submit">Submit</button>
+                            <button @click.prevent="sendForm" class="button is-primary">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -90,7 +90,7 @@
                 this.$emit('switchComponent')
             },
 
-            checkForm: function (e) {
+            checkForm(e) {
                 this.errors = [];
 
                 if (!this.name) {
@@ -112,9 +112,25 @@
                 e.preventDefault();
             },
 
-            validMobile: function (mobile) {
+            validMobile(mobile) {
                 var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
                 return re.test(mobile);
+            },
+
+            sendForm() {
+                axios.Post('/api/joinus', {
+                    name: this.name,
+                    mobile: this.mobile,
+                    email: this.email,
+                    position: this.position,
+                    info: this.info
+                })
+                    .then(response => {
+                        this.success = true
+                    })
+                    .catch((e) => {
+                        console.error(e)
+                    })
             }
         }
     }

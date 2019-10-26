@@ -27,9 +27,17 @@ var (
 )
 
 type ContactMessage struct {
-	Name string
-	Email string
-	Message string
+	Name 		string
+	Email 		string
+	Message 	string
+}
+
+type JoinusApplicant struct {
+	Name 		string
+	Mobile 		string
+	Email 		string
+	Position 	string
+	Info 		string
 }
 
 type TeamMember struct {
@@ -171,6 +179,44 @@ func apiSendMessage(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
+func apiJoinus(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+
+	var data JoinusApplicant
+	err := decoder.Decode(&data)
+	if err != nil {
+		panic(err)
+	}
+
+	db := dbConn()
+
+	db.Create(&data)
+
+	mg := mailgun.NewMailgun(os.Getenv("MAILGUN_DOMAIN"), os.Getenv("MAILGUN_KEY"))
+
+	sender := "info@basehairdressing.co.uk"
+	subject := "New Message for Base"
+	body := data.Info
+	recipient := "adam@jakatasalon.co.uk"
+
+	// The message object allows you to add attachments and Bcc recipients
+	message := mg.NewMessage(sender, subject, body, recipient)
+
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+	defer cancel()
+
+	// Send the message	with a 10 second timeout
+	resp, id, err := mg.Send(ctx, message)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("ID: %s Resp: %s\n", id, resp)
+
+	return
+}
+
 func main() {
 
 	var err error
@@ -251,6 +297,7 @@ func main() {
 	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
+	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./dist/"))

@@ -2655,6 +2655,21 @@ __webpack_require__.r(__webpack_exports__);
     validMobile: function validMobile(mobile) {
       var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
       return re.test(mobile);
+    },
+    sendForm: function sendForm() {
+      var _this = this;
+
+      axios.Post('/api/joinus', {
+        name: this.name,
+        mobile: this.mobile,
+        email: this.email,
+        position: this.position,
+        info: this.info
+      }).then(function (response) {
+        _this.success = true;
+      })["catch"](function (e) {
+        console.error(e);
+      });
     }
   }
 });
@@ -18268,165 +18283,174 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c(
-            "form",
-            {
-              attrs: { action: "/api/joinus", method: "post" },
-              on: { submit: _vm.checkForm }
-            },
-            [
-              _vm.errors.length
-                ? _c("div", { staticClass: "box has-text-danger" }, [
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _c(
-                      "ul",
-                      _vm._l(_vm.errors, function(error) {
-                        return _c("li", [_vm._v(_vm._s(error))])
-                      }),
-                      0
-                    )
-                  ])
-                : _vm._e(),
+          _c("form", { on: { submit: _vm.checkForm } }, [
+            _vm.errors.length
+              ? _c("div", { staticClass: "box has-text-danger" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c(
+                    "ul",
+                    _vm._l(_vm.errors, function(error) {
+                      return _c("li", [_vm._v(_vm._s(error))])
+                    }),
+                    0
+                  )
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("label", { staticClass: "label has-text-white" }, [
+                _vm._v("Name")
+              ]),
               _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Name")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.name,
-                        expression: "name"
+              _c("div", { staticClass: "control" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.name,
+                      expression: "name"
+                    }
+                  ],
+                  staticClass: "input",
+                  attrs: {
+                    name: "name",
+                    type: "text",
+                    placeholder: "Your Name"
+                  },
+                  domProps: { value: _vm.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
                       }
-                    ],
-                    staticClass: "input",
-                    attrs: {
-                      name: "name",
-                      type: "text",
-                      placeholder: "Your Name"
-                    },
-                    domProps: { value: _vm.name },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
+                      _vm.name = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("label", { staticClass: "label has-text-white" }, [
+                _vm._v("Mobile Number")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.mobile,
+                      expression: "mobile"
+                    }
+                  ],
+                  staticClass: "input",
+                  attrs: {
+                    name: "mobile",
+                    type: "text",
+                    placeholder: "Your Mobile Number"
+                  },
+                  domProps: { value: _vm.mobile },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.mobile = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("label", { staticClass: "label has-text-white" }, [
+                _vm._v("Current Position")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control" }, [
+                _c("div", { staticClass: "select" }, [
+                  _c(
+                    "select",
+                    {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.position,
+                          expression: "position"
                         }
-                        _vm.name = $event.target.value
+                      ],
+                      attrs: { name: "position" },
+                      on: {
+                        change: function($event) {
+                          var $$selectedVal = Array.prototype.filter
+                            .call($event.target.options, function(o) {
+                              return o.selected
+                            })
+                            .map(function(o) {
+                              var val = "_value" in o ? o._value : o.value
+                              return val
+                            })
+                          _vm.position = $event.target.multiple
+                            ? $$selectedVal
+                            : $$selectedVal[0]
+                        }
+                      }
+                    },
+                    [
+                      _c("option", { attrs: { value: "default" } }, [
+                        _vm._v("Please select")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "employed" } }, [
+                        _vm._v("New to hairdressing")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "chair renter" } }, [
+                        _vm._v("Partway through apprenticeship")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "mobile" } }, [
+                        _vm._v("Already qualified")
+                      ]),
+                      _vm._v(" "),
+                      _c("option", { attrs: { value: "other" } }, [
+                        _vm._v("Other")
+                      ])
+                    ]
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              attrs: { type: "hidden", name: "role", value: "apprentice" }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("div", { staticClass: "control" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-primary",
+                    on: {
+                      click: function($event) {
+                        $event.preventDefault()
+                        return _vm.sendForm($event)
                       }
                     }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Mobile Number")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.mobile,
-                        expression: "mobile"
-                      }
-                    ],
-                    staticClass: "input",
-                    attrs: {
-                      name: "mobile",
-                      type: "text",
-                      placeholder: "Your Mobile Number"
-                    },
-                    domProps: { value: _vm.mobile },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.mobile = $event.target.value
-                      }
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Current Position")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("div", { staticClass: "select" }, [
-                    _c(
-                      "select",
-                      {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.position,
-                            expression: "position"
-                          }
-                        ],
-                        attrs: { name: "position" },
-                        on: {
-                          change: function($event) {
-                            var $$selectedVal = Array.prototype.filter
-                              .call($event.target.options, function(o) {
-                                return o.selected
-                              })
-                              .map(function(o) {
-                                var val = "_value" in o ? o._value : o.value
-                                return val
-                              })
-                            _vm.position = $event.target.multiple
-                              ? $$selectedVal
-                              : $$selectedVal[0]
-                          }
-                        }
-                      },
-                      [
-                        _c("option", { attrs: { value: "default" } }, [
-                          _vm._v("Please select")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "employed" } }, [
-                          _vm._v("New to hairdressing")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "chair renter" } }, [
-                          _vm._v("Partway through apprenticeship")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "mobile" } }, [
-                          _vm._v("Already qualified")
-                        ]),
-                        _vm._v(" "),
-                        _c("option", { attrs: { value: "other" } }, [
-                          _vm._v("Other")
-                        ])
-                      ]
-                    )
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "hidden", name: "role", value: "apprentice" }
-              }),
-              _vm._v(" "),
-              _vm._m(2)
-            ]
-          )
+                  },
+                  [_vm._v("Submit")]
+                )
+              ])
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -18512,23 +18536,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", [_c("strong", [_vm._v("Please correct the following:")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field" }, [
-      _c("div", { staticClass: "control" }, [
-        _c(
-          "button",
-          {
-            staticClass: "button is-primary",
-            attrs: { type: "submit", value: "submit" }
-          },
-          [_vm._v("Submit")]
-        )
-      ])
-    ])
   }
 ]
 render._withStripped = true

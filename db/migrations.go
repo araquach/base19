@@ -23,6 +23,14 @@ type TeamMember struct {
 	Price		string
 }
 
+type JoinusApplicant struct {
+	gorm.Model
+	Name 		string
+	Mobile 		string
+	Email 		string
+	Position 	string
+}
+
 func init() {
 	// loads values from .env into the system
 	if err := godotenv.Load(); err != nil {
@@ -122,7 +130,7 @@ func main() {
 	}
 
 	db := dbConn()
-	db.AutoMigrate(&TeamMember{})
+	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{})
 
 	for _, tm := range teamMembers {
 		db.Create(&tm)
