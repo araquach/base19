@@ -29,7 +29,7 @@ Vue.component('contact-component', Contact)
 Vue.component('test-component', Test)
 
 window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 new Vue({
     el: '#app',

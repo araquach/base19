@@ -2387,6 +2387,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2394,12 +2399,16 @@ __webpack_require__.r(__webpack_exports__);
       errors: [],
       name: null,
       email: null,
-      message: null
+      message: null,
+      formSubmitted: false
     };
   },
   methods: {
     switchComponent: function switchComponent() {
       this.$emit('switchComponent');
+    },
+    fullMessage: function fullMessage() {
+      return "From: ".concat(this.name, "\n            Email Address: ").concat(this.email, "\n            Message: ").concat(this.message, "\n            ");
     },
     checkForm: function checkForm(e) {
       this.errors = [];
@@ -2427,6 +2436,19 @@ __webpack_require__.r(__webpack_exports__);
     validEmail: function validEmail(email) {
       var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
+    },
+    sendMessage: function sendMessage() {
+      var _this = this;
+
+      axios.post('/api/sendMessage', {
+        name: this.name,
+        email: this.email,
+        message: this.fullMessage()
+      }).then(function (response) {
+        _this.formSubmitted = true;
+      })["catch"](function (e) {
+        console.error(e);
+      });
     }
   }
 });
@@ -17876,148 +17898,167 @@ var render = function() {
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Contact Us")]),
           _vm._v(" "),
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "To book an appointment please use our app or click the 'Book Now' button."
-            )
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "form",
-            {
-              attrs: { action: "/api/contact", method: "post" },
-              on: { submit: _vm.checkForm }
-            },
-            [
-              _vm.errors.length
-                ? _c("div", { staticClass: "box has-text-danger" }, [
-                    _vm._m(1),
+          _vm.formSubmitted
+            ? _c("div", [
+                _c("p", { staticClass: "is-size-4 has-text-primary" }, [
+                  _vm._v(
+                    "Thanks for messaging us! One of our team will get back to you soon."
+                  )
+                ])
+              ])
+            : _c("div", { staticClass: "form" }, [
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v(
+                    "If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "To book an appointment please use our app or click the 'Book Now' button."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("form", [
+                  _vm.errors.length
+                    ? _c("div", { staticClass: "box has-text-danger" }, [
+                        _vm._m(1),
+                        _vm._v(" "),
+                        _c(
+                          "ul",
+                          _vm._l(_vm.errors, function(error) {
+                            return _c("li", [_vm._v(_vm._s(error))])
+                          }),
+                          0
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Full Name")
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "ul",
-                      _vm._l(_vm.errors, function(error) {
-                        return _c("li", [_vm._v(_vm._s(error))])
-                      }),
-                      0
-                    )
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.name,
+                            expression: "name"
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: {
+                          name: "name",
+                          type: "text",
+                          placeholder: "Your Full Name"
+                        },
+                        domProps: { value: _vm.name },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.name = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Email Address")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.email,
+                            expression: "email"
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: {
+                          name: "email",
+                          type: "text",
+                          placeholder: "Your Email Address"
+                        },
+                        domProps: { value: _vm.email },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.email = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Message")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.message,
+                            expression: "message"
+                          }
+                        ],
+                        staticClass: "textarea",
+                        attrs: {
+                          name: "message",
+                          type: "text",
+                          placeholder: "Your Message"
+                        },
+                        domProps: { value: _vm.message },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.message = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("div", { staticClass: "control" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button is-primary",
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.sendMessage($event)
+                            }
+                          }
+                        },
+                        [_vm._v("Send message")]
+                      )
+                    ])
                   ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Full Name")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.name,
-                        expression: "name"
-                      }
-                    ],
-                    staticClass: "input",
-                    attrs: {
-                      name: "name",
-                      type: "text",
-                      placeholder: "Your Full Name"
-                    },
-                    domProps: { value: _vm.name },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.name = $event.target.value
-                      }
-                    }
-                  })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Email Address")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.email,
-                        expression: "email"
-                      }
-                    ],
-                    staticClass: "input",
-                    attrs: {
-                      name: "email",
-                      type: "text",
-                      placeholder: "Your Email Address"
-                    },
-                    domProps: { value: _vm.email },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.email = $event.target.value
-                      }
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Message")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.message,
-                        expression: "message"
-                      }
-                    ],
-                    staticClass: "textarea",
-                    attrs: {
-                      name: "mobile",
-                      type: "text",
-                      placeholder: "Message"
-                    },
-                    domProps: { value: _vm.message },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.message = $event.target.value
-                      }
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _vm._m(2)
-            ]
-          )
+              ])
         ])
       ]),
       _vm._v(" "),
@@ -18092,23 +18133,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", [_c("strong", [_vm._v("Please correct the following:")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field" }, [
-      _c("div", { staticClass: "control" }, [
-        _c(
-          "button",
-          {
-            staticClass: "button is-primary",
-            attrs: { type: "submit", value: "submit" }
-          },
-          [_vm._v("Submit")]
-        )
-      ])
-    ])
   }
 ]
 render._withStripped = true
@@ -31636,8 +31660,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('model-component', _compone
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('contact-component', _components_contact_Contact__WEBPACK_IMPORTED_MODULE_12__["default"]); // test component
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', _components_Test__WEBPACK_IMPORTED_MODULE_13__["default"]);
-window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   render: function render(h) {

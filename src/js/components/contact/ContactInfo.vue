@@ -24,43 +24,48 @@
             </div>
             <div class="section column">
                 <h1 class="title is-3">Contact Us</h1>
-                <p class="is-size-5">If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can</p>
-                <p>To book an appointment please use our app or click the 'Book Now' button.</p>
-                <br>
-                <form @submit="checkForm" action="/api/contact" method="post">
+                <div v-if="formSubmitted">
+                    <p class="is-size-4 has-text-primary">Thanks for messaging us! One of our team will get back to you soon.</p>
+                </div>
 
-                    <div v-if="errors.length" class="box has-text-danger">
-                        <p><strong>Please correct the following:</strong></p>
-                        <ul>
-                            <li v-for="error in errors">{{ error }}</li>
-                        </ul>
-                    </div>
-
-                    <div class="field">
-                        <label class="label has-text-white">Full Name</label>
-                        <div class="control">
-                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Email Address</label>
-                        <div class="control">
-                            <input class="input" v-model="email" name="email" type="text" placeholder="Your Email Address">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Message</label>
-                        <div class="control">
-                            <input class="textarea" v-model="message" name="mobile" type="text" placeholder="Message">
-                        </div>
-                    </div>
+                <div v-else class="form">
+                    <p class="is-size-5">If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can</p>
+                    <p>To book an appointment please use our app or click the 'Book Now' button.</p>
                     <br>
-                    <div class="field">
-                        <div class="control">
-                            <button class="button is-primary" type="submit" value="submit">Submit</button>
+                    <form>
+                        <div v-if="errors.length" class="box has-text-danger">
+                            <p><strong>Please correct the following:</strong></p>
+                            <ul>
+                                <li v-for="error in errors">{{ error }}</li>
+                            </ul>
                         </div>
-                    </div>
-                </form>
+
+                        <div class="field">
+                            <label class="label has-text-white">Full Name</label>
+                            <div class="control">
+                                <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-white">Email Address</label>
+                            <div class="control">
+                                <input class="input" v-model="email" name="email" type="text" placeholder="Your Email Address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-white">Message</label>
+                            <div class="control">
+                                <input class="textarea" v-model="message" name="message" type="text" placeholder="Your Message">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="field">
+                            <div class="control">
+                                <button @click.prevent="sendMessage" class="button is-primary">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="level">
@@ -81,7 +86,8 @@
                 errors: [],
                 name: null,
                 email: null,
-                message: null
+                message: null,
+                formSubmitted: false
             }
         },
 
@@ -90,7 +96,14 @@
                 this.$emit('switchComponent')
             },
 
-            checkForm: function (e) {
+            fullMessage() {
+                return `From: ${this.name}
+                Email Address: ${this.email}
+                Message: ${this.message}
+                `
+            },
+
+            checkForm(e) {
                 this.errors = [];
 
                 if (!this.name) {
@@ -112,9 +125,23 @@
                 e.preventDefault();
             },
 
-            validEmail: function (email) {
+            validEmail(email) {
                 var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                 return re.test(email);
+            },
+
+            sendMessage() {
+                axios.post('/api/sendMessage', {
+                    name: this.name,
+                    email: this.email,
+                    message: this.fullMessage()
+                    })
+                    .then(response => {
+                        this.formSubmitted = true
+                    })
+                    .catch((e) => {
+                        console.error(e)
+                    })
             }
         }
     }

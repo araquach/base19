@@ -26,6 +26,12 @@ var (
 	tplTeam *template.Template
 )
 
+type ContactMessage struct {
+	Name string
+	Email string
+	Message string
+}
+
 type TeamMember struct {
 	Id			int
 	FirstName 	string
@@ -131,14 +137,21 @@ func apiTeam(w http.ResponseWriter, r *http.Request) {
 	w.Write(json)
 }
 
-func sendMessage(w http.ResponseWriter, r *http.Request) {
+func apiSendMessage(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+
+	var data ContactMessage
+	err := decoder.Decode(&data)
+	if err != nil {
+		panic(err)
+	}
 
 	mg := mailgun.NewMailgun(os.Getenv("MAILGUN_DOMAIN"), os.Getenv("MAILGUN_KEY"))
 
 	sender := "info@basehairdressing.co.uk"
 	subject := "New Message for Base"
-	body := "This is the message body"
-	recipient := "adam@basehairdressing.co.uk"
+	body := data.Message
+	recipient := "adam@jakatasalon.co.uk"
 
 	// The message object allows you to add attachments and Bcc recipients
 	message := mg.NewMessage(sender, subject, body, recipient)
@@ -155,7 +168,6 @@ func sendMessage(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Printf("ID: %s Resp: %s\n", id, resp)
 
-	http.Redirect(w, r, "/success", http.StatusSeeOther)
 	return
 }
 
@@ -238,6 +250,7 @@ func main() {
 	r.HandleFunc("/team", team).Methods("GET")
 	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
+	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./dist/"))
