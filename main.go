@@ -297,7 +297,7 @@ func main() {
 	r.HandleFunc("/team", team).Methods("GET")
 	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
-	// r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
+	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
 
 	// Styles
