@@ -103,27 +103,27 @@
                 `
             },
 
-            checkForm(e) {
-                this.errors = [];
-
-                if (!this.name) {
-                    this.errors.push('Name required.');
-                }
-                if (!this.email) {
-                    this.errors.push('Email address required.');
-                } else if (!this.validEmail(this.email)) {
-                    this.errors.push('Valid Email address required.');
-                }
-                if (!this.message) {
-                    this.errors.push('Message required')
-                }
-
-                if (!this.errors.length) {
-                    return true;
-                }
-
-                e.preventDefault();
-            },
+            // checkForm(e) {
+            //     this.errors = [];
+            //
+            //     if (!this.name) {
+            //         this.errors.push('Name required.');
+            //     }
+            //     if (!this.email) {
+            //         this.errors.push('Email address required.');
+            //     } else if (!this.validEmail(this.email)) {
+            //         this.errors.push('Valid Email address required.');
+            //     }
+            //     if (!this.message) {
+            //         this.errors.push('Message required')
+            //     }
+            //
+            //     if (!this.errors.length) {
+            //         return true;
+            //     }
+            //
+            //     e.preventDefault();
+            // },
 
             validEmail(email) {
                 var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -131,17 +131,32 @@
             },
 
             sendMessage() {
-                axios.post('/api/sendMessage', {
-                    name: this.name,
-                    email: this.email,
-                    message: this.fullMessage()
+                this.errors = [];
+
+                if (!this.name) {
+                    this.errors.push('Name required.')
+                }
+                if (!this.email) {
+                    this.errors.push('Email address required.')
+                } else if (!this.validEmail(this.email)) {
+                    this.errors.push('Valid Email address required.')
+                }
+                if (!this.message) {
+                    this.errors.push('Message required')
+                }
+                else {
+                    axios.post('/api/sendMessage', {
+                        name: this.name,
+                        email: this.email,
+                        message: this.fullMessage()
                     })
-                    .then(response => {
-                        this.formSubmitted = true
-                    })
-                    .catch((e) => {
-                        console.error(e)
-                    })
+                        .then(response => {
+                            this.formSubmitted = true
+                        })
+                        .catch((e) => {
+                            console.error(e)
+                        })
+                }
             }
         }
     }

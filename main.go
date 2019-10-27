@@ -33,11 +33,12 @@ type ContactMessage struct {
 }
 
 type JoinusApplicant struct {
+	gorm.Model
 	Name 		string
 	Mobile 		string
 	Email 		string
 	Position 	string
-	Info 		string
+	Info 		string `gorm:"-"`
 }
 
 type TeamMember struct {
@@ -195,7 +196,7 @@ func apiJoinus(w http.ResponseWriter, r *http.Request) {
 	mg := mailgun.NewMailgun(os.Getenv("MAILGUN_DOMAIN"), os.Getenv("MAILGUN_KEY"))
 
 	sender := "info@basehairdressing.co.uk"
-	subject := "New Message for Base"
+	subject := "New Job Applicant Base"
 	body := data.Info
 	recipient := "adam@jakatasalon.co.uk"
 
@@ -296,7 +297,7 @@ func main() {
 	r.HandleFunc("/team", team).Methods("GET")
 	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
-	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
+	// r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
 
 	// Styles
