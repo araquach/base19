@@ -16977,8 +16977,12 @@ var render = function() {
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
-              "button",
-              { staticClass: "button", on: { click: _vm.switchComponent } },
+              "a",
+              {
+                staticClass: "button",
+                attrs: { href: "#about" },
+                on: { click: _vm.switchComponent }
+              },
               [_vm._v("Go Back")]
             )
           ])
@@ -17212,8 +17216,12 @@ var render = function() {
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
-              "button",
-              { staticClass: "button", on: { click: _vm.switchComponent } },
+              "a",
+              {
+                staticClass: "button",
+                attrs: { href: "#blog" },
+                on: { click: _vm.switchComponent }
+              },
               [_vm._v("Go Back")]
             )
           ])
@@ -17597,8 +17605,12 @@ var render = function() {
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
-              "button",
-              { staticClass: "button", on: { click: _vm.switchComponent } },
+              "a",
+              {
+                staticClass: "button",
+                attrs: { href: "#contact" },
+                on: { click: _vm.switchComponent }
+              },
               [_vm._v("Go Back")]
             )
           ])
@@ -17984,9 +17996,10 @@ var render = function() {
                   _c("div", { staticClass: "field" }, [
                     _c("div", { staticClass: "control" }, [
                       _c(
-                        "button",
+                        "a",
                         {
                           staticClass: "button is-primary",
+                          attrs: { href: "#joinus" },
                           on: {
                             click: function($event) {
                               $event.preventDefault()
@@ -18617,8 +18630,12 @@ var render = function() {
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
-              "button",
-              { staticClass: "button", on: { click: _vm.switchComponent } },
+              "a",
+              {
+                staticClass: "button",
+                attrs: { href: "#model" },
+                on: { click: _vm.switchComponent }
+              },
               [_vm._v("Go Back")]
             )
           ])
@@ -18768,8 +18785,12 @@ var render = function() {
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
-              "button",
-              { staticClass: "button", on: { click: _vm.switchComponent } },
+              "a",
+              {
+                staticClass: "button",
+                attrs: { href: "#team" },
+                on: { click: _vm.switchComponent }
+              },
               [_vm._v("Go Back")]
             )
           ])

@@ -65,7 +65,7 @@
                         <br>
                         <div class="field">
                             <div class="control">
-                                <button @click.prevent="sendData" class="button is-primary">Submit</button>
+                                <a href="#joinus" @click.prevent="sendData" class="button is-primary">Submit</a>
                             </div>
                         </div>
                     </form>
