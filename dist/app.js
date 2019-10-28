@@ -1929,8 +1929,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2228,8 +2226,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2442,8 +2438,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _JoinusFront__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./JoinusFront */ "./src/js/components/joinus/JoinusFront.vue");
 /* harmony import */ var _JoinusInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JoinusInfo */ "./src/js/components/joinus/JoinusInfo.vue");
-//
-//
 //
 //
 //
@@ -2681,8 +2675,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2890,8 +2882,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TeamFront__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamFront */ "./src/js/components/team/TeamFront.vue");
 /* harmony import */ var _TeamAll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamAll */ "./src/js/components/team/TeamAll.vue");
-//
-//
 //
 //
 //
@@ -16892,19 +16882,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "transition",
+    { attrs: { name: "fade", mode: "out-in" } },
     [
-      _c(
-        "transition",
-        { attrs: { name: "fade", mode: "out-in" } },
-        [
-          _c(_vm.selectedComponent, {
-            tag: "component",
-            on: { switchComponent: _vm.switchComponent }
-          })
-        ],
-        1
-      )
+      _c(_vm.selectedComponent, {
+        tag: "component",
+        on: { switchComponent: _vm.switchComponent }
+      })
     ],
     1
   )
@@ -17347,19 +17331,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "transition",
+    { attrs: { name: "fade", mode: "out-in" } },
     [
-      _c(
-        "transition",
-        { attrs: { name: "fade", mode: "out-in" } },
-        [
-          _c(_vm.selectedComponent, {
-            tag: "component",
-            on: { switchComponent: _vm.switchComponent }
-          })
-        ],
-        1
-      )
+      _c(_vm.selectedComponent, {
+        tag: "component",
+        on: { switchComponent: _vm.switchComponent }
+      })
     ],
     1
   )
@@ -17709,19 +17687,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "transition",
+    { attrs: { name: "fade", mode: "out-in" } },
     [
-      _c(
-        "transition",
-        { attrs: { name: "fade", mode: "out-in" } },
-        [
-          _c(_vm.selectedComponent, {
-            tag: "component",
-            on: { switchComponent: _vm.switchComponent }
-          })
-        ],
-        1
-      )
+      _c(_vm.selectedComponent, {
+        tag: "component",
+        on: { switchComponent: _vm.switchComponent }
+      })
     ],
     1
   )
@@ -18369,19 +18341,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "transition",
+    { attrs: { name: "fade", mode: "out-in" } },
     [
-      _c(
-        "transition",
-        { attrs: { name: "fade", mode: "out-in" } },
-        [
-          _c(_vm.selectedComponent, {
-            tag: "component",
-            on: { switchComponent: _vm.switchComponent }
-          })
-        ],
-        1
-      )
+      _c(_vm.selectedComponent, {
+        tag: "component",
+        on: { switchComponent: _vm.switchComponent }
+      })
     ],
     1
   )
@@ -18737,19 +18703,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "transition",
+    { attrs: { name: "fade", mode: "out-in" } },
     [
-      _c(
-        "transition",
-        { attrs: { name: "fade", mode: "out-in" } },
-        [
-          _c(_vm.selectedComponent, {
-            tag: "component",
-            on: { switchComponent: _vm.switchComponent }
-          })
-        ],
-        1
-      )
+      _c(_vm.selectedComponent, {
+        tag: "component",
+        on: { switchComponent: _vm.switchComponent }
+      })
     ],
     1
   )
@@ -18778,7 +18738,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "section",
-    { staticClass: "section team-info hero is-dark", attrs: { id: "team" } },
+    {
+      staticClass: "section team-info hero is-fullheight is-dark",
+      attrs: { id: "team" }
+    },
     [
       _c("TeamIndComponent", {
         attrs: { TeamMembers: _vm.TeamMembers },
@@ -33371,8 +33334,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

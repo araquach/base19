@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <transition name="fade" mode="out-in">
-            <component :is="selectedComponent" @switchComponent="switchComponent"/>
-        </transition>
-    </div>
+    <transition name="fade" mode="out-in">
+        <component :is="selectedComponent" @switchComponent="switchComponent"/>
+    </transition>
 </template>
 
 <script>
