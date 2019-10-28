@@ -1,5 +1,5 @@
 <template>
-    <b-navbar fixed-top spaced>
+    <b-navbar class="is-fixed-top is-spaced">
         <template slot="start">
             <b-navbar-item href="#" v-scroll-to="'#home'">
                 Home
@@ -14,9 +14,9 @@
                 <b-navbar-item href="#joinus" v-scroll-to="'#joinus'">
                     Join Us
                 </b-navbar-item>
-                <b-navbar-item href="#blog" v-scroll-to="'#blog'">
-                    Blog
-                </b-navbar-item>
+<!--                <b-navbar-item href="#blog" v-scroll-to="'#blog'">-->
+<!--                    Blog-->
+<!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
                 <b-navbar-item href="#models" v-scroll-to="'#models'">
                     Model Register

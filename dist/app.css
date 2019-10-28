@@ -16851,3 +16851,7 @@ section.section {
   transition: opacity 0.15s;
 }
 
+.modal-content {
+  max-width: 600px;
+}
+

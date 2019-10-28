@@ -2949,7 +2949,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3071,6 +3070,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -18163,7 +18166,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "b-navbar",
-    { attrs: { "fixed-top": "", spaced: "" } },
+    { staticClass: "is-fixed-top is-spaced" },
     [
       _c(
         "template",
@@ -18182,7 +18185,7 @@ var render = function() {
               ],
               attrs: { href: "#" }
             },
-            [_vm._v("\n            Home\n        ")]
+            [_vm._v("\n                Home\n            ")]
           ),
           _vm._v(" "),
           _c(
@@ -18198,7 +18201,7 @@ var render = function() {
               ],
               attrs: { href: "#about" }
             },
-            [_vm._v("\n            About\n        ")]
+            [_vm._v("\n                About\n            ")]
           ),
           _vm._v(" "),
           _c(
@@ -18214,7 +18217,7 @@ var render = function() {
               ],
               attrs: { href: "#team" }
             },
-            [_vm._v("\n            Team\n        ")]
+            [_vm._v("\n                Team\n            ")]
           ),
           _vm._v(" "),
           _c(
@@ -18234,23 +18237,7 @@ var render = function() {
                   ],
                   attrs: { href: "#joinus" }
                 },
-                [_vm._v("\n                Join Us\n            ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-navbar-item",
-                {
-                  directives: [
-                    {
-                      name: "scroll-to",
-                      rawName: "v-scroll-to",
-                      value: "#blog",
-                      expression: "'#blog'"
-                    }
-                  ],
-                  attrs: { href: "#blog" }
-                },
-                [_vm._v("\n                Blog\n            ")]
+                [_vm._v("\n                    Join Us\n                ")]
               ),
               _vm._v(" "),
               _c("hr", { staticClass: "navbar-divider" }),
@@ -18268,7 +18255,11 @@ var render = function() {
                   ],
                   attrs: { href: "#models" }
                 },
-                [_vm._v("\n                Model Register\n            ")]
+                [
+                  _vm._v(
+                    "\n                    Model Register\n                "
+                  )
+                ]
               )
             ],
             1
@@ -18308,7 +18299,11 @@ var render = function() {
                   staticClass: "button is-light",
                   attrs: { href: "#contact" }
                 },
-                [_vm._v("\n                    Contact Us\n                ")]
+                [
+                  _vm._v(
+                    "\n                        Contact Us\n                    "
+                  )
+                ]
               )
             ])
           ])
@@ -18751,10 +18746,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "section",
-    {
-      staticClass: "section team-info hero is-fullheight is-dark",
-      attrs: { id: "team" }
-    },
+    { staticClass: "section team-info is-dark", attrs: { id: "team" } },
     [
       _c("TeamIndComponent", {
         attrs: { TeamMembers: _vm.TeamMembers },
@@ -18858,13 +18850,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "columns is-multiline" },
+    { staticClass: "columns is-multiline is-mobile" },
     _vm._l(_vm.TeamMembers, function(tm) {
       return _c(
         "div",
         {
           key: tm.id,
-          staticClass: "section column is-4",
+          staticClass: "section column is-4-desktop is-4-tablet is-6-mobile",
           attrs: { id: tm.FirstName }
         },
         [
@@ -18938,41 +18930,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card" }, [
-    _c("div", { staticClass: "card-content columns" }, [
-      _c("div", { staticClass: "column" }, [
-        _c("figure", { staticClass: "image" }, [
-          _c("img", {
-            attrs: { src: _vm.selectedTM.Image, alt: _vm.selectedTM.FirstName }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c("div", { staticClass: "media" }, [
-          _c("div", { staticClass: "media-content has-text-white" }, [
-            _c("h1", { staticClass: "title has-text-white" }, [
-              _vm._v(
-                _vm._s(_vm.selectedTM.FirstName) +
-                  " " +
-                  _vm._s(_vm.selectedTM.LastName)
-              )
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle has-text-white" }, [
-              _vm._v(_vm._s(_vm.selectedTM.Level))
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
-              _vm._v(_vm._s(_vm.selectedTM.Para1))
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para2))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para3))]),
-            _vm._v(" "),
-            _c("p", { staticClass: "is-size-5" }, [
-              _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))
+  return _c("div", { staticClass: "columns is-mobile is-centered" }, [
+    _c("div", { staticClass: "column is-9" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-content columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                attrs: {
+                  src: _vm.selectedTM.Image,
+                  alt: _vm.selectedTM.FirstName
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "media" }, [
+              _c("div", { staticClass: "media-content has-text-white" }, [
+                _c("h1", { staticClass: "title has-text-white" }, [
+                  _vm._v(
+                    _vm._s(_vm.selectedTM.FirstName) +
+                      " " +
+                      _vm._s(_vm.selectedTM.LastName)
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h2", { staticClass: "subtitle has-text-white" }, [
+                  _vm._v(_vm._s(_vm.selectedTM.Level))
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
+                  _vm._v(_vm._s(_vm.selectedTM.Para1))
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para2))]),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para3))]),
+                _vm._v(" "),
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))
+                ])
+              ])
             ])
           ])
         ])
