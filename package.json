@@ -35,6 +35,7 @@
     "smoothscroll-polyfill": "^0.4.4",
     "vue": "^2.6.10",
     "vue-cookie-law": "^1.10.0",
+    "vue-scrollto": "^2.17.1",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {}
