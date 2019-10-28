@@ -16985,7 +16985,7 @@ var render = function() {
       _vm._v(" "),
       _vm._m(1),
       _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
@@ -17005,7 +17005,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "columns is-vcentered" }, [
-      _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "column is-5-desktop" }, [
         _c("h1", { staticClass: "title" }, [_vm._v("It's All about the Base")]),
         _vm._v(" "),
         _c("h2", { staticClass: "subtitle" }, [
@@ -17062,7 +17062,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "columns is-vcentered" }, [
-      _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "column is-5-desktop" }, [
         _c("p", [
           _vm._v("The Base Team comprises of "),
           _c("strong", [_vm._v("Apprentices, Junior Stylists and Graduates")]),
@@ -17611,7 +17611,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
@@ -17998,7 +17998,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
@@ -18614,7 +18614,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(
@@ -18767,7 +18767,7 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
             _c(

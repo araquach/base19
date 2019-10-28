@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div class="level">
+        <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
                     <button @click="switchComponent" class="button">Show Less</button>
