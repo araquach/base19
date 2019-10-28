@@ -18163,40 +18163,113 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "b-navbar",
+    { attrs: { "fixed-top": "", spaced: "" } },
     [
       _c(
         "template",
         { slot: "start" },
         [
-          _c("b-navbar-item", { attrs: { href: "#" } }, [
-            _vm._v("\n            Home\n        ")
-          ]),
+          _c(
+            "b-navbar-item",
+            {
+              directives: [
+                {
+                  name: "scroll-to",
+                  rawName: "v-scroll-to",
+                  value: "#home",
+                  expression: "'#home'"
+                }
+              ],
+              attrs: { href: "#" }
+            },
+            [_vm._v("\n            Home\n        ")]
+          ),
           _vm._v(" "),
-          _c("b-navbar-item", { attrs: { href: "#about" } }, [
-            _vm._v("\n            About\n        ")
-          ]),
+          _c(
+            "b-navbar-item",
+            {
+              directives: [
+                {
+                  name: "scroll-to",
+                  rawName: "v-scroll-to",
+                  value: "#about",
+                  expression: "'#about'"
+                }
+              ],
+              attrs: { href: "#about" }
+            },
+            [_vm._v("\n            About\n        ")]
+          ),
           _vm._v(" "),
-          _c("b-navbar-item", { attrs: { href: "#team" } }, [
-            _vm._v("\n            Team\n        ")
-          ]),
+          _c(
+            "b-navbar-item",
+            {
+              directives: [
+                {
+                  name: "scroll-to",
+                  rawName: "v-scroll-to",
+                  value: "#team",
+                  expression: "'#team'"
+                }
+              ],
+              attrs: { href: "#team" }
+            },
+            [_vm._v("\n            Team\n        ")]
+          ),
           _vm._v(" "),
           _c(
             "b-navbar-dropdown",
             { attrs: { label: "More" } },
             [
-              _c("b-navbar-item", { attrs: { href: "#joinus" } }, [
-                _vm._v("\n                Join Us\n            ")
-              ]),
+              _c(
+                "b-navbar-item",
+                {
+                  directives: [
+                    {
+                      name: "scroll-to",
+                      rawName: "v-scroll-to",
+                      value: "#joinus",
+                      expression: "'#joinus'"
+                    }
+                  ],
+                  attrs: { href: "#joinus" }
+                },
+                [_vm._v("\n                Join Us\n            ")]
+              ),
               _vm._v(" "),
-              _c("b-navbar-item", { attrs: { href: "#joinus" } }, [
-                _vm._v("\n                Blog\n            ")
-              ]),
+              _c(
+                "b-navbar-item",
+                {
+                  directives: [
+                    {
+                      name: "scroll-to",
+                      rawName: "v-scroll-to",
+                      value: "#blog",
+                      expression: "'#blog'"
+                    }
+                  ],
+                  attrs: { href: "#blog" }
+                },
+                [_vm._v("\n                Blog\n            ")]
+              ),
               _vm._v(" "),
               _c("hr", { staticClass: "navbar-divider" }),
               _vm._v(" "),
-              _c("b-navbar-item", { attrs: { href: "#models" } }, [
-                _vm._v("\n                Model Register\n            ")
-              ])
+              _c(
+                "b-navbar-item",
+                {
+                  directives: [
+                    {
+                      name: "scroll-to",
+                      rawName: "v-scroll-to",
+                      value: "#models",
+                      expression: "'#models'"
+                    }
+                  ],
+                  attrs: { href: "#models" }
+                },
+                [_vm._v("\n                Model Register\n            ")]
+              )
             ],
             1
           )
@@ -18223,7 +18296,18 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "a",
-                { staticClass: "button is-light", attrs: { href: "#contact" } },
+                {
+                  directives: [
+                    {
+                      name: "scroll-to",
+                      rawName: "v-scroll-to",
+                      value: "#contact",
+                      expression: "'#contact'"
+                    }
+                  ],
+                  staticClass: "button is-light",
+                  attrs: { href: "#contact" }
+                },
                 [_vm._v("\n                    Contact Us\n                ")]
               )
             ])
