@@ -96,7 +96,7 @@
                 this.$emit('switchComponent')
             },
 
-            checkForm(e) {
+            checkForm: function (e) {
                 this.errors = [];
 
                 if (!this.name) {
@@ -118,7 +118,7 @@
                 e.preventDefault();
             },
 
-            validMobile(mobile) {
+            validMobile: function (mobile) {
                 var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
                 return re.test(mobile);
             },
