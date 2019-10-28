@@ -2410,27 +2410,6 @@ __webpack_require__.r(__webpack_exports__);
     fullMessage: function fullMessage() {
       return "From: ".concat(this.name, "\n            Email Address: ").concat(this.email, "\n            Message: ").concat(this.message, "\n            ");
     },
-    // checkForm(e) {
-    //     this.errors = [];
-    //
-    //     if (!this.name) {
-    //         this.errors.push('Name required.');
-    //     }
-    //     if (!this.email) {
-    //         this.errors.push('Email address required.');
-    //     } else if (!this.validEmail(this.email)) {
-    //         this.errors.push('Valid Email address required.');
-    //     }
-    //     if (!this.message) {
-    //         this.errors.push('Message required')
-    //     }
-    //
-    //     if (!this.errors.length) {
-    //         return true;
-    //     }
-    //
-    //     e.preventDefault();
-    // },
     validEmail: function validEmail(email) {
       var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
@@ -2857,6 +2836,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2864,14 +2847,21 @@ __webpack_require__.r(__webpack_exports__);
       errors: [],
       name: null,
       mobile: null,
-      info: null
+      info: null,
+      formSubmitted: false
     };
   },
   methods: {
     switchComponent: function switchComponent() {
       this.$emit('switchComponent');
     },
-    checkForm: function checkForm(e) {
+    validMobile: function validMobile(mobile) {
+      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
+      return re.test(mobile);
+    },
+    sendData: function sendData() {
+      var _this = this;
+
       this.errors = [];
 
       if (!this.name) {
@@ -2879,24 +2869,24 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (!this.mobile) {
-        this.errors.push('Mobile Number required.');
+        this.errors.push('Mobile number required.');
       } else if (!this.validMobile(this.mobile)) {
-        this.errors.push('Valid Mobile Number required.');
+        this.errors.push('Valid mobile number required.');
       }
 
       if (!this.info) {
-        this.errors.push('Additional Information required.');
+        this.errors.push('Information required');
+      } else {
+        axios.post('/api/model', {
+          name: this.name,
+          mobile: this.mobile,
+          info: this.info
+        }).then(function (response) {
+          _this.formSubmitted = true;
+        })["catch"](function (e) {
+          console.error(e);
+        });
       }
-
-      if (!this.errors.length) {
-        return true;
-      }
-
-      e.preventDefault();
-    },
-    validMobile: function validMobile(mobile) {
-      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
-      return re.test(mobile);
     }
   }
 });
@@ -17944,7 +17934,7 @@ var render = function() {
                   )
                 ])
               ])
-            : _c("div", { staticClass: "form" }, [
+            : _c("div", [
                 _c("p", { staticClass: "is-size-5" }, [
                   _vm._v(
                     "If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can"
@@ -18725,14 +18715,9 @@ var staticRenderFns = [
                 "div",
                 { staticClass: "navbar-item has-dropdown is-hoverable" },
                 [
-                  _c(
-                    "a",
-                    {
-                      staticClass:
-                        "navbar-link is-hidden-mobile is-hidden-tablet"
-                    },
-                    [_vm._v("More")]
-                  ),
+                  _c("a", { staticClass: "navbar-link is-hidden-mobile" }, [
+                    _vm._v("More")
+                  ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "navbar-dropdown" }, [
                     _c(
@@ -18922,158 +18907,179 @@ var render = function() {
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
           _vm._v(" "),
-          _c("p", { staticClass: "is-size-4" }, [
-            _vm._v(
-              "Please provide some info about your hair to allow us to determine which sessions best suit your needs"
-            )
-          ]),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("Call us on 01925 444449 if you would like more information")
-          ]),
-          _vm._v(" "),
-          _c("small", [
-            _vm._v(
-              "A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this."
-            )
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "form",
-            {
-              attrs: { action: "/api/modelApplication", method: "post" },
-              on: { submit: _vm.checkForm }
-            },
-            [
-              _vm.errors.length
-                ? _c("div", { staticClass: "box has-text-danger" }, [
-                    _vm._m(2),
+          _vm.formSubmitted
+            ? _c("div", [
+                _c("p", { staticClass: "is-size-4 has-text-primary" }, [
+                  _vm._v(
+                    "Thanks for applying to be a model. When a suitable session comes up we'll be in touch."
+                  )
+                ])
+              ])
+            : _c("div", [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v(
+                    "Please provide some info about your hair to allow us to determine which sessions best suit your needs"
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Call us on 01925 444449 if you would like more information"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("small", [
+                  _vm._v(
+                    "A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("form", [
+                  _vm.errors.length
+                    ? _c("div", { staticClass: "box has-text-danger" }, [
+                        _vm._m(2),
+                        _vm._v(" "),
+                        _c(
+                          "ul",
+                          _vm._l(_vm.errors, function(error) {
+                            return _c("li", [_vm._v(_vm._s(error))])
+                          }),
+                          0
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Full name")
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "ul",
-                      _vm._l(_vm.errors, function(error) {
-                        return _c("li", [_vm._v(_vm._s(error))])
-                      }),
-                      0
-                    )
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.name,
+                            expression: "name"
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: {
+                          name: "name",
+                          type: "text",
+                          placeholder: "Your Full Name"
+                        },
+                        domProps: { value: _vm.name },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.name = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Mobile Number")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.mobile,
+                            expression: "mobile"
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: {
+                          name: "mobile",
+                          type: "text",
+                          placeholder: "Your Mobile Number"
+                        },
+                        domProps: { value: _vm.mobile },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.mobile = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Additional information")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.info,
+                            expression: "info"
+                          }
+                        ],
+                        staticClass: "textarea",
+                        attrs: { name: "info", placeholder: "Additional Info" },
+                        domProps: { value: _vm.info },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.info = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("input", {
+                    attrs: { type: "hidden", name: "role", value: "apprentice" }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("div", { staticClass: "control" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button is-primary",
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              return _vm.sendData($event)
+                            }
+                          }
+                        },
+                        [_vm._v("Apply")]
+                      )
+                    ])
                   ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Full name")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.name,
-                        expression: "name"
-                      }
-                    ],
-                    staticClass: "input",
-                    attrs: {
-                      name: "name",
-                      type: "text",
-                      placeholder: "Your Full Name"
-                    },
-                    domProps: { value: _vm.name },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.name = $event.target.value
-                      }
-                    }
-                  })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Mobile Number")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.mobile,
-                        expression: "mobile"
-                      }
-                    ],
-                    staticClass: "input",
-                    attrs: {
-                      name: "mobile",
-                      type: "text",
-                      placeholder: "Your Mobile Number"
-                    },
-                    domProps: { value: _vm.mobile },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.mobile = $event.target.value
-                      }
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "field" }, [
-                _c("label", { staticClass: "label has-text-white" }, [
-                  _vm._v("Additional information")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "control" }, [
-                  _c("textarea", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.info,
-                        expression: "info"
-                      }
-                    ],
-                    staticClass: "textarea",
-                    attrs: { name: "info", placeholder: "Additional Info" },
-                    domProps: { value: _vm.info },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.info = $event.target.value
-                      }
-                    }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "hidden", name: "role", value: "apprentice" }
-              }),
-              _vm._v(" "),
-              _vm._m(3)
-            ]
-          )
+              ])
         ])
       ]),
       _vm._v(" "),
@@ -19144,23 +19150,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", [_c("strong", [_vm._v("Please correct the following:")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field" }, [
-      _c("div", { staticClass: "control" }, [
-        _c(
-          "button",
-          {
-            staticClass: "button is-primary",
-            attrs: { type: "submit", value: "submit" }
-          },
-          [_vm._v("Submit")]
-        )
-      ])
-    ])
   }
 ]
 render._withStripped = true
@@ -31780,50 +31769,6 @@ document.addEventListener('DOMContentLoaded', function () {
         $target.classList.toggle('is-active');
       });
     });
-  }
-
-  var rootEl = document.documentElement;
-  var $modals = getAll('.modal');
-  var $modalButtons = getAll('.modal-button');
-  var $modalCloses = getAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button');
-
-  if ($modalButtons.length > 0) {
-    $modalButtons.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
-        rootEl.classList.add('is-clipped');
-        $target.classList.add('is-active');
-      });
-    });
-  }
-
-  if ($modalCloses.length > 0) {
-    $modalCloses.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-        closeModals();
-      });
-    });
-  }
-
-  document.addEventListener('keydown', function (event) {
-    var e = event || window.event;
-
-    if (e.keyCode === 27) {
-      closeModals();
-    }
-  });
-
-  function closeModals() {
-    rootEl.classList.remove('is-clipped');
-    $modals.forEach(function ($el) {
-      $el.classList.remove('is-active');
-    });
-  } // Functions
-
-
-  function getAll(selector) {
-    return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
   }
 });
 

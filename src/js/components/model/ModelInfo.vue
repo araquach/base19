@@ -13,53 +13,57 @@
             </div>
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
-                <p class="is-size-4">Please provide some info about your hair to allow us to determine which sessions best suit your needs</p>
-                <ul>
-                    <li>Hair Length</li>
-                    <li>Hair Texture</li>
-                    <li>Existing colour (Foils/Balayage/Full Head etc)</li>
-                    <li>Any Colour, Cut & Style ideas you would like</li>
-                </ul>
-                <br>
-                <p>Call us on 01925 444449 if you would like more information</p>
-                <small>A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this.</small>
-                <br>
-                <br>
-                <form @submit="checkForm" action="/api/modelApplication" method="post">
-
-                    <div v-if="errors.length" class="box has-text-danger">
-                        <p><strong>Please correct the following:</strong></p>
-                        <ul>
-                            <li v-for="error in errors">{{ error }}</li>
-                        </ul>
-                    </div>
-
-                    <div class="field">
-                        <label class="label has-text-white">Full name</label>
-                        <div class="control">
-                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Mobile Number</label>
-                        <div class="control">
-                            <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Additional information</label>
-                        <div class="control">
-                            <textarea class="textarea" v-model="info" name="info" placeholder="Additional Info"/>
-                        </div>
-                    </div>
+                <div v-if="formSubmitted">
+                    <p class="is-size-4 has-text-primary">Thanks for applying to be a model. When a suitable session comes up we'll be in touch.</p>
+                </div>
+                <div v-else>
+                    <p class="is-size-4">Please provide some info about your hair to allow us to determine which sessions best suit your needs</p>
+                    <ul>
+                        <li>Hair Length</li>
+                        <li>Hair Texture</li>
+                        <li>Existing colour (Foils/Balayage/Full Head etc)</li>
+                        <li>Any Colour, Cut & Style ideas you would like</li>
+                    </ul>
                     <br>
-                    <input type="hidden" name="role" value="apprentice">
-                    <div class="field">
-                        <div class="control">
-                            <button class="button is-primary" type="submit" value="submit">Submit</button>
+                    <p>Call us on 01925 444449 if you would like more information</p>
+                    <small>A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this.</small>
+                    <br>
+                    <br>
+                    <form>
+                        <div v-if="errors.length" class="box has-text-danger">
+                            <p><strong>Please correct the following:</strong></p>
+                            <ul>
+                                <li v-for="error in errors">{{ error }}</li>
+                            </ul>
                         </div>
-                    </div>
-                </form>
+
+                        <div class="field">
+                            <label class="label has-text-white">Full name</label>
+                            <div class="control">
+                                <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-white">Mobile Number</label>
+                            <div class="control">
+                                <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-white">Additional information</label>
+                            <div class="control">
+                                <textarea class="textarea" v-model="info" name="info" placeholder="Additional Info"/>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="hidden" name="role" value="apprentice">
+                        <div class="field">
+                            <div class="control">
+                                <button @click.prevent="sendData" class="button is-primary">Apply</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="level">
@@ -80,7 +84,8 @@
                 errors: [],
                 name: null,
                 mobile: null,
-                info: null
+                info: null,
+                formSubmitted: false
             }
         },
 
@@ -89,31 +94,38 @@
                 this.$emit('switchComponent')
             },
 
-            checkForm: function (e) {
-                this.errors = [];
-
-                if (!this.name) {
-                    this.errors.push('Name required.');
-                }
-                if (!this.mobile) {
-                    this.errors.push('Mobile Number required.');
-                } else if (!this.validMobile(this.mobile)) {
-                    this.errors.push('Valid Mobile Number required.');
-                }
-                if (!this.info) {
-                    this.errors.push('Additional Information required.')
-                }
-
-                if (!this.errors.length) {
-                    return true;
-                }
-
-                e.preventDefault();
-            },
-
             validMobile: function (mobile) {
                 var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
                 return re.test(mobile);
+            },
+
+            sendData() {
+                this.errors = [];
+
+                if (!this.name) {
+                    this.errors.push('Name required.')
+                }
+                if (!this.mobile) {
+                    this.errors.push('Mobile number required.')
+                } else if (!this.validMobile(this.mobile)) {
+                    this.errors.push('Valid mobile number required.')
+                }
+                if (!this.info) {
+                    this.errors.push('Information required')
+                }
+                else {
+                    axios.post('/api/model', {
+                        name: this.name,
+                        mobile: this.mobile,
+                        info: this.info
+                    })
+                        .then(response => {
+                            this.formSubmitted = true
+                        })
+                        .catch((e) => {
+                            console.error(e)
+                        })
+                }
             }
         }
     }

@@ -31,6 +31,13 @@ type JoinusApplicant struct {
 	Position 	string
 }
 
+type ModelApplicant struct {
+	gorm.Model
+	Name string
+	Mobile string
+	Info string
+}
+
 func init() {
 	// loads values from .env into the system
 	if err := godotenv.Load(); err != nil {
@@ -130,7 +137,7 @@ func main() {
 	}
 
 	db := dbConn()
-	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{})
+	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{})
 
 	//for _, tm := range teamMembers {
 	//	db.Create(&tm)

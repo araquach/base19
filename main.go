@@ -41,6 +41,13 @@ type JoinusApplicant struct {
 	Info 		string `gorm:"-"`
 }
 
+type ModelApplicant struct {
+	gorm.Model
+	Name string
+	Mobile string
+	Info string
+}
+
 type TeamMember struct {
 	Id			int
 	FirstName 	string
@@ -190,7 +197,6 @@ func apiJoinus(w http.ResponseWriter, r *http.Request) {
 	}
 
 	db := dbConn()
-
 	db.Create(&data)
 
 	mg := mailgun.NewMailgun(os.Getenv("MAILGUN_DOMAIN"), os.Getenv("MAILGUN_KEY"))
@@ -215,6 +221,23 @@ func apiJoinus(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Printf("ID: %s Resp: %s\n", id, resp)
 
+	return
+}
+
+func apiModel(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+
+	var data ModelApplicant
+	err := decoder.Decode(&data)
+	if err != nil {
+		panic(err)
+	}
+
+	db := dbConn()
+	db.Create(&data)
+	if err != nil {
+		log.Fatal(err)
+	}
 	return
 }
 
@@ -299,6 +322,7 @@ func main() {
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
+	r.HandleFunc("/api/model", apiModel).Methods("POST")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./dist/"))

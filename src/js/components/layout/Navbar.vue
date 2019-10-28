@@ -15,7 +15,7 @@
                 <a href="#team" class="navbar-item js-scroll-to-team">Team</a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link is-hidden-mobile is-hidden-tablet">More</a>
+                    <a class="navbar-link is-hidden-mobile">More</a>
 
                     <div class="navbar-dropdown">
                         <a href="#joinus" class="navbar-item js-scroll-to-joinus">Join Us</a>
