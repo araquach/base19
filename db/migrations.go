@@ -1,4 +1,4 @@
-package main
+package db
 
 import (
 	"fmt"
@@ -64,7 +64,7 @@ func dbConn() (db *gorm.DB) {
 	return db
 }
 
-func main() {
+func db() {
 	tm1 := TeamMember{
 		FirstName: "Lucy",
 		LastName: "Watson",
