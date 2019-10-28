@@ -1,6 +1,6 @@
 <template>
     <transition name="fade" mode="out-in">
-        <component :is="selectedComponent" @switchComponent="switchComponent"/>
+        <component :is="selectedComponent" @switchComponent="switchComponent" :TeamMembers="TeamMembers"/>
     </transition>
 </template>
 
@@ -16,7 +16,8 @@
 
         data() {
             return {
-                selectedComponent: 'TeamFrontComponent'
+                selectedComponent: 'TeamFrontComponent',
+                TeamMembers: []
             }
         },
 
@@ -28,6 +29,13 @@
                     this.selectedComponent = 'TeamAllComponent'
                 }
             }
+        },
+
+        created() {
+            axios.get('/api/team').then(response => this.TeamMembers = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
         }
     }
 </script>

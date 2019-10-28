@@ -23,11 +23,12 @@
     export default {
         components: {TeamIndComponent, TeamModalComponent},
 
+        props: ['TeamMembers'],
+
         data() {
             return {
                     selectedTM: '',
-                    isComponentModalActive: false,
-                    TeamMembers: []
+                    isComponentModalActive: false
                 }
         },
 
@@ -40,13 +41,6 @@
             switchComponent() {
                 this.$emit('switchComponent')
             }
-        },
-
-        created() {
-            axios.get('/api/team').then(response => this.TeamMembers = response.data)
-                .catch(error => {
-                    console.log(error)
-                })
         }
     }
 </script>

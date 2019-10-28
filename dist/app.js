@@ -2897,7 +2897,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      selectedComponent: 'TeamFrontComponent'
+      selectedComponent: 'TeamFrontComponent',
+      TeamMembers: []
     };
   },
   methods: {
@@ -2908,6 +2909,15 @@ __webpack_require__.r(__webpack_exports__);
         this.selectedComponent = 'TeamAllComponent';
       }
     }
+  },
+  created: function created() {
+    var _this = this;
+
+    axios.get('/api/team').then(function (response) {
+      return _this.TeamMembers = response.data;
+    })["catch"](function (error) {
+      console.log(error);
+    });
   }
 });
 
@@ -2949,11 +2959,11 @@ __webpack_require__.r(__webpack_exports__);
     TeamIndComponent: _TeamInd__WEBPACK_IMPORTED_MODULE_0__["default"],
     TeamModalComponent: _TeamModal__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
+  props: ['TeamMembers'],
   data: function data() {
     return {
       selectedTM: '',
-      isComponentModalActive: false,
-      TeamMembers: []
+      isComponentModalActive: false
     };
   },
   methods: {
@@ -2964,15 +2974,6 @@ __webpack_require__.r(__webpack_exports__);
     switchComponent: function switchComponent() {
       this.$emit('switchComponent');
     }
-  },
-  created: function created() {
-    var _this = this;
-
-    axios.get('/api/team').then(function (response) {
-      return _this.TeamMembers = response.data;
-    })["catch"](function (error) {
-      console.log(error);
-    });
   }
 });
 
@@ -18708,6 +18709,7 @@ var render = function() {
     [
       _c(_vm.selectedComponent, {
         tag: "component",
+        attrs: { TeamMembers: _vm.TeamMembers },
         on: { switchComponent: _vm.switchComponent }
       })
     ],
