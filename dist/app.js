@@ -1912,23 +1912,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Test.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/Test.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/about/About.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/about/About.vue?vue&type=script&lang=js& ***!
@@ -2947,7 +2930,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TeamInd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamInd */ "./src/js/components/team/TeamInd.vue");
-/* harmony import */ var _TeamModal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamModal */ "./src/js/components/team/TeamModal.vue");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './TeamModal'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 //
 //
 //
@@ -2972,7 +2955,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     TeamIndComponent: _TeamInd__WEBPACK_IMPORTED_MODULE_0__["default"],
-    TeamModalComponent: _TeamModal__WEBPACK_IMPORTED_MODULE_1__["default"]
+    TeamModalComponent: !(function webpackMissingModule() { var e = new Error("Cannot find module './TeamModal'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
   },
   data: function data() {
     return {
@@ -3075,45 +3058,6 @@ __webpack_require__.r(__webpack_exports__);
       this.$emit('emitTM', tm);
     }
   }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/TeamModal.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/team/TeamModal.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['selectedTM']
 });
 
 /***/ }),
@@ -16153,447 +16097,6 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/smoothscroll-polyfill/dist/smoothscroll.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/smoothscroll-polyfill/dist/smoothscroll.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
-(function () {
-  'use strict';
-
-  // polyfill
-  function polyfill() {
-    // aliases
-    var w = window;
-    var d = document;
-
-    // return if scroll behavior is supported and polyfill is not forced
-    if (
-      'scrollBehavior' in d.documentElement.style &&
-      w.__forceSmoothScrollPolyfill__ !== true
-    ) {
-      return;
-    }
-
-    // globals
-    var Element = w.HTMLElement || w.Element;
-    var SCROLL_TIME = 468;
-
-    // object gathering original scroll methods
-    var original = {
-      scroll: w.scroll || w.scrollTo,
-      scrollBy: w.scrollBy,
-      elementScroll: Element.prototype.scroll || scrollElement,
-      scrollIntoView: Element.prototype.scrollIntoView
-    };
-
-    // define timing method
-    var now =
-      w.performance && w.performance.now
-        ? w.performance.now.bind(w.performance)
-        : Date.now;
-
-    /**
-     * indicates if a the current browser is made by Microsoft
-     * @method isMicrosoftBrowser
-     * @param {String} userAgent
-     * @returns {Boolean}
-     */
-    function isMicrosoftBrowser(userAgent) {
-      var userAgentPatterns = ['MSIE ', 'Trident/', 'Edge/'];
-
-      return new RegExp(userAgentPatterns.join('|')).test(userAgent);
-    }
-
-    /*
-     * IE has rounding bug rounding down clientHeight and clientWidth and
-     * rounding up scrollHeight and scrollWidth causing false positives
-     * on hasScrollableSpace
-     */
-    var ROUNDING_TOLERANCE = isMicrosoftBrowser(w.navigator.userAgent) ? 1 : 0;
-
-    /**
-     * changes scroll position inside an element
-     * @method scrollElement
-     * @param {Number} x
-     * @param {Number} y
-     * @returns {undefined}
-     */
-    function scrollElement(x, y) {
-      this.scrollLeft = x;
-      this.scrollTop = y;
-    }
-
-    /**
-     * returns result of applying ease math function to a number
-     * @method ease
-     * @param {Number} k
-     * @returns {Number}
-     */
-    function ease(k) {
-      return 0.5 * (1 - Math.cos(Math.PI * k));
-    }
-
-    /**
-     * indicates if a smooth behavior should be applied
-     * @method shouldBailOut
-     * @param {Number|Object} firstArg
-     * @returns {Boolean}
-     */
-    function shouldBailOut(firstArg) {
-      if (
-        firstArg === null ||
-        typeof firstArg !== 'object' ||
-        firstArg.behavior === undefined ||
-        firstArg.behavior === 'auto' ||
-        firstArg.behavior === 'instant'
-      ) {
-        // first argument is not an object/null
-        // or behavior is auto, instant or undefined
-        return true;
-      }
-
-      if (typeof firstArg === 'object' && firstArg.behavior === 'smooth') {
-        // first argument is an object and behavior is smooth
-        return false;
-      }
-
-      // throw error when behavior is not supported
-      throw new TypeError(
-        'behavior member of ScrollOptions ' +
-          firstArg.behavior +
-          ' is not a valid value for enumeration ScrollBehavior.'
-      );
-    }
-
-    /**
-     * indicates if an element has scrollable space in the provided axis
-     * @method hasScrollableSpace
-     * @param {Node} el
-     * @param {String} axis
-     * @returns {Boolean}
-     */
-    function hasScrollableSpace(el, axis) {
-      if (axis === 'Y') {
-        return el.clientHeight + ROUNDING_TOLERANCE < el.scrollHeight;
-      }
-
-      if (axis === 'X') {
-        return el.clientWidth + ROUNDING_TOLERANCE < el.scrollWidth;
-      }
-    }
-
-    /**
-     * indicates if an element has a scrollable overflow property in the axis
-     * @method canOverflow
-     * @param {Node} el
-     * @param {String} axis
-     * @returns {Boolean}
-     */
-    function canOverflow(el, axis) {
-      var overflowValue = w.getComputedStyle(el, null)['overflow' + axis];
-
-      return overflowValue === 'auto' || overflowValue === 'scroll';
-    }
-
-    /**
-     * indicates if an element can be scrolled in either axis
-     * @method isScrollable
-     * @param {Node} el
-     * @param {String} axis
-     * @returns {Boolean}
-     */
-    function isScrollable(el) {
-      var isScrollableY = hasScrollableSpace(el, 'Y') && canOverflow(el, 'Y');
-      var isScrollableX = hasScrollableSpace(el, 'X') && canOverflow(el, 'X');
-
-      return isScrollableY || isScrollableX;
-    }
-
-    /**
-     * finds scrollable parent of an element
-     * @method findScrollableParent
-     * @param {Node} el
-     * @returns {Node} el
-     */
-    function findScrollableParent(el) {
-      while (el !== d.body && isScrollable(el) === false) {
-        el = el.parentNode || el.host;
-      }
-
-      return el;
-    }
-
-    /**
-     * self invoked function that, given a context, steps through scrolling
-     * @method step
-     * @param {Object} context
-     * @returns {undefined}
-     */
-    function step(context) {
-      var time = now();
-      var value;
-      var currentX;
-      var currentY;
-      var elapsed = (time - context.startTime) / SCROLL_TIME;
-
-      // avoid elapsed times higher than one
-      elapsed = elapsed > 1 ? 1 : elapsed;
-
-      // apply easing to elapsed time
-      value = ease(elapsed);
-
-      currentX = context.startX + (context.x - context.startX) * value;
-      currentY = context.startY + (context.y - context.startY) * value;
-
-      context.method.call(context.scrollable, currentX, currentY);
-
-      // scroll more if we have not reached our destination
-      if (currentX !== context.x || currentY !== context.y) {
-        w.requestAnimationFrame(step.bind(w, context));
-      }
-    }
-
-    /**
-     * scrolls window or element with a smooth behavior
-     * @method smoothScroll
-     * @param {Object|Node} el
-     * @param {Number} x
-     * @param {Number} y
-     * @returns {undefined}
-     */
-    function smoothScroll(el, x, y) {
-      var scrollable;
-      var startX;
-      var startY;
-      var method;
-      var startTime = now();
-
-      // define scroll context
-      if (el === d.body) {
-        scrollable = w;
-        startX = w.scrollX || w.pageXOffset;
-        startY = w.scrollY || w.pageYOffset;
-        method = original.scroll;
-      } else {
-        scrollable = el;
-        startX = el.scrollLeft;
-        startY = el.scrollTop;
-        method = scrollElement;
-      }
-
-      // scroll looping over a frame
-      step({
-        scrollable: scrollable,
-        method: method,
-        startTime: startTime,
-        startX: startX,
-        startY: startY,
-        x: x,
-        y: y
-      });
-    }
-
-    // ORIGINAL METHODS OVERRIDES
-    // w.scroll and w.scrollTo
-    w.scroll = w.scrollTo = function() {
-      // avoid action when no arguments are passed
-      if (arguments[0] === undefined) {
-        return;
-      }
-
-      // avoid smooth behavior if not required
-      if (shouldBailOut(arguments[0]) === true) {
-        original.scroll.call(
-          w,
-          arguments[0].left !== undefined
-            ? arguments[0].left
-            : typeof arguments[0] !== 'object'
-              ? arguments[0]
-              : w.scrollX || w.pageXOffset,
-          // use top prop, second argument if present or fallback to scrollY
-          arguments[0].top !== undefined
-            ? arguments[0].top
-            : arguments[1] !== undefined
-              ? arguments[1]
-              : w.scrollY || w.pageYOffset
-        );
-
-        return;
-      }
-
-      // LET THE SMOOTHNESS BEGIN!
-      smoothScroll.call(
-        w,
-        d.body,
-        arguments[0].left !== undefined
-          ? ~~arguments[0].left
-          : w.scrollX || w.pageXOffset,
-        arguments[0].top !== undefined
-          ? ~~arguments[0].top
-          : w.scrollY || w.pageYOffset
-      );
-    };
-
-    // w.scrollBy
-    w.scrollBy = function() {
-      // avoid action when no arguments are passed
-      if (arguments[0] === undefined) {
-        return;
-      }
-
-      // avoid smooth behavior if not required
-      if (shouldBailOut(arguments[0])) {
-        original.scrollBy.call(
-          w,
-          arguments[0].left !== undefined
-            ? arguments[0].left
-            : typeof arguments[0] !== 'object' ? arguments[0] : 0,
-          arguments[0].top !== undefined
-            ? arguments[0].top
-            : arguments[1] !== undefined ? arguments[1] : 0
-        );
-
-        return;
-      }
-
-      // LET THE SMOOTHNESS BEGIN!
-      smoothScroll.call(
-        w,
-        d.body,
-        ~~arguments[0].left + (w.scrollX || w.pageXOffset),
-        ~~arguments[0].top + (w.scrollY || w.pageYOffset)
-      );
-    };
-
-    // Element.prototype.scroll and Element.prototype.scrollTo
-    Element.prototype.scroll = Element.prototype.scrollTo = function() {
-      // avoid action when no arguments are passed
-      if (arguments[0] === undefined) {
-        return;
-      }
-
-      // avoid smooth behavior if not required
-      if (shouldBailOut(arguments[0]) === true) {
-        // if one number is passed, throw error to match Firefox implementation
-        if (typeof arguments[0] === 'number' && arguments[1] === undefined) {
-          throw new SyntaxError('Value could not be converted');
-        }
-
-        original.elementScroll.call(
-          this,
-          // use left prop, first number argument or fallback to scrollLeft
-          arguments[0].left !== undefined
-            ? ~~arguments[0].left
-            : typeof arguments[0] !== 'object' ? ~~arguments[0] : this.scrollLeft,
-          // use top prop, second argument or fallback to scrollTop
-          arguments[0].top !== undefined
-            ? ~~arguments[0].top
-            : arguments[1] !== undefined ? ~~arguments[1] : this.scrollTop
-        );
-
-        return;
-      }
-
-      var left = arguments[0].left;
-      var top = arguments[0].top;
-
-      // LET THE SMOOTHNESS BEGIN!
-      smoothScroll.call(
-        this,
-        this,
-        typeof left === 'undefined' ? this.scrollLeft : ~~left,
-        typeof top === 'undefined' ? this.scrollTop : ~~top
-      );
-    };
-
-    // Element.prototype.scrollBy
-    Element.prototype.scrollBy = function() {
-      // avoid action when no arguments are passed
-      if (arguments[0] === undefined) {
-        return;
-      }
-
-      // avoid smooth behavior if not required
-      if (shouldBailOut(arguments[0]) === true) {
-        original.elementScroll.call(
-          this,
-          arguments[0].left !== undefined
-            ? ~~arguments[0].left + this.scrollLeft
-            : ~~arguments[0] + this.scrollLeft,
-          arguments[0].top !== undefined
-            ? ~~arguments[0].top + this.scrollTop
-            : ~~arguments[1] + this.scrollTop
-        );
-
-        return;
-      }
-
-      this.scroll({
-        left: ~~arguments[0].left + this.scrollLeft,
-        top: ~~arguments[0].top + this.scrollTop,
-        behavior: arguments[0].behavior
-      });
-    };
-
-    // Element.prototype.scrollIntoView
-    Element.prototype.scrollIntoView = function() {
-      // avoid smooth behavior if not required
-      if (shouldBailOut(arguments[0]) === true) {
-        original.scrollIntoView.call(
-          this,
-          arguments[0] === undefined ? true : arguments[0]
-        );
-
-        return;
-      }
-
-      // LET THE SMOOTHNESS BEGIN!
-      var scrollableParent = findScrollableParent(this);
-      var parentRects = scrollableParent.getBoundingClientRect();
-      var clientRects = this.getBoundingClientRect();
-
-      if (scrollableParent !== d.body) {
-        // reveal element inside parent
-        smoothScroll.call(
-          this,
-          scrollableParent,
-          scrollableParent.scrollLeft + clientRects.left - parentRects.left,
-          scrollableParent.scrollTop + clientRects.top - parentRects.top
-        );
-
-        // reveal parent in viewport unless is fixed
-        if (w.getComputedStyle(scrollableParent).position !== 'fixed') {
-          w.scrollBy({
-            left: parentRects.left,
-            top: parentRects.top,
-            behavior: 'smooth'
-          });
-        }
-      } else {
-        // reveal element in viewport
-        w.scrollBy({
-          left: clientRects.left,
-          top: clientRects.top,
-          behavior: 'smooth'
-        });
-      }
-    };
-  }
-
-  if (true) {
-    // commonjs
-    module.exports = { polyfill: polyfill };
-  } else {}
-
-}());
-
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Cookie.vue?vue&type=style&index=0&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/Cookie.vue?vue&type=style&index=0&lang=css& ***!
@@ -17322,30 +16825,6 @@ var staticRenderFns = [
     ])
   }
 ]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Test.vue?vue&type=template&id=05b2e744&":
-/*!*************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/Test.vue?vue&type=template&id=05b2e744& ***!
-  \*************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div")
-}
-var staticRenderFns = []
 render._withStripped = true
 
 
@@ -18643,147 +18122,81 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      {
-        staticClass: "navbar is-fixed-top is-spaced",
-        attrs: { role: "navigation", "aria-label": "main navigation" }
-      },
-      [
-        _c("div", { staticClass: "navbar-brand" }, [
+  return _c(
+    "b-navbar",
+    [
+      _c(
+        "template",
+        { slot: "start" },
+        [
+          _c("b-navbar-item", { attrs: { href: "#" } }, [
+            _vm._v("\n            Home\n        ")
+          ]),
+          _vm._v(" "),
+          _c("b-navbar-item", { attrs: { href: "#about" } }, [
+            _vm._v("\n            About\n        ")
+          ]),
+          _vm._v(" "),
+          _c("b-navbar-item", { attrs: { href: "#team" } }, [
+            _vm._v("\n            Team\n        ")
+          ]),
+          _vm._v(" "),
           _c(
-            "a",
-            {
-              staticClass: "navbar-burger burger",
-              attrs: {
-                role: "button",
-                "aria-label": "menu",
-                "aria-expanded": "false",
-                "data-target": "navbarBasicExample"
-              }
-            },
+            "b-navbar-dropdown",
+            { attrs: { label: "More" } },
             [
-              _c("span", { attrs: { "aria-hidden": "true" } }),
+              _c("b-navbar-item", { attrs: { href: "#joinus" } }, [
+                _vm._v("\n                Join Us\n            ")
+              ]),
               _vm._v(" "),
-              _c("span", { attrs: { "aria-hidden": "true" } }),
+              _c("b-navbar-item", { attrs: { href: "#joinus" } }, [
+                _vm._v("\n                Blog\n            ")
+              ]),
               _vm._v(" "),
-              _c("span", { attrs: { "aria-hidden": "true" } })
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "navbar-menu", attrs: { id: "navbarBasicExample" } },
-          [
-            _c("div", { staticClass: "navbar-start" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "navbar-item js-scroll-to-top",
-                  attrs: { href: "#home" }
-                },
-                [_vm._v("Home")]
-              ),
+              _c("hr", { staticClass: "navbar-divider" }),
               _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "navbar-item js-scroll-to-about",
-                  attrs: { href: "#about" }
-                },
-                [_vm._v("About Us")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "navbar-item js-scroll-to-team",
-                  attrs: { href: "#team" }
-                },
-                [_vm._v("Team")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "navbar-item has-dropdown is-hoverable" },
-                [
-                  _c("a", { staticClass: "navbar-link is-hidden-mobile" }, [
-                    _vm._v("More")
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "navbar-dropdown" }, [
-                    _c(
-                      "a",
-                      {
-                        staticClass: "navbar-item js-scroll-to-joinus",
-                        attrs: { href: "#joinus" }
-                      },
-                      [_vm._v("Join Us")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "navbar-item js-scroll-to-blog",
-                        attrs: { href: "#blog" }
-                      },
-                      [_vm._v("Blog")]
-                    ),
-                    _vm._v(" "),
-                    _c("hr", { staticClass: "navbar-divider" }),
-                    _vm._v(" "),
-                    _c(
-                      "a",
-                      {
-                        staticClass: "navbar-item js-scroll-to-models",
-                        attrs: { href: "#models" }
-                      },
-                      [_vm._v("Model Register")]
-                    )
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "navbar-end" }, [
-              _c("div", { staticClass: "navbar-item" }, [
-                _c("div", { staticClass: "buttons" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "button is-primary js-scroll-to-booking",
-                      attrs: {
-                        href: "https://phorest.com/book/salons/basehairacademy"
-                      }
-                    },
-                    [_c("strong", [_vm._v("Book Now")])]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "button is-light js-scroll-to-bottom",
-                      attrs: { href: "#contact" }
-                    },
-                    [_vm._v("Contact Us")]
-                  )
-                ])
+              _c("b-navbar-item", { attrs: { href: "#models" } }, [
+                _vm._v("\n                Model Register\n            ")
               ])
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "template",
+        { slot: "end" },
+        [
+          _c("b-navbar-item", { attrs: { tag: "div" } }, [
+            _c("div", { staticClass: "buttons" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "button is-primary",
+                  attrs: {
+                    href: "https://phorest.com/book/salons/basehairacademy"
+                  }
+                },
+                [_c("strong", [_vm._v("Book Now")])]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                { staticClass: "button is-light", attrs: { href: "#contact" } },
+                [_vm._v("\n                    Contact Us\n                ")]
+              )
             ])
-          ]
-        )
-      ]
-    )
-  }
-]
+          ])
+        ],
+        1
+      )
+    ],
+    2
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -19248,7 +18661,8 @@ var render = function() {
               [_vm._v("Go Back")]
             )
           ])
-        ])
+        ]),
+        _vm._v("`\n    ")
       ])
     ],
     1
@@ -19387,70 +18801,6 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/TeamModal.vue?vue&type=template&id=b3bed4ac&":
-/*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/team/TeamModal.vue?vue&type=template&id=b3bed4ac& ***!
-  \***********************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "card" }, [
-    _c("div", { staticClass: "card-content columns" }, [
-      _c("div", { staticClass: "column" }, [
-        _c("figure", { staticClass: "image" }, [
-          _c("img", {
-            attrs: { src: _vm.selectedTM.Image, alt: _vm.selectedTM.FirstName }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column" }, [
-        _c("div", { staticClass: "media" }, [
-          _c("div", { staticClass: "media-content has-text-white" }, [
-            _c("h1", { staticClass: "title has-text-white" }, [
-              _vm._v(
-                _vm._s(_vm.selectedTM.FirstName) +
-                  " " +
-                  _vm._s(_vm.selectedTM.LastName)
-              )
-            ]),
-            _vm._v(" "),
-            _c("h2", { staticClass: "subtitle has-text-white" }, [
-              _vm._v(_vm._s(_vm.selectedTM.Level))
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
-              _vm._v(_vm._s(_vm.selectedTM.Para1))
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para2))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.Para3))]),
-            _vm._v(" "),
-            _c("p", { staticClass: "is-size-5" }, [
-              _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.Price))
-            ])
-          ])
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -19554,6 +18904,534 @@ function normalizeComponent (
     options: options
   }
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-scrollto/vue-scrollto.js":
+/*!***************************************************!*\
+  !*** ./node_modules/vue-scrollto/vue-scrollto.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*!
+  * vue-scrollto v2.17.1
+  * (c) 2019 Randjelovic Igor
+  * @license MIT
+  */
+(function (global, factory) {
+   true ? module.exports = factory() :
+  undefined;
+}(this, function () { 'use strict';
+
+  function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      _typeof = function (obj) {
+        return typeof obj;
+      };
+    } else {
+      _typeof = function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return _typeof(obj);
+  }
+
+  function _extends() {
+    _extends = Object.assign || function (target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+
+      return target;
+    };
+
+    return _extends.apply(this, arguments);
+  }
+
+  /**
+   * https://github.com/gre/bezier-easing
+   * BezierEasing - use bezier curve for transition easing function
+   * by Gaëtan Renaudeau 2014 - 2015 – MIT License
+   */
+
+  // These values are established by empiricism with tests (tradeoff: performance VS precision)
+  var NEWTON_ITERATIONS = 4;
+  var NEWTON_MIN_SLOPE = 0.001;
+  var SUBDIVISION_PRECISION = 0.0000001;
+  var SUBDIVISION_MAX_ITERATIONS = 10;
+
+  var kSplineTableSize = 11;
+  var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
+
+  var float32ArraySupported = typeof Float32Array === 'function';
+
+  function A (aA1, aA2) { return 1.0 - 3.0 * aA2 + 3.0 * aA1; }
+  function B (aA1, aA2) { return 3.0 * aA2 - 6.0 * aA1; }
+  function C (aA1)      { return 3.0 * aA1; }
+
+  // Returns x(t) given t, x1, and x2, or y(t) given t, y1, and y2.
+  function calcBezier (aT, aA1, aA2) { return ((A(aA1, aA2) * aT + B(aA1, aA2)) * aT + C(aA1)) * aT; }
+
+  // Returns dx/dt given t, x1, and x2, or dy/dt given t, y1, and y2.
+  function getSlope (aT, aA1, aA2) { return 3.0 * A(aA1, aA2) * aT * aT + 2.0 * B(aA1, aA2) * aT + C(aA1); }
+
+  function binarySubdivide (aX, aA, aB, mX1, mX2) {
+    var currentX, currentT, i = 0;
+    do {
+      currentT = aA + (aB - aA) / 2.0;
+      currentX = calcBezier(currentT, mX1, mX2) - aX;
+      if (currentX > 0.0) {
+        aB = currentT;
+      } else {
+        aA = currentT;
+      }
+    } while (Math.abs(currentX) > SUBDIVISION_PRECISION && ++i < SUBDIVISION_MAX_ITERATIONS);
+    return currentT;
+  }
+
+  function newtonRaphsonIterate (aX, aGuessT, mX1, mX2) {
+   for (var i = 0; i < NEWTON_ITERATIONS; ++i) {
+     var currentSlope = getSlope(aGuessT, mX1, mX2);
+     if (currentSlope === 0.0) {
+       return aGuessT;
+     }
+     var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
+     aGuessT -= currentX / currentSlope;
+   }
+   return aGuessT;
+  }
+
+  function LinearEasing (x) {
+    return x;
+  }
+
+  var src = function bezier (mX1, mY1, mX2, mY2) {
+    if (!(0 <= mX1 && mX1 <= 1 && 0 <= mX2 && mX2 <= 1)) {
+      throw new Error('bezier x values must be in [0, 1] range');
+    }
+
+    if (mX1 === mY1 && mX2 === mY2) {
+      return LinearEasing;
+    }
+
+    // Precompute samples table
+    var sampleValues = float32ArraySupported ? new Float32Array(kSplineTableSize) : new Array(kSplineTableSize);
+    for (var i = 0; i < kSplineTableSize; ++i) {
+      sampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
+    }
+
+    function getTForX (aX) {
+      var intervalStart = 0.0;
+      var currentSample = 1;
+      var lastSample = kSplineTableSize - 1;
+
+      for (; currentSample !== lastSample && sampleValues[currentSample] <= aX; ++currentSample) {
+        intervalStart += kSampleStepSize;
+      }
+      --currentSample;
+
+      // Interpolate to provide an initial guess for t
+      var dist = (aX - sampleValues[currentSample]) / (sampleValues[currentSample + 1] - sampleValues[currentSample]);
+      var guessForT = intervalStart + dist * kSampleStepSize;
+
+      var initialSlope = getSlope(guessForT, mX1, mX2);
+      if (initialSlope >= NEWTON_MIN_SLOPE) {
+        return newtonRaphsonIterate(aX, guessForT, mX1, mX2);
+      } else if (initialSlope === 0.0) {
+        return guessForT;
+      } else {
+        return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize, mX1, mX2);
+      }
+    }
+
+    return function BezierEasing (x) {
+      // Because JavaScript number are imprecise, we should guarantee the extremes are right.
+      if (x === 0) {
+        return 0;
+      }
+      if (x === 1) {
+        return 1;
+      }
+      return calcBezier(getTForX(x), mY1, mY2);
+    };
+  };
+
+  var easings = {
+    ease: [0.25, 0.1, 0.25, 1.0],
+    linear: [0.0, 0.0, 1.0, 1.0],
+    'ease-in': [0.42, 0.0, 1.0, 1.0],
+    'ease-out': [0.0, 0.0, 0.58, 1.0],
+    'ease-in-out': [0.42, 0.0, 0.58, 1.0]
+  };
+
+  // https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
+  var supportsPassive = false;
+
+  try {
+    var opts = Object.defineProperty({}, 'passive', {
+      get: function get() {
+        supportsPassive = true;
+      }
+    });
+    window.addEventListener('test', null, opts);
+  } catch (e) {}
+
+  var _ = {
+    $: function $(selector) {
+      if (typeof selector !== 'string') {
+        return selector;
+      }
+
+      return document.querySelector(selector);
+    },
+    on: function on(element, events, handler) {
+      var opts = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {
+        passive: false
+      };
+
+      if (!(events instanceof Array)) {
+        events = [events];
+      }
+
+      for (var i = 0; i < events.length; i++) {
+        element.addEventListener(events[i], handler, supportsPassive ? opts : false);
+      }
+    },
+    off: function off(element, events, handler) {
+      if (!(events instanceof Array)) {
+        events = [events];
+      }
+
+      for (var i = 0; i < events.length; i++) {
+        element.removeEventListener(events[i], handler);
+      }
+    },
+    cumulativeOffset: function cumulativeOffset(element) {
+      var top = 0;
+      var left = 0;
+
+      do {
+        top += element.offsetTop || 0;
+        left += element.offsetLeft || 0;
+        element = element.offsetParent;
+      } while (element);
+
+      return {
+        top: top,
+        left: left
+      };
+    }
+  };
+
+  var abortEvents = ['mousedown', 'wheel', 'DOMMouseScroll', 'mousewheel', 'keyup', 'touchmove'];
+  var defaults = {
+    container: 'body',
+    duration: 500,
+    easing: 'ease',
+    offset: 0,
+    force: true,
+    cancelable: true,
+    onStart: false,
+    onDone: false,
+    onCancel: false,
+    x: false,
+    y: true
+  };
+  function setDefaults(options) {
+    defaults = _extends({}, defaults, options);
+  }
+  var scroller = function scroller() {
+    var element; // element to scroll to
+
+    var container; // container to scroll
+
+    var duration; // duration of the scrolling
+
+    var easing; // easing to be used when scrolling
+
+    var offset; // offset to be added (subtracted)
+
+    var force; // force scroll, even if element is visible
+
+    var cancelable; // indicates if user can cancel the scroll or not.
+
+    var onStart; // callback when scrolling is started
+
+    var onDone; // callback when scrolling is done
+
+    var onCancel; // callback when scrolling is canceled / aborted
+
+    var x; // scroll on x axis
+
+    var y; // scroll on y axis
+
+    var initialX; // initial X of container
+
+    var targetX; // target X of container
+
+    var initialY; // initial Y of container
+
+    var targetY; // target Y of container
+
+    var diffX; // difference
+
+    var diffY; // difference
+
+    var abort; // is scrolling aborted
+
+    var abortEv; // event that aborted scrolling
+
+    var abortFn = function abortFn(e) {
+      if (!cancelable) return;
+      abortEv = e;
+      abort = true;
+    };
+
+    var easingFn;
+    var timeStart; // time when scrolling started
+
+    var timeElapsed; // time elapsed since scrolling started
+
+    var progress; // progress
+
+    function scrollTop(container) {
+      var scrollTop = container.scrollTop;
+
+      if (container.tagName.toLowerCase() === 'body') {
+        // in firefox body.scrollTop always returns 0
+        // thus if we are trying to get scrollTop on a body tag
+        // we need to get it from the documentElement
+        scrollTop = scrollTop || document.documentElement.scrollTop;
+      }
+
+      return scrollTop;
+    }
+
+    function scrollLeft(container) {
+      var scrollLeft = container.scrollLeft;
+
+      if (container.tagName.toLowerCase() === 'body') {
+        // in firefox body.scrollLeft always returns 0
+        // thus if we are trying to get scrollLeft on a body tag
+        // we need to get it from the documentElement
+        scrollLeft = scrollLeft || document.documentElement.scrollLeft;
+      }
+
+      return scrollLeft;
+    }
+
+    function step(timestamp) {
+      if (abort) return done();
+      if (!timeStart) timeStart = timestamp;
+      timeElapsed = timestamp - timeStart;
+      progress = Math.min(timeElapsed / duration, 1);
+      progress = easingFn(progress);
+      topLeft(container, initialY + diffY * progress, initialX + diffX * progress);
+      timeElapsed < duration ? window.requestAnimationFrame(step) : done();
+    }
+
+    function done() {
+      if (!abort) topLeft(container, targetY, targetX);
+      timeStart = false;
+
+      _.off(container, abortEvents, abortFn);
+
+      if (abort && onCancel) onCancel(abortEv, element);
+      if (!abort && onDone) onDone(element);
+    }
+
+    function topLeft(element, top, left) {
+      if (y) element.scrollTop = top;
+      if (x) element.scrollLeft = left;
+
+      if (element.tagName.toLowerCase() === 'body') {
+        // in firefox body.scrollTop doesn't scroll the page
+        // thus if we are trying to scrollTop on a body tag
+        // we need to scroll on the documentElement
+        if (y) document.documentElement.scrollTop = top;
+        if (x) document.documentElement.scrollLeft = left;
+      }
+    }
+
+    function scrollTo(target, _duration) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+      if (_typeof(_duration) === 'object') {
+        options = _duration;
+      } else if (typeof _duration === 'number') {
+        options.duration = _duration;
+      }
+
+      element = _.$(target);
+
+      if (!element) {
+        return console.warn('[vue-scrollto warn]: Trying to scroll to an element that is not on the page: ' + target);
+      }
+
+      container = _.$(options.container || defaults.container);
+      duration = options.duration || defaults.duration;
+      easing = options.easing || defaults.easing;
+      offset = options.offset || defaults.offset;
+      force = options.hasOwnProperty('force') ? options.force !== false : defaults.force;
+      cancelable = options.hasOwnProperty('cancelable') ? options.cancelable !== false : defaults.cancelable;
+      onStart = options.onStart || defaults.onStart;
+      onDone = options.onDone || defaults.onDone;
+      onCancel = options.onCancel || defaults.onCancel;
+      x = options.x === undefined ? defaults.x : options.x;
+      y = options.y === undefined ? defaults.y : options.y;
+
+      var cumulativeOffsetContainer = _.cumulativeOffset(container);
+
+      var cumulativeOffsetElement = _.cumulativeOffset(element);
+
+      if (typeof offset === 'function') {
+        offset = offset(element, container);
+      }
+
+      initialY = scrollTop(container);
+      targetY = cumulativeOffsetElement.top - cumulativeOffsetContainer.top + offset;
+      initialX = scrollLeft(container);
+      targetX = cumulativeOffsetElement.left - cumulativeOffsetContainer.left + offset;
+      abort = false;
+      diffY = targetY - initialY;
+      diffX = targetX - initialX;
+
+      if (!force) {
+        // When the container is the default (body) we need to use the viewport
+        // height, not the entire body height
+        var containerHeight = container.tagName.toLowerCase() === 'body' ? document.documentElement.clientHeight || window.innerHeight : container.offsetHeight;
+        var containerTop = initialY;
+        var containerBottom = containerTop + containerHeight;
+        var elementTop = targetY - offset;
+        var elementBottom = elementTop + element.offsetHeight;
+
+        if (elementTop >= containerTop && elementBottom <= containerBottom) {
+          // make sure to call the onDone callback even if there is no need to
+          // scroll the container. Fixes #111 (ref #118)
+          if (onDone) onDone(element);
+          return;
+        }
+      }
+
+      if (onStart) onStart(element);
+
+      if (!diffY && !diffX) {
+        if (onDone) onDone(element);
+        return;
+      }
+
+      if (typeof easing === 'string') {
+        easing = easings[easing] || easings['ease'];
+      }
+
+      easingFn = src.apply(src, easing);
+
+      _.on(container, abortEvents, abortFn, {
+        passive: true
+      });
+
+      window.requestAnimationFrame(step);
+      return function () {
+        abortEv = null;
+        abort = true;
+      };
+    }
+
+    return scrollTo;
+  };
+
+  var _scroller = scroller();
+
+  var bindings = []; // store binding data
+
+  function deleteBinding(el) {
+    for (var i = 0; i < bindings.length; ++i) {
+      if (bindings[i].el === el) {
+        bindings.splice(i, 1);
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  function findBinding(el) {
+    for (var i = 0; i < bindings.length; ++i) {
+      if (bindings[i].el === el) {
+        return bindings[i];
+      }
+    }
+  }
+
+  function getBinding(el) {
+    var binding = findBinding(el);
+
+    if (binding) {
+      return binding;
+    }
+
+    bindings.push(binding = {
+      el: el,
+      binding: {}
+    });
+    return binding;
+  }
+
+  function handleClick(e) {
+    e.preventDefault();
+    var ctx = getBinding(this).binding;
+
+    if (typeof ctx.value === 'string') {
+      return _scroller(ctx.value);
+    }
+
+    _scroller(ctx.value.el || ctx.value.element, ctx.value);
+  }
+
+  var VueScrollTo = {
+    bind: function bind(el, binding) {
+      getBinding(el).binding = binding;
+
+      _.on(el, 'click', handleClick);
+    },
+    unbind: function unbind(el) {
+      deleteBinding(el);
+
+      _.off(el, 'click', handleClick);
+    },
+    update: function update(el, binding) {
+      getBinding(el).binding = binding;
+    },
+    scrollTo: _scroller,
+    bindings: bindings
+  };
+
+  var install = function install(Vue, options) {
+    if (options) setDefaults(options);
+    Vue.directive('scroll-to', VueScrollTo);
+    Vue.prototype.$scrollTo = VueScrollTo.scrollTo;
+  };
+
+  if (typeof window !== 'undefined' && window.Vue) {
+    window.VueScrollTo = VueScrollTo;
+    window.VueScrollTo.setDefaults = setDefaults;
+    window.Vue.use(install);
+  }
+
+  VueScrollTo.install = install;
+
+  return VueScrollTo;
+
+}));
 
 
 /***/ }),
@@ -31648,20 +31526,19 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
-/* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! smoothscroll-polyfill */ "./node_modules/smoothscroll-polyfill/dist/smoothscroll.js");
-/* harmony import */ var smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.vue */ "./src/js/App.vue");
-/* harmony import */ var _components_Cookie__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Cookie */ "./src/js/components/Cookie.vue");
-/* harmony import */ var _components_layout_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/layout/Navbar */ "./src/js/components/layout/Navbar.vue");
-/* harmony import */ var _components_layout_Home__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/layout/Home */ "./src/js/components/layout/Home.vue");
-/* harmony import */ var _components_about_About__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/about/About */ "./src/js/components/about/About.vue");
-/* harmony import */ var _components_team_Team__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/team/Team */ "./src/js/components/team/Team.vue");
-/* harmony import */ var _components_joinus_Joinus__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/joinus/Joinus */ "./src/js/components/joinus/Joinus.vue");
-/* harmony import */ var _components_blog_Blog__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/blog/Blog */ "./src/js/components/blog/Blog.vue");
-/* harmony import */ var _components_model_Model__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/model/Model */ "./src/js/components/model/Model.vue");
-/* harmony import */ var _components_contact_Contact__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/contact/Contact */ "./src/js/components/contact/Contact.vue");
-/* harmony import */ var _components_Test__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Test */ "./src/js/components/Test.vue");
+/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue */ "./src/js/App.vue");
+/* harmony import */ var _components_Cookie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Cookie */ "./src/js/components/Cookie.vue");
+/* harmony import */ var _components_layout_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/layout/Navbar */ "./src/js/components/layout/Navbar.vue");
+/* harmony import */ var _components_layout_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/layout/Home */ "./src/js/components/layout/Home.vue");
+/* harmony import */ var _components_about_About__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/about/About */ "./src/js/components/about/About.vue");
+/* harmony import */ var _components_team_Team__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/team/Team */ "./src/js/components/team/Team.vue");
+/* harmony import */ var _components_joinus_Joinus__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/joinus/Joinus */ "./src/js/components/joinus/Joinus.vue");
+/* harmony import */ var _components_blog_Blog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/blog/Blog */ "./src/js/components/blog/Blog.vue");
+/* harmony import */ var _components_model_Model__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/model/Model */ "./src/js/components/model/Model.vue");
+/* harmony import */ var _components_contact_Contact__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/contact/Contact */ "./src/js/components/contact/Contact.vue");
+/* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
+/* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue-scrollto */ "./node_modules/vue-scrollto/vue-scrollto.js");
+/* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(vue_scrollto__WEBPACK_IMPORTED_MODULE_12__);
 
 
 
@@ -31674,101 +31551,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // test component
 
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_11__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MODULE_12___default.a);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-component', _components_layout_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('cookie-component', _components_Cookie__WEBPACK_IMPORTED_MODULE_2__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home-component', _components_layout_Home__WEBPACK_IMPORTED_MODULE_4__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('about-component', _components_about_About__WEBPACK_IMPORTED_MODULE_5__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('team-component', _components_team_Team__WEBPACK_IMPORTED_MODULE_6__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('joinus-component', _components_joinus_Joinus__WEBPACK_IMPORTED_MODULE_7__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('blog-component', _components_blog_Blog__WEBPACK_IMPORTED_MODULE_8__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('model-component', _components_model_Model__WEBPACK_IMPORTED_MODULE_9__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('contact-component', _components_contact_Contact__WEBPACK_IMPORTED_MODULE_10__["default"]); // test component
 
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_1__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('navbar-component', _components_layout_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('cookie-component', _components_Cookie__WEBPACK_IMPORTED_MODULE_4__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('home-component', _components_layout_Home__WEBPACK_IMPORTED_MODULE_6__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('about-component', _components_about_About__WEBPACK_IMPORTED_MODULE_7__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('team-component', _components_team_Team__WEBPACK_IMPORTED_MODULE_8__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('joinus-component', _components_joinus_Joinus__WEBPACK_IMPORTED_MODULE_9__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('blog-component', _components_blog_Blog__WEBPACK_IMPORTED_MODULE_10__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('model-component', _components_model_Model__WEBPACK_IMPORTED_MODULE_11__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('contact-component', _components_contact_Contact__WEBPACK_IMPORTED_MODULE_12__["default"]); // test component
-
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', _components_Test__WEBPACK_IMPORTED_MODULE_13__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('test-component', Test);
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"); // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   render: function render(h) {
-    return h(_App_vue__WEBPACK_IMPORTED_MODULE_3__["default"]);
-  }
-}); // kick off the polyfill!
-
-smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2___default.a.polyfill(); // add event listener on load
-
-window.addEventListener('load', function () {
-  // scroll to bottom
-  document.querySelector('.js-scroll-to-bottom').addEventListener('click', function (e) {
-    e.preventDefault();
-    window.scrollTo({
-      top: document.body.clientHeight - window.innerHeight,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }); // scroll to home
-
-  document.querySelector('.js-scroll-to-top').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#home').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }); // scroll to about
-
-  document.querySelector('.js-scroll-to-about').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#about').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }); // scroll to blog
-
-  document.querySelector('.js-scroll-to-blog').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#blog').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }); // scroll to team
-
-  document.querySelector('.js-scroll-to-team').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#team').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }); // scroll to joinus
-
-  document.querySelector('.js-scroll-to-joinus').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#joinus').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }); // scroll to models
-
-  document.querySelector('.js-scroll-to-models').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector('#models').scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-document.addEventListener('DOMContentLoaded', function () {
-  // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0); // Check if there are any navbar burgers
-
-  if ($navbarBurgers.length > 0) {
-    // Add a click event on each of them
-    $navbarBurgers.forEach(function (el) {
-      el.addEventListener('click', function () {
-        // Get the target from the "data-target" attribute
-        var target = el.dataset.target;
-        var $target = document.getElementById(target); // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-      });
-    });
+    return h(_App_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
   }
 });
 
@@ -31856,75 +31658,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_template_id_70fb47a0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Cookie_vue_vue_type_template_id_70fb47a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./src/js/components/Test.vue":
-/*!************************************!*\
-  !*** ./src/js/components/Test.vue ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Test_vue_vue_type_template_id_05b2e744___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Test.vue?vue&type=template&id=05b2e744& */ "./src/js/components/Test.vue?vue&type=template&id=05b2e744&");
-/* harmony import */ var _Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Test.vue?vue&type=script&lang=js& */ "./src/js/components/Test.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Test_vue_vue_type_template_id_05b2e744___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Test_vue_vue_type_template_id_05b2e744___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "src/js/components/Test.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./src/js/components/Test.vue?vue&type=script&lang=js&":
-/*!*************************************************************!*\
-  !*** ./src/js/components/Test.vue?vue&type=script&lang=js& ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Test.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Test.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./src/js/components/Test.vue?vue&type=template&id=05b2e744&":
-/*!*******************************************************************!*\
-  !*** ./src/js/components/Test.vue?vue&type=template&id=05b2e744& ***!
-  \*******************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_template_id_05b2e744___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Test.vue?vue&type=template&id=05b2e744& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/Test.vue?vue&type=template&id=05b2e744&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_template_id_05b2e744___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Test_vue_vue_type_template_id_05b2e744___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -33342,75 +33075,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamInd_vue_vue_type_template_id_44f281c8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamInd_vue_vue_type_template_id_44f281c8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./src/js/components/team/TeamModal.vue":
-/*!**********************************************!*\
-  !*** ./src/js/components/team/TeamModal.vue ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _TeamModal_vue_vue_type_template_id_b3bed4ac___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamModal.vue?vue&type=template&id=b3bed4ac& */ "./src/js/components/team/TeamModal.vue?vue&type=template&id=b3bed4ac&");
-/* harmony import */ var _TeamModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamModal.vue?vue&type=script&lang=js& */ "./src/js/components/team/TeamModal.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _TeamModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _TeamModal_vue_vue_type_template_id_b3bed4ac___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _TeamModal_vue_vue_type_template_id_b3bed4ac___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "src/js/components/team/TeamModal.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./src/js/components/team/TeamModal.vue?vue&type=script&lang=js&":
-/*!***********************************************************************!*\
-  !*** ./src/js/components/team/TeamModal.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./TeamModal.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/TeamModal.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamModal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./src/js/components/team/TeamModal.vue?vue&type=template&id=b3bed4ac&":
-/*!*****************************************************************************!*\
-  !*** ./src/js/components/team/TeamModal.vue?vue&type=template&id=b3bed4ac& ***!
-  \*****************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamModal_vue_vue_type_template_id_b3bed4ac___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./TeamModal.vue?vue&type=template&id=b3bed4ac& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/TeamModal.vue?vue&type=template&id=b3bed4ac&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamModal_vue_vue_type_template_id_b3bed4ac___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamModal_vue_vue_type_template_id_b3bed4ac___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
