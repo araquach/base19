@@ -18847,13 +18847,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "columns is-multiline is-mobile" },
+    { staticClass: "columns is-multiline" },
     _vm._l(_vm.TeamMembers, function(tm) {
       return _c(
         "div",
         {
           key: tm.id,
-          staticClass: "section column is-4-desktop is-4-tablet is-6-mobile",
+          staticClass: "section column is-4",
           attrs: { id: tm.FirstName }
         },
         [
