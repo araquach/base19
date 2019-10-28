@@ -65,7 +65,7 @@
                         <br>
                         <div class="field">
                             <div class="control">
-                                <a href="#joinus" @click.prevent="sendData" class="button is-primary">Submit</a>
+                                <button @click.prevent="sendData" class="button is-primary">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -75,7 +75,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <button @click="switchComponent" class="button">Show Less</button>
+                    <a href="#joinus" @click="switchComponent" class="button">Show Less</a>
                 </div>
             </div>
         </div>

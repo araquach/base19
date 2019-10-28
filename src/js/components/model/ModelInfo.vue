@@ -69,7 +69,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#model" @click="switchComponent" class="button">Go Back</a>
+                    <a href="#models" @click="switchComponent" class="button">Go Back</a>
                 </div>
             </div>
         </div>
