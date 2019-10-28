@@ -1,23 +1,29 @@
 <template>
-    <div class="modal isShowModal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <figure class="image">
-                <img :src="selectedTeamMember.Image" :alt="selectedTeamMember.FirstName">
-            </figure>
+    <div class="card">
+        <div class="card-content columns">
+            <div class="column">
+                <figure class="image">
+                    <img :src="selectedTM.Image" :alt="selectedTM.FirstName">
+                </figure>
+            </div>
+            <div class="column">
+                <div class="media">
+                    <div class="media-content has-text-white">
+                        <h1 class="title has-text-white">{{selectedTM.FirstName}} {{selectedTM.LastName}}</h1>
+                        <h2 class="subtitle has-text-white">{{selectedTM.Level}}</h2>
+                        <p class="is-size-5 has-text-weight-bold">{{selectedTM.Para1}}</p>
+                        <p>{{selectedTM.Para2}}</p>
+                        <p>{{selectedTM.Para3}}</p>
+                        <p class="is-size-5">Average Price: &pound;{{selectedTM.Price}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['selectedTeamMember'],
-
-        methods: {
-            emitTeamMember(teamMember) {
-                this.$emit('emitTeamMember', teamMember)
-            }
-        }
+        props: ['selectedTM']
     }
 </script>

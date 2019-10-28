@@ -1,15 +1,16 @@
 <template>
-    <section id="team" class="section team-info is-fullheight is-dark">
+    <section id="team" class="section team-info hero is-fullheight is-dark">
 
-        <div class="columns is-multiline">
-            <TeamIndComponent v-for="(tm, index) in teamMembers" key="tm.Id" :tm="tm" @emitTeamMember="teamMember"/>
-            <TeamModalComponent :teamMember="teamMember" />
-        </div>
+        <TeamIndComponent :TeamMembers="TeamMembers" @emitTM="showTM"/>
+
+        <b-modal :active.sync="isComponentModalActive">
+            <TeamModalComponent :selectedTM="selectedTM"/>
+        </b-modal>
 
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    <button class="button">Go Back</button>
+                    <button @click="switchComponent" class="button">Go Back</button>
                 </div>
             </div>`
         </div>
@@ -18,29 +19,32 @@
 
 <script>
     import TeamIndComponent from './TeamInd'
-    import TeamModalComponent from './TeamMember'
+    import TeamModalComponent from './TeamModal'
 
     export default {
-        components: {
-            TeamIndComponent,
-            TeamModalComponent
-        },
+        components: {TeamIndComponent, TeamModalComponent},
 
         data() {
             return {
-                    teamMembers: [],
-                    teamMember: ''
+                    selectedTM: '',
+                    isComponentModalActive: false,
+                    TeamMembers: []
                 }
         },
 
         methods: {
-            showModal() {
-                this.teamMember = teamMember
+            showTM(tm) {
+                this.selectedTM = tm
+                this.isComponentModalActive = true
+            },
+
+            switchComponent() {
+                this.$emit('switchComponent')
             }
         },
 
-        mounted() {
-            axios.get('/api/team').then(response => this.teamMembers = response.data)
+        created() {
+            axios.get('/api/team').then(response => this.TeamMembers = response.data)
                 .catch(error => {
                     console.log(error)
                 })

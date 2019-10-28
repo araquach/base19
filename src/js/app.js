@@ -1,4 +1,5 @@
-import Vue from "vue"
+import Vue from 'vue'
+import Buefy from 'buefy'
 import smoothscroll from 'smoothscroll-polyfill'
 import App from './App.vue'
 import Cookie from './components/Cookie'
@@ -13,6 +14,8 @@ import Contact from './components/contact/Contact'
 // test component
 import Test from './components/Test'
 
+Vue.use(Buefy)
+
 Vue.component('navbar-component', Navbar)
 Vue.component('cookie-component', Cookie)
 Vue.component('home-component', Home)
@@ -26,7 +29,7 @@ Vue.component('contact-component', Contact)
 Vue.component('test-component', Test)
 
 window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+// window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 new Vue({
     el: '#app',

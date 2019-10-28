@@ -3,20 +3,15 @@
         <div class="columns">
             <div class="section column is-6">
                 <h1 class="title">Location</h1>
-                <p><strong>Base Hairdressing</strong> is located in Warrington Town Centre on the main high street. We're close to the new upcoming development. <br>The new multi-storey car park is just around the corner from us.</p>
-
+                <p><strong>Base Hairdressing</strong> is located in Warrington Town Centre on Bridge Street. We're just around the corner from the new development along with the new multi-storey car park.</p>
+                <hr>
                 <h3 class="title is-4">Address:</h3>
                 <p class="is-size-5">90/92 Bridge Street<br>
                     Warrington<br>
                     WA1 2RF</p>
                 <h3 class="title is-4">Telephone:</h3>
                 <p class="is-size-4">01925 444449</p>
-
-                <br>
-                <figure>
-                    <img src="https://via.placeholder.com/1000x600" alt="Map">
-                </figure>
-                <br>
+                <hr>
                 <div class="is-size-5">
                     <h3 class="title is-4">Opening Hours</h3>
                     <p>Monday: Closed<br>
@@ -29,43 +24,48 @@
             </div>
             <div class="section column">
                 <h1 class="title is-3">Contact Us</h1>
-                <p class="is-size-5">If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can</p>
-                <p>If you</p>
-                <br>
-                <form @submit="checkForm" action="/register" method="post">
+                <div v-if="formSubmitted">
+                    <p class="is-size-4 has-text-primary">Thanks for messaging us! One of our team will get back to you soon.</p>
+                </div>
 
-                    <div v-if="errors.length" class="box has-text-danger">
-                        <p><strong>Please correct the following:</strong></p>
-                        <ul>
-                            <li v-for="error in errors">{{ error }}</li>
-                        </ul>
-                    </div>
-
-                    <div class="field">
-                        <label class="label has-text-white">Name</label>
-                        <div class="control">
-                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Mobile Number</label>
-                        <div class="control">
-                            <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Message</label>
-                        <div class="control">
-                            <input class="textarea" v-model="mobile" name="mobile" type="text" placeholder="Message">
-                        </div>
-                    </div>
+                <div v-else class="form">
+                    <p class="is-size-5">If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can</p>
+                    <p>To book an appointment please use our app or click the 'Book Now' button.</p>
                     <br>
-                    <div class="field">
-                        <div class="control">
-                            <button class="button is-primary" type="submit" value="submit">Submit</button>
+                    <form>
+                        <div v-if="errors.length" class="box has-text-danger">
+                            <p><strong>Please correct the following:</strong></p>
+                            <ul>
+                                <li v-for="error in errors">{{ error }}</li>
+                            </ul>
                         </div>
-                    </div>
-                </form>
+
+                        <div class="field">
+                            <label class="label has-text-white">Full Name</label>
+                            <div class="control">
+                                <input class="input" v-model="name" name="name" type="text" placeholder="Your Full Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-white">Email Address</label>
+                            <div class="control">
+                                <input class="input" v-model="email" name="email" type="text" placeholder="Your Email Address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label has-text-white">Message</label>
+                            <div class="control">
+                                <input class="textarea" v-model="message" name="message" type="text" placeholder="Your Message">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="field">
+                            <div class="control">
+                                <button @click.prevent="sendMessage" class="button is-primary">Send message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="level">
@@ -85,8 +85,9 @@
                 showInfo: false,
                 errors: [],
                 name: null,
-                mobile: null,
-                position: null
+                email: null,
+                message: null,
+                formSubmitted: false
             }
         },
 
@@ -95,31 +96,67 @@
                 this.$emit('switchComponent')
             },
 
-            checkForm: function (e) {
+            fullMessage() {
+                return `From: ${this.name}
+                Email Address: ${this.email}
+                Message: ${this.message}
+                `
+            },
+
+            // checkForm(e) {
+            //     this.errors = [];
+            //
+            //     if (!this.name) {
+            //         this.errors.push('Name required.');
+            //     }
+            //     if (!this.email) {
+            //         this.errors.push('Email address required.');
+            //     } else if (!this.validEmail(this.email)) {
+            //         this.errors.push('Valid Email address required.');
+            //     }
+            //     if (!this.message) {
+            //         this.errors.push('Message required')
+            //     }
+            //
+            //     if (!this.errors.length) {
+            //         return true;
+            //     }
+            //
+            //     e.preventDefault();
+            // },
+
+            validEmail(email) {
+                var re = re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                return re.test(email);
+            },
+
+            sendMessage() {
                 this.errors = [];
 
                 if (!this.name) {
-                    this.errors.push('Name required.');
+                    this.errors.push('Name required.')
                 }
-                if (!this.mobile) {
-                    this.errors.push('Mobile Number required.');
-                } else if (!this.validMobile(this.mobile)) {
-                    this.errors.push('Valid Mobile Number required.');
+                if (!this.email) {
+                    this.errors.push('Email address required.')
+                } else if (!this.validEmail(this.email)) {
+                    this.errors.push('Valid Email address required.')
                 }
-                if (!this.position) {
-                    this.errors.push('Position required')
+                if (!this.message) {
+                    this.errors.push('Message required')
                 }
-
-                if (!this.errors.length) {
-                    return true;
+                else {
+                    axios.post('/api/sendMessage', {
+                        name: this.name,
+                        email: this.email,
+                        message: this.fullMessage()
+                    })
+                        .then(response => {
+                            this.formSubmitted = true
+                        })
+                        .catch((e) => {
+                            console.error(e)
+                        })
                 }
-
-                e.preventDefault();
-            },
-
-            validMobile: function (mobile) {
-                var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
-                return re.test(mobile);
             }
         }
     }

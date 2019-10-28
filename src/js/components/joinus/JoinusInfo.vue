@@ -17,50 +17,55 @@
             </div>
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
-                <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                <form @submit="checkForm" action="/register" method="post">
+                <div v-if="success">
+                    <p class="is-size-5 has-text-success">Thanks for applying! We'll be in touch when a position becomes available</p>
+                </div>
+                <div v-else>
+                    <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
+                    <form @submit="checkForm">
 
-                    <div v-if="errors.length" class="box has-text-danger">
-                        <p><strong>Please correct the following:</strong></p>
-                        <ul>
-                            <li v-for="error in errors">{{ error }}</li>
-                        </ul>
-                    </div>
+                        <div v-if="errors.length" class="box has-text-danger">
+                            <p><strong>Please correct the following:</strong></p>
+                            <ul>
+                                <li v-for="error in errors">{{ error }}</li>
+                            </ul>
+                        </div>
 
-                    <div class="field">
-                        <label class="label has-text-white">Name</label>
-                        <div class="control">
-                            <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Mobile Number</label>
-                        <div class="control">
-                            <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white">Current Position</label>
-                        <div class="control">
-                            <div class="select">
-                                <select v-model="position" name="position">
-                                    <option value="default">Please select</option>
-                                    <option value="employed">New to hairdressing</option>
-                                    <option value="chair renter">Partway through apprenticeship</option>
-                                    <option value="mobile">Already qualified</option>
-                                    <option value="other">Other</option>
-                                </select>
+                        <div class="field">
+                            <label class="label has-text-white">Name</label>
+                            <div class="control">
+                                <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
                             </div>
                         </div>
-                    </div>
-                    <br>
-                    <input type="hidden" name="role" value="apprentice">
-                    <div class="field">
-                        <div class="control">
-                            <button class="button is-primary" type="submit" value="submit">Submit</button>
+                        <div class="field">
+                            <label class="label has-text-white">Mobile Number</label>
+                            <div class="control">
+                                <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
+                            </div>
                         </div>
-                    </div>
-                </form>
+                        <div class="field">
+                            <label class="label has-text-white">Current Position</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select v-model="position" name="position">
+                                        <option value="default">Please select</option>
+                                        <option value="employed">New to hairdressing</option>
+                                        <option value="chair renter">Partway through apprenticeship</option>
+                                        <option value="mobile">Already qualified</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <input type="hidden" name="role" value="apprentice">
+                        <div class="field">
+                            <div class="control">
+                                <button @click.prevent="sendForm" class="button is-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="level">
@@ -81,7 +86,8 @@
                 errors: [],
                 name: null,
                 mobile: null,
-                position: null
+                position: null,
+                success: false
             }
         },
 
@@ -90,7 +96,7 @@
                 this.$emit('switchComponent')
             },
 
-            checkForm: function (e) {
+            checkForm(e) {
                 this.errors = [];
 
                 if (!this.name) {
@@ -112,9 +118,31 @@
                 e.preventDefault();
             },
 
-            validMobile: function (mobile) {
+            validMobile(mobile) {
                 var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
                 return re.test(mobile);
+            },
+
+            info() {
+                return `Name: ${this.name}
+                Mobile: ${this.mobile}
+                Position: ${this.position}`
+            },
+
+            sendForm() {
+                axios.post('/api/joinus', {
+                    name: this.name,
+                    mobile: this.mobile,
+                    email: this.email,
+                    position: this.position,
+                    info: this.info()
+                })
+                    .then(response => {
+                        this.success = true
+                    })
+                    .catch((e) => {
+                        console.error(e)
+                    })
             }
         }
     }
