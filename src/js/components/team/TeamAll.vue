@@ -12,7 +12,7 @@
                 <div class="level-item">
                     <button @click="switchComponent" class="button">Go Back</button>
                 </div>
-            </div>`
+            </div>
         </div>
     </section>
 </template>

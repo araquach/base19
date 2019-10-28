@@ -25,8 +25,6 @@ Vue.component('joinus-component', Joinus)
 Vue.component('blog-component', Blog)
 Vue.component('model-component', Model)
 Vue.component('contact-component', Contact)
-// test component
-Vue.component('test-component', Test)
 
 window.axios = require('axios');
 // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
