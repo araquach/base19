@@ -3,7 +3,7 @@
         <div class="modal-background"></div>
         <div class="modal-content">
             <figure class="image">
-                <img :src="image" :alt="name">
+                <img :src="selectedTeamMember.Image" :alt="selectedTeamMember.FirstName">
             </figure>
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
@@ -11,5 +11,13 @@
 </template>
 
 <script>
+    export default {
+        props: ['selectedTeamMember'],
 
+        methods: {
+            emitTeamMember(teamMember) {
+                this.$emit('emitTeamMember', teamMember)
+            }
+        }
+    }
 </script>

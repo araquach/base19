@@ -1,5 +1,5 @@
 <template>
-    <div :id="tm.FirstName" class="section column is-4">
+    <div @click="emitTeamMember(teamMember)" :id="tm.FirstName" class="section column is-4">
         <div class="card">
             <div class="card-image">
                 <figure class="image">
@@ -23,12 +23,6 @@
 
 <script>
     export default {
-        props: ['tm'],
-
-        data() {
-            return {
-
-            }
-        }
+        props: ['tm']
     }
 </script>
