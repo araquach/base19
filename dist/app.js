@@ -2596,6 +2596,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2604,14 +2608,25 @@ __webpack_require__.r(__webpack_exports__);
       name: null,
       mobile: null,
       position: null,
-      success: false
+      whyUs: null,
+      success: false,
+      formSubmitted: false
     };
   },
   methods: {
     switchComponent: function switchComponent() {
       this.$emit('switchComponent');
     },
-    checkForm: function checkForm(e) {
+    validMobile: function validMobile(mobile) {
+      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
+      return re.test(mobile);
+    },
+    info: function info() {
+      return "Name: ".concat(this.name, "\n            Mobile: ").concat(this.mobile, "\n            Position: ").concat(this.position, "\n            Why Choose us?: ").concat(this.whyUs, "\n            ");
+    },
+    sendData: function sendData() {
+      var _this = this;
+
       this.errors = [];
 
       if (!this.name) {
@@ -2619,42 +2634,30 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       if (!this.mobile) {
-        this.errors.push('Mobile Number required.');
+        this.errors.push('Mobile number required.');
       } else if (!this.validMobile(this.mobile)) {
-        this.errors.push('Valid Mobile Number required.');
+        this.errors.push('Valid mobile number required.');
       }
 
       if (!this.position) {
         this.errors.push('Position required');
       }
 
-      if (!this.errors.length) {
-        return true;
+      if (!this.whyUs) {
+        this.errors.push('Why you want to join us is required');
+      } else {
+        axios.post('/api/joinus', {
+          name: this.name,
+          mobile: this.mobile,
+          position: this.position,
+          whyUs: this.whyUs,
+          info: this.info()
+        }).then(function (response) {
+          _this.formSubmitted = true;
+        })["catch"](function (e) {
+          console.error(e);
+        });
       }
-
-      e.preventDefault();
-    },
-    validMobile: function validMobile(mobile) {
-      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
-      return re.test(mobile);
-    },
-    info: function info() {
-      return "Name: ".concat(this.name, "\n            Mobile: ").concat(this.mobile, "\n            Position: ").concat(this.position);
-    },
-    sendForm: function sendForm() {
-      var _this = this;
-
-      axios.post('/api/joinus', {
-        name: this.name,
-        mobile: this.mobile,
-        email: this.email,
-        position: this.position,
-        info: this.info()
-      }).then(function (response) {
-        _this.success = true;
-      })["catch"](function (e) {
-        console.error(e);
-      });
     }
   }
 });
@@ -17811,7 +17814,7 @@ var render = function() {
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
           _vm._v(" "),
-          _vm.success
+          _vm.formSubmitted
             ? _c("div", [
                 _c("p", { staticClass: "is-size-5 has-text-success" }, [
                   _vm._v(
@@ -17826,7 +17829,7 @@ var render = function() {
                   )
                 ]),
                 _vm._v(" "),
-                _c("form", { on: { submit: _vm.checkForm } }, [
+                _c("form", [
                   _vm.errors.length
                     ? _c("div", { staticClass: "box has-text-danger" }, [
                         _vm._m(1),
@@ -17970,11 +17973,40 @@ var render = function() {
                     ])
                   ]),
                   _vm._v(" "),
-                  _c("br"),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Tell us why you want to join the Base team")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.whyUs,
+                            expression: "whyUs"
+                          }
+                        ],
+                        staticClass: "textarea",
+                        attrs: {
+                          name: "whyUs",
+                          placeholder: "Why do you want to join Base?"
+                        },
+                        domProps: { value: _vm.whyUs },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.whyUs = $event.target.value
+                          }
+                        }
+                      })
+                    ])
+                  ]),
                   _vm._v(" "),
-                  _c("input", {
-                    attrs: { type: "hidden", name: "role", value: "apprentice" }
-                  }),
+                  _c("br"),
                   _vm._v(" "),
                   _c("div", { staticClass: "field" }, [
                     _c("div", { staticClass: "control" }, [
@@ -17985,7 +18017,7 @@ var render = function() {
                           on: {
                             click: function($event) {
                               $event.preventDefault()
-                              return _vm.sendForm($event)
+                              return _vm.sendData($event)
                             }
                           }
                         },
@@ -18746,7 +18778,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "section",
-    { staticClass: "section team-info is-dark", attrs: { id: "team" } },
+    { staticClass: "section team-info hero is-dark", attrs: { id: "team" } },
     [
       _c("TeamIndComponent", {
         attrs: { TeamMembers: _vm.TeamMembers },

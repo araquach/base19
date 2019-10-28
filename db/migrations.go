@@ -29,6 +29,7 @@ type JoinusApplicant struct {
 	Mobile 		string
 	Email 		string
 	Position 	string
+	WhyUs		string
 }
 
 type ModelApplicant struct {

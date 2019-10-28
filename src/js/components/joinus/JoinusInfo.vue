@@ -17,13 +17,12 @@
             </div>
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
-                <div v-if="success">
+                <div v-if="formSubmitted">
                     <p class="is-size-5 has-text-success">Thanks for applying! We'll be in touch when a position becomes available</p>
                 </div>
                 <div v-else>
                     <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                    <form @submit="checkForm">
-
+                    <form>
                         <div v-if="errors.length" class="box has-text-danger">
                             <p><strong>Please correct the following:</strong></p>
                             <ul>
@@ -57,11 +56,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="field">
+                            <label class="label has-text-white">Tell us why you want to join the Base team</label>
+                            <div class="control">
+                                <textarea class="textarea" v-model="whyUs" name="whyUs" placeholder="Why do you want to join Base?"/>
+                            </div>
+                        </div>
                         <br>
-                        <input type="hidden" name="role" value="apprentice">
                         <div class="field">
                             <div class="control">
-                                <button @click.prevent="sendForm" class="button is-primary">Submit</button>
+                                <button @click.prevent="sendData" class="button is-primary">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -87,35 +91,15 @@
                 name: null,
                 mobile: null,
                 position: null,
-                success: false
+                whyUs: null,
+                success: false,
+                formSubmitted: false
             }
         },
 
         methods:{
             switchComponent() {
                 this.$emit('switchComponent')
-            },
-
-            checkForm: function (e) {
-                this.errors = [];
-
-                if (!this.name) {
-                    this.errors.push('Name required.');
-                }
-                if (!this.mobile) {
-                    this.errors.push('Mobile Number required.');
-                } else if (!this.validMobile(this.mobile)) {
-                    this.errors.push('Valid Mobile Number required.');
-                }
-                if (!this.position) {
-                    this.errors.push('Position required')
-                }
-
-                if (!this.errors.length) {
-                    return true;
-                }
-
-                e.preventDefault();
             },
 
             validMobile: function (mobile) {
@@ -126,23 +110,43 @@
             info() {
                 return `Name: ${this.name}
                 Mobile: ${this.mobile}
-                Position: ${this.position}`
+                Position: ${this.position}
+                Why Choose us?: ${this.whyUs}
+                `
             },
 
-            sendForm() {
-                axios.post('/api/joinus', {
-                    name: this.name,
-                    mobile: this.mobile,
-                    email: this.email,
-                    position: this.position,
-                    info: this.info()
-                })
-                    .then(response => {
-                        this.success = true
+            sendData() {
+                this.errors = [];
+
+                if (!this.name) {
+                    this.errors.push('Name required.')
+                }
+                if (!this.mobile) {
+                    this.errors.push('Mobile number required.')
+                } else if (!this.validMobile(this.mobile)) {
+                    this.errors.push('Valid mobile number required.')
+                }
+                if (!this.position) {
+                    this.errors.push('Position required')
+                }
+                if (!this.whyUs) {
+                    this.errors.push('Why you want to join us is required')
+                }
+                else {
+                    axios.post('/api/joinus', {
+                        name: this.name,
+                        mobile: this.mobile,
+                        position: this.position,
+                        whyUs: this.whyUs,
+                        info: this.info()
                     })
-                    .catch((e) => {
-                        console.error(e)
-                    })
+                        .then(response => {
+                            this.formSubmitted = true
+                        })
+                        .catch((e) => {
+                            console.error(e)
+                        })
+                }
             }
         }
     }

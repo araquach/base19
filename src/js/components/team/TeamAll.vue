@@ -1,5 +1,5 @@
 <template>
-    <section id="team" class="section team-info is-dark">
+    <section id="team" class="section team-info hero is-dark">
         <TeamIndComponent :TeamMembers="TeamMembers" @emitTM="showTM"/>
 
         <b-modal :active.sync="isComponentModalActive">
