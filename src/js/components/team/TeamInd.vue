@@ -3,7 +3,7 @@
         <div v-for="tm in TeamMembers" :key="tm.id" :id="tm.FirstName" class="section column is-4">
             <div @click="emitTM(tm)" class="card">
                 <div class="card-image">
-                    <figure class="image">
+                    <figure class="image is-4by5">
                         <img :src="tm.Image" :alt="tm.FirstName">
                     </figure>
                 </div>
