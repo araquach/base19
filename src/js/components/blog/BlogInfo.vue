@@ -48,7 +48,7 @@
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#blog"  @click.prevent="switchComponent" class="button">Go Back</a>
+                    <a href="#blog"  @click="switchComponent" class="button">Go Back</a>
                 </div>
             </div>
         </div>

@@ -16984,12 +16984,7 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#about" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.switchComponent($event)
-                  }
-                }
+                on: { click: _vm.switchComponent }
               },
               [_vm._v("Go Back")]
             )
@@ -17228,12 +17223,7 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#blog" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.switchComponent($event)
-                  }
-                }
+                on: { click: _vm.switchComponent }
               },
               [_vm._v("Go Back")]
             )
@@ -18040,12 +18030,7 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#joinus" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.switchComponent($event)
-                  }
-                }
+                on: { click: _vm.switchComponent }
               },
               [_vm._v("Show Less")]
             )
@@ -18660,12 +18645,7 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#models" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.switchComponent($event)
-                  }
-                }
+                on: { click: _vm.switchComponent }
               },
               [_vm._v("Go Back")]
             )
@@ -18820,12 +18800,7 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#team" },
-                on: {
-                  click: function($event) {
-                    $event.preventDefault()
-                    return _vm.switchComponent($event)
-                  }
-                }
+                on: { click: _vm.switchComponent }
               },
               [_vm._v("Go Back")]
             )

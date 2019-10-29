@@ -76,7 +76,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#joinus" @click.prevent="switchComponent" class="button">Show Less</a>
+                    <a href="#joinus" @click="switchComponent" class="button">Show Less</a>
                 </div>
             </div>
         </div>
