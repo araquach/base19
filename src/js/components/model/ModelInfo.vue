@@ -4,7 +4,7 @@
             <div class="section column is-6">
                 <h1 class="title">We need models!</h1>
                 <br>
-                <figure>
+                <figure class="image is-5by3">
                     <img src="/dist/img/models/model.jpg" alt="Schwarzkopf Essential Looks">
                 </figure>
                 <br>

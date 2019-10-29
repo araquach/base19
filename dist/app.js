@@ -2048,6 +2048,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
     switchComponent: function switchComponent() {
@@ -17028,7 +17029,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "column" }, [
         _c("div", { staticClass: "columns is-mobile" }, [
           _c("div", { staticClass: "column" }, [
-            _c("figure", { staticClass: "image" }, [
+            _c("figure", { staticClass: "image is-square" }, [
               _c("img", {
                 attrs: {
                   src: "/dist/img/about/base-1.jpg",
@@ -17039,7 +17040,7 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "column" }, [
-            _c("figure", { staticClass: "image" }, [
+            _c("figure", { staticClass: "image is-square" }, [
               _c("img", {
                 attrs: {
                   src: "/dist/img/about/base-2.jpg",
@@ -17070,13 +17071,22 @@ var staticRenderFns = [
           _vm._v(
             "If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!"
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "button is-primary",
+            attrs: { href: "https://phorest.com/book/salons/basehairacademy" }
+          },
+          [_vm._v("Book Here")]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column" }, [
         _c("div", { staticClass: "columns is-mobile" }, [
           _c("div", { staticClass: "column" }, [
-            _c("figure", { staticClass: "image" }, [
+            _c("figure", { staticClass: "image is-square" }, [
               _c("img", {
                 attrs: {
                   src: "/dist/img/about/base-3.jpg",
@@ -17087,7 +17097,7 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "column" }, [
-            _c("figure", { staticClass: "image" }, [
+            _c("figure", { staticClass: "image is-square" }, [
               _c("img", {
                 attrs: {
                   src: "/dist/img/about/base-4.jpg",
@@ -18665,7 +18675,7 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _c("figure", [
+      _c("figure", { staticClass: "image is-5by3" }, [
         _c("img", {
           attrs: {
             src: "/dist/img/models/model.jpg",
