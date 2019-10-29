@@ -15,6 +15,7 @@
                     <li>A solid career ladder with clear goals to strive for</li>
                 </ul>
             </div>
+            <hr class="is-mobile">
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
                 <div v-if="formSubmitted">
@@ -75,7 +76,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#joinus" @click="switchComponent" class="button">Show Less</a>
+                    <a href="#joinus" @click.prevent="switchComponent" class="button">Show Less</a>
                 </div>
             </div>
         </div>

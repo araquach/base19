@@ -11,6 +11,7 @@
                 <p>We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>
                 <p>If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs</p>
             </div>
+            <hr class="is-mobile">
             <div class="section column">
                 <h1 class="title is-3">Apply Here</h1>
                 <div v-if="formSubmitted">
@@ -69,7 +70,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#models" @click="switchComponent" class="button">Go Back</a>
+                    <a href="#models" @click.prevent="switchComponent" class="button">Go Back</a>
                 </div>
             </div>
         </div>

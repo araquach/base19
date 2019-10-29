@@ -95,7 +95,9 @@ p {
 }
 
 section.section {
-  padding: 6rem 4rem 4rem 4rem;
+  @include from($tablet) {
+    padding: 6rem 4rem 4rem 4rem;
+  }
 }
 
 #home {

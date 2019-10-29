@@ -16746,8 +16746,10 @@ p {
   margin-bottom: 1rem;
 }
 
-section.section {
-  padding: 6rem 4rem 4rem 4rem;
+@media screen and (min-width: 769px) {
+  section.section {
+    padding: 6rem 4rem 4rem 4rem;
+  }
 }
 
 #home {

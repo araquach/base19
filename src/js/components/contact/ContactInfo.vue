@@ -22,6 +22,7 @@
                         Saturday: 8am - 4:30pm</p>
                 </div>
             </div>
+            <hr class="is-mobile">
             <div class="section column">
                 <h1 class="title is-3">Contact Us</h1>
                 <div v-if="formSubmitted">

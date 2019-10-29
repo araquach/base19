@@ -45,7 +45,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#about" @click="switchComponent" class="button">Go Back</a>
+                    <a href="#about" @click.prevent="switchComponent" class="button">Go Back</a>
                 </div>
             </div>
         </div>

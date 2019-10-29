@@ -2371,6 +2371,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2510,6 +2511,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -2740,6 +2742,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -16981,7 +16984,12 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#about" },
-                on: { click: _vm.switchComponent }
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.switchComponent($event)
+                  }
+                }
               },
               [_vm._v("Go Back")]
             )
@@ -17220,7 +17228,12 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#blog" },
-                on: { click: _vm.switchComponent }
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.switchComponent($event)
+                  }
+                }
               },
               [_vm._v("Go Back")]
             )
@@ -17433,6 +17446,8 @@ var render = function() {
     [
       _c("div", { staticClass: "columns" }, [
         _vm._m(0),
+        _vm._v(" "),
+        _c("hr", { staticClass: "is-mobile" }),
         _vm._v(" "),
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Contact Us")]),
@@ -17796,6 +17811,8 @@ var render = function() {
       _c("div", { staticClass: "columns" }, [
         _vm._m(0),
         _vm._v(" "),
+        _c("hr", { staticClass: "is-mobile" }),
+        _vm._v(" "),
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
           _vm._v(" "),
@@ -18023,7 +18040,12 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#joinus" },
-                on: { click: _vm.switchComponent }
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.switchComponent($event)
+                  }
+                }
               },
               [_vm._v("Show Less")]
             )
@@ -18137,7 +18159,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "hero-body columns is-centered" }, [
-      _c("div", { staticClass: "column is-5 is-6-mobile" }, [
+      _c("div", { staticClass: "column is-5 is-10-mobile" }, [
         _c("h1", { staticClass: "is-hidden" }, [
           _vm._v("\n                Base Hairdressing\n            ")
         ]),
@@ -18151,8 +18173,7 @@ var staticRenderFns = [
         _c(
           "h2",
           {
-            staticClass:
-              "subtitle is-size-4 is-size-6-mobile has-text-white has-text-centered"
+            staticClass: "subtitle is-size-4 has-text-white has-text-centered"
           },
           [
             _vm._v(
@@ -18450,6 +18471,8 @@ var render = function() {
       _c("div", { staticClass: "columns" }, [
         _vm._m(0),
         _vm._v(" "),
+        _c("hr", { staticClass: "is-mobile" }),
+        _vm._v(" "),
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
           _vm._v(" "),
@@ -18637,7 +18660,12 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#models" },
-                on: { click: _vm.switchComponent }
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.switchComponent($event)
+                  }
+                }
               },
               [_vm._v("Go Back")]
             )
@@ -18792,7 +18820,12 @@ var render = function() {
               {
                 staticClass: "button",
                 attrs: { href: "#team" },
-                on: { click: _vm.switchComponent }
+                on: {
+                  click: function($event) {
+                    $event.preventDefault()
+                    return _vm.switchComponent($event)
+                  }
+                }
               },
               [_vm._v("Go Back")]
             )
@@ -33360,8 +33393,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
