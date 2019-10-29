@@ -17848,7 +17848,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "field" }, [
                     _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Name")
+                      _vm._v("Full Name")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "control" }, [
@@ -17954,17 +17954,23 @@ var render = function() {
                               _vm._v("Please select")
                             ]),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "employed" } }, [
-                              _vm._v("New to hairdressing")
-                            ]),
+                            _c(
+                              "option",
+                              { attrs: { value: "new to hairdressing" } },
+                              [_vm._v("New to hairdressing")]
+                            ),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "chair renter" } }, [
-                              _vm._v("Partway through apprenticeship")
-                            ]),
+                            _c(
+                              "option",
+                              { attrs: { value: "partway through" } },
+                              [_vm._v("Partway through apprenticeship")]
+                            ),
                             _vm._v(" "),
-                            _c("option", { attrs: { value: "mobile" } }, [
-                              _vm._v("Already qualified")
-                            ]),
+                            _c(
+                              "option",
+                              { attrs: { value: "already qualified" } },
+                              [_vm._v("Already qualified")]
+                            ),
                             _vm._v(" "),
                             _c("option", { attrs: { value: "other" } }, [
                               _vm._v("Other")

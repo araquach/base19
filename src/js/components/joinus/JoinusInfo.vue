@@ -32,7 +32,7 @@
                         </div>
 
                         <div class="field">
-                            <label class="label has-text-white">Name</label>
+                            <label class="label has-text-white">Full Name</label>
                             <div class="control">
                                 <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
                             </div>
@@ -49,9 +49,9 @@
                                 <div class="select">
                                     <select v-model="position" name="position">
                                         <option value="default">Please select</option>
-                                        <option value="employed">New to hairdressing</option>
-                                        <option value="chair renter">Partway through apprenticeship</option>
-                                        <option value="mobile">Already qualified</option>
+                                        <option value="new to hairdressing">New to hairdressing</option>
+                                        <option value="partway through">Partway through apprenticeship</option>
+                                        <option value="already qualified">Already qualified</option>
                                         <option value="other">Other</option>
                                     </select>
                                 </div>
