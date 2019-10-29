@@ -16,7 +16,7 @@
                 </ul>
             </div>
             <hr class="is-mobile">
-            <div class="section column">
+            <div id="joinusErr" class="section column">
                 <h1 class="title is-3">Apply Here</h1>
                 <div v-if="formSubmitted">
                     <p class="is-size-5 has-text-success">Thanks for applying! We'll be in touch when a position becomes available</p>
@@ -66,7 +66,7 @@
                         <br>
                         <div class="field">
                             <div class="control">
-                                <button @click.prevent="sendData" class="button is-primary">Submit</button>
+                                <a href="" @click.prevent="sendData" class="button is-primary" v-scroll-to="'#joinusErr'">Submit</a>
                             </div>
                         </div>
                     </form>

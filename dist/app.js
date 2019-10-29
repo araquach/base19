@@ -2822,6 +2822,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -17813,229 +17815,243 @@ var render = function() {
         _vm._v(" "),
         _c("hr", { staticClass: "is-mobile" }),
         _vm._v(" "),
-        _c("div", { staticClass: "section column" }, [
-          _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
-          _vm._v(" "),
-          _vm.formSubmitted
-            ? _c("div", [
-                _c("p", { staticClass: "is-size-5 has-text-success" }, [
-                  _vm._v(
-                    "Thanks for applying! We'll be in touch when a position becomes available"
-                  )
+        _c(
+          "div",
+          { staticClass: "section column", attrs: { id: "joinusErr" } },
+          [
+            _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
+            _vm._v(" "),
+            _vm.formSubmitted
+              ? _c("div", [
+                  _c("p", { staticClass: "is-size-5 has-text-success" }, [
+                    _vm._v(
+                      "Thanks for applying! We'll be in touch when a position becomes available"
+                    )
+                  ])
                 ])
-              ])
-            : _c("div", [
-                _c("p", { staticClass: "is-size-4" }, [
-                  _vm._v(
-                    "If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("form", [
-                  _vm.errors.length
-                    ? _c("div", { staticClass: "box has-text-danger" }, [
-                        _vm._m(1),
-                        _vm._v(" "),
-                        _c(
-                          "ul",
-                          _vm._l(_vm.errors, function(error) {
-                            return _c("li", [_vm._v(_vm._s(error))])
-                          }),
-                          0
-                        )
+              : _c("div", [
+                  _c("p", { staticClass: "is-size-4" }, [
+                    _vm._v(
+                      "If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!"
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("form", [
+                    _vm.errors.length
+                      ? _c("div", { staticClass: "box has-text-danger" }, [
+                          _vm._m(1),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            _vm._l(_vm.errors, function(error) {
+                              return _c("li", [_vm._v(_vm._s(error))])
+                            }),
+                            0
+                          )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Full Name")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.name,
+                              expression: "name"
+                            }
+                          ],
+                          staticClass: "input",
+                          attrs: {
+                            name: "name",
+                            type: "text",
+                            placeholder: "Your Name"
+                          },
+                          domProps: { value: _vm.name },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.name = $event.target.value
+                            }
+                          }
+                        })
                       ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Full Name")
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.name,
-                            expression: "name"
-                          }
-                        ],
-                        staticClass: "input",
-                        attrs: {
-                          name: "name",
-                          type: "text",
-                          placeholder: "Your Name"
-                        },
-                        domProps: { value: _vm.name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Mobile Number")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.mobile,
+                              expression: "mobile"
                             }
-                            _vm.name = $event.target.value
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Mobile Number")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.mobile,
-                            expression: "mobile"
-                          }
-                        ],
-                        staticClass: "input",
-                        attrs: {
-                          name: "mobile",
-                          type: "text",
-                          placeholder: "Your Mobile Number"
-                        },
-                        domProps: { value: _vm.mobile },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
+                          ],
+                          staticClass: "input",
+                          attrs: {
+                            name: "mobile",
+                            type: "text",
+                            placeholder: "Your Mobile Number"
+                          },
+                          domProps: { value: _vm.mobile },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.mobile = $event.target.value
                             }
-                            _vm.mobile = $event.target.value
                           }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Current Position")
+                        })
+                      ])
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("div", { staticClass: "select" }, [
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Current Position")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("div", { staticClass: "select" }, [
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.position,
+                                  expression: "position"
+                                }
+                              ],
+                              attrs: { name: "position" },
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.position = $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                }
+                              }
+                            },
+                            [
+                              _c("option", { attrs: { value: "default" } }, [
+                                _vm._v("Please select")
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "new to hairdressing" } },
+                                [_vm._v("New to hairdressing")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "partway through" } },
+                                [_vm._v("Partway through apprenticeship")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "already qualified" } },
+                                [_vm._v("Already qualified")]
+                              ),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "other" } }, [
+                                _vm._v("Other")
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Tell us why you want to join the Base team")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("textarea", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.whyUs,
+                              expression: "whyUs"
+                            }
+                          ],
+                          staticClass: "textarea",
+                          attrs: {
+                            name: "whyUs",
+                            placeholder: "Why do you want to join Base?"
+                          },
+                          domProps: { value: _vm.whyUs },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.whyUs = $event.target.value
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("div", { staticClass: "control" }, [
                         _c(
-                          "select",
+                          "a",
                           {
                             directives: [
                               {
-                                name: "model",
-                                rawName: "v-model",
-                                value: _vm.position,
-                                expression: "position"
+                                name: "scroll-to",
+                                rawName: "v-scroll-to",
+                                value: "#joinusErr",
+                                expression: "'#joinusErr'"
                               }
                             ],
-                            attrs: { name: "position" },
+                            staticClass: "button is-primary",
+                            attrs: { href: "" },
                             on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.position = $event.target.multiple
-                                  ? $$selectedVal
-                                  : $$selectedVal[0]
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.sendData($event)
                               }
                             }
                           },
-                          [
-                            _c("option", { attrs: { value: "default" } }, [
-                              _vm._v("Please select")
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "option",
-                              { attrs: { value: "new to hairdressing" } },
-                              [_vm._v("New to hairdressing")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "option",
-                              { attrs: { value: "partway through" } },
-                              [_vm._v("Partway through apprenticeship")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "option",
-                              { attrs: { value: "already qualified" } },
-                              [_vm._v("Already qualified")]
-                            ),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "other" } }, [
-                              _vm._v("Other")
-                            ])
-                          ]
+                          [_vm._v("Submit")]
                         )
                       ])
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Tell us why you want to join the Base team")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("textarea", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.whyUs,
-                            expression: "whyUs"
-                          }
-                        ],
-                        staticClass: "textarea",
-                        attrs: {
-                          name: "whyUs",
-                          placeholder: "Why do you want to join Base?"
-                        },
-                        domProps: { value: _vm.whyUs },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.whyUs = $event.target.value
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("div", { staticClass: "control" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "button is-primary",
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              return _vm.sendData($event)
-                            }
-                          }
-                        },
-                        [_vm._v("Submit")]
-                      )
-                    ])
                   ])
                 ])
-              ])
-        ])
+          ]
+        )
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "level is-mobile" }, [
@@ -18477,179 +18493,196 @@ var render = function() {
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
           _vm._v(" "),
-          _vm.formSubmitted
-            ? _c("div", [
-                _c("p", { staticClass: "is-size-4 has-text-primary" }, [
-                  _vm._v(
-                    "Thanks for applying to be a model. When a suitable session comes up we'll be in touch."
-                  )
-                ])
-              ])
-            : _c("div", [
-                _c("p", { staticClass: "is-size-4" }, [
-                  _vm._v(
-                    "Please provide some info about your hair to allow us to determine which sessions best suit your needs"
-                  )
-                ]),
-                _vm._v(" "),
-                _vm._m(1),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "Call us on 01925 444449 if you would like more information"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("small", [
-                  _vm._v(
-                    "A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this."
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("form", [
-                  _vm.errors.length
-                    ? _c("div", { staticClass: "box has-text-danger" }, [
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _c(
-                          "ul",
-                          _vm._l(_vm.errors, function(error) {
-                            return _c("li", [_vm._v(_vm._s(error))])
-                          }),
-                          0
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Full name")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.name,
-                            expression: "name"
-                          }
-                        ],
-                        staticClass: "input",
-                        attrs: {
-                          name: "name",
-                          type: "text",
-                          placeholder: "Your Full Name"
-                        },
-                        domProps: { value: _vm.name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.name = $event.target.value
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Mobile Number")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.mobile,
-                            expression: "mobile"
-                          }
-                        ],
-                        staticClass: "input",
-                        attrs: {
-                          name: "mobile",
-                          type: "text",
-                          placeholder: "Your Mobile Number"
-                        },
-                        domProps: { value: _vm.mobile },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.mobile = $event.target.value
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("label", { staticClass: "label has-text-white" }, [
-                      _vm._v("Additional information")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "control" }, [
-                      _c("textarea", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.info,
-                            expression: "info"
-                          }
-                        ],
-                        staticClass: "textarea",
-                        attrs: { name: "info", placeholder: "Additional Info" },
-                        domProps: { value: _vm.info },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.info = $event.target.value
-                          }
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("input", {
-                    attrs: { type: "hidden", name: "role", value: "apprentice" }
-                  }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "field" }, [
-                    _c("div", { staticClass: "control" }, [
-                      _c(
-                        "button",
-                        {
-                          staticClass: "button is-primary",
-                          on: {
-                            click: function($event) {
-                              $event.preventDefault()
-                              return _vm.sendData($event)
-                            }
-                          }
-                        },
-                        [_vm._v("Apply")]
+          _c("div", [
+            _c("p", { staticClass: "is-size-4" }, [
+              _vm._v(
+                "Please provide some info about your hair to allow us to determine which sessions best suit your needs"
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Call us on 01925 444449 if you would like more information"
+              )
+            ]),
+            _vm._v(" "),
+            _c("small", [
+              _vm._v(
+                "A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this."
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("form", { attrs: { id: "modelErr" } }, [
+              _vm.formSubmitted
+                ? _c("div", [
+                    _c("p", { staticClass: "is-size-4 has-text-primary" }, [
+                      _vm._v(
+                        "Thanks for applying to be a model. When a suitable session comes up we'll be in touch."
                       )
                     ])
                   ])
-                ])
-              ])
+                : _c("div", [
+                    _vm.errors.length
+                      ? _c("div", { staticClass: "box has-text-danger" }, [
+                          _vm._m(2),
+                          _vm._v(" "),
+                          _c(
+                            "ul",
+                            _vm._l(_vm.errors, function(error) {
+                              return _c("li", [_vm._v(_vm._s(error))])
+                            }),
+                            0
+                          )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Full name")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.name,
+                              expression: "name"
+                            }
+                          ],
+                          staticClass: "input",
+                          attrs: {
+                            name: "name",
+                            type: "text",
+                            placeholder: "Your Full Name"
+                          },
+                          domProps: { value: _vm.name },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.name = $event.target.value
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Mobile Number")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.mobile,
+                              expression: "mobile"
+                            }
+                          ],
+                          staticClass: "input",
+                          attrs: {
+                            name: "mobile",
+                            type: "text",
+                            placeholder: "Your Mobile Number"
+                          },
+                          domProps: { value: _vm.mobile },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.mobile = $event.target.value
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("label", { staticClass: "label has-text-white" }, [
+                        _vm._v("Additional information")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "control" }, [
+                        _c("textarea", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.info,
+                              expression: "info"
+                            }
+                          ],
+                          staticClass: "textarea",
+                          attrs: {
+                            name: "info",
+                            placeholder: "Additional Info"
+                          },
+                          domProps: { value: _vm.info },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.info = $event.target.value
+                            }
+                          }
+                        })
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        type: "hidden",
+                        name: "role",
+                        value: "apprentice"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "field" }, [
+                      _c("div", { staticClass: "control" }, [
+                        _c(
+                          "button",
+                          {
+                            directives: [
+                              {
+                                name: "scroll-to",
+                                rawName: "v-scroll-to",
+                                value: "#modelErr",
+                                expression: "'#modelErr'"
+                              }
+                            ],
+                            staticClass: "button is-primary",
+                            on: {
+                              click: function($event) {
+                                $event.preventDefault()
+                                return _vm.sendData($event)
+                              }
+                            }
+                          },
+                          [_vm._v("Apply")]
+                        )
+                      ])
+                    ])
+                  ])
+            ])
+          ])
         ])
       ]),
       _vm._v(" "),
