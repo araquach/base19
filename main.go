@@ -252,6 +252,8 @@ func main() {
 
 	db := dbConn()
 
+	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{})
+
 	db.LogMode(true)
 
 	tplHome = template.Must(template.ParseFiles(
