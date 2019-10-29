@@ -27,7 +27,6 @@ type JoinusApplicant struct {
 	gorm.Model
 	Name 		string
 	Mobile 		string
-	Email 		string
 	Position 	string
 	WhyUs		string
 }
