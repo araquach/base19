@@ -258,55 +258,48 @@ func main() {
 
 	tplHome = template.Must(template.ParseFiles(
 	"views/layouts/main.gohtml",
-	"views/layouts/nav.gohtml",
 	"views/pages/index.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	tplAbout = template.Must(template.ParseFiles(
-		"views/layouts/novue.gohtml",
-		"views/layouts/nav-novue.gohtml",
+		"views/layouts/seo.gohtml",
 		"views/pages/about.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	tplBlog = template.Must(template.ParseFiles(
-		"views/layouts/novue.gohtml",
-		"views/layouts/nav-novue.gohtml",
+		"views/layouts/seo.gohtml",
 		"views/pages/blog.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	tplContact = template.Must(template.ParseFiles(
-		"views/layouts/novue.gohtml",
-		"views/layouts/nav-novue.gohtml",
+		"views/layouts/seo.gohtml",
 		"views/pages/contact.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	tplJoinus = template.Must(template.ParseFiles(
-		"views/layouts/novue.gohtml",
-		"views/layouts/nav-novue.gohtml",
+		"views/layouts/seo.gohtml",
 		"views/pages/joinus.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	tplModel = template.Must(template.ParseFiles(
-		"views/layouts/novue.gohtml",
-		"views/layouts/nav-novue.gohtml",
+		"views/layouts/seo.gohtml",
 		"views/pages/model.gohtml"))
 	if err != nil {
 		panic(err)
 	}
 
 	tplTeam = template.Must(template.ParseFiles(
-		"views/layouts/novue.gohtml",
-		"views/layouts/nav-novue.gohtml",
+		"views/layouts/seo.gohtml",
 		"views/pages/team.gohtml"))
 	if err != nil {
 		panic(err)
@@ -314,12 +307,12 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
-	//r.HandleFunc("/about", about).Methods("GET")
-	//r.HandleFunc("/blog", blog).Methods("GET")
-	//r.HandleFunc("/contact", contact).Methods("GET")
-	//r.HandleFunc("/joinus", joinus).Methods("GET")
-	//r.HandleFunc("/model", model).Methods("GET")
-	//r.HandleFunc("/team", team).Methods("GET")
+	r.HandleFunc("/about", about).Methods("GET")
+	r.HandleFunc("/blog", blog).Methods("GET")
+	r.HandleFunc("/contact", contact).Methods("GET")
+	r.HandleFunc("/joinus", joinus).Methods("GET")
+	r.HandleFunc("/model", model).Methods("GET")
+	r.HandleFunc("/team", team).Methods("GET")
 	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")

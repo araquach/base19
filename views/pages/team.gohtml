@@ -12,39 +12,6 @@
 {{end}}
 
 {{define "content"}}
-
-{{template "nav-novue"}}
-<section id="team" class="section team-info hero is-fullheight is-dark">
-    <div class="columns is-multiline">
-        <div class="section column is-4">
-            <a href="#">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by5">
-                            <img src="" alt="">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4 has-text-white">Name Here</p>
-                                <p class="subtitle has-text-white">Level Here</p>
-                            </div>
-                        </div>
-                        <div class="content is-size-5-mobile has-text-white">
-                            <p class="price">Average Cut &amp; Colour price &pound;Price</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="level is-mobile">
-        <div class="level-left">
-            <div class="level-item">
-                <a href="/#team" @click="switchComponent" class="button">Go Back</a>
-            </div>
-        </div>
-    </div>
-</section>
+    <navbar-seo-component></navbar-seo-component>
+    <team-component></team-component>
 {{end}}

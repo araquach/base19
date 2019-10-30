@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import Cookie from './components/Cookie'
 import Navbar from './components/layout/Navbar'
+import NavbarSeo from './components/layout/NavbarSeo'
 import Home from './components/layout/Home'
 import About from './components/about/About'
 import Team from './components/team/Team'
@@ -17,6 +18,7 @@ Vue.use(Buefy)
 Vue.use(VueScrollTo)
 
 Vue.component('navbar-component', Navbar)
+Vue.component('navbar-seo-component', NavbarSeo)
 Vue.component('cookie-component', Cookie)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
@@ -32,4 +34,8 @@ window.axios = require('axios');
 new Vue({
     el: '#app',
     render: h => h(App)
+});
+
+const appSeo = new Vue({
+    el: '#appSeo'
 });
