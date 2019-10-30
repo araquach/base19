@@ -335,5 +335,5 @@ func main() {
 
 	log.Printf("Starting server on %s", port)
 
-	http.ListenAndServeTLS(":" + port, nil, nil, r)
+	http.ListenAndServe(":" + port, r)
 }
