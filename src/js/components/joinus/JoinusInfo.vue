@@ -133,7 +133,8 @@
                 if (!this.whyUs) {
                     this.errors.push('Why you want to join us is required')
                 }
-                else {
+
+                if (this.errors.length < 1 ) {
                     axios.post('/api/joinus', {
                         name: this.name,
                         mobile: this.mobile,
@@ -147,8 +148,8 @@
                         .catch((e) => {
                             console.error(e)
                         })
+                    }
                 }
-            }
         }
     }
 </script>
