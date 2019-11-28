@@ -123,7 +123,8 @@
                 if (!this.message) {
                     this.errors.push('Message required')
                 }
-                else {
+
+                if (this.errors.length < 1 ) {
                     axios.post('/api/sendMessage', {
                         name: this.name,
                         email: this.email,
