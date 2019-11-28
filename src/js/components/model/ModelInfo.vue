@@ -116,7 +116,8 @@
                 if (!this.info) {
                     this.errors.push('Information required')
                 }
-                else {
+
+                if (this.errors.length < 1) {
                     axios.post('/api/model', {
                         name: this.name,
                         mobile: this.mobile,
