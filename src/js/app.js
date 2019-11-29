@@ -13,9 +13,11 @@ import Contact from './components/contact/Contact'
 
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
+import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
 Vue.use(VueScrollTo)
+Vue.use(Vuelidate)
 
 Vue.component('navbar-component', Navbar)
 Vue.component('navbar-seo-component', NavbarSeo)
