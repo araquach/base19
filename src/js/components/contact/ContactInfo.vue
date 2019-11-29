@@ -25,22 +25,11 @@
             <hr class="is-mobile">
             <div class="section column">
                 <h1 class="title is-3">Contact Us</h1>
-                <div v-if="submitStatus === 'OK'">
-                    <p class="is-size-4 has-text-primary">Thanks for messaging us! One of our team will get back to you soon.</p>
-                </div>
-
-                <div v-else>
+                <div>
                     <p class="is-size-5">If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can</p>
                     <p>To book an appointment please use our app or click the 'Book Now' button.</p>
                     <br>
                     <form @submit.prevent="submit">
-<!--                        <div v-if="errors.length" class="box has-text-danger">-->
-<!--                            <p><strong>Please correct the following:</strong></p>-->
-<!--                            <ul>-->
-<!--                                <li v-for="error in errors">{{ error }}</li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-
                         <div class="field">
                             <label class="label has-text-white">Full Name</label>
                             <div class="control">
@@ -77,9 +66,9 @@
                                 <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Send Message</button>
                             </div>
                             <br><br>
-                            <p v-if="submitStatus === 'OK'">Thanks for your submission!</p>
-                            <p v-if="submitStatus === 'ERROR'">Please fill the form correctly.</p>
-                            <p v-if="submitStatus === 'PENDING'">Sending...</p>
+                            <div v-if="submitStatus === 'OK'">
+                                <p class="is-size-4 has-text-primary">Thanks for messaging us! One of our team will get back to you soon.</p>
+                            </div>
                         </div>
                     </form>
                 </div>
