@@ -27,7 +27,7 @@
                                 <input class="input" v-model.trim="$v.name.$model" placeholder="Your Full Name">
                             </div>
                             <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.name.required">
-                                Full Name is required
+                                <p>Full Name is required</p>
                             </div>
                         </div>
                         <div class="field">
@@ -38,7 +38,7 @@
                                     Mobile number is required
                                 </div>
                                 <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
-                                    Valid Mobile number is required
+                                    <p>Valid Mobile number is required</p>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         <br>
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Send Message</button>
+                                <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Apply</button>
                             </div>
                             <br><br>
                             <div v-if="submitStatus === 'OK'">
