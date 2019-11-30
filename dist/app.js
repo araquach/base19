@@ -17517,6 +17517,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "input",
+                      class: { "is-danger": _vm.$v.name.$error },
                       attrs: { placeholder: "Your Full Name" },
                       domProps: { value: _vm.$v.name.$model },
                       on: {
@@ -17538,7 +17539,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _vm.submitStatus === "ERROR" && !_vm.$v.name.required
-                    ? _c("div", { staticClass: "has-text-danger" }, [
+                    ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
                           "\n                            Name is required\n                        "
                         )
@@ -17563,6 +17564,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "input",
+                      class: { "is-danger": _vm.$v.email.$error },
                       attrs: { placeholder: "Your Email Address" },
                       domProps: { value: _vm.$v.email.$model },
                       on: {
@@ -17583,7 +17585,7 @@ var render = function() {
                     }),
                     _vm._v(" "),
                     _vm.submitStatus === "ERROR" && !_vm.$v.email.required
-                      ? _c("div", { staticClass: "has-text-danger" }, [
+                      ? _c("div", { staticClass: "help is-danger" }, [
                           _vm._v(
                             "\n                                Email Address is required\n                            "
                           )
@@ -17591,7 +17593,7 @@ var render = function() {
                       : _vm._e(),
                     _vm._v(" "),
                     _vm.submitStatus === "ERROR" && !_vm.$v.email.email
-                      ? _c("div", { staticClass: "has-text-danger" }, [
+                      ? _c("div", { staticClass: "help is-danger" }, [
                           _vm._v(
                             "\n                                Valid Email Address is required\n                            "
                           )
@@ -17617,6 +17619,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "textarea",
+                      class: { "is-danger": _vm.$v.message.$error },
                       attrs: { placeholder: "Your Message" },
                       domProps: { value: _vm.$v.message.$model },
                       on: {
@@ -17637,7 +17640,7 @@ var render = function() {
                     }),
                     _vm._v(" "),
                     _vm.submitStatus === "ERROR" && !_vm.$v.message.required
-                      ? _c("div", { staticClass: "has-text-danger" }, [
+                      ? _c("div", { staticClass: "help is-danger" }, [
                           _vm._v(
                             "\n                                Message is required\n                            "
                           )
@@ -17914,6 +17917,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "input",
+                        class: { "is-danger": _vm.$v.name.$error },
                         attrs: { placeholder: "Your Full Name" },
                         domProps: { value: _vm.$v.name.$model },
                         on: {
@@ -17935,7 +17939,7 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _vm.submitStatus === "ERROR" && !_vm.$v.name.required
-                      ? _c("div", { staticClass: "has-text-danger" }, [
+                      ? _c("div", { staticClass: "help is-danger" }, [
                           _c("p", [_vm._v("Full Name is required")])
                         ])
                       : _vm._e()
@@ -17958,6 +17962,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "input",
+                        class: { "is-danger": _vm.$v.mobile.$error },
                         attrs: { placeholder: "Your Mobile Number" },
                         domProps: { value: _vm.$v.mobile.$model },
                         on: {
@@ -17978,7 +17983,7 @@ var render = function() {
                       }),
                       _vm._v(" "),
                       _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
-                        ? _c("div", { staticClass: "has-text-danger" }, [
+                        ? _c("div", { staticClass: "help is-danger" }, [
                             _vm._v(
                               "\n                                Mobile number is required\n                            "
                             )
@@ -17986,7 +17991,7 @@ var render = function() {
                         : _vm._e(),
                       _vm._v(" "),
                       _vm.submitStatus === "ERROR" && !_vm.$v.mobile.numeric
-                        ? _c("div", { staticClass: "has-text-danger" }, [
+                        ? _c("div", { staticClass: "help is-danger" }, [
                             _c("p", [_vm._v("Valid Mobile number is required")])
                           ])
                         : _vm._e()
@@ -17999,73 +18004,81 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "control" }, [
-                      _c("div", { staticClass: "select" }, [
-                        _c(
-                          "select",
-                          {
-                            directives: [
-                              {
-                                name: "model",
-                                rawName: "v-model.trim",
-                                value: _vm.$v.position.$model,
-                                expression: "$v.position.$model",
-                                modifiers: { trim: true }
+                      _c(
+                        "div",
+                        {
+                          staticClass: "select",
+                          class: { "is-danger": _vm.$v.position.$error }
+                        },
+                        [
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model.trim",
+                                  value: _vm.$v.position.$model,
+                                  expression: "$v.position.$model",
+                                  modifiers: { trim: true }
+                                }
+                              ],
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.$set(
+                                    _vm.$v.position,
+                                    "$model",
+                                    $event.target.multiple
+                                      ? $$selectedVal
+                                      : $$selectedVal[0]
+                                  )
+                                }
                               }
-                            ],
-                            on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.$set(
-                                  _vm.$v.position,
-                                  "$model",
-                                  $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                )
-                              }
-                            }
-                          },
-                          [
-                            _c("option", { attrs: { value: "default" } }, [
-                              _vm._v("Please select")
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "option",
-                              { attrs: { value: "new to hairdressing" } },
-                              [_vm._v("New to hairdressing")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "option",
-                              { attrs: { value: "partway through" } },
-                              [_vm._v("Partway through apprenticeship")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "option",
-                              { attrs: { value: "already qualified" } },
-                              [_vm._v("Already qualified")]
-                            ),
-                            _vm._v(" "),
-                            _c("option", { attrs: { value: "other" } }, [
-                              _vm._v("Other")
-                            ])
-                          ]
-                        )
-                      ])
+                            },
+                            [
+                              _c("option", { attrs: { value: "default" } }, [
+                                _vm._v("Please select")
+                              ]),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "new to hairdressing" } },
+                                [_vm._v("New to hairdressing")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "partway through" } },
+                                [_vm._v("Partway through apprenticeship")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "option",
+                                { attrs: { value: "already qualified" } },
+                                [_vm._v("Already qualified")]
+                              ),
+                              _vm._v(" "),
+                              _c("option", { attrs: { value: "other" } }, [
+                                _vm._v("Other")
+                              ])
+                            ]
+                          )
+                        ]
+                      )
                     ])
                   ]),
                   _vm._v(" "),
                   _vm.submitStatus === "ERROR" && !_vm.$v.position.required
-                    ? _c("div", { staticClass: "has-text-danger" }, [
+                    ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
                           "\n                        Position is required\n                    "
                         )
@@ -18089,6 +18102,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "textarea",
+                        class: { "is-danger": _vm.$v.whyUs.$error },
                         attrs: { placeholder: "Why do you want to join Base?" },
                         domProps: { value: _vm.$v.whyUs.$model },
                         on: {
@@ -18111,7 +18125,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _vm.submitStatus === "ERROR" && !_vm.$v.whyUs.required
-                    ? _c("div", { staticClass: "has-text-danger" }, [
+                    ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
                           "\n                        Why us required\n                    "
                         )
@@ -18744,6 +18758,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "input",
+                        class: { "is-danger": _vm.$v.name.$error },
                         attrs: { placeholder: "Your Full Name" },
                         domProps: { value: _vm.$v.name.$model },
                         on: {
@@ -18765,7 +18780,7 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _vm.submitStatus === "ERROR" && !_vm.$v.name.required
-                      ? _c("div", { staticClass: "has-text-danger" }, [
+                      ? _c("div", { staticClass: "help is-danger" }, [
                           _c("p", [_vm._v("Name is required")])
                         ])
                       : _vm._e()
@@ -18788,6 +18803,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "input",
+                        class: { "is-danger": _vm.$v.mobile.$error },
                         attrs: { placeholder: "Your Mobile Number" },
                         domProps: { value: _vm.$v.mobile.$model },
                         on: {
@@ -18808,7 +18824,7 @@ var render = function() {
                       }),
                       _vm._v(" "),
                       _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
-                        ? _c("div", { staticClass: "has-text-danger" }, [
+                        ? _c("div", { staticClass: "help is-danger" }, [
                             _vm._v(
                               "\n                                    Mobile number is required\n                                "
                             )
@@ -18816,7 +18832,7 @@ var render = function() {
                         : _vm._e(),
                       _vm._v(" "),
                       _vm.submitStatus === "ERROR" && !_vm.$v.mobile.numeric
-                        ? _c("div", { staticClass: "has-text-danger" }, [
+                        ? _c("div", { staticClass: "help is-danger" }, [
                             _c("p", [_vm._v("Valid Mobile number is required")])
                           ])
                         : _vm._e()
@@ -18840,6 +18856,7 @@ var render = function() {
                           }
                         ],
                         staticClass: "textarea",
+                        class: { "is-danger": _vm.$v.info.$error },
                         attrs: { placeholder: "Why do you want to join Base?" },
                         domProps: { value: _vm.$v.info.$model },
                         on: {
@@ -18862,7 +18879,7 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _vm.submitStatus === "ERROR" && !_vm.$v.info.required
-                    ? _c("div", { staticClass: "has-text-danger" }, [
+                    ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
                           "\n                            Additional Information required\n                        "
                         )

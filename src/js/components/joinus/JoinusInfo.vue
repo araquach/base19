@@ -24,20 +24,20 @@
                         <div class="field">
                             <label class="label has-text-white">Full Name</label>
                             <div class="control">
-                                <input class="input" v-model.trim="$v.name.$model" placeholder="Your Full Name">
+                                <input class="input" :class="{ 'is-danger': $v.name.$error }" v-model.trim="$v.name.$model" placeholder="Your Full Name">
                             </div>
-                            <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.name.required">
+                            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.name.required">
                                 <p>Full Name is required</p>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label has-text-white">Mobile Number</label>
                             <div class="control">
-                                <input class="input" v-model.trim="$v.mobile.$model" placeholder="Your Mobile Number">
-                                <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.required">
+                                <input class="input" :class="{ 'is-danger': $v.mobile.$error }" v-model.trim="$v.mobile.$model" placeholder="Your Mobile Number">
+                                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.required">
                                     Mobile number is required
                                 </div>
-                                <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
+                                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
                                     <p>Valid Mobile number is required</p>
                                 </div>
                             </div>
@@ -45,8 +45,8 @@
                         <div class="field">
                             <label class="label has-text-white">Current Position</label>
                             <div class="control">
-                                <div class="select">
-                                    <select v-model.trim="$v.position.$model">
+                                <div class="select" :class="{ 'is-danger': $v.position.$error }">
+                                    <select  v-model.trim="$v.position.$model">
                                         <option value="default">Please select</option>
                                         <option value="new to hairdressing">New to hairdressing</option>
                                         <option value="partway through">Partway through apprenticeship</option>
@@ -56,16 +56,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.position.required">
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.position.required">
                             Position is required
                         </div>
                         <div class="field">
                             <label class="label has-text-white">Tell us why you want to join the Base team</label>
                             <div class="control">
-                                <textarea class="textarea" v-model.trim="$v.whyUs.$model" placeholder="Why do you want to join Base?"/>
+                                <textarea class="textarea" :class="{ 'is-danger': $v.whyUs.$error }" v-model.trim="$v.whyUs.$model" placeholder="Why do you want to join Base?"/>
                             </div>
                         </div>
-                        <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.whyUs.required">
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.whyUs.required">
                             Why us required
                         </div>
                         <br>

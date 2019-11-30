@@ -32,20 +32,20 @@
                             <div class="field">
                                 <label class="label has-text-white">Full Name</label>
                                 <div class="control">
-                                    <input class="input" v-model.trim="$v.name.$model" placeholder="Your Full Name">
+                                    <input class="input" :class="{ 'is-danger': $v.name.$error }" v-model.trim="$v.name.$model" placeholder="Your Full Name">
                                 </div>
-                                <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.name.required">
+                                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.name.required">
                                     <p>Name is required</p>
                                 </div>
                             </div>
                             <div class="field">
                                 <label class="label has-text-white">Mobile Number</label>
                                 <div class="control">
-                                    <input class="input" v-model.trim="$v.mobile.$model" placeholder="Your Mobile Number">
-                                    <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.required">
+                                    <input class="input" :class="{ 'is-danger': $v.mobile.$error }" v-model.trim="$v.mobile.$model" placeholder="Your Mobile Number">
+                                    <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.required">
                                         Mobile number is required
                                     </div>
-                                    <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
+                                    <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
                                         <p>Valid Mobile number is required</p>
                                     </div>
                                 </div>
@@ -53,10 +53,10 @@
                             <div class="field">
                                 <label class="label has-text-white">Additional information</label>
                                 <div class="control">
-                                    <textarea class="textarea" v-model.trim="$v.info.$model" placeholder="Why do you want to join Base?"/>
+                                    <textarea class="textarea" :class="{ 'is-danger': $v.info.$error }" v-model.trim="$v.info.$model" placeholder="Why do you want to join Base?"/>
                                 </div>
                             </div>
-                            <div class="has-text-danger" v-if="submitStatus === 'ERROR' && !$v.info.required">
+                            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.info.required">
                                 Additional Information required
                             </div>
                             <br>
