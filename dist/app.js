@@ -2380,17 +2380,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2529,6 +2518,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2614,54 +2605,58 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       showInfo: false,
-      errors: [],
-      name: null,
-      mobile: null,
-      position: null,
-      whyUs: null,
-      success: false,
-      formSubmitted: false
+      name: '',
+      mobile: '',
+      position: '',
+      whyUs: '',
+      submitStatus: null
     };
+  },
+  validations: {
+    name: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
+    },
+    mobile: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"],
+      numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["numeric"]
+    },
+    position: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
+    },
+    whyUs: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
+    }
   },
   methods: {
     switchComponent: function switchComponent() {
       this.$emit('switchComponent');
     },
-    validMobile: function validMobile(mobile) {
-      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
-      return re.test(mobile);
-    },
     info: function info() {
       return "Name: ".concat(this.name, "\n            Mobile: ").concat(this.mobile, "\n            Position: ").concat(this.position, "\n            Why Choose us?: ").concat(this.whyUs, "\n            ");
     },
-    sendData: function sendData() {
+    submit: function submit() {
       var _this = this;
 
-      this.errors = [];
+      console.log('submit!');
+      this.$v.$touch();
 
-      if (!this.name) {
-        this.errors.push('Name required.');
-      }
-
-      if (!this.mobile) {
-        this.errors.push('Mobile number required.');
-      } else if (!this.validMobile(this.mobile)) {
-        this.errors.push('Valid mobile number required.');
-      }
-
-      if (!this.position) {
-        this.errors.push('Position required');
-      }
-
-      if (!this.whyUs) {
-        this.errors.push('Why you want to join us is required');
-      }
-
-      if (this.errors.length < 1) {
+      if (this.$v.$invalid) {
+        this.submitStatus = 'ERROR';
+      } else {
         axios.post('/api/joinus', {
           name: this.name,
           mobile: this.mobile,
@@ -2669,7 +2664,7 @@ __webpack_require__.r(__webpack_exports__);
           whyUs: this.whyUs,
           info: this.info()
         }).then(function (response) {
-          _this.formSubmitted = true;
+          _this.submitStatus = 'OK';
         })["catch"](function (e) {
           console.error(e);
         });
@@ -2762,6 +2757,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2843,51 +2840,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       showInfo: false,
-      errors: [],
-      name: null,
-      mobile: null,
-      info: null,
-      formSubmitted: false
+      name: '',
+      mobile: '',
+      info: '',
+      submitStatus: null
     };
+  },
+  validations: {
+    name: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
+    },
+    mobile: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"],
+      numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["numeric"]
+    },
+    info: {
+      required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
+    }
   },
   methods: {
     switchComponent: function switchComponent() {
       this.$emit('switchComponent');
     },
-    validMobile: function validMobile(mobile) {
-      var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/;
-      return re.test(mobile);
-    },
-    sendData: function sendData() {
+    submit: function submit() {
       var _this = this;
 
-      this.errors = [];
+      console.log('submit!');
+      this.$v.$touch();
 
-      if (!this.name) {
-        this.errors.push('Name required.');
-      }
-
-      if (!this.mobile) {
-        this.errors.push('Mobile number required.');
-      } else if (!this.validMobile(this.mobile)) {
-        this.errors.push('Valid mobile number required.');
-      }
-
-      if (!this.info) {
-        this.errors.push('Information required');
-      }
-
-      if (this.errors.length < 1) {
+      if (this.$v.$invalid) {
+        this.submitStatus = 'ERROR';
+      } else {
         axios.post('/api/model', {
           name: this.name,
           mobile: this.mobile,
           info: this.info
         }).then(function (response) {
-          _this.formSubmitted = true;
+          _this.submitStatus = 'OK';
         })["catch"](function (e) {
           console.error(e);
         });
@@ -17475,221 +17474,211 @@ var render = function() {
         _c("div", { staticClass: "section column" }, [
           _c("h1", { staticClass: "title is-3" }, [_vm._v("Contact Us")]),
           _vm._v(" "),
-          _vm.submitStatus === "OK"
-            ? _c("div", [
-                _c("p", { staticClass: "is-size-4 has-text-primary" }, [
-                  _vm._v(
-                    "Thanks for messaging us! One of our team will get back to you soon."
-                  )
-                ])
-              ])
-            : _c("div", [
-                _c("p", { staticClass: "is-size-5" }, [
-                  _vm._v(
-                    "If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can"
-                  )
+          _c("div", [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v(
+                "If you wish to get in touch please fill in the form below and we'll get back to you as soon as we can"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "To book an appointment please use our app or click the 'Book Now' button."
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.submit($event)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "field" }, [
+                  _c("label", { staticClass: "label has-text-white" }, [
+                    _vm._v("Full Name")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "control" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model.trim",
+                          value: _vm.$v.name.$model,
+                          expression: "$v.name.$model",
+                          modifiers: { trim: true }
+                        }
+                      ],
+                      staticClass: "input",
+                      attrs: { placeholder: "Your Full Name" },
+                      domProps: { value: _vm.$v.name.$model },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.$v.name,
+                            "$model",
+                            $event.target.value.trim()
+                          )
+                        },
+                        blur: function($event) {
+                          return _vm.$forceUpdate()
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.name.required
+                    ? _c("div", { staticClass: "has-text-danger" }, [
+                        _vm._v(
+                          "\n                            Name is required\n                        "
+                        )
+                      ])
+                    : _vm._e()
                 ]),
                 _vm._v(" "),
-                _c("p", [
-                  _vm._v(
-                    "To book an appointment please use our app or click the 'Book Now' button."
-                  )
+                _c("div", { staticClass: "field" }, [
+                  _c("label", { staticClass: "label has-text-white" }, [
+                    _vm._v("Email Address")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "control" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model.trim",
+                          value: _vm.$v.email.$model,
+                          expression: "$v.email.$model",
+                          modifiers: { trim: true }
+                        }
+                      ],
+                      staticClass: "input",
+                      attrs: { placeholder: "Your Email Address" },
+                      domProps: { value: _vm.$v.email.$model },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.$v.email,
+                            "$model",
+                            $event.target.value.trim()
+                          )
+                        },
+                        blur: function($event) {
+                          return _vm.$forceUpdate()
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _vm.submitStatus === "ERROR" && !_vm.$v.email.required
+                      ? _c("div", { staticClass: "has-text-danger" }, [
+                          _vm._v(
+                            "\n                                Email Address is required\n                            "
+                          )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm.submitStatus === "ERROR" && !_vm.$v.email.email
+                      ? _c("div", { staticClass: "has-text-danger" }, [
+                          _vm._v(
+                            "\n                                Valid Email Address is required\n                            "
+                          )
+                        ])
+                      : _vm._e()
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "field" }, [
+                  _c("label", { staticClass: "label has-text-white" }, [
+                    _vm._v("Message")
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "control" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model.trim",
+                          value: _vm.$v.message.$model,
+                          expression: "$v.message.$model",
+                          modifiers: { trim: true }
+                        }
+                      ],
+                      staticClass: "textarea",
+                      attrs: { placeholder: "Your Message" },
+                      domProps: { value: _vm.$v.message.$model },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.$v.message,
+                            "$model",
+                            $event.target.value.trim()
+                          )
+                        },
+                        blur: function($event) {
+                          return _vm.$forceUpdate()
+                        }
+                      }
+                    }),
+                    _vm._v(" "),
+                    _vm.submitStatus === "ERROR" && !_vm.$v.message.required
+                      ? _c("div", { staticClass: "has-text-danger" }, [
+                          _vm._v(
+                            "\n                                Message is required\n                            "
+                          )
+                        ])
+                      : _vm._e()
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
-                _c(
-                  "form",
-                  {
-                    on: {
-                      submit: function($event) {
-                        $event.preventDefault()
-                        return _vm.submit($event)
-                      }
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Full Name")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model.trim",
-                              value: _vm.$v.name.$model,
-                              expression: "$v.name.$model",
-                              modifiers: { trim: true }
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: { placeholder: "Your Full Name" },
-                          domProps: { value: _vm.$v.name.$model },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.$v.name,
-                                "$model",
-                                $event.target.value.trim()
-                              )
-                            },
-                            blur: function($event) {
-                              return _vm.$forceUpdate()
-                            }
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _vm.submitStatus === "ERROR" && !_vm.$v.name.required
-                        ? _c("div", { staticClass: "has-text-danger" }, [
-                            _vm._v(
-                              "\n                                Name is required\n                            "
-                            )
-                          ])
-                        : _vm._e()
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Email Address")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model.trim",
-                              value: _vm.$v.email.$model,
-                              expression: "$v.email.$model",
-                              modifiers: { trim: true }
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: { placeholder: "Your Email Address" },
-                          domProps: { value: _vm.$v.email.$model },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.$v.email,
-                                "$model",
-                                $event.target.value.trim()
-                              )
-                            },
-                            blur: function($event) {
-                              return _vm.$forceUpdate()
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _vm.submitStatus === "ERROR" && !_vm.$v.email.required
-                          ? _c("div", { staticClass: "has-text-danger" }, [
-                              _vm._v(
-                                "\n                                    Email Address is required\n                                "
-                              )
-                            ])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        _vm.submitStatus === "ERROR" && !_vm.$v.email.email
-                          ? _c("div", { staticClass: "has-text-danger" }, [
-                              _vm._v(
-                                "\n                                    Valid Email Address is required\n                                "
-                              )
-                            ])
-                          : _vm._e()
+                _c("div", { staticClass: "field" }, [
+                  _c("div", { staticClass: "control" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-primary",
+                        attrs: {
+                          type: "submit",
+                          disabled: _vm.submitStatus === "PENDING"
+                        }
+                      },
+                      [_vm._v("Send Message")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm.submitStatus === "OK"
+                    ? _c("div", [
+                        _c("p", { staticClass: "is-size-4 has-text-primary" }, [
+                          _vm._v(
+                            "Thanks for messaging us! One of our team will get back to you soon."
+                          )
+                        ])
                       ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Message")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model.trim",
-                              value: _vm.$v.message.$model,
-                              expression: "$v.message.$model",
-                              modifiers: { trim: true }
-                            }
-                          ],
-                          staticClass: "textarea",
-                          attrs: { placeholder: "Your Message" },
-                          domProps: { value: _vm.$v.message.$model },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.$v.message,
-                                "$model",
-                                $event.target.value.trim()
-                              )
-                            },
-                            blur: function($event) {
-                              return _vm.$forceUpdate()
-                            }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _vm.submitStatus === "ERROR" && !_vm.$v.message.required
-                          ? _c("div", { staticClass: "has-text-danger" }, [
-                              _vm._v(
-                                "\n                                    Message is required\n                                "
-                              )
-                            ])
-                          : _vm._e()
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("div", { staticClass: "control" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "button is-primary",
-                            attrs: {
-                              type: "submit",
-                              disabled: _vm.submitStatus === "PENDING"
-                            }
-                          },
-                          [_vm._v("Send Message")]
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("br"),
-                      _c("br"),
-                      _vm._v(" "),
-                      _vm.submitStatus === "OK"
-                        ? _c("p", [_vm._v("Thanks for your submission!")])
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.submitStatus === "ERROR"
-                        ? _c("p", [_vm._v("Please fill the form correctly.")])
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _vm.submitStatus === "PENDING"
-                        ? _c("p", [_vm._v("Sending...")])
-                        : _vm._e()
-                    ])
-                  ]
-                )
-              ])
+                    : _vm._e()
+                ])
+              ]
+            )
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -17733,9 +17722,9 @@ var staticRenderFns = [
       _c("p", { staticClass: "is-size-5" }, [
         _vm._v("90/92 Bridge Street"),
         _c("br"),
-        _vm._v("\n                    Warrington"),
+        _vm._v("\n                Warrington"),
         _c("br"),
-        _vm._v("\n                    WA1 2RF")
+        _vm._v("\n                WA1 2RF")
       ]),
       _vm._v(" "),
       _c("h3", { staticClass: "title is-4" }, [_vm._v("Telephone:")]),
@@ -17750,15 +17739,15 @@ var staticRenderFns = [
         _c("p", [
           _vm._v("Monday: Closed"),
           _c("br"),
-          _vm._v("\n                        Tuesday: 9am - 6pm"),
+          _vm._v("\n                    Tuesday: 9am - 6pm"),
           _c("br"),
-          _vm._v("\n                        Wednesday: 11am - 8pm"),
+          _vm._v("\n                    Wednesday: 11am - 8pm"),
           _c("br"),
-          _vm._v("\n                        Thursday: 11am - 8pm"),
+          _vm._v("\n                    Thursday: 11am - 8pm"),
           _c("br"),
-          _vm._v("\n                        Friday: 9am - 6pm"),
+          _vm._v("\n                    Friday: 9am - 6pm"),
           _c("br"),
-          _vm._v("\n                        Saturday: 8am - 4:30pm")
+          _vm._v("\n                    Saturday: 8am - 4:30pm")
         ])
       ])
     ])
@@ -17890,235 +17879,282 @@ var render = function() {
           [
             _c("h1", { staticClass: "title is-3" }, [_vm._v("Apply Here")]),
             _vm._v(" "),
-            _vm.formSubmitted
-              ? _c("div", [
-                  _c("p", { staticClass: "is-size-5 has-text-success" }, [
-                    _vm._v(
-                      "Thanks for applying! We'll be in touch when a position becomes available"
-                    )
-                  ])
-                ])
-              : _c("div", [
-                  _c("p", { staticClass: "is-size-4" }, [
-                    _vm._v(
-                      "If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!"
-                    )
+            _c("div", [
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v(
+                  "If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.submit($event)
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Full Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.trim",
+                            value: _vm.$v.name.$model,
+                            expression: "$v.name.$model",
+                            modifiers: { trim: true }
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: { placeholder: "Your Full Name" },
+                        domProps: { value: _vm.$v.name.$model },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.$v.name,
+                              "$model",
+                              $event.target.value.trim()
+                            )
+                          },
+                          blur: function($event) {
+                            return _vm.$forceUpdate()
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _vm.submitStatus === "ERROR" && !_vm.$v.name.required
+                      ? _c("div", { staticClass: "has-text-danger" }, [
+                          _c("p", [_vm._v("Full Name is required")])
+                        ])
+                      : _vm._e()
                   ]),
                   _vm._v(" "),
-                  _c("form", [
-                    _vm.errors.length
-                      ? _c("div", { staticClass: "box has-text-danger" }, [
-                          _vm._m(1),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            _vm._l(_vm.errors, function(error) {
-                              return _c("li", [_vm._v(_vm._s(error))])
-                            }),
-                            0
-                          )
-                        ])
-                      : _vm._e(),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Mobile Number")
+                    ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Full Name")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.name,
-                              expression: "name"
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: {
-                            name: "name",
-                            type: "text",
-                            placeholder: "Your Name"
-                          },
-                          domProps: { value: _vm.name },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.name = $event.target.value
-                            }
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.trim",
+                            value: _vm.$v.mobile.$model,
+                            expression: "$v.mobile.$model",
+                            modifiers: { trim: true }
                           }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Mobile Number")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.mobile,
-                              expression: "mobile"
+                        ],
+                        staticClass: "input",
+                        attrs: { placeholder: "Your Mobile Number" },
+                        domProps: { value: _vm.$v.mobile.$model },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
                             }
-                          ],
-                          staticClass: "input",
-                          attrs: {
-                            name: "mobile",
-                            type: "text",
-                            placeholder: "Your Mobile Number"
+                            _vm.$set(
+                              _vm.$v.mobile,
+                              "$model",
+                              $event.target.value.trim()
+                            )
                           },
-                          domProps: { value: _vm.mobile },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.mobile = $event.target.value
-                            }
+                          blur: function($event) {
+                            return _vm.$forceUpdate()
                           }
-                        })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Current Position")
-                      ]),
+                        }
+                      }),
                       _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("div", { staticClass: "select" }, [
-                          _c(
-                            "select",
-                            {
-                              directives: [
-                                {
-                                  name: "model",
-                                  rawName: "v-model",
-                                  value: _vm.position,
-                                  expression: "position"
-                                }
-                              ],
-                              attrs: { name: "position" },
-                              on: {
-                                change: function($event) {
-                                  var $$selectedVal = Array.prototype.filter
-                                    .call($event.target.options, function(o) {
-                                      return o.selected
-                                    })
-                                    .map(function(o) {
-                                      var val =
-                                        "_value" in o ? o._value : o.value
-                                      return val
-                                    })
-                                  _vm.position = $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                }
-                              }
-                            },
-                            [
-                              _c("option", { attrs: { value: "default" } }, [
-                                _vm._v("Please select")
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "new to hairdressing" } },
-                                [_vm._v("New to hairdressing")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "partway through" } },
-                                [_vm._v("Partway through apprenticeship")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "option",
-                                { attrs: { value: "already qualified" } },
-                                [_vm._v("Already qualified")]
-                              ),
-                              _vm._v(" "),
-                              _c("option", { attrs: { value: "other" } }, [
-                                _vm._v("Other")
-                              ])
-                            ]
-                          )
-                        ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Tell us why you want to join the Base team")
-                      ]),
+                      _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
+                        ? _c("div", { staticClass: "has-text-danger" }, [
+                            _vm._v(
+                              "\n                                Mobile number is required\n                            "
+                            )
+                          ])
+                        : _vm._e(),
                       _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("textarea", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.whyUs,
-                              expression: "whyUs"
-                            }
-                          ],
-                          staticClass: "textarea",
-                          attrs: {
-                            name: "whyUs",
-                            placeholder: "Why do you want to join Base?"
-                          },
-                          domProps: { value: _vm.whyUs },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.whyUs = $event.target.value
-                            }
-                          }
-                        })
-                      ])
+                      _vm.submitStatus === "ERROR" && !_vm.$v.mobile.numeric
+                        ? _c("div", { staticClass: "has-text-danger" }, [
+                            _c("p", [_vm._v("Valid Mobile number is required")])
+                          ])
+                        : _vm._e()
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Current Position")
                     ]),
                     _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("div", { staticClass: "control" }, [
+                    _c("div", { staticClass: "control" }, [
+                      _c("div", { staticClass: "select" }, [
                         _c(
-                          "a",
+                          "select",
                           {
                             directives: [
                               {
-                                name: "scroll-to",
-                                rawName: "v-scroll-to",
-                                value: "#joinusErr",
-                                expression: "'#joinusErr'"
+                                name: "model",
+                                rawName: "v-model.trim",
+                                value: _vm.$v.position.$model,
+                                expression: "$v.position.$model",
+                                modifiers: { trim: true }
                               }
                             ],
-                            staticClass: "button is-primary",
-                            attrs: { href: "" },
                             on: {
-                              click: function($event) {
-                                $event.preventDefault()
-                                return _vm.sendData($event)
+                              change: function($event) {
+                                var $$selectedVal = Array.prototype.filter
+                                  .call($event.target.options, function(o) {
+                                    return o.selected
+                                  })
+                                  .map(function(o) {
+                                    var val = "_value" in o ? o._value : o.value
+                                    return val
+                                  })
+                                _vm.$set(
+                                  _vm.$v.position,
+                                  "$model",
+                                  $event.target.multiple
+                                    ? $$selectedVal
+                                    : $$selectedVal[0]
+                                )
                               }
                             }
                           },
-                          [_vm._v("Submit")]
+                          [
+                            _c("option", { attrs: { value: "default" } }, [
+                              _vm._v("Please select")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "option",
+                              { attrs: { value: "new to hairdressing" } },
+                              [_vm._v("New to hairdressing")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "option",
+                              { attrs: { value: "partway through" } },
+                              [_vm._v("Partway through apprenticeship")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "option",
+                              { attrs: { value: "already qualified" } },
+                              [_vm._v("Already qualified")]
+                            ),
+                            _vm._v(" "),
+                            _c("option", { attrs: { value: "other" } }, [
+                              _vm._v("Other")
+                            ])
+                          ]
                         )
                       ])
                     ])
+                  ]),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.position.required
+                    ? _c("div", { staticClass: "has-text-danger" }, [
+                        _vm._v(
+                          "\n                        Position is required\n                    "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Tell us why you want to join the Base team")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.trim",
+                            value: _vm.$v.whyUs.$model,
+                            expression: "$v.whyUs.$model",
+                            modifiers: { trim: true }
+                          }
+                        ],
+                        staticClass: "textarea",
+                        attrs: { placeholder: "Why do you want to join Base?" },
+                        domProps: { value: _vm.$v.whyUs.$model },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.$v.whyUs,
+                              "$model",
+                              $event.target.value.trim()
+                            )
+                          },
+                          blur: function($event) {
+                            return _vm.$forceUpdate()
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.whyUs.required
+                    ? _c("div", { staticClass: "has-text-danger" }, [
+                        _vm._v(
+                          "\n                        Why us required\n                    "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("div", { staticClass: "control" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button is-primary",
+                          attrs: {
+                            type: "submit",
+                            disabled: _vm.submitStatus === "PENDING"
+                          }
+                        },
+                        [_vm._v("Apply")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _vm.submitStatus === "OK"
+                      ? _c("div", [
+                          _c(
+                            "p",
+                            { staticClass: "is-size-4 has-text-primary" },
+                            [
+                              _vm._v(
+                                "Thanks for applying! We'll be in touch when a position becomes available"
+                              )
+                            ]
+                          )
+                        ])
+                      : _vm._e()
                   ])
-                ])
+                ]
+              )
+            ])
           ]
         )
       ]),
@@ -18203,12 +18239,6 @@ var staticRenderFns = [
         ])
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("strong", [_vm._v("Please correct the following:")])])
   }
 ]
 render._withStripped = true
@@ -18685,168 +18715,197 @@ var render = function() {
             _vm._v(" "),
             _c("br"),
             _vm._v(" "),
-            _c("form", { attrs: { id: "modelErr" } }, [
-              _vm.formSubmitted
-                ? _c("div", [
-                    _c("p", { staticClass: "is-size-4 has-text-primary" }, [
-                      _vm._v(
-                        "Thanks for applying to be a model. When a suitable session comes up we'll be in touch."
-                      )
-                    ])
-                  ])
-                : _c("div", [
-                    _vm.errors.length
-                      ? _c("div", { staticClass: "box has-text-danger" }, [
-                          _vm._m(2),
-                          _vm._v(" "),
-                          _c(
-                            "ul",
-                            _vm._l(_vm.errors, function(error) {
-                              return _c("li", [_vm._v(_vm._s(error))])
-                            }),
-                            0
-                          )
+            _c(
+              "form",
+              {
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.submit($event)
+                  }
+                }
+              },
+              [
+                _c("div", [
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Full Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.trim",
+                            value: _vm.$v.name.$model,
+                            expression: "$v.name.$model",
+                            modifiers: { trim: true }
+                          }
+                        ],
+                        staticClass: "input",
+                        attrs: { placeholder: "Your Full Name" },
+                        domProps: { value: _vm.$v.name.$model },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.$v.name,
+                              "$model",
+                              $event.target.value.trim()
+                            )
+                          },
+                          blur: function($event) {
+                            return _vm.$forceUpdate()
+                          }
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _vm.submitStatus === "ERROR" && !_vm.$v.name.required
+                      ? _c("div", { staticClass: "has-text-danger" }, [
+                          _c("p", [_vm._v("Name is required")])
                         ])
-                      : _vm._e(),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Full name")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.name,
-                              expression: "name"
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: {
-                            name: "name",
-                            type: "text",
-                            placeholder: "Your Full Name"
-                          },
-                          domProps: { value: _vm.name },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.name = $event.target.value
-                            }
-                          }
-                        })
-                      ])
+                      : _vm._e()
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Mobile Number")
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Mobile Number")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.mobile,
-                              expression: "mobile"
-                            }
-                          ],
-                          staticClass: "input",
-                          attrs: {
-                            name: "mobile",
-                            type: "text",
-                            placeholder: "Your Mobile Number"
-                          },
-                          domProps: { value: _vm.mobile },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.mobile = $event.target.value
-                            }
+                    _c("div", { staticClass: "control" }, [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.trim",
+                            value: _vm.$v.mobile.$model,
+                            expression: "$v.mobile.$model",
+                            modifiers: { trim: true }
                           }
-                        })
-                      ])
+                        ],
+                        staticClass: "input",
+                        attrs: { placeholder: "Your Mobile Number" },
+                        domProps: { value: _vm.$v.mobile.$model },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.$v.mobile,
+                              "$model",
+                              $event.target.value.trim()
+                            )
+                          },
+                          blur: function($event) {
+                            return _vm.$forceUpdate()
+                          }
+                        }
+                      }),
+                      _vm._v(" "),
+                      _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
+                        ? _c("div", { staticClass: "has-text-danger" }, [
+                            _vm._v(
+                              "\n                                    Mobile number is required\n                                "
+                            )
+                          ])
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.submitStatus === "ERROR" && !_vm.$v.mobile.numeric
+                        ? _c("div", { staticClass: "has-text-danger" }, [
+                            _c("p", [_vm._v("Valid Mobile number is required")])
+                          ])
+                        : _vm._e()
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("label", { staticClass: "label has-text-white" }, [
+                      _vm._v("Additional information")
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("label", { staticClass: "label has-text-white" }, [
-                        _vm._v("Additional information")
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "control" }, [
-                        _c("textarea", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.info,
-                              expression: "info"
-                            }
-                          ],
-                          staticClass: "textarea",
-                          attrs: {
-                            name: "info",
-                            placeholder: "Additional Info"
-                          },
-                          domProps: { value: _vm.info },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.info = $event.target.value
-                            }
+                    _c("div", { staticClass: "control" }, [
+                      _c("textarea", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model.trim",
+                            value: _vm.$v.info.$model,
+                            expression: "$v.info.$model",
+                            modifiers: { trim: true }
                           }
-                        })
+                        ],
+                        staticClass: "textarea",
+                        attrs: { placeholder: "Why do you want to join Base?" },
+                        domProps: { value: _vm.$v.info.$model },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.$set(
+                              _vm.$v.info,
+                              "$model",
+                              $event.target.value.trim()
+                            )
+                          },
+                          blur: function($event) {
+                            return _vm.$forceUpdate()
+                          }
+                        }
+                      })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.info.required
+                    ? _c("div", { staticClass: "has-text-danger" }, [
+                        _vm._v(
+                          "\n                            Additional Information required\n                        "
+                        )
                       ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "field" }, [
+                    _c("div", { staticClass: "control" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "button is-primary",
+                          attrs: {
+                            type: "submit",
+                            disabled: _vm.submitStatus === "PENDING"
+                          }
+                        },
+                        [_vm._v("Apply")]
+                      )
                     ]),
                     _vm._v(" "),
                     _c("br"),
+                    _c("br"),
                     _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        type: "hidden",
-                        name: "role",
-                        value: "apprentice"
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "field" }, [
-                      _c("div", { staticClass: "control" }, [
-                        _c(
-                          "button",
-                          {
-                            directives: [
-                              {
-                                name: "scroll-to",
-                                rawName: "v-scroll-to",
-                                value: "#modelErr",
-                                expression: "'#modelErr'"
-                              }
-                            ],
-                            staticClass: "button is-primary",
-                            on: {
-                              click: function($event) {
-                                $event.preventDefault()
-                                return _vm.sendData($event)
-                              }
-                            }
-                          },
-                          [_vm._v("Apply")]
-                        )
-                      ])
-                    ])
+                    _vm.submitStatus === "OK"
+                      ? _c("div", [
+                          _c(
+                            "p",
+                            { staticClass: "is-size-4 has-text-primary" },
+                            [
+                              _vm._v(
+                                "Thanks for applying! We'll be in touch when a suitable session is on"
+                              )
+                            ]
+                          )
+                        ])
+                      : _vm._e()
                   ])
-            ])
+                ])
+              ]
+            )
           ])
         ])
       ]),
@@ -18916,12 +18975,6 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("li", [_vm._v("Any Colour, Cut & Style ideas you would like")])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("p", [_c("strong", [_vm._v("Please correct the following:")])])
   }
 ]
 render._withStripped = true
