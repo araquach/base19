@@ -63,17 +63,7 @@ type TeamMember struct {
 }
 
 func dbConn() (db *gorm.DB) {
-	dbhost     := os.Getenv("DB_HOST")
-	dbport     := os.Getenv("DB_PORT")
-	dbuser     := os.Getenv("DB_USER")
-	dbpassword := os.Getenv("DB_PASSWORD")
-	dbname     := os.Getenv("DB_NAME")
-
-	psqlInfo := fmt.Sprintf("host=%s port=%s user=%s "+
-		"password=%s dbname=%s sslmode=disable",
-		dbhost, dbport, dbuser, dbpassword, dbname)
-
-	db, err := gorm.Open("postgres", psqlInfo)
+	db, err := gorm.Open("postgres", os.Getenv("HEROKU_POSTGRESQL_RED_URL"))
 	if err != nil {
 		panic(err)
 	}
