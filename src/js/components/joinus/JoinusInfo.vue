@@ -18,36 +18,35 @@
             <hr class="is-mobile">
             <div id="joinusErr" class="section column">
                 <h1 class="title is-3">Apply Here</h1>
-                <div v-if="formSubmitted">
-                    <p class="is-size-5 has-text-success">Thanks for applying! We'll be in touch when a position becomes available</p>
-                </div>
-                <div v-else>
+                <div>
                     <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                    <form>
-                        <div v-if="errors.length" class="box has-text-danger">
-                            <p><strong>Please correct the following:</strong></p>
-                            <ul>
-                                <li v-for="error in errors">{{ error }}</li>
-                            </ul>
-                        </div>
-
+                    <form @submit.prevent="submit">
                         <div class="field">
                             <label class="label has-text-white">Full Name</label>
                             <div class="control">
-                                <input class="input" v-model="name" name="name" type="text" placeholder="Your Name">
+                                <input class="input" :class="{ 'is-danger': $v.name.$error }" v-model.trim="$v.name.$model" placeholder="Your Full Name">
+                            </div>
+                            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.name.required">
+                                <p>Full Name is required</p>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label has-text-white">Mobile Number</label>
                             <div class="control">
-                                <input class="input" v-model="mobile" name="mobile" type="text" placeholder="Your Mobile Number">
+                                <input class="input" :class="{ 'is-danger': $v.mobile.$error }" v-model.trim="$v.mobile.$model" placeholder="Your Mobile Number">
+                                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.required">
+                                    Mobile number is required
+                                </div>
+                                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
+                                    <p>Valid Mobile number is required</p>
+                                </div>
                             </div>
                         </div>
                         <div class="field">
                             <label class="label has-text-white">Current Position</label>
                             <div class="control">
-                                <div class="select">
-                                    <select v-model="position" name="position">
+                                <div class="select" :class="{ 'is-danger': $v.position.$error }">
+                                    <select  v-model.trim="$v.position.$model">
                                         <option value="default">Please select</option>
                                         <option value="new to hairdressing">New to hairdressing</option>
                                         <option value="partway through">Partway through apprenticeship</option>
@@ -57,16 +56,26 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.position.required">
+                            Position is required
+                        </div>
                         <div class="field">
                             <label class="label has-text-white">Tell us why you want to join the Base team</label>
                             <div class="control">
-                                <textarea class="textarea" v-model="whyUs" name="whyUs" placeholder="Why do you want to join Base?"/>
+                                <textarea class="textarea" :class="{ 'is-danger': $v.whyUs.$error }" v-model.trim="$v.whyUs.$model" placeholder="Why do you want to join Base?"/>
                             </div>
+                        </div>
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.whyUs.required">
+                            Why us required
                         </div>
                         <br>
                         <div class="field">
                             <div class="control">
-                                <a href="" @click.prevent="sendData" class="button is-primary" v-scroll-to="'#joinusErr'">Submit</a>
+                                <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Apply</button>
+                            </div>
+                            <br><br>
+                            <div v-if="submitStatus === 'OK'">
+                                <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes available</p>
                             </div>
                         </div>
                     </form>
@@ -84,28 +93,29 @@
 </template>
 
 <script>
+    import {required, numeric} from 'vuelidate/lib/validators'
     export default {
         data() {
             return {
                 showInfo: false,
-                errors: [],
-                name: null,
-                mobile: null,
-                position: null,
-                whyUs: null,
-                success: false,
-                formSubmitted: false
+                name: '',
+                mobile: '',
+                position: '',
+                whyUs: '',
+                submitStatus: null
             }
+        },
+
+        validations: {
+            name: { required },
+            mobile: { required, numeric },
+            position: { required },
+            whyUs: { required }
         },
 
         methods:{
             switchComponent() {
                 this.$emit('switchComponent')
-            },
-
-            validMobile: function (mobile) {
-                var re = /^((\+44\s?|0)7([45789]\d{2}|624)\s?\d{3}\s?\d{3})$/
-                return re.test(mobile);
             },
 
             info() {
@@ -116,24 +126,12 @@
                 `
             },
 
-            sendData() {
-                this.errors = [];
-
-                if (!this.name) {
-                    this.errors.push('Name required.')
-                }
-                if (!this.mobile) {
-                    this.errors.push('Mobile number required.')
-                } else if (!this.validMobile(this.mobile)) {
-                    this.errors.push('Valid mobile number required.')
-                }
-                if (!this.position) {
-                    this.errors.push('Position required')
-                }
-                if (!this.whyUs) {
-                    this.errors.push('Why you want to join us is required')
-                }
-                else {
+            submit() {
+                console.log('submit!')
+                this.$v.$touch()
+                if (this.$v.$invalid) {
+                    this.submitStatus = 'ERROR'
+                } else {
                     axios.post('/api/joinus', {
                         name: this.name,
                         mobile: this.mobile,
@@ -142,7 +140,7 @@
                         info: this.info()
                     })
                         .then(response => {
-                            this.formSubmitted = true
+                            this.submitStatus = 'OK'
                         })
                         .catch((e) => {
                             console.error(e)

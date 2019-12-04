@@ -308,6 +308,7 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
 	r.HandleFunc("/about", about).Methods("GET")
+	r.HandleFunc("/info", about).Methods("GET")
 	r.HandleFunc("/blog", blog).Methods("GET")
 	r.HandleFunc("/contact", contact).Methods("GET")
 	r.HandleFunc("/joinus", joinus).Methods("GET")
