@@ -60,6 +60,7 @@ type TeamMember struct {
 	FavStyle	string
 	Product		string
 	Price		string
+	Position	int
 }
 
 func dbConn() (db *gorm.DB) {
@@ -133,7 +134,7 @@ func apiTeam(w http.ResponseWriter, r *http.Request) {
 
 	db := dbConn()
 	team := []TeamMember{}
-	db.Find(&team)
+	db.Order("position").Find(&team)
 	db.Close()
 
 	json, err := json.Marshal(team)
