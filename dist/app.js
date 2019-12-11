@@ -19182,7 +19182,7 @@ var render = function() {
   return _c(
     "section",
     {
-      staticClass: "offers hero is-fullheight is-dark",
+      staticClass: "offer hero is-fullheight is-dark",
       attrs: { id: "offers" }
     },
     [
