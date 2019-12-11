@@ -3,7 +3,7 @@
         <div class="hero-body show columns">
             <div class="section column is-4">
                 <h1 class="title">Special Offers</h1>
-                <h2 class="subtitle">Take advantage of these amazing December Offers</h2>
+                <h2 class="subtitle">Take advantage of these amazing Christmas Offers</h2>
                 <button @click="switchComponent" class="button">More info</button>
             </div>
         </div>

@@ -2999,6 +2999,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
     switchComponent: function switchComponent() {
@@ -19195,7 +19236,7 @@ var render = function() {
           _c("h1", { staticClass: "title" }, [_vm._v("Special Offers")]),
           _vm._v(" "),
           _c("h2", { staticClass: "subtitle" }, [
-            _vm._v("Take advantage of these amazing December Offers")
+            _vm._v("Take advantage of these amazing Christmas Offers")
           ]),
           _vm._v(" "),
           _c(
@@ -19239,6 +19280,8 @@ var render = function() {
     [
       _vm._m(0),
       _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
       _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
@@ -19267,7 +19310,73 @@ var staticRenderFns = [
         _c("h1", { staticClass: "title" }, [_vm._v("Special Offers")]),
         _vm._v(" "),
         _c("h2", { staticClass: "subtitle" }, [
-          _vm._v("Take advantage of these amazing December Offers")
+          _vm._v("Take advantage of these amazing Christmas Offers")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-image" }, [
+            _c("figure", { staticClass: "image is-4by5" }, [
+              _c("img", { attrs: { src: "", alt: "" } })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-content" }, [
+            _c("div", { staticClass: "media" }, [
+              _c("div", { staticClass: "media-content" }, [
+                _c("p", { staticClass: "title is-4 has-text-white" }, [
+                  _vm._v("Offer 1 Text")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "subtitle has-text-white" }, [
+                  _vm._v("More Text")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "content is-size-5-mobile has-text-white" },
+              [_c("p", [_vm._v("Yada Yada")])]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-image" }, [
+            _c("figure", { staticClass: "image is-4by5" }, [
+              _c("img", { attrs: { src: "", alt: "" } })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-content" }, [
+            _c("div", { staticClass: "media" }, [
+              _c("div", { staticClass: "media-content" }, [
+                _c("p", { staticClass: "title is-4 has-text-white" }, [
+                  _vm._v("Offer 2 Text")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "subtitle has-text-white" }, [
+                  _vm._v("More Text")
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "content is-size-5-mobile has-text-white" },
+              [_c("p", [_vm._v("Other Text")])]
+            )
+          ])
         ])
       ])
     ])
