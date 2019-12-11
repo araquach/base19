@@ -18658,6 +18658,10 @@ var render = function() {
             _vm._v("\n            Team\n        ")
           ]),
           _vm._v(" "),
+          _c("b-navbar-item", { attrs: { href: "/#offers" } }, [
+            _vm._v("\n            Offers\n        ")
+          ]),
+          _vm._v(" "),
           _c(
             "b-navbar-dropdown",
             { attrs: { label: "More" } },
@@ -36126,8 +36130,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/imac-work/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/imac-work/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

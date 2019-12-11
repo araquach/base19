@@ -24,6 +24,7 @@ var (
 	tplJoinus *template.Template
 	tplModel *template.Template
 	tplTeam *template.Template
+	tplOffer *template.Template
 )
 
 type ContactMessage struct {
@@ -123,6 +124,13 @@ func model(w http.ResponseWriter, r *http.Request) {
 func team(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	if err := tplTeam.Execute(w, nil); err != nil {
+		panic(err)
+	}
+}
+
+func offer(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	if err := tplOffer.Execute(w, nil); err != nil {
 		panic(err)
 	}
 }
@@ -296,6 +304,13 @@ func main() {
 		panic(err)
 	}
 
+	tplOffer = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/offer.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
 	r.HandleFunc("/about", about).Methods("GET")
@@ -305,6 +320,7 @@ func main() {
 	r.HandleFunc("/joinus", joinus).Methods("GET")
 	r.HandleFunc("/model", model).Methods("GET")
 	r.HandleFunc("/team", team).Methods("GET")
+	r.HandleFunc("/offers", offer).Methods("GET")
 	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")

@@ -10,6 +10,9 @@
             <b-navbar-item href="/#team">
                 Team
             </b-navbar-item>
+            <b-navbar-item href="/#offers">
+                Offers
+            </b-navbar-item>
             <b-navbar-dropdown label="More">
                 <b-navbar-item href="/#joinus">
                     Join Us
