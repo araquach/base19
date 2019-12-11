@@ -4,6 +4,7 @@
         <home-component/>
         <about-component/>
         <team-component/>
+        <offer-component/>
         <joinus-component/>
 <!--        <blog-component/>-->
         <model-component/>

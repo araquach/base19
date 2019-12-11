@@ -10,6 +10,9 @@
             <b-navbar-item href="#team" v-scroll-to="'#team'">
                 Team
             </b-navbar-item>
+            <b-navbar-item href="#offers" v-scroll-to="'#offers'">
+                Offers
+            </b-navbar-item>
             <b-navbar-dropdown label="More">
                 <b-navbar-item href="#joinus" v-scroll-to="'#joinus'">
                     Join Us
@@ -37,4 +40,5 @@
             </b-navbar-item>
         </template>
     </b-navbar>
+
 </template>

@@ -6,6 +6,7 @@ import NavbarSeo from './components/layout/NavbarSeo'
 import Home from './components/layout/Home'
 import About from './components/about/About'
 import Team from './components/team/Team'
+import Offer from './components/offer/Offer'
 import Joinus from './components/joinus/Joinus'
 import Blog from './components/blog/Blog'
 import Model from './components/model/Model'
@@ -25,6 +26,7 @@ Vue.component('cookie-component', Cookie)
 Vue.component('home-component', Home)
 Vue.component('about-component', About)
 Vue.component('team-component', Team)
+Vue.component('offer-component', Offer)
 Vue.component('joinus-component', Joinus)
 Vue.component('blog-component', Blog)
 Vue.component('model-component', Model)

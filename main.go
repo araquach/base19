@@ -64,7 +64,7 @@ type TeamMember struct {
 }
 
 func dbConn() (db *gorm.DB) {
-	db, err := gorm.Open("postgres", os.Getenv("HEROKU_POSTGRESQL_RED_URL"))
+	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
 		panic(err)
 	}
