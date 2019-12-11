@@ -3040,8 +3040,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   methods: {
     switchComponent: function switchComponent() {
@@ -19308,23 +19306,25 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "columns is-vcentered" }, [
-      _c("div", { staticClass: "column is-5-desktop" }, [
+      _c("div", { staticClass: "column is-8-desktop" }, [
         _c("h1", { staticClass: "title" }, [_vm._v(" Offers")]),
         _vm._v(" "),
         _c("h2", { staticClass: "subtitle" }, [
           _vm._v("Take advantage of these amazing Christmas Offers")
         ]),
         _vm._v(" "),
-        _c("p", [
+        _c("p", { staticClass: "is-size-5" }, [
           _vm._v(
-            "Lucy & Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair and their work is outstanding."
+            "Lucy & Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding."
           )
         ]),
         _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "If you're wanting a new look take advantage of Lucy & Lauren's special December offers!"
-          )
+        _c("p", { staticClass: "is-size-5" }, [
+          _c("strong", [
+            _vm._v(
+              "If you're wanting a new look take advantage of Lucy & Lauren's special December offers!"
+            )
+          ])
         ])
       ])
     ])
@@ -19337,18 +19337,19 @@ var staticRenderFns = [
       _c("div", { staticClass: "column" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image is-4by5" }, [
-              _c("img", { attrs: { src: "", alt: "" } })
+            _c("figure", { staticClass: "image is-square" }, [
+              _c("img", {
+                attrs: {
+                  src: "/dist/img/offer/lauren_lucy-offer.jpg",
+                  alt: "Colour & Cut offer"
+                }
+              })
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-content" }, [
             _c("div", { staticClass: "media" }, [
               _c("div", { staticClass: "media-content" }, [
-                _c("p", { staticClass: "title is-4 has-text-white" }, [
-                  _vm._v("£40 Colour & Cut")
-                ]),
-                _vm._v(" "),
                 _c("p", { staticClass: "subtitle has-text-white" }, [
                   _vm._v("For new clients to Base")
                 ])
@@ -19373,18 +19374,19 @@ var staticRenderFns = [
       _c("div", { staticClass: "column" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image is-4by5" }, [
-              _c("img", { attrs: { src: "", alt: "" } })
+            _c("figure", { staticClass: "image is-square" }, [
+              _c("img", {
+                attrs: {
+                  src: "/dist/img/offer/lauren_lucy-offer2.jpg",
+                  alt: "Blow Dry Offer"
+                }
+              })
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-content" }, [
             _c("div", { staticClass: "media" }, [
               _c("div", { staticClass: "media-content" }, [
-                _c("p", { staticClass: "title is-4 has-text-white" }, [
-                  _vm._v("£15 Blowdry or Hair Up")
-                ]),
-                _vm._v(" "),
                 _c("p", { staticClass: "subtitle has-text-white" }, [
                   _vm._v("Right up to Christmas Eve")
                 ])
@@ -36265,8 +36267,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/imac-work/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/imac-work/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

@@ -1,25 +1,24 @@
 <template>
     <section id="offer" class="section offer-info hero is-fullheight is-dark">
         <div class="columns is-vcentered">
-            <div class="column is-5-desktop">
+            <div class="column is-8-desktop">
                 <h1 class="title"> Offers</h1>
                 <h2 class="subtitle">Take advantage of these amazing Christmas Offers</h2>
-                <p>Lucy &amp; Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair and their work is outstanding.</p>
-                <p>If you're wanting a new look take advantage of Lucy & Lauren's special December offers!</p>
+                <p class="is-size-5">Lucy &amp; Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding.</p>
+                <p class="is-size-5"><strong>If you're wanting a new look take advantage of Lucy & Lauren's special December offers!</strong></p>
             </div>
         </div>
         <div class="columns">
             <div class="column">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by5">
-                            <img src="" alt="">
+                        <figure class="image is-square">
+                            <img src="/dist/img/offer/lauren_lucy-offer.jpg" alt="Colour & Cut offer">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4 has-text-white">£40 Colour & Cut</p>
                                 <p class="subtitle has-text-white">For new clients to Base</p>
                             </div>
                         </div>
@@ -32,14 +31,13 @@
             <div class="column">
                 <div class="card">
                     <div class="card-image">
-                        <figure class="image is-4by5">
-                            <img src="" alt="">
+                        <figure class="image is-square">
+                            <img src="/dist/img/offer/lauren_lucy-offer2.jpg" alt="Blow Dry Offer">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="media">
                             <div class="media-content">
-                                <p class="title is-4 has-text-white">£15 Blowdry or Hair Up</p>
                                 <p class="subtitle has-text-white">Right up to Christmas Eve</p>
                             </div>
                         </div>
