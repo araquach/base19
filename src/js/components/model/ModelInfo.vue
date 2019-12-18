@@ -53,7 +53,7 @@
                             <div class="field">
                                 <label class="label has-text-white">Additional information</label>
                                 <div class="control">
-                                    <textarea class="textarea" :class="{ 'is-danger': $v.info.$error }" v-model.trim="$v.info.$model" placeholder="Why do you want to join Base?"/>
+                                    <textarea class="textarea" :class="{ 'is-danger': $v.info.$error }" v-model.trim="$v.info.$model" placeholder="Additional information"/>
                                 </div>
                             </div>
                             <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.info.required">
