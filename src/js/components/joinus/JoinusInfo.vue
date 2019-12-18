@@ -20,7 +20,7 @@
                 <h1 class="title is-3">Apply Here</h1>
                 <div>
                     <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                    <form @submit.prevent="submit">
+                    <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
                         <div class="field">
                             <label class="label has-text-white">Full Name</label>
                             <div class="control">
@@ -74,11 +74,11 @@
                                 <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Apply</button>
                             </div>
                             <br><br>
-                            <div v-if="submitStatus === 'OK'">
-                                <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes available</p>
-                            </div>
                         </div>
                     </form>
+                    <div v-if="submitStatus === 'OK'">
+                        <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes available</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -27,7 +27,7 @@
                     <small>A skin test is required 48 hours before we can colour your hair if you haven't been to us before. We will not be able to carry out any colour treatments if we don't have a record of this.</small>
                     <br>
                     <br>
-                    <form @submit.prevent="submit">
+                    <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
                         <div>
                             <div class="field">
                                 <label class="label has-text-white">Full Name</label>
@@ -65,12 +65,12 @@
                                     <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Apply</button>
                                 </div>
                                 <br><br>
-                                <div v-if="submitStatus === 'OK'">
-                                    <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a suitable session is on</p>
-                                </div>
                             </div>
                         </div>
                     </form>
+                    <div v-if="submitStatus === 'OK'">
+                        <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a suitable session is on</p>
+                    </div>
                 </div>
             </div>
         </div>
