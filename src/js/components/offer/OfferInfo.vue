@@ -2,8 +2,8 @@
     <section id="offers" class="section offer-info hero is-fullheight is-dark">
         <div class="columns is-vcentered">
             <div class="column is-8-desktop">
-                <h1 class="title">New Year Offers</h1>
-                <h2 class="subtitle">Go for a new look for 2020</h2>
+                <h1 class="title">{{title}}</h1>
+                <h2 class="subtitle">{{subtitle}}</h2>
                 <p class="is-size-5">Lucy &amp; Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding.</p>
                 <p>Beth, Ruby &amp; Sophie are all Junior stylists looking to build their skills. They're taking on basic colouring and cutting - all fully supervised by a Senior Stylist</p>
                 <p class="is-size-5"><strong>If you're wanting a new look take advantage of these great New Year offers!</strong></p>
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="content is-size-5-mobile has-text-white">
-                            <p>Skin test required 48 hours before any colour service. Offer Ends 29/02/20</p>
+                            <p>Skin test required 48 hours before any colour service. Offer Ends 31/03/20</p>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                             </div>
                         </div>
                         <div class="content is-size-5-mobile has-text-white">
-                            <p>Skin test required 48 hours before any colour service. Offer Ends 29/02/20</p>
+                            <p>Skin test required 48 hours before any colour service. Offer Ends 31/03/20</p>
                         </div>
                     </div>
                 </div>
@@ -61,6 +61,8 @@
 
 <script>
     export default {
+        props: ['title', 'subtitle'],
+
         methods: {
             switchComponent() {
                 this.$emit('switchComponent')

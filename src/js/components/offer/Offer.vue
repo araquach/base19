@@ -1,6 +1,9 @@
 <template>
     <transition name="fade" mode="out-in">
-        <component :is="selectedComponent" @switchComponent="switchComponent"/>
+        <component :is="selectedComponent"
+                   :title="title"
+                   :subtitle="subtitle"
+                   @switchComponent="switchComponent"/>
     </transition>
 </template>
 
@@ -16,7 +19,9 @@
 
         data() {
             return {
-                selectedComponent: 'OfferFrontComponent'
+                selectedComponent: 'OfferFrontComponent',
+                title: 'Special Offers',
+                subtitle: 'For a limited time only'
             }
         },
 
