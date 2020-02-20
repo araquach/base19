@@ -23,7 +23,7 @@
                                 <p class="subtitle has-text-white">Graduate Stylist Offer for new clients to Base</p>
                             </div>
                         </div>
-                        <div class="content is-size-5-mobile has-text-white">
+                        <div class="content is-size-6-mobile has-text-white">
                             <p>Skin test required 48 hours before any colour service. Offer Ends 31/03/20</p>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                                 <p class="subtitle has-text-white">Junior Stylist Offer - Basic Colouring & Cutting only - please book with a Graduate for more advanced Cutting/Colouring </p>
                             </div>
                         </div>
-                        <div class="content is-size-5-mobile has-text-white">
+                        <div class="content is-size-6-mobile has-text-white">
                             <p>Skin test required 48 hours before any colour service. Offer Ends 31/03/20</p>
                         </div>
                     </div>

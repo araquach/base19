@@ -19,3 +19,14 @@
 
     </section>
 </template>
+
+<style lang="scss">
+    #home {
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
+        background-size: cover;
+
+        figure {
+            margin-bottom: 3rem;
+        }
+    }
+</style>
