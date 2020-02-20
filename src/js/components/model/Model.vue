@@ -32,3 +32,15 @@
     }
 </script>
 
+<style lang="scss">
+    .models {
+        background: url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+        background-size: cover;
+    }
+
+    .models-info {
+        background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+        background-size: cover;
+    }
+</style>
+
