@@ -6,7 +6,7 @@
                 <h2 class="subtitle">{{subtitle}}</h2>
                 <p class="is-size-5">Lucy &amp; Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding.</p>
                 <p>Beth, Ruby &amp; Sophie are all Junior stylists looking to build their skills. They're taking on basic colouring and cutting - all fully supervised by a Senior Stylist</p>
-                <p class="is-size-5"><strong>If you're wanting a new look take advantage of these great New Year offers!</strong></p>
+                <p class="is-size-5"><strong>If you're wanting a new look take advantage of these great special offers for a limited time!</strong></p>
             </div>
         </div>
         <div class="columns">
