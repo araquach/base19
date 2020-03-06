@@ -16,42 +16,19 @@
         },
         data() {
             return {
-                currentReviewIndex: 0,
+                currentReviewIndex: 1,
                 intervalId: null,
 
-                allReviews: [
-                    {
-                        id: 1,
-                        review: 'Excellent Service. Will be returning',
-                        client: 'Mary Lane',
-                        staff: 'Peter Rabbit'
-                    },
-                    {
-                        id: 2,
-                        review: 'Lovely Cut, lovely colour. Cyril was great',
-                        client: 'Helen Parker',
-                        staff: 'Cyril Snere'
-                    },
-                    {
-                        id: 3,
-                        review: 'Not totally convinced but i\'ll give you another go sometime',
-                        client: 'Graham Nash',
-                        staff: 'Bugs Bunny'
-                    },
-                    {
-                        id: 4,
-                        review: 'What a colour! Unbelievable',
-                        client: 'Les Doolerton',
-                        staff: 'Roscoe Peco'
-                    }
-                ]
+                allReviews: []
             }
         },
+
         computed: {
             currentReview() {
                 return this.allReviews[this.currentReviewIndex];
             }
         },
+
         mounted() {
             this.currentReviewIndex = Math.round(
                 Math.random() * (this.allReviews.length - 1)
@@ -61,6 +38,7 @@
         beforeDestroy() {
             this.stopTickerTimer();
         },
+
         methods: {
             startTickerTimer() {
                 this.stopTickerTimer();
@@ -74,6 +52,13 @@
                 this.currentReviewIndex =
                     (this.currentReviewIndex + 1) % this.allReviews.length;
             }
+        },
+
+        created() {
+            axios.get('/api/reviews').then(response => this.allReviews = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
         }
     }
 </script>

@@ -171,6 +171,7 @@ func main() {
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
 	r.HandleFunc("/api/model", apiModel).Methods("POST")
+	r.HandleFunc("/api/reviews", apiReviews).Methods("GET")
 
 	// Styles
 	assetHandler := http.FileServer(http.Dir("./dist/"))
@@ -258,6 +259,21 @@ func apiTeam(w http.ResponseWriter, r *http.Request) {
 	db.Close()
 
 	json, err := json.Marshal(team)
+	if err != nil {
+		log.Println(err)
+	}
+	w.Write(json)
+}
+
+func apiReviews(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	db := dbConn()
+	reviews := []Review{}
+	db.Find(&reviews)
+	db.Close()
+
+	json, err := json.Marshal(reviews)
 	if err != nil {
 		log.Println(err)
 	}
