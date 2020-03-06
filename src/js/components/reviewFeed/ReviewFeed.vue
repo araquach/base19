@@ -1,14 +1,16 @@
 <template>
     <div>
-        <transition-group name=”fade”>
-            <div v-for="(review) in reviews" :key="review.id" class="has-text-white">
-                <div v-show="activeReview">
-                    <p class="is-size-3">"{{review.review}}"</p>
-                    <p class="is-size-6">Client: {{review.client}}</p>
-                    <p class="is-size-6">Stylist: {{review.staff}}</p>
+        <div class="ticker box">
+            <article class="media">
+                <div class="media-content">
+                    <transition name="fade" tag="div" mode="out-in">
+                        <div v-for="review in reviews" :key="review.id">
+                            {{review.review}}
+                        </div>
+                    </transition>
                 </div>
-            </div>
-        </transition-group>
+            </article>
+        </div>
     </div>
 </template>
 
@@ -16,7 +18,7 @@
     export default {
         data() {
             return {
-                activeReview: 1,
+                tickerLocation: 0,
                 reviews: [
                     {
                         id: 1,
@@ -44,6 +46,15 @@
                     }
                 ]
             }
+        },
+        created: function() {
+            setInterval(this.updateTicker, 5000);
+        },
+        methods: {
+            updateTicker: function() {
+                var removed = this.reviews.pop();
+                this.reviews.unshift(removed);
+            }
         }
 
 
@@ -51,13 +62,29 @@
 </script>
 
 <style type="scss">
+    .breaking-news {
+        background-color: #33A3F1;
+        color: #ffffff;
+        border-radius: 10px 50px 50px 10px;
+        padding: 5px;
+    }
+
+    .media-content {
+        padding: 5px;
+    }
+
+    .time {
+        color: #33A3F1;
+    }
+
+    .news {
+        color: #666666;
+    }
+
     .fade-enter-active, .fade-leave-active {
-        transition: all .2s;
+        transition: opacity 1s
     }
-    .fade-enter, .fade-leave-to{
-        opacity: 0;
-    }
-    .fade-enter-active {
-        transition-delay: .2s;
+    .fade-enter, .fade-leave-to {
+        opacity: 0
     }
 </style>

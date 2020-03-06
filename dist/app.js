@@ -3125,10 +3125,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      activeReview: 1,
+      tickerLocation: 0,
       reviews: [{
         id: 1,
         review: 'Excellent Service. Will be returning',
@@ -3151,6 +3153,15 @@ __webpack_require__.r(__webpack_exports__);
         staff: 'Roscoe Peco'
       }]
     };
+  },
+  created: function created() {
+    setInterval(this.updateTicker, 5000);
+  },
+  methods: {
+    updateTicker: function updateTicker() {
+      var removed = this.reviews.pop();
+      this.reviews.unshift(removed);
+    }
   }
 });
 
@@ -16083,7 +16094,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.fade-enter-active, .fade-leave-active {\n    transition: all .2s;\n}\n.fade-enter, .fade-leave-to{\n    opacity: 0;\n}\n.fade-enter-active {\n    transition-delay: .2s;\n}\n", ""]);
+exports.push([module.i, "\n.breaking-news {\n    background-color: #33A3F1;\n    color: #ffffff;\n    border-radius: 10px 50px 50px 10px;\n    padding: 5px;\n}\n.media-content {\n    padding: 5px;\n}\n.time {\n    color: #33A3F1;\n}\n.news {\n    color: #666666;\n}\n.fade-enter-active, .fade-leave-active {\n    transition: opacity 1s\n}\n.fade-enter, .fade-leave-to {\n    opacity: 0\n}\n", ""]);
 
 // exports
 
@@ -19950,47 +19961,33 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c(
-        "transition-group",
-        { attrs: { name: "”fade”" } },
-        _vm._l(_vm.reviews, function(review) {
-          return _c("div", { key: review.id, staticClass: "has-text-white" }, [
+  return _c("div", [
+    _c("div", { staticClass: "ticker box" }, [
+      _c("article", { staticClass: "media" }, [
+        _c(
+          "div",
+          { staticClass: "media-content" },
+          [
             _c(
-              "div",
-              {
-                directives: [
-                  {
-                    name: "show",
-                    rawName: "v-show",
-                    value: _vm.activeReview,
-                    expression: "activeReview"
-                  }
-                ]
-              },
-              [
-                _c("p", { staticClass: "is-size-3" }, [
-                  _vm._v('"' + _vm._s(review.review) + '"')
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "is-size-6" }, [
-                  _vm._v("Client: " + _vm._s(review.client))
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "is-size-6" }, [
-                  _vm._v("Stylist: " + _vm._s(review.staff))
+              "transition",
+              { attrs: { name: "fade", tag: "div", mode: "out-in" } },
+              _vm._l(_vm.reviews, function(review) {
+                return _c("div", { key: review.id }, [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(review.review) +
+                      "\n                    "
+                  )
                 ])
-              ]
+              }),
+              0
             )
-          ])
-        }),
-        0
-      )
-    ],
-    1
-  )
+          ],
+          1
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -37079,8 +37076,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/imac-work/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/imac-work/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
