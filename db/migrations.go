@@ -1,4 +1,4 @@
-package seed
+package db
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 )
 
 type TeamMember struct {
-	Id			int
+	gorm.Model
 	FirstName 	string
 	LastName 	string
 	Level 		string
@@ -21,9 +21,22 @@ type TeamMember struct {
 	FavStyle	string
 	Product		string
 	Price		string
-	Position	int
 }
 
+type JoinusApplicant struct {
+	gorm.Model
+	Name 		string
+	Mobile 		string
+	Position 	string
+	WhyUs		string
+}
+
+type ModelApplicant struct {
+	gorm.Model
+	Name string
+	Mobile string
+	Info string
+}
 
 func init() {
 	// loads values from .env into the system
@@ -50,7 +63,7 @@ func dbConn() (db *gorm.DB) {
 	return db
 }
 
-func seed() {
+func db() {
 	tm1 := TeamMember{
 		FirstName: "Lucy",
 		LastName: "Watson",
@@ -124,9 +137,12 @@ func seed() {
 	}
 
 	db := dbConn()
-	db.LogMode(true)
+	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{})
+
 	for _, tm := range teamMembers {
 		db.Create(&tm)
 	}
+
 	db.Close()
+	db.LogMode(true)
 }
