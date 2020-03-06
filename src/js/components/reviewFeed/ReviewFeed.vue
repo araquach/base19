@@ -1,25 +1,25 @@
 <template>
-    <div>
-        <div class="ticker box">
-            <article class="media">
-                <div class="media-content">
-                    <transition name="fade" tag="div" mode="out-in">
-                        <div v-for="review in reviews" :key="review.id">
-                            {{review.review}}
-                        </div>
-                    </transition>
-                </div>
-            </article>
+    <div class="news-ticker">
+        <div>
+            <ReviewInd :key="currentReview.id" :value="currentReview"/>
         </div>
     </div>
 </template>
 
 <script>
+    import ReviewInd from "./ReviewInd"
+    import { clearInterval } from "timers"
+    let id = 1
     export default {
+        components: {
+            ReviewInd
+        },
         data() {
             return {
-                tickerLocation: 0,
-                reviews: [
+                currentReviewIndex: 0,
+                intervalId: null,
+
+                allReviews: [
                     {
                         id: 1,
                         review: 'Excellent Service. Will be returning',
@@ -47,44 +47,37 @@
                 ]
             }
         },
-        created: function() {
-            setInterval(this.updateTicker, 5000);
+        computed: {
+            currentReview() {
+                return this.allReviews[this.currentReviewIndex];
+            }
+        },
+        mounted() {
+            this.currentReviewIndex = Math.round(
+                Math.random() * (this.allReviews.length - 1)
+            );
+            this.startTickerTimer();
+        },
+        beforeDestroy() {
+            this.stopTickerTimer();
         },
         methods: {
-            updateTicker: function() {
-                var removed = this.reviews.pop();
-                this.reviews.unshift(removed);
+            startTickerTimer() {
+                this.stopTickerTimer();
+                this.intervalId = setInterval(this.timerTick, 7000);
+            },
+            stopTickerTimer() {
+                if (this.intervalId) clearInterval(this.intervalId);
+                this.intervalId = null;
+            },
+            timerTick() {
+                this.currentReviewIndex =
+                    (this.currentReviewIndex + 1) % this.allReviews.length;
             }
         }
-
-
     }
 </script>
 
 <style type="scss">
-    .breaking-news {
-        background-color: #33A3F1;
-        color: #ffffff;
-        border-radius: 10px 50px 50px 10px;
-        padding: 5px;
-    }
 
-    .media-content {
-        padding: 5px;
-    }
-
-    .time {
-        color: #33A3F1;
-    }
-
-    .news {
-        color: #666666;
-    }
-
-    .fade-enter-active, .fade-leave-active {
-        transition: opacity 1s
-    }
-    .fade-enter, .fade-leave-to {
-        opacity: 0
-    }
 </style>
