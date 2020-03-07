@@ -12,13 +12,25 @@
                 <h2 class="subtitle is-size-4 has-text-white has-text-centered">
                     A hair academy for the next generation of super skilled stylists
                 </h2>
+
             </div>
         </div>
-
+        <div class="has-text-right">
+            <ReviewFeed/>
+        </div>
         <cookie-component></cookie-component>
 
     </section>
 </template>
+
+<script>
+    import ReviewFeed from '../reviewFeed/ReviewFeed'
+    export default {
+        components: {
+            ReviewFeed
+        }
+    }
+</script>
 
 <style lang="scss">
     #home {
