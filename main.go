@@ -8,12 +8,12 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/joho/godotenv"
+	"github.com/mailgun/mailgun-go/v3"
 	"html/template"
 	"log"
 	"net/http"
 	"os"
 	"time"
-	"github.com/mailgun/mailgun-go/v3"
 )
 
 var (
@@ -64,6 +64,13 @@ type TeamMember struct {
 	Position	int
 }
 
+type Review struct {
+	ID 		uint 	`json:"id" gorm:"primary_key"`
+	Review 	string 	`json:"review"`
+	Client 	string 	`json:"client"`
+	Staff 	string 	`json:"staff"`
+}
+
 func dbConn() (db *gorm.DB) {
 	db, err := gorm.Open("postgres", os.Getenv("DATABASE_URL"))
 	if err != nil {
@@ -77,6 +84,111 @@ func init() {
 	if err := godotenv.Load(); err != nil {
 		log.Print("No .env file found")
 	}
+}
+
+func main() {
+
+	var err error
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+
+	db := dbConn()
+	db.LogMode(true)
+	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{}, &Review{})
+	db.Close()
+
+	tplHome = template.Must(template.ParseFiles(
+		"views/layouts/main.gohtml",
+		"views/pages/index.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplAbout = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/about.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplBlog = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/blog.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplContact = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/contact.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplJoinus = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/joinus.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplModel = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/model.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplTeam = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/team.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	tplOffer = template.Must(template.ParseFiles(
+		"views/layouts/seo.gohtml",
+		"views/pages/offer.gohtml"))
+	if err != nil {
+		panic(err)
+	}
+
+	r := mux.NewRouter()
+	r.HandleFunc("/", home).Methods("GET")
+	r.HandleFunc("/about", about).Methods("GET")
+	r.HandleFunc("/info", about).Methods("GET")
+	r.HandleFunc("/blog", blog).Methods("GET")
+	r.HandleFunc("/contact", contact).Methods("GET")
+	r.HandleFunc("/joinus", joinus).Methods("GET")
+	r.HandleFunc("/model", model).Methods("GET")
+	r.HandleFunc("/team", team).Methods("GET")
+	r.HandleFunc("/offers", offer).Methods("GET")
+	// api roots
+	r.HandleFunc("/api/team", apiTeam).Methods("GET")
+	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
+	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
+	r.HandleFunc("/api/model", apiModel).Methods("POST")
+
+	// Styles
+	assetHandler := http.FileServer(http.Dir("./dist/"))
+	assetHandler = http.StripPrefix("/dist/", assetHandler)
+	r.PathPrefix("/dist/").Handler(assetHandler)
+
+	// JS
+	jsHandler := http.FileServer(http.Dir("./dist/"))
+	jsHandler = http.StripPrefix("/dist/", jsHandler)
+	r.PathPrefix("/public/js/").Handler(jsHandler)
+
+	//Images
+	imageHandler := http.FileServer(http.Dir("./public/images/"))
+	r.PathPrefix("/images/").Handler(http.StripPrefix("/images/", imageHandler))
+
+	log.Printf("Starting server on %s", port)
+
+	http.ListenAndServe(":" + port, r)
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
@@ -238,110 +350,4 @@ func apiModel(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 	return
-}
-
-func main() {
-
-	var err error
-
-	port := os.Getenv("PORT")
-	if port == "" {
-		log.Fatal("$PORT must be set")
-	}
-
-	db := dbConn()
-
-	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{})
-
-	db.LogMode(true)
-
-	tplHome = template.Must(template.ParseFiles(
-	"views/layouts/main.gohtml",
-	"views/pages/index.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplAbout = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/about.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplBlog = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/blog.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplContact = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/contact.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplJoinus = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/joinus.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplModel = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/model.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplTeam = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/team.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	tplOffer = template.Must(template.ParseFiles(
-		"views/layouts/seo.gohtml",
-		"views/pages/offer.gohtml"))
-	if err != nil {
-		panic(err)
-	}
-
-	r := mux.NewRouter()
-	r.HandleFunc("/", home).Methods("GET")
-	r.HandleFunc("/about", about).Methods("GET")
-	r.HandleFunc("/info", about).Methods("GET")
-	r.HandleFunc("/blog", blog).Methods("GET")
-	r.HandleFunc("/contact", contact).Methods("GET")
-	r.HandleFunc("/joinus", joinus).Methods("GET")
-	r.HandleFunc("/model", model).Methods("GET")
-	r.HandleFunc("/team", team).Methods("GET")
-	r.HandleFunc("/offers", offer).Methods("GET")
-	// api roots
-	r.HandleFunc("/api/team", apiTeam).Methods("GET")
-	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
-	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
-	r.HandleFunc("/api/model", apiModel).Methods("POST")
-
-	// Styles
-	assetHandler := http.FileServer(http.Dir("./dist/"))
-	assetHandler = http.StripPrefix("/dist/", assetHandler)
-	r.PathPrefix("/dist/").Handler(assetHandler)
-
-	// JS
-	jsHandler := http.FileServer(http.Dir("./dist/"))
-	jsHandler = http.StripPrefix("/dist/", jsHandler)
-	r.PathPrefix("/public/js/").Handler(jsHandler)
-
-	//Images
-	imageHandler := http.FileServer(http.Dir("./public/images/"))
-	r.PathPrefix("/images/").Handler(http.StripPrefix("/images/", imageHandler))
-
-	log.Printf("Starting server on %s", port)
-
-	http.ListenAndServe(":" + port, r)
 }
