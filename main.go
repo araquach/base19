@@ -87,9 +87,7 @@ func init() {
 }
 
 func main() {
-
 	var err error
-
 	port := os.Getenv("PORT")
 	if port == "" {
 		log.Fatal("$PORT must be set")
@@ -166,7 +164,6 @@ func main() {
 	r.HandleFunc("/model", model).Methods("GET")
 	r.HandleFunc("/team", team).Methods("GET")
 	r.HandleFunc("/offers", offer).Methods("GET")
-	// api roots
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")

@@ -9,7 +9,7 @@
 <script>
     import ReviewInd from "./ReviewInd"
     import { clearInterval } from "timers"
-    let id = 1
+    let id = 2
     export default {
         components: {
             ReviewInd
