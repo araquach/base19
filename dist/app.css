@@ -16752,6 +16752,31 @@ p {
   }
 }
 
+/* Review Feed */
+
+#review-feed {
+  position: absolute;
+  bottom: 7rem;
+  right: 7rem;
+  width: 20rem;
+  height: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  #review-feed {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+#review-feed p {
+  margin-bottom: 0;
+}
+
+#review-feed p:first-of-type {
+  margin-bottom: 1.3rem;
+}
+
 /* transition styling */
 
 .fade-enter,

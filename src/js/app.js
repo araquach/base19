@@ -35,6 +35,10 @@ Vue.component('contact-component', Contact)
 window.axios = require('axios');
 // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
+Vue.filter('textLimit', function (text, length) {
+    return text.substring(0, length);
+})
+
 new Vue({
     el: '#app',
     render: h => h(App)

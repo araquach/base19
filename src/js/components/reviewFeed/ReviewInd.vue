@@ -1,6 +1,6 @@
 <template>
-    <div class="review-feed">
-        <p class="has-text-white is-size-5">"{{ value.review }}"</p>
+    <div id="review-feed">
+        <p class="has-text-white is-size-5 is-size-6-mobile">"{{ value.review | textLimit(200) }}"</p>
         <p class="has-text-white is-size-7">Client: {{ value.client }}</p>
         <p class="has-text-white is-size-7">Stylist: {{ value.staff }}</p>
     </div>
@@ -16,21 +16,3 @@
         }
     }
 </script>
-
-<style type="scss" scoped>
-    p {
-        margin-bottom: 0;
-    }
-
-    p:first-of-type {
-        margin-bottom: 1.3rem;
-    }
-
-    .review-feed {
-        position: absolute;
-        bottom: 7rem;
-        right: 7rem;
-        width: 20rem;
-        height: auto;
-    }
-</style>
