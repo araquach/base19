@@ -1,18 +1,13 @@
 <template>
     <div id="review-feed">
-        <p class="has-text-white">"{{ value.review | textLimit(150) }}"</p>
-        <p class="has-text-white">{{ value.client }}</p>
-        <p class="has-text-white">{{ value.staff }}</p>
+        <p class="has-text-white">"{{ review.review | textLimit(150) }}"</p>
+        <p class="has-text-white">{{ review.client }}</p>
+        <p class="has-text-white">{{ review.staff }}</p>
     </div>
 </template>
 
 <script>
     export default {
-        props: {
-            value: {
-                type: Object,
-                required: true
-            }
-        }
+        props: ['review']
     }
 </script>

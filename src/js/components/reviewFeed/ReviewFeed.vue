@@ -1,15 +1,12 @@
 <template>
-    <div class="news-ticker">
-        <div>
-            <ReviewInd :key="currentReview.id" :value="currentReview"/>
-        </div>
+    <div>
+        <ReviewInd :review="currentReview"/>
     </div>
 </template>
 
 <script>
     import ReviewInd from "./ReviewInd"
     import { clearInterval } from "timers"
-    let id = 2
     export default {
         components: {
             ReviewInd
@@ -18,8 +15,8 @@
             return {
                 currentReviewIndex: 1,
                 intervalId: null,
-
-                allReviews: []
+                allReviews: [],
+                id: 1
             }
         },
 
@@ -33,18 +30,19 @@
             this.currentReviewIndex = Math.round(
                 Math.random() * (this.allReviews.length - 1)
             );
-            this.startTickerTimer();
+            this.startTimer();
         },
+
         beforeDestroy() {
-            this.stopTickerTimer();
+            this.stopTimer();
         },
 
         methods: {
-            startTickerTimer() {
-                this.stopTickerTimer();
+            startTimer() {
+                this.stopTimer();
                 this.intervalId = setInterval(this.timerTick, 7000);
             },
-            stopTickerTimer() {
+            stopTimer() {
                 if (this.intervalId) clearInterval(this.intervalId);
                 this.intervalId = null;
             },
