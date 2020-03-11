@@ -34,7 +34,7 @@
 
 <style lang="scss">
     .contact {
-        background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
         background-size: cover;
     }
 

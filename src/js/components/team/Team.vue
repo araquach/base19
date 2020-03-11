@@ -42,7 +42,7 @@
 
 <style lang="scss">
     .team {
-        background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg.jpg") center center no-repeat;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg.jpg") center center no-repeat;
         background-size: cover;
     }
 
