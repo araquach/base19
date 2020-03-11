@@ -11,31 +11,33 @@ import (
 
 type TeamMember struct {
 	gorm.Model
-	FirstName 	string
-	LastName 	string
-	Level 		string
-	Image		string
-	Para1 		string
-	Para2		string
-	Para3		string
-	FavStyle	string
-	Product		string
-	Price		string
+	FirstName 	string 	`json:"first_name"`
+	LastName 	string 	`json:"last_name"`
+	Level 		string 	`json:"level"`
+	Image		string 	`json:"image"`
+	Para1 		string 	`json:"para_1"`
+	Para2		string 	`json:"para_2"`
+	Para3		string 	`json:"para_3"`
+	FavStyle	string 	`json:"fav_style"`
+	Product		string 	`json:"product"`
+	Price		string 	`json:"price"`
+	Salon		uint 	`json:"salon"`
 }
 
 type JoinusApplicant struct {
 	gorm.Model
-	Name 		string
-	Mobile 		string
-	Position 	string
-	WhyUs		string
+	Name 		string 	`json:"name"`
+	Mobile 		string 	`json:"mobile"`
+	Position 	string 	`json:"position"`
+	WhyUs		string 	`json:"why_us"`
+	Salon		uint 	`json:"salon"`
 }
 
 type ModelApplicant struct {
 	gorm.Model
-	Name string
-	Mobile string
-	Info string
+	Name 	string 	`json:"name"`
+	Mobile 	string 	`json:"mobile"`
+	Info 	string 	`json:"info"`
 }
 
 func init() {
