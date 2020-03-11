@@ -5,18 +5,18 @@
                 <div class="card-content columns">
                     <div class="column">
                         <figure class="image">
-                            <img :src="selectedTM.Image" :alt="selectedTM.FirstName">
+                            <img :src="selectedTM.image" :alt="selectedTM.first_name">
                         </figure>
                     </div>
                     <div class="column">
                         <div class="media">
                             <div class="media-content has-text-white">
-                                <h1 class="title has-text-white">{{selectedTM.FirstName}} {{selectedTM.LastName}}</h1>
+                                <h1 class="title has-text-white">{{selectedTM.first_name}} {{selectedTM.last_name}}</h1>
                                 <h2 class="subtitle has-text-white">{{selectedTM.Level}}</h2>
-                                <p class="is-size-5 has-text-weight-bold">{{selectedTM.Para1}}</p>
-                                <p>{{selectedTM.Para2}}</p>
-                                <p>{{selectedTM.Para3}}</p>
-                                <p class="is-size-5">Average Price: &pound;{{selectedTM.Price}}</p>
+                                <p class="is-size-5 has-text-weight-bold">{{selectedTM.para1}}</p>
+                                <p>{{selectedTM.para2}}</p>
+                                <p>{{selectedTM.para3}}</p>
+                                <p class="is-size-5">Average Price: &pound;{{selectedTM.price}}</p>
                             </div>
                         </div>
                     </div>
