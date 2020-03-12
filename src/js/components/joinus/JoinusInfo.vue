@@ -62,10 +62,10 @@
                         <div class="field">
                             <label class="label has-text-white">Tell us why you want to join the Base team</label>
                             <div class="control">
-                                <textarea class="textarea" :class="{ 'is-danger': $v.whyUs.$error }" v-model.trim="$v.whyUs.$model" placeholder="Why do you want to join Base?"/>
+                                <textarea class="textarea" :class="{ 'is-danger': $v.why_us.$error }" v-model.trim="$v.why_us.$model" placeholder="Why do you want to join Base?"/>
                             </div>
                         </div>
-                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.whyUs.required">
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.why_us.required">
                             Why us required
                         </div>
                         <br>
@@ -101,7 +101,8 @@
                 name: '',
                 mobile: '',
                 position: '',
-                whyUs: '',
+                why_us: '',
+                salon: 3,
                 submitStatus: null
             }
         },
@@ -110,7 +111,7 @@
             name: { required },
             mobile: { required, numeric },
             position: { required },
-            whyUs: { required }
+            why_us: { required }
         },
 
         methods:{
@@ -122,7 +123,7 @@
                 return `Name: ${this.name}
                 Mobile: ${this.mobile}
                 Position: ${this.position}
-                Why Choose us?: ${this.whyUs}
+                Why Choose us?: ${this.why_us}
                 `
             },
 
@@ -136,7 +137,8 @@
                         name: this.name,
                         mobile: this.mobile,
                         position: this.position,
-                        whyUs: this.whyUs,
+                        why_us: this.why_us,
+                        salon: this.salon,
                         info: this.info()
                     })
                         .then(response => {

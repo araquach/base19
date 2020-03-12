@@ -2623,7 +2623,8 @@ __webpack_require__.r(__webpack_exports__);
       name: '',
       mobile: '',
       position: '',
-      whyUs: '',
+      why_us: '',
+      salon: 3,
       submitStatus: null
     };
   },
@@ -2638,7 +2639,7 @@ __webpack_require__.r(__webpack_exports__);
     position: {
       required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
     },
-    whyUs: {
+    why_us: {
       required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_0__["required"]
     }
   },
@@ -2647,7 +2648,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$emit('switchComponent');
     },
     info: function info() {
-      return "Name: ".concat(this.name, "\n            Mobile: ").concat(this.mobile, "\n            Position: ").concat(this.position, "\n            Why Choose us?: ").concat(this.whyUs, "\n            ");
+      return "Name: ".concat(this.name, "\n            Mobile: ").concat(this.mobile, "\n            Position: ").concat(this.position, "\n            Why Choose us?: ").concat(this.why_us, "\n            ");
     },
     submit: function submit() {
       var _this = this;
@@ -2662,7 +2663,8 @@ __webpack_require__.r(__webpack_exports__);
           name: this.name,
           mobile: this.mobile,
           position: this.position,
-          whyUs: this.whyUs,
+          why_us: this.why_us,
+          salon: this.salon,
           info: this.info()
         }).then(function (response) {
           _this.submitStatus = 'OK';
@@ -18749,24 +18751,24 @@ var render = function() {
                               {
                                 name: "model",
                                 rawName: "v-model.trim",
-                                value: _vm.$v.whyUs.$model,
-                                expression: "$v.whyUs.$model",
+                                value: _vm.$v.why_us.$model,
+                                expression: "$v.why_us.$model",
                                 modifiers: { trim: true }
                               }
                             ],
                             staticClass: "textarea",
-                            class: { "is-danger": _vm.$v.whyUs.$error },
+                            class: { "is-danger": _vm.$v.why_us.$error },
                             attrs: {
                               placeholder: "Why do you want to join Base?"
                             },
-                            domProps: { value: _vm.$v.whyUs.$model },
+                            domProps: { value: _vm.$v.why_us.$model },
                             on: {
                               input: function($event) {
                                 if ($event.target.composing) {
                                   return
                                 }
                                 _vm.$set(
-                                  _vm.$v.whyUs,
+                                  _vm.$v.why_us,
                                   "$model",
                                   $event.target.value.trim()
                                 )
@@ -18779,7 +18781,7 @@ var render = function() {
                         ])
                       ]),
                       _vm._v(" "),
-                      _vm.submitStatus === "ERROR" && !_vm.$v.whyUs.required
+                      _vm.submitStatus === "ERROR" && !_vm.$v.why_us.required
                         ? _c("div", { staticClass: "help is-danger" }, [
                             _vm._v(
                               "\n                        Why us required\n                    "
