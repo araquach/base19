@@ -2712,7 +2712,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -3132,8 +3131,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       currentReviewIndex: 1,
       intervalId: null,
-      allReviews: [],
-      id: 1
+      allReviews: []
     };
   },
   computed: {
@@ -3142,7 +3140,6 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   mounted: function mounted() {
-    this.currentReviewIndex = Math.round(Math.random() * (this.allReviews.length - 1));
     this.startTimer();
   },
   beforeDestroy: function beforeDestroy() {
@@ -3158,7 +3155,7 @@ __webpack_require__.r(__webpack_exports__);
       this.intervalId = null;
     },
     timerTick: function timerTick() {
-      this.currentReviewIndex = (this.currentReviewIndex + 1) % this.allReviews.length;
+      this.currentReviewIndex = Math.round(Math.random() * (this.allReviews.length - 1));
     }
   },
   created: function created() {
@@ -18936,11 +18933,8 @@ var render = function() {
     [
       _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "has-text-right" }, [_c("ReviewFeed")], 1),
-      _vm._v(" "),
-      _c("cookie-component")
-    ],
-    1
+      _c("div", { staticClass: "has-text-right" }, [_c("ReviewFeed")], 1)
+    ]
   )
 }
 var staticRenderFns = [

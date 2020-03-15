@@ -15,8 +15,7 @@
             return {
                 currentReviewIndex: 1,
                 intervalId: null,
-                allReviews: [],
-                id: 1
+                allReviews: []
             }
         },
 
@@ -27,9 +26,6 @@
         },
 
         mounted() {
-            this.currentReviewIndex = Math.round(
-                Math.random() * (this.allReviews.length - 1)
-            );
             this.startTimer();
         },
 
@@ -47,8 +43,9 @@
                 this.intervalId = null;
             },
             timerTick() {
-                this.currentReviewIndex =
-                    (this.currentReviewIndex + 1) % this.allReviews.length;
+                this.currentReviewIndex = Math.round(
+                    Math.random() * (this.allReviews.length - 1)
+                )
             }
         },
 
@@ -60,7 +57,3 @@
         }
     }
 </script>
-
-<style type="scss">
-
-</style>

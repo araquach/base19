@@ -18,7 +18,6 @@
         <div class="has-text-right">
             <ReviewFeed/>
         </div>
-        <cookie-component></cookie-component>
 
     </section>
 </template>
