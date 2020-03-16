@@ -7,4 +7,5 @@ require (
 	github.com/jinzhu/gorm v1.9.11
 	github.com/joho/godotenv v1.3.0
 	github.com/mailgun/mailgun-go/v3 v3.6.0
+	gopkg.in/jonahgeorge/force-ssl-heroku.v1 v1.0.0
 )

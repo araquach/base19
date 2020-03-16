@@ -14,6 +14,7 @@ import (
 	"net/http"
 	"os"
 	"time"
+	heroku "gopkg.in/jonahgeorge/force-ssl-heroku.v1"
 )
 
 var (
@@ -188,7 +189,7 @@ func main() {
 
 	log.Printf("Starting server on %s", port)
 
-	http.ListenAndServe(":" + port, r)
+	http.ListenAndServe(":" + port, heroku.ForceSsl(r))
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
