@@ -277,6 +277,7 @@ func apiReviews(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 	}
 	w.Write(json)
+
 }
 
 func apiSendMessage(w http.ResponseWriter, r *http.Request) {
