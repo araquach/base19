@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="has-text-right">
-            <ReviewFeed/>
+            <ReviewFeed :staffMember="staffMember"/>
         </div>
 
     </section>
@@ -25,7 +25,13 @@
 <script>
     import ReviewFeed from '../reviewFeed/ReviewFeed'
     export default {
-        components: { ReviewFeed }
+        components: { ReviewFeed },
+
+        data() {
+            return {
+                staffMember: ''
+            }
+        }
     }
 </script>
 

@@ -14,7 +14,7 @@
                 <p>{{selectedTM.para_3}}</p>
                 <p class="is-size-5">Average Price: &pound;{{selectedTM.price}}</p>
             </div>
-            <ReviewFeed />
+            <ReviewFeed :staffMember="staffMember"/>
         </div>
     </div>
 </template>
@@ -24,6 +24,12 @@
     export default {
         components: { ReviewFeed },
 
-        props: ['selectedTM']
+        props: ['selectedTM'],
+
+        data() {
+            return {
+                staffMember: this.selectedTM.first_name + ' ' + this.selectedTM.last_name
+            }
+        }
     }
 </script>

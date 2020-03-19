@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ReviewInd :review="currentReview"/>
+        <ReviewInd :review="currentReview(staffMember)"/>
     </div>
 </template>
 
@@ -11,6 +11,9 @@
         components: {
             ReviewInd
         },
+
+        props: ['staffMember'],
+
         data() {
             return {
                 currentReviewIndex: 0,
@@ -20,9 +23,7 @@
         },
 
         computed: {
-            currentReview() {
-                return this.allReviews[this.currentReviewIndex];
-            }
+
         },
 
         mounted() {
@@ -46,6 +47,11 @@
                 this.currentReviewIndex = Math.round(
                     Math.random() * (this.allReviews.length - 1)
                 )
+            },
+            currentReview(staff) {
+                const filteredReviews = this.allReviews.filter(review => review.staff.includes(staff))
+
+                return filteredReviews[this.currentReviewIndex];
             }
         },
 

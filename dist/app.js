@@ -2764,6 +2764,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     ReviewFeed: _reviewFeed_ReviewFeed__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      staffMember: ''
+    };
   }
 });
 
@@ -3175,6 +3180,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     ReviewInd: _ReviewInd__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  props: ['staffMember'],
   data: function data() {
     return {
       currentReviewIndex: 0,
@@ -3182,11 +3188,7 @@ __webpack_require__.r(__webpack_exports__);
       allReviews: []
     };
   },
-  computed: {
-    currentReview: function currentReview() {
-      return this.allReviews[this.currentReviewIndex];
-    }
-  },
+  computed: {},
   mounted: function mounted() {
     this.startTimer();
   },
@@ -3204,6 +3206,12 @@ __webpack_require__.r(__webpack_exports__);
     },
     timerTick: function timerTick() {
       this.currentReviewIndex = Math.round(Math.random() * (this.allReviews.length - 1));
+    },
+    currentReview: function currentReview(staff) {
+      var filteredReviews = this.allReviews.filter(function (review) {
+        return review.staff.includes(staff);
+      });
+      return filteredReviews[this.currentReviewIndex];
     }
   },
   created: function created() {
@@ -3462,7 +3470,12 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     ReviewFeed: _reviewFeed_ReviewFeed__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['selectedTM']
+  props: ['selectedTM'],
+  data: function data() {
+    return {
+      staffMember: this.selectedTM.first_name + ' ' + this.selectedTM.last_name
+    };
+  }
 });
 
 /***/ }),
@@ -20955,7 +20968,12 @@ var render = function() {
     [
       _vm._m(0),
       _vm._v(" "),
-      _c("div", { staticClass: "has-text-right" }, [_c("ReviewFeed")], 1)
+      _c(
+        "div",
+        { staticClass: "has-text-right" },
+        [_c("ReviewFeed", { attrs: { staffMember: _vm.staffMember } })],
+        1
+      )
     ]
   )
 }
@@ -21960,7 +21978,9 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [_c("ReviewInd", { attrs: { review: _vm.currentReview } })],
+    [
+      _c("ReviewInd", { attrs: { review: _vm.currentReview(_vm.staffMember) } })
+    ],
     1
   )
 }
@@ -22295,7 +22315,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _c("ReviewFeed")
+          _c("ReviewFeed", { attrs: { staffMember: _vm.staffMember } })
         ],
         1
       )
