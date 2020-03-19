@@ -1,7 +1,7 @@
 <template>
     <div id="team-modal" class="columns has-background-black">
         <div class="section column">
-            <figure class="image">
+            <figure class="image is-4by5">
                 <img :src="staffMontage" :alt="selectedTM.first_name">
             </figure>
         </div>
