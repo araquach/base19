@@ -2,7 +2,7 @@
     <div id="team-modal" class="columns has-background-black">
         <div class="section column">
             <figure class="image">
-                <img :src="selectedTM.image" :alt="selectedTM.first_name">
+                <img :src="staffMontage" :alt="selectedTM.first_name">
             </figure>
         </div>
         <div class="section column">
@@ -29,6 +29,12 @@
         data() {
             return {
                 staffMember: this.selectedTM.first_name + ' ' + this.selectedTM.last_name
+            }
+        },
+
+        computed: {
+            staffMontage() {
+                return `/dist/img/team/${this.selectedTM.first_name}_montage.jpg`
             }
         }
     }
