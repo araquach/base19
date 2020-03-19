@@ -1,12 +1,11 @@
 <template>
     <div>
-        <ReviewInd :review="currentReview(staffMember)"/>
+        <ReviewInd :review="currentReview(staffMember)" />
     </div>
 </template>
 
 <script>
     import ReviewInd from "./ReviewInd"
-    import { clearInterval } from "timers"
     export default {
         components: {
             ReviewInd
@@ -20,10 +19,6 @@
                 intervalId: null,
                 allReviews: []
             }
-        },
-
-        computed: {
-
         },
 
         mounted() {
