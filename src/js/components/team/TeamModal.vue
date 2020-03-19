@@ -12,10 +12,10 @@
                         <div class="media">
                             <div class="media-content has-text-white">
                                 <h1 class="title has-text-white">{{selectedTM.first_name}} {{selectedTM.last_name}}</h1>
-                                <h2 class="subtitle has-text-white">{{selectedTM.Level}}</h2>
-                                <p class="is-size-5 has-text-weight-bold">{{selectedTM.para1}}</p>
-                                <p>{{selectedTM.para2}}</p>
-                                <p>{{selectedTM.para3}}</p>
+                                <h2 class="subtitle has-text-white">{{selectedTM.level}}</h2>
+                                <p class="is-size-5 has-text-weight-bold">{{selectedTM.para_1}}</p>
+                                <p>{{selectedTM.para_2}}</p>
+                                <p>{{selectedTM.para_3}}</p>
                                 <p class="is-size-5">Average Price: &pound;{{selectedTM.price}}</p>
                             </div>
                         </div>
