@@ -34,7 +34,7 @@
 
         computed: {
             staffMontage() {
-                return `/dist/img/team/${this.selectedTM.first_name}_montage.jpg`
+                return `/dist/img/team/${this.selectedTM.first_name.toLowerCase()}_montage.jpg`
             }
         }
     }
