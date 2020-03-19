@@ -1,5 +1,5 @@
 <template>
-    <div class="columns has-background-black">
+    <div id="team-modal" class="columns has-background-black">
         <div class="section column">
             <figure class="image">
                 <img :src="selectedTM.image" :alt="selectedTM.first_name">
@@ -14,12 +14,16 @@
                 <p>{{selectedTM.para_3}}</p>
                 <p class="is-size-5">Average Price: &pound;{{selectedTM.price}}</p>
             </div>
+            <ReviewFeed />
         </div>
     </div>
 </template>
 
 <script>
+    import ReviewFeed from '../reviewFeed/ReviewFeed'
     export default {
+        components: { ReviewFeed },
+
         props: ['selectedTM']
     }
 </script>

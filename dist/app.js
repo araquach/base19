@@ -3177,7 +3177,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      currentReviewIndex: 1,
+      currentReviewIndex: 0,
       intervalId: null,
       allReviews: []
     };
@@ -3435,6 +3435,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _reviewFeed_ReviewFeed__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../reviewFeed/ReviewFeed */ "./src/js/components/reviewFeed/ReviewFeed.vue");
 //
 //
 //
@@ -3455,7 +3456,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ReviewFeed: _reviewFeed_ReviewFeed__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   props: ['selectedTM']
 });
 
@@ -21980,7 +21986,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "review-feed" } }, [
+  return _c("div", { staticClass: "review-feed" }, [
     _c("p", { staticClass: "has-text-white" }, [
       _vm._v('"' + _vm._s(_vm._f("textLimit")(_vm.review.review, 150)) + '"')
     ]),
@@ -22244,43 +22250,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "columns has-background-black" }, [
-    _c("div", { staticClass: "section column" }, [
-      _c("figure", { staticClass: "image" }, [
-        _c("img", {
-          attrs: { src: _vm.selectedTM.image, alt: _vm.selectedTM.first_name }
-        })
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "section column" }, [
-      _c("div", { staticClass: "has-text-white" }, [
-        _c("h1", { staticClass: "title has-text-white" }, [
-          _vm._v(
-            _vm._s(_vm.selectedTM.first_name) +
-              " " +
-              _vm._s(_vm.selectedTM.last_name)
-          )
-        ]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "subtitle has-text-white" }, [
-          _vm._v(_vm._s(_vm.selectedTM.level))
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
-          _vm._v(_vm._s(_vm.selectedTM.para_1))
-        ]),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(_vm.selectedTM.para_2))]),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(_vm.selectedTM.para_3))]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-5" }, [
-          _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.price))
+  return _c(
+    "div",
+    {
+      staticClass: "columns has-background-black",
+      attrs: { id: "team-modal" }
+    },
+    [
+      _c("div", { staticClass: "section column" }, [
+        _c("figure", { staticClass: "image" }, [
+          _c("img", {
+            attrs: { src: _vm.selectedTM.image, alt: _vm.selectedTM.first_name }
+          })
         ])
-      ])
-    ])
-  ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "section column" },
+        [
+          _c("div", { staticClass: "has-text-white" }, [
+            _c("h1", { staticClass: "title has-text-white" }, [
+              _vm._v(
+                _vm._s(_vm.selectedTM.first_name) +
+                  " " +
+                  _vm._s(_vm.selectedTM.last_name)
+              )
+            ]),
+            _vm._v(" "),
+            _c("h2", { staticClass: "subtitle has-text-white" }, [
+              _vm._v(_vm._s(_vm.selectedTM.level))
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
+              _vm._v(_vm._s(_vm.selectedTM.para_1))
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.selectedTM.para_2))]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.selectedTM.para_3))]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.price))
+            ])
+          ]),
+          _vm._v(" "),
+          _c("ReviewFeed")
+        ],
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

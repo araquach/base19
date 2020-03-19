@@ -102,7 +102,7 @@ section.section {
 
 /* Review Feed */
 
-#review-feed {
+.review-feed {
   position: absolute;
   bottom: 5rem;
   right: 5rem;
@@ -130,6 +130,15 @@ section.section {
     }
     bottom: 2rem;
     right: 2rem;
+  }
+}
+
+#team-modal {
+  .review-feed {
+    position: relative;
+    width: auto;
+    top: 0;
+    right: 0;
   }
 }
 

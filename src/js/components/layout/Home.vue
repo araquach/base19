@@ -25,9 +25,7 @@
 <script>
     import ReviewFeed from '../reviewFeed/ReviewFeed'
     export default {
-        components: {
-            ReviewFeed
-        }
+        components: { ReviewFeed }
     }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-    <div id="review-feed">
+    <div class="review-feed">
         <p class="has-text-white">"{{ review.review | textLimit(150) }}"</p>
         <p class="has-text-white">{{ review.client }}</p>
         <p class="has-text-white">{{ review.staff }}</p>
