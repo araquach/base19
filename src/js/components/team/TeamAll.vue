@@ -2,7 +2,7 @@
     <section id="team" class="section team-info hero is-fullheight is-dark">
         <TeamIndComponent :TeamMembers="TeamMembers" @emitTM="showTM"/>
 
-        <b-modal :active.sync="isComponentModalActive">
+        <b-modal :active.sync="isComponentModalActive" scroll="keep">
             <TeamModalComponent :selectedTM="selectedTM"/>
         </b-modal>
 
