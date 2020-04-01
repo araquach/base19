@@ -20,7 +20,7 @@
                 <h1 class="title is-3">Apply Here</h1>
                 <div>
                     <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the application form and we'll be in touch soon!</p>
-                    <form @submit.prevent="submit">
+                    <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
                         <div class="field">
                             <label class="label has-text-white">Full Name</label>
                             <div class="control">
@@ -62,10 +62,10 @@
                         <div class="field">
                             <label class="label has-text-white">Tell us why you want to join the Base team</label>
                             <div class="control">
-                                <textarea class="textarea" :class="{ 'is-danger': $v.whyUs.$error }" v-model.trim="$v.whyUs.$model" placeholder="Why do you want to join Base?"/>
+                                <textarea class="textarea" :class="{ 'is-danger': $v.why_us.$error }" v-model.trim="$v.why_us.$model" placeholder="Why do you want to join Base?"/>
                             </div>
                         </div>
-                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.whyUs.required">
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.why_us.required">
                             Why us required
                         </div>
                         <br>
@@ -74,11 +74,11 @@
                                 <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Apply</button>
                             </div>
                             <br><br>
-                            <div v-if="submitStatus === 'OK'">
-                                <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes available</p>
-                            </div>
                         </div>
                     </form>
+                    <div v-if="submitStatus === 'OK'">
+                        <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes available</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,7 +101,8 @@
                 name: '',
                 mobile: '',
                 position: '',
-                whyUs: '',
+                why_us: '',
+                salon: 3,
                 submitStatus: null
             }
         },
@@ -110,7 +111,7 @@
             name: { required },
             mobile: { required, numeric },
             position: { required },
-            whyUs: { required }
+            why_us: { required }
         },
 
         methods:{
@@ -122,7 +123,7 @@
                 return `Name: ${this.name}
                 Mobile: ${this.mobile}
                 Position: ${this.position}
-                Why Choose us?: ${this.whyUs}
+                Why Choose us?: ${this.why_us}
                 `
             },
 
@@ -136,7 +137,8 @@
                         name: this.name,
                         mobile: this.mobile,
                         position: this.position,
-                        whyUs: this.whyUs,
+                        why_us: this.why_us,
+                        salon: this.salon,
                         info: this.info()
                     })
                         .then(response => {

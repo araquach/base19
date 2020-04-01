@@ -100,103 +100,46 @@ section.section {
   }
 }
 
-#home {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
-  background-size: cover;
+/* Review Feed */
 
-  figure {
-    margin-bottom: 3rem;
+.review-feed {
+  position: absolute;
+  bottom: 5rem;
+  right: 5rem;
+  width: 18rem;
+  height: auto;
+
+  p {
+    font-size: .7rem;
+    margin-bottom: 0;
+  }
+
+  p:first-of-type {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  @include until($desktop) {
+    p {
+      font-size: .5rem;
+      margin-bottom: 0;
+    }
+    p:first-of-type {
+      font-size: .7rem;
+      margin-bottom: .7rem;
+    }
+    bottom: 2rem;
+    right: 2rem;
   }
 }
 
-.about {
-    background: url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
-    background-size: cover;
-}
-
-.about-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.salon {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.salon-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.team {
-  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.team-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.offer {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/offer_bg.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.offer-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/offer_bg.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.blog {
-  background: url("/dist/img/bgrounds/b4.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.blog-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b4.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.joinus {
-  background: url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.joinus-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.models {
-  background: url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.models-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.booking {
-  background: url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.booking-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.contact {
-  background: url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
-  background-size: cover;
-}
-
-.contact-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
-  background-size: cover;
+#team-modal {
+  .review-feed {
+    position: relative;
+    width: auto;
+    top: 0;
+    right: 0;
+  }
 }
 
 /* transition styling */

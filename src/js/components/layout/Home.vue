@@ -12,10 +12,36 @@
                 <h2 class="subtitle is-size-4 has-text-white has-text-centered">
                     A hair academy for the next generation of super skilled stylists
                 </h2>
+
             </div>
         </div>
-
-        <cookie-component></cookie-component>
+        <div class="has-text-right">
+            <ReviewFeed :staffMember="staffMember"/>
+        </div>
 
     </section>
 </template>
+
+<script>
+    import ReviewFeed from '../reviewFeed/ReviewFeed'
+    export default {
+        components: { ReviewFeed },
+
+        data() {
+            return {
+                staffMember: ''
+            }
+        }
+    }
+</script>
+
+<style lang="scss">
+    #home {
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
+        background-size: cover;
+
+        figure {
+            margin-bottom: 3rem;
+        }
+    }
+</style>
