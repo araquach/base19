@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{block "meta" .}}
-        <meta property="og:title" content="Introducing Base Hairdressing">
-        <meta property="og:description" content="Base Hairdressing is a training academy for the next generation of super skilled stylists! Situated in Warrington Town Centre and closely affiliated with Jakata and Paul Kemp Hairdressing.
-        If you're looking for an amazing hairstyle at a fraction of the cost or you're looking to embark on a career in hairdressing then you've come to the right place!">
-        <meta property="og:image" content="dist/img/fb_meta/home.png">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="628">
-        <meta property="og:url" content="https://basehairdressing.com">
+        <meta property="og:title" content="{{.ogTitle}}">
+        <meta property="og:description" content="{{.ogDescription}}">
+        <meta property="og:image" content="{{.ogImage}}">
+        <meta property="og:image:width" content="{{.ogImageWidth}}">
+        <meta property="og:image:height" content="{{.ogImageHeight}}">
+        <meta property="og:url" content="{{.ogUrl}}">
 
         <title>Base Hairdressing - Hairdressers in Warrington</title>
     {{end}}
