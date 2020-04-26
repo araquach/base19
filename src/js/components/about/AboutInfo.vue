@@ -4,7 +4,7 @@
             <div class="column is-5-desktop">
                 <h1 class="title">It's All about the Base</h1>
                 <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
-                <p>Training and developing our team to the highest possible standard has always been a major priority for us. Through <strong>Jakata & Paul Kemp Hairdressing</strong> we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level.</p>
+                <p class="is-size-5">Training and developing our team to the highest possible standard has always been a major priority for us. Through <strong>Jakata & Paul Kemp Hairdressing</strong> we've produced some incredible talent from scratch and helped existing stylists push their skills to the next level.</p>
                 <p><strong>Base Hairdressing</strong> was created to centralise our training and offer the best training experience for anyone who wants to embark on a career in hairdressing, along with refining the skills of existing stylists.</p>
             </div>
             <div class="column">

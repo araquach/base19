@@ -4,28 +4,72 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	strip "github.com/grokify/html-strip-tags-go"
 	"github.com/mailgun/mailgun-go/v3"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 )
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
+
+	f := r.URL.Path
+	if f == "" {
+		f = "about"
+	}
+	fmt.Println(f)
+
+	dir := f
+	fn := strings.Title(f)
+
+	heading, err := ioutil.ReadFile("src/js/components/" + dir + "/" + fn + "Info.vue")
+	if err != nil {
+		fmt.Println("File reading error", err)
+	}
+
+	para, err := ioutil.ReadFile("src/js/components/" + dir + "/" + fn + "Info.vue")
+	if err != nil {
+		fmt.Println("File reading error", err)
+	}
+
+	hText := string(heading)
+	pText := string(para)
+
+	h := GetText(hText, "<h1 class=\"title\">", "</h1>")
+	p := GetText(pText, "<p class=\"is-size-5\">", "</p>")
+
+	fmt.Printf("Heading: %s\nFirst para: %s\n", h, p)
+
 	meta := map[string]string{
-		"ogTitle": "Title",
-		"ogDescription": "Description",
-		"ogImage": "Image",
+		"ogTitle": h,
+		"ogDescription": strip.StripTags(p),
+		"ogImage": "/dist/img/meta/" + f + ".jpg",
 		"ogImageWidth": "1200",
 		"ogImageHeight": "628",
-		"ogUrl": "https://basehairdressing.com",
+		"ogUrl": "https://basehairdressing.com/" + f,
 	}
 
 	if err := tplHome.Execute(w, meta); err != nil {
 		panic(err)
 	}
+}
+
+func GetText(str string, start string, end string) (result string) {
+	s := strings.Index(str, start)
+	if s == -1 {
+		return
+	}
+	s += len(start)
+	e := strings.Index(str[s:], end)
+	if e == -1 {
+		return
+	}
+	return str[s : s+e]
 }
 
 func about(w http.ResponseWriter, r *http.Request) {

@@ -1,36 +1,16 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
-import Cookie from './components/Cookie'
-import Navbar from './components/layout/Navbar'
-import NavbarSeo from './components/layout/NavbarSeo'
-import Home from './components/layout/Home'
-import About from './components/about/About'
-import Team from './components/team/Team'
-import Offer from './components/offer/Offer'
-import Joinus from './components/joinus/Joinus'
-import Blog from './components/blog/Blog'
-import Model from './components/model/Model'
-import Contact from './components/contact/Contact'
+import { routes } from './routes'
 
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
 import Vuelidate from 'vuelidate'
 
 Vue.use(Buefy)
+Vue.use(VueRouter)
 Vue.use(VueScrollTo)
 Vue.use(Vuelidate)
-
-Vue.component('navbar-component', Navbar)
-Vue.component('navbar-seo-component', NavbarSeo)
-Vue.component('cookie-component', Cookie)
-Vue.component('home-component', Home)
-Vue.component('about-component', About)
-Vue.component('team-component', Team)
-Vue.component('offer-component', Offer)
-Vue.component('joinus-component', Joinus)
-Vue.component('blog-component', Blog)
-Vue.component('model-component', Model)
-Vue.component('contact-component', Contact)
 
 window.axios = require('axios')
 // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -39,11 +19,13 @@ Vue.filter('textLimit', function (text, length) {
     return text.substring(0, length);
 })
 
+const router = new VueRouter({
+    mode: 'history',
+    routes
+})
+
 new Vue({
     el: '#app',
+    router,
     render: h => h(App)
-});
-
-const appSeo = new Vue({
-    el: '#appSeo'
-});
+})

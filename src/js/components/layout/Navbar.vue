@@ -1,29 +1,29 @@
 <template>
     <b-navbar class="is-fixed-top is-spaced">
         <template slot="start">
-            <b-navbar-item href="#" v-scroll-to="'#home'">
+            <router-link class="navbar-item" to="/" v-scroll-to="'#home'">
                 Home
-            </b-navbar-item>
-            <b-navbar-item href="#about" v-scroll-to="'#about'">
+            </router-link>
+            <router-link class="navbar-item" to="about" v-scroll-to="'#about'">
                 About
-            </b-navbar-item>
-            <b-navbar-item href="#team" v-scroll-to="'#team'">
+            </router-link>
+            <router-link class="navbar-item" to="team" v-scroll-to="'#team'">
                 Team
-            </b-navbar-item>
-            <b-navbar-item href="#offers" v-scroll-to="'#offers'">
+            </router-link>
+            <router-link class="navbar-item" to="offers" v-scroll-to="'#offers'">
                 Offers
-            </b-navbar-item>
+            </router-link>
             <b-navbar-dropdown label="More">
-                <b-navbar-item href="#joinus" v-scroll-to="'#joinus'">
+                <router-link class="navbar-item" to="joinus" v-scroll-to="'#joinus'">
                     Join Us
-                </b-navbar-item>
+                </router-link>
 <!--                <b-navbar-item href="#blog" v-scroll-to="'#blog'">-->
 <!--                    Blog-->
 <!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
-                <b-navbar-item href="#models" v-scroll-to="'#models'">
+                <router-link class="navbar-item" to="model" v-scroll-to="'#models'">
                     Model Register
-                </b-navbar-item>
+                </router-link>
             </b-navbar-dropdown>
         </template>
 

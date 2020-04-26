@@ -8,7 +8,7 @@
                     <img src="/dist/img/models/model.jpg" alt="Schwarzkopf Essential Looks">
                 </figure>
                 <br>
-                <p>We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>
+                <p class="is-size-5">We're looking for models for our training days! Get your hair done for practically free! (sometimes a nominal charge to cover product costs applies)</p>
                 <p>If you'd like to volunteer simply add your name to our model database and we'll contact you when we have a session that fits your needs</p>
             </div>
             <hr class="is-mobile">

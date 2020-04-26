@@ -7,7 +7,7 @@
                     Base Hairdressing
                 </h1>
                 <figure class="image">
-                    <img src="dist/img/base_logo.svg" alt="Base Hairdressing">
+                    <img src="/dist/img/base_logo.svg" alt="Base Hairdressing">
                 </figure>
                 <h2 class="subtitle is-size-4 has-text-white has-text-centered">
                     A hair academy for the next generation of super skilled stylists
