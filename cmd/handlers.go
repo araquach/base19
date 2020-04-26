@@ -72,55 +72,6 @@ func GetText(str string, start string, end string) (result string) {
 	return str[s : s+e]
 }
 
-func about(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplAbout.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
-func blog(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplBlog.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
-func contact(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplContact.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
-func joinus(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplJoinus.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
-func model(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplModel.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
-func team(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplTeam.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
-func offer(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "text/html")
-	if err := tplOffer.Execute(w, nil); err != nil {
-		panic(err)
-	}
-}
-
 // api
 
 func apiTeam(w http.ResponseWriter, r *http.Request) {
