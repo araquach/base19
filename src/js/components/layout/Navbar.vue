@@ -4,24 +4,24 @@
             <router-link class="navbar-item" to="/" v-scroll-to="'#home'">
                 Home
             </router-link>
-            <router-link class="navbar-item" to="about" v-scroll-to="'#about'">
+            <router-link class="navbar-item" to="#about" v-scroll-to="'#about'">
                 About
             </router-link>
-            <router-link class="navbar-item" to="team" v-scroll-to="'#team'">
+            <router-link class="navbar-item" to="#team" v-scroll-to="'#team'">
                 Team
             </router-link>
-            <router-link class="navbar-item" to="offers" v-scroll-to="'#offers'">
+            <router-link class="navbar-item" to="#offers" v-scroll-to="'#offers'">
                 Offers
             </router-link>
             <b-navbar-dropdown label="More">
-                <router-link class="navbar-item" to="joinus" v-scroll-to="'#joinus'">
+                <router-link class="navbar-item" to="#joinus" v-scroll-to="'#joinus'">
                     Join Us
                 </router-link>
 <!--                <b-navbar-item href="#blog" v-scroll-to="'#blog'">-->
 <!--                    Blog-->
 <!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
-                <router-link class="navbar-item" to="model" v-scroll-to="'#models'">
+                <router-link class="navbar-item" to="#model" v-scroll-to="'#models'">
                     Model Register
                 </router-link>
             </b-navbar-dropdown>

@@ -17,10 +17,9 @@ import (
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
-
 	f := r.URL.Path
 	if f == "" {
-		f = "about"
+		f = "home"
 	}
 	fmt.Println(f)
 
@@ -54,7 +53,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"ogUrl": "https://basehairdressing.com/" + f,
 	}
 
-	if err := tplHome.Execute(w, meta); err != nil {
+	if err := tpl.Execute(w, meta); err != nil {
 		panic(err)
 	}
 }

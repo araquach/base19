@@ -1,11 +1,12 @@
 <template>
     <section id="home" class="hero is-fullheight">
-
         <div class="hero-body columns is-centered">
             <div class="column is-5 is-10-mobile">
-                <h1 class="is-hidden">
-                    Base Hairdressing
-                </h1>
+                <div class="is-hidden">
+                    <h1 class="title">Base Hairdresing</h1>
+                    <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
+                    <p class="is-size-5">Base is a training academy for the next generation of super-skilled stylists.</p>
+                </div>
                 <figure class="image">
                     <img src="/dist/img/base_logo.svg" alt="Base Hairdressing">
                 </figure>

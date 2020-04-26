@@ -1990,6 +1990,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -19476,8 +19477,18 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "hero-body columns is-centered" }, [
       _c("div", { staticClass: "column is-5 is-10-mobile" }, [
-        _c("h1", { staticClass: "is-hidden" }, [
-          _vm._v("\n                Base Hairdressing\n            ")
+        _c("div", { staticClass: "is-hidden" }, [
+          _c("h1", { staticClass: "title" }, [_vm._v("Base Hairdresing")]),
+          _vm._v(" "),
+          _c("h2", { staticClass: "subtitle" }, [
+            _vm._v("An amazing creative space for upcoming hair stylists")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-5" }, [
+            _vm._v(
+              "Base is a training academy for the next generation of super-skilled stylists."
+            )
+          ])
         ]),
         _vm._v(" "),
         _c("figure", { staticClass: "image" }, [
@@ -20936,7 +20947,7 @@ var render = function() {
                 }
               ],
               staticClass: "navbar-item",
-              attrs: { to: "about" }
+              attrs: { to: "#about" }
             },
             [_vm._v("\n                About\n            ")]
           ),
@@ -20953,7 +20964,7 @@ var render = function() {
                 }
               ],
               staticClass: "navbar-item",
-              attrs: { to: "team" }
+              attrs: { to: "#team" }
             },
             [_vm._v("\n                Team\n            ")]
           ),
@@ -20970,7 +20981,7 @@ var render = function() {
                 }
               ],
               staticClass: "navbar-item",
-              attrs: { to: "offers" }
+              attrs: { to: "#offers" }
             },
             [_vm._v("\n                Offers\n            ")]
           ),
@@ -20991,7 +21002,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "navbar-item",
-                  attrs: { to: "joinus" }
+                  attrs: { to: "#joinus" }
                 },
                 [_vm._v("\n                    Join Us\n                ")]
               ),
@@ -21010,7 +21021,7 @@ var render = function() {
                     }
                   ],
                   staticClass: "navbar-item",
-                  attrs: { to: "model" }
+                  attrs: { to: "#model" }
                 },
                 [
                   _vm._v(
@@ -41769,8 +41780,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
