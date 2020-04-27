@@ -1,11 +1,10 @@
 <template>
-    <section id="offers" class="section offer-info hero is-fullheight is-dark">
+    <section id="offer" class="section offer-info hero is-fullheight is-dark">
         <div class="columns is-vcentered">
             <div class="column is-8-desktop">
-                <h1 class="title">{{title}}</h1>
-                <h2 class="subtitle">{{subtitle}}</h2>
-                <p class="is-size-5">Lucy &amp; Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding.</p>
-                <p>Beth, Ruby &amp; Sophie are all Junior stylists looking to build their skills. They're taking on basic colouring and cutting - all fully supervised by a Senior Stylist</p>
+                <h1 class="title">Special Offers</h1>
+                <h2 class="subtitle">For a limited time only</h2>
+                <p class="is-size-5">Lucy & Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding.<br> Beth, Ruby & Sophie are all Junior stylists looking to build their skills. They're taking on basic colouring and cutting - all fully supervised by a Senior Stylist</p>
                 <p class="is-size-5"><strong>If you're wanting a new look take advantage of these great special offers for a limited time!</strong></p>
             </div>
         </div>

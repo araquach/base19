@@ -3,7 +3,7 @@
         <div class="columns">
             <div class="section column is-6">
                 <h1 class="title">Location & Contact Info</h1>
-                <p><strong>Base Hairdressing</strong> is located in Warrington Town Centre on Bridge Street. We're just around the corner from the new development along with the new multi-storey car park.</p>
+                <p class="is-size-5"><strong>Base Hairdressing</strong> is located in Warrington Town Centre on Bridge Street. We're just around the corner from the new development along with the new multi-storey car park.</p>
                 <hr>
                 <h3 class="title is-4">Address:</h3>
                 <p class="is-size-5">90/92 Bridge Street<br>

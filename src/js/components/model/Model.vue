@@ -33,12 +33,12 @@
 </script>
 
 <style lang="scss">
-    .models {
+    .model {
         background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
         background-size: cover;
     }
 
-    .models-info {
+    .model-info {
         background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
         background-size: cover;
     }

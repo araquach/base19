@@ -1,5 +1,5 @@
 <template>
-    <section id="offers" class="offer hero is-fullheight is-dark">
+    <section id="offer" class="offer hero is-fullheight is-dark">
         <div class="hero-body show columns">
             <div class="section column is-4">
                 <h1 class="title">{{title}}</h1>

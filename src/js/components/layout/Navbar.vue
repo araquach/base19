@@ -10,7 +10,7 @@
             <router-link class="navbar-item" to="#team" v-scroll-to="'#team'">
                 Team
             </router-link>
-            <router-link class="navbar-item" to="#offers" v-scroll-to="'#offers'">
+            <router-link class="navbar-item" to="#offer" v-scroll-to="'#offer'">
                 Offers
             </router-link>
             <b-navbar-dropdown label="More">
@@ -21,7 +21,7 @@
 <!--                    Blog-->
 <!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
-                <router-link class="navbar-item" to="#model" v-scroll-to="'#models'">
+                <router-link class="navbar-item" to="#model" v-scroll-to="'#model'">
                     Model Register
                 </router-link>
             </b-navbar-dropdown>

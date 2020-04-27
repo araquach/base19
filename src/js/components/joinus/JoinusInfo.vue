@@ -4,7 +4,7 @@
             <div class="section column is-6">
                 <h1 class="title">Join Base</h1>
                 <h2 class="subtitle">Could you be the next big thing in hairdressing</h2>
-                <p>Are you looking to take up hairdressing as a career? <strong>Base Hair Academy</strong> could be the perfect environment for you!</p>
+                <p class="is-size-5">Are you looking to take up hairdressing as a career? <strong>Base Hair Academy</strong> could be the perfect environment for you!</p>
                 <p>Base Hairdressing is strongly affiliated with <strong>Jakata</strong> and <strong>Paul Kemp Hairdressing</strong> with the goal of training up the next generation of hairdressers to the highest possible standard!</p>
                 <p>We're a training environment with a focus on you! A salon where you can develop your skills to become a super stylist!</p>
                 <p class="is-size-5">Check out the benefits of being a part of Base&hellip;</p>

@@ -1,5 +1,5 @@
 <template>
-    <section id="models" class="models hero is-fullheight is-dark">
+    <section id="model" class="model hero is-fullheight is-dark">
         <div class="hero-body show columns">
             <div class="section column is-4">
                 <h1 class="title">Sign up to be a model</h1>
