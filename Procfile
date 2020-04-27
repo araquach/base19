@@ -1,1 +1,1 @@
-web: bin/base19
+web: bin/base19/cmd
