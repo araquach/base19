@@ -18,6 +18,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
 	f := r.URL.Path[1:]
+	fmt.Println(f)
 	if f == "" {
 		f = "home"
 	}
@@ -41,13 +42,15 @@ func home(w http.ResponseWriter, r *http.Request) {
 	h := GetText(hText, "<h1 class=\"title\">", "</h1>")
 	p := GetText(pText, "<p class=\"is-size-5\">", "</p>")
 
+	fmt.Printf("Heading: %s\nFirst para: %s\n", h, p)
+
 	meta := map[string]string{
 		"ogTitle": h,
 		"ogDescription": strip.StripTags(p),
 		"ogImage": "/dist/img/fb_meta/" + f + ".png",
 		"ogImageWidth": "1200",
 		"ogImageHeight": "628",
-		"ogUrl": "https://www.basehairdressing.com/" + f,
+		"ogUrl": "https://www.basehairdressing.com/#" + f,
 	}
 
 	if err := tpl.Execute(w, meta); err != nil {

@@ -4,24 +4,24 @@
             <router-link class="navbar-item" to="/" v-scroll-to="'#home'">
                 Home
             </router-link>
-            <router-link class="navbar-item" to="/#about" v-scroll-to="'#about'">
+            <router-link class="navbar-item" to="#about" v-scroll-to="'#about'">
                 About
             </router-link>
-            <router-link class="navbar-item" to="/#team" v-scroll-to="'#team'">
+            <router-link class="navbar-item" to="#team" v-scroll-to="'#team'">
                 Team
             </router-link>
-            <router-link class="navbar-item" to="/#offer" v-scroll-to="'#offer'">
+            <router-link class="navbar-item" to="#offer" v-scroll-to="'#offer'">
                 Offers
             </router-link>
             <b-navbar-dropdown label="More">
-                <router-link class="navbar-item" to="/#joinus" v-scroll-to="'#joinus'">
+                <router-link class="navbar-item" to="#joinus" v-scroll-to="'#joinus'">
                     Join Us
                 </router-link>
 <!--                <b-navbar-item href="#blog" v-scroll-to="'#blog'">-->
 <!--                    Blog-->
 <!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
-                <router-link class="navbar-item" to="/#model" v-scroll-to="'#model'">
+                <router-link class="navbar-item" to="#model" v-scroll-to="'#model'">
                     Model Register
                 </router-link>
             </b-navbar-dropdown>
@@ -33,9 +33,9 @@
                     <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">
                         <strong>Book Now</strong>
                     </a>
-                    <router-link class="button is-light" to="/#contact" v-scroll-to="'#contact'">
+                    <a href="#contact" class="button is-light" v-scroll-to="'#contact'">
                         Contact Us
-                    </router-link>
+                    </a>
                 </div>
             </b-navbar-item>
         </template>

@@ -29,6 +29,13 @@
                     this.selectedComponent = 'TeamInfoComponent'
                 }
             }
+        },
+
+        created() {
+            axios.get('/api/team').then(response => this.TeamMembers = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
         }
     }
 </script>

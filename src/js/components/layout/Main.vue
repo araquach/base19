@@ -20,7 +20,7 @@
     import Joinus from '../joinus/Joinus'
     import Blog from '../blog/Blog'
     import Model from '../model/Model'
-    import Contact from '../contact/Contact'
+    import Contact from "../contact/Contact";
 
     export default {
         components: {
