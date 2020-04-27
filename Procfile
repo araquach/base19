@@ -1,1 +1,0 @@
-web: bin/base19/cmd
