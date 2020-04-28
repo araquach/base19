@@ -8,6 +8,7 @@ import (
 	"github.com/mailgun/mailgun-go/v3"
 	"io/ioutil"
 	"log"
+	"math/rand"
 	"net/http"
 	"os"
 	"strings"
@@ -29,6 +30,9 @@ func forceSsl(next http.Handler) http.Handler {
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
+
+	// Generate version number for scripts and css
+	rand.Seed(time.Now().UnixNano())
 
 	f := r.URL.Path[1:]
 	if f == "" {
@@ -54,6 +58,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 	h := GetText(hText, "<h1 class=\"title\">", "</h1>")
 	p := GetText(pText, "<p class=\"is-size-5\">", "</p>")
 
+	v := string(rand.Intn(30))
+
 	meta := map[string]string{
 		"ogTitle": h,
 		"ogDescription": strip.StripTags(p),
@@ -61,6 +67,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"ogImageWidth": "1200",
 		"ogImageHeight": "628",
 		"ogUrl": "https://www.basehairdressing.com/" + f,
+		"version": v,
 	}
 
 	if err := tpl.Execute(w, meta); err != nil {
