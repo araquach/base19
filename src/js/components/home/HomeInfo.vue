@@ -5,7 +5,7 @@
                 <div class="is-hidden">
                     <h1 class="title">Base Hairdresing</h1>
                     <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
-                    <p class="is-size-5">Base is a training academy for the next generation of super-skilled stylists.</p>
+                    <p class="is-size-5">Base is a training academy for the next generation of super-skilled stylists. The Base Team comprises of Apprentices, Junior Stylists and Graduates all offering cutting edge services at a fraction of the cost, in an amazing creative space.</p>
                 </div>
                 <figure class="image">
                     <img src="/dist/img/base_logo.svg" alt="Base Hairdressing">

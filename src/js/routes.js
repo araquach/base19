@@ -8,6 +8,7 @@ import ContactInfo from "./components/contact/ContactInfo"
 
 export const routes = [
     { path: '', component: Main },
+    { path: '/home', component: HomeInfo },
     { path: '/about', component: AboutInfo },
     { path: '/team', component: TeamInfo },
     { path: '/offer', component: OfferInfo },
