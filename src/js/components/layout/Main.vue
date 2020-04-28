@@ -4,10 +4,10 @@
         <Home/>
         <About/>
         <Team/>
-        <Offer/>
+        <Offers/>
         <Joinus/>
         <!--        <Blog/>-->
-        <Model/>
+        <Models/>
         <Contact/>
     </div>
 </template>
@@ -16,10 +16,10 @@
     import Home from '../home/HomeInfo'
     import About from '../about/About'
     import Team from '../team/Team'
-    import Offer from '../offer/Offer'
+    import Offers from '../offers/Offers'
     import Joinus from '../joinus/Joinus'
     import Blog from '../blog/Blog'
-    import Model from '../model/Model'
+    import Models from '../models/Models'
     import Contact from '../contact/Contact'
 
     export default {
@@ -28,10 +28,10 @@
             Home,
             About,
             Team,
-            Offer,
+            Offers,
             Joinus,
             Blog,
-            Model,
+            Models,
             Contact
         }
     }

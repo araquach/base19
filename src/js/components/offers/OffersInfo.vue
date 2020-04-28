@@ -1,5 +1,5 @@
 <template>
-    <section id="offer" class="section offer-info hero is-fullheight is-dark">
+    <section id="offers" class="section offers-info hero is-fullheight is-dark">
         <div class="columns is-vcentered">
             <div class="column is-8-desktop">
                 <h1 class="title">Special Offers</h1>
@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-square">
-                            <img src="/dist/img/offer/ny_offer_1.jpg" alt="Graduate Stylist Offer">
+                            <img src="/dist/img/offers/ny_offer_1.jpg" alt="Graduate Stylist Offer">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -32,7 +32,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-square">
-                            <img src="/dist/img/offer/ny_offer_2.jpg" alt="Junior Stylist Offer">
+                            <img src="/dist/img/offers/ny_offer_2.jpg" alt="Junior Stylist Offer">
                         </figure>
                     </div>
                     <div class="card-content">

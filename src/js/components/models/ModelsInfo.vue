@@ -1,5 +1,5 @@
 <template>
-    <section id="model" class="section model-info hero is-fullheight is-dark">
+    <section id="models" class="section models-info hero is-fullheight is-dark">
         <div class="columns">
             <div class="section column is-6">
                 <h1 class="title">We need models!</h1>
@@ -114,7 +114,7 @@
                 if (this.$v.$invalid) {
                     this.submitStatus = 'ERROR'
                 } else {
-                    axios.post('/api/model', {
+                    axios.post('/api/models', {
                         name: this.name,
                         mobile: this.mobile,
                         info: this.info

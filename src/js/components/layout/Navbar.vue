@@ -11,7 +11,7 @@
             <b-navbar-item tag="router-link" to="/#team" v-scroll-to="'#team'">
                 Team
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/#offer" v-scroll-to="'#offer'">
+            <b-navbar-item tag="router-link" to="/#offers" v-scroll-to="'#offers'">
                 Offers
             </b-navbar-item>
             <b-navbar-dropdown label="More">
@@ -19,8 +19,8 @@
                     Join Us
                 </b-navbar-item>
                 <hr class="navbar-divider">
-                <b-navbar-item tag="router-link" to="/#model" v-scroll-to="'#model'">
-                    Model
+                <b-navbar-item tag="router-link" to="/#models" v-scroll-to="'#models'">
+                    Models
                 </b-navbar-item>
             </b-navbar-dropdown>
         </template>

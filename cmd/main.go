@@ -55,7 +55,7 @@ func main() {
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
-	r.HandleFunc("/api/model", apiModel).Methods("POST")
+	r.HandleFunc("/api/models", apiModel).Methods("POST")
 	r.HandleFunc("/api/reviews", apiReviews).Methods("GET")
 
 	assetHandler := http.FileServer(http.Dir("./dist/"))
