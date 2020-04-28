@@ -100,6 +100,79 @@ section.section {
   }
 }
 
+/* Page Background Styling */
+
+#home {
+  background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
+  background-size: cover;
+
+  figure {
+    margin-bottom: 3rem;
+  }
+}
+
+.about {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.about-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.team {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.team-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/base-team-bg.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.joinus {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.joinus-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.models {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.models-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.offers {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/offers.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.offers-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/offers.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+.contact-info {
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background-size: cover;
+}
+
+
+
 /* Review Feed */
 
 .review-feed {
