@@ -77,7 +77,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#models" @click="switchComponent" class="button">Go Back</a>
+                    <a @click="$router.go(-1)" class="button">back</a>
                 </div>
             </div>
         </div>
@@ -104,10 +104,6 @@
         },
 
         methods:{
-            switchComponent() {
-                this.$emit('switchComponent')
-            },
-
             submit() {
                 console.log('submit!')
                 this.$v.$touch()

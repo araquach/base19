@@ -15,7 +15,7 @@
     import Main from '../layout/Main'
     import Home from '../home/HomeInfo'
     import About from '../about/About'
-    import Team from '../team/Team'
+    import Team from '../team/TeamInfo'
     import Offers from '../offers/Offers'
     import Joinus from '../joinus/Joinus'
     import Blog from '../blog/Blog'

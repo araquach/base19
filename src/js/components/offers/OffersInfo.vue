@@ -51,21 +51,9 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#offers" @click="switchComponent" class="button">Go Back</a>
+                    <a @click="$router.go(-1)" class="button">back</a>
                 </div>
             </div>
         </div>
     </section>
 </template>
-
-<script>
-    export default {
-        props: ['title', 'subtitle'],
-
-        methods: {
-            switchComponent() {
-                this.$emit('switchComponent')
-            }
-        }
-    }
-</script>

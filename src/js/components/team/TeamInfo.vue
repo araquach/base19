@@ -7,18 +7,11 @@
                 <div class="is-hidden">
                     <p class="is-size-5">From Junior Stylists through to experienced graduates - the Base team are all talented, motivated individuals looking to build on their existing skills</p>
                 </div>
-                <button @click="switchComponent" class="button">More info</button>
+                <router-link to="/team" class="button">More info</router-link>
             </div>
         </div>
     </section>
 </template>
-
 <script>
-    export default {
-        methods: {
-            switchComponent() {
-                this.$emit('switchComponent')
-            }
-        }
-    }
+
 </script>

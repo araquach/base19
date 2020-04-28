@@ -1,5 +1,5 @@
 <template>
-    <section id="blog"  class="section blog-info hero is-fullheight is-dark">
+    <section id="blog" class="section blog-info hero is-fullheight is-dark">
         <div class="tile is-ancestor">
             <div class="tile is-vertical is-8">
                 <div class="tile">
@@ -48,19 +48,9 @@
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#blog"  @click="switchComponent" class="button">Go Back</a>
+                    <a @click="$router.go(-1)" class="button">back</a>
                 </div>
             </div>
         </div>
     </section>
 </template>
-
-<script>
-    export default {
-        methods: {
-            switchComponent() {
-                this.$emit('switchComponent')
-            }
-        }
-    }
-</script>

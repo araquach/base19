@@ -1,35 +1,11 @@
 <template>
-    <div>
-        <transition name="fade" mode="out-in">
-            <component :is="selectedComponent" @switchComponent="switchComponent"/>
-        </transition>
-    </div>
+    <section id="blog" class="blog hero is-fullheight is-dark">
+        <div class="hero-body show columns">
+            <div class="section column is-5">
+                <h1 class="title">Blog</h1>
+                <h2 class="subtitle">All the latest new from Base</h2>
+                <router-link to="/about" class="button">Blog posts</router-link>
+            </div>
+        </div>
+    </section>
 </template>
-
-<script>
-    import BlogFrontComponent from './BlogFront'
-    import BlogInfoComponent from './BlogInfo'
-
-    export default {
-        components: {
-            BlogFrontComponent,
-            BlogInfoComponent
-        },
-
-        data() {
-            return {
-                selectedComponent: 'BlogFrontComponent'
-            }
-        },
-
-        methods: {
-            switchComponent() {
-                if (this.selectedComponent == 'BlogInfoComponent') {
-                    this.selectedComponent = 'BlogFrontComponent'
-                } else {
-                    this.selectedComponent = 'BlogInfoComponent'
-                }
-            }
-        }
-    }
-</script>

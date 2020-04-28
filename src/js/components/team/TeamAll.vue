@@ -9,7 +9,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#team" @click="switchComponent" class="button">Go Back</a>
+                    <a @click="$router.go(-1)" class="button">back</a>
                 </div>
             </div>
         </div>
@@ -23,11 +23,10 @@
     export default {
         components: {TeamIndComponent, TeamModalComponent},
 
-        props: ['TeamMembers'],
-
         data() {
             return {
-                    selectedTM: '',
+                TeamMembers: [],
+                selectedTM: '',
                     isComponentModalActive: false
                 }
         },
@@ -36,10 +35,6 @@
             showTM(tm) {
                 this.selectedTM = tm
                 this.isComponentModalActive = true
-            },
-
-            switchComponent() {
-                this.$emit('switchComponent')
             }
         },
 

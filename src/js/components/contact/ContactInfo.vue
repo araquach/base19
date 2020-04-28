@@ -77,7 +77,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a href="#contact" @click="switchComponent" class="button">Go Back</a>
+                    <a @click="$router.go(-1)" class="button">back</a>
                 </div>
             </div>
         </div>
@@ -104,10 +104,6 @@
         },
 
         methods:{
-            switchComponent() {
-                this.$emit('switchComponent')
-            },
-
             fullMessage() {
                 return `From: ${this.name}
                 Email Address: ${this.email}
