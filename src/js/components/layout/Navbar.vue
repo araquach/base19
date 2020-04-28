@@ -1,29 +1,30 @@
 <template>
     <b-navbar class="is-fixed-top is-spaced">
         <template slot="start">
-            <router-link class="navbar-item" to="/" v-scroll-to="'#home'">
+            <b-navbar-item tag="router-link" to="/#home" v-scroll-to="'#home'">
                 Home
-            </router-link>
-            <router-link class="navbar-item" to="/#about" v-scroll-to="'#about'">
+            </b-navbar-item>
+            <a href="" ></a>
+            <b-navbar-item tag="router-link" to="/#about" v-scroll-to="'#about'">
                 About
-            </router-link>
-            <router-link class="navbar-item" to="/#team" v-scroll-to="'#team'">
+            </b-navbar-item>
+            <b-navbar-item tag="router-link" to="/#team" v-scroll-to="'#team'">
                 Team
-            </router-link>
-            <router-link class="navbar-item" to="/#offer" v-scroll-to="'#offer'">
+            </b-navbar-item>
+            <b-navbar-item tag="router-link" to="/#offer" v-scroll-to="'#offer'">
                 Offers
-            </router-link>
+            </b-navbar-item>
             <b-navbar-dropdown label="More">
-                <router-link class="navbar-item" to="/#joinus" v-scroll-to="'#joinus'">
+                <b-navbar-item tag="router-link" to="/#joinus" v-scroll-to="'#joinus'">
                     Join Us
-                </router-link>
+                </b-navbar-item>
 <!--                <b-navbar-item href="#blog" v-scroll-to="'#blog'">-->
 <!--                    Blog-->
 <!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
-                <router-link class="navbar-item" to="/#model" v-scroll-to="'#model'">
+                <b-navbar-item tag="router-link" to="/#model" v-scroll-to="'#model'">
                     Model Register
-                </router-link>
+                </b-navbar-item>
             </b-navbar-dropdown>
         </template>
 
@@ -33,9 +34,9 @@
                     <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">
                         <strong>Book Now</strong>
                     </a>
-                    <router-link class="button is-light" to="/#contact" v-scroll-to="'#contact'">
+                    <a tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
                         Contact Us
-                    </router-link>
+                    </a>
                 </div>
             </b-navbar-item>
         </template>
