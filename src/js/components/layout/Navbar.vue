@@ -18,28 +18,23 @@
                 <b-navbar-item tag="router-link" to="/#joinus" v-scroll-to="'#joinus'">
                     Join Us
                 </b-navbar-item>
-<!--                <b-navbar-item href="#blog" v-scroll-to="'#blog'">-->
-<!--                    Blog-->
-<!--                </b-navbar-item>-->
                 <hr class="navbar-divider">
                 <b-navbar-item tag="router-link" to="/#model" v-scroll-to="'#model'">
-                    Model Register
+                    Model
                 </b-navbar-item>
             </b-navbar-dropdown>
         </template>
-
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
                     <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">
                         <strong>Book Now</strong>
                     </a>
-                    <a tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
+                    <b-navbar-item tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
                         Contact Us
-                    </a>
+                    </b-navbar-item>
                 </div>
             </b-navbar-item>
         </template>
     </b-navbar>
-
 </template>

@@ -5,28 +5,28 @@
 </template>
 
 <script>
-    import TeamFrontComponent from './TeamFront'
     import TeamInfoComponent from './TeamInfo'
+    import TeamAllComponent from './TeamAll'
 
     export default {
         components: {
-            TeamFrontComponent,
-            TeamInfoComponent
+            TeamInfoComponent,
+            TeamAllComponent
         },
 
         data() {
             return {
-                selectedComponent: 'TeamFrontComponent',
+                selectedComponent: 'TeamInfoComponent',
                 TeamMembers: []
             }
         },
 
         methods: {
             switchComponent() {
-                if (this.selectedComponent == 'TeamInfoComponent') {
-                    this.selectedComponent = 'TeamFrontComponent'
-                } else {
+                if (this.selectedComponent == 'TeamAllComponent') {
                     this.selectedComponent = 'TeamInfoComponent'
+                } else {
+                    this.selectedComponent = 'TeamAllComponent'
                 }
             }
         }
