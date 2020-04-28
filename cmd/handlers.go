@@ -63,7 +63,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	meta := map[string]string{
 		"ogTitle": h,
 		"ogDescription": strip.StripTags(p),
-		"ogImage": "/dist/img/fb_meta/" + f + ".png",
+		"ogImage": "https://www.basehairdressing.com/dist/img/fb_meta/" + f + ".png",
 		"ogImageWidth": "1200",
 		"ogImageHeight": "628",
 		"ogUrl": "https://www.basehairdressing.com/" + f,
