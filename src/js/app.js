@@ -22,6 +22,9 @@ Vue.filter('textLimit', function (text, length) {
 
 const router = new VueRouter({
     mode: 'history',
+    scrollBehavior (to, from, savedPosition) {
+        return { x: 0, y: 0 };
+    },
     routes
 })
 
