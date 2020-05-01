@@ -1,7 +1,7 @@
 <template>
     <div class="columns is-multiline">
         <div v-for="tm in TeamMembers" :key="tm.id" :id="tm.first_name" class="section column is-4">
-            <div @click="emitTM(tm)" class="card">
+            <router-link :to="{ name: 'teamMember', params: { tm: 'lauren' } }" class="card">
                 <div class="card-image">
                     <figure class="image is-4by5">
                         <img :src="tm.image" :alt="tm.first_name">
@@ -18,7 +18,7 @@
                         <p class="price">Average Cut &amp; Colour price &pound;{{tm.price}}</p>
                     </div>
                 </div>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
