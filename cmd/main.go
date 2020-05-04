@@ -51,7 +51,9 @@ func main() {
 
 	r := mux.NewRouter()
 	r.HandleFunc("/", home).Methods("GET")
-	r.HandleFunc(`/{[a-zA-Z0-9=\-\/]+}`, home).Methods("GET")
+	// r.HandleFunc(`/{[a-zA-Z0-9=\-\/]+}`, home).Methods("GET")
+	r.HandleFunc(`/{first}`, home).Methods("GET")
+	r.HandleFunc(`/{first: [(?!dist$)[a-z0-9]+$]}/{second}`, home).Methods("GET")
 	r.HandleFunc("/api/team", apiTeam).Methods("GET")
 	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
 	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")

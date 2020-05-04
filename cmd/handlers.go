@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/gorilla/mux"
 	strip "github.com/grokify/html-strip-tags-go"
 	"github.com/mailgun/mailgun-go/v3"
 	"io/ioutil"
@@ -11,6 +12,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	"path"
 	"strings"
 	"time"
 )
@@ -34,20 +36,16 @@ func home(w http.ResponseWriter, r *http.Request) {
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
-	f := r.URL.Path[1:]
-	if f == "" {
-		f = "home"
-	}
+	vars := mux.Vars(r)
+	path := path.Join(vars["first"], vars["second"])
+	f := strings.Title(vars["first"])
 
-	dir := f
-	fn := strings.Title(f)
-
-	heading, err := ioutil.ReadFile("src/js/components/" + dir + "/" + fn + "Info.vue")
+	heading, err := ioutil.ReadFile("src/js/components/" + path + "/" + f + "Info.vue")
 	if err != nil {
 		fmt.Println("File reading error", err)
 	}
 
-	para, err := ioutil.ReadFile("src/js/components/" + dir + "/" + fn + "Info.vue")
+	para, err := ioutil.ReadFile("src/js/components/" + path + "/" + f + "Info.vue")
 	if err != nil {
 		fmt.Println("File reading error", err)
 	}
@@ -63,10 +61,10 @@ func home(w http.ResponseWriter, r *http.Request) {
 	meta := map[string]string{
 		"ogTitle": h,
 		"ogDescription": strip.StripTags(p),
-		"ogImage": "https://www.basehairdressing.com/dist/img/fb_meta/" + f + ".png",
+		"ogImage": "https://www.basehairdressing.com/dist/img/fb_meta/" + vars["first"] + ".png",
 		"ogImageWidth": "1200",
 		"ogImageHeight": "628",
-		"ogUrl": "https://www.basehairdressing.com/" + f,
+		"ogUrl": "https://www.basehairdressing.com/" + vars["first"],
 		"version": v,
 	}
 
