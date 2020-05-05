@@ -2,17 +2,17 @@
     <div id="team-modal" class="columns has-background-black">
         <div class="section column">
             <figure class="image is-4by5">
-                <img :src="staffMontage" :alt="selectedTM.first_name">
+                <img :src="staffMontage" :alt="tm.first_name">
             </figure>
         </div>
         <div class="section column">
             <div class="has-text-white">
-                <h1 class="title has-text-white">{{selectedTM.first_name}} {{selectedTM.last_name}}</h1>
-                <h2 class="subtitle has-text-white">{{selectedTM.level}}</h2>
-                <p class="is-size-5 has-text-weight-bold">{{selectedTM.para_1}}</p>
-                <p>{{selectedTM.para_2}}</p>
-                <p>{{selectedTM.para_3}}</p>
-                <p class="is-size-5">Average Price: &pound;{{selectedTM.price}}</p>
+                <h1 class="title has-text-white">{{tm.first_name}} {{tm.last_name}}</h1>
+                <h2 class="subtitle has-text-white">{{tm.level}}</h2>
+                <p class="is-size-5 has-text-weight-bold">{{tm.para_1}}</p>
+                <p>{{tm.para_2}}</p>
+                <p>{{tm.para_3}}</p>
+                <p class="is-size-5">Average Price: &pound;{{tm.price}}</p>
             </div>
             <ReviewFeed :staffMember="staffMember"/>
         </div>
@@ -24,7 +24,7 @@
     export default {
         components: { ReviewFeed },
 
-        props: ['selectedTM'],
+        props: ['tm'],
 
         data() {
             return {
@@ -34,7 +34,7 @@
 
         computed: {
             staffMontage() {
-                return `/dist/img/team/${this.selectedTM.first_name.toLowerCase()}_montage.jpg`
+                return `/dist/img/team/${this.tm.first_name.toLowerCase()}_montage.jpg`
             }
         }
     }

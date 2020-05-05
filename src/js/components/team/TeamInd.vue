@@ -25,12 +25,6 @@
 
 <script>
     export default {
-        props: ['TeamMembers'],
-
-        methods: {
-            emitTM(tm) {
-                this.$emit('emitTM', tm)
-            }
-        }
+        props: ['TeamMembers']
     }
 </script>

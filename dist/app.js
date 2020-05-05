@@ -2590,7 +2590,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TeamInd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamInd */ "./src/js/components/team/TeamInd.vue");
-/* harmony import */ var _TeamMember__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamMember */ "./src/js/components/team/TeamMember.vue");
 //
 //
 //
@@ -2605,12 +2604,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    TeamIndComponent: _TeamInd__WEBPACK_IMPORTED_MODULE_0__["default"],
-    TeamModalComponent: _TeamMember__WEBPACK_IMPORTED_MODULE_1__["default"]
+    TeamIndComponent: _TeamInd__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   data: function data() {
     return {
@@ -2665,12 +2663,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['TeamMembers'],
-  methods: {
-    emitTM: function emitTM(tm) {
-      this.$emit('emitTM', tm);
-    }
-  }
+  props: ['TeamMembers']
 });
 
 /***/ }),
@@ -2735,7 +2728,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     ReviewFeed: _reviewFeed_ReviewFeed__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['selectedTM'],
+  props: ['tm'],
   data: function data() {
     return {
       staffMember: this.selectedTM.first_name + ' ' + this.selectedTM.last_name
@@ -2743,7 +2736,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     staffMontage: function staffMontage() {
-      return "/dist/img/team/".concat(this.selectedTM.first_name.toLowerCase(), "_montage.jpg");
+      return "/dist/img/team/".concat(this.tm.first_name.toLowerCase(), "_montage.jpg");
     }
   }
 });
@@ -19872,6 +19865,30 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/Lauren.vue?vue&type=template&id=4044a691&":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/team/Lauren.vue?vue&type=template&id=4044a691& ***!
+  \********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("h1", [_vm._v("Lauren")])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/TeamAll.vue?vue&type=template&id=335befde&":
 /*!*********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/js/components/team/TeamAll.vue?vue&type=template&id=335befde& ***!
@@ -20093,7 +20110,7 @@ var render = function() {
       _c("div", { staticClass: "section column" }, [
         _c("figure", { staticClass: "image is-4by5" }, [
           _c("img", {
-            attrs: { src: _vm.staffMontage, alt: _vm.selectedTM.first_name }
+            attrs: { src: _vm.staffMontage, alt: _vm.tm.first_name }
           })
         ])
       ]),
@@ -20104,27 +20121,23 @@ var render = function() {
         [
           _c("div", { staticClass: "has-text-white" }, [
             _c("h1", { staticClass: "title has-text-white" }, [
-              _vm._v(
-                _vm._s(_vm.selectedTM.first_name) +
-                  " " +
-                  _vm._s(_vm.selectedTM.last_name)
-              )
+              _vm._v(_vm._s(_vm.tm.first_name) + " " + _vm._s(_vm.tm.last_name))
             ]),
             _vm._v(" "),
             _c("h2", { staticClass: "subtitle has-text-white" }, [
-              _vm._v(_vm._s(_vm.selectedTM.level))
+              _vm._v(_vm._s(_vm.tm.level))
             ]),
             _vm._v(" "),
             _c("p", { staticClass: "is-size-5 has-text-weight-bold" }, [
-              _vm._v(_vm._s(_vm.selectedTM.para_1))
+              _vm._v(_vm._s(_vm.tm.para_1))
             ]),
             _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.para_2))]),
+            _c("p", [_vm._v(_vm._s(_vm.tm.para_2))]),
             _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.selectedTM.para_3))]),
+            _c("p", [_vm._v(_vm._s(_vm.tm.para_3))]),
             _vm._v(" "),
             _c("p", { staticClass: "is-size-5" }, [
-              _vm._v("Average Price: £" + _vm._s(_vm.selectedTM.price))
+              _vm._v("Average Price: £" + _vm._s(_vm.tm.price))
             ])
           ]),
           _vm._v(" "),
@@ -38765,6 +38778,59 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/team/Lauren.vue":
+/*!*******************************************!*\
+  !*** ./src/js/components/team/Lauren.vue ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Lauren_vue_vue_type_template_id_4044a691___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Lauren.vue?vue&type=template&id=4044a691& */ "./src/js/components/team/Lauren.vue?vue&type=template&id=4044a691&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Lauren_vue_vue_type_template_id_4044a691___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Lauren_vue_vue_type_template_id_4044a691___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/js/components/team/Lauren.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/js/components/team/Lauren.vue?vue&type=template&id=4044a691&":
+/*!**************************************************************************!*\
+  !*** ./src/js/components/team/Lauren.vue?vue&type=template&id=4044a691& ***!
+  \**************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Lauren_vue_vue_type_template_id_4044a691___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./Lauren.vue?vue&type=template&id=4044a691& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/js/components/team/Lauren.vue?vue&type=template&id=4044a691&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Lauren_vue_vue_type_template_id_4044a691___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Lauren_vue_vue_type_template_id_4044a691___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/js/components/team/TeamAll.vue":
 /*!********************************************!*\
   !*** ./src/js/components/team/TeamAll.vue ***!
@@ -39063,6 +39129,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/models/ModelsInfo */ "./src/js/components/models/ModelsInfo.vue");
 /* harmony import */ var _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/contact/ContactInfo */ "./src/js/components/contact/ContactInfo.vue");
 /* harmony import */ var _components_team_TeamMember__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/team/TeamMember */ "./src/js/components/team/TeamMember.vue");
+/* harmony import */ var _components_team_Lauren__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/team/Lauren */ "./src/js/components/team/Lauren.vue");
+
 
 
 
@@ -39089,9 +39157,9 @@ var routes = [{
   name: 'team',
   component: _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_3__["default"]
 }, {
-  path: '/team/:tm',
-  name: 'teamMember',
-  component: _components_team_TeamMember__WEBPACK_IMPORTED_MODULE_8__["default"]
+  path: '/team/lauren',
+  name: 'lauren',
+  component: _components_team_Lauren__WEBPACK_IMPORTED_MODULE_9__["default"]
 }, {
   path: '/offers',
   name: 'offers',
