@@ -4,15 +4,17 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/gorilla/mux"
 	strip "github.com/grokify/html-strip-tags-go"
-	"github.com/mailgun/mailgun-go/v3"
 	"io/ioutil"
+	"path/filepath"
+
+	// strip "github.com/grokify/html-strip-tags-go"
+	"github.com/kataras/muxie"
+	"github.com/mailgun/mailgun-go/v3"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
-	"path"
 	"strings"
 	"time"
 )
@@ -36,35 +38,37 @@ func home(w http.ResponseWriter, r *http.Request) {
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
-	vars := mux.Vars(r)
-	path := path.Join(vars["first"], vars["second"])
-	f := strings.Title(vars["first"])
+	dir := muxie.GetParam(w, "category")
+	name := muxie.GetParam(w, "name")
+	if dir == "" {
+		dir = name
+	}
 
-	heading, err := ioutil.ReadFile("src/js/components/" + path + "/" + f + "Info.vue")
+	fname := "/" + name + "Info.vue"
+	path := filepath.Join(dir)
+
+	file := "src/js/components/" + path + fname
+
+
+	info, err := ioutil.ReadFile(file)
 	if err != nil {
 		fmt.Println("File reading error", err)
 	}
 
-	para, err := ioutil.ReadFile("src/js/components/" + path + "/" + f + "Info.vue")
-	if err != nil {
-		fmt.Println("File reading error", err)
-	}
+	text := string(info)
 
-	hText := string(heading)
-	pText := string(para)
-
-	h := GetText(hText, "<h1 class=\"title\">", "</h1>")
-	p := GetText(pText, "<p class=\"is-size-5\">", "</p>")
+	h := GetText(text, "<h1 class=\"title\">", "</h1>")
+	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
 
 	v := string(rand.Intn(30))
 
 	meta := map[string]string{
 		"ogTitle": h,
 		"ogDescription": strip.StripTags(p),
-		"ogImage": "https://www.basehairdressing.com/dist/img/fb_meta/" + vars["first"] + ".png",
+		"ogImage": "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
 		"ogImageWidth": "1200",
 		"ogImageHeight": "628",
-		"ogUrl": "https://www.basehairdressing.com/" + vars["first"],
+		"ogUrl": "https://www.basehairdressing.com/" + path,
 		"version": v,
 	}
 

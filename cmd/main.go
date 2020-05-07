@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/joho/godotenv"
+	"github.com/kataras/muxie"
 	"html/template"
 	"log"
 	"net/http"
@@ -49,20 +49,19 @@ func main() {
 		panic(err)
 	}
 
-	r := mux.NewRouter()
-	r.HandleFunc("/", home).Methods("GET")
-	// r.HandleFunc(`/{[a-zA-Z0-9=\-\/]+}`, home).Methods("GET")
-	r.HandleFunc(`/{first}`, home).Methods("GET")
-	r.HandleFunc(`/{first: [(?!dist$)[a-z0-9]+$]}/{second}`, home).Methods("GET")
-	r.HandleFunc("/api/team", apiTeam).Methods("GET")
-	r.HandleFunc("/api/sendMessage", apiSendMessage).Methods("POST")
-	r.HandleFunc("/api/joinus", apiJoinus).Methods("POST")
-	r.HandleFunc("/api/models", apiModel).Methods("POST")
-	r.HandleFunc("/api/reviews", apiReviews).Methods("GET")
+	r := muxie.NewMux()
+	r.HandleFunc("/", home)
+	r.HandleFunc(`/:name`, home)
+	r.HandleFunc(`/:category/:name`, home)
+	r.HandleFunc(`/*`, home)
+	//r.HandleFunc(`/{first: [(?!dist$)[a-z0-9]+$]}/{second}`, home)
+	//r.HandleFunc("/api/team", apiTeam)
+	//r.HandleFunc("/api/sendMessage", apiSendMessage)
+	//r.HandleFunc("/api/joinus", apiJoinus)
+	//r.HandleFunc("/api/models", apiModel)
+	//r.HandleFunc("/api/reviews", apiReviews)
 
-	assetHandler := http.FileServer(http.Dir("./dist/"))
-	assetHandler = http.StripPrefix("/dist/", assetHandler)
-	r.PathPrefix("/dist/").Handler(assetHandler)
+	r.Handle("/dist/*file", http.StripPrefix("/dist/", http.FileServer(http.Dir("./dist"))))
 
 	log.Printf("Starting server on %s", port)
 
