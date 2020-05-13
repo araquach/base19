@@ -3,11 +3,12 @@ import HomeInfo from "./components/home/HomeInfo"
 import AboutInfo from "./components/about/AboutInfo"
 import TeamInfo from './components/team/TeamInfo'
 import TeamAll from "./components/team/TeamAll"
+import TeamDetail from "./components/team/TeamDetail"
 import OffersInfo from "./components/offers/OffersInfo"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
-import TeamDetail from "./components/team/TeamDetail"
+
 
 export const routes = [
     {
@@ -37,7 +38,7 @@ export const routes = [
     },
     {
         path: '/team/:slug',
-        name: 'teamDetail',
+        name: 'team-detail',
         component: TeamDetail,
         props: true
     },

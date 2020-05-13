@@ -2633,6 +2633,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
@@ -19882,7 +19884,7 @@ var render = function() {
       _c(
         "div",
         { staticClass: "columns is-multiline" },
-        _vm._l(_vm.TeamMembers, function(tm, id) {
+        _vm._l(_vm.teamMembers, function(tm, id) {
           return _c(
             "div",
             { staticClass: "section column is-4" },
@@ -19890,48 +19892,58 @@ var render = function() {
               _c(
                 "router-link",
                 {
-                  staticClass: "card",
                   attrs: {
-                    to: { name: "team-detail", params: { slug: tm.slug } }
+                    to: {
+                      name: "team-detail",
+                      params: { slug: tm.first_name.toLowerCase() }
+                    }
                   }
                 },
                 [
-                  _c("div", { staticClass: "card-image" }, [
-                    _c("figure", { staticClass: "image is-4by5" }, [
-                      _c("img", {
-                        attrs: { src: tm.image, alt: tm.first_name }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-content" }, [
-                    _c("div", { staticClass: "media" }, [
-                      _c("div", { staticClass: "media-content" }, [
-                        _c("p", { staticClass: "title is-4 has-text-white" }, [
-                          _vm._v(
-                            _vm._s(tm.first_name) + " " + _vm._s(tm.last_name)
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "subtitle has-text-white" }, [
-                          _vm._v(_vm._s(tm.level))
-                        ])
+                  _c("div", { staticClass: "card has-background-black" }, [
+                    _c("div", { staticClass: "card-image" }, [
+                      _c("figure", { staticClass: "image is-4by5" }, [
+                        _c("img", {
+                          attrs: { src: tm.image, alt: tm.first_name }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "content is-size-5-mobile has-text-white"
-                      },
-                      [
-                        _c("p", { staticClass: "price" }, [
-                          _vm._v(
-                            "Average Cut & Colour price £" + _vm._s(tm.price)
-                          )
+                    _c("div", { staticClass: "card-content" }, [
+                      _c("div", { staticClass: "media" }, [
+                        _c("div", { staticClass: "media-content" }, [
+                          _c(
+                            "p",
+                            { staticClass: "title is-4 has-text-white" },
+                            [
+                              _vm._v(
+                                _vm._s(tm.first_name) +
+                                  " " +
+                                  _vm._s(tm.last_name)
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "subtitle has-text-white" }, [
+                            _vm._v(_vm._s(tm.level))
+                          ])
                         ])
-                      ]
-                    )
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "content is-size-5-mobile has-text-white"
+                        },
+                        [
+                          _c("p", { staticClass: "price" }, [
+                            _vm._v(
+                              "Average Cut & Colour price £" + _vm._s(tm.price)
+                            )
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 ]
               )
@@ -40067,11 +40079,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_about_AboutInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/about/AboutInfo */ "./src/js/components/about/AboutInfo.vue");
 /* harmony import */ var _components_team_TeamInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/team/TeamInfo */ "./src/js/components/team/TeamInfo.vue");
 /* harmony import */ var _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/team/TeamAll */ "./src/js/components/team/TeamAll.vue");
-/* harmony import */ var _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/offers/OffersInfo */ "./src/js/components/offers/OffersInfo.vue");
-/* harmony import */ var _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/joinus/JoinusInfo */ "./src/js/components/joinus/JoinusInfo.vue");
-/* harmony import */ var _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/models/ModelsInfo */ "./src/js/components/models/ModelsInfo.vue");
-/* harmony import */ var _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/contact/ContactInfo */ "./src/js/components/contact/ContactInfo.vue");
-/* harmony import */ var _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/team/TeamDetail */ "./src/js/components/team/TeamDetail.vue");
+/* harmony import */ var _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/team/TeamDetail */ "./src/js/components/team/TeamDetail.vue");
+/* harmony import */ var _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/offers/OffersInfo */ "./src/js/components/offers/OffersInfo.vue");
+/* harmony import */ var _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/joinus/JoinusInfo */ "./src/js/components/joinus/JoinusInfo.vue");
+/* harmony import */ var _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/models/ModelsInfo */ "./src/js/components/models/ModelsInfo.vue");
+/* harmony import */ var _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/contact/ContactInfo */ "./src/js/components/contact/ContactInfo.vue");
 
 
 
@@ -40104,25 +40116,25 @@ var routes = [{
   component: _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {
   path: '/team/:slug',
-  name: 'teamDetail',
-  component: _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_9__["default"],
+  name: 'team-detail',
+  component: _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_5__["default"],
   props: true
 }, {
   path: '/offers',
   name: 'offers',
-  component: _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_5__["default"]
+  component: _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   path: '/joinus',
   name: 'joinus',
-  component: _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_6__["default"]
+  component: _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_7__["default"]
 }, {
   path: '/models',
   name: 'models',
-  component: _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_7__["default"]
+  component: _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_8__["default"]
 }, {
   path: '/contact',
   name: 'contact',
-  component: _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_8__["default"]
+  component: _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_9__["default"]
 }];
 
 /***/ }),
@@ -40208,8 +40220,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
