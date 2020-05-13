@@ -1,7 +1,29 @@
 <template>
     <section id="team" class="section team-info hero is-fullheight is-dark">
+        <h1>The Base Team</h1>
 
-        <TeamIndComponent :TeamMembers="TeamMembers" />
+        <div class="columns is-multiline">
+            <div v-for="(tm, id) in TeamMembers" class="section column is-4">
+                <router-link :to="{ name: 'team-detail', params: { slug: tm.slug } }" class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by5">
+                            <img :src="tm.image" :alt="tm.first_name">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4 has-text-white">{{tm.first_name}} {{tm.last_name}}</p>
+                                <p class="subtitle has-text-white">{{tm.level}}</p>
+                            </div>
+                        </div>
+                        <div class="content is-size-5-mobile has-text-white">
+                            <p class="price">Average Cut &amp; Colour price &pound;{{tm.price}}</p>
+                        </div>
+                    </div>
+                </router-link>
+            </div>
+        </div>
 
         <div class="level is-mobile">
             <div class="level-left">
@@ -14,22 +36,16 @@
 </template>
 
 <script>
-    import TeamIndComponent from './TeamInd'
-
+    import {mapGetters} from 'vuex'
     export default {
-        components: {TeamIndComponent},
-
-        data() {
-            return {
-                TeamMembers: []
-            }
+        mounted() {
+            this.$store.dispatch('loadTeamMembers')
         },
 
-        created() {
-            axios.get('/api/team').then(response => this.TeamMembers = response.data)
-                .catch(error => {
-                    console.log(error)
-                })
+        computed: {
+            ...mapGetters([
+                'teamMembers'
+            ])
         }
     }
 </script>

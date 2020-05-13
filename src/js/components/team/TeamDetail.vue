@@ -20,11 +20,14 @@
 </template>
 
 <script>
+    import {mapGetters} from 'vuex'
     import ReviewFeed from '../reviewFeed/ReviewFeed'
     export default {
         components: { ReviewFeed },
 
-        props: ['tm'],
+        mounted() {
+            this.$store.dispatch('loadTeamMembers')
+        },
 
         data() {
             return {
@@ -33,8 +36,18 @@
         },
 
         computed: {
-            staffMontage() {
-                return `/dist/img/team/${this.tm.first_name.toLowerCase()}_montage.jpg`
+            computed: {
+                ...mapGetters([
+                    'teamMember'
+                ]),
+
+                tm() {
+                    return this.teamMember(this.$route.params.slug)
+                },
+
+                staffMontage() {
+                    return `/dist/img/team/${this.tm.first_name.toLowerCase()}_montage.jpg`
+                }
             }
         }
     }

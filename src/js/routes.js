@@ -1,12 +1,13 @@
 import Main from "./components/layout/Main"
 import HomeInfo from "./components/home/HomeInfo"
 import AboutInfo from "./components/about/AboutInfo"
+import TeamInfo from './components/team/TeamInfo'
 import TeamAll from "./components/team/TeamAll"
 import OffersInfo from "./components/offers/OffersInfo"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
-import TeamMember from "./components/team/TeamMember"
+import TeamDetail from "./components/team/TeamDetail"
 
 export const routes = [
     {
@@ -25,14 +26,20 @@ export const routes = [
         component: AboutInfo
     },
     {
+        path: '/teaminfo',
+        name: 'team-info',
+        component: TeamInfo
+    },
+    {
         path: '/team',
         name: 'team',
         component: TeamAll
     },
     {
-        path: '/team/:tm',
-        name: 'teamMember',
-        component: TeamMember
+        path: '/team/:slug',
+        name: 'teamDetail',
+        component: TeamDetail,
+        props: true
     },
     {
         path: '/offers',

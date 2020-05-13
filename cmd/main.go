@@ -54,12 +54,11 @@ func main() {
 	r.HandleFunc(`/:name`, home)
 	r.HandleFunc(`/:category/:name`, home)
 	r.HandleFunc(`/*`, home)
-	//r.HandleFunc(`/{first: [(?!dist$)[a-z0-9]+$]}/{second}`, home)
-	//r.HandleFunc("/api/team", apiTeam)
-	//r.HandleFunc("/api/sendMessage", apiSendMessage)
-	//r.HandleFunc("/api/joinus", apiJoinus)
-	//r.HandleFunc("/api/models", apiModel)
-	//r.HandleFunc("/api/reviews", apiReviews)
+	r.HandleFunc("/api/team", apiTeam)
+	r.HandleFunc("/api/sendMessage", apiSendMessage)
+	r.HandleFunc("/api/joinus", apiJoinus)
+	r.HandleFunc("/api/models", apiModel)
+	r.HandleFunc("/api/reviews", apiReviews)
 
 	r.Handle("/dist/*file", http.StripPrefix("/dist/", http.FileServer(http.Dir("./dist"))))
 
