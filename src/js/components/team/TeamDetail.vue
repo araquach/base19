@@ -29,26 +29,19 @@
             this.$store.dispatch('loadTeamMembers')
         },
 
-        data() {
-            return {
-                staffMember: this.selectedTM.first_name + ' ' + this.selectedTM.last_name
-            }
-        },
-
         computed: {
-            computed: {
-                ...mapGetters([
-                    'teamMember'
-                ]),
+            ...mapGetters([
+                'teamMember'
+            ]),
 
-                tm() {
-                    return this.teamMember(this.$route.params.slug)
-                },
+            tm() {
+                return this.teamMember(this.$route.params.slug)
+            },
 
-                staffMontage() {
-                    return `/dist/img/team/${this.tm.first_name.toLowerCase()}_montage.jpg`
-                }
+            staffMontage() {
+                return `/dist/img/team/${this.tm.first_name.toLowerCase()}_montage.jpg`
             }
         }
+
     }
 </script>

@@ -107,6 +107,23 @@ func apiTeam(w http.ResponseWriter, r *http.Request) {
 	w.Write(json)
 }
 
+func apiTeamMember(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	param := muxie.GetParam(w, "slug")
+
+	db := dbConn()
+	tm := []TeamMember{}
+	db.Where("slug = ?", param).First(&tm)
+	db.Close()
+
+	json, err := json.Marshal(tm)
+	if err != nil {
+		log.Println(err)
+	}
+	w.Write(json)
+}
+
 func apiReviews(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 

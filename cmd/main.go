@@ -55,6 +55,7 @@ func main() {
 	r.HandleFunc(`/:category/:name`, home)
 	r.HandleFunc(`/*`, home)
 	r.HandleFunc("/api/team", apiTeam)
+	r.HandleFunc("/api/team/:slug", apiTeamMember)
 	r.HandleFunc("/api/sendMessage", apiSendMessage)
 	r.HandleFunc("/api/joinus", apiJoinus)
 	r.HandleFunc("/api/models", apiModel)

@@ -2692,21 +2692,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   mounted: function mounted() {
     this.$store.dispatch('loadTeamMembers');
   },
-  data: function data() {
-    return {
-      staffMember: this.selectedTM.first_name + ' ' + this.selectedTM.last_name
-    };
-  },
-  computed: {
-    computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['teamMember']), {
-      tm: function tm() {
-        return this.teamMember(this.$route.params.slug);
-      },
-      staffMontage: function staffMontage() {
-        return "/dist/img/team/".concat(this.tm.first_name.toLowerCase(), "_montage.jpg");
-      }
-    })
-  }
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['teamMember']), {
+    tm: function tm() {
+      return this.teamMember(this.$route.params.slug);
+    },
+    staffMontage: function staffMontage() {
+      return "/dist/img/team/".concat(this.tm.first_name.toLowerCase(), "_montage.jpg");
+    }
+  })
 });
 
 /***/ }),
@@ -19893,10 +19886,7 @@ var render = function() {
                 "router-link",
                 {
                   attrs: {
-                    to: {
-                      name: "team-detail",
-                      params: { slug: tm.first_name.toLowerCase() }
-                    }
+                    to: { name: "team-detail", params: { slug: tm.slug } }
                   }
                 },
                 [

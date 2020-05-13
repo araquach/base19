@@ -4,7 +4,7 @@
 
         <div class="columns is-multiline">
             <div v-for="(tm, id) in teamMembers" class="section column is-4">
-                <router-link :to="{ name: 'team-detail', params: { slug: tm.first_name.toLowerCase() } }">
+                <router-link :to="{ name: 'team-detail', params: { slug: tm.slug } }">
                     <div class="card has-background-black">
                         <div class="card-image">
                             <figure class="image is-4by5">
