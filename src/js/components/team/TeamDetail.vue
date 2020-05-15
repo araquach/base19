@@ -1,45 +1,50 @@
 <template>
-    <div id="team-modal" class="columns has-background-black">
+    <div id="team-modal" class="section columns has-background-black">
         <div class="section column">
             <figure class="image is-4by5">
-                <img :src="staffMontage" :alt="tm.first_name">
+                <img :src="staffMontage" :alt="teamMember.first_name">
             </figure>
         </div>
         <div class="section column">
             <div class="has-text-white">
-                <h1 class="title has-text-white">{{tm.first_name}} {{tm.last_name}}</h1>
-                <h2 class="subtitle has-text-white">{{tm.level}}</h2>
-                <p class="is-size-5 has-text-weight-bold">{{tm.para_1}}</p>
-                <p>{{tm.para_2}}</p>
-                <p>{{tm.para_3}}</p>
-                <p class="is-size-5">Average Price: &pound;{{tm.price}}</p>
+                <h1 class="title has-text-white">{{teamMember.first_name}} {{teamMember.last_name}}</h1>
+                <h2 class="subtitle has-text-white">{{teamMember.level}}</h2>
+                <p class="is-size-5 has-text-weight-bold">{{teamMember.para_1}}</p>
+                <p>{{teamMember.para_2}}</p>
+                <p>{{teamMember.para_3}}</p>
+                <p class="is-size-5">Average Price: &pound;{{teamMember.price}}</p>
             </div>
             <ReviewFeed :staffMember="staffMember"/>
+            <br>
+            <a @click="$router.go(-1)" class="button">Back to the full team</a>
         </div>
     </div>
 </template>
 
 <script>
-    import {mapGetters} from 'vuex'
     import ReviewFeed from '../reviewFeed/ReviewFeed'
     export default {
         components: { ReviewFeed },
 
+        data() {
+            return {
+                teamMember: {}
+            }
+        },
+
         mounted() {
-            this.$store.dispatch('loadTeamMembers')
+            axios
+                .get('/api/team/' + this.$route.params.slug)
+                .then(r => this.teamMember = r.data[0])
         },
 
         computed: {
-            ...mapGetters([
-                'teamMember'
-            ]),
-
-            tm() {
-                return this.teamMember(this.$route.params.slug)
+            staffMontage() {
+                return `/dist/img/team/${this.$route.params.slug}_montage.jpg`
             },
 
-            staffMontage() {
-                return `/dist/img/team/${this.tm.first_name.toLowerCase()}_montage.jpg`
+            staffMember() {
+                return this.teamMember.first_name + " " + this.teamMember.last_name
             }
         }
 
