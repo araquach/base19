@@ -43,8 +43,7 @@ func main() {
 	db.Close()
 
 	tpl = template.Must(template.ParseFiles(
-		"views/layouts/main.gohtml",
-		"views/pages/index.gohtml"))
+		"views/index.gohtml"))
 	if err != nil {
 		panic(err)
 	}
