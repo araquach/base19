@@ -22,7 +22,7 @@ func GetText(str string, start string, end string) (result string) {
 	return str[s : s+e]
 }
 
-func getMeta(d, n string) (m map[string]string) {
+func getMetaInfoFromVue(d, n string) (h, p string){
 	dir := d
 	name := n
 
@@ -42,21 +42,31 @@ func getMeta(d, n string) (m map[string]string) {
 
 	text := string(info)
 
-	h := GetText(text, "<h1 class=\"title\">", "</h1>")
-	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
+	h = GetText(text, "<h1 class=\"title\">", "</h1>")
+	p = GetText(text, "<p class=\"is-size-5\">", "</p>")
 	p = strip.StripTags(p)
+
+	return
+}
+
+func getMetaFromDB(d, n string) (h, p string) {
+	return
+}
+
+func getMeta(d, n string) (m map[string]string) {
+
+	h, p := getMetaInfoFromVue(d, n)
 
 	v := string(rand.Intn(30))
 
 	meta := map[string]string{
 		"ogTitle":       h,
 		"ogDescription": p,
-		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
+		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + h + ".png",
 		"ogImageWidth":  "1200",
 		"ogImageHeight": "628",
-		"ogUrl":         "https://www.basehairdressing.com/" + path,
+		"ogUrl":         "https://www.basehairdressing.com/" + h,
 		"version":       v,
 	}
-
 	return meta
 }

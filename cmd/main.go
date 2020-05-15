@@ -66,6 +66,3 @@ func main() {
 
 	http.ListenAndServe(":" + port, forceSsl(r))
 }
-
-
-
