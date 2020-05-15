@@ -2514,7 +2514,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['staffMember'],
   data: function data() {
     return {
-      currentReviewIndex: 0,
+      currentReviewIndex: 10,
       intervalId: null,
       allReviews: []
     };
@@ -2537,17 +2537,27 @@ __webpack_require__.r(__webpack_exports__);
     timerTick: function timerTick() {
       this.currentReviewIndex = Math.round(Math.random() * (this.allReviews.length - 1));
     },
-    currentReview: function currentReview(staff) {
-      var filteredReviews = this.allReviews.filter(function (review) {
-        return review.staff.includes(staff);
+    currentReview: function currentReview() {
+      return this.randomReview[this.currentReviewIndex];
+    }
+  },
+  computed: {
+    randomReview: function randomReview() {
+      return this.allReviews.sort(function () {
+        return 0.5 - Math.random();
       });
-      return filteredReviews[this.currentReviewIndex];
     }
   },
   created: function created() {
     var _this = this;
 
-    axios.get('/api/reviews').then(function (response) {
+    var param = this.$route.params.slug;
+
+    if (this.$route.params.slug == null) {
+      param = "all";
+    }
+
+    axios.get('/api/reviews/' + param).then(function (response) {
       return _this.allReviews = response.data;
     })["catch"](function (error) {
       console.log(error);
@@ -19802,9 +19812,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [
-      _c("ReviewInd", { attrs: { review: _vm.currentReview(_vm.staffMember) } })
-    ],
+    [_c("ReviewInd", { attrs: { review: _vm.currentReview() } })],
     1
   )
 }
@@ -20047,7 +20055,10 @@ var render = function() {
               staticClass: "button",
               on: {
                 click: function($event) {
-                  return _vm.$router.push({ name: "team" })
+                  return _vm.$router.push({
+                    name: "team",
+                    hash: "#" + _vm.teamMember.slug
+                  })
                 }
               }
             },

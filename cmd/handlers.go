@@ -5,16 +5,14 @@ import (
 	"encoding/json"
 	"fmt"
 	strip "github.com/grokify/html-strip-tags-go"
-	"io/ioutil"
-	"path/filepath"
-
-	// strip "github.com/grokify/html-strip-tags-go"
 	"github.com/kataras/muxie"
 	"github.com/mailgun/mailgun-go/v3"
+	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 )
@@ -49,7 +47,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 	file := "src/js/components/" + path + fname
 
-
 	info, err := ioutil.ReadFile(file)
 	if err != nil {
 		fmt.Println("File reading error", err)
@@ -59,17 +56,18 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 	h := GetText(text, "<h1 class=\"title\">", "</h1>")
 	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
+	p = strip.StripTags(p)
 
 	v := string(rand.Intn(30))
 
 	meta := map[string]string{
-		"ogTitle": h,
-		"ogDescription": strip.StripTags(p),
-		"ogImage": "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
-		"ogImageWidth": "1200",
+		"ogTitle":       h,
+		"ogDescription": p,
+		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
+		"ogImageWidth":  "1200",
 		"ogImageHeight": "628",
-		"ogUrl": "https://www.basehairdressing.com/" + path,
-		"version": v,
+		"ogUrl":         "https://www.basehairdressing.com/" + path,
+		"version":       v,
 	}
 
 	if err := tpl.Execute(w, meta); err != nil {
@@ -127,10 +125,20 @@ func apiTeamMember(w http.ResponseWriter, r *http.Request) {
 func apiReviews(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	db := dbConn()
 	reviews := []Review{}
-	db.Find(&reviews)
-	db.Close()
+
+	param := muxie.GetParam(w, "tm")
+	param = strings.Title(param)
+
+	if param == "All" {
+		db := dbConn()
+		db.Find(&reviews)
+		db.Close()
+	} else {
+		db := dbConn()
+		db.Where("staff LIKE ?", "Staff: "+param+" %").Find(&reviews)
+		db.Close()
+	}
 
 	json, err := json.Marshal(reviews)
 	if err != nil {

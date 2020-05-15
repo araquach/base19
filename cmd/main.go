@@ -59,7 +59,7 @@ func main() {
 	r.HandleFunc("/api/sendMessage", apiSendMessage)
 	r.HandleFunc("/api/joinus", apiJoinus)
 	r.HandleFunc("/api/models", apiModel)
-	r.HandleFunc("/api/reviews", apiReviews)
+	r.HandleFunc("/api/reviews/:tm", apiReviews)
 
 	r.Handle("/dist/*file", http.StripPrefix("/dist/", http.FileServer(http.Dir("./dist"))))
 

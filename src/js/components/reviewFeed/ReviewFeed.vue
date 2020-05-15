@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ReviewInd :review="currentReview(staffMember)" />
+        <ReviewInd :review="currentReview()" />
     </div>
 </template>
 
@@ -14,8 +14,9 @@
         props: ['staffMember'],
 
         data() {
+
             return {
-                currentReviewIndex: 0,
+                currentReviewIndex: 10,
                 intervalId: null,
                 allReviews: []
             }
@@ -43,15 +44,25 @@
                     Math.random() * (this.allReviews.length - 1)
                 )
             },
-            currentReview(staff) {
-                const filteredReviews = this.allReviews.filter(review => review.staff.includes(staff))
+            currentReview() {
+                return this.randomReview[this.currentReviewIndex];
+            }
+        },
 
-                return filteredReviews[this.currentReviewIndex];
+        computed: {
+            randomReview() {
+                return this.allReviews.sort(function(){return 0.5 - Math.random()});
             }
         },
 
         created() {
-            axios.get('/api/reviews').then(response => this.allReviews = response.data)
+            let param = this.$route.params.slug
+            if (this.$route.params.slug == null) {
+                 param = "all"
+            }
+
+            axios.get('/api/reviews/' + param)
+                .then(response => this.allReviews = response.data)
                 .catch(error => {
                     console.log(error)
                 })
