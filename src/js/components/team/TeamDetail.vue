@@ -16,7 +16,7 @@
             </div>
             <ReviewFeed :staffMember="staffMember"/>
             <br>
-            <a @click="$router.go(-1)" class="button">Back to the full team</a>
+            <a @click="$router.push({name: 'team'})" class="button">Back to the full team</a>
         </div>
     </div>
 </template>

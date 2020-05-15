@@ -1,6 +1,6 @@
 <template>
     <section id="team" class="section team-info hero is-fullheight is-dark">
-        <h1 class="title is-4">The Base Team</h1>
+        <h1 class="title is-3">The Base Team</h1>
 
         <div class="columns is-multiline">
             <div v-for="(tm, id) in teamMembers" class="section column is-4">

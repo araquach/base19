@@ -19877,7 +19877,7 @@ var render = function() {
       attrs: { id: "team" }
     },
     [
-      _c("h1", { staticClass: "title is-4" }, [_vm._v("The Base Team")]),
+      _c("h1", { staticClass: "title is-3" }, [_vm._v("The Base Team")]),
       _vm._v(" "),
       _c(
         "div",
@@ -20047,7 +20047,7 @@ var render = function() {
               staticClass: "button",
               on: {
                 click: function($event) {
-                  return _vm.$router.go(-1)
+                  return _vm.$router.push({ name: "team" })
                 }
               }
             },
