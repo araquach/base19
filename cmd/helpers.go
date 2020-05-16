@@ -49,25 +49,29 @@ func getMetaInfoFromVue(d, n string) (h, p string){
 	return
 }
 
-func getMetaFromDB(n string) (h *[]TeamMember) {
+func getMetaFromDB(n string) (h TeamMember) {
 	name := n
 
 	db := dbConn()
-	tm := []TeamMember{}
+	tm := TeamMember{}
 	db.Where("slug = ?", name).First(&tm)
 	db.Close()
 
-	return &tm
+	return tm
 }
 
 func getMeta(d, n string) (m map[string]string) {
+	var h, p string
 
-	h, p := getMetaInfoFromVue(d, n)
+	if d == "team" {
+		r := getMetaFromDB(n)
+		h = r.FirstName
+		p = r.Para1
+	} else {
+		h, p = getMetaInfoFromVue(d, n)
+	}
 
 	v := string(rand.Intn(30))
-
-	res := getMetaFromDB(n)
-	fmt.Println(res)
 
 	meta := map[string]string{
 		"ogTitle":       h,
