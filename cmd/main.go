@@ -62,9 +62,9 @@ func main() {
 	r.HandleFunc("/api/models", apiModel)
 	r.HandleFunc("/api/reviews/{tm}", apiReviews)
 
+	r.HandleFunc("/{name}", home)
 	r.PathPrefix("/dist/").Handler(http.StripPrefix("/dist/", http.FileServer(http.Dir(dir))))
 	r.HandleFunc("/{category}/{name}", home)
-	r.HandleFunc("/{name}", home)
 	r.HandleFunc("/", home)
 
 
