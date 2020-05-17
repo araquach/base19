@@ -5,14 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
-	strip "github.com/grokify/html-strip-tags-go"
 	"github.com/mailgun/mailgun-go/v3"
-	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
-	"path/filepath"
 	"strings"
 	"time"
 )
@@ -30,26 +27,12 @@ func forceSsl(next http.Handler) http.Handler {
 	})
 }
 
-func GetText(str string, start string, end string) (result string) {
-	s := strings.Index(str, start)
-	if s == -1 {
-		return
-	}
-	s += len(start)
-	e := strings.Index(str[s:], end)
-	if e == -1 {
-		return
-	}
-	return str[s : s+e]
-}
-
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
 	vars := mux.Vars(r)
-
 	dir :=  vars["category"]
 	name := vars["name"]
 
@@ -61,21 +44,13 @@ func home(w http.ResponseWriter, r *http.Request) {
 		dir = name
 	}
 
-	fname := "/" + name + "Info.vue"
-	path := filepath.Join(dir)
+	db := dbConn()
+	m := MetaInfo{}
+	db.Where("page = ?", name).First(&m)
+	db.Close()
 
-	file := "src/js/components/" + path + fname
-
-	info, err := ioutil.ReadFile(file)
-	if err != nil {
-		fmt.Println("File reading error", err)
-	}
-
-	text := string(info)
-
-	h := GetText(text, "<h1 class=\"title\">", "</h1>")
-	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
-	p = strip.StripTags(p)
+	h := m.Title
+	p := m.Text
 
 	v := string(rand.Intn(30))
 

@@ -48,3 +48,10 @@ type Review struct {
 	Client string `json:"client"`
 	Staff  string `json:"staff"`
 }
+
+type MetaInfo struct {
+	ID    uint   `json:"id" gorm: "primary_key"`
+	Page  string `json:"page"`
+	Title string `json:"title"`
+	Text  string `json:"text"`
+}
