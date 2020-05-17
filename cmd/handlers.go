@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/kataras/muxie"
+	"github.com/gorilla/mux"
 	"github.com/mailgun/mailgun-go/v3"
 	"log"
 	"math/rand"
@@ -29,75 +29,20 @@ func forceSsl(next http.Handler) http.Handler {
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
+	vars := mux.Vars(r)
 
-	dir := muxie.GetParam(w, "category")
-	name := muxie.GetParam(w, "name")
+	dir :=  vars["category"]
+	name := vars["name"]
 
-<<<<<<< HEAD
-	// Generate version number for scripts and css
-	rand.Seed(time.Now().UnixNano())
-
-	if name == "" {
-		name = "home"
-	}
-
-	if dir == "" {
-		dir = name
-	}
-
-	fname := "/" + name + "Info.vue"
-	path := filepath.Join(dir)
-
-	file := "src/js/components/" + path + fname
-
-	info, err := ioutil.ReadFile(file)
-	if err != nil {
-		fmt.Println("File reading error", err)
-	}
-
-	text := string(info)
-
-	h := GetText(text, "<h1 class=\"title\">", "</h1>")
-	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
-	p = strip.StripTags(p)
-
-	v := string(rand.Intn(30))
-
-	meta := map[string]string{
-		"ogTitle":       h,
-		"ogDescription": p,
-		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
-		"ogImageWidth":  "1200",
-		"ogImageHeight": "628",
-		"ogUrl":         "https://www.basehairdressing.com/" + name,
-		"version":       v,
-	}
-
-=======
 	meta := getMeta(dir, name)
-
+	
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
->>>>>>> parent of 530afaa... Reverted the code
 	if err := tpl.Execute(w, meta); err != nil {
 		panic(err)
 	}
 }
-
-func GetText(str string, start string, end string) (result string) {
-	s := strings.Index(str, start)
-	if s == -1 {
-		return
-	}
-	s += len(start)
-	e := strings.Index(str[s:], end)
-	if e == -1 {
-		return
-	}
-	return str[s : s+e]
-}
-
 
 // api
 
@@ -119,7 +64,8 @@ func apiTeam(w http.ResponseWriter, r *http.Request) {
 func apiTeamMember(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	param := muxie.GetParam(w, "slug")
+	vars := mux.Vars(r)
+	param := vars["slug"]
 
 	db := dbConn()
 	tm := []TeamMember{}
@@ -138,7 +84,9 @@ func apiReviews(w http.ResponseWriter, r *http.Request) {
 
 	reviews := []Review{}
 
-	param := muxie.GetParam(w, "tm")
+	vars := mux.Vars(r)
+
+	param := vars["tm"]
 	param = strings.Title(param)
 
 	if param == "All" {

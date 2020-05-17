@@ -80,10 +80,10 @@ func getMeta(d, n string) (m map[string]string) {
 	meta := map[string]string{
 		"ogTitle":       h,
 		"ogDescription": p,
-		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + h + ".png",
+		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + n + ".png",
 		"ogImageWidth":  "1200",
 		"ogImageHeight": "628",
-		"ogUrl":         "https://www.basehairdressing.com/" + h,
+		"ogUrl":         "https://www.basehairdressing.com/" + n,
 		"version":       v,
 	}
 	return meta

@@ -1,10 +1,11 @@
 package main
 
 import (
+	"flag"
+	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/joho/godotenv"
-	"github.com/kataras/muxie"
 	"html/template"
 	"log"
 	"net/http"
@@ -32,6 +33,8 @@ func init() {
 
 func main() {
 	var err error
+	var dir string
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		log.Fatal("$PORT must be set")
@@ -48,19 +51,20 @@ func main() {
 		panic(err)
 	}
 
-	r := muxie.NewMux()
-	r.HandleFunc("/", home)
-	r.HandleFunc(`/:name`, home)
-	r.HandleFunc(`/:category/:name`, home)
-	r.HandleFunc(`/*`, home)
+	flag.StringVar(&dir, "dir", "dist", "the directory to serve files from. Defaults to the current dir")
+	flag.Parse()
+	r := mux.NewRouter()
+
+	r.PathPrefix("/dist/").Handler(http.StripPrefix("/dist/", http.FileServer(http.Dir(dir))))
 	r.HandleFunc("/api/team", apiTeam)
-	r.HandleFunc("/api/team/:slug", apiTeamMember)
+	r.HandleFunc("/api/team/{slug}", apiTeamMember)
 	r.HandleFunc("/api/sendMessage", apiSendMessage)
 	r.HandleFunc("/api/joinus", apiJoinus)
 	r.HandleFunc("/api/models", apiModel)
-	r.HandleFunc("/api/reviews/:tm", apiReviews)
-
-	r.Handle("/dist/*file", http.StripPrefix("/dist/", http.FileServer(http.Dir("./dist"))))
+	r.HandleFunc("/api/reviews/{tm}", apiReviews)
+	r.HandleFunc("/", home)
+	r.HandleFunc("/{name}", home)
+	r.HandleFunc("/{category}/{name}", home)
 
 	log.Printf("Starting server on %s", port)
 
