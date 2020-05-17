@@ -36,7 +36,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 	dir := muxie.GetParam(w, "category")
 	name := muxie.GetParam(w, "name")
 
-
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
@@ -69,10 +68,10 @@ func home(w http.ResponseWriter, r *http.Request) {
 	meta := map[string]string{
 		"ogTitle":       h,
 		"ogDescription": p,
-		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + h + ".png",
+		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
 		"ogImageWidth":  "1200",
 		"ogImageHeight": "628",
-		"ogUrl":         "https://www.basehairdressing.com/" + h,
+		"ogUrl":         "https://www.basehairdressing.com/" + name,
 		"version":       v,
 	}
 
@@ -80,6 +79,20 @@ func home(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 }
+
+func GetText(str string, start string, end string) (result string) {
+	s := strings.Index(str, start)
+	if s == -1 {
+		return
+	}
+	s += len(start)
+	e := strings.Index(str[s:], end)
+	if e == -1 {
+		return
+	}
+	return str[s : s+e]
+}
+
 
 // api
 
