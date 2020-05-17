@@ -4,15 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	strip "github.com/grokify/html-strip-tags-go"
 	"github.com/kataras/muxie"
 	"github.com/mailgun/mailgun-go/v3"
-	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
-	"path/filepath"
 	"strings"
 	"time"
 )
@@ -36,6 +33,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	dir := muxie.GetParam(w, "category")
 	name := muxie.GetParam(w, "name")
 
+<<<<<<< HEAD
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
@@ -75,6 +73,13 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"version":       v,
 	}
 
+=======
+	meta := getMeta(dir, name)
+
+	// Generate version number for scripts and css
+	rand.Seed(time.Now().UnixNano())
+
+>>>>>>> parent of 530afaa... Reverted the code
 	if err := tpl.Execute(w, meta); err != nil {
 		panic(err)
 	}
