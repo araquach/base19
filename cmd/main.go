@@ -63,8 +63,8 @@ func main() {
 	r.HandleFunc("/api/models", apiModel)
 	r.HandleFunc("/api/reviews/{tm}", apiReviews)
 
-	r.HandleFunc("/{name}", home)
 	r.HandleFunc("/{category}/{name}", home)
+	r.HandleFunc("/{name}", home)
 	r.HandleFunc("/", home)
 
 
