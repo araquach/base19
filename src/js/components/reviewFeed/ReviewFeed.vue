@@ -16,7 +16,7 @@
         data() {
 
             return {
-                currentReviewIndex: 0,
+                currentReviewIndex: 10,
                 intervalId: null,
                 allReviews: []
             }
