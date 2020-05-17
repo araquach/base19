@@ -32,8 +32,10 @@ func home(w http.ResponseWriter, r *http.Request) {
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
+	var h, p string
+
 	vars := mux.Vars(r)
-	dir :=  vars["category"]
+	dir := vars["category"]
 	name := vars["name"]
 
 	if name == "" {
@@ -44,13 +46,23 @@ func home(w http.ResponseWriter, r *http.Request) {
 		dir = name
 	}
 
-	db := dbConn()
-	m := MetaInfo{}
-	db.Where("page = ?", name).First(&m)
-	db.Close()
+	if dir == "team" {
+		db := dbConn()
+		m := TeamMember{}
+		db.Where("slug = ?", name).First(&m)
+		db.Close()
 
-	h := m.Title
-	p := m.Text
+		h = m.FirstName + " " + m.LastName
+		p = m.Para1
+	} else {
+		db := dbConn()
+		m := MetaInfo{}
+		db.Where("page = ?", name).First(&m)
+		db.Close()
+
+		h = m.Title
+		p = m.Text
+	}
 
 	v := string(rand.Intn(30))
 
