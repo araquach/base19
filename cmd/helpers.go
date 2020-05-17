@@ -67,13 +67,11 @@ func getMetaFromDB(n string) (h TeamMember) {
 func getMeta(d, n string) (m map[string]string) {
 	var h, p string
 
-	if d != "team" {
-		h, p = getMetaInfoFromVue(d, n)
-	} else {
-		r := getMetaFromDB(n)
-		h = r.FirstName
-		p = r.Para1
-	}
+	h, p = getMetaInfoFromVue(d, n)
+
+	//r := getMetaFromDB(n)
+	//h = r.FirstName
+	//p = r.Para1
 
 	v := string(rand.Intn(30))
 
