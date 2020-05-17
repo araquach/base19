@@ -55,16 +55,19 @@ func main() {
 	flag.Parse()
 	r := mux.NewRouter()
 
-	r.PathPrefix("/dist/").Handler(http.StripPrefix("/dist/", http.FileServer(http.Dir(dir))))
 	r.HandleFunc("/api/team", apiTeam)
 	r.HandleFunc("/api/team/{slug}", apiTeamMember)
 	r.HandleFunc("/api/sendMessage", apiSendMessage)
 	r.HandleFunc("/api/joinus", apiJoinus)
 	r.HandleFunc("/api/models", apiModel)
 	r.HandleFunc("/api/reviews/{tm}", apiReviews)
-	r.HandleFunc("/", home)
-	r.HandleFunc("/{name}", home)
+
+	r.PathPrefix("/dist/").Handler(http.StripPrefix("/dist/", http.FileServer(http.Dir(dir))))
 	r.HandleFunc("/{category}/{name}", home)
+	r.HandleFunc("/{name}", home)
+	r.HandleFunc("/", home)
+
+
 
 	log.Printf("Starting server on %s", port)
 
