@@ -5,11 +5,14 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
+	strip "github.com/grokify/html-strip-tags-go"
 	"github.com/mailgun/mailgun-go/v3"
+	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 )
@@ -27,6 +30,19 @@ func forceSsl(next http.Handler) http.Handler {
 	})
 }
 
+func GetText(str string, start string, end string) (result string) {
+	s := strings.Index(str, start)
+	if s == -1 {
+		return
+	}
+	s += len(start)
+	e := strings.Index(str[s:], end)
+	if e == -1 {
+		return
+	}
+	return str[s : s+e]
+}
+
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	// Generate version number for scripts and css
@@ -37,7 +53,41 @@ func home(w http.ResponseWriter, r *http.Request) {
 	dir :=  vars["category"]
 	name := vars["name"]
 
-	meta := getMeta(dir, name)
+	if name == "" {
+		name = "home"
+	}
+
+	if dir == "" {
+		dir = name
+	}
+
+	fname := "/" + name + "Info.vue"
+	path := filepath.Join(dir)
+
+	file := "src/js/components/" + path + fname
+
+	info, err := ioutil.ReadFile(file)
+	if err != nil {
+		fmt.Println("File reading error", err)
+	}
+
+	text := string(info)
+
+	h := GetText(text, "<h1 class=\"title\">", "</h1>")
+	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
+	p = strip.StripTags(p)
+
+	v := string(rand.Intn(30))
+
+	meta := map[string]string{
+		"ogTitle":       h,
+		"ogDescription": p,
+		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
+		"ogImageWidth":  "1200",
+		"ogImageHeight": "628",
+		"ogUrl":         "https://www.basehairdressing.com/" + name,
+		"version":       v,
+	}
 
 	if err := tpl.Execute(w, meta); err != nil {
 		panic(err)
