@@ -51,7 +51,7 @@ func main() {
 		panic(err)
 	}
 
-	flag.StringVar(&dir, "dir", "dist", "the directory to serve files from. Defaults to the current dir")
+	flag.StringVar(&dir, "dir", "dist", "the directory to serve files from")
 	flag.Parse()
 	r := mux.NewRouter()
 

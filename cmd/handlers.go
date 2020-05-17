@@ -29,15 +29,15 @@ func forceSsl(next http.Handler) http.Handler {
 
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
+	// Generate version number for scripts and css
+	rand.Seed(time.Now().UnixNano())
+
 	vars := mux.Vars(r)
 
 	dir :=  vars["category"]
 	name := vars["name"]
 
 	meta := getMeta(dir, name)
-	
-	// Generate version number for scripts and css
-	rand.Seed(time.Now().UnixNano())
 
 	if err := tpl.Execute(w, meta); err != nil {
 		panic(err)
