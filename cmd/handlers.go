@@ -4,12 +4,15 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	strip "github.com/grokify/html-strip-tags-go"
 	"github.com/kataras/muxie"
 	"github.com/mailgun/mailgun-go/v3"
+	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
+	"path/filepath"
 	"strings"
 	"time"
 )
@@ -33,10 +36,45 @@ func home(w http.ResponseWriter, r *http.Request) {
 	dir := muxie.GetParam(w, "category")
 	name := muxie.GetParam(w, "name")
 
-	meta := getMeta(dir, name)
 
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
+
+	if name == "" {
+		name = "home"
+	}
+
+	if dir == "" {
+		dir = name
+	}
+
+	fname := "/" + name + "Info.vue"
+	path := filepath.Join(dir)
+
+	file := "src/js/components/" + path + fname
+
+	info, err := ioutil.ReadFile(file)
+	if err != nil {
+		fmt.Println("File reading error", err)
+	}
+
+	text := string(info)
+
+	h := GetText(text, "<h1 class=\"title\">", "</h1>")
+	p := GetText(text, "<p class=\"is-size-5\">", "</p>")
+	p = strip.StripTags(p)
+
+	v := string(rand.Intn(30))
+
+	meta := map[string]string{
+		"ogTitle":       h,
+		"ogDescription": p,
+		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + h + ".png",
+		"ogImageWidth":  "1200",
+		"ogImageHeight": "628",
+		"ogUrl":         "https://www.basehairdressing.com/" + h,
+		"version":       v,
+	}
 
 	if err := tpl.Execute(w, meta); err != nil {
 		panic(err)
