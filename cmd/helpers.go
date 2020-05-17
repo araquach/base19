@@ -26,6 +26,10 @@ func getMetaInfoFromVue(d, n string) (h, p string){
 	dir := d
 	name := n
 
+	if name == "" {
+		name = "home"
+	}
+
 	if dir == "" {
 		dir = name
 	}
