@@ -42,11 +42,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		name = "home"
 	}
 
-	if dir == "" {
-		dir = name
-	}
-
-	if dir == "team" {
+	if dir == "team" && len(name)  > 0 {
 		db := dbConn()
 		m := TeamMember{}
 		db.Where("slug = ?", name).First(&m)
