@@ -10,6 +10,7 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
+	path2 "path"
 	"strings"
 	"time"
 )
@@ -60,6 +61,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 		p = m.Text
 	}
 
+	path := path2.Join(dir, name)
+
 	v := string(rand.Intn(30))
 
 	meta := map[string]string{
@@ -68,7 +71,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
 		"ogImageWidth":  "1200",
 		"ogImageHeight": "628",
-		"ogUrl":         "https://www.basehairdressing.com/" + name,
+		"ogUrl":         "https://www.basehairdressing.com/" + path,
 		"version":       v,
 	}
 
