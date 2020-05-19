@@ -50,7 +50,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		db.Close()
 
 		h = m.FirstName + " " + m.LastName
-		p = m.Para1
+		p = m.Para1 + " " + m.Para2
 	} else {
 		db := dbConn()
 		m := MetaInfo{}
