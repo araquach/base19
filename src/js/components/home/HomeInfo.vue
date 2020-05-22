@@ -17,7 +17,7 @@
                     <div class="column is-2 is-offset-3">
                         <figure class="image is-square">
                             <a href="https://www.instagram.com/basehairdressing/">
-                                <img src="/dist/img/home/social/i" alt="Instagram">
+                                <img src="/dist/img/home/social/Insta2.svg" alt="Instagram">
                             </a>
                         </figure>
                     </div>
