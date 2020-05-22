@@ -13,7 +13,29 @@
                 <h2 class="subtitle is-size-4 has-text-white has-text-centered">
                     A hair academy for the next generation of super skilled stylists
                 </h2>
-
+                <div class="columns social">
+                    <div class="column is-2 is-offset-3">
+                        <figure class="image is-square">
+                            <a href="https://www.instagram.com/basehairdressing/">
+                                <img src="/dist/img/home/social/insta.svg" alt="Instagram">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="column is-2">
+                        <figure class="image is-square">
+                            <a href="https://www.facebook.com/basehairdressing/">
+                                <img src="/dist/img/home/social/fb.svg" alt="Facebook">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="column is-2">
+                        <figure class="image is-square">
+                            <a href="https://www.pinterest.co.uk/basehairdressing/">
+                                <img src="/dist/img/home/social/pinterest.svg" alt="Pinterest">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="has-text-right">

@@ -106,6 +106,16 @@ section.section {
   background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
   background-size: cover;
 
+  .social {
+    margin-top: 3rem;
+    img {
+      opacity: .7;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
   figure {
     margin-bottom: 3rem;
   }
