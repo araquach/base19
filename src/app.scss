@@ -191,6 +191,10 @@ section.section {
   right: 3rem;
   width: 18rem;
   height: auto;
+  @include from($desktop) {
+    bottom: 3rem;
+  }
+
 
   p {
     font-size: .5rem;
