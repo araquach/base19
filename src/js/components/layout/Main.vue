@@ -1,6 +1,5 @@
 <template>
     <div>
-        <Main/>
         <Home/>
         <About/>
         <Team/>
@@ -12,7 +11,6 @@
     </div>
 </template>
 <script>
-    import Main from '../layout/Main'
     import Home from '../home/HomeInfo'
     import About from '../about/About'
     import Team from '../team/TeamInfo'
@@ -24,7 +22,6 @@
 
     export default {
         components: {
-            Main,
             Home,
             About,
             Team,
