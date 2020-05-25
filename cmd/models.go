@@ -55,3 +55,12 @@ type MetaInfo struct {
 	Title string `json:"title"`
 	Text  string `json:"text"`
 }
+
+type Blog struct {
+	Slug   string `json:"slug"`
+	Date   string `json:"date"`
+	Title  string `json:"title"`
+	Intro  string `json:"intro"`
+	Body   string `json:"body"`
+	Author string `json:"author"`
+}

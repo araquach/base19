@@ -4,6 +4,8 @@ import AboutInfo from "./components/about/AboutInfo"
 import TeamInfo from './components/team/TeamInfo'
 import TeamAll from "./components/team/TeamAll"
 import TeamDetail from "./components/team/TeamDetail"
+import BlogInfo from "./components/blog/BlogInfo"
+import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
@@ -40,6 +42,17 @@ export const routes = [
         path: '/team/:slug',
         name: 'team-detail',
         component: TeamDetail,
+        props: true
+    },
+    {
+        path: '/blog/info',
+        name: 'blog-info',
+        component: BlogInfo
+    },
+    {
+        path: '/blog/:slug',
+        name: 'blog-post',
+        component: BlogPost,
         props: true
     },
     {

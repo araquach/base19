@@ -1,0 +1,13 @@
+This is another great blog
+2020-01-18
+Nat
+
+Welcome to this latest blog post
+
+I've worked hard at creating this so please take the time to read it
+
+*This paragraph is in italics to grab your attention*
+
+**This one is bold for even more emphasis**
+
+Thankyou for your time

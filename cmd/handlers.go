@@ -6,11 +6,14 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"github.com/mailgun/mailgun-go/v3"
+	"github.com/russross/blackfriday"
+	"io/ioutil"
 	"log"
 	"math/rand"
 	"net/http"
 	"os"
 	path2 "path"
+	"path/filepath"
 	"strings"
 	"time"
 )
@@ -104,7 +107,7 @@ func apiTeamMember(w http.ResponseWriter, r *http.Request) {
 	param := vars["slug"]
 
 	db := dbConn()
-	tm := []TeamMember{}
+	tm := TeamMember{}
 	db.Where("slug = ?", param).First(&tm)
 	db.Close()
 
@@ -228,4 +231,68 @@ func apiModel(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 	return
+}
+
+func apiBlogPost(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	blog := Blog{}
+
+	params := mux.Vars(r)
+
+	data, err := ioutil.ReadFile("blogs/" + params["slug"] + ".txt")
+	if err != nil {
+		fmt.Println("File reading error", err)
+		return
+	}
+	lines := strings.Split(string(data), "\n")
+	title := string(lines[0])
+	date := string(lines[1])
+	author := string(lines[2])
+	intro := string(lines[4])
+	text := strings.Join(lines[4:], "\n")
+	body := blackfriday.MarkdownBasic([]byte(text))
+	slug := params["slug"]
+
+	blog = Blog{Slug: slug, Date: date, Title: title, Intro: intro, Author: author, Body: string(body)}
+
+	json, err := json.Marshal(blog)
+	if err != nil {
+		log.Println(err)
+	}
+	w.Write(json)
+}
+
+func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	blogs := []Blog{}
+
+	files, err := filepath.Glob("blogs/*")
+	if err != nil {
+		log.Fatal(err)
+	}
+	for _, f := range files {
+		slug := strings.Replace(f, "blogs/", "", -1)
+		slug = strings.Replace(slug, ".txt", "", -1)
+		data, err := ioutil.ReadFile(f)
+		if err != nil {
+			fmt.Println("File reading error", err)
+			return
+		}
+		lines := strings.Split(string(data), "\n")
+		title := string(lines[0])
+		date := string(lines[1])
+		author := string(lines[2])
+		intro := string(lines[4])
+		text := strings.Join(lines[4:7], "\n")
+		body := blackfriday.MarkdownBasic([]byte(text))
+
+		blogs = append(blogs, Blog{Slug: slug, Date: date, Title: title, Intro: intro, Author: author, Body: string(body)})
+	}
+	json, err := json.Marshal(blogs)
+	if err != nil {
+		log.Println(err)
+	}
+	w.Write(json)
 }

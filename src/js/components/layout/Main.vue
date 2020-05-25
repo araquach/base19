@@ -5,7 +5,7 @@
         <Team/>
         <Offers/>
         <Joinus/>
-        <!--        <Blog/>-->
+        <Blog/>
         <Models/>
         <Contact/>
     </div>

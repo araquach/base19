@@ -1,56 +1,46 @@
 <template>
-    <section id="blog" class="section blog-info hero is-fullheight is-dark">
-        <div class="tile is-ancestor">
-            <div class="tile is-vertical is-8">
-                <div class="tile">
-                    <div class="tile is-parent is-vertical">
-                        <article class="tile is-child notification is-primary">
-                            <p class="title">Vertical...</p>
-                            <p class="subtitle">Top tile</p>
-                        </article>
-                        <article class="tile is-child notification is-warning">
-                            <p class="title">...tiles</p>
-                            <p class="subtitle">Bottom tile</p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child notification is-info">
-                            <p class="title">Middle tile</p>
-                            <p class="subtitle">With an image</p>
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/640x480.png">
-                            </figure>
-                        </article>
-                    </div>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
-                        <p class="title">Wide tile</p>
-                        <p class="subtitle">Aligned with the right tile</p>
-                        <div class="content">
-                            <!-- Content -->
+    <section class="section blog-info hero is-fullheight is-dark">
+        <h1 class="title is-3">The Base Blog</h1>
+        <p>All the latest news from Base</p>
+        <div class="columns">
+            <div class="column is-8-desktop">
+                <div v-for="blog in blogPosts">
+                    <router-link :to="{ name: 'blog-post', params: { slug: blog.slug } }">
+                        <div :id="blog.slug">
+                            <h1 class="title is-4">{{blog.title}}</h1>
+                            <div v-html="blog.body">
+                                {{blog.body}}
+                            </div>
+                            <p class="is-size-7">{{blog.author}}</p>
+                            <p class="is-size-7">{{blog.date}}</p>
                         </div>
-                    </article>
+                    </router-link>
                 </div>
-            </div>
-            <div class="tile is-parent">
-                <article class="tile is-child notification is-success">
-                    <div class="content">
-                        <p class="title">Tall tile</p>
-                        <p class="subtitle">With even more content</p>
-                        <div class="content">
-                            <!-- Content -->
-                        </div>
-                    </div>
-                </article>
             </div>
         </div>
-        <div class="level">
+        <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <a @click="$router.go(-1)" class="button">back</a>
+                    <router-link :to="{ name: 'blog' }" class="button">Back</router-link>
                 </div>
             </div>
         </div>
     </section>
 </template>
+
+<script>
+    export default {
+        data() {
+            return {
+                blogPosts: []
+            }
+        },
+
+        mounted() {
+            axios.get("/api/blogposts").then(response => this.blogPosts = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
+        }
+    }
+</script>

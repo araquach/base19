@@ -33,9 +33,10 @@
         },
 
         mounted() {
-            axios
-                .get('/api/team/' + this.$route.params.slug)
-                .then(r => this.teamMember = r.data[0])
+            axios.get(`/api/team/${this.$route.params.slug}`).then(response => this.teamMember = response.data)
+                .catch(error => {
+                    console.log(error)
+                })
         },
 
         computed: {
