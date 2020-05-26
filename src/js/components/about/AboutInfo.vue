@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="section about-info hero is-fullheight is-dark">
+    <section class="section about-info hero is-fullheight is-dark">
         <div class="columns is-vcentered">
             <div class="column is-5-desktop">
                 <h1 class="title">It's All about the Base</h1>

@@ -1,5 +1,5 @@
 <template>
-    <section id="joinus" class="section joinus-info hero is-fullheight is-dark">
+    <section class="section joinus-info hero is-fullheight is-dark">
         <div class="columns">
             <div class="section column is-6">
                 <h1 class="title">Join Base</h1>

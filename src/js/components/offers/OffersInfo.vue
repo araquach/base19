@@ -1,5 +1,5 @@
 <template>
-    <section id="offers" class="section offers-info hero is-fullheight is-dark">
+    <section class="section offers-info hero is-fullheight is-dark">
         <div class="columns is-vcentered">
             <div class="column is-8-desktop">
                 <h1 class="title">Special Offers</h1>

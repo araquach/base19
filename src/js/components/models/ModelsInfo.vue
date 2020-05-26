@@ -1,5 +1,5 @@
 <template>
-    <section id="models" class="section models-info hero is-fullheight is-dark">
+    <section class="section models-info hero is-fullheight is-dark">
         <div class="columns">
             <div class="section column is-6">
                 <h1 class="title">We need models!</h1>

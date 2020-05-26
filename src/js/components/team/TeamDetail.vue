@@ -1,5 +1,5 @@
 <template>
-    <div id="team-modal" class="section columns has-background-black">
+    <div class="section columns has-background-black">
         <div class="section column">
             <figure class="image is-4by5">
                 <img :src="staffMontage" :alt="teamMember.first_name">

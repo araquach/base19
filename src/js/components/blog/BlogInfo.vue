@@ -1,5 +1,5 @@
 <template>
-    <section id="blog" class="section blog-info hero is-fullheight is-dark">
+    <section class="section blog-info hero is-fullheight is-dark">
         <div class="tile is-ancestor">
             <div class="tile is-vertical is-8">
                 <div class="tile">

@@ -1,13 +1,12 @@
 <template>
     <div>
-        <Home/>
-        <About/>
-        <Team/>
-        <Offers/>
-        <Joinus/>
-        <!--        <Blog/>-->
-        <Models/>
-        <Contact/>
+        <Home id="home"/>
+        <About id="about"/>
+        <Team id="team"/>
+        <Offers id="offers"/>
+        <Joinus id="joinus"/>
+        <Models id="models"/>
+        <Contact id="contact"/>
     </div>
 </template>
 <script>
@@ -16,7 +15,6 @@
     import Team from '../team/TeamInfo'
     import Offers from '../offers/Offers'
     import Joinus from '../joinus/Joinus'
-    import Blog from '../blog/Blog'
     import Models from '../models/Models'
     import Contact from '../contact/Contact'
 
@@ -27,7 +25,6 @@
             Team,
             Offers,
             Joinus,
-            Blog,
             Models,
             Contact
         }

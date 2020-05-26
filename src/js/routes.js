@@ -27,6 +27,11 @@ export const routes = [
         component: AboutInfo
     },
     {
+        path: '/info',
+        name: 'about',
+        component: AboutInfo
+    },
+    {
         path: '/teaminfo',
         name: 'team-info',
         component: TeamInfo

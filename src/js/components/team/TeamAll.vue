@@ -1,5 +1,5 @@
 <template>
-    <section id="team" class="section team-info hero is-fullheight is-dark">
+    <section class="section team-info hero is-fullheight is-dark">
         <h1 class="title is-3">The Base Team</h1>
 
         <div class="columns is-multiline">
