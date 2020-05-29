@@ -24,7 +24,7 @@
         </div>
         <div class="columns is-vcentered">
             <div class="column is-5-desktop">
-                <p>The Base Team comprises of <strong>Apprentices, Junior Stylists and Graduates</strong> all offering cutting edge services at a fraction of the cost! All services are fully supervised by Senior Stylists and all of our usual high quality products are used.</p>
+                <p>The Base Team comprises <strong>Apprentices, Junior Stylists and Graduates</strong> all offering cutting edge services at a fraction of the cost! All services are fully supervised by Senior Stylists and all of our usual high quality products are used.</p>
                 <p class="is-size-5">If you're looking for  a new look (without having to break the bank) then book into Base for a free consultation to see what our team can do for you!</p>
                 <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">Book Here</a>
             </div>
