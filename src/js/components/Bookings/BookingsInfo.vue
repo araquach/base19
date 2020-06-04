@@ -1,7 +1,7 @@
 <template>
     <section class="section bookings-info hero is-fullheight is-dark">
         <div class="columns">
-            <div class="section column is-7 is-offset-5">
+            <div class="section column is-6 is-offset-6">
                 <div class="columns is-mobile">
                     <div class="column is-6">
                         <figure class="image">
