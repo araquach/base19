@@ -55,3 +55,12 @@ type MetaInfo struct {
 	Title string `json:"title"`
 	Text  string `json:"text"`
 }
+
+type Booking struct {
+	ID uint `json:"id" gorm: "primary_key"`
+	Salon uint `json:"salon"`
+	FirstName string `json:"first_name"`
+	LastName string `json:"last_name"`
+	Mobile string `json:"mobile"`
+	Stylist string `json:"stylist"`
+}

@@ -42,7 +42,7 @@ func main() {
 
 	db := dbConn()
 	db.LogMode(true)
-	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{}, &Review{}, &MetaInfo{})
+	db.AutoMigrate(&TeamMember{}, &JoinusApplicant{}, &ModelApplicant{}, &Review{}, &MetaInfo{}, &Booking{})
 	db.Close()
 
 	tpl = template.Must(template.ParseFiles(
@@ -62,6 +62,7 @@ func main() {
 	r.HandleFunc("/api/joinus", apiJoinus)
 	r.HandleFunc("/api/models", apiModel)
 	r.HandleFunc("/api/reviews/{tm}", apiReviews)
+	r.HandleFunc("/api/bookings", apiBookings)
 
 	r.HandleFunc("/{category}/{name}", home)
 	r.HandleFunc("/{name}", home)

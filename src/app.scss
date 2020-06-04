@@ -181,6 +181,15 @@ section.section {
   background-size: cover;
 }
 
+.bookings-info {
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.65)), url("/dist/img/bgrounds/bookings.jpg") center top no-repeat;
+  background-size: cover;
+  @include until($tablet) {
+    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("/dist/img/bgrounds/bookings.jpg") -20rem top no-repeat;
+    background-size: cover;
+  }
+}
+
 
 
 /* Review Feed */

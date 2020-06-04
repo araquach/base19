@@ -229,3 +229,20 @@ func apiModel(w http.ResponseWriter, r *http.Request) {
 	}
 	return
 }
+
+func apiBookings(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+
+	var data Booking
+	err := decoder.Decode(&data)
+	if err != nil {
+		panic(err)
+	}
+
+	db := dbConn()
+	db.Create(&data)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return
+}

@@ -8,6 +8,7 @@ import OffersInfo from "./components/offers/OffersInfo"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
+import BookingsInfo from "./components/Bookings/BookingsInfo"
 
 
 export const routes = [
@@ -66,5 +67,10 @@ export const routes = [
         path: '/contact',
         name: 'contact',
         component: ContactInfo
+    },
+    {
+        path: '/bookings',
+        name: 'bookings',
+        component: BookingsInfo
     }
 ]
