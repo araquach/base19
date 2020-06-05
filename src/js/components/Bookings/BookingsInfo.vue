@@ -79,7 +79,7 @@
                         </div>
                     </form>
                     <div v-if="submitStatus === 'OK'">
-                        <p class="is-size-4 has-text-primary">Thanks for registering. Your stylist will be in touch soon to get you booked in. See you soon!</p>
+                        <p class="is-size-4 has-text-primary">Thanks for registering. Your stylist will be in touch soon to get you booked in. We look forward to seeing you!</p>
                     </div>
                 </div>
             </div>

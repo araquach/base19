@@ -18,17 +18,17 @@ export const routes = [
         component: Main
     },
     {
+        path: '/info',
+        name: 'main',
+        component: Main
+    },
+    {
         path: '/home',
         name: 'home',
         component: HomeInfo
     },
     {
         path: '/about',
-        name: 'about',
-        component: AboutInfo
-    },
-    {
-        path: '/info',
         name: 'about',
         component: AboutInfo
     },
