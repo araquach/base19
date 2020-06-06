@@ -242,7 +242,9 @@ func apiBookings(w http.ResponseWriter, r *http.Request) {
 	db := dbConn()
 	db.Create(&data)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
+	db.Close()
 	return
+
 }
