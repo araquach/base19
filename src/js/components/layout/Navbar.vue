@@ -27,9 +27,12 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">
-                        <strong>Book Now</strong>
-                    </a>
+<!--                    <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">-->
+<!--                        <strong>Book Now</strong>-->
+<!--                    </a>-->
+                    <b-navbar-item tag="router-link" to="/bookings" class="button is-primary">
+                        Bookings
+                    </b-navbar-item>
                     <b-navbar-item tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
                         Contact Us
                     </b-navbar-item>
