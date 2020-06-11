@@ -12,11 +12,13 @@ import (
 	"math/rand"
 	"net/http"
 	"os"
-	path2 "path"
-	"path/filepath"
+	"path"
+	"sort"
 	"strings"
 	"time"
 )
+
+type ByModTime []os.FileInfo
 
 func forceSsl(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -64,7 +66,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 		p = m.Text
 	}
 
-	path := path2.Join(dir, name)
+	path := path.Join(dir, name)
 
 	v := string(rand.Intn(30))
 
@@ -233,6 +235,18 @@ func apiModel(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
+func (fis ByModTime) Len() int {
+	return len(fis)
+}
+
+func (fis ByModTime) Swap(i, j int) {
+	fis[i], fis[j] = fis[j], fis[i]
+}
+
+func (fis ByModTime) Less(i, j int) bool {
+	return fis[i].ModTime().After(fis[j].ModTime())
+}
+
 func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
@@ -249,12 +263,13 @@ func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 	title := string(lines[0])
 	date := string(lines[1])
 	author := string(lines[2])
-	intro := string(lines[4])
-	text := strings.Join(lines[4:], "\n")
+	image := string(lines[3])
+	intro := string(lines[5])
+	text := strings.Join(lines[5:], "\n")
 	body := blackfriday.MarkdownBasic([]byte(text))
 	slug := params["slug"]
 
-	blog = Blog{Slug: slug, Date: date, Title: title, Intro: intro, Author: author, Body: string(body)}
+	blog = Blog{Slug: slug, Date: date, Title: title, Image: image, Intro: intro, Author: author, Body: string(body)}
 
 	json, err := json.Marshal(blog)
 	if err != nil {
@@ -268,27 +283,29 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 
 	blogs := []Blog{}
 
-	files, err := filepath.Glob("blogs/*")
-	if err != nil {
-		log.Fatal(err)
-	}
-	for _, f := range files {
-		slug := strings.Replace(f, "blogs/", "", -1)
-		slug = strings.Replace(slug, ".txt", "", -1)
-		data, err := ioutil.ReadFile(f)
+	f, _ := os.Open("./blogs")
+	fis, _ := f.Readdir(-1)
+	f.Close()
+	sort.Sort(ByModTime(fis))
+	fis = fis[0:10]
+
+	for _, fi := range fis {
+		data, err := ioutil.ReadFile("./blogs/" + fi.Name())
 		if err != nil {
 			fmt.Println("File reading error", err)
 			return
 		}
+		slug := strings.Split(fi.Name(), ".")
 		lines := strings.Split(string(data), "\n")
 		title := string(lines[0])
 		date := string(lines[1])
 		author := string(lines[2])
-		intro := string(lines[4])
+		image := string(lines[3])
+		intro := string(lines[5])
 		text := strings.Join(lines[4:7], "\n")
 		body := blackfriday.MarkdownBasic([]byte(text))
 
-		blogs = append(blogs, Blog{Slug: slug, Date: date, Title: title, Intro: intro, Author: author, Body: string(body)})
+		blogs = append(blogs, Blog{Slug: slug[0], Date: date, Title: title, Image: image, Intro: intro, Author: author, Body: string(body)})
 	}
 	json, err := json.Marshal(blogs)
 	if err != nil {

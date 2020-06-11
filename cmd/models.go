@@ -60,6 +60,7 @@ type Blog struct {
 	Slug   string `json:"slug"`
 	Date   string `json:"date"`
 	Title  string `json:"title"`
+	Image  string `json:"image"`
 	Intro  string `json:"intro"`
 	Body   string `json:"body"`
 	Author string `json:"author"`

@@ -18118,8 +18118,8 @@ var render = function() {
             _vm._v(" "),
             _c(
               "router-link",
-              { staticClass: "button", attrs: { to: "/blog/info" } },
-              [_vm._v("Blog posts")]
+              { staticClass: "button", attrs: { to: { name: "blog-info" } } },
+              [_vm._v("Read more")]
             )
           ],
           1
@@ -18217,7 +18217,7 @@ var render = function() {
             [
               _c(
                 "router-link",
-                { staticClass: "button", attrs: { to: { name: "blog" } } },
+                { staticClass: "button", attrs: { to: { name: "home" } } },
                 [_vm._v("Back")]
               )
             ],
@@ -39556,8 +39556,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-macbook/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

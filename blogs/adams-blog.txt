@@ -1,7 +1,0 @@
-Adams Blog Post
-2020-02-10
-Adam
-
-This is a new blog post for you guys to read
-
-It's written in Markdown

@@ -21,7 +21,7 @@
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">
-                    <router-link :to="{ name: 'blog' }" class="button">Back</router-link>
+                    <router-link :to="{ name: 'home' }" class="button">Back</router-link>
                 </div>
             </div>
         </div>
