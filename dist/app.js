@@ -1967,6 +1967,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1995,6 +2004,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -18154,14 +18170,19 @@ var render = function() {
     "section",
     { staticClass: "section blog-info hero is-fullheight is-dark" },
     [
-      _c("h1", { staticClass: "title is-3" }, [_vm._v("The Base Blog")]),
+      _c("h1", { staticClass: "title is-2" }, [_vm._v("The Base Blog")]),
       _vm._v(" "),
-      _c("p", [_vm._v("All the latest news from Base")]),
+      _c("h1", { staticClass: "subtitle is-4" }, [
+        _vm._v("All the latest news from the Base Team")
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _c("br"),
       _vm._v(" "),
       _c("div", { staticClass: "columns" }, [
         _c(
           "div",
-          { staticClass: "column is-8-desktop" },
+          { staticClass: "column is-10" },
           _vm._l(_vm.blogPosts, function(blog) {
             return _c(
               "div",
@@ -18174,33 +18195,50 @@ var render = function() {
                     }
                   },
                   [
-                    _c("div", { attrs: { id: blog.slug } }, [
-                      _c("h1", { staticClass: "title is-4" }, [
-                        _vm._v(_vm._s(blog.title))
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { domProps: { innerHTML: _vm._s(blog.body) } },
-                        [
-                          _vm._v(
-                            "\n                            " +
-                              _vm._s(blog.body) +
-                              "\n                        "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "is-size-7" }, [
-                        _vm._v(_vm._s(blog.author))
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "is-size-7" }, [
-                        _vm._v(_vm._s(blog.date))
-                      ])
-                    ])
+                    _c(
+                      "div",
+                      {
+                        staticClass: "columns has-text-white",
+                        attrs: { id: blog.slug }
+                      },
+                      [
+                        _c("div", { staticClass: "column is-4" }, [
+                          _c("figure", { staticClass: "image" }, [
+                            _c("img", { attrs: { src: blog.image } })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "column" }, [
+                          _c("h1", { staticClass: "title is-4" }, [
+                            _vm._v(_vm._s(blog.title))
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            { domProps: { innerHTML: _vm._s(blog.body) } },
+                            [
+                              _vm._v(
+                                "\n                                " +
+                                  _vm._s(blog.body) +
+                                  "\n                            "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "is-size-7" }, [
+                            _vm._v("By " + _vm._s(blog.author))
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "is-size-7" }, [
+                            _vm._v(_vm._s(blog.date))
+                          ])
+                        ])
+                      ]
+                    )
                   ]
-                )
+                ),
+                _vm._v(" "),
+                _c("hr")
               ],
               1
             )
@@ -18211,18 +18249,20 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
-          _c(
-            "div",
-            { staticClass: "level-item" },
-            [
-              _c(
-                "router-link",
-                { staticClass: "button", attrs: { to: { name: "home" } } },
-                [_vm._v("Back")]
-              )
-            ],
-            1
-          )
+          _c("div", { staticClass: "level-item" }, [
+            _c(
+              "a",
+              {
+                staticClass: "button",
+                on: {
+                  click: function($event) {
+                    return _vm.$router.go(-1)
+                  }
+                }
+              },
+              [_vm._v("back")]
+            )
+          ])
         ])
       ])
     ]
@@ -18254,32 +18294,56 @@ var render = function() {
     "section",
     { staticClass: "section blog-info hero is-fullheight is-dark" },
     [
-      _c("h1", { staticClass: "title is-3" }, [
-        _vm._v(_vm._s(_vm.blogpost.title))
-      ]),
-      _vm._v(" "),
       _c(
         "div",
-        {
-          staticClass: "column is-7",
-          domProps: { innerHTML: _vm._s(_vm.blogpost.body) }
-        },
-        [_vm._v("\n        " + _vm._s(_vm.blogpost.body) + "\n    ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "router-link",
-        { attrs: { to: { name: "blog-info", hash: "#" + _vm.blogpost.slug } } },
-        [_vm._v("Back to all the blogs")]
-      ),
-      _vm._v(" "),
-      _c("p", { staticClass: "is-size-7" }, [
-        _vm._v("Written by " + _vm._s(_vm.blogpost.author)),
-        _c("br"),
-        _vm._v(_vm._s(_vm.blogpost.date))
-      ])
-    ],
-    1
+        { staticClass: "column is-8" },
+        [
+          _c("h1", { staticClass: "title is-3" }, [
+            _vm._v(_vm._s(_vm.blogpost.title))
+          ]),
+          _vm._v(" "),
+          _c("figure", { staticClass: "image is-square" }, [
+            _c("img", { attrs: { src: _vm.blogpost.image } })
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "is-size-5",
+              domProps: { innerHTML: _vm._s(_vm.blogpost.body) }
+            },
+            [
+              _vm._v(
+                "\n            " + _vm._s(_vm.blogpost.body) + "\n        "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "button",
+              attrs: {
+                to: { name: "blog-info", hash: "#" + _vm.blogpost.slug }
+              }
+            },
+            [_vm._v("Back to all the blogs")]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-7" }, [
+            _vm._v("Written by " + _vm._s(_vm.blogpost.author)),
+            _c("br"),
+            _vm._v(_vm._s(_vm.blogpost.date))
+          ])
+        ],
+        1
+      )
+    ]
   )
 }
 var staticRenderFns = []

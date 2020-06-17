@@ -1,11 +1,18 @@
 <template>
     <section class="section blog-info hero is-fullheight is-dark">
-        <h1 class="title is-3">{{ blogpost.title }}</h1>
-        <div v-html="blogpost.body" class="column is-7">
-            {{blogpost.body}}
+        <div class="column is-8">
+            <h1 class="title is-3">{{ blogpost.title }}</h1>
+            <figure class="image is-square">
+                <img :src="blogpost.image">
+            </figure>
+            <br>
+            <div v-html="blogpost.body" class="is-size-5">
+                {{blogpost.body}}
+            </div>
+            <router-link :to="{name: 'blog-info', hash: '#' + blogpost.slug}" class="button">Back to all the blogs</router-link>
+            <br><br>
+            <p class="is-size-7">Written by {{blogpost.author}}<br>{{blogpost.date}}</p>
         </div>
-        <router-link :to="{name: 'blog-info', hash: '#' + blogpost.slug}">Back to all the blogs</router-link>
-        <p class="is-size-7">Written by {{blogpost.author}}<br>{{blogpost.date}}</p>
     </section>
 </template>
 <script>
