@@ -287,7 +287,6 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 	fis, _ := f.Readdir(-1)
 	f.Close()
 	sort.Sort(ByModTime(fis))
-	fis = fis[0:10]
 
 	for _, fi := range fis {
 		data, err := ioutil.ReadFile("./blogs/" + fi.Name())
