@@ -57,10 +57,20 @@ type MetaInfo struct {
 }
 
 type Booking struct {
-	ID uint `json:"id" gorm: "primary_key"`
-	Salon uint `json:"salon"`
+	ID        uint   `json:"id" gorm: "primary_key"`
+	Salon     uint   `json:"salon"`
 	FirstName string `json:"first_name"`
-	LastName string `json:"last_name"`
-	Mobile string `json:"mobile"`
-	Stylist string `json:"stylist"`
+	LastName  string `json:"last_name"`
+	Mobile    string `json:"mobile"`
+	Stylist   string `json:"stylist"`
+}
+
+type Blog struct {
+	Slug   string `json:"slug"`
+	Date   string `json:"date"`
+	Title  string `json:"title"`
+	Image  string `json:"image"`
+	Intro  string `json:"intro"`
+	Body   string `json:"body"`
+	Author string `json:"author"`
 }
