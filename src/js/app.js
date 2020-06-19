@@ -6,11 +6,13 @@ import { routes } from './routes'
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
 import Vuelidate from 'vuelidate'
+import VueMoment from 'vue-moment'
 
 Vue.use(Buefy)
 Vue.use(VueRouter)
 Vue.use(VueScrollTo)
 Vue.use(Vuelidate)
+Vue.use(VueMoment)
 
 window.axios = require('axios')
 

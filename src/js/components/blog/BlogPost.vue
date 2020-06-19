@@ -2,7 +2,7 @@
     <section class="section blog-info hero is-fullheight is-dark">
         <div class="column is-8">
             <h1 class="title is-3">{{ blogpost.title }}</h1>
-            <figure class="image is-square">
+            <figure class="image">
                 <img :src="blogpost.image">
             </figure>
             <br>
@@ -11,7 +11,7 @@
             </div>
             <router-link :to="{name: 'blog-info', hash: '#' + blogpost.slug}" class="button">Back to all the blogs</router-link>
             <br><br>
-            <p class="is-size-7">Written by {{blogpost.author}}<br>{{blogpost.date}}</p>
+            <p class="is-size-7">Written by {{blogpost.author}}<br>{{blogpost.date | moment("MMMM Do YYYY")}}</p>
         </div>
     </section>
 </template>

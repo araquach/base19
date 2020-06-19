@@ -18,8 +18,9 @@
                                 <div v-html="blog.body">
                                     {{blog.body}}
                                 </div>
+                                <p class="is-size-4">Read More ></p>
                                 <p class="is-size-7">By {{blog.author}}</p>
-                                <p class="is-size-7">{{blog.date}}</p>
+                                <p class="is-size-7">{{blog.date | moment("MMMM Do YYYY") }}</p>
                             </div>
                         </div>
                     </router-link>
