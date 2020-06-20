@@ -38,7 +38,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	// Generate version number for scripts and css
 	rand.Seed(time.Now().UnixNano())
 
-	var h, p string
+	var t, d, i string
 
 	vars := mux.Vars(r)
 	dir := vars["category"]
@@ -54,16 +54,31 @@ func home(w http.ResponseWriter, r *http.Request) {
 		db.Where("slug = ?", name).First(&m)
 		db.Close()
 
-		h = m.FirstName + " " + m.LastName
-		p = m.Para1 + " " + m.Para2
+		t = m.FirstName + " " + m.LastName
+		d = m.Para1 + " " + m.Para2
+		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png"
+	} else if dir == "blog" {
+		path := path.Join(dir, name)
+
+		data, err := ioutil.ReadFile(path + ".txt")
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+		lines := strings.Split(string(data), "\n")
+		t = string(lines[0])
+		i = string(lines[3])
+		d = string(lines[5])
+
 	} else {
 		db := dbConn()
 		m := MetaInfo{}
 		db.Where("page = ?", name).First(&m)
 		db.Close()
 
-		h = m.Title
-		p = m.Text
+		t = m.Title
+		d = m.Text
+		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png"
 	}
 
 	path := path.Join(dir, name)
@@ -71,11 +86,11 @@ func home(w http.ResponseWriter, r *http.Request) {
 	v := string(rand.Intn(30))
 
 	meta := map[string]string{
-		"ogTitle":       h,
-		"ogDescription": p,
-		"ogImage":       "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png",
-		"ogImageWidth":  "1200",
-		"ogImageHeight": "628",
+		"ogTitle":       t,
+		"ogDescription": d,
+		"ogImage":       i,
+		"ogImageWidth":  "1025",
+		"ogImageHeight": "1025",
 		"ogUrl":         "https://www.basehairdressing.com/" + path,
 		"version":       v,
 	}
@@ -272,7 +287,7 @@ func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 
 	params := mux.Vars(r)
 
-	data, err := ioutil.ReadFile("blogs/" + params["slug"] + ".txt")
+	data, err := ioutil.ReadFile("blog/" + params["slug"] + ".txt")
 	if err != nil {
 		fmt.Println("File reading error", err)
 		return
@@ -301,7 +316,7 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 
 	blogs := []Blog{}
 
-	f, _ := os.Open("./blogs")
+	f, _ := os.Open("./blog")
 	fis, _ := f.Readdir(-1)
 	f.Close()
 	sort.Sort(ByModTime(fis))
@@ -310,7 +325,7 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for _, fi := range fis {
-		data, err := ioutil.ReadFile("./blogs/" + fi.Name())
+		data, err := ioutil.ReadFile("./blog/" + fi.Name())
 		if err != nil {
 			fmt.Println("File reading error", err)
 			return
