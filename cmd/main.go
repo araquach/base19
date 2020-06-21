@@ -69,8 +69,6 @@ func main() {
 	r.HandleFunc("/{name}", home)
 	r.HandleFunc("/", home)
 
-
-
 	log.Printf("Starting server on %s", port)
 
 	http.ListenAndServe(":" + port, forceSsl(r))

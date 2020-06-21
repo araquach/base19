@@ -51,7 +51,7 @@ export const routes = [
         props: true
     },
     {
-        path: '/blog/info',
+        path: '/blog',
         name: 'blog-info',
         component: BlogInfo
     },

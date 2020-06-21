@@ -56,7 +56,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 		t = m.FirstName + " " + m.LastName
 		d = m.Para1 + " " + m.Para2
-		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png"
+		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + m.Image + ".png"
 	} else if dir == "blog" {
 		path := path.Join(dir, name)
 
@@ -67,8 +67,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 		}
 		lines := strings.Split(string(data), "\n")
 		t = string(lines[0])
-		i = string(lines[3])
-		d = string(lines[5])
+		i = string(lines[4])
+		d = string(lines[6])
 
 	} else {
 		db := dbConn()
@@ -78,7 +78,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 		t = m.Title
 		d = m.Text
-		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + name + ".png"
+		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + m.Image + ".png"
 	}
 
 	path := path.Join(dir, name)
@@ -89,8 +89,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 		"ogTitle":       t,
 		"ogDescription": d,
 		"ogImage":       i,
-		"ogImageWidth":  "1025",
-		"ogImageHeight": "1025",
+		"ogImageWidth":  "1200",
+		"ogImageHeight": "628",
 		"ogUrl":         "https://www.basehairdressing.com/" + path,
 		"version":       v,
 	}
@@ -297,8 +297,8 @@ func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 	date := string(lines[1])
 	author := string(lines[2])
 	image := string(lines[3])
-	intro := string(lines[5])
-	text := strings.Join(lines[5:], "\n")
+	intro := string(lines[6])
+	text := strings.Join(lines[6:], "\n")
 	body := blackfriday.MarkdownBasic([]byte(text))
 	slug := params["slug"]
 
@@ -336,8 +336,8 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 		date := string(lines[1])
 		author := string(lines[2])
 		image := string(lines[3])
-		intro := string(lines[5])
-		text := strings.Join(lines[4:7], "\n")
+		intro := string(lines[6])
+		text := strings.Join(lines[6:8], "\n")
 		body := blackfriday.MarkdownBasic([]byte(text))
 
 		blogs = append(blogs, Blog{Slug: slug[0], Date: date, Title: title, Image: image, Intro: intro, Author: author, Body: string(body)})

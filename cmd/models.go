@@ -54,6 +54,7 @@ type MetaInfo struct {
 	Page  string `json:"page"`
 	Title string `json:"title"`
 	Text  string `json:"text"`
+	Image string `json:"image"`
 }
 
 type Booking struct {
