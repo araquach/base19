@@ -9,7 +9,7 @@
                     <router-link :to="{ name: 'blog-post', params: { slug: blog.slug } }">
                         <div :id="blog.slug" class="columns has-text-white">
                             <div class="column is-4">
-                                <figure class="image">
+                                <figure class="image is-square">
                                     <img :src="blog.image">
                                 </figure>
                             </div>
