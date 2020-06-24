@@ -2,9 +2,10 @@
     <div>
         <Home id="home"/>
         <About id="about"/>
+        <Corona id="corona"/>
         <Team id="team"/>
         <Blog id="blog"/>
-        <Offers id="offers"/>
+<!--        <Offers id="offers"/>-->
         <Joinus id="joinus"/>
         <Models id="models"/>
         <Contact id="contact"/>
@@ -13,9 +14,10 @@
 <script>
     import Home from '../home/HomeInfo'
     import About from '../about/About'
+    import Corona from '../corona/Corona'
     import Team from '../team/TeamInfo'
     import Blog from '../blog/Blog'
-    import Offers from '../offers/Offers'
+    // import Offers from '../offers/Offers'
     import Joinus from '../joinus/Joinus'
     import Models from '../models/Models'
     import Contact from '../contact/Contact'
@@ -24,9 +26,10 @@
         components: {
             Home,
             About,
+            Corona,
             Team,
             Blog,
-            Offers,
+            // Offers,
             Joinus,
             Models,
             Contact
