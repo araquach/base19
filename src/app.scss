@@ -62,6 +62,9 @@ strong {
   align-items: flex-end;
   h1 {
     font-size: 4rem;
+    @include until($desktop) {
+      font-size: 3rem;
+    }
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
   }
 
