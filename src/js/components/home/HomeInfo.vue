@@ -13,8 +13,8 @@
                 <h2 class="subtitle is-size-4 is-size-6-mobile has-text-white has-text-centered">
                     A hair academy for the next generation of super skilled stylists
                 </h2>
-                <div class="columns social is-mobile">
-                    <div class="column is-2 is-offset-3">
+                <div class="columns social is-mobile is-centered">
+                    <div class="column is-2">
                         <figure class="image is-square">
                             <a href="https://www.instagram.com/basehairdressing/">
                                 <img src="/dist/img/home/social/Insta2.svg" alt="Instagram">
@@ -35,6 +35,9 @@
                             </a>
                         </figure>
                     </div>
+                </div>
+                <div class="has-text-centered">
+                    <router-link :to="{ name: 'corona' }" class="button is-warning is-centered">Important COVID-19 Guidelines</router-link>
                 </div>
             </div>
         </div>
