@@ -11,8 +11,9 @@
                 </div>
                 <h1 class="title is-3">Register for your appointment</h1>
                 <div>
-                    <p><strong>We're getting closer to our reopening date (we can't wait!!). </strong>We are not taking bookings until we have a confirmed date as it's still a bit up in the air at the moment. Saturday July 4th is looking the most likely but there is the potential this could be brought forward or pushed back. We're still in the process of creating new schedules for the team to minimise the number of people in the salon as your safety is our priority.</p>
-                    <p>Each team member will be contacting their own clients to arrange bookings about a week or two before our opening date. Anybody who was already booked in will be contacted first. We will be working really hard to make sure everyone gets an appointment that suits them in the quickest possible time.</p>
+                    <p><strong>It's confirmed - we'll definitely be re-opening on Saturday 4th July! </strong></p>
+                    <p>Each team member will be contacting their own clients to arrange bookings over the next week. Anybody who was already booked in will be contacted first. We will be working really hard to make sure everyone gets an appointment that suits them in the quickest possible time.</p>
+                    <p>We will not be opening our online bookings or taking telephone bookings until we re-open.</p>
                     <p class="is-size-4">If you are wanting to book an appointment, please fill in the form below to ensure we've got your correct information</p>
                     <p class="is-size-7"><em>Please note... Unfortunately our first year apprentices (Ruby, Sophie & Beth) will not be taking bookings until further notice (probably 3-4 weeks after we open). If you want to get an appointment with one of them fill in the form below and we'll get you in at the first opportunity. Lucy and Lauren will be taking bookings.</em></p>
                     <br>
