@@ -22,6 +22,9 @@
                 <p><em>Unfortunately as we are requiring people to come to their appointment alone we are unable to cater for children at this time who need to be accompanied by their parents.
                     We hope that once the initial rush has died down and the salon has less footfall this will quickly change. We really hope you understand this isn’t an easy decision for us to make as we love being a welcoming salon for all the family.
                     But with trying to minimise the number of people coming through the salon we are having to make some short term changes. We hope that this will be no longer than 2 to 3 weeks after opening and please keep in touch with us regarding this issue as we hope this will be a short term fix!</em></p>
+                <h3 class="title is-4">No Cloakroom Use</h3>
+                <p>Unfortunately we won't be able to hang your coats or take your shopping bags off you as this poses an increased risk of cross contamination.
+                    Please avoid wearing bulky coats to your appointment and bring a bag to put your jacket in to protect it if you need to wear one. Please avoiding bringing any bulky items (shopping etc)</p>
                 <h3 class="title is-4">Please arrive at your appointment with clean hair</h3>
                 <p>Due to the current situation with COVID-19 we will not be able to carry out any dry cuts. We must wash all clients hair prior to cutting to increase levels on cleanliness. </p>
                 <p>We also ask anyone who has a colour to make sure your hair is freshly washed prior to your appointment.
@@ -36,7 +39,8 @@
                 <p>We are providing masks for everyone. Please feel free to bring your own but we have them readily available.</p>
                 <h3 class="title is-4">Refreshments & Magazines</h3>
                 <p>We won’t be serving any drinks or offering magazines for a while. This is a way for us to minimise any extra contact. We again realise this is all part of the experience of being in the salon and are hoping that this will only be a very short term measure as we see how things progress over the coming weeks.
-                    Please bring your own bottled refreshments though by all means. <strong>However government guidelines say you cannot bring food.</strong></p>
+                    Please bring your own bottled refreshments though by all means. <strong>However government guidelines say you cannot bring food.</strong>
+                    <br>It's also perfectly fine for you to bring your own book/magazines.</p>
                 <h3 class="title is-4">Hand Sanitiser</h3>
                 <p>We will provide hand sanitiser.
                     We will have this on the front desk and will ask you to wash your hands upon your arrival.</p>
