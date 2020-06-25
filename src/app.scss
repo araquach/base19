@@ -258,6 +258,14 @@ section.section {
   }
 }
 
+.corona-warning {
+  @include until($tablet) {
+    .button.is-warning {
+      font-size: .6rem;
+    }
+  }
+}
+
 /* transition styling */
 
 .fade-enter, .fade-leave-active {

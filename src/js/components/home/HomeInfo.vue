@@ -14,21 +14,21 @@
                     A hair academy for the next generation of super skilled stylists
                 </h2>
                 <div class="columns social is-mobile is-centered">
-                    <div class="column is-2">
+                    <div class="column is-3">
                         <figure class="image is-square">
                             <a href="https://www.instagram.com/basehairdressing/">
                                 <img src="/dist/img/home/social/Insta2.svg" alt="Instagram">
                             </a>
                         </figure>
                     </div>
-                    <div class="column is-2">
+                    <div class="column is-3">
                         <figure class="image is-square">
                             <a href="https://www.facebook.com/basehairdressing/">
                                 <img src="/dist/img/home/social/fb.svg" alt="Facebook">
                             </a>
                         </figure>
                     </div>
-                    <div class="column is-2">
+                    <div class="column is-3">
                         <figure class="image is-square">
                             <a href="https://www.pinterest.co.uk/basehairdressing/">
                                 <img src="/dist/img/home/social/pinterest.svg" alt="Pinterest">
@@ -36,7 +36,7 @@
                         </figure>
                     </div>
                 </div>
-                <div class="has-text-centered">
+                <div class="has-text-centered corona-warning">
                     <router-link :to="{ name: 'corona' }" class="button is-warning is-centered">Important COVID-19 Guidelines</router-link>
                 </div>
             </div>
