@@ -118,9 +118,15 @@ section.section {
       }
     }
   }
-
   figure {
     margin-bottom: 2rem;
+  }
+  .directory {
+    opacity: .7;
+    padding-left: 3rem;
+    a {
+      color: coral;
+    }
   }
 }
 

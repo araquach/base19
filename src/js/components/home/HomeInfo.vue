@@ -44,7 +44,13 @@
         <div class="has-text-right">
             <ReviewFeed :staffMember="staffMember"/>
         </div>
-
+        <div class="directory level is-mobile">
+            <div class="level-left">
+                <div class="level-item">
+                    <p class="is-size-7 has-text-centered has-text-white">Find us in the directory of <br><a href='http://www.warrington.co.uk/hairdressers/' class="directory-link">Warrington Hairdressers</a></p>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
