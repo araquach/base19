@@ -10,12 +10,12 @@ type ContactMessage struct {
 
 type JoinusApplicant struct {
 	gorm.Model
+	Salon    uint   `json:"salon"`
 	Name     string `json:"name"`
 	Mobile   string `json:"mobile"`
 	Position string `json:"position"`
 	WhyUs    string `json:"why_us"`
 	Info     string `gorm:"-" json:"info"`
-	Salon    uint   `json:"salon"`
 }
 
 type ModelApplicant struct {
@@ -44,6 +44,7 @@ type TeamMember struct {
 
 type Review struct {
 	ID     uint   `json:"id" gorm:"primary_key"`
+	Salon  uint   `json:"salon"`
 	Review string `json:"review"`
 	Client string `json:"client"`
 	Staff  string `json:"staff"`
@@ -51,6 +52,7 @@ type Review struct {
 
 type MetaInfo struct {
 	ID    uint   `json:"id" gorm: "primary_key"`
+	Salon uint   `json:"salon"`
 	Page  string `json:"page"`
 	Title string `json:"title"`
 	Text  string `json:"text"`
