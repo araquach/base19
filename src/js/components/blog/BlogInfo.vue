@@ -5,7 +5,7 @@
         <br><br>
         <div class="columns">
             <div class="column is-10">
-                <div v-for="blog in sortedBlogPosts">
+                <div v-for="blog in blogPosts">
                     <router-link :to="{ name: 'blog-post', params: { slug: blog.slug } }">
                         <div :id="blog.slug" class="columns has-text-white">
                             <div class="column is-4">
@@ -43,12 +43,6 @@
         data() {
             return {
                 blogPosts: []
-            }
-        },
-
-        computed: {
-            sortedBlogPosts() {
-                return this.blogPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
             }
         },
 

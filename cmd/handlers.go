@@ -18,8 +18,6 @@ import (
 	"time"
 )
 
-type ByModTime []os.FileInfo
-
 func forceSsl(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if os.Getenv("GO_ENV") == "production" {
@@ -268,18 +266,6 @@ func apiBookings(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-func (fis ByModTime) Len() int {
-	return len(fis)
-}
-
-func (fis ByModTime) Swap(i, j int) {
-	fis[i], fis[j] = fis[j], fis[i]
-}
-
-func (fis ByModTime) Less(i, j int) bool {
-	return fis[i].ModTime().After(fis[j].ModTime())
-}
-
 func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
@@ -314,18 +300,14 @@ func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	blogs := []Blog{}
+	var blogs []Blog
 
-	f, _ := os.Open("./blog")
-	fis, _ := f.Readdir(-1)
-	f.Close()
-
-	sort.Sort(ByModTime(fis))
-	if len(fis) > 10 {
-		fis = fis[0:10]
+	files, err := ioutil.ReadDir("./blog")
+	if err != nil {
+		log.Fatal(err)
 	}
 
-	for _, fi := range fis {
+	for _, fi := range files {
 		data, err := ioutil.ReadFile("./blog/" + fi.Name())
 		if err != nil {
 			fmt.Println("File reading error", err)
@@ -341,6 +323,7 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 		text := strings.Join(lines[6:8], "\n")
 		body := blackfriday.MarkdownBasic([]byte(text))
 
+		sort.SliceStable(blogs, func(i, j int) bool {return blogs[i].Date > blogs[j].Date})
 		blogs = append(blogs, Blog{Slug: slug[0], Date: date, Title: title, Image: image, Intro: intro, Author: author, Body: string(body)})
 	}
 
