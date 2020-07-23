@@ -323,9 +323,9 @@ func apiBlogPosts(w http.ResponseWriter, r *http.Request) {
 		text := strings.Join(lines[6:8], "\n")
 		body := blackfriday.MarkdownBasic([]byte(text))
 
-		sort.SliceStable(blogs, func(i, j int) bool {return blogs[i].Date > blogs[j].Date})
 		blogs = append(blogs, Blog{Slug: slug[0], Date: date, Title: title, Image: image, Intro: intro, Author: author, Body: string(body)})
 	}
+	sort.SliceStable(blogs, func(i, j int) bool {return blogs[i].Date > blogs[j].Date})
 
 	json, err := json.Marshal(blogs)
 	if err != nil {
