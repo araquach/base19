@@ -4,10 +4,11 @@
             <div id="corona-copy" class="column is-7-desktop">
                 <h1 class="title is-1">COVID-19 </h1>
                 <h2 class="title is-3">Guidelines for your appointment</h2>
-                <h2 class="subtitle is-6">Updated 24th June 2020</h2>
-                <p class="is-size-5">As you can all imagine we have had to make some changes to our procedures during your next visit to the salon.
+                <h2 class="subtitle is-6">Updated 5th August 2020</h2>
+                <p class="is-size-5">We have had to make some changes to our procedures during your next visit to the salon.
                     We are trying to make it as safe as possible for our clients and staff so we have implemented some ‘covid friendly’ measures, following the government guidelines</p>
                 <p class="has-text-danger">Please ensure you read the following guielines before you come in for your appointment</p>
+                <p><strong>Update: As of Saturday 8th August a facemask is required to be worn throughout your visit unless there is a legitimate reason for you not to wear one - in line with the new legislation</strong></p>
                 <h3 class="title is-4">If you are unwell</h3>
                 <p>If you have a high temperature, a persistent cough, any loss of smell or taste please let us know and cancel your appointment.</p>
                 <h3 class="title is-4">Arriving to your appointment</h3>
@@ -47,12 +48,6 @@
                 <h3 class="title is-4">Cancellation Policy</h3>
                 <p>As we have extremely long lists of people to get through we are having to introduce a cancellation policy. This will mean we require <strong>48 hours notice</strong> prior to cancelling an appointment, <span class="has-text-danger">if less than 48 hours or not giving any notice we will have to charge 50% of the appointment time. </span>
                     So please if you can let us know as soon as possible for any cancellations we will greatly appreciate it at this crazy time.</p>
-                <h3 class="title is-4">Please bear with us</h3>
-                <p>We are so grateful for all of our clients wanting to get appointments when we reopen but please do bear with us whilst we try and accommodate everyone.
-                    We are having to shift some of our stylists to keep the environment safe for you all but we also want to get everyone in as quickly as we can.</p>
-                <p>You may have to wait a couple of weeks to get in with some of our busier stylists as they are having to initially accommodate all of those who have missed their appointments due to lockdown.
-                    <em>We hope you all understand how busy this time is for all of us.</em></p>
-                <p class="title is-4"><strong>We can’t wait to see you all and transform your locks back to their former glory!</strong></p>
             </div>
         </div>
         <div class="level is-mobile">
