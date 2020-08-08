@@ -9,7 +9,7 @@
                 <p>We're a training environment with a focus on you! A salon where you can develop your skills to become a super stylist!</p>
                 <p class="is-size-5">Check out the benefits of being a part of Base&hellip;</p>
                 <ul class="box">
-                    <li>Ongoing training and assessments working towards NVQ level 2 & 3</li>
+                    <li>Ongoing training and assessments working towards level 2 & 3 Diploma for Hair Professionals</li>
                     <li>The highest quality training and development from experienced stylists</li>
                     <li>A relaxed, friendly working environment designed to unleash your creative talent</li>
                     <li>A solid career ladder with clear goals to strive for</li>
