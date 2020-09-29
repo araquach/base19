@@ -12,6 +12,11 @@ import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
 import BookingsInfo from "./components/bookings/BookingsInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
+import BethProfile from "./components/team/profiles/BethProfile"
+import LaurenProfile from './components/team/profiles/LaurenProfile'
+import LucyProfile from './components/team/profiles/LucyProfile'
+import RubyProfile from './components/team/profiles/RubyProfile'
+import SophieProfile from './components/team/profiles/SophieProfile'
 
 
 export const routes = [
@@ -50,6 +55,31 @@ export const routes = [
         name: 'team-detail',
         component: TeamDetail,
         props: true
+    },
+    {
+        path: '/beth-profile',
+        name: 'beth-profile',
+        component: BethProfile,
+    },
+    {
+        path: '/sophie-profile',
+        name: 'sophie-profile',
+        component: SophieProfile,
+    },
+    {
+        path: '/ruby-profile',
+        name: 'ruby-profile',
+        component: RubyProfile,
+    },
+    {
+        path: '/lucy-profile',
+        name: 'lucy-profile',
+        component: LucyProfile,
+    },
+    {
+        path: '/lauren-profile',
+        name: 'lauren-profile',
+        component: LaurenProfile,
     },
     {
         path: '/blog',

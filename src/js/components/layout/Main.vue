@@ -17,10 +17,10 @@
     import Corona from '../corona/Corona'
     import Team from '../team/TeamInfo'
     import Blog from '../blog/Blog'
-    // import Offers from '../offers/Offers'
     import Joinus from '../joinus/Joinus'
     import Models from '../models/Models'
     import Contact from '../contact/Contact'
+    // import Offers from '../offers/Offers'
 
     export default {
         components: {
@@ -29,10 +29,10 @@
             Corona,
             Team,
             Blog,
-            // Offers,
             Joinus,
             Models,
-            Contact
+            Contact,
+          // Offers,
         }
     }
 </script>
