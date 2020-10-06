@@ -27,24 +27,24 @@
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp1.jpg" alt="Beth">
+                <img src="/dist/img/team/profiles/beth/hp1.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp2.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/hp2.jpg">
               </figure>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp3.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/hp3.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp4.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/hp4.jpg">
               </figure>
             </div>
           </div>
@@ -75,24 +75,24 @@
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/p2.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/p2.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp6.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/hp6.jpg">
               </figure>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp7.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/hp7.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/beth/hp8.jpg" alt="">
+                <img src="/dist/img/team/profiles/beth/hp8.jpg">
               </figure>
             </div>
           </div>

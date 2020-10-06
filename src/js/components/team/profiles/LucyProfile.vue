@@ -23,36 +23,36 @@
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp1.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/hp1.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp2.jpg" alt="Lucy">
-              </figure>
-            </div>
-          </div>
-          <div class="tile is-parent is-vertical">
-            <div class="tile is-child">
-              <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp3.jpg" alt="Lucy">
-              </figure>
-            </div>
-            <div class="tile is-child">
-              <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp4.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/hp2.jpg">
               </figure>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp5.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/hp3.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp6.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/hp4.jpg">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp5.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp6.jpg">
               </figure>
             </div>
           </div>
@@ -78,36 +78,36 @@
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/p3.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/p3.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp8.jpg" alt="Lucy">
-              </figure>
-            </div>
-          </div>
-          <div class="tile is-parent is-vertical">
-            <div class="tile is-child">
-              <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp10.jpg" alt="Lucy">
-              </figure>
-            </div>
-            <div class="tile is-child">
-              <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/p4.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/hp8.jpg">
               </figure>
             </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp12.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/hp10.jpg">
               </figure>
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/lucy/hp11.jpg" alt="Lucy">
+                <img src="/dist/img/team/profiles/lucy/p4.jpg">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp12.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp11.jpg">
               </figure>
             </div>
           </div>

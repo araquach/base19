@@ -6,12 +6,55 @@
         <p>Hi, I'm Sophie and I've been hairdressing for around 3 years now. I started when I had just left school back in 2016, up until 2 years later when I decided I wanted to try something different. I never knew what it was I really wanted to do with my life. After college, 2 jobs, nothing was the same. I knew that I needed something more. Hairdressing is the only thing that has made me feel satisfied that I am actually making a difference in peoples lives. I love the feeling of making someone smile as hair is such a big thing in everyone's lives. I saw Base's advert during my job search and I knew it was the place for me.. somewhere that was willing to assess where we are at already within our careers and taking the time to push us to be the best we can be. I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <figure class="image">
+              <img src="/dist/img/team/profiles/sophie/p2.jpg" alt="Sophie">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section columns">
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp1.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp2.jpg">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp3.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp4.jpg">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp5.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp6.jpg">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="column is-7">
         <p>My favourite thing to do in hairdressing is short cuts, I don't know what it is they just look so slick and smart! I love a good bob. I was so scared of them at first but with the right techniques and the right support I got the techniques down with only a few tweaks to the end result. The majority of my clients are pretty experimental with their hair I think crazy colours, blondes and bobs are my most popular look at the moment! So trendy! I would say this is probably my speciality.</p>
@@ -24,7 +67,44 @@
         <p>Outside of hairdressing I enjoy hanging out with family and going out, but I love relaxing and watching films. Pamper nights are my favourite.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp1.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp2.jpg">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp3.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp4.jpg">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp5.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/sophie/hp6.jpg">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
