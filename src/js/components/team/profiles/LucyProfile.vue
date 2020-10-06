@@ -8,12 +8,58 @@
         <p>I enjoy everything about my job! I would say I lean more toward creative colouring but then I love cutting short hair so it is really hard to pick.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <figure class="image">
+              <img src="/dist/img/team/profiles/lucy/p2.jpg" alt="Lucy">
+            </figure>
+          </div>
+          <div class="tile">
+            <figure class="image">
+              <img src="/dist/img/team/profiles/lucy/p1.jpg" alt="Lucy">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section columns">
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp1.jpg" alt="Lucy">
+              </figure>
+              <div class="tile is-child">
+                <figure class="image">
+                  <img src="/dist/img/team/profiles/lucy/hp2.jpg" alt="Lucy">
+                </figure>
+              </div>
+              <div class="tile is-child">
+                <figure class="image">
+                  <img src="/dist/img/team/profiles/lucy/hp3.jpg" alt="Lucy">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="tile">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp4.jpg" alt="Lucy">
+              </figure>
+              <div class="tile is-child">
+                <figure class="image">
+                  <img src="/dist/img/team/profiles/lucy/hp5.jpg" alt="Lucy">
+                </figure>
+              </div>
+              <div class="tile is-child">
+                <figure class="image">
+                  <img src="/dist/img/team/profiles/lucy/hp6.jpg" alt="Lucy">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="column is-7">
         <p>I have most recently been working on perfecting my skills for pixie cuts and extensions, this will help me in the future as it opens up a wider range to clients.</p>
@@ -31,7 +77,18 @@
         <p>Outside of work I really am just a quiet girl, I love eating out with my partner, I love food§! I also love spending time with my friends and seeing my niece. Here are some pics of me outside of work ☺️</p>
       </div>
       <div class="column">
-
+        <figure class="image">
+          <img src="/dist/img/team/profiles/lucy/hp5.jpg" alt="Lucy">
+        </figure>
+        <figure class="image">
+          <img src="/dist/img/team/profiles/lucy/hp6.jpg" alt="Lucy">
+        </figure>
+        <figure class="image">
+          <img src="/dist/img/team/profiles/lucy/hp7.jpg" alt="Lucy">
+        </figure>
+        <figure class="image">
+          <img src="/dist/img/team/profiles/lucy/hp8.jpg" alt="Lucy">
+        </figure>
       </div>
     </div>
   </div>
