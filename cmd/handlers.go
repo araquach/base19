@@ -269,7 +269,7 @@ func apiBookings(w http.ResponseWriter, r *http.Request) {
 func apiBlogPost(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
-	blog := Blog{}
+	var blog Blog
 
 	params := mux.Vars(r)
 
