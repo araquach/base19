@@ -12,12 +12,43 @@
           I think it’s really important for people to feel good about themselves...so getting your hair done and having that time in the salon to chill out and relax is all part of the clients experience when in with me.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <figure class="image">
+              <img src="/dist/img/team/profiles/beth/p1.jpg" alt="Beth">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section columns">
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp1.jpg" alt="Beth">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp2.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp3.jpg" alt="">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp4.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="column is-7">
         <p>One of my favourite things so far in hairdressing is working with colour, especially colours that stand out.
@@ -40,7 +71,32 @@
           That’s something else I absolutely love, music... especially live music, sometimes I’ll even get up and have a sing myself lol. But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy, my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:).</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/p2.jpg" alt="">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp6.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp7.jpg" alt="">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/beth/hp8.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

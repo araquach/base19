@@ -14,11 +14,6 @@
               <img src="/dist/img/team/profiles/lucy/p2.jpg" alt="Lucy">
             </figure>
           </div>
-          <div class="tile">
-            <figure class="image">
-              <img src="/dist/img/team/profiles/lucy/p1.jpg" alt="Lucy">
-            </figure>
-          </div>
         </div>
       </div>
     </div>

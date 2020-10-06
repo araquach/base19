@@ -3108,6 +3108,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -21478,11 +21534,74 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" })
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile" }, [
+              _c("figure", { staticClass: "image" }, [
+                _c("img", {
+                  attrs: {
+                    src: "/dist/img/team/profiles/beth/p1.jpg",
+                    alt: "Beth"
+                  }
+                })
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }),
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp1.jpg",
+                      alt: "Beth"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp2.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp3.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp4.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "column is-7" }, [
           _c("p", [
@@ -21526,7 +21645,57 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" })
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/p2.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp6.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp7.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/hp8.jpg",
+                      alt: ""
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ])
       ])
     ])
   }
@@ -21585,11 +21754,98 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" })
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile" }, [
+              _c("figure", { staticClass: "image" }, [
+                _c("img", {
+                  attrs: {
+                    src: "/dist/img/team/profiles/lauren/p2.jpg",
+                    alt: "Lucy"
+                  }
+                })
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }),
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp1.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp2.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp3.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp4.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp5.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp6.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "column is-7" }, [
           _c("p", [
@@ -21659,7 +21915,81 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" })
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp1.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp2.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp3.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp4.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp5.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/hp6.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ])
       ])
     ])
   }
@@ -21725,17 +22055,6 @@ var staticRenderFns = [
                 _c("img", {
                   attrs: {
                     src: "/dist/img/team/profiles/lucy/p2.jpg",
-                    alt: "Lucy"
-                  }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/team/profiles/lucy/p1.jpg",
                     alt: "Lucy"
                   }
                 })
@@ -22015,11 +22334,96 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" })
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile" }, [
+              _c("figure", { staticClass: "image" }, [
+                _c("img", {
+                  attrs: {
+                    src: "/dist/img/team/profiles/ruby/p2.jpg",
+                    alt: "Ruby"
+                  }
+                })
+              ])
+            ])
+          ])
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }),
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp1.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp2.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp3.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp5.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp6.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp4.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "column is-7" }, [
           _c("p", [
@@ -22069,7 +22473,81 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" })
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp1.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp2.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp3.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp4.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp5.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/hp6.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ])
       ])
     ])
   }

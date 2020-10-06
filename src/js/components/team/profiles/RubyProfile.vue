@@ -8,12 +8,53 @@
         <p>It’s not only creating artwork I am proud of, it's also using my own talent to achieve a look that gives somebody not only beauty on the outside but confidence within themselves which is one of the most rewarding things. As I continue on my journey I feel I am growing as an individual collecting knowledge and being able to express my creativity in endless ways. Moreover, I enjoy the constant learning whether it be about the science and complexity behind hair corrections, the hair structure, colour knowledge or cutting skills there’s always more to be educated on. Hairdressing is my passion and I could not be more grateful to have the opportunity to pursue my career dreams.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <figure class="image">
+              <img src="/dist/img/team/profiles/ruby/p2.jpg" alt="Ruby">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section columns">
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp1.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp2.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp3.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp5.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp6.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp4.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="column is-7">
         <p>Base academy is a fashion forward edgy salon that keeps up to date with all the recent trends which is why I believe I fit in perfectly with my stylish and creative ideas. Base provides the best training to the highest standards and endless opportunities to grow and progress as a hairdresser. Base itself and its two partner salons Paul Kemp and Jakata are all recognised and respected for the amazing work produced by all stylists who are inspirational to me and my work and the best colleagues to learn from.</p>
@@ -29,7 +70,44 @@
         <p>Outside of hairdressing I love watching Crime Documentaries and conspiracy theories as well as spending time with my sisters or walking the dog.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp1.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp2.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp3.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp4.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp5.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp6.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

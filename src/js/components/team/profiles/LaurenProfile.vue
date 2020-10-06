@@ -11,12 +11,55 @@
         <p>Learning to do hair is so good as you cover so many different ways and styles of colouring cutting and styling hair, but what I enjoy doing the most is cutting hair as it can go from simple to creative - its so exciting and interesting to learn  all the different ways of cutting and creating different hairstyles and colours.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile">
+            <figure class="image">
+              <img src="/dist/img/team/profiles/lauren/p2.jpg" alt="Lucy">
+            </figure>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section columns">
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp1.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp2.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp3.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp4.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp5.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp6.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="column is-7">
         <p>The most recent thing I've been working on is improving my men's hairdressing skills which is something I've always wanted to do! It's a whole different set of skills including working with clippers and understanding has shapes and hair growth patterns.</p>
@@ -37,7 +80,44 @@
         <p>In the next few years in my career I would love to work back stage for a catwalk shows or photoshoots as its something I've always been interested in. I also eventually want to be known for my work and working on celebrities hair as I think that's something that would interest me.</p>
       </div>
       <div class="column">
-
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp1.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp2.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp3.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp4.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp5.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp6.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
