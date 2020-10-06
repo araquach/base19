@@ -145,11 +145,11 @@ func apiReviews(w http.ResponseWriter, r *http.Request) {
 
 	if param == "All" {
 		db := dbConn()
-		db.Find(&reviews)
+		db.Where("salon = ?", 3).Find(&reviews)
 		db.Close()
 	} else {
 		db := dbConn()
-		db.Where("staff LIKE ?", "Staff: "+param+" %").Find(&reviews)
+		db.Where("salon = ?", "3").Where("staff LIKE ?", "Staff: "+param+" %").Find(&reviews)
 		db.Close()
 	}
 
