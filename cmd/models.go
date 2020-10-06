@@ -1,6 +1,9 @@
 package main
 
-import "github.com/jinzhu/gorm"
+import (
+	"github.com/jinzhu/gorm"
+	"time"
+)
 
 type ContactMessage struct {
 	Name    string `json:"name"`
@@ -43,11 +46,12 @@ type TeamMember struct {
 }
 
 type Review struct {
-	ID     uint   `json:"id" gorm:"primary_key"`
-	Salon  uint   `json:"salon"`
-	Review string `json:"review"`
-	Client string `json:"client"`
-	Staff  string `json:"staff"`
+	ID     uint      `json:"id" gorm:"primary_key"`
+	Date   time.Time `json:"date"`
+	Salon  uint      `json:"salon"`
+	Review string    `json:"review"`
+	Client string    `json:"client"`
+	Staff  string    `json:"staff"`
 }
 
 type MetaInfo struct {
