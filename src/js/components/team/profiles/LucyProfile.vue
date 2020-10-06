@@ -25,38 +25,40 @@
     <div class="section columns">
       <div class="column">
         <div class="tile is-ancestor">
-          <div class="tile">
+          <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/lucy/hp1.jpg" alt="Lucy">
               </figure>
-              <div class="tile is-child">
-                <figure class="image">
-                  <img src="/dist/img/team/profiles/lucy/hp2.jpg" alt="Lucy">
-                </figure>
-              </div>
-              <div class="tile is-child">
-                <figure class="image">
-                  <img src="/dist/img/team/profiles/lucy/hp3.jpg" alt="Lucy">
-                </figure>
-              </div>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp2.jpg" alt="Lucy">
+              </figure>
             </div>
           </div>
-          <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp3.jpg" alt="Lucy">
+              </figure>
+            </div>
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/lucy/hp4.jpg" alt="Lucy">
               </figure>
-              <div class="tile is-child">
-                <figure class="image">
-                  <img src="/dist/img/team/profiles/lucy/hp5.jpg" alt="Lucy">
-                </figure>
-              </div>
-              <div class="tile is-child">
-                <figure class="image">
-                  <img src="/dist/img/team/profiles/lucy/hp6.jpg" alt="Lucy">
-                </figure>
-              </div>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp5.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp6.jpg" alt="Lucy">
+              </figure>
             </div>
           </div>
         </div>
@@ -77,18 +79,44 @@
         <p>Outside of work I really am just a quiet girl, I love eating out with my partner, I love food§! I also love spending time with my friends and seeing my niece. Here are some pics of me outside of work ☺️</p>
       </div>
       <div class="column">
-        <figure class="image">
-          <img src="/dist/img/team/profiles/lucy/hp5.jpg" alt="Lucy">
-        </figure>
-        <figure class="image">
-          <img src="/dist/img/team/profiles/lucy/hp6.jpg" alt="Lucy">
-        </figure>
-        <figure class="image">
-          <img src="/dist/img/team/profiles/lucy/hp7.jpg" alt="Lucy">
-        </figure>
-        <figure class="image">
-          <img src="/dist/img/team/profiles/lucy/hp8.jpg" alt="Lucy">
-        </figure>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/p3.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp8.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp10.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/p4.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+          <div class="tile is-parent is-vertical">
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp12.jpg" alt="Lucy">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lucy/hp11.jpg" alt="Lucy">
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

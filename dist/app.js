@@ -21748,7 +21748,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "section columns" }, [
         _c("div", { staticClass: "column" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
@@ -21757,33 +21757,33 @@ var staticRenderFns = [
                       alt: "Lucy"
                     }
                   })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tile is-child" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/profiles/lucy/hp2.jpg",
-                        alt: "Lucy"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tile is-child" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/profiles/lucy/hp3.jpg",
-                        alt: "Lucy"
-                      }
-                    })
-                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp2.jpg",
+                      alt: "Lucy"
+                    }
+                  })
                 ])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp3.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
@@ -21792,28 +21792,30 @@ var staticRenderFns = [
                       alt: "Lucy"
                     }
                   })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tile is-child" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/profiles/lucy/hp5.jpg",
-                        alt: "Lucy"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tile is-child" }, [
-                  _c("figure", { staticClass: "image" }, [
-                    _c("img", {
-                      attrs: {
-                        src: "/dist/img/team/profiles/lucy/hp6.jpg",
-                        alt: "Lucy"
-                      }
-                    })
-                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp5.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp6.jpg",
+                      alt: "Lucy"
+                    }
+                  })
                 ])
               ])
             ])
@@ -21881,40 +21883,78 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/team/profiles/lucy/hp5.jpg",
-                alt: "Lucy"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/team/profiles/lucy/hp6.jpg",
-                alt: "Lucy"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/team/profiles/lucy/hp7.jpg",
-                alt: "Lucy"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("figure", { staticClass: "image" }, [
-            _c("img", {
-              attrs: {
-                src: "/dist/img/team/profiles/lucy/hp8.jpg",
-                alt: "Lucy"
-              }
-            })
+          _c("div", { staticClass: "tile is-ancestor" }, [
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/p3.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp8.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp10.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/p4.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "tile is-parent is-vertical" }, [
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp12.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/hp11.jpg",
+                      alt: "Lucy"
+                    }
+                  })
+                ])
+              ])
+            ])
           ])
         ])
       ])
@@ -46451,8 +46491,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
