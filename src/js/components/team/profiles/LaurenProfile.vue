@@ -3,7 +3,7 @@
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Lauren Watson</h1>
-        <p>Hi, I'm Lauren. I've been hairdressing for almost 3 years now. I always considered doing hairdressing as a career since being a child as I have always found interest in experimenting with styling friends and family members hair!
+        <p class="is-size-5">Hi, I'm Lauren. I've been hairdressing for almost 3 years now. I always considered doing hairdressing as a career since being a child as I have always found interest in experimenting with styling friends and family members hair!
           I knew hairdressing would be the right thing for me to Dao as a career as I enjoyed it so much.</p>
         <p>For my first year of training I worked at Paul Kemp Hairdressing (Base wasn't open at this point) which was great for my learning as it was more of a hands on experience giving me the opportunity to  see for myself whilst learning what hairdressing was all about.
           I then moved over to work at Base hairdressing which was the PK training academy for all new learners and graduates,

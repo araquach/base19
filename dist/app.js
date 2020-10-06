@@ -2409,16 +2409,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -19716,17 +19706,50 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("section", { staticClass: "hero is-fullheight" }, [
-    _c("div", { staticClass: "hero-body columns is-centered" }, [
-      _c("div", { staticClass: "column is-4 is-7-mobile" }, [
-        _vm._m(0),
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "has-text-right" },
+      [_c("ReviewFeed", { attrs: { staffMember: _vm.staffMember } })],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "hero-body columns is-centered" }, [
+      _c("div", { staticClass: "column is-4 is-5-mobile" }, [
+        _c("div", { staticClass: "is-hidden" }, [
+          _c("h1", { staticClass: "title" }, [
+            _vm._v("Academy for the next generation of super-skilled stylists")
+          ]),
+          _vm._v(" "),
+          _c("h2", { staticClass: "subtitle" }, [
+            _vm._v("An amazing creative space for upcoming hair stylists")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-5" }, [
+            _vm._v(
+              "The Base Team comprises of Apprentices, Junior Stylists and Graduates all offering cutting edge services at a fraction of the cost, in an amazing creative space."
+            )
+          ])
+        ]),
         _vm._v(" "),
-        _vm._m(1),
+        _c("figure", { staticClass: "image" }, [
+          _c("img", {
+            attrs: { src: "/dist/img/base_logo.svg", alt: "Base Hairdressing" }
+          })
+        ]),
         _vm._v(" "),
         _c(
           "h2",
           {
             staticClass:
-              "subtitle is-size-4 is-size-6-mobile has-text-white has-text-centered"
+              "subtitle is-size-6 is-size-7-mobile has-text-white has-text-centered"
           },
           [
             _vm._v(
@@ -19735,146 +19758,65 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "has-text-centered corona-warning" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "button is-warning is-centered",
-                attrs: { to: { name: "corona" } }
-              },
-              [_vm._v("Important COVID-19 Guidelines")]
-            )
-          ],
-          1
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "has-text-right" },
-      [_c("ReviewFeed", { attrs: { staffMember: _vm.staffMember } })],
-      1
-    ),
-    _vm._v(" "),
-    _vm._m(3)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "is-hidden" }, [
-      _c("h1", { staticClass: "title" }, [
-        _vm._v("Academy for the next generation of super-skilled stylists")
-      ]),
-      _vm._v(" "),
-      _c("h2", { staticClass: "subtitle" }, [
-        _vm._v("An amazing creative space for upcoming hair stylists")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "is-size-5" }, [
-        _vm._v(
-          "The Base Team comprises of Apprentices, Junior Stylists and Graduates all offering cutting edge services at a fraction of the cost, in an amazing creative space."
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("figure", { staticClass: "image" }, [
-      _c("img", {
-        attrs: { src: "/dist/img/base_logo.svg", alt: "Base Hairdressing" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "columns social is-mobile is-centered" }, [
-      _c("div", { staticClass: "column is-3" }, [
-        _c("figure", { staticClass: "image is-square" }, [
-          _c(
-            "a",
-            { attrs: { href: "https://www.instagram.com/basehairdressing/" } },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/dist/img/home/social/Insta2.svg",
-                  alt: "Instagram"
-                }
-              })
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column is-3" }, [
-        _c("figure", { staticClass: "image is-square" }, [
-          _c(
-            "a",
-            { attrs: { href: "https://www.facebook.com/basehairdressing/" } },
-            [
-              _c("img", {
-                attrs: { src: "/dist/img/home/social/fb.svg", alt: "Facebook" }
-              })
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column is-3" }, [
-        _c("figure", { staticClass: "image is-square" }, [
-          _c(
-            "a",
-            {
-              attrs: { href: "https://www.pinterest.co.uk/basehairdressing/" }
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/dist/img/home/social/pinterest.svg",
-                  alt: "Pinterest"
-                }
-              })
-            ]
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "directory level is-mobile" }, [
-      _c("div", { staticClass: "level-left" }, [
-        _c("div", { staticClass: "level-item" }, [
-          _c(
-            "p",
-            { staticClass: "is-size-7 has-text-centered has-text-white" },
-            [
-              _vm._v("Find us in the directory of "),
-              _c("br"),
+        _c("div", { staticClass: "columns social is-mobile is-centered" }, [
+          _c("div", { staticClass: "column is-3" }, [
+            _c("figure", { staticClass: "image is-square" }, [
               _c(
                 "a",
                 {
-                  staticClass: "directory-link",
-                  attrs: { href: "http://www.warrington.co.uk/hairdressers/" }
+                  attrs: { href: "https://www.instagram.com/basehairdressing/" }
                 },
-                [_vm._v("Warrington Hairdressers")]
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/home/social/Insta2.svg",
+                      alt: "Instagram"
+                    }
+                  })
+                ]
               )
-            ]
-          )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-3" }, [
+            _c("figure", { staticClass: "image is-square" }, [
+              _c(
+                "a",
+                {
+                  attrs: { href: "https://www.facebook.com/basehairdressing/" }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/home/social/fb.svg",
+                      alt: "Facebook"
+                    }
+                  })
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-3" }, [
+            _c("figure", { staticClass: "image is-square" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "https://www.pinterest.co.uk/basehairdressing/"
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/home/social/pinterest.svg",
+                      alt: "Pinterest"
+                    }
+                  })
+                ]
+              )
+            ])
+          ])
         ])
       ])
     ])
@@ -21515,9 +21457,15 @@ var staticRenderFns = [
             _vm._v("Beth Brown")
           ]),
           _vm._v(" "),
+          _c("p", { staticClass: "is-size-5" }, [
+            _vm._v(
+              "Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.\n        Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more."
+            )
+          ]),
+          _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.\n        Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more.\n        There is so much more to hairdressing than meets the eye and I find it really intriguing. I feel like I’m constantly learning and I love how creative it can be."
+              "There is so much more to hairdressing than meets the eye and I find it really intriguing. I feel like I’m constantly learning and I love how creative it can be."
             )
           ]),
           _vm._v(" "),
@@ -21711,7 +21659,7 @@ var staticRenderFns = [
             _vm._v("Lauren Watson")
           ]),
           _vm._v(" "),
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
               "Hi, I'm Lauren. I've been hairdressing for almost 3 years now. I always considered doing hairdressing as a career since being a child as I have always found interest in experimenting with styling friends and family members hair!\n        I knew hairdressing would be the right thing for me to Dao as a career as I enjoyed it so much."
             )
@@ -21969,7 +21917,7 @@ var staticRenderFns = [
             _vm._v("Lucy Watson")
           ]),
           _vm._v(" "),
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
               "Hi, I’m Lucy I have been hairdressing for nearly three years now. I decided to go into the hair industry because I have always loved plaiting and playing with my sisters hair, also it was something I was looking into and really caught my attention in my last year of school."
             )
@@ -22219,7 +22167,7 @@ var staticRenderFns = [
             _vm._v("Ruby Johnson")
           ]),
           _vm._v(" "),
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
               "Hi I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way."
             )
@@ -22455,7 +22403,7 @@ var staticRenderFns = [
             _vm._v("Sophie Youds")
           ]),
           _vm._v(" "),
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
               "Hi, I'm Sophie and I've been hairdressing for around 3 years now. I started when I had just left school back in 2016, up until 2 years later when I decided I wanted to try something different. I never knew what it was I really wanted to do with my life. After college, 2 jobs, nothing was the same. I knew that I needed something more. Hairdressing is the only thing that has made me feel satisfied that I am actually making a difference in peoples lives. I love the feeling of making someone smile as hair is such a big thing in everyone's lives. I saw Base's advert during my job search and I knew it was the place for me.. somewhere that was willing to assess where we are at already within our careers and taking the time to push us to be the best we can be. I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe."
             )

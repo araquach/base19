@@ -3,9 +3,9 @@
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Beth Brown</h1>
-        <p>Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.
-          Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more.
-          There is so much more to hairdressing than meets the eye and I find it really intriguing. I feel like I’m constantly learning and I love how creative it can be.</p>
+        <p class="is-size-5">Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.
+          Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more.</p>
+        <p>There is so much more to hairdressing than meets the eye and I find it really intriguing. I feel like I’m constantly learning and I love how creative it can be.</p>
         <p>So I started my apprenticeship at another salon and then I heard about Base being a training academy that focused on helping apprentices like myself to become an outstanding stylist.
           This is what made me want to go with Base for my training because not only am I learning the trade but I’m learning it to a high professional standard.</p>
         <p>When it comes to hairdressing itself, one of the things I enjoy the most is achieving what a client wants and making them feel good about themselves.

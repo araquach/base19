@@ -3,7 +3,7 @@
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Lucy Watson</h1>
-        <p>Hi, I’m Lucy I have been hairdressing for nearly three years now. I decided to go into the hair industry because I have always loved plaiting and playing with my sisters hair, also it was something I was looking into and really caught my attention in my last year of school.</p>
+        <p class="is-size-5">Hi, I’m Lucy I have been hairdressing for nearly three years now. I decided to go into the hair industry because I have always loved plaiting and playing with my sisters hair, also it was something I was looking into and really caught my attention in my last year of school.</p>
         <p>I originally worked at Jakata, watching and learning from the best, two years later Base Hairdressing opened and I transitioned to complete my training there as it is more intense training, closely focusing on what I need to get perfect to have my own running column on the salon floor.</p>
         <p>I enjoy everything about my job! I would say I lean more toward creative colouring but then I love cutting short hair so it is really hard to pick.</p>
       </div>

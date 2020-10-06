@@ -1,7 +1,7 @@
 <template>
     <section class="hero is-fullheight">
         <div class="hero-body columns is-centered">
-            <div class="column is-4 is-7-mobile">
+            <div class="column is-4 is-5-mobile">
                 <div class="is-hidden">
                     <h1 class="title">Academy for the next generation of super-skilled stylists</h1>
                     <h2 class="subtitle">An amazing creative space for upcoming hair stylists</h2>
@@ -10,7 +10,7 @@
                 <figure class="image">
                     <img src="/dist/img/base_logo.svg" alt="Base Hairdressing">
                 </figure>
-                <h2 class="subtitle is-size-4 is-size-6-mobile has-text-white has-text-centered">
+                <h2 class="subtitle is-size-6 is-size-7-mobile has-text-white has-text-centered">
                     A hair academy for the next generation of super skilled stylists
                 </h2>
                 <div class="columns social is-mobile is-centered">
@@ -36,20 +36,10 @@
                         </figure>
                     </div>
                 </div>
-                <div class="has-text-centered corona-warning">
-                    <router-link :to="{ name: 'corona' }" class="button is-warning is-centered">Important COVID-19 Guidelines</router-link>
-                </div>
             </div>
         </div>
         <div class="has-text-right">
             <ReviewFeed :staffMember="staffMember"/>
-        </div>
-        <div class="directory level is-mobile">
-            <div class="level-left">
-                <div class="level-item">
-                    <p class="is-size-7 has-text-centered has-text-white">Find us in the directory of <br><a href='http://www.warrington.co.uk/hairdressers/' class="directory-link">Warrington Hairdressers</a></p>
-                </div>
-            </div>
         </div>
     </section>
 </template>
