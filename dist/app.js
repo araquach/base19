@@ -21311,7 +21311,7 @@ var render = function() {
                       _c("div", { staticClass: "media" }, [
                         _c("div", { staticClass: "media-content" }, [
                           _c(
-                            "p",
+                            "h2",
                             { staticClass: "title is-4 has-text-white" },
                             [
                               _vm._v(
@@ -47065,8 +47065,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

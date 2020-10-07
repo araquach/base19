@@ -14,7 +14,7 @@
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4 has-text-white">{{tm.first_name}} {{tm.last_name}}</p>
+                                    <h2 class="title is-4 has-text-white">{{tm.first_name}} {{tm.last_name}}</h2>
                                     <p class="subtitle has-text-white">{{tm.level}}</p>
                                 </div>
                             </div>
