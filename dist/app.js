@@ -22414,14 +22414,6 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp2.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
                     attrs: { src: "/dist/img/team/profiles/ruby/hp3.jpg" }
                   })
                 ])
@@ -22441,14 +22433,6 @@ var staticRenderFns = [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
                     attrs: { src: "/dist/img/team/profiles/ruby/hp5.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp6.jpg" }
                   })
                 ])
               ])
@@ -22555,6 +22539,14 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
+                    attrs: { src: "/dist/img/team/profiles/ruby/hp2.jpg" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
                     attrs: { src: "/dist/img/team/profiles/ruby/hp8.jpg" }
                   })
                 ])
@@ -22574,6 +22566,14 @@ var staticRenderFns = [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
                     attrs: { src: "/dist/img/team/profiles/ruby/p3.jpg" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: { src: "/dist/img/team/profiles/ruby/hp6.jpg" }
                   })
                 ])
               ])

@@ -32,11 +32,6 @@
             </div>
             <div class="tile is-child">
               <figure class="image">
-                <img src="/dist/img/team/profiles/ruby/hp2.jpg">
-              </figure>
-            </div>
-            <div class="tile is-child">
-              <figure class="image">
                 <img src="/dist/img/team/profiles/ruby/hp3.jpg">
               </figure>
             </div>
@@ -50,11 +45,6 @@
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/ruby/hp5.jpg">
-              </figure>
-            </div>
-            <div class="tile is-child">
-              <figure class="image">
-                <img src="/dist/img/team/profiles/ruby/hp6.jpg">
               </figure>
             </div>
           </div>
@@ -88,6 +78,11 @@
             </div>
             <div class="tile is-child">
               <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp2.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
                 <img src="/dist/img/team/profiles/ruby/hp8.jpg">
               </figure>
             </div>
@@ -101,6 +96,11 @@
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/ruby/p3.jpg">
+              </figure>
+            </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/ruby/hp6.jpg">
               </figure>
             </div>
           </div>
