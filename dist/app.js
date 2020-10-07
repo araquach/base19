@@ -20984,11 +20984,13 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", { staticClass: "is-size-5" }, [
           _vm._v(
-            "Lucy & Lauren are two outstanding Graduate Stylists looking to build their client bases. They both love colouring, cutting & styling hair - their work is outstanding."
-          ),
-          _c("br"),
+            "Ruby, Sophie & Beth are all fast progressing Junior Stylists, each of them producing outstanding work. If you're looking for a great new look at a fraction of the cost then book in with one of them for a consultation to see what they can do for you!"
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
           _vm._v(
-            " Beth, Ruby & Sophie are all Junior stylists looking to build their skills. They're taking on basic colouring and cutting - all fully supervised by a Senior Stylist"
+            "Lucy & Lauren are two outstanding Graduate Stylists looking to take on new clients. They both love colouring, cutting & styling hair - their work is outstanding."
           )
         ]),
         _vm._v(" "),
@@ -21013,8 +21015,8 @@ var staticRenderFns = [
             _c("figure", { staticClass: "image is-square" }, [
               _c("img", {
                 attrs: {
-                  src: "/dist/img/offers/ny_offer_1.jpg",
-                  alt: "Graduate Stylist Offer"
+                  src: "/dist/img/offers/js_offer.jpg",
+                  alt: "Junior Stylist Offer"
                 }
               })
             ])
@@ -21023,8 +21025,14 @@ var staticRenderFns = [
           _c("div", { staticClass: "card-content" }, [
             _c("div", { staticClass: "media" }, [
               _c("div", { staticClass: "media-content" }, [
-                _c("p", { staticClass: "subtitle has-text-white" }, [
-                  _vm._v("Graduate Stylist Offer for new clients to Base")
+                _c("h1", { staticClass: "subtitle has-text-white" }, [
+                  _vm._v(
+                    "Special Offer with Ruby, Sophie & Beth for new clients"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "has-text-white" }, [
+                  _vm._v("Colour & Cut for just £35")
                 ])
               ])
             ]),
@@ -21033,9 +21041,9 @@ var staticRenderFns = [
               "div",
               { staticClass: "content is-size-6-mobile has-text-white" },
               [
-                _c("p", [
+                _c("p", { staticClass: "is-size-7" }, [
                   _vm._v(
-                    "Skin test required 48 hours before any colour service. Offer Ends 31/03/20"
+                    "Skin test required 48 hours before any colour service. Offer Ends 30/11/20"
                   )
                 ])
               ]
@@ -21050,8 +21058,8 @@ var staticRenderFns = [
             _c("figure", { staticClass: "image is-square" }, [
               _c("img", {
                 attrs: {
-                  src: "/dist/img/offers/ny_offer_2.jpg",
-                  alt: "Junior Stylist Offer"
+                  src: "/dist/img/offers/gs_offer.jpg",
+                  alt: "Graduate Stylist Offer"
                 }
               })
             ])
@@ -21060,10 +21068,14 @@ var staticRenderFns = [
           _c("div", { staticClass: "card-content" }, [
             _c("div", { staticClass: "media" }, [
               _c("div", { staticClass: "media-content" }, [
-                _c("p", { staticClass: "subtitle has-text-white" }, [
+                _c("h1", { staticClass: "subtitle has-text-white" }, [
                   _vm._v(
-                    "Junior Stylist Offer - Basic Colouring & Cutting only - please book with a Graduate for more advanced Cutting/Colouring "
+                    "Special Offer with Lucy & Lauren for new clients to Base"
                   )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "has-text-white" }, [
+                  _vm._v("Colour & Cut for just £50")
                 ])
               ])
             ]),
@@ -21072,9 +21084,9 @@ var staticRenderFns = [
               "div",
               { staticClass: "content is-size-6-mobile has-text-white" },
               [
-                _c("p", [
+                _c("p", { staticClass: "is-size-7" }, [
                   _vm._v(
-                    "Skin test required 48 hours before any colour service. Offer Ends 31/03/20"
+                    "Skin test required 48 hours before any colour service. Offer Ends 30/11/20"
                   )
                 ])
               ]
@@ -22169,7 +22181,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
-              "Hi I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way."
+              "Hi, I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way."
             )
           ]),
           _vm._v(" "),
