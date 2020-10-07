@@ -51,6 +51,11 @@
               </div>
             </div>
         </div>
+      <div>
+        <p class="is-size-4">Call <strong>01925 444449</strong> to book a consultation with your chosen stylist</p>
+        <router-link :to="{ name: 'team' }" class="is-size-4 has-text-warning">Find out more about the team members here ></router-link>
+        <br><br>
+      </div>
         <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">

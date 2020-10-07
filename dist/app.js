@@ -21008,6 +21008,26 @@ var render = function() {
       _vm._v(" "),
       _vm._m(1),
       _vm._v(" "),
+      _c(
+        "div",
+        [
+          _vm._m(2),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "is-size-4 has-text-warning",
+              attrs: { to: { name: "team" } }
+            },
+            [_vm._v("Find out more about the team members here >")]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _c("br")
+        ],
+        1
+      ),
+      _vm._v(" "),
       _c("div", { staticClass: "level is-mobile" }, [
         _c("div", { staticClass: "level-left" }, [
           _c("div", { staticClass: "level-item" }, [
@@ -21154,6 +21174,16 @@ var staticRenderFns = [
           ])
         ])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "is-size-4" }, [
+      _vm._v("Call "),
+      _c("strong", [_vm._v("01925 444449")]),
+      _vm._v(" to book a consultation with your chosen stylist")
     ])
   }
 ]
