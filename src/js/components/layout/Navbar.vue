@@ -17,9 +17,9 @@
             <b-navbar-item tag="router-link" to="/#blog" v-scroll-to="'#blog'">
                 Blog
             </b-navbar-item>
-<!--            <b-navbar-item tag="router-link" to="/#offers" v-scroll-to="'#offers'">-->
-<!--                Offers-->
-<!--            </b-navbar-item>-->
+            <b-navbar-item tag="router-link" to="/#offers" v-scroll-to="'#offers'">
+                Offers
+            </b-navbar-item>
             <b-navbar-dropdown label="More">
                 <b-navbar-item tag="router-link" to="/#joinus" v-scroll-to="'#joinus'">
                     Join Us
