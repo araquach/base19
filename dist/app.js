@@ -20378,7 +20378,7 @@ var render = function() {
               ],
               attrs: { tag: "router-link", to: "/#home" }
             },
-            [_vm._v("\n                Home\n            ")]
+            [_vm._v("\n            Home\n        ")]
           ),
           _vm._v(" "),
           _c("a", { attrs: { href: "" } }),
@@ -20396,7 +20396,7 @@ var render = function() {
               ],
               attrs: { tag: "router-link", to: "/#about" }
             },
-            [_vm._v("\n                About\n            ")]
+            [_vm._v("\n            About\n        ")]
           ),
           _vm._v(" "),
           _c(
@@ -20412,7 +20412,7 @@ var render = function() {
               ],
               attrs: { tag: "router-link", to: "/#corona" }
             },
-            [_vm._v("\n                Corona\n            ")]
+            [_vm._v("\n            Corona\n        ")]
           ),
           _vm._v(" "),
           _c(
@@ -20428,7 +20428,7 @@ var render = function() {
               ],
               attrs: { tag: "router-link", to: "/#team" }
             },
-            [_vm._v("\n                Team\n            ")]
+            [_vm._v("\n            Team\n        ")]
           ),
           _vm._v(" "),
           _c(
@@ -20444,7 +20444,23 @@ var render = function() {
               ],
               attrs: { tag: "router-link", to: "/#blog" }
             },
-            [_vm._v("\n                Blog\n            ")]
+            [_vm._v("\n            Blog\n        ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "b-navbar-item",
+            {
+              directives: [
+                {
+                  name: "scroll-to",
+                  rawName: "v-scroll-to",
+                  value: "#offers",
+                  expression: "'#offers'"
+                }
+              ],
+              attrs: { tag: "router-link", to: "/#offers" }
+            },
+            [_vm._v("\n            Offers\n        ")]
           ),
           _vm._v(" "),
           _c(
@@ -20464,7 +20480,7 @@ var render = function() {
                   ],
                   attrs: { tag: "router-link", to: "/#joinus" }
                 },
-                [_vm._v("\n                    Join Us\n                ")]
+                [_vm._v("\n                Join Us\n            ")]
               ),
               _vm._v(" "),
               _c("hr", { staticClass: "navbar-divider" }),
@@ -20482,7 +20498,7 @@ var render = function() {
                   ],
                   attrs: { tag: "router-link", to: "/#models" }
                 },
-                [_vm._v("\n                    Models\n                ")]
+                [_vm._v("\n                Models\n            ")]
               )
             ],
             1
@@ -20525,11 +20541,7 @@ var render = function() {
                     staticClass: "button is-light",
                     attrs: { tag: "router-link", to: "/#contact" }
                   },
-                  [
-                    _vm._v(
-                      "\n                        Contact Us\n                    "
-                    )
-                  ]
+                  [_vm._v("\n                    Contact Us\n                ")]
                 )
               ],
               1
