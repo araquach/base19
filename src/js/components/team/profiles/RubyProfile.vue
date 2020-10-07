@@ -3,7 +3,7 @@
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Ruby Johnson</h1>
-        <p class="is-size-5">Hi I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way.</p>
+        <p class="is-size-5">Hi, I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way.</p>
         <p>As a child I always had a passion for hair and beauty, beginning with styling my two older sisters hair with plaiting and braiding, not to mention chopping off the hair of my Barbie dolls with the kitchen scissors! Becoming a hairdresser is doing what I love, and loving what I do. Not only that but I get to empower other women with the snip of my scissors. Being a hairdresser is about building a relationship with clients by listening and catering to their needs and wants.</p>
         <p>It’s not only creating artwork I am proud of, it's also using my own talent to achieve a look that gives somebody not only beauty on the outside but confidence within themselves which is one of the most rewarding things. As I continue on my journey I feel I am growing as an individual collecting knowledge and being able to express my creativity in endless ways. Moreover, I enjoy the constant learning whether it be about the science and complexity behind hair corrections, the hair structure, colour knowledge or cutting skills there’s always more to be educated on. Hairdressing is my passion and I could not be more grateful to have the opportunity to pursue my career dreams.</p>
       </div>
