@@ -3155,6 +3155,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -21561,7 +21567,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
-              "Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.\n        Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more."
+              "Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.\n        Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more!"
             )
           ]),
           _vm._v(" "),
@@ -21573,8 +21579,17 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "So I started my apprenticeship at another salon and then I heard about Base being a training academy that focused on helping apprentices like myself to become an outstanding stylist.\n        This is what made me want to go with Base for my training because not only am I learning the trade but I’m learning it to a high professional standard."
-            )
+              "So I started my apprenticeship at another salon and then I heard about "
+            ),
+            _c("strong", [_vm._v("Base")]),
+            _vm._v(
+              " being a training academy that focused on helping apprentices like myself to become an outstanding stylist.\n        "
+            ),
+            _c("em", [
+              _vm._v(
+                "This is what made me want to go with Base for my training because not only am I learning the trade but I’m\n          learning it to a high professional standard."
+              )
+            ])
           ]),
           _vm._v(" "),
           _c("p", [
@@ -21586,7 +21601,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile section is-10" }, [
               _c("figure", { staticClass: "image" }, [
                 _c("img", {
                   attrs: {
@@ -21642,43 +21657,95 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
+            _vm._v("One of my favourite things so far in hairdressing is "),
+            _c("strong", [_vm._v("working with colour")]),
             _vm._v(
-              "One of my favourite things so far in hairdressing is working with colour, especially colours that stand out.\n        I love how creative it can be and love coming up with different looks for each client.\n        On the other hand I’m really enjoying learning about all the different cuts and cutting  techniques.\n        Some cuts can be more complex than they look, so when I learn them I really enjoying finding out how they are done."
+              ", especially colours that stand out.\n        I love how creative it can be and love coming up with different looks for each client."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "When it comes to products there are so many that I love but I’d say my two favourite would be the Schwarzkopf Liquid Shine because of it being nourishing, tames frizz and helps hold the colour at the same time, I use this myself and it’s perfect for keeping my red hair looking shiny and bright!"
+              "On the other hand I’m really enjoying learning about all the different "
+            ),
+            _c("strong", [_vm._v("cuts and cutting techniques.")]),
+            _vm._v(
+              "\n        Some cuts can be more complex than they look, so when I learn them I really enjoying finding out how they are done."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "The next product is the Schwarzkopf Keratin Smooth treatment, this I couldn’t recommend more, I used this on my hair when it was really messy and frizzy and it left it in such better condition feeling soft shiny and fresh."
+              "When it comes to products there are so many that I love but I’d say my two favourite would be the "
+            ),
+            _c("strong", [_vm._v("Schwarzkopf\n        Liquid Shine")]),
+            _vm._v(
+              " because of it being nourishing, tames frizz and helps hold the colour at the same time, I use this myself and it’s perfect for keeping my red hair looking shiny and bright!"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("The next product I love is the "),
+            _c("strong", [_vm._v("Schwarzkopf Keratin Smooth treatment")]),
+            _vm._v(
+              ", this I couldn’t recommend more, I used this on my hair when it was really messy and frizzy and it left it in such better condition feeling soft shiny and fresh."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Moving on, one of my main influencers in the hair industry is Guy Tang, I absolutely am in love with the work he creates on a humans head!\n        I follow him on social media and often watch the different styles and looks he comes out with.\n        Someone else I came across a long time ago was Kim Kimble, she’s more of a celebrity hair stylist who’s work is also amazing, her motto is “beautifying the world, one head at a time.” Which I think couldn’t be more true."
-            )
+              "Moving on, one of my main influencers in the hair industry is "
+            ),
+            _c("strong", [_vm._v("Guy Tang")]),
+            _vm._v(", "),
+            _c("em", [
+              _vm._v(
+                "I absolutely am\n        in love with the work he creates on a humans head!"
+              )
+            ]),
+            _vm._v(
+              "\n        I follow him on social media and often watch the different styles and looks he comes out with.\n        Someone else I came across a long time ago was "
+            ),
+            _c("strong", [_vm._v("Kim Kimble")]),
+            _vm._v(
+              ", she’s more of a celebrity hair stylist who’s work is also amazing, her motto is\n        "
+            ),
+            _c("em", [_vm._v("“beautifying the world, one head at a time.”")]),
+            _vm._v(" Which I think couldn’t be more true.")
           ])
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "section columns" }, [
         _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
+            _vm._v("Over the next few years I see myself becoming one of "),
+            _c("strong", [
+              _vm._v("the best hairstylist in my\n        company")
+            ]),
             _vm._v(
-              "Over the next few years I see myself becoming one of the best hairstylist in my company and then to continue growing from there to hopefully one of the best in Warrington and on and on from there."
+              " and then to continue growing from there to hopefully one of the best in Warrington and on and on from there."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "Finishing off, I have a few personal interests outside of work, I really enjoy working out so I go to the gym and train there often, I also use my gym to chill out sometimes too because it has a swimming pool there and a spa which is needed after a long day of learning :).\n        Not only this but also I do boxing, I've been boxing since being in high school, it’s something I really love and have a passion for just like hairdressing.\n        I also recently started yoga which I’m loving too! I also love having a drink with my friends outside of work, like on the weekends anywhere with good music and we’re there!\n        That’s something else I absolutely love, music... especially live music, sometimes I’ll even get up and have a sing myself lol. But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy, my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:)."
+              "Finishing off, I have a few personal interests outside of work, I really enjoy working out so I go to the gym and train there often, I also use my gym to chill out sometimes too because it has a swimming pool there and a spa which is needed after a long day of learning :)."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Not only this but also I do boxing, I've been boxing since being in high school, it’s something I really love and have a passion for just like hairdressing.\n        I also recently started yoga which I’m loving too! I also love having a drink with my friends outside of work, like on the weekends anywhere with good music and we’re there!\n        That’s something else I absolutely love, music... especially live music, sometimes I’ll even get up and have a sing myself lol.\n          "
+            ),
+            _c("em", [
+              _vm._v(
+                "But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy"
+              )
+            ]),
+            _vm._v(
+              ", my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:)."
             )
           ])
         ]),
@@ -21782,7 +21849,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile section is-10" }, [
               _c("figure", { staticClass: "image" }, [
                 _c("img", {
                   attrs: {
@@ -22040,7 +22107,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile section is-10" }, [
               _c("figure", { staticClass: "image" }, [
                 _c("img", {
                   attrs: {
@@ -22276,21 +22343,49 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("p", [
+            _vm._v("As a child I always had "),
+            _c("strong", [_vm._v("a passion for hair and beauty")]),
             _vm._v(
-              "As a child I always had a passion for hair and beauty, beginning with styling my two older sisters hair with plaiting and braiding, not to mention chopping off the hair of my Barbie dolls with the kitchen scissors! Becoming a hairdresser is doing what I love, and loving what I do. Not only that but I get to empower other women with the snip of my scissors. Being a hairdresser is about building a relationship with clients by listening and catering to their needs and wants."
+              ", beginning with styling my two older sisters hair with plaiting and braiding, not to mention chopping off the hair of my Barbie dolls with the kitchen scissors!\n        "
+            ),
+            _c("em", [
+              _vm._v(
+                "Becoming a hairdresser is doing what I love, and loving what I do."
+              )
+            ]),
+            _vm._v(
+              " Not only that but I get to empower other women with the snip of my scissors."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "It’s not only creating artwork I am proud of, it's also using my own talent to achieve a look that gives somebody not only beauty on the outside but confidence within themselves which is one of the most rewarding things. As I continue on my journey I feel I am growing as an individual collecting knowledge and being able to express my creativity in endless ways. Moreover, I enjoy the constant learning whether it be about the science and complexity behind hair corrections, the hair structure, colour knowledge or cutting skills there’s always more to be educated on. Hairdressing is my passion and I could not be more grateful to have the opportunity to pursue my career dreams."
+              "Being a hairdresser is about building a relationship with clients by listening and catering to their needs and wants."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "It’s not only creating artwork I am proud of, it's also using my own talent to achieve "
+            ),
+            _c("em", [
+              _vm._v(
+                "a look that gives\n        somebody not only beauty on the outside but confidence within themselves"
+              )
+            ]),
+            _vm._v(" which is one of the most rewarding things.")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "As I continue on my journey I feel I am growing as an individual collecting knowledge and being able to express my creativity in endless ways. Moreover, I enjoy the constant learning whether it be about the science and complexity behind hair corrections, the hair structure, colour knowledge or cutting skills there’s always more to be educated on. Hairdressing is my passion and I could not be more grateful to have the opportunity to pursue my career dreams."
             )
           ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile section is-10" }, [
               _c("figure", { staticClass: "image" }, [
                 _c("img", {
                   attrs: {
@@ -22337,6 +22432,14 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
+                    attrs: { src: "/dist/img/team/profiles/ruby/hp4.jpg" }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-child" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
                     attrs: { src: "/dist/img/team/profiles/ruby/hp5.jpg" }
                   })
                 ])
@@ -22348,41 +22451,52 @@ var staticRenderFns = [
                     attrs: { src: "/dist/img/team/profiles/ruby/hp6.jpg" }
                   })
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp4.jpg" }
-                  })
-                ])
               ])
             ])
           ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
+            _c("strong", [_vm._v("Base academy")]),
             _vm._v(
-              "Base academy is a fashion forward edgy salon that keeps up to date with all the recent trends which is why I believe I fit in perfectly with my stylish and creative ideas. Base provides the best training to the highest standards and endless opportunities to grow and progress as a hairdresser. Base itself and its two partner salons Paul Kemp and Jakata are all recognised and respected for the amazing work produced by all stylists who are inspirational to me and my work and the best colleagues to learn from."
+              " is a fashion forward, edgy salon that keeps up to date with all the recent trends which is why I believe I fit in perfectly with my stylish and creative ideas.\n        "
+            ),
+            _c("strong", [
+              _vm._v("Base provides the best training to the highest standards")
+            ]),
+            _vm._v(
+              " and endless opportunities to grow and progress as a hairdresser. Base itself and its two partner salons\n        "
+            ),
+            _c("strong", [_vm._v("Paul Kemp Hairdressing and Jakata")]),
+            _vm._v(
+              " are all recognised and respected for the amazing work produced by all stylists who are inspirational to me and my work and the best colleagues to learn from."
             )
           ]),
           _vm._v(" "),
           _c("p", [
+            _vm._v("For my favourite products, "),
+            _c("strong", [_vm._v("Olaplex")]),
             _vm._v(
-              "Olaplex is my holy grail! I love all Olaplex products however No.3 has to be my absolute favourite and has completely transformed my own hair. Olaplex Hair Perfector is moisturising, smoothing and reconstructing for the hair as well as being sulphate & paraben free. Just to top it off Olaplex is perfect for colour treated hair which is an absolute bonus for me being someone who I always changing up my colour."
+              " is my holy grail! I love all Olaplex products however No.3 has to be my absolute favourite and has completely transformed my own hair.\n        "
+            ),
+            _c("strong", [_vm._v("Olaplex Hair Perfector")]),
+            _vm._v(
+              " is moisturising, smoothing and reconstructing for the hair as well as being sulphate & paraben free. Just to top it off Olaplex is perfect for colour treated hair which is an absolute bonus for me being someone who I always changing up my colour."
             )
           ]),
           _vm._v(" "),
           _c("p", [
+            _c("strong", [_vm._v("Schwarzkopf BC Silver shampoo")]),
             _vm._v(
-              "Schwarzkopf BC Silver shampoo is perfect for blondes who want to get rid of any brassy yellow tones. Not only does this shampoo help tone between colour sessions it also has ph 4.5 balancer technology which seals the surface of coloured hair, freezing the colour pigments deep inside the hair."
+              " is perfect for blondes who want to get rid of any brassy yellow tones. Not only does this shampoo help tone between colour sessions it also has ph 4.5 balancer technology which seals the surface of coloured hair, freezing the colour pigments deep inside the hair."
             )
           ]),
           _vm._v(" "),
           _c("p", [
+            _c("strong", [_vm._v("Kevin Murphy Young again hair oil")]),
             _vm._v(
-              "Kevin Murphy Young again hair oil is definitely one of my must have products for dry and brittle hair. This is a weightless leave in treatment oil which regenerates hair, enhances shine and leaves your hair feeling soft, smooth and conditioned."
+              " is definitely one of my must have products for dry and brittle hair. This is a weightless leave in treatment oil which regenerates hair, enhances shine and leaves your hair feeling soft, smooth and conditioned."
             )
           ])
         ])
@@ -22390,15 +22504,33 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "section columns" }, [
         _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
-              "My two biggest influences in the hair industry have to be James Earnshaw and Shannon JJ Williams as their work is incredible. I also love the style and trend of boho.blonde.perth on Instagram their salon in Australia Boutique blonde salon is exactly what I aspire to doing years to come with the dream of opening up my own salon in Australia too."
+              "My two biggest influences in the hair industry have to be "
+            ),
+            _c("strong", [
+              _vm._v("James Earnshaw and Shannon JJ\n        Williams")
+            ]),
+            _vm._v(
+              " as their work is incredible. I also love the style and trend of "
+            ),
+            _c("strong", [_vm._v("boho.blonde.perth")]),
+            _vm._v(
+              " on Instagram their salon in Australia Boutique blonde salon is exactly what I aspire to doing years to come with the dream of opening up my own salon in Australia too."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "I enjoy working at Base as the team get along so well like a big family. The opportunities are endless having begun at Base, with no past college or salon experience I am overwhelmed by the amount of progress I have made in such a short amount of time and this would not have been possible without all the training available. Not only do we have a centralised training academy we also have the opportunity to help out in the other larger salons and see what our future will consist of when we are fully qualified with a solid client base."
+              "I enjoy working at Base as the team get along so well like a big family. The opportunities are endless having begun at Base, with no past college or salon experience\n        "
+            ),
+            _c("em", [
+              _vm._v(
+                "I am overwhelmed by the amount of progress I have made in such a short amount of time"
+              )
+            ]),
+            _vm._v(
+              " and this would not have been possible without all the training available. Not only do we have a centralised training academy we also have the opportunity to help out in the other larger salons and see what our future will consist of when we are fully qualified with a solid client base."
             )
           ]),
           _vm._v(" "),
@@ -22415,7 +22547,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp1.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/ruby/hp7.jpg" }
                   })
                 ])
               ]),
@@ -22423,7 +22555,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp2.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/ruby/hp8.jpg" }
                   })
                 ])
               ])
@@ -22433,7 +22565,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp3.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/ruby/p4.jpg" }
                   })
                 ])
               ]),
@@ -22441,25 +22573,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp4.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp5.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp6.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/ruby/p3.jpg" }
                   })
                 ])
               ])
@@ -22507,18 +22621,38 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
-              "Hi, I'm Sophie and I've been hairdressing for around 3 years now. I started when I had just left school back in 2016, up until 2 years later when I decided I wanted to try something different. I never knew what it was I really wanted to do with my life. After college, 2 jobs, nothing was the same. I knew that I needed something more. Hairdressing is the only thing that has made me feel satisfied that I am actually making a difference in peoples lives. I love the feeling of making someone smile as hair is such a big thing in everyone's lives. I saw Base's advert during my job search and I knew it was the place for me.. somewhere that was willing to assess where we are at already within our careers and taking the time to push us to be the best we can be. I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe."
+              "Hi, I'm Sophie and I've been hairdressing for around 3 years now. I started when I had just left school back in 2016, up until 2 years later when I decided I wanted to try something different."
             )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "I never knew what it was I really wanted to do with my life. After college, 2 jobs, nothing was the same. I knew that I needed something more. Hairdressing is the only thing that has made me feel satisfied that I am actually making a difference in peoples lives. I love the feeling of making someone smile as hair is such a big thing in everyone's lives."
+            )
+          ]),
+          _c("p"),
+          _c("p", [
+            _vm._v("I saw "),
+            _c("strong", [_vm._v("Base's")]),
+            _vm._v(
+              " advert during my job search and I knew it was the place for me.. somewhere that was willing to assess where we are at already within our careers and taking the time to push us to be the best we can be.\n      "
+            ),
+            _c("em", [
+              _vm._v(
+                "I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe"
+              )
+            ]),
+            _vm._v(".")
           ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column" }, [
           _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile" }, [
+            _c("div", { staticClass: "tile section is-10" }, [
               _c("figure", { staticClass: "image" }, [
                 _c("img", {
                   attrs: {
-                    src: "/dist/img/team/profiles/sophie/p2.jpg",
+                    src: "/dist/img/team/profiles/sophie/p1.jpg",
                     alt: "Sophie"
                   }
                 })
@@ -22588,15 +22722,27 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
+          _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
-              "My favourite thing to do in hairdressing is short cuts, I don't know what it is they just look so slick and smart! I love a good bob. I was so scared of them at first but with the right techniques and the right support I got the techniques down with only a few tweaks to the end result. The majority of my clients are pretty experimental with their hair I think crazy colours, blondes and bobs are my most popular look at the moment! So trendy! I would say this is probably my speciality."
+              "My favourite thing to do in hairdressing is short cuts, I don't know what it is they just look so slick and smart! I love a good bob. I was so scared of them at first but with the right techniques and the right support I got the techniques down with only a few tweaks to the end result."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "My favourite product is the UV Colour Freeze Liquid Shine, I think it's fab how it smooths the hair but protects all your hard work colouring at the same time."
+              "The majority of my clients are pretty experimental with their hair I think "
+            ),
+            _c("strong", [_vm._v("crazy colours, blondes and bobs")]),
+            _vm._v(
+              " are my most popular look at the moment! So trendy! I would say this is probably my speciality."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("My favourite product is the "),
+            _c("strong", [_vm._v("UV Colour Freeze Liquid Shine")]),
+            _vm._v(
+              ", I think it's fab how it smooths the hair but protects all your hard work colouring at the same time."
             )
           ])
         ])
@@ -22604,10 +22750,23 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "section columns" }, [
         _c("div", { staticClass: "column is-7" }, [
+          _c("p", { staticClass: "is-size-5" }, [
+            _vm._v("I enjoy training at "),
+            _c("strong", [_vm._v("Base")]),
+            _vm._v(
+              " purely because of the freedom. Nothing is too much. No matter how much experience you have, the other members of staff will always be happy to help and guide you along the way to ensure that your work is produced to the best of your ability."
+            )
+          ]),
+          _vm._v(" "),
           _c("p", [
             _vm._v(
-              "I enjoy training at Base purely because of the freedom. Nothing is too much. No matter how much experience you have, the other members of staff will always be happy to help and guide you along the way to ensure that your work is produced to the best of your ability. I love how creative everybody is and there is no limits. I already have a few clients who have come back to me with good feedback, I'd like to hope they will stick by me as I move up in my journey through hairdressing. I can see myself building up a steady client base and becoming more and more confident. I can see myself running a column and travelling places because of my career."
-            )
+              "I love how creative everybody is and there is no limits. I already have a few clients who have come back to me with good feedback, I'd like to hope they will stick by me as I move up in my journey through hairdressing.\n        "
+            ),
+            _c("em", [
+              _vm._v(
+                "I can see myself building up a steady client base and becoming more and more confident. I can see myself\n          running a column and travelling places because of my career."
+              )
+            ])
           ]),
           _vm._v(" "),
           _c("p", [
@@ -22623,7 +22782,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp1.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/sophie/p2.jpg" }
                   })
                 ])
               ]),
@@ -22631,7 +22790,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp2.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/sophie/hp7.jpg" }
                   })
                 ])
               ])
@@ -22641,7 +22800,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp3.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/sophie/p3.jpg" }
                   })
                 ])
               ]),
@@ -22649,25 +22808,7 @@ var staticRenderFns = [
               _c("div", { staticClass: "tile is-child" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp4.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp5.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp6.jpg" }
+                    attrs: { src: "/dist/img/team/profiles/sophie/hp8.jpg" }
                   })
                 ])
               ])

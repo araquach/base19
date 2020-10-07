@@ -9,7 +9,7 @@
       </div>
       <div class="column">
         <div class="tile is-ancestor">
-          <div class="tile">
+          <div class="tile section is-10">
             <figure class="image">
               <img src="/dist/img/team/profiles/lucy/p2.jpg" alt="Lucy">
             </figure>
