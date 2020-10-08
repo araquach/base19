@@ -22131,22 +22131,11 @@ var staticRenderFns = [
           "a",
           { attrs: { href: "https://www.instagram.com/laurenw_hairr/" } },
           [
-            _c("div", { staticClass: "columns is-mobile" }, [
-              _c("div", { staticClass: "column is-1" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/home/social/Insta2.svg",
-                    alt: "Instagram",
-                    width: "40"
-                  }
-                })
+            _c("p", { staticClass: "is-size-5 has-text-white" }, [
+              _c("span", { staticClass: "icon" }, [
+                _c("i", { staticClass: "fab fa-instagram-square" })
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column is-4" }, [
-                _c("p", { staticClass: "is-size-5 has-text-white" }, [
-                  _vm._v("laurenw_hairr")
-                ])
-              ])
+              _vm._v(" laurenw_hairr")
             ])
           ]
         )
@@ -22461,7 +22450,7 @@ var staticRenderFns = [
             )
           ]),
           _vm._v(
-            ", they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get my through it."
+            ", they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get me through it."
           )
         ]),
         _vm._v(" "),
@@ -22491,22 +22480,11 @@ var staticRenderFns = [
           "a",
           { attrs: { href: "https://www.instagram.com/lucy_jakatahair/" } },
           [
-            _c("div", { staticClass: "columns is-mobile" }, [
-              _c("div", { staticClass: "column is-1" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/home/social/Insta2.svg",
-                    alt: "Instagram",
-                    width: "40"
-                  }
-                })
+            _c("p", { staticClass: "is-size-5 has-text-white" }, [
+              _c("span", { staticClass: "icon" }, [
+                _c("i", { staticClass: "fab fa-instagram-square" })
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column is-4" }, [
-                _c("p", { staticClass: "is-size-5 has-text-white" }, [
-                  _vm._v("lucy_jakatahair")
-                ])
-              ])
+              _vm._v(" lucy_jakatahair")
             ])
           ]
         )
@@ -22850,22 +22828,11 @@ var staticRenderFns = [
           "a",
           { attrs: { href: "https://www.instagram.com/leturhaird0wn/" } },
           [
-            _c("div", { staticClass: "columns is-mobile" }, [
-              _c("div", { staticClass: "column is-1" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/home/social/Insta2.svg",
-                    alt: "Instagram",
-                    width: "40"
-                  }
-                })
+            _c("p", { staticClass: "is-size-5 has-text-white" }, [
+              _c("span", { staticClass: "icon" }, [
+                _c("i", { staticClass: "fab fa-instagram-square" })
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column is-4" }, [
-                _c("p", { staticClass: "is-size-5 has-text-white" }, [
-                  _vm._v("leturhaird0wn")
-                ])
-              ])
+              _vm._v(" leturhaird0wn")
             ])
           ]
         )
@@ -23177,22 +23144,11 @@ var staticRenderFns = [
           "a",
           { attrs: { href: "https://www.instagram.com/hairby_sophiey/" } },
           [
-            _c("div", { staticClass: "columns is-mobile" }, [
-              _c("div", { staticClass: "column is-1" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/home/social/Insta2.svg",
-                    alt: "Instagram",
-                    width: "40"
-                  }
-                })
+            _c("p", { staticClass: "is-size-5 has-text-white" }, [
+              _c("span", { staticClass: "icon" }, [
+                _c("i", { staticClass: "fab fa-instagram-square" })
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column is-4" }, [
-                _c("p", { staticClass: "is-size-5 has-text-white" }, [
-                  _vm._v("hairby_sophiey")
-                ])
-              ])
+              _vm._v(" hairby_sophiey")
             ])
           ]
         )

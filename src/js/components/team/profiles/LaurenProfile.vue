@@ -85,14 +85,7 @@
         <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
         <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
         <a href="https://www.instagram.com/laurenw_hairr/">
-          <div class="columns is-mobile">
-            <div class="column is-1">
-              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram" width="40">
-            </div>
-            <div class="column is-4">
-              <p class="is-size-5 has-text-white">laurenw_hairr</p>
-            </div>
-          </div>
+          <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span> laurenw_hairr</p>
         </a>
       </div>
       <div class="column">

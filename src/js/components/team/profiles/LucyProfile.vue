@@ -71,21 +71,14 @@
       <div class="column is-7">
         <p class="is-size-5">In terms of my hairdressing inspiration, I really look up to <strong>Chris Appleton and Natalie from Jakata</strong>. Their work is amazing! and I aspire to be like them one day.</p>
         <p>It all depends on your work colleagues, having a good relationship with your team in work really helps you to strive forward and get you through anything.
-          <em>The training here at Base is next level, Adam and Jim really are the bomb</em>, they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get my through it.</p>
+          <em>The training here at Base is next level, Adam and Jim really are the bomb</em>, they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get me through it.</p>
         <p>My goal in life is to travel as a hairdresser, I want to see the world and make the best memories doing my job, so I decided that is the way to do it. My goal for the next few years is to graduate(this year) at Base and work towards being a Senior stylist at Jakata as I really look up to the guys there and want to be the best like them!</p>
         <p>Outside of work I really am just a quiet girl, I love eating out with my partner, I love food§! I also love spending time with my friends and seeing my niece. Here are some pics of me outside of work ☺️</p>
         <hr>
         <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
         <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
         <a href="https://www.instagram.com/lucy_jakatahair/">
-          <div class="columns is-mobile">
-            <div class="column is-1">
-              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram" width="40">
-            </div>
-            <div class="column is-4">
-              <p class="is-size-5 has-text-white">lucy_jakatahair</p>
-            </div>
-          </div>
+          <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span> lucy_jakatahair</p>
         </a>
       </div>
       <div class="column">
