@@ -1,5 +1,5 @@
 <template>
-  <div class="section has-text-white">
+  <div id="profile" class="section has-text-white">
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Ruby Johnson</h1>
@@ -23,7 +23,7 @@
     </div>
     <div class="section columns">
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
@@ -69,7 +69,7 @@
         <p>Outside of hairdressing I love watching Crime Documentaries and conspiracy theories as well as spending time with my sisters or walking the dog.</p>
       </div>
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">

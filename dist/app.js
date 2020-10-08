@@ -21558,97 +21558,59 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section has-text-white" }, [
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("h1", { staticClass: "title is-2 has-text-white" }, [
-            _vm._v("Beth Brown")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.\n        Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more!"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "There is so much more to hairdressing than meets the eye and I find it really intriguing. I feel like I’m constantly learning and I love how creative it can be."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "So I started my apprenticeship at another salon and then I heard about "
-            ),
-            _c("strong", [_vm._v("Base")]),
-            _vm._v(
-              " being a training academy that focused on helping apprentices like myself to become an outstanding stylist.\n        "
-            ),
-            _c("em", [
+    return _c(
+      "div",
+      { staticClass: "section has-text-white", attrs: { id: "profile" } },
+      [
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("h1", { staticClass: "title is-2 has-text-white" }, [
+              _vm._v("Beth Brown")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-5" }, [
               _vm._v(
-                "This is what made me want to go with Base for my training because not only am I learning the trade but I’m\n          learning it to a high professional standard."
+                "Hiya, I’m Beth.  I've been hairdressing for almost 2 years now and have been working in the hair industry for nearly 3 years.\n        Originally I didn’t consider becoming a hair stylist, that was until I got a Saturday job in a hair salon and since that day there’s nothing I’ve wanted to do more!"
               )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "When it comes to hairdressing itself, one of the things I enjoy the most is achieving what a client wants and making them feel good about themselves.\n        I think it’s really important for people to feel good about themselves...so getting your hair done and having that time in the salon to chill out and relax is all part of the clients experience when in with me."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile section is-10" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/team/profiles/beth/p1.jpg",
-                    alt: "Beth"
-                  }
-                })
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp1.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp2.jpg" }
-                  })
-                ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "There is so much more to hairdressing than meets the eye and I find it really intriguing. I feel like I’m constantly learning and I love how creative it can be."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "So I started my apprenticeship at another salon and then I heard about "
+              ),
+              _c("strong", [_vm._v("Base")]),
+              _vm._v(
+                " being a training academy that focused on helping apprentices like myself to become an outstanding stylist.\n        "
+              ),
+              _c("em", [
+                _vm._v(
+                  "This is what made me want to go with Base for my training because not only am I learning the trade but I’m\n          learning it to a high professional standard."
+                )
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
+            _c("p", [
+              _vm._v(
+                "When it comes to hairdressing itself, one of the things I enjoy the most is achieving what a client wants and making them feel good about themselves.\n        I think it’s really important for people to feel good about themselves...so getting your hair done and having that time in the salon to chill out and relax is all part of the clients experience when in with me."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor" }, [
+              _c("div", { staticClass: "tile section is-10" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp4.jpg" }
+                    attrs: {
+                      src: "/dist/img/team/profiles/beth/p1.jpg",
+                      alt: "Beth"
+                    }
                   })
                 ])
               ])
@@ -21656,141 +21618,185 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v("One of my favourite things so far in hairdressing is "),
-            _c("strong", [_vm._v("working with colour")]),
-            _vm._v(
-              ", especially colours that stand out.\n        I love how creative it can be and love coming up with different looks for each client."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "On the other hand I’m really enjoying learning about all the different "
-            ),
-            _c("strong", [_vm._v("cuts and cutting techniques.")]),
-            _vm._v(
-              "\n        Some cuts can be more complex than they look, so when I learn them I really enjoying finding out how they are done."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "When it comes to products there are so many that I love but I’d say my two favourite would be the "
-            ),
-            _c("strong", [_vm._v("Schwarzkopf\n        Liquid Shine")]),
-            _vm._v(
-              " because of it being nourishing, tames frizz and helps hold the colour at the same time, I use this myself and it’s perfect for keeping my red hair looking shiny and bright!"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("The next product I love is the "),
-            _c("strong", [_vm._v("Schwarzkopf Keratin Smooth treatment")]),
-            _vm._v(
-              ", this I couldn’t recommend more, I used this on my hair when it was really messy and frizzy and it left it in such better condition feeling soft shiny and fresh."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Moving on, one of my main influencers in the hair industry is "
-            ),
-            _c("strong", [_vm._v("Guy Tang")]),
-            _vm._v(", "),
-            _c("em", [
-              _vm._v(
-                "I absolutely am\n        in love with the work he creates on a humans head!"
-              )
-            ]),
-            _vm._v(
-              "\n        I follow him on social media and often watch the different styles and looks he comes out with.\n        Someone else I came across a long time ago was "
-            ),
-            _c("strong", [_vm._v("Kim Kimble")]),
-            _vm._v(
-              ", she’s more of a celebrity hair stylist who’s work is also amazing, her motto is\n        "
-            ),
-            _c("em", [_vm._v("“beautifying the world, one head at a time.”")]),
-            _vm._v(" Which I think couldn’t be more true.")
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v("Over the next few years I see myself becoming one of "),
-            _c("strong", [
-              _vm._v("the best hairstylist in my\n        company")
-            ]),
-            _vm._v(
-              " and then to continue growing from there to hopefully one of the best in Warrington and on and on from there."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Finishing off, I have a few personal interests outside of work, I really enjoy working out so I go to the gym and train there often, I also use my gym to chill out sometimes too because it has a swimming pool there and a spa which is needed after a long day of learning :)."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Not only this but also I do boxing, I've been boxing since being in high school, it’s something I really love and have a passion for just like hairdressing.\n        I also recently started yoga which I’m loving too! I also love having a drink with my friends outside of work, like on the weekends anywhere with good music and we’re there!\n        That’s something else I absolutely love, music... especially live music, sometimes I’ll even get up and have a sing myself lol.\n          "
-            ),
-            _c("em", [
-              _vm._v(
-                "But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy"
-              )
-            ]),
-            _vm._v(
-              ", my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:)."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/p2.jpg" }
-                  })
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp1.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp2.jpg" }
+                    })
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp6.jpg" }
-                  })
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp4.jpg" }
+                    })
+                  ])
                 ])
               ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v("One of my favourite things so far in hairdressing is "),
+              _c("strong", [_vm._v("working with colour")]),
+              _vm._v(
+                ", especially colours that stand out.\n        I love how creative it can be and love coming up with different looks for each client."
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp7.jpg" }
-                  })
+            _c("p", [
+              _vm._v(
+                "On the other hand I’m really enjoying learning about all the different "
+              ),
+              _c("strong", [_vm._v("cuts and cutting techniques.")]),
+              _vm._v(
+                "\n        Some cuts can be more complex than they look, so when I learn them I really enjoying finding out how they are done."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "When it comes to products there are so many that I love but I’d say my two favourite would be the "
+              ),
+              _c("strong", [_vm._v("Schwarzkopf\n        Liquid Shine")]),
+              _vm._v(
+                " because of it being nourishing, tames frizz and helps hold the colour at the same time, I use this myself and it’s perfect for keeping my red hair looking shiny and bright!"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("The next product I love is the "),
+              _c("strong", [_vm._v("Schwarzkopf Keratin Smooth treatment")]),
+              _vm._v(
+                ", this I couldn’t recommend more, I used this on my hair when it was really messy and frizzy and it left it in such better condition feeling soft shiny and fresh."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Moving on, one of my main influencers in the hair industry is "
+              ),
+              _c("strong", [_vm._v("Guy Tang")]),
+              _vm._v(", "),
+              _c("em", [
+                _vm._v(
+                  "I absolutely am\n        in love with the work he creates on a humans head!"
+                )
+              ]),
+              _vm._v(
+                "\n        I follow him on social media and often watch the different styles and looks he comes out with.\n        Someone else I came across a long time ago was "
+              ),
+              _c("strong", [_vm._v("Kim Kimble")]),
+              _vm._v(
+                ", she’s more of a celebrity hair stylist who’s work is also amazing, her motto is\n        "
+              ),
+              _c("em", [
+                _vm._v("“beautifying the world, one head at a time.”")
+              ]),
+              _vm._v(" Which I think couldn’t be more true.")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v("Over the next few years I see myself becoming one of "),
+              _c("strong", [
+                _vm._v("the best hairstylist in my\n        company")
+              ]),
+              _vm._v(
+                " and then to continue growing from there to hopefully one of the best in Warrington and on and on from there."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Finishing off, I have a few personal interests outside of work, I really enjoy working out so I go to the gym and train there often, I also use my gym to chill out sometimes too because it has a swimming pool there and a spa which is needed after a long day of learning :)."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Not only this but also I do boxing, I've been boxing since being in high school, it’s something I really love and have a passion for just like hairdressing.\n        I also recently started yoga which I’m loving too! I also love having a drink with my friends outside of work, like on the weekends anywhere with good music and we’re there!\n        That’s something else I absolutely love, music... especially live music, sometimes I’ll even get up and have a sing myself lol.\n          "
+              ),
+              _c("em", [
+                _vm._v(
+                  "But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy"
+                )
+              ]),
+              _vm._v(
+                ", my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:)."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/p2.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp6.jpg" }
+                    })
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/beth/hp8.jpg" }
-                  })
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp7.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/beth/hp8.jpg" }
+                    })
+                  ])
                 ])
               ])
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -21821,100 +21827,60 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section has-text-white" }, [
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("h1", { staticClass: "title is-2 has-text-white" }, [
-            _vm._v("Lauren Watson")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "Hi, I'm Lauren. I've been hairdressing for almost 3 years now. I always considered doing hairdressing as a career since being a child as I have always found interest in experimenting with styling friends and family members hair!\n        I knew hairdressing would be the right thing for me to Dao as a career as I enjoyed it so much."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "For my first year of training I worked at Paul Kemp Hairdressing (Base wasn't open at this point) which was great for my learning as it was more of a hands on experience giving me the opportunity to  see for myself whilst learning what hairdressing was all about.\n        I then moved over to work at Base hairdressing which was the PK training academy for all new learners and graduates,\n        this was so much better and easier for my learning as it had staff there that were there to mainly help and train you to the best you can be and there was always help when needed which helps fast track your skills."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Learning to do hair is so good as you cover so many different ways and styles of colouring cutting and styling hair, but what I enjoy doing the most is cutting hair as it can go from simple to creative - its so exciting and interesting to learn  all the different ways of cutting and creating different hairstyles and colours."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile section is-10" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/team/profiles/lauren/p2.jpg",
-                    alt: "Lauren"
-                  }
-                })
-              ])
+    return _c(
+      "div",
+      { staticClass: "section has-text-white", attrs: { id: "profile" } },
+      [
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("h1", { staticClass: "title is-2 has-text-white" }, [
+              _vm._v("Lauren Watson")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v(
+                "Hi, I'm Lauren. I've been hairdressing for almost 3 years now. I always considered doing hairdressing as a career since being a child as I have always found interest in experimenting with styling friends and family members hair!\n        I knew hairdressing would be the right thing for me to Dao as a career as I enjoyed it so much."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("For my first year of training I worked at "),
+              _c("strong", [_vm._v("Paul Kemp Hairdressing")]),
+              _vm._v(
+                " (Base wasn't open at this point) which was great for my learning as it was more of a hands on experience giving me the opportunity to  see for myself whilst learning what hairdressing was all about."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("I then moved over to work at "),
+              _c("strong", [_vm._v("Base hairdressing")]),
+              _vm._v(
+                " which was the PK training academy for all new learners and graduates,\n        this was so much better and easier for my learning as it had staff there that were there to mainly help and train you to the best you can be and\n          "
+              ),
+              _c("em", [
+                _vm._v(
+                  "there was always help when needed which helps fast track your skills"
+                )
+              ]),
+              _vm._v(".")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Learning to do hair is so good as you cover so many different ways and styles of colouring cutting and styling hair, but what I enjoy doing the most is cutting hair as it can go from simple to creative - its so exciting and interesting to learn  all the different ways of cutting and creating different hairstyles and colours."
+              )
             ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor" }, [
+              _c("div", { staticClass: "tile section is-10" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp1.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp2.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp4.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp5.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp6.jpg" }
+                    attrs: {
+                      src: "/dist/img/team/profiles/lauren/p2.jpg",
+                      alt: "Lauren"
+                    }
                   })
                 ])
               ])
@@ -21922,133 +21888,225 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
-            _vm._v(
-              "The most recent thing I've been working on is improving my men's hairdressing skills which is something I've always wanted to do! It's a whole different set of skills including working with clippers and understanding has shapes and hair growth patterns."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Working with hair also means you work with a wide range of products, so heres a few of my favourite products I personally like to use and why!"
-            )
-          ]),
-          _vm._v(" "),
-          _c("ol", [
-            _c("li", [
-              _vm._v(
-                "Schwarzkopf BLOW & GO - this is one of my favourite products. It not only speeds up your blowdrying time, it also leaves a smooth and sleek, shiny finish which is perfect for a sleek, straight blow dry. It's also creates a  perfect canvas for when you move on to styling your clients hair."
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "OSIS SPARKLER - this is a shine spray that is perfect for your finished result as it makes your hair so shiny and glossy and it also smells lovely!"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "BC SEALED ENDS -  I  love this product as you can use it on both wet and dry hair. Its perfect for when you style your hair and you feel like you have a few split ends that need to be covered up! It creates a film that does just that, to help create a fresher look!"
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _vm._v(
-                "BC REPAIR RESCUE NUTRI-SHEILD SERUM -  this is my go-to product and is literally my favourite one! It's so light on the hair so won’t weigh it down. Not only is it designed to help your damaged hair, whether it be from heat colour or bleach or just environmental damage, you can also use it as a serum to smooth down any fly aways. It also has heat protection already in the product which is a MUST for anyone! "
-              )
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp1.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp2.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/p1.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp4.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp5.jpg" }
+                    })
+                  ])
+                ])
+              ])
             ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
-            _vm._v(
-              "The main thing I love about working at Base is not only are you getting constant training and learning more and more skills each day, you also get to experience independence and confidence by doing your own clients and then moving on to running your own column. You can develop at your own pace in a relaxed environment knowing help is available whenever you need it until you're ready to take your column to the next stage."
-            )
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Whilst learning at Base you also get the privilege to work at either of our sister salons Paul Kemp Hairdressing or Jakata helping out with the day to day running of the salon - greeting clients, washing hair, making drinks and being able help and learn from other staff members which is great for your confidence and learning."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "When I'm not in work I spend my time out with my friends going to clubs & parties or even just food and a catch up. I also spend my time with my little boy and boyfriend making memories with them! I also love to go shopping and watching reality tv shows eating junk food and snacks in my pjs✌🏻"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "In the next few years in my career I would love to work back stage for a catwalk shows or photoshoots as its something I've always been interested in. I also eventually want to be known for my work and working on celebrities hair as I think that's something that would interest me."
-            )
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-sie-5" }, [
+              _vm._v(
+                "The most recent thing I've been working on is improving my "
+              ),
+              _c("strong", [_vm._v("men's hairdressing skills")]),
+              _vm._v(
+                " which is something I've always wanted to do! It's a whole different set of skills including working with clippers and understanding has shapes and hair growth patterns."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Working with hair also means you work with a wide range of products, so here's a few of my favourite products I personally like to use and why!"
+              )
+            ]),
+            _vm._v(" "),
+            _c("ol", [
+              _c("li", [
+                _c("strong", [_vm._v("Schwarzkopf BLOW & GO")]),
+                _vm._v(
+                  " - this is one of my favourite products. It not only speeds up your blowdrying time, it also leaves a smooth and sleek, shiny finish which is perfect for a sleek, straight blow dry. It's also creates a  perfect canvas for when you move on to styling your clients hair."
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("strong", [_vm._v("OSIS SPARKLER")]),
+                _vm._v(
+                  " - this is a shine spray that is perfect for your finished result as it makes your hair so shiny and glossy and it also smells lovely!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("strong", [_vm._v("BC SEALED ENDS")]),
+                _vm._v(
+                  " -  I  love this product as you can use it on both wet and dry hair. Its perfect for when you style your hair and you feel like you have a few split ends that need to be covered up! It creates a film that does just that, to help create a fresher look!"
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("strong", [_vm._v("BC REPAIR RESCUE NUTRI-SHEILD SERUM")]),
+                _vm._v(
+                  " -  this is my go-to product and is literally my favourite one! It's so light on the hair so won’t weigh it down. Not only is it designed to help your damaged hair, whether it be from heat colour or bleach or just environmental damage, you can also use it as a serum to smooth down any fly aways. It also has heat protection already in the product which is a MUST for anyone! "
+                )
+              ])
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp1.jpg" }
-                  })
-                ])
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v("The main thing I love about working at "),
+              _c("strong", [_vm._v("Base")]),
+              _vm._v(
+                " is not only are you getting constant training and learning more and more skills each day, you also get to experience\n        "
+              ),
+              _c("strong", [_vm._v("independence and confidence")]),
+              _vm._v(
+                " by doing your own clients and then moving on to running your own column.\n        "
+              ),
+              _c("em", [
+                _vm._v(
+                  "You can develop at your own pace in a relaxed environment knowing help is available whenever you need\n          it"
+                )
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp2.jpg" }
-                  })
-                ])
-              ])
+              _vm._v(
+                " until you're ready to take your column to the next stage."
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp3.jpg" }
-                  })
-                ])
+            _c("p", [
+              _vm._v(
+                "Whilst learning at Base you also get the privilege to work at either of our sister salons "
+              ),
+              _c("strong", [
+                _vm._v("Paul Kemp\n        Hairdressing or Jakata")
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp4.jpg" }
-                  })
-                ])
-              ])
+              _vm._v(
+                " helping out with the day to day running of the salon - greeting clients, washing hair, making drinks and being able help and learn from other staff members which is great for your confidence and learning."
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp5.jpg" }
-                  })
+            _c("p", [
+              _vm._v(
+                "When I'm not in work I spend my time out with my friends going to clubs & parties or even just food and a catch up. I also spend my time with my little boy and boyfriend making memories with them! I also love to go shopping and watching reality tv shows eating junk food and snacks in my pjs✌🏻"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "In the next few years in my career I would love to work back stage for a "
+              ),
+              _c("strong", [_vm._v("catwalk shows or photoshoots")]),
+              _vm._v(
+                " as its something I've always been interested in. I also eventually want to be known for my work and working on celebrities hair as I think that's something that would interest me."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp6.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp7.jpg" }
+                    })
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lauren/hp6.jpg" }
-                  })
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/p3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/hp8.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/p4.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lauren/p5.jpg" }
+                    })
+                  ])
                 ])
               ])
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -22079,100 +22137,48 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section has-text-white" }, [
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("h1", { staticClass: "title is-2 has-text-white" }, [
-            _vm._v("Lucy Watson")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "Hi, I’m Lucy I have been hairdressing for nearly three years now. I decided to go into the hair industry because I have always loved plaiting and playing with my sisters hair, also it was something I was looking into and really caught my attention in my last year of school."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I originally worked at Jakata, watching and learning from the best, two years later Base Hairdressing opened and I transitioned to complete my training there as it is more intense training, closely focusing on what I need to get perfect to have my own running column on the salon floor."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I enjoy everything about my job! I would say I lean more toward creative colouring but then I love cutting short hair so it is really hard to pick."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile section is-10" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/team/profiles/lucy/p2.jpg",
-                    alt: "Lucy"
-                  }
-                })
-              ])
+    return _c(
+      "div",
+      { staticClass: "section has-text-white", attrs: { id: "profile" } },
+      [
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("h1", { staticClass: "title is-2 has-text-white" }, [
+              _vm._v("Lucy Watson")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v(
+                "Hi, I’m Lucy I have been hairdressing for nearly three years now. I decided to go into the hair industry because I have always loved plaiting and playing with my sisters hair, also it was something I was looking into and really caught my attention in my last year of school."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("I originally worked at "),
+              _c("strong", [_vm._v("Jakata")]),
+              _vm._v(", watching and learning from the best, two years later "),
+              _c("strong", [_vm._v("Base Hairdressing")]),
+              _vm._v(
+                " opened and I transitioned to complete my training there as it is more intense training, closely focusing on what I need to get perfect to have my own running column on the salon floor."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "I enjoy everything about my job! I would say I lean more toward creative colouring but then I love cutting short hair so it is really hard to pick."
+              )
             ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor" }, [
+              _c("div", { staticClass: "tile section is-10" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp1.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp2.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp4.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp5.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp6.jpg" }
+                    attrs: {
+                      src: "/dist/img/team/profiles/lucy/p2.jpg",
+                      alt: "Lucy"
+                    }
                   })
                 ])
               ])
@@ -22180,125 +22186,185 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
-            _vm._v(
-              "I have most recently been working on perfecting my skills for pixie cuts and extensions, this will help me in the future as it opens up a wider range to clients."
-            )
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp1.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp2.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp4.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp5.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp6.jpg" }
+                    })
+                  ])
+                ])
+              ])
+            ])
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I feel my strong point is colouring, I absolutely love doing balayages, the results are so seamless and soft. They are a high demand colour technique because the maintenance level is low, and they always look amazing. With balyages there lots of different techniques you can switch up to help suit your clients needs."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "My all time go to product is flat liner, no matter what you do with your hair, as long as heat is being applied, flat liner is a need! Heat damage is irreversible so protecting it will help to keep your hair in its best condition."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "My favourite product to use is the moisture kick hydra pearl, this product is perfect for everyone, as it is intensively rehydrates and helps to protect from heat damage, leaving your client with the shiniest hair."
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", [
-            _vm._v(
-              "I have recently been using Liquid shine, this product is part of the colour freeze range. Liquid shine nourishes coloured hair and prevents the colour from fading whilst adding the glossiest shine."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "In terms of my hairdressing inspiration, I really look up to Chris Appleton and Natalie from Jakata. Their work is amazing! and I aspire to be like them one day."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "It all depends on your work colleagues, having a good relationship with your team in work really helps you to strive forward and get you through anything. The training here at Base is next level, Adam and Jim really are the bomb, they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get my through it."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "My goal in life is to travel as a hairdresser, I want to see the world and make the best memories doing my job, so I decided that is the way to do it. My goal for the next few years is to graduate(this year) at Base and work towards being a Senior stylist at Jakata as I really look up to the guys there and want to be the best like them!"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Outside of work I really am just a quiet girl, I love eating out with my partner, I love food§! I also love spending time with my friends and seeing my niece. Here are some pics of me outside of work ☺️"
-            )
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", [
+              _vm._v(
+                "I have most recently been working on perfecting my skills for pixie cuts and extensions, this will help me in the future as it opens up a wider range to clients."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "I feel my strong point is colouring, I absolutely love doing balayages, the results are so seamless and soft. They are a high demand colour technique because the maintenance level is low, and they always look amazing. With balyages there lots of different techniques you can switch up to help suit your clients needs."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "My all time go to product is flat liner, no matter what you do with your hair, as long as heat is being applied, flat liner is a need! Heat damage is irreversible so protecting it will help to keep your hair in its best condition."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "My favourite product to use is the moisture kick hydra pearl, this product is perfect for everyone, as it is intensively rehydrates and helps to protect from heat damage, leaving your client with the shiniest hair."
+              )
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/p3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp8.jpg" }
-                  })
-                ])
-              ])
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", [
+              _vm._v(
+                "I have recently been using Liquid shine, this product is part of the colour freeze range. Liquid shine nourishes coloured hair and prevents the colour from fading whilst adding the glossiest shine."
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp10.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/p4.jpg" }
-                  })
-                ])
-              ])
+            _c("p", [
+              _vm._v(
+                "In terms of my hairdressing inspiration, I really look up to Chris Appleton and Natalie from Jakata. Their work is amazing! and I aspire to be like them one day."
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp12.jpg" }
-                  })
+            _c("p", [
+              _vm._v(
+                "It all depends on your work colleagues, having a good relationship with your team in work really helps you to strive forward and get you through anything. The training here at Base is next level, Adam and Jim really are the bomb, they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get my through it."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "My goal in life is to travel as a hairdresser, I want to see the world and make the best memories doing my job, so I decided that is the way to do it. My goal for the next few years is to graduate(this year) at Base and work towards being a Senior stylist at Jakata as I really look up to the guys there and want to be the best like them!"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Outside of work I really am just a quiet girl, I love eating out with my partner, I love food§! I also love spending time with my friends and seeing my niece. Here are some pics of me outside of work ☺️"
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/p3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp8.jpg" }
+                    })
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/lucy/hp11.jpg" }
-                  })
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp10.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/p4.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp12.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/lucy/hp11.jpg" }
+                    })
+                  ])
                 ])
               ])
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -22329,259 +22395,265 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section has-text-white" }, [
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("h1", { staticClass: "title is-2 has-text-white" }, [
-            _vm._v("Ruby Johnson")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "Hi, I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("As a child I always had "),
-            _c("strong", [_vm._v("a passion for hair and beauty")]),
-            _vm._v(
-              ", beginning with styling my two older sisters hair with plaiting and braiding, not to mention chopping off the hair of my Barbie dolls with the kitchen scissors!\n        "
-            ),
-            _c("em", [
-              _vm._v(
-                "Becoming a hairdresser is doing what I love, and loving what I do."
-              )
-            ]),
-            _vm._v(
-              " Not only that but I get to empower other women with the snip of my scissors."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Being a hairdresser is about building a relationship with clients by listening and catering to their needs and wants."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "It’s not only creating artwork I am proud of, it's also using my own talent to achieve "
-            ),
-            _c("em", [
-              _vm._v(
-                "a look that gives\n        somebody not only beauty on the outside but confidence within themselves"
-              )
-            ]),
-            _vm._v(" which is one of the most rewarding things.")
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "As I continue on my journey I feel I am growing as an individual collecting knowledge and being able to express my creativity in endless ways. Moreover, I enjoy the constant learning whether it be about the science and complexity behind hair corrections, the hair structure, colour knowledge or cutting skills there’s always more to be educated on. Hairdressing is my passion and I could not be more grateful to have the opportunity to pursue my career dreams."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile section is-10" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/team/profiles/ruby/p2.jpg",
-                    alt: "Ruby"
-                  }
-                })
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp1.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp3.jpg" }
-                  })
-                ])
-              ])
+    return _c(
+      "div",
+      { staticClass: "section has-text-white", attrs: { id: "profile" } },
+      [
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("h1", { staticClass: "title is-2 has-text-white" }, [
+              _vm._v("Ruby Johnson")
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp4.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp5.jpg" }
-                  })
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", { staticClass: "is-size-5" }, [
-            _c("strong", [_vm._v("Base academy")]),
-            _vm._v(
-              " is a fashion forward, edgy salon that keeps up to date with all the recent trends which is why I believe I fit in perfectly with my stylish and creative ideas.\n        "
-            ),
-            _c("strong", [
-              _vm._v("Base provides the best training to the highest standards")
-            ]),
-            _vm._v(
-              " and endless opportunities to grow and progress as a hairdresser. Base itself and its two partner salons\n        "
-            ),
-            _c("strong", [_vm._v("Paul Kemp Hairdressing and Jakata")]),
-            _vm._v(
-              " are all recognised and respected for the amazing work produced by all stylists who are inspirational to me and my work and the best colleagues to learn from."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("For my favourite products, "),
-            _c("strong", [_vm._v("Olaplex")]),
-            _vm._v(
-              " is my holy grail! I love all Olaplex products however No.3 has to be my absolute favourite and has completely transformed my own hair.\n        "
-            ),
-            _c("strong", [_vm._v("Olaplex Hair Perfector")]),
-            _vm._v(
-              " is moisturising, smoothing and reconstructing for the hair as well as being sulphate & paraben free. Just to top it off Olaplex is perfect for colour treated hair which is an absolute bonus for me being someone who I always changing up my colour."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("Schwarzkopf BC Silver shampoo")]),
-            _vm._v(
-              " is perfect for blondes who want to get rid of any brassy yellow tones. Not only does this shampoo help tone between colour sessions it also has ph 4.5 balancer technology which seals the surface of coloured hair, freezing the colour pigments deep inside the hair."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("Kevin Murphy Young again hair oil")]),
-            _vm._v(
-              " is definitely one of my must have products for dry and brittle hair. This is a weightless leave in treatment oil which regenerates hair, enhances shine and leaves your hair feeling soft, smooth and conditioned."
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "My two biggest influences in the hair industry have to be "
-            ),
-            _c("strong", [
-              _vm._v("James Earnshaw and Shannon JJ\n        Williams")
-            ]),
-            _vm._v(
-              " as their work is incredible. I also love the style and trend of "
-            ),
-            _c("strong", [_vm._v("boho.blonde.perth")]),
-            _vm._v(
-              " on Instagram their salon in Australia Boutique blonde salon is exactly what I aspire to doing years to come with the dream of opening up my own salon in Australia too."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I enjoy working at Base as the team get along so well like a big family. The opportunities are endless having begun at Base, with no past college or salon experience\n        "
-            ),
-            _c("em", [
+            _c("p", { staticClass: "is-size-5" }, [
               _vm._v(
-                "I am overwhelmed by the amount of progress I have made in such a short amount of time"
+                "Hi, I am Ruby and I began hairdressing in November 2019 - so I still have much more to learn on my journey to becoming a stylist yet I have loved every moment along the way."
               )
             ]),
-            _vm._v(
-              " and this would not have been possible without all the training available. Not only do we have a centralised training academy we also have the opportunity to help out in the other larger salons and see what our future will consist of when we are fully qualified with a solid client base."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Outside of hairdressing I love watching Crime Documentaries and conspiracy theories as well as spending time with my sisters or walking the dog."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp7.jpg" }
-                  })
-                ])
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("As a child I always had "),
+              _c("strong", [_vm._v("a passion for hair and beauty")]),
+              _vm._v(
+                ", beginning with styling my two older sisters hair with plaiting and braiding, not to mention chopping off the hair of my Barbie dolls with the kitchen scissors!\n        "
+              ),
+              _c("em", [
+                _vm._v(
+                  "Becoming a hairdresser is doing what I love, and loving what I do."
+                )
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp2.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp8.jpg" }
-                  })
-                ])
-              ])
+              _vm._v(
+                " Not only that but I get to empower other women with the snip of my scissors."
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/p4.jpg" }
-                  })
-                ])
+            _c("p", [
+              _vm._v(
+                "Being a hairdresser is about building a relationship with clients by listening and catering to their needs and wants."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "It’s not only creating artwork I am proud of, it's also using my own talent to achieve "
+              ),
+              _c("em", [
+                _vm._v(
+                  "a look that gives\n        somebody not only beauty on the outside but confidence within themselves"
+                )
               ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
+              _vm._v(" which is one of the most rewarding things.")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "As I continue on my journey I feel I am growing as an individual collecting knowledge and being able to express my creativity in endless ways. Moreover, I enjoy the constant learning whether it be about the science and complexity behind hair corrections, the hair structure, colour knowledge or cutting skills there’s always more to be educated on. Hairdressing is my passion and I could not be more grateful to have the opportunity to pursue my career dreams."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor" }, [
+              _c("div", { staticClass: "tile section is-10" }, [
                 _c("figure", { staticClass: "image" }, [
                   _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/p3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/ruby/hp6.jpg" }
+                    attrs: {
+                      src: "/dist/img/team/profiles/ruby/p2.jpg",
+                      alt: "Ruby"
+                    }
                   })
                 ])
               ])
             ])
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp1.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp3.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp4.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp5.jpg" }
+                    })
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _c("strong", [_vm._v("Base academy")]),
+              _vm._v(
+                " is a fashion forward, edgy salon that keeps up to date with all the recent trends which is why I believe I fit in perfectly with my stylish and creative ideas.\n        "
+              ),
+              _c("strong", [
+                _vm._v(
+                  "Base provides the best training to the highest standards"
+                )
+              ]),
+              _vm._v(
+                " and endless opportunities to grow and progress as a hairdresser. Base itself and its two partner salons\n        "
+              ),
+              _c("strong", [_vm._v("Paul Kemp Hairdressing and Jakata")]),
+              _vm._v(
+                " are all recognised and respected for the amazing work produced by all stylists who are inspirational to me and my work and the best colleagues to learn from."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("For my favourite products, "),
+              _c("strong", [_vm._v("Olaplex")]),
+              _vm._v(
+                " is my holy grail! I love all Olaplex products however No.3 has to be my absolute favourite and has completely transformed my own hair.\n        "
+              ),
+              _c("strong", [_vm._v("Olaplex Hair Perfector")]),
+              _vm._v(
+                " is moisturising, smoothing and reconstructing for the hair as well as being sulphate & paraben free. Just to top it off Olaplex is perfect for colour treated hair which is an absolute bonus for me being someone who I always changing up my colour."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("strong", [_vm._v("Schwarzkopf BC Silver shampoo")]),
+              _vm._v(
+                " is perfect for blondes who want to get rid of any brassy yellow tones. Not only does this shampoo help tone between colour sessions it also has ph 4.5 balancer technology which seals the surface of coloured hair, freezing the colour pigments deep inside the hair."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _c("strong", [_vm._v("Kevin Murphy Young again hair oil")]),
+              _vm._v(
+                " is definitely one of my must have products for dry and brittle hair. This is a weightless leave in treatment oil which regenerates hair, enhances shine and leaves your hair feeling soft, smooth and conditioned."
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v(
+                "My two biggest influences in the hair industry have to be "
+              ),
+              _c("strong", [
+                _vm._v("James Earnshaw and Shannon JJ\n        Williams")
+              ]),
+              _vm._v(
+                " as their work is incredible. I also love the style and trend of "
+              ),
+              _c("strong", [_vm._v("boho.blonde.perth")]),
+              _vm._v(
+                " on Instagram their salon in Australia Boutique blonde salon is exactly what I aspire to doing years to come with the dream of opening up my own salon in Australia too."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "I enjoy working at Base as the team get along so well like a big family. The opportunities are endless having begun at Base, with no past college or salon experience\n        "
+              ),
+              _c("em", [
+                _vm._v(
+                  "I am overwhelmed by the amount of progress I have made in such a short amount of time"
+                )
+              ]),
+              _vm._v(
+                " and this would not have been possible without all the training available. Not only do we have a centralised training academy we also have the opportunity to help out in the other larger salons and see what our future will consist of when we are fully qualified with a solid client base."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Outside of hairdressing I love watching Crime Documentaries and conspiracy theories as well as spending time with my sisters or walking the dog."
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp7.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp2.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp8.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/p4.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/p3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/ruby/hp6.jpg" }
+                    })
+                  ])
+                ])
+              ])
+            ])
+          ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -22612,211 +22684,215 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section has-text-white" }, [
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("h1", { staticClass: "title is-2 has-text-white" }, [
-            _vm._v("Sophie Youds")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "Hi, I'm Sophie and I've been hairdressing for around 3 years now. I started when I had just left school back in 2016, up until 2 years later when I decided I wanted to try something different."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I never knew what it was I really wanted to do with my life. After college, 2 jobs, nothing was the same. I knew that I needed something more. Hairdressing is the only thing that has made me feel satisfied that I am actually making a difference in peoples lives. I love the feeling of making someone smile as hair is such a big thing in everyone's lives."
-            )
-          ]),
-          _c("p"),
-          _c("p", [
-            _vm._v("I saw "),
-            _c("strong", [_vm._v("Base's")]),
-            _vm._v(
-              " advert during my job search and I knew it was the place for me.. somewhere that was willing to assess where we are at already within our careers and taking the time to push us to be the best we can be.\n      "
-            ),
-            _c("em", [
+    return _c(
+      "div",
+      { staticClass: "section has-text-white", attrs: { id: "profile" } },
+      [
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("h1", { staticClass: "title is-2 has-text-white" }, [
+              _vm._v("Sophie Youds")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-5" }, [
               _vm._v(
-                "I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe"
+                "Hi, I'm Sophie and I've been hairdressing for around 3 years now. I started when I had just left school back in 2016, up until 2 years later when I decided I wanted to try something different."
               )
             ]),
-            _vm._v(".")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile section is-10" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/dist/img/team/profiles/sophie/p1.jpg",
-                    alt: "Sophie"
-                  }
-                })
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp1.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp2.jpg" }
-                  })
-                ])
-              ])
-            ]),
             _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp4.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp5.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp6.jpg" }
-                  })
-                ])
-              ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v(
-              "My favourite thing to do in hairdressing is short cuts, I don't know what it is they just look so slick and smart! I love a good bob. I was so scared of them at first but with the right techniques and the right support I got the techniques down with only a few tweaks to the end result."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "The majority of my clients are pretty experimental with their hair I think "
-            ),
-            _c("strong", [_vm._v("crazy colours, blondes and bobs")]),
-            _vm._v(
-              " are my most popular look at the moment! So trendy! I would say this is probably my speciality."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("My favourite product is the "),
-            _c("strong", [_vm._v("UV Colour Freeze Liquid Shine")]),
-            _vm._v(
-              ", I think it's fab how it smooths the hair but protects all your hard work colouring at the same time."
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "section columns" }, [
-        _c("div", { staticClass: "column is-7" }, [
-          _c("p", { staticClass: "is-size-5" }, [
-            _vm._v("I enjoy training at "),
-            _c("strong", [_vm._v("Base")]),
-            _vm._v(
-              " purely because of the freedom. Nothing is too much. No matter how much experience you have, the other members of staff will always be happy to help and guide you along the way to ensure that your work is produced to the best of your ability."
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "I love how creative everybody is and there is no limits. I already have a few clients who have come back to me with good feedback, I'd like to hope they will stick by me as I move up in my journey through hairdressing.\n        "
-            ),
-            _c("em", [
+            _c("p", [
               _vm._v(
-                "I can see myself building up a steady client base and becoming more and more confident. I can see myself\n          running a column and travelling places because of my career."
+                "I never knew what it was I really wanted to do with my life. After college, 2 jobs, nothing was the same. I knew that I needed something more. Hairdressing is the only thing that has made me feel satisfied that I am actually making a difference in peoples lives. I love the feeling of making someone smile as hair is such a big thing in everyone's lives."
+              )
+            ]),
+            _c("p"),
+            _c("p", [
+              _vm._v("I saw "),
+              _c("strong", [_vm._v("Base's")]),
+              _vm._v(
+                " advert during my job search and I knew it was the place for me.. somewhere that was willing to assess where we are at already within our careers and taking the time to push us to be the best we can be.\n      "
+              ),
+              _c("em", [
+                _vm._v(
+                  "I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe"
+                )
+              ]),
+              _vm._v(".")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile section is-10" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/dist/img/team/profiles/sophie/p1.jpg",
+                      alt: "Sophie"
+                    }
+                  })
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp1.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp2.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp4.jpg" }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp5.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp6.jpg" }
+                    })
+                  ])
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v(
+                "My favourite thing to do in hairdressing is short cuts, I don't know what it is they just look so slick and smart! I love a good bob. I was so scared of them at first but with the right techniques and the right support I got the techniques down with only a few tweaks to the end result."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "The majority of my clients are pretty experimental with their hair I think "
+              ),
+              _c("strong", [_vm._v("crazy colours, blondes and bobs")]),
+              _vm._v(
+                " are my most popular look at the moment! So trendy! I would say this is probably my speciality."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("My favourite product is the "),
+              _c("strong", [_vm._v("UV Colour Freeze Liquid Shine")]),
+              _vm._v(
+                ", I think it's fab how it smooths the hair but protects all your hard work colouring at the same time."
+              )
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "section columns" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-5" }, [
+              _vm._v("I enjoy training at "),
+              _c("strong", [_vm._v("Base")]),
+              _vm._v(
+                " purely because of the freedom. Nothing is too much. No matter how much experience you have, the other members of staff will always be happy to help and guide you along the way to ensure that your work is produced to the best of your ability."
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "I love how creative everybody is and there is no limits. I already have a few clients who have come back to me with good feedback, I'd like to hope they will stick by me as I move up in my journey through hairdressing.\n        "
+              ),
+              _c("em", [
+                _vm._v(
+                  "I can see myself building up a steady client base and becoming more and more confident. I can see myself\n          running a column and travelling places because of my career."
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Outside of hairdressing I enjoy hanging out with family and going out, but I love relaxing and watching films. Pamper nights are my favourite."
               )
             ])
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Outside of hairdressing I enjoy hanging out with family and going out, but I love relaxing and watching films. Pamper nights are my favourite."
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", { staticClass: "tile is-ancestor" }, [
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/p2.jpg" }
-                  })
+          _c("div", { staticClass: "column" }, [
+            _c("div", { staticClass: "tile is-ancestor is-flex" }, [
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/p2.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp7.jpg" }
+                    })
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp7.jpg" }
-                  })
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "tile is-parent is-vertical" }, [
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/p3.jpg" }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "tile is-child" }, [
-                _c("figure", { staticClass: "image" }, [
-                  _c("img", {
-                    attrs: { src: "/dist/img/team/profiles/sophie/hp8.jpg" }
-                  })
+              _c("div", { staticClass: "tile is-parent is-vertical" }, [
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/p3.jpg" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tile is-child" }, [
+                  _c("figure", { staticClass: "image" }, [
+                    _c("img", {
+                      attrs: { src: "/dist/img/team/profiles/sophie/hp8.jpg" }
+                    })
+                  ])
                 ])
               ])
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true

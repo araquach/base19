@@ -1,5 +1,5 @@
 <template>
-  <div class="section has-text-white">
+  <div id="profile" class="section has-text-white">
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Beth Brown</h1>
@@ -24,7 +24,7 @@
     </div>
     <div class="section columns">
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
@@ -77,7 +77,7 @@
             <em>But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy</em>, my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:).</p>
       </div>
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">

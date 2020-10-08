@@ -219,7 +219,16 @@ section.section {
   background-size: cover;
 }
 
+#profile {
+  .section.columns {
+    padding-top: 0;
+    padding-bottom: 0;
 
+    &:first-of-type {
+      padding-top: 2rem
+    }
+  }
+}
 
 /* Review Feed */
 

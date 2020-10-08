@@ -1,5 +1,5 @@
 <template>
-  <div class="section has-text-white">
+  <div id="profile" class="section has-text-white">
     <div class="section columns">
       <div class="column is-7">
         <h1 class="title is-2 has-text-white">Sophie Youds</h1>
@@ -9,7 +9,7 @@
         <em>I just love how confident they are in us, as soon as I walked in for my interview I got a good vibe</em>.</p>
       </div>
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile section is-10">
             <figure class="image">
               <img src="/dist/img/team/profiles/sophie/p1.jpg" alt="Sophie">
@@ -74,7 +74,7 @@
         <p>Outside of hairdressing I enjoy hanging out with family and going out, but I love relaxing and watching films. Pamper nights are my favourite.</p>
       </div>
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">

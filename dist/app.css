@@ -17332,6 +17332,15 @@ p {
   background-size: cover;
 }
 
+#profile .section.columns {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#profile .section.columns:first-of-type {
+  padding-top: 2rem;
+}
+
 /* Review Feed */
 
 .review-feed {
