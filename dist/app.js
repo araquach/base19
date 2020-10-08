@@ -2990,6 +2990,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -21452,6 +21455,25 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("ReviewFeed", { attrs: { staffMember: _vm.staffMember } }),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "is-size-4 has-text-warning",
+              attrs: { to: { name: _vm.teamMember.slug + "-profile" } }
+            },
+            [
+              _vm._v(
+                "Find out more about " +
+                  _vm._s(_vm.teamMember.first_name) +
+                  " here >"
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c("br"),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
