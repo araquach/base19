@@ -67,6 +67,19 @@
         <p>I enjoy working at Base as the team get along so well like a big family. The opportunities are endless having begun at Base, with no past college or salon experience
           <em>I am overwhelmed by the amount of progress I have made in such a short amount of time</em> and this would not have been possible without all the training available. Not only do we have a centralised training academy we also have the opportunity to help out in the other larger salons and see what our future will consist of when we are fully qualified with a solid client base.</p>
         <p>Outside of hairdressing I love watching Crime Documentaries and conspiracy theories as well as spending time with my sisters or walking the dog.</p>
+        <hr>
+        <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
+        <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
+        <a href="https://www.instagram.com/leturhaird0wn/">
+          <div class="columns is-mobile">
+            <div class="column is-1">
+              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram" width="40">
+            </div>
+            <div class="column is-4">
+              <p class="is-size-5 has-text-white">leturhaird0wn</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
@@ -106,6 +119,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="section">
+      <h2 class="title is-3 has-text-white">Special Offer with me!</h2>
+      <p>To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients.</p>
+      <router-link class="has-text-white is-size-4" :to="{ name: 'offers' }">Click here to find out more ></router-link>
     </div>
   </div>
 </template>

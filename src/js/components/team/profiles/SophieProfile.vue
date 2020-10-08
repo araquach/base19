@@ -72,6 +72,19 @@
           <em>I can see myself building up a steady client base and becoming more and more confident. I can see myself
             running a column and travelling places because of my career.</em></p>
         <p>Outside of hairdressing I enjoy hanging out with family and going out, but I love relaxing and watching films. Pamper nights are my favourite.</p>
+        <hr>
+        <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
+        <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
+        <a href="https://www.instagram.com/hairby_sophiey/">
+          <div class="columns is-mobile">
+            <div class="column is-1">
+              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram" width="40">
+            </div>
+            <div class="column is-4">
+              <p class="is-size-5 has-text-white">hairby_sophiey</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
@@ -101,6 +114,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="section">
+      <h2 class="title is-3 has-text-white">Special Offer with me!</h2>
+      <p>To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients.</p>
+      <router-link class="has-text-white is-size-4" :to="{ name: 'offers' }">Click here to find out more ></router-link>
     </div>
   </div>
 </template>

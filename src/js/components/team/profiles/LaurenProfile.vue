@@ -35,6 +35,11 @@
                 <img src="/dist/img/team/profiles/lauren/hp2.jpg">
               </figure>
             </div>
+            <div class="tile is-child">
+              <figure class="image">
+                <img src="/dist/img/team/profiles/lauren/hp5.jpg">
+              </figure>
+            </div>
           </div>
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
@@ -47,16 +52,9 @@
                 <img src="/dist/img/team/profiles/lauren/p1.jpg">
               </figure>
             </div>
-          </div>
-          <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/lauren/hp4.jpg">
-              </figure>
-            </div>
-            <div class="tile is-child">
-              <figure class="image">
-                <img src="/dist/img/team/profiles/lauren/hp5.jpg">
               </figure>
             </div>
           </div>
@@ -83,6 +81,19 @@
           Hairdressing or Jakata</strong> helping out with the day to day running of the salon - greeting clients, washing hair, making drinks and being able help and learn from other staff members which is great for your confidence and learning.</p>
         <p>When I'm not in work I spend my time out with my friends going to clubs & parties or even just food and a catch up. I also spend my time with my little boy and boyfriend making memories with them! I also love to go shopping and watching reality tv shows eating junk food and snacks in my pjs✌🏻</p>
         <p>In the next few years in my career I would love to work back stage for a <strong>catwalk shows or photoshoots</strong> as its something I've always been interested in. I also eventually want to be known for my work and working on celebrities hair as I think that's something that would interest me.</p>
+        <hr>
+        <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
+        <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
+        <a href="https://www.instagram.com/laurenw_hairr/">
+          <div class="columns is-mobile">
+            <div class="column is-1">
+              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram" width="40">
+            </div>
+            <div class="column is-4">
+              <p class="is-size-5 has-text-white">laurenw_hairr</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
@@ -97,20 +108,19 @@
                 <img src="/dist/img/team/profiles/lauren/hp7.jpg">
               </figure>
             </div>
-          </div>
-          <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/lauren/p3.jpg">
               </figure>
             </div>
+          </div>
+
+          <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/lauren/hp8.jpg">
               </figure>
             </div>
-          </div>
-          <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">
                 <img src="/dist/img/team/profiles/lauren/p4.jpg">
@@ -124,6 +134,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="section">
+      <h2 class="title is-3 has-text-white">Special Offer with me!</h2>
+      <p>To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients.</p>
+      <router-link class="has-text-white is-size-4" :to="{ name: 'offers' }">Click here to find out more ></router-link>
     </div>
   </div>
 </template>

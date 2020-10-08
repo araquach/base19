@@ -59,19 +59,34 @@
         </div>
       </div>
       <div class="column is-7">
-        <p>I have most recently been working on perfecting my skills for pixie cuts and extensions, this will help me in the future as it opens up a wider range to clients.</p>
-        <p>I feel my strong point is colouring, I absolutely love doing balayages, the results are so seamless and soft. They are a high demand colour technique because the maintenance level is low, and they always look amazing. With balyages there lots of different techniques you can switch up to help suit your clients needs.</p>
-        <p>My all time go to product is flat liner, no matter what you do with your hair, as long as heat is being applied, flat liner is a need! Heat damage is irreversible so protecting it will help to keep your hair in its best condition.</p>
-        <p>My favourite product to use is the moisture kick hydra pearl, this product is perfect for everyone, as it is intensively rehydrates and helps to protect from heat damage, leaving your client with the shiniest hair.</p>
+        <p class="is-size-5">I have most recently been working on perfecting my skills for <strong>pixie cuts and extensions</strong>, this will help me in the future as it opens up a wider range to clients.</p>
+        <p>I feel my strong point is colouring, I absolutely love doing <strong>balayages</strong>, the results are so seamless and soft. They are a high demand colour technique because the maintenance level is low, and they always look amazing. With
+          <strong>balyages</strong> there lots of different techniques you can switch up to help suit your clients needs.</p>
+        <p>My all time go to product is <strong>Schwarzkopf Osis Flat Liner</strong>, no matter what you do with your hair, as long as heat is being applied, flat liner is a need! Heat damage is irreversible so protecting it will help to keep your hair in its best condition.</p>
+        <p>Another of my favourite products to use is <strong>Moisture Kick Hydra Pearl</strong>, this product is perfect for everyone, as it is intensively rehydrates and helps to protect from heat damage, leaving your client with the shiniest hair.</p>
+        <p>I have recently been using <strong>Liquid shine</strong>, this product is part of the <strong>BC Color Freeze</strong> range. Liquid shine nourishes coloured hair and prevents the colour from fading whilst adding the glossiest shine.</p>
       </div>
     </div>
     <div class="section columns">
       <div class="column is-7">
-        <p>I have recently been using Liquid shine, this product is part of the colour freeze range. Liquid shine nourishes coloured hair and prevents the colour from fading whilst adding the glossiest shine.</p>
-        <p>In terms of my hairdressing inspiration, I really look up to Chris Appleton and Natalie from Jakata. Their work is amazing! and I aspire to be like them one day.</p>
-        <p>It all depends on your work colleagues, having a good relationship with your team in work really helps you to strive forward and get you through anything. The training here at Base is next level, Adam and Jim really are the bomb, they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get my through it.</p>
+        <p class="is-size-5">In terms of my hairdressing inspiration, I really look up to <strong>Chris Appleton and Natalie from Jakata</strong>. Their work is amazing! and I aspire to be like them one day.</p>
+        <p>It all depends on your work colleagues, having a good relationship with your team in work really helps you to strive forward and get you through anything.
+          <em>The training here at Base is next level, Adam and Jim really are the bomb</em>, they are extremely patient and understanding and just pros at hairdressing, it can’t get any better. I wouldn’t rely on another place to get my through it.</p>
         <p>My goal in life is to travel as a hairdresser, I want to see the world and make the best memories doing my job, so I decided that is the way to do it. My goal for the next few years is to graduate(this year) at Base and work towards being a Senior stylist at Jakata as I really look up to the guys there and want to be the best like them!</p>
         <p>Outside of work I really am just a quiet girl, I love eating out with my partner, I love food§! I also love spending time with my friends and seeing my niece. Here are some pics of me outside of work ☺️</p>
+        <hr>
+        <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
+        <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
+        <a href="https://www.instagram.com/lucy_jakatahair/">
+          <div class="columns is-mobile">
+            <div class="column is-1">
+              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram" width="40">
+            </div>
+            <div class="column is-4">
+              <p class="is-size-5 has-text-white">lucy_jakatahair</p>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
@@ -113,6 +128,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="section">
+      <h2 class="title is-3 has-text-white">Special Offer with me!</h2>
+      <p>To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients.</p>
+      <router-link class="has-text-white is-size-4" :to="{ name: 'offers' }">Click here to find out more ></router-link>
     </div>
   </div>
 </template>
