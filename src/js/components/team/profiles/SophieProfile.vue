@@ -20,7 +20,7 @@
     </div>
     <div class="section columns">
       <div class="column">
-        <div class="tile is-ancestor">
+        <div class="tile is-ancestor is-flex">
           <div class="tile is-parent is-vertical">
             <div class="tile is-child">
               <figure class="image">

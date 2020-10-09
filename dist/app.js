@@ -21901,7 +21901,7 @@ var render = function() {
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients."
+              "I've launched a special offer for new clients that runs until the end of November. I'd love you to take advantage of it!"
             )
           ]),
           _vm._v(" "),
@@ -22262,7 +22262,7 @@ var render = function() {
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients."
+              "I've launched a special offer for new clients that runs until the end of November. I'd love you to take advantage of it!"
             )
           ]),
           _vm._v(" "),
@@ -23037,7 +23037,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "section columns" }, [
       _c("div", { staticClass: "column" }, [
-        _c("div", { staticClass: "tile is-ancestor" }, [
+        _c("div", { staticClass: "tile is-ancestor is-flex" }, [
           _c("div", { staticClass: "tile is-parent is-vertical" }, [
             _c("div", { staticClass: "tile is-child" }, [
               _c("figure", { staticClass: "image" }, [
@@ -47605,8 +47605,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })

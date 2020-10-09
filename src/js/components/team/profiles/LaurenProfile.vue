@@ -130,7 +130,7 @@
     </div>
     <div class="section">
       <h2 class="title is-3 has-text-white">Special Offer with me!</h2>
-      <p>To help me develop my skills and build my client base I'm offering a Colour & Cut at a special price for new clients.</p>
+      <p>I've launched a special offer for new clients that runs until the end of November. I'd love you to take advantage of it!</p>
       <router-link class="has-text-white is-size-4" :to="{ name: 'offers' }">Click here to find out more ></router-link>
     </div>
   </div>
