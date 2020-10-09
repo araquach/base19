@@ -75,6 +75,12 @@
           I also recently started yoga which I’m loving too! I also love having a drink with my friends outside of work, like on the weekends anywhere with good music and we’re there!
           That’s something else I absolutely love, music... especially live music, sometimes I’ll even get up and have a sing myself lol.
             <em>But the thing I love more than anything is doing stuff that makes me and who ever I’m out with happy</em>, my friends would say I’m the entertainer of the group constantly doing stuff to ensure everyone is feeling good:).</p>
+        <hr>
+        <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
+        <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
+        <a href="https://www.instagram.com/hairbabe.b/">
+          <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span> hairbabe.b</p>
+        </a>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
