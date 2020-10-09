@@ -16,7 +16,7 @@
             </div>
             <ReviewFeed :staffMember="staffMember"/>
             <br>
-            <router-link  class="is-size-4 has-text-warning" :to="{ name : teamMember.slug + '-profile' }" >Find out more about {{ teamMember.first_name }} here ></router-link>
+            <router-link  class="is-size-5 has-text-warning" :to="{ name : teamMember.slug + '-profile' }" >Find out more about {{ teamMember.first_name }} here ></router-link>
             <br>
             <br>
             <a @click="$router.push({ name: 'team', hash: '#' + teamMember.slug })" class="button">Back to the full team</a>
