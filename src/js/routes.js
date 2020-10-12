@@ -122,4 +122,7 @@ export const routes = [
         name: 'corona',
         component: CoronaInfo
     },
+    {
+        path: '/:notFound(.*)', redirect: '/'
+    }
 ]
