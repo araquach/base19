@@ -10,7 +10,6 @@ import OffersInfo from "./components/offers/OffersInfo"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
-import BookingsInfo from "./components/bookings/BookingsInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
 import BethProfile from "./components/team/profiles/BethProfile"
 import LaurenProfile from './components/team/profiles/LaurenProfile'
@@ -111,11 +110,6 @@ export const routes = [
         path: '/contact',
         name: 'contact',
         component: ContactInfo
-    },
-    {
-        path: '/bookings',
-        name: 'bookings',
-        component: BookingsInfo
     },
     {
         path: '/corona',
