@@ -230,6 +230,16 @@ section.section {
   }
 }
 
+#blog {
+  h1, h2, h3 {
+    margin-bottom: 1.3rem;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+  }
+}
+
 /* Review Feed */
 
 .review-feed {

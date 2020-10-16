@@ -1,5 +1,5 @@
 <template>
-    <section class="section blog-info hero is-fullheight is-dark">
+    <section id="blog" class="section blog-info hero is-fullheight is-dark">
         <div class="column is-8">
             <h1 class="title is-3">{{ blogpost.title }}</h1>
             <figure class="image is-square">
