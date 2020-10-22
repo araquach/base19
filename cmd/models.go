@@ -51,7 +51,7 @@ type Review struct {
 	Salon  uint      `json:"salon"`
 	Review string    `json:"review"`
 	Client string    `json:"client"`
-	Staff  string    `json:"staff"`
+	Stylist string    `json:"stylist"`
 }
 
 type MetaInfo struct {

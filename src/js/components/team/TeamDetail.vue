@@ -8,7 +8,7 @@
         <div class="section column">
             <div class="has-text-white">
                 <h1 class="title has-text-white">{{teamMember.first_name}} {{teamMember.last_name}}</h1>
-                <h2 class="subtitle has-text-white">{{teamMember.level}}</h2>
+                <h2 class="subtitle has-text-white">{{teamMember.level_name}}</h2>
                 <p class="is-size-5 has-text-weight-bold">{{teamMember.para_1}}</p>
                 <p>{{teamMember.para_2}}</p>
                 <p>{{teamMember.para_3}}</p>

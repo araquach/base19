@@ -15,7 +15,7 @@
                             <div class="media">
                                 <div class="media-content">
                                     <h2 class="title is-4 has-text-white">{{tm.first_name}} {{tm.last_name}}</h2>
-                                    <p class="subtitle has-text-white">{{tm.level}}</p>
+                                    <p class="subtitle has-text-white">{{tm.level_name}}</p>
                                 </div>
                             </div>
                             <div class="content is-size-5-mobile has-text-white">
