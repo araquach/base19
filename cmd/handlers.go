@@ -149,7 +149,7 @@ func apiReviews(w http.ResponseWriter, r *http.Request) {
 		db.Close()
 	} else {
 		db := dbConn()
-		db.Where("salon = ?", "3").Where("staff LIKE ?", "Staff: "+param+" %").Find(&reviews)
+		db.Where("salon = ?", "3").Where("stylist LIKE ?", "Staff: "+param+" %").Find(&reviews)
 		db.Close()
 	}
 
