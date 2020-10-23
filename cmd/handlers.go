@@ -74,9 +74,25 @@ func home(w http.ResponseWriter, r *http.Request) {
 		db.Where("page = ?", name).First(&m)
 		db.Close()
 
-		t = m.Title
-		d = m.Text
-		i = "https://www.basehairdressing.com/dist/img/fb_meta/" + m.Image + ".png"
+
+
+		if m.Title != "" {
+			t = m.Title
+		} else {
+			t = "Academy for the next generation of super-skilled stylists"
+		}
+
+		if m.Text != "" {
+			d = m.Text
+		} else {
+			d = "The Base Team comprises Apprentices, Junior Stylists and Graduates all offering cutting edge services at a fraction of the cost, in an amazing creative space based in Warrington town center"
+		}
+
+		if m.Title != "" {
+			i = "https://www.basehairdressing.com/dist/img/fb_meta/" + m.Image + ".png"
+		} else {
+			i = "https://www.basehairdressing.com/dist/img/fb_meta/home.png"
+		}
 	}
 
 	path := path.Join(dir, name)
