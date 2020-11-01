@@ -264,10 +264,10 @@ func apiModel(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
-func apiBookings(w http.ResponseWriter, r *http.Request) {
+func apiBookingRequest(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
 
-	var data Booking
+	var data BookingRequest
 	err := decoder.Decode(&data)
 	if err != nil {
 		panic(err)

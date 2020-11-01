@@ -63,13 +63,14 @@ type MetaInfo struct {
 	Image string `json:"image"`
 }
 
-type Booking struct {
+type BookingRequest struct {
 	ID        uint   `json:"id" gorm: "primary_key"`
 	Salon     uint   `json:"salon"`
 	FirstName string `json:"first_name"`
 	LastName  string `json:"last_name"`
 	Mobile    string `json:"mobile"`
 	Stylist   string `json:"stylist"`
+	TimeSlot string `json:"time_slot"`
 }
 
 type Blog struct {

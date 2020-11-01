@@ -16,6 +16,7 @@ import LaurenProfile from './components/team/profiles/LaurenProfile'
 import LucyProfile from './components/team/profiles/LucyProfile'
 import RubyProfile from './components/team/profiles/RubyProfile'
 import SophieProfile from './components/team/profiles/SophieProfile'
+import Bookings from "./components/bookings/Bookings"
 
 
 export const routes = [
@@ -115,6 +116,11 @@ export const routes = [
         path: '/corona',
         name: 'corona',
         component: CoronaInfo
+    },
+    {
+        path: '/bookings',
+        name: 'bookings',
+        component: Bookings
     },
     {
         path: '/:notFound(.*)', redirect: '/'

@@ -33,12 +33,15 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">
-                        <strong>Book Now</strong>
-                    </a>
-                    <b-navbar-item tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
-                        Contact Us
-                    </b-navbar-item>
+<!--                    <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">-->
+<!--                        <strong>Book Now</strong>-->
+<!--                    </a>-->
+                  <b-navbar-item tag="router-link" class="button is-primary" :to="{ name: 'bookings' }" v-scroll-to="'#contact'">
+                    Bookings
+                  </b-navbar-item>
+                  <b-navbar-item tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
+                      Contact Us
+                  </b-navbar-item>
                 </div>
             </b-navbar-item>
         </template>
