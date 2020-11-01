@@ -7,7 +7,6 @@
         <p>If you want to book an appointment for December, please register here and your stylist will contact you shortly before we re-open to get you booked in.</p>
         <p class="is-size-4"><strong>See you in December!</strong></p>
         <div>
-          <p class="is-size-4">More Text here</p>
           <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
             <div class="field">
               <label class="label has-text-white">First Name</label>
