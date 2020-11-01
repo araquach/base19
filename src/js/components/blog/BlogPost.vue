@@ -6,7 +6,7 @@
                 <img :src="blogpost.image">
             </figure>
             <br>
-            <div v-html="blogpost.body" class="is-size-5">
+            <div id="blog-body" v-html="blogpost.body" class="is-size-5">
                 {{blogpost.body}}
             </div>
             <router-link :to="{name: 'blog-info', hash: '#' + blogpost.slug}" class="button">Back to all the blogs</router-link>
