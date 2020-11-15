@@ -2,6 +2,10 @@ github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBK
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/araquach/salonserver v0.0.4 h1:ErQYgrXFFRupvXFfiv/x/6jMpZgRJSFJZNoCS8dXdC4=
 github.com/araquach/salonserver v0.0.4/go.mod h1:Nl/Lk/INLkX3kmHcUM7Yxt3+VoFGZCpnxzmOIlr2ofM=
+github.com/araquach/salonserver v0.0.5 h1:D4uSVRJ9ZRyWPvz/nIBLawB1ITeqq1VmLT5bO0XAuWc=
+github.com/araquach/salonserver v0.0.5/go.mod h1:Nl/Lk/INLkX3kmHcUM7Yxt3+VoFGZCpnxzmOIlr2ofM=
+github.com/araquach/salonserver v0.0.6 h1:sujwhoMQlEh2Cwa/KXl1PgmN71KnZbT0u7FRKYMtpRc=
+github.com/araquach/salonserver v0.0.6/go.mod h1:Nl/Lk/INLkX3kmHcUM7Yxt3+VoFGZCpnxzmOIlr2ofM=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/denisenkom/go-mssqldb v0.0.0-20191124224453-732737034ffd h1:83Wprp6ROGeiHFAP8WJdI2RoxALQYgdllERc3N5N2DM=
