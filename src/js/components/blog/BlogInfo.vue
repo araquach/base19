@@ -47,7 +47,7 @@
         },
 
         mounted() {
-            axios.get("/api/blogposts").then(response => this.blogPosts = response.data)
+            axios.get("/api/blog-posts").then(response => this.blogPosts = response.data)
                 .catch(error => {
                     console.log(error)
                 })

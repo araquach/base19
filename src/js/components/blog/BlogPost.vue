@@ -24,7 +24,7 @@
         },
 
         created() {
-            axios.get(`/api/blogpost/${this.$route.params.slug}`).then(response => this.blogpost = response.data)
+            axios.get(`/api/blog-post/${this.$route.params.slug}`).then(response => this.blogpost = response.data)
                 .catch(error => {
                     console.log(error)
                 })
