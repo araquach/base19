@@ -103,6 +103,7 @@
                 position: '',
                 why_us: '',
                 salon: 3,
+                role: "Apprentice",
                 submitStatus: null
             }
         },
@@ -117,6 +118,7 @@
         methods:{
             info() {
                 return `Name: ${this.name}
+                Role: ${this.role}
                 Mobile: ${this.mobile}
                 Position: ${this.position}
                 Why Choose us?: ${this.why_us}
@@ -135,6 +137,7 @@
                         position: this.position,
                         why_us: this.why_us,
                         salon: this.salon,
+                        role: this.role,
                         info: this.info()
                     })
                         .then(response => {
