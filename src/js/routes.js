@@ -120,7 +120,8 @@ export const routes = [
     {
         path: '/bookings',
         name: 'bookings',
-        beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+        component: Bookings
+        // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
     },
     {
         path: '/:notFound(.*)', redirect: '/'

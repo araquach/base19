@@ -2,9 +2,9 @@
   <section class="section bookings-info hero is-fullheight is-dark">
     <div class="columns">
       <div class="section column is-6">
-        <h1 class="title">Register for a December Booking</h1>
+        <h1 class="title">Register for Your Appointment</h1>
         <p class="is-size-5">Our phone lines and online bookings are closed throughout the lockdown. Our usual systems will be switched back on when we re-open.</p>
-        <p>If you want to book an appointment for December, please register here and your stylist will contact you shortly before we re-open to get you booked in.</p>
+        <p>If you want to book an appointment please register here and your stylist will contact you shortly before we re-open to get you booked in.</p>
         <p class="is-size-4"><strong>See you in December!</strong></p>
         <div>
           <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
