@@ -5,7 +5,7 @@
         <h1 class="title">Register for Your Appointment</h1>
         <p class="is-size-5">Our phone lines and online bookings are closed throughout the lockdown. Our usual systems will be switched back on when we re-open.</p>
         <p>If you want to book an appointment please register here and your stylist will contact you shortly before we re-open to get you booked in.</p>
-        <p class="is-size-4"><strong>See you in December!</strong></p>
+        <p class="is-size-4"><strong>See you soon!</strong></p>
         <div>
           <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
             <div class="field">
