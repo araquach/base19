@@ -122,6 +122,7 @@ export const routes = [
         name: 'bookings',
         component: Bookings
         // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+
     },
     {
         path: '/:notFound(.*)', redirect: '/'
