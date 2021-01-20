@@ -8,6 +8,7 @@ import Vuelidate from 'vuelidate'
 import VueMoment from 'vue-moment'
 
 Vue.use(Buefy)
+Vue.use(PriceCalc)
 Vue.use(VueRouter)
 Vue.use(VueScrollTo)
 Vue.use(Vuelidate)

@@ -18,7 +18,6 @@ import RubyProfile from './components/team/profiles/RubyProfile'
 import SophieProfile from './components/team/profiles/SophieProfile'
 import Bookings from "./components/bookings/Bookings"
 
-
 export const routes = [
     {
         path: '',
