@@ -38,9 +38,7 @@
     "vue-scrollto": "^2.20.0",
     "vue-template-compiler": "^2.6.12",
     "vuelidate": "^0.7.6",
-    "vuex": "^3.6.0"
-  },
-  "dependencies": {
-    "araquach-price-calc": "^1.0.0"
+    "vuex": "^3.6.0",
+    "araquach-price-calc": "1.0.1"
   }
 }

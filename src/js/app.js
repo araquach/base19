@@ -2,13 +2,13 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import { routes } from './routes'
+import { store } from './store/store'
 import Buefy from 'buefy'
 import VueScrollTo from 'vue-scrollto'
 import Vuelidate from 'vuelidate'
 import VueMoment from 'vue-moment'
 
 Vue.use(Buefy)
-Vue.use(PriceCalc)
 Vue.use(VueRouter)
 Vue.use(VueScrollTo)
 Vue.use(Vuelidate)
@@ -31,5 +31,6 @@ const router = new VueRouter({
 new Vue({
     el: '#app',
     router,
+    store,
     render: h => h(App)
 })
