@@ -48414,17 +48414,16 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.vue */ "./src/js/App.vue");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes */ "./src/js/routes.js");
-/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./store/store */ "./src/js/store/store.js");
-/* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
-/* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-scrollto */ "./node_modules/vue-scrollto/vue-scrollto.js");
-/* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue_scrollto__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var vuelidate__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuelidate */ "./node_modules/vuelidate/lib/index.js");
-/* harmony import */ var vuelidate__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vuelidate__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var vue_moment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-moment */ "./node_modules/vue-moment/dist/vue-moment.js");
-/* harmony import */ var vue_moment__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(vue_moment__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue */ "./src/js/App.vue");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./router */ "./src/js/router.js");
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store/store */ "./src/js/store/store.js");
+/* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
+/* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-scrollto */ "./node_modules/vue-scrollto/vue-scrollto.js");
+/* harmony import */ var vue_scrollto__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(vue_scrollto__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var vuelidate__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuelidate */ "./node_modules/vuelidate/lib/index.js");
+/* harmony import */ var vuelidate__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vuelidate__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var vue_moment__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue-moment */ "./node_modules/vue-moment/dist/vue-moment.js");
+/* harmony import */ var vue_moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(vue_moment__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -48433,32 +48432,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_5__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MODULE_6___default.a);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuelidate__WEBPACK_IMPORTED_MODULE_7___default.a);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_moment__WEBPACK_IMPORTED_MODULE_8___default.a);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_4__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_scrollto__WEBPACK_IMPORTED_MODULE_5___default.a);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuelidate__WEBPACK_IMPORTED_MODULE_6___default.a);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_moment__WEBPACK_IMPORTED_MODULE_7___default.a);
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.filter('textLimit', function (text, length) {
   return text.substring(0, length);
 });
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: 'history',
-  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
-    return {
-      x: 0,
-      y: 0
-    };
-  },
-  routes: _routes__WEBPACK_IMPORTED_MODULE_3__["routes"]
-});
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
-  router: router,
-  store: _store_store__WEBPACK_IMPORTED_MODULE_4__["store"],
+  router: _router__WEBPACK_IMPORTED_MODULE_2__["default"],
+  store: _store_store__WEBPACK_IMPORTED_MODULE_3__["store"],
   render: function render(h) {
-    return h(_App_vue__WEBPACK_IMPORTED_MODULE_2__["default"]);
+    return h(_App_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
   }
 });
 
@@ -50231,35 +50218,37 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/js/routes.js":
+/***/ "./src/js/router.js":
 /*!**************************!*\
-  !*** ./src/js/routes.js ***!
+  !*** ./src/js/router.js ***!
   \**************************/
-/*! exports provided: routes */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "routes", function() { return routes; });
-/* harmony import */ var _components_layout_Main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/layout/Main */ "./src/js/components/layout/Main.vue");
-/* harmony import */ var _components_home_HomeInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/home/HomeInfo */ "./src/js/components/home/HomeInfo.vue");
-/* harmony import */ var _components_about_AboutInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/about/AboutInfo */ "./src/js/components/about/AboutInfo.vue");
-/* harmony import */ var _components_team_TeamInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/team/TeamInfo */ "./src/js/components/team/TeamInfo.vue");
-/* harmony import */ var _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/team/TeamAll */ "./src/js/components/team/TeamAll.vue");
-/* harmony import */ var _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/team/TeamDetail */ "./src/js/components/team/TeamDetail.vue");
-/* harmony import */ var _components_blog_BlogInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/blog/BlogInfo */ "./src/js/components/blog/BlogInfo.vue");
-/* harmony import */ var _components_blog_BlogPost__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/blog/BlogPost */ "./src/js/components/blog/BlogPost.vue");
-/* harmony import */ var _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/offers/OffersInfo */ "./src/js/components/offers/OffersInfo.vue");
-/* harmony import */ var _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/joinus/JoinusInfo */ "./src/js/components/joinus/JoinusInfo.vue");
-/* harmony import */ var _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/models/ModelsInfo */ "./src/js/components/models/ModelsInfo.vue");
-/* harmony import */ var _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/contact/ContactInfo */ "./src/js/components/contact/ContactInfo.vue");
-/* harmony import */ var _components_corona_CoronaInfo__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/corona/CoronaInfo */ "./src/js/components/corona/CoronaInfo.vue");
-/* harmony import */ var _components_team_profiles_BethProfile__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/team/profiles/BethProfile */ "./src/js/components/team/profiles/BethProfile.vue");
-/* harmony import */ var _components_team_profiles_LaurenProfile__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/team/profiles/LaurenProfile */ "./src/js/components/team/profiles/LaurenProfile.vue");
-/* harmony import */ var _components_team_profiles_LucyProfile__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/team/profiles/LucyProfile */ "./src/js/components/team/profiles/LucyProfile.vue");
-/* harmony import */ var _components_team_profiles_RubyProfile__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/team/profiles/RubyProfile */ "./src/js/components/team/profiles/RubyProfile.vue");
-/* harmony import */ var _components_team_profiles_SophieProfile__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/team/profiles/SophieProfile */ "./src/js/components/team/profiles/SophieProfile.vue");
-/* harmony import */ var _components_bookings_Bookings__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/bookings/Bookings */ "./src/js/components/bookings/Bookings.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _components_layout_Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/layout/Main */ "./src/js/components/layout/Main.vue");
+/* harmony import */ var _components_home_HomeInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/home/HomeInfo */ "./src/js/components/home/HomeInfo.vue");
+/* harmony import */ var _components_about_AboutInfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/about/AboutInfo */ "./src/js/components/about/AboutInfo.vue");
+/* harmony import */ var _components_team_TeamInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/team/TeamInfo */ "./src/js/components/team/TeamInfo.vue");
+/* harmony import */ var _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/team/TeamAll */ "./src/js/components/team/TeamAll.vue");
+/* harmony import */ var _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/team/TeamDetail */ "./src/js/components/team/TeamDetail.vue");
+/* harmony import */ var _components_blog_BlogInfo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/blog/BlogInfo */ "./src/js/components/blog/BlogInfo.vue");
+/* harmony import */ var _components_blog_BlogPost__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/blog/BlogPost */ "./src/js/components/blog/BlogPost.vue");
+/* harmony import */ var _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/offers/OffersInfo */ "./src/js/components/offers/OffersInfo.vue");
+/* harmony import */ var _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/joinus/JoinusInfo */ "./src/js/components/joinus/JoinusInfo.vue");
+/* harmony import */ var _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/models/ModelsInfo */ "./src/js/components/models/ModelsInfo.vue");
+/* harmony import */ var _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/contact/ContactInfo */ "./src/js/components/contact/ContactInfo.vue");
+/* harmony import */ var _components_corona_CoronaInfo__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/corona/CoronaInfo */ "./src/js/components/corona/CoronaInfo.vue");
+/* harmony import */ var _components_team_profiles_BethProfile__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/team/profiles/BethProfile */ "./src/js/components/team/profiles/BethProfile.vue");
+/* harmony import */ var _components_team_profiles_LaurenProfile__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/team/profiles/LaurenProfile */ "./src/js/components/team/profiles/LaurenProfile.vue");
+/* harmony import */ var _components_team_profiles_LucyProfile__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/team/profiles/LucyProfile */ "./src/js/components/team/profiles/LucyProfile.vue");
+/* harmony import */ var _components_team_profiles_RubyProfile__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/team/profiles/RubyProfile */ "./src/js/components/team/profiles/RubyProfile.vue");
+/* harmony import */ var _components_team_profiles_SophieProfile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/team/profiles/SophieProfile */ "./src/js/components/team/profiles/SophieProfile.vue");
+/* harmony import */ var _components_bookings_Bookings__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/bookings/Bookings */ "./src/js/components/bookings/Bookings.vue");
 
 
 
@@ -50279,93 +50268,106 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var routes = [{
-  path: '',
-  name: 'main',
-  component: _components_layout_Main__WEBPACK_IMPORTED_MODULE_0__["default"]
-}, {
-  path: '/info',
-  name: 'main',
-  component: _components_layout_Main__WEBPACK_IMPORTED_MODULE_0__["default"]
-}, {
-  path: '/home',
-  name: 'home',
-  component: _components_home_HomeInfo__WEBPACK_IMPORTED_MODULE_1__["default"]
-}, {
-  path: '/about',
-  name: 'about',
-  component: _components_about_AboutInfo__WEBPACK_IMPORTED_MODULE_2__["default"]
-}, {
-  path: '/teaminfo',
-  name: 'team-info',
-  component: _components_team_TeamInfo__WEBPACK_IMPORTED_MODULE_3__["default"]
-}, {
-  path: '/team',
-  name: 'team',
-  component: _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_4__["default"]
-}, {
-  path: '/team/:slug',
-  name: 'team-detail',
-  component: _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_5__["default"],
-  props: true
-}, {
-  path: '/beth-profile',
-  name: 'beth-profile',
-  component: _components_team_profiles_BethProfile__WEBPACK_IMPORTED_MODULE_13__["default"]
-}, {
-  path: '/sophie-profile',
-  name: 'sophie-profile',
-  component: _components_team_profiles_SophieProfile__WEBPACK_IMPORTED_MODULE_17__["default"]
-}, {
-  path: '/ruby-profile',
-  name: 'ruby-profile',
-  component: _components_team_profiles_RubyProfile__WEBPACK_IMPORTED_MODULE_16__["default"]
-}, {
-  path: '/lucy-profile',
-  name: 'lucy-profile',
-  component: _components_team_profiles_LucyProfile__WEBPACK_IMPORTED_MODULE_15__["default"]
-}, {
-  path: '/lauren-profile',
-  name: 'lauren-profile',
-  component: _components_team_profiles_LaurenProfile__WEBPACK_IMPORTED_MODULE_14__["default"]
-}, {
-  path: '/blog',
-  name: 'blog-info',
-  component: _components_blog_BlogInfo__WEBPACK_IMPORTED_MODULE_6__["default"]
-}, {
-  path: '/blog/:slug',
-  name: 'blog-post',
-  component: _components_blog_BlogPost__WEBPACK_IMPORTED_MODULE_7__["default"],
-  props: true
-}, {
-  path: '/offers',
-  name: 'offers',
-  component: _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_8__["default"]
-}, {
-  path: '/joinus',
-  name: 'joinus',
-  component: _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_9__["default"]
-}, {
-  path: '/models',
-  name: 'models',
-  component: _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_10__["default"]
-}, {
-  path: '/contact',
-  name: 'contact',
-  component: _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_11__["default"]
-}, {
-  path: '/corona',
-  name: 'corona',
-  component: _components_corona_CoronaInfo__WEBPACK_IMPORTED_MODULE_12__["default"]
-}, {
-  path: '/bookings',
-  name: 'bookings',
-  component: _components_bookings_Bookings__WEBPACK_IMPORTED_MODULE_18__["default"] // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
 
-}, {
-  path: '/:notFound(.*)',
-  redirect: '/'
-}];
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
+  mode: 'history',
+  scrollBehavior: function scrollBehavior(to, from, savedPosition) {
+    return {
+      x: 0,
+      y: 0
+    };
+  },
+  routes: [{
+    path: '',
+    name: 'main',
+    component: _components_layout_Main__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }, {
+    path: '/info',
+    name: 'main',
+    component: _components_layout_Main__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }, {
+    path: '/home',
+    name: 'home',
+    component: _components_home_HomeInfo__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }, {
+    path: '/about',
+    name: 'about',
+    component: _components_about_AboutInfo__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }, {
+    path: '/teaminfo',
+    name: 'team-info',
+    component: _components_team_TeamInfo__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }, {
+    path: '/team',
+    name: 'team',
+    component: _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }, {
+    path: '/team/:slug',
+    name: 'team-detail',
+    component: _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_7__["default"],
+    props: true
+  }, {
+    path: '/beth-profile',
+    name: 'beth-profile',
+    component: _components_team_profiles_BethProfile__WEBPACK_IMPORTED_MODULE_15__["default"]
+  }, {
+    path: '/sophie-profile',
+    name: 'sophie-profile',
+    component: _components_team_profiles_SophieProfile__WEBPACK_IMPORTED_MODULE_19__["default"]
+  }, {
+    path: '/ruby-profile',
+    name: 'ruby-profile',
+    component: _components_team_profiles_RubyProfile__WEBPACK_IMPORTED_MODULE_18__["default"]
+  }, {
+    path: '/lucy-profile',
+    name: 'lucy-profile',
+    component: _components_team_profiles_LucyProfile__WEBPACK_IMPORTED_MODULE_17__["default"]
+  }, {
+    path: '/lauren-profile',
+    name: 'lauren-profile',
+    component: _components_team_profiles_LaurenProfile__WEBPACK_IMPORTED_MODULE_16__["default"]
+  }, {
+    path: '/blog',
+    name: 'blog-info',
+    component: _components_blog_BlogInfo__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }, {
+    path: '/blog/:slug',
+    name: 'blog-post',
+    component: _components_blog_BlogPost__WEBPACK_IMPORTED_MODULE_9__["default"],
+    props: true
+  }, {
+    path: '/offers',
+    name: 'offers',
+    component: _components_offers_OffersInfo__WEBPACK_IMPORTED_MODULE_10__["default"]
+  }, {
+    path: '/joinus',
+    name: 'joinus',
+    component: _components_joinus_JoinusInfo__WEBPACK_IMPORTED_MODULE_11__["default"]
+  }, {
+    path: '/models',
+    name: 'models',
+    component: _components_models_ModelsInfo__WEBPACK_IMPORTED_MODULE_12__["default"]
+  }, {
+    path: '/contact',
+    name: 'contact',
+    component: _components_contact_ContactInfo__WEBPACK_IMPORTED_MODULE_13__["default"]
+  }, {
+    path: '/corona',
+    name: 'corona',
+    component: _components_corona_CoronaInfo__WEBPACK_IMPORTED_MODULE_14__["default"]
+  }, {
+    path: '/bookings',
+    name: 'bookings',
+    component: _components_bookings_Bookings__WEBPACK_IMPORTED_MODULE_20__["default"] // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+
+  }, {
+    path: '/:notFound(.*)',
+    redirect: '/'
+  }]
+});
+/* harmony default export */ __webpack_exports__["default"] = (router);
 
 /***/ }),
 
