@@ -90,11 +90,15 @@
 /*!****************************************************************!*\
   !*** ./node_modules/araquach-price-calc/store/modules/calc.js ***!
   \****************************************************************/
-/*! exports provided: default */
+/*! exports provided: state, mutations, actions, getters */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "state", function() { return state; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mutations", function() { return mutations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actions", function() { return actions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getters", function() { return getters; });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -129,7 +133,129 @@ const state = {
     price: 0
 }
 
-const getters = {
+
+const mutations = {
+    UPDATE_SALONS(state, payload) {
+        state.salons = payload
+    },
+
+    UPDATE_SALON(state, payload) {
+        state.salon = payload
+    },
+
+    UPDATE_SELECTOR(state, payload) {
+        state.selector = payload
+    },
+
+    UPDATE_SERVICES(state, payload) {
+        state.services = payload
+    },
+
+    UPDATE_STYLISTS(state, payload) {
+        state.stylists = payload
+    },
+
+    UPDATE_LEVELS(state, payload) {
+        state.levels = payload
+    },
+
+    UPDATE_CALCULATOR(state, payload) {
+        state.calculator = payload
+    },
+
+    UPDATE_REGULAR(state, payload) {
+        state.regular = payload
+    },
+
+    SELECT_VIEW(state, payload) {
+        state.view = payload
+    },
+
+    SELECT_LEVEL(state, payload) {
+        state.level = payload
+    },
+
+    SELECT_STYLIST(state, payload) {
+        state.stylist = payload
+    },
+
+    CHANGE_COLOUR_CAT(state, payload) {
+        state.colourCat = payload
+    },
+
+    UPDATE_SELECTED_COLOUR(state, payload) {
+        state.selectedColour = payload
+    },
+
+    UPDATE_IS_COLOUR_CORRECTION(state, payload) {
+        state.isColourCorrection = payload
+    },
+
+    UPDATE_SELECTED_COLOUR_ADD_ON(state, payload) {
+        state.selectedColourAddOn = payload
+    },
+
+    UPDATE_SELECTED_TREATMENT(state, payload) {
+        state.selectedTreatment = payload
+    },
+
+    UPDATE_SELECTED_FINISH(state, payload) {
+        state.selectedFinish = payload
+    },
+
+    UPDATE_SELECTED_FINISH_ADD_ON(state, payload) {
+        state.selectedFinishAddOn = payload
+    },
+
+    UPDATE_SELECTED_MENS_COLOUR(state, payload) {
+        state.selectedMensColour = payload
+    },
+
+    UPDATE_SELECTED_MENS_CUT(state, payload) {
+        state.selectedMensCut = payload
+    },
+
+    UPDATE_TOTAL_PRICE(state, payload) {
+        state.totalPrice = payload
+    },
+
+    DECREASE_LEVEL(state) {
+        if (state.level.id > 0 && state.level.id < 8) {
+            state.level = state.levels.filter(l => l.id === state.level.id +1)[0]
+        }
+    },
+
+    INCREASE_LEVEL(state) {
+        if (state.level.id > 1) {
+            state.level = state.levels.filter(l => l.id === state.level.id -1)[0]
+        }
+    }
+}
+
+const actions = {
+    loadSalons({ commit }) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/salons').then((response) => {
+            commit('UPDATE_SALONS', response.data)
+        })
+    },
+    loadServices({ commit }) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/services').then((response) => {
+            commit('UPDATE_SERVICES', response.data)
+        })
+    },
+    loadStylists({ commit }) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/stylists').then((response) => {
+            commit('UPDATE_STYLISTS', response.data)
+        })
+    },
+    loadLevels({ commit }) {
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/levels').then((response) => {
+            commit('UPDATE_LEVELS', response.data)
+        })
+    }
+}
+
+ const getters = {
     salonStylists: state => {
         return state.stylists.filter(s => s.salon === state.salon.id)
     },
@@ -254,133 +380,7 @@ const getters = {
     }
 }
 
-const mutations = {
-    UPDATE_SALONS(state, payload) {
-        state.salons = payload
-    },
 
-    UPDATE_SALON(state, payload) {
-        state.salon = payload
-    },
-
-    UPDATE_SELECTOR(state, payload) {
-        state.selector = payload
-    },
-
-    UPDATE_SERVICES(state, payload) {
-        state.services = payload
-    },
-
-    UPDATE_STYLISTS(state, payload) {
-        state.stylists = payload
-    },
-
-    UPDATE_LEVELS(state, payload) {
-        state.levels = payload
-    },
-
-    UPDATE_CALCULATOR(state, payload) {
-        state.calculator = payload
-    },
-
-    UPDATE_REGULAR(state, payload) {
-        state.regular = payload
-    },
-
-    SELECT_VIEW(state, payload) {
-        state.view = payload
-    },
-
-    SELECT_LEVEL(state, payload) {
-        state.level = payload
-    },
-
-    SELECT_STYLIST(state, payload) {
-        state.stylist = payload
-    },
-
-    CHANGE_COLOUR_CAT(state, payload) {
-        state.colourCat = payload
-    },
-
-    UPDATE_SELECTED_COLOUR(state, payload) {
-        state.selectedColour = payload
-    },
-
-    UPDATE_IS_COLOUR_CORRECTION(state, payload) {
-        state.isColourCorrection = payload
-    },
-
-    UPDATE_SELECTED_COLOUR_ADD_ON(state, payload) {
-        state.selectedColourAddOn = payload
-    },
-
-    UPDATE_SELECTED_TREATMENT(state, payload) {
-        state.selectedTreatment = payload
-    },
-
-    UPDATE_SELECTED_FINISH(state, payload) {
-        state.selectedFinish = payload
-    },
-
-    UPDATE_SELECTED_FINISH_ADD_ON(state, payload) {
-        state.selectedFinishAddOn = payload
-    },
-
-    UPDATE_SELECTED_MENS_COLOUR(state, payload) {
-        state.selectedMensColour = payload
-    },
-
-    UPDATE_SELECTED_MENS_CUT(state, payload) {
-        state.selectedMensCut = payload
-    },
-
-    UPDATE_TOTAL_PRICE(state, payload) {
-        state.totalPrice = payload
-    },
-
-    DECREASE_LEVEL(state) {
-        if (state.level.id > 0 && state.level.id < 8) {
-            state.level = state.levels.filter(l => l.id === state.level.id +1)[0]
-        }
-    },
-
-    INCREASE_LEVEL(state) {
-        if (state.level.id > 1) {
-            state.level = state.levels.filter(l => l.id === state.level.id -1)[0]
-        }
-    }
-}
-
-const actions = {
-    loadSalons({ commit }) {
-        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/salons').then((response) => {
-            commit('UPDATE_SALONS', response.data)
-        })
-    },
-    loadServices({ commit }) {
-        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/services').then((response) => {
-            commit('UPDATE_SERVICES', response.data)
-        })
-    },
-    loadStylists({ commit }) {
-        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/stylists').then((response) => {
-            commit('UPDATE_STYLISTS', response.data)
-        })
-    },
-    loadLevels({ commit }) {
-        axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/levels').then((response) => {
-            commit('UPDATE_LEVELS', response.data)
-        })
-    }
-}
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    state,
-    getters,
-    mutations,
-    actions
-});
 
 /***/ }),
 
@@ -50391,7 +50391,7 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   modules: {
-    calc: araquach_price_calc_store_modules_calc__WEBPACK_IMPORTED_MODULE_2__["default"]
+    calc: araquach_price_calc_store_modules_calc__WEBPACK_IMPORTED_MODULE_2__
   }
 });
 

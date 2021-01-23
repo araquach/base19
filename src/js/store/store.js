@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import calc from "araquach-price-calc/store/modules/calc"
+import * as calc from "araquach-price-calc/store/modules/calc"
 
 Vue.use(Vuex)
 
