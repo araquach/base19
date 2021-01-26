@@ -21,6 +21,9 @@
                 Offers
             </b-navbar-item>
             <b-navbar-dropdown label="More">
+                <b-navbar-item tag="router-link" :to="{ name: 'intro' }">
+                  Prices
+                </b-navbar-item>
                 <b-navbar-item tag="router-link" to="/#joinus" v-scroll-to="'#joinus'">
                     Join Us
                 </b-navbar-item>

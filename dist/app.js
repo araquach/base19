@@ -1441,6 +1441,14 @@ const getters = {
         return state.stylists.filter(s => s.salon === state.salon.id)
     },
 
+    filteredLevels: state => {
+        if (state.salon.id === 3) {
+            return state.levels.filter(l => l.id < 4)
+        } else {
+            return state.levels.filter(l => l.id > 2)
+        }
+    },
+
     colourPrices: state => {
         return state.services.filter(c => c.cat1 === 2)
     },
@@ -21514,35 +21522,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
-  
 
-  /* harmony default export */ __webpack_exports__["default"] = ({
 
-  data() {
-    return {
-      isOpen: true,
-      activeItem: null
-    }
-  },
+    /* harmony default export */ __webpack_exports__["default"] = ({
 
-  methods: {
-    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
-        'SELECT_LEVEL'
-    ]),
-
-    selectItem(i) {
-      this.activeItem = i
+    data() {
+      return {
+        isOpen: true,
+        activeItem: null
+      }
     },
-  },
 
-  computed: {
-    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
-      level: state => state.calc.level,
-      levels: state => state.calc.levels
-    })
-  }
-});
+    methods: {
+      ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+          'SELECT_LEVEL'
+      ]),
+
+      selectItem(i) {
+        this.activeItem = i
+      }
+    },
+
+    computed: {
+      ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+        salon: state => state.calc.salon,
+        level: state => state.calc.level,
+        levels: state => state.calc.levels
+      }),
+
+      ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+        'filteredLevels'
+      ])
+    }
+  });
 
 
 /***/ }),
@@ -23451,46 +23470,70 @@ var render = function() {
           _vm._v(" "),
           !_vm.level.id
             ? _c("div", { staticClass: "section" }, [
-                _c("p", [
-                  _vm._v("At Jakata we have stylists from "),
-                  _c("strong", [_vm._v("Graduate Stylist")]),
-                  _vm._v(" level up to "),
-                  _c("strong", [_vm._v("Advanced Senior")]),
-                  _vm._v(
-                    ". The cost with each level reflects how much experience they have.\n        A Graduate stylist has 2-3 years experience, a Stylist 3-5 years experience, a Senior Stylist 5+ years experience."
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v("Our "),
-                  _c("strong", [_vm._v("Junior stylists")]),
-                  _vm._v(" are based at our training Academy "),
-                  _c("strong", [_vm._v("Base Hairdressing")]),
-                  _vm._v(" if you're looking for our most affordable option.")
-                ]),
-                _vm._v(" "),
-                _c("p", [
-                  _vm._v("All of our Senior Stylists have the "),
-                  _c("strong", [_vm._v("Schwarzkopf Colour Masters")]),
-                  _vm._v(
-                    " qualification.\n          Our Advanced Seniors are the most in-demand stylists with a wealth of experience and also oversee the running of the salon."
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "has-text-level is-size-5" }, [
-                  _c("strong", [
-                    _vm._v(
-                      "Please select a stylist level below - you can change this at any time to see the price difference"
-                    )
-                  ])
-                ])
+                _vm.salon.id === 3
+                  ? _c("div", [
+                      _c("p", [
+                        _vm._v(
+                          "Base Hairdressing is an Academy Junior Stylists up to Graduate Stylists. If you're looking for a more experienced stylist check out our other salons Paul Kemp Hairdressing and Jakata."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "has-text-level is-size-5" }, [
+                        _c("strong", [
+                          _vm._v(
+                            "Please select a stylist level below - you can change this at any time to see the price difference"
+                          )
+                        ])
+                      ])
+                    ])
+                  : _c("div", [
+                      _c("p", [
+                        _vm._v(
+                          "At " +
+                            _vm._s(_vm.salon.name) +
+                            " we have stylists from "
+                        ),
+                        _c("strong", [_vm._v("Graduate Stylist")]),
+                        _vm._v(" level up to "),
+                        _c("strong", [_vm._v("Advanced Senior")]),
+                        _vm._v(
+                          ". The cost with each level reflects how much experience they have.\n          A Graduate stylist has 2-3 years experience, a Stylist 3-5 years experience, a Senior Stylist 5+ years experience."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v("Our "),
+                        _c("strong", [_vm._v("Junior stylists")]),
+                        _vm._v(" are based at our training Academy "),
+                        _c("strong", [_vm._v("Base Hairdressing")]),
+                        _vm._v(
+                          " if you're looking for our most affordable option."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v("All of our Senior Stylists have the "),
+                        _c("strong", [_vm._v("Schwarzkopf Colour Masters")]),
+                        _vm._v(
+                          " qualification.\n          Our Advanced Seniors are the most in-demand stylists with a wealth of experience and also oversee the running of the salon."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "has-text-level is-size-5" }, [
+                        _c("strong", [
+                          _vm._v(
+                            "Please select a stylist level below - you can change this at any time to see the price difference"
+                          )
+                        ])
+                      ])
+                    ])
               ])
             : _vm._e(),
           _vm._v(" "),
           _c(
             "div",
             { staticClass: "section columns is-multiline is-mobile" },
-            _vm._l(_vm.levels, function(l, i) {
+            _vm._l(_vm.filteredLevels, function(l, i) {
               return _c("div", { key: i, staticClass: "column" }, [
                 _c(
                   "button",
@@ -28594,6 +28637,12 @@ var render = function() {
             "b-navbar-dropdown",
             { attrs: { label: "More" } },
             [
+              _c(
+                "b-navbar-item",
+                { attrs: { tag: "router-link", to: { name: "intro" } } },
+                [_vm._v("\n                  Prices\n                ")]
+              ),
+              _vm._v(" "),
               _c(
                 "b-navbar-item",
                 {
@@ -57236,8 +57285,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
