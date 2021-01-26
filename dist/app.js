@@ -86,6 +86,1174 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/araquach-price-calc/components/Modal.vue":
+/*!***************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/Modal.vue ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Modal_vue_vue_type_template_id_62545096___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Modal.vue?vue&type=template&id=62545096& */ "./node_modules/araquach-price-calc/components/Modal.vue?vue&type=template&id=62545096&");
+/* harmony import */ var _Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modal.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/Modal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Modal_vue_vue_type_template_id_62545096___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Modal_vue_vue_type_template_id_62545096___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/Modal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/Modal.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/Modal.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/Modal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/Modal.vue?vue&type=template&id=62545096&":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/Modal.vue?vue&type=template&id=62545096& ***!
+  \**********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_62545096___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib??vue-loader-options!./Modal.vue?vue&type=template&id=62545096& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/Modal.vue?vue&type=template&id=62545096&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_62545096___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Modal_vue_vue_type_template_id_62545096___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/Colour.vue":
+/*!****************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/Colour.vue ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Colour_vue_vue_type_template_id_ccbf315e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Colour.vue?vue&type=template&id=ccbf315e& */ "./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=template&id=ccbf315e&");
+/* harmony import */ var _Colour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Colour.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Colour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Colour_vue_vue_type_template_id_ccbf315e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Colour_vue_vue_type_template_id_ccbf315e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/calculators/Colour.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Colour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./Colour.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Colour_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=template&id=ccbf315e&":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=template&id=ccbf315e& ***!
+  \***********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Colour_vue_vue_type_template_id_ccbf315e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./Colour.vue?vue&type=template&id=ccbf315e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=template&id=ccbf315e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Colour_vue_vue_type_template_id_ccbf315e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Colour_vue_vue_type_template_id_ccbf315e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue":
+/*!************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CuttingStyling_vue_vue_type_template_id_108f4363___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CuttingStyling.vue?vue&type=template&id=108f4363& */ "./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=template&id=108f4363&");
+/* harmony import */ var _CuttingStyling_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CuttingStyling.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CuttingStyling_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CuttingStyling_vue_vue_type_template_id_108f4363___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CuttingStyling_vue_vue_type_template_id_108f4363___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_CuttingStyling_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./CuttingStyling.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_CuttingStyling_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=template&id=108f4363&":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=template&id=108f4363& ***!
+  \*******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_CuttingStyling_vue_vue_type_template_id_108f4363___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./CuttingStyling.vue?vue&type=template&id=108f4363& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=template&id=108f4363&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_CuttingStyling_vue_vue_type_template_id_108f4363___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_CuttingStyling_vue_vue_type_template_id_108f4363___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/Men.vue":
+/*!*************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/Men.vue ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Men_vue_vue_type_template_id_ca7ea0be___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Men.vue?vue&type=template&id=ca7ea0be& */ "./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=template&id=ca7ea0be&");
+/* harmony import */ var _Men_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Men.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Men_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Men_vue_vue_type_template_id_ca7ea0be___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Men_vue_vue_type_template_id_ca7ea0be___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/calculators/Men.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Men_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./Men.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Men_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=template&id=ca7ea0be&":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=template&id=ca7ea0be& ***!
+  \********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Men_vue_vue_type_template_id_ca7ea0be___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./Men.vue?vue&type=template&id=ca7ea0be& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=template&id=ca7ea0be&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Men_vue_vue_type_template_id_ca7ea0be___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Men_vue_vue_type_template_id_ca7ea0be___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LevelSelector_vue_vue_type_template_id_75836751___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LevelSelector.vue?vue&type=template&id=75836751& */ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=template&id=75836751&");
+/* harmony import */ var _LevelSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LevelSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LevelSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LevelSelector_vue_vue_type_template_id_75836751___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LevelSelector_vue_vue_type_template_id_75836751___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/selectors/LevelSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_LevelSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./LevelSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_LevelSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=template&id=75836751&":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=template&id=75836751& ***!
+  \****************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LevelSelector_vue_vue_type_template_id_75836751___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./LevelSelector.vue?vue&type=template&id=75836751& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=template&id=75836751&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LevelSelector_vue_vue_type_template_id_75836751___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LevelSelector_vue_vue_type_template_id_75836751___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _StylistSelector_vue_vue_type_template_id_a955c3ba___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StylistSelector.vue?vue&type=template&id=a955c3ba& */ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=template&id=a955c3ba&");
+/* harmony import */ var _StylistSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StylistSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _StylistSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _StylistSelector_vue_vue_type_template_id_a955c3ba___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StylistSelector_vue_vue_type_template_id_a955c3ba___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/selectors/StylistSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_StylistSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./StylistSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_StylistSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=template&id=a955c3ba&":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=template&id=a955c3ba& ***!
+  \******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StylistSelector_vue_vue_type_template_id_a955c3ba___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./StylistSelector.vue?vue&type=template&id=a955c3ba& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=template&id=a955c3ba&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StylistSelector_vue_vue_type_template_id_a955c3ba___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StylistSelector_vue_vue_type_template_id_a955c3ba___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ColourAddOnSelector_vue_vue_type_template_id_e3ea85ae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae& */ "./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae&");
+/* harmony import */ var _ColourAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ColourAddOnSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ColourAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ColourAddOnSelector_vue_vue_type_template_id_e3ea85ae___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ColourAddOnSelector_vue_vue_type_template_id_e3ea85ae___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_ColourAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./ColourAddOnSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_ColourAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae&":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae& ***!
+  \*********************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ColourAddOnSelector_vue_vue_type_template_id_e3ea85ae___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ColourAddOnSelector_vue_vue_type_template_id_e3ea85ae___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ColourAddOnSelector_vue_vue_type_template_id_e3ea85ae___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/ColourSelector.vue":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/ColourSelector.vue ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ColourSelector_vue_vue_type_template_id_a20dc7f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColourSelector.vue?vue&type=template&id=a20dc7f6& */ "./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=template&id=a20dc7f6&");
+/* harmony import */ var _ColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ColourSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ColourSelector_vue_vue_type_template_id_a20dc7f6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ColourSelector_vue_vue_type_template_id_a20dc7f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/ColourSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_ColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./ColourSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_ColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=template&id=a20dc7f6&":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=template&id=a20dc7f6& ***!
+  \****************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ColourSelector_vue_vue_type_template_id_a20dc7f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./ColourSelector.vue?vue&type=template&id=a20dc7f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=template&id=a20dc7f6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ColourSelector_vue_vue_type_template_id_a20dc7f6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_ColourSelector_vue_vue_type_template_id_a20dc7f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FinishAddOnSelector_vue_vue_type_template_id_b047157c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FinishAddOnSelector.vue?vue&type=template&id=b047157c& */ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=template&id=b047157c&");
+/* harmony import */ var _FinishAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FinishAddOnSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _FinishAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FinishAddOnSelector_vue_vue_type_template_id_b047157c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FinishAddOnSelector_vue_vue_type_template_id_b047157c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_FinishAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./FinishAddOnSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_FinishAddOnSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=template&id=b047157c&":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=template&id=b047157c& ***!
+  \*********************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_FinishAddOnSelector_vue_vue_type_template_id_b047157c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./FinishAddOnSelector.vue?vue&type=template&id=b047157c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=template&id=b047157c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_FinishAddOnSelector_vue_vue_type_template_id_b047157c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_FinishAddOnSelector_vue_vue_type_template_id_b047157c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/FinishSelector.vue ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FinishSelector_vue_vue_type_template_id_a84e0f68___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FinishSelector.vue?vue&type=template&id=a84e0f68& */ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=template&id=a84e0f68&");
+/* harmony import */ var _FinishSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FinishSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _FinishSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FinishSelector_vue_vue_type_template_id_a84e0f68___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FinishSelector_vue_vue_type_template_id_a84e0f68___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/FinishSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_FinishSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./FinishSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_FinishSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=template&id=a84e0f68&":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=template&id=a84e0f68& ***!
+  \****************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_FinishSelector_vue_vue_type_template_id_a84e0f68___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./FinishSelector.vue?vue&type=template&id=a84e0f68& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=template&id=a84e0f68&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_FinishSelector_vue_vue_type_template_id_a84e0f68___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_FinishSelector_vue_vue_type_template_id_a84e0f68___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/MensColourSelector.vue":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/MensColourSelector.vue ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MensColourSelector_vue_vue_type_template_id_d65a617c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MensColourSelector.vue?vue&type=template&id=d65a617c& */ "./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=template&id=d65a617c&");
+/* harmony import */ var _MensColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MensColourSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _MensColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MensColourSelector_vue_vue_type_template_id_d65a617c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _MensColourSelector_vue_vue_type_template_id_d65a617c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/MensColourSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_MensColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./MensColourSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_MensColourSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=template&id=d65a617c&":
+/*!********************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=template&id=d65a617c& ***!
+  \********************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_MensColourSelector_vue_vue_type_template_id_d65a617c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./MensColourSelector.vue?vue&type=template&id=d65a617c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=template&id=d65a617c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_MensColourSelector_vue_vue_type_template_id_d65a617c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_MensColourSelector_vue_vue_type_template_id_d65a617c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/MensCutSelector.vue":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/MensCutSelector.vue ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MensCutSelector_vue_vue_type_template_id_3598b34c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MensCutSelector.vue?vue&type=template&id=3598b34c& */ "./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=template&id=3598b34c&");
+/* harmony import */ var _MensCutSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MensCutSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _MensCutSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MensCutSelector_vue_vue_type_template_id_3598b34c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _MensCutSelector_vue_vue_type_template_id_3598b34c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/MensCutSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_MensCutSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./MensCutSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_MensCutSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=template&id=3598b34c&":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=template&id=3598b34c& ***!
+  \*****************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_MensCutSelector_vue_vue_type_template_id_3598b34c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./MensCutSelector.vue?vue&type=template&id=3598b34c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=template&id=3598b34c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_MensCutSelector_vue_vue_type_template_id_3598b34c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_MensCutSelector_vue_vue_type_template_id_3598b34c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue":
+/*!************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TreatmentSelector_vue_vue_type_template_id_fd7fe1a6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TreatmentSelector.vue?vue&type=template&id=fd7fe1a6& */ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=template&id=fd7fe1a6&");
+/* harmony import */ var _TreatmentSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TreatmentSelector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TreatmentSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TreatmentSelector_vue_vue_type_template_id_fd7fe1a6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TreatmentSelector_vue_vue_type_template_id_fd7fe1a6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/services/TreatmentSelector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_TreatmentSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./TreatmentSelector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_TreatmentSelector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=template&id=fd7fe1a6&":
+/*!*******************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=template&id=fd7fe1a6& ***!
+  \*******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TreatmentSelector_vue_vue_type_template_id_fd7fe1a6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./TreatmentSelector.vue?vue&type=template&id=fd7fe1a6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=template&id=fd7fe1a6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TreatmentSelector_vue_vue_type_template_id_fd7fe1a6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TreatmentSelector_vue_vue_type_template_id_fd7fe1a6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue":
+/*!***************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/LevelTotal.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LevelTotal_vue_vue_type_template_id_5f1791a9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LevelTotal.vue?vue&type=template&id=5f1791a9& */ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=template&id=5f1791a9&");
+/* harmony import */ var _LevelTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LevelTotal.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LevelTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LevelTotal_vue_vue_type_template_id_5f1791a9___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LevelTotal_vue_vue_type_template_id_5f1791a9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/totals/LevelTotal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_LevelTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./LevelTotal.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_LevelTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=template&id=5f1791a9&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=template&id=5f1791a9& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LevelTotal_vue_vue_type_template_id_5f1791a9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./LevelTotal.vue?vue&type=template&id=5f1791a9& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=template&id=5f1791a9&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LevelTotal_vue_vue_type_template_id_5f1791a9___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_LevelTotal_vue_vue_type_template_id_5f1791a9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue":
+/*!***************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/PriceTotal.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PriceTotal_vue_vue_type_template_id_7135acf8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PriceTotal.vue?vue&type=template&id=7135acf8& */ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=template&id=7135acf8&");
+/* harmony import */ var _PriceTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PriceTotal.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PriceTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PriceTotal_vue_vue_type_template_id_7135acf8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PriceTotal_vue_vue_type_template_id_7135acf8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/totals/PriceTotal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_PriceTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./PriceTotal.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_PriceTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=template&id=7135acf8&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=template&id=7135acf8& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_PriceTotal_vue_vue_type_template_id_7135acf8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./PriceTotal.vue?vue&type=template&id=7135acf8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=template&id=7135acf8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_PriceTotal_vue_vue_type_template_id_7135acf8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_PriceTotal_vue_vue_type_template_id_7135acf8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/StylistTotal.vue ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _StylistTotal_vue_vue_type_template_id_6adb3e57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StylistTotal.vue?vue&type=template&id=6adb3e57& */ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=template&id=6adb3e57&");
+/* harmony import */ var _StylistTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StylistTotal.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _StylistTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _StylistTotal_vue_vue_type_template_id_6adb3e57___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StylistTotal_vue_vue_type_template_id_6adb3e57___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/components/totals/StylistTotal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_StylistTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./StylistTotal.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_StylistTotal_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=template&id=6adb3e57&":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=template&id=6adb3e57& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StylistTotal_vue_vue_type_template_id_6adb3e57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./StylistTotal.vue?vue&type=template&id=6adb3e57& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=template&id=6adb3e57&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StylistTotal_vue_vue_type_template_id_6adb3e57___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StylistTotal_vue_vue_type_template_id_6adb3e57___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/router/calcRoutes.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/router/calcRoutes.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _views_Intro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/Intro */ "./node_modules/araquach-price-calc/views/Intro.vue");
+/* harmony import */ var _views_Calculator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/Calculator */ "./node_modules/araquach-price-calc/views/Calculator.vue");
+/* harmony import */ var _views_Selector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/Selector */ "./node_modules/araquach-price-calc/views/Selector.vue");
+/* harmony import */ var _views_endpoint_TotalsByStylist__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/endpoint/TotalsByStylist */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue");
+/* harmony import */ var _views_endpoint_TotalsByLevel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../views/endpoint/TotalsByLevel */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue");
+/* harmony import */ var _views_endpoint_TotalsByPrice__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../views/endpoint/TotalsByPrice */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue");
+/* harmony import */ var _views_Finish__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/Finish */ "./node_modules/araquach-price-calc/views/Finish.vue");
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ([
+    {
+        path: '/prices',
+        name: 'intro',
+        component: _views_Intro__WEBPACK_IMPORTED_MODULE_0__["default"]
+    },
+    {
+        path: '/prices/selector',
+        name: 'selector',
+        component: _views_Selector__WEBPACK_IMPORTED_MODULE_2__["default"]
+    },
+    {
+        path: '/prices/calculator',
+        name: 'calculator',
+        component: _views_Calculator__WEBPACK_IMPORTED_MODULE_1__["default"]
+    },
+    {
+        path: '/prices/total-by-price',
+        name: 'totals-by-price',
+        component: _views_endpoint_TotalsByPrice__WEBPACK_IMPORTED_MODULE_5__["default"]
+    },
+    {
+        path: '/prices/total-by-level',
+        name: 'totals-by-level',
+        component: _views_endpoint_TotalsByLevel__WEBPACK_IMPORTED_MODULE_4__["default"]
+    },
+    {
+        path: '/prices/total-by-stylist',
+        name: 'totals-by-stylist',
+        component: _views_endpoint_TotalsByStylist__WEBPACK_IMPORTED_MODULE_3__["default"]
+    },
+    {
+        path: '/prices/finish',
+        name: 'finish',
+        component: _views_Finish__WEBPACK_IMPORTED_MODULE_6__["default"]
+    }
+]);
+
+/***/ }),
+
 /***/ "./node_modules/araquach-price-calc/store/modules/calc.js":
 /*!****************************************************************!*\
   !*** ./node_modules/araquach-price-calc/store/modules/calc.js ***!
@@ -105,15 +1273,15 @@ __webpack_require__.r(__webpack_exports__);
 
 const state = {
     salons: [],
-    services: [],
-    stylists: [],
-    levels: [],
     salon: {
         id: 2,
         name: 'Paul Kemp Hairdressing',
-        logo: '/dist/img/logos/small/pk.png',
-        image: '/dist/img/logos/pk.png'
+        logo: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/pk.png',
+        image: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/small/pk.png'
     },
+    services: [],
+    stylists: [],
+    levels: [],
     regular: false,
     view: 'intro',
     selector: '',
@@ -135,6 +1303,23 @@ const state = {
 
 
 const mutations = {
+    RESET_STATE(state) {
+        state.selector = ''
+        state.level = {}
+        state.stylist = {}
+        state.colourCat = null
+        state.isColourCorrection = false
+        state.selectedColour = {}
+        state.selectedColourAddOn = {}
+        state.selectedFinish = {}
+        state.selectedFinishAddOn = {}
+        state.selectedTreatment = {}
+        state.selectedMensCut = {}
+        state.selectedMensColour = {}
+        state.totalPrice = null
+        state.price = 0
+    },
+
     UPDATE_SALONS(state, payload) {
         state.salons = payload
     },
@@ -215,10 +1400,6 @@ const mutations = {
         state.selectedMensCut = payload
     },
 
-    UPDATE_TOTAL_PRICE(state, payload) {
-        state.totalPrice = payload
-    },
-
     DECREASE_LEVEL(state) {
         if (state.level.id > 0 && state.level.id < 8) {
             state.level = state.levels.filter(l => l.id === state.level.id +1)[0]
@@ -255,7 +1436,7 @@ const actions = {
     }
 }
 
- const getters = {
+const getters = {
     salonStylists: state => {
         return state.stylists.filter(s => s.salon === state.salon.id)
     },
@@ -379,6 +1560,558 @@ const actions = {
         }
     }
 }
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Calculator.vue":
+/*!***************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Calculator.vue ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Calculator_vue_vue_type_template_id_0b6cd425___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Calculator.vue?vue&type=template&id=0b6cd425& */ "./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=template&id=0b6cd425&");
+/* harmony import */ var _Calculator_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Calculator.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Calculator_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Calculator_vue_vue_type_template_id_0b6cd425___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Calculator_vue_vue_type_template_id_0b6cd425___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/Calculator.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Calculator_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib??vue-loader-options!./Calculator.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Calculator_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=template&id=0b6cd425&":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=template&id=0b6cd425& ***!
+  \**********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Calculator_vue_vue_type_template_id_0b6cd425___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib??vue-loader-options!./Calculator.vue?vue&type=template&id=0b6cd425& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=template&id=0b6cd425&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Calculator_vue_vue_type_template_id_0b6cd425___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Calculator_vue_vue_type_template_id_0b6cd425___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Finish.vue":
+/*!***********************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Finish.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Finish_vue_vue_type_template_id_180542b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Finish.vue?vue&type=template&id=180542b6& */ "./node_modules/araquach-price-calc/views/Finish.vue?vue&type=template&id=180542b6&");
+/* harmony import */ var _Finish_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Finish.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/Finish.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Finish_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Finish_vue_vue_type_template_id_180542b6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Finish_vue_vue_type_template_id_180542b6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/Finish.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Finish.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Finish.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Finish_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib??vue-loader-options!./Finish.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Finish.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Finish_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Finish.vue?vue&type=template&id=180542b6&":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Finish.vue?vue&type=template&id=180542b6& ***!
+  \******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Finish_vue_vue_type_template_id_180542b6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib??vue-loader-options!./Finish.vue?vue&type=template&id=180542b6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Finish.vue?vue&type=template&id=180542b6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Finish_vue_vue_type_template_id_180542b6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Finish_vue_vue_type_template_id_180542b6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Intro.vue":
+/*!**********************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Intro.vue ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Intro_vue_vue_type_template_id_3ab33099___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Intro.vue?vue&type=template&id=3ab33099& */ "./node_modules/araquach-price-calc/views/Intro.vue?vue&type=template&id=3ab33099&");
+/* harmony import */ var _Intro_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Intro.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/Intro.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Intro_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Intro_vue_vue_type_template_id_3ab33099___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Intro_vue_vue_type_template_id_3ab33099___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/Intro.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Intro.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Intro.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib??vue-loader-options!./Intro.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Intro.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Intro.vue?vue&type=template&id=3ab33099&":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Intro.vue?vue&type=template&id=3ab33099& ***!
+  \*****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_3ab33099___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib??vue-loader-options!./Intro.vue?vue&type=template&id=3ab33099& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Intro.vue?vue&type=template&id=3ab33099&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_3ab33099___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Intro_vue_vue_type_template_id_3ab33099___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Selector.vue":
+/*!*************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Selector.vue ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Selector_vue_vue_type_template_id_6dd80d42___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Selector.vue?vue&type=template&id=6dd80d42& */ "./node_modules/araquach-price-calc/views/Selector.vue?vue&type=template&id=6dd80d42&");
+/* harmony import */ var _Selector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Selector.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/Selector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Selector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Selector_vue_vue_type_template_id_6dd80d42___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Selector_vue_vue_type_template_id_6dd80d42___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/Selector.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Selector.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Selector.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_Selector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib??vue-loader-options!./Selector.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Selector.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_Selector_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/Selector.vue?vue&type=template&id=6dd80d42&":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/Selector.vue?vue&type=template&id=6dd80d42& ***!
+  \********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Selector_vue_vue_type_template_id_6dd80d42___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib??vue-loader-options!./Selector.vue?vue&type=template&id=6dd80d42& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Selector.vue?vue&type=template&id=6dd80d42&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Selector_vue_vue_type_template_id_6dd80d42___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Selector_vue_vue_type_template_id_6dd80d42___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue":
+/*!****************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _StaffSelection_vue_vue_type_template_id_4740b873___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StaffSelection.vue?vue&type=template&id=4740b873& */ "./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=template&id=4740b873&");
+/* harmony import */ var _StaffSelection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StaffSelection.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _StaffSelection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _StaffSelection_vue_vue_type_template_id_4740b873___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StaffSelection_vue_vue_type_template_id_4740b873___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_StaffSelection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./StaffSelection.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_StaffSelection_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=template&id=4740b873&":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=template&id=4740b873& ***!
+  \***********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StaffSelection_vue_vue_type_template_id_4740b873___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./StaffSelection.vue?vue&type=template&id=4740b873& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=template&id=4740b873&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StaffSelection_vue_vue_type_template_id_4740b873___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_StaffSelection_vue_vue_type_template_id_4740b873___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue":
+/*!***************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TotalsByLevel_vue_vue_type_template_id_5dae1db2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TotalsByLevel.vue?vue&type=template&id=5dae1db2& */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=template&id=5dae1db2&");
+/* harmony import */ var _TotalsByLevel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TotalsByLevel.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TotalsByLevel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TotalsByLevel_vue_vue_type_template_id_5dae1db2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TotalsByLevel_vue_vue_type_template_id_5dae1db2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_TotalsByLevel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./TotalsByLevel.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_TotalsByLevel_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=template&id=5dae1db2&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=template&id=5dae1db2& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByLevel_vue_vue_type_template_id_5dae1db2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./TotalsByLevel.vue?vue&type=template&id=5dae1db2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=template&id=5dae1db2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByLevel_vue_vue_type_template_id_5dae1db2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByLevel_vue_vue_type_template_id_5dae1db2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue":
+/*!***************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TotalsByPrice_vue_vue_type_template_id_95a6c728___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TotalsByPrice.vue?vue&type=template&id=95a6c728& */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=template&id=95a6c728&");
+/* harmony import */ var _TotalsByPrice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TotalsByPrice.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TotalsByPrice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TotalsByPrice_vue_vue_type_template_id_95a6c728___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TotalsByPrice_vue_vue_type_template_id_95a6c728___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_TotalsByPrice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./TotalsByPrice.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_TotalsByPrice_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=template&id=95a6c728&":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=template&id=95a6c728& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByPrice_vue_vue_type_template_id_95a6c728___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./TotalsByPrice.vue?vue&type=template&id=95a6c728& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=template&id=95a6c728&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByPrice_vue_vue_type_template_id_95a6c728___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByPrice_vue_vue_type_template_id_95a6c728___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TotalsByStylist_vue_vue_type_template_id_0ff64e8e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TotalsByStylist.vue?vue&type=template&id=0ff64e8e& */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=template&id=0ff64e8e&");
+/* harmony import */ var _TotalsByStylist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TotalsByStylist.vue?vue&type=script&lang=js& */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TotalsByStylist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TotalsByStylist_vue_vue_type_template_id_0ff64e8e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TotalsByStylist_vue_vue_type_template_id_0ff64e8e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_TotalsByStylist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib??vue-loader-options!./TotalsByStylist.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_vue_loader_lib_index_js_vue_loader_options_TotalsByStylist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=template&id=0ff64e8e&":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=template&id=0ff64e8e& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByStylist_vue_vue_type_template_id_0ff64e8e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../vue-loader/lib??vue-loader-options!./TotalsByStylist.vue?vue&type=template&id=0ff64e8e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=template&id=0ff64e8e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByStylist_vue_vue_type_template_id_0ff64e8e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_TotalsByStylist_vue_vue_type_template_id_0ff64e8e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -2268,6 +4001,18 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Navbar: _components_layout_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
     Main: _components_layout_Main__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  created: function created() {
+    this.$store.dispatch('loadSalons');
+    this.$store.commit('UPDATE_SALON', {
+      id: 3,
+      name: 'Base Hairdressing',
+      logo: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/base.png',
+      image: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/small/base.png'
+    });
+    this.$store.dispatch('loadStylists');
+    this.$store.dispatch('loadServices');
+    this.$store.dispatch('loadLevels');
   }
 });
 
@@ -19409,6 +21154,5073 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (this && this.clearImmediate);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/Modal.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/Modal.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['staff'],
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+      'SELECT_VIEW',
+      'SELECT_STYLIST'
+    ]),
+  },
+
+  computed: {
+    fullName() {
+      return this.staff.first_name + " " + this.staff.last_name
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _selectors_LevelSelector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../selectors/LevelSelector */ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue");
+/* harmony import */ var _selectors_StylistSelector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../selectors/StylistSelector */ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue");
+/* harmony import */ var _services_ColourSelector__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/ColourSelector */ "./node_modules/araquach-price-calc/components/services/ColourSelector.vue");
+/* harmony import */ var _services_ColourAddOnSelector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/ColourAddOnSelector */ "./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue");
+/* harmony import */ var _services_TreatmentSelector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/TreatmentSelector */ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue");
+/* harmony import */ var _services_FinishSelector__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../services/FinishSelector */ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue");
+/* harmony import */ var _services_FinishAddOnSelector__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../services/FinishAddOnSelector */ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue");
+/* harmony import */ var _views_Selector__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../views/Selector */ "./node_modules/araquach-price-calc/views/Selector.vue");
+/* harmony import */ var _totals_LevelTotal__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../totals/LevelTotal */ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue");
+/* harmony import */ var _totals_StylistTotal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../totals/StylistTotal */ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue");
+/* harmony import */ var _totals_PriceTotal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../totals/PriceTotal */ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Start: _views_Selector__WEBPACK_IMPORTED_MODULE_8__["default"],
+    LevelSelector: _selectors_LevelSelector__WEBPACK_IMPORTED_MODULE_1__["default"],
+    StylistSelector: _selectors_StylistSelector__WEBPACK_IMPORTED_MODULE_2__["default"],
+    ColourSelector: _services_ColourSelector__WEBPACK_IMPORTED_MODULE_3__["default"],
+    ColourAddOnSelector: _services_ColourAddOnSelector__WEBPACK_IMPORTED_MODULE_4__["default"],
+    TreatmentSelector: _services_TreatmentSelector__WEBPACK_IMPORTED_MODULE_5__["default"],
+    FinishSelector: _services_FinishSelector__WEBPACK_IMPORTED_MODULE_6__["default"],
+    FinishAddOnSelector: _services_FinishAddOnSelector__WEBPACK_IMPORTED_MODULE_7__["default"],
+    LevelTotal: _totals_LevelTotal__WEBPACK_IMPORTED_MODULE_9__["default"],
+    StylistTotal: _totals_StylistTotal__WEBPACK_IMPORTED_MODULE_10__["default"],
+    PriceTotal: _totals_PriceTotal__WEBPACK_IMPORTED_MODULE_11__["default"]
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selector: state => state.calc.selector,
+      level: state => state.calc.level,
+      selectedColour: state => state.calc.selectedColour,
+      isColourCorrection: state => state.calc.isColourCorrection,
+      selectedColourAddOn: state => state.calc.selectedColourAddOn,
+      selectedTreatment: state => state.calc.selectedTreatment,
+      selectedFinish: state => state.calc.selectedFinish,
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+        'totalsView'
+    ])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _selectors_LevelSelector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../selectors/LevelSelector */ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue");
+/* harmony import */ var _selectors_StylistSelector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../selectors/StylistSelector */ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue");
+/* harmony import */ var _services_TreatmentSelector__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/TreatmentSelector */ "./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue");
+/* harmony import */ var _services_FinishSelector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/FinishSelector */ "./node_modules/araquach-price-calc/components/services/FinishSelector.vue");
+/* harmony import */ var _services_FinishAddOnSelector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../services/FinishAddOnSelector */ "./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue");
+/* harmony import */ var _views_Selector__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../views/Selector */ "./node_modules/araquach-price-calc/views/Selector.vue");
+/* harmony import */ var _totals_LevelTotal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../totals/LevelTotal */ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue");
+/* harmony import */ var _totals_StylistTotal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../totals/StylistTotal */ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue");
+/* harmony import */ var _totals_PriceTotal__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../totals/PriceTotal */ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+      Start: _views_Selector__WEBPACK_IMPORTED_MODULE_6__["default"],
+      LevelSelector: _selectors_LevelSelector__WEBPACK_IMPORTED_MODULE_1__["default"],
+      StylistSelector: _selectors_StylistSelector__WEBPACK_IMPORTED_MODULE_2__["default"],
+      TreatmentSelector: _services_TreatmentSelector__WEBPACK_IMPORTED_MODULE_3__["default"],
+      FinishSelector: _services_FinishSelector__WEBPACK_IMPORTED_MODULE_4__["default"],
+      FinishAddOnSelector: _services_FinishAddOnSelector__WEBPACK_IMPORTED_MODULE_5__["default"],
+      LevelTotal: _totals_LevelTotal__WEBPACK_IMPORTED_MODULE_7__["default"],
+      StylistTotal: _totals_StylistTotal__WEBPACK_IMPORTED_MODULE_8__["default"],
+      PriceTotal: _totals_PriceTotal__WEBPACK_IMPORTED_MODULE_9__["default"]
+    },
+
+    computed: {
+      ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+        selector: state => state.calc.selector,
+        level: state => state.calc.level,
+        selectedTreatment: state => state.calc.selectedTreatment,
+        selectedFinish: state => state.calc.selectedFinish,
+        selectedFinishAddOn: state => state.calc.selectedFinishAddOn,
+      }),
+
+      ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+        'totalsView'
+      ])
+    },
+
+    created() {
+      this.$store.dispatch('loadSalons')
+      this.$store.dispatch('loadStylists')
+      this.$store.dispatch('loadServices')
+      this.$store.dispatch('loadLevels')
+    }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _selectors_LevelSelector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../selectors/LevelSelector */ "./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue");
+/* harmony import */ var _selectors_StylistSelector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../selectors/StylistSelector */ "./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue");
+/* harmony import */ var _services_MensColourSelector__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/MensColourSelector */ "./node_modules/araquach-price-calc/components/services/MensColourSelector.vue");
+/* harmony import */ var _services_MensCutSelector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../services/MensCutSelector */ "./node_modules/araquach-price-calc/components/services/MensCutSelector.vue");
+/* harmony import */ var _views_Selector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../views/Selector */ "./node_modules/araquach-price-calc/views/Selector.vue");
+/* harmony import */ var _totals_LevelTotal__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../totals/LevelTotal */ "./node_modules/araquach-price-calc/components/totals/LevelTotal.vue");
+/* harmony import */ var _totals_StylistTotal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../totals/StylistTotal */ "./node_modules/araquach-price-calc/components/totals/StylistTotal.vue");
+/* harmony import */ var _totals_PriceTotal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../totals/PriceTotal */ "./node_modules/araquach-price-calc/components/totals/PriceTotal.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Start: _views_Selector__WEBPACK_IMPORTED_MODULE_5__["default"],
+    LevelSelector: _selectors_LevelSelector__WEBPACK_IMPORTED_MODULE_1__["default"],
+    StylistSelector: _selectors_StylistSelector__WEBPACK_IMPORTED_MODULE_2__["default"],
+    MensColourSelector: _services_MensColourSelector__WEBPACK_IMPORTED_MODULE_3__["default"],
+    MensCutSelector: _services_MensCutSelector__WEBPACK_IMPORTED_MODULE_4__["default"],
+    LevelTotal: _totals_LevelTotal__WEBPACK_IMPORTED_MODULE_6__["default"],
+    StylistTotal: _totals_StylistTotal__WEBPACK_IMPORTED_MODULE_7__["default"],
+    PriceTotal: _totals_PriceTotal__WEBPACK_IMPORTED_MODULE_8__["default"]
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selector: state => state.calc.selector,
+      level: state => state.calc.level,
+      selectedMensColour: state => state.calc.selectedMensColour,
+      selectedMensCut: state => state.calc.selectedMensCut,
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+      'totalsView'
+    ])
+  },
+
+  created() {
+    this.$store.dispatch('loadSalons')
+    this.$store.dispatch('loadStylists')
+    this.$store.dispatch('loadServices')
+    this.$store.dispatch('loadLevels')
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+  
+
+  /* harmony default export */ __webpack_exports__["default"] = ({
+
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+        'SELECT_LEVEL'
+    ]),
+
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      level: state => state.calc.level,
+      levels: state => state.calc.levels
+    })
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      salons: state => state.calc.salons,
+      salon: state => state.calc.salon,
+      stylists: state => state.calc.stylists,
+      stylist: state => state.calc.stylist,
+      levels: state => state.calc.levels
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+        'salonStylists'
+    ])
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+        'UPDATE_SALON',
+        'SELECT_STYLIST',
+        'SELECT_LEVEL'
+    ]),
+
+    selectItem(i) {
+      this.activeItem = i
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selectedColourAddOn: state => state.calc.selectedColourAddOn
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['colourAddOnPrices', 'selectedColourAddOnPrice'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      colourCat: state => state.calc.colourCat,
+      isColourCorrection: state => state.calc.isColourCorrection,
+      selectedColour: state => state.calc.selectedColour,
+      levels: state => state.calc.levels,
+      level: state => state.calc.level,
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['colourPrices', 'selectedColourPrice']),
+
+    filteredColourPrices() {
+      return this.colourPrices.filter(c => c.cat2 === this.colourCat)
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: [],
+
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selectedFinishAddOn: state => state.calc.selectedFinishAddOn
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['finishAddOnPrices', 'selectedFinishAddOnPrice'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selectedFinish: state => state.calc.selectedFinish
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['finishPrices', 'selectedFinishPrice'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selectedMensColour: state => state.calc.selectedMensColour,
+      levels: state => state.calc.levels,
+      level: state => state.calc.level
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['mensColourPrices', 'selectedMensColourPrice'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selectedMensCut: state => state.calc.selectedMensCut,
+      levels: state => state.calc.levels,
+      level: state => state.calc.level,
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['mensCutPrices', 'selectedMensCutPrice'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      isOpen: true,
+      activeItem: null
+    }
+  },
+
+  methods: {
+    selectItem(i) {
+      this.activeItem = i
+    },
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      selectedTreatment: state => state.calc.selectedTreatment
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['treatmentPrices', 'selectedTreatmentPrice'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      level: state => state.calc.level
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['allSelected', 'totalCost']),
+
+  },
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])(['SELECT_VIEW', 'INCREASE_LEVEL', 'DECREASE_LEVEL'])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['allSelected', 'totalCost', 'levelName', 'stylistName'],
+
+  methods: {
+    onClickButton(event) {
+      this.$emit('switchPage', 'TotalsByPrice');
+      this.$emit('selectLevel', this.level);
+      this.$emit('totalPrice', this.totalCost)
+    },
+    increaseLevel() {
+      if (this.level >1) {
+        this.level--
+      }
+    },
+
+    decreaseLevel() {
+      if (this.level > 0 && this.level < 7) {
+        this.level++
+      }
+    }
+  },
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      level: state => state.calc.level,
+      stylist: state => state.calc.stylist
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])(['allSelected', 'totalCost'])
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+        'SELECT_VIEW',
+        'UPDATE_SELECTOR'
+    ])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_calculators_Colour__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/calculators/Colour */ "./node_modules/araquach-price-calc/components/calculators/Colour.vue");
+/* harmony import */ var _components_calculators_CuttingStyling__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/calculators/CuttingStyling */ "./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue");
+/* harmony import */ var _components_calculators_Men__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/calculators/Men */ "./node_modules/araquach-price-calc/components/calculators/Men.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Colour: _components_calculators_Colour__WEBPACK_IMPORTED_MODULE_0__["default"],
+    CuttingStyling: _components_calculators_CuttingStyling__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Men: _components_calculators_Men__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_3__["mapState"])({
+      calculator: state => state.calc.calculator
+  }),
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Finish.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Finish.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data() {
+    return {
+      showInfo: false,
+      name: '',
+      mobile: '',
+      email: '',
+      submitStatus: null
+    }
+  },
+
+  validations: {
+    name: { required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"] },
+    mobile: {required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"], numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]},
+    email: { required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"], email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["email"] }
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      regular: state => state.calc.regular
+    })
+  },
+
+  methods:{
+    info() {
+      return `From: ${this.name}
+              Email Address: ${this.email}
+              Mobile: ${this.mobile}
+              `
+    },
+
+    submit() {
+      console.log('submit!')
+      this.$v.$touch()
+      if (this.$v.$invalid) {
+        this.submitStatus = 'ERROR'
+      } else {
+        axios.post('api/send-quote-details', {
+          name: this.name,
+          mobile: this.mobile,
+          email: this.email,
+          info: this.info()
+        })
+            .then(response => {
+              this.submitStatus = 'OK'
+            })
+            .catch((e) => {
+              console.error(e)
+            })
+      }
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Intro.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Intro.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      calculator: state => state.calc.calculator,
+      selector: state => state.calc.selector,
+      salon: state => state.calc.salon,
+      regular: state => state.calc.regular,
+    })
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+        'UPDATE_REGULAR',
+        'UPDATE_CALCULATOR',
+        'SELECT_VIEW',
+        'RESET_STATE'
+    ])
+  }
+});
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Selector.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Selector.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      calculator: state => state.calc.calculator
+  })
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+        'SELECT_VIEW',
+        'UPDATE_SELECTOR'
+    ])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _components_Modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Modal */ "./node_modules/araquach-price-calc/components/Modal.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['staff', 's'],
+
+  components: {Modal: _components_Modal__WEBPACK_IMPORTED_MODULE_1__["default"]},
+
+  data() {
+    return {
+      isComponentModalActive: false,
+      selectedStaff: {}
+    }
+  },
+
+  methods: {
+    cardModal(index) {
+      this.selectedStaff = this.staff[index]
+      this.$buefy.modal.open({
+        parent: this,
+        props: {staff: this.selectedStaff},
+        component: _components_Modal__WEBPACK_IMPORTED_MODULE_1__["default"],
+        hasModalCard: true,
+        customClass: 'custom-class custom-class-2',
+        trapFocus: true
+      })
+    }
+  },
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      salon: state => state.calc.salon
+    })
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _StaffSelection__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StaffSelection */ "./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {StaffSelection: _StaffSelection__WEBPACK_IMPORTED_MODULE_1__["default"]},
+
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      salon: state => state.calc.salon,
+      salons: state => state.calc.salons,
+      stylists: state => state.calc.stylists,
+      selectedColour: state => state.calc.selectedColour,
+      selectedColourAddOn: state => state.calc.selectedColourAddOn,
+      selectedTreatment: state => state.calc.selectedTreatment,
+      selectedFinish: state => state.calc.selectedFinish,
+      selectedFinishAddOn: state => state.calc.selectedFinishAddOn,
+      selectedMensColour: state => state.calc.selectedMensColour,
+      selectedMensCut: state => state.calc.selectedMensCut,
+      calculator: state => state.calc.calculator,
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+        'stylistsByLevel',
+        'totalCost',
+        'selectedColourPrice',
+        'selectedColourAddOnPrice',
+        'selectedTreatmentPrice',
+        'selectedFinishPrice',
+        'selectedFinishAddOnPrice',
+        'selectedMensColourPrice',
+        'selectedMensCutPrice'
+    ]),
+
+    thisStaff() {
+      return this.stylistsByLevel.filter(s => s.salon === this.salon.id)
+    },
+
+    hasStaff() {
+      if (this.thisStaff.length) {
+        return true
+      }
+    },
+
+    hasOtherStaff() {
+      const other = this.stylistsByLevel.filter(s => s.salon !== this.salon.id)
+      if (other.length) {
+        return true
+      }
+    }
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+        'SELECT_VIEW'
+    ]),
+
+    otherStaff(id) {
+      return this.stylistsByLevel.filter(s => s.salon === id && this.salon.id !== id)
+    }
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])([
+      'stylist',
+      'selectedColour',
+      'selectedColourAddOn',
+      'selectedTreatment',
+      'selectedFinish',
+      'selectedFinishAddOn',
+      'selectedMensCut',
+      'selectedMensColour',
+      'calculator',
+      'view'
+    ]),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
+      stylist: state => state.calc.stylist,
+      selectedColour: state => state.calc.selectedColour,
+      selectedColourAddOn: state => state.calc.selectedColourAddOn,
+      selectedTreatment: state => state.calc.selectedTreatment,
+      selectedFinish: state => state.calc.selectedFinish,
+      selectedFinishAddOn: state => state.calc.selectedFinishAddOn,
+      selectedMensCut: state => state.calc.selectedMensCut,
+      selectedMensColour: state => state.calc.selectedMensColour,
+      calculator: state => state.calc.calculator,
+      view: state => state.calc.view,
+    }),
+
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])([
+      'stylistsByLevel',
+      'totalCost',
+      'selectedColourPrice',
+      'selectedColourAddOnPrice',
+      'selectedTreatmentPrice',
+      'selectedFinishPrice',
+      'selectedFinishAddOnPrice',
+      'selectedMensCutPrice',
+      'selectedMensColourPrice'
+    ])
+  },
+
+  methods: {
+    ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapMutations"])([
+      'SELECT_VIEW'
+    ])
+  }
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/Modal.vue?vue&type=template&id=62545096&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/Modal.vue?vue&type=template&id=62545096& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "modal-card", staticStyle: { width: "auto" } },
+    [
+      _c("header", { staticClass: "modal-card-head" }, [
+        _c("p", { staticClass: "modal-card-title" }, [
+          _vm._v("Your chosen stylist")
+        ]),
+        _vm._v(" "),
+        _c("button", {
+          staticClass: "delete",
+          attrs: { type: "button" },
+          on: {
+            click: function($event) {
+              return _vm.$emit("close")
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "modal-card-body" }, [
+        _c("div", { staticClass: "columns" }, [
+          _c("div", { staticClass: "column is-4" }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                attrs: {
+                  src: _vm.staff.remote_image,
+                  alt: _vm.staff.first_name
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("h2", { staticClass: "title is-4" }, [
+              _vm._v(_vm._s(_vm.fullName))
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-4 is-size-5-mobile" }, [
+              _vm._v(_vm._s(_vm.staff.para_1))
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.staff.para_2))]),
+            _vm._v(" "),
+            _vm.staff.para_3
+              ? _c("p", [_vm._v(_vm._s(_vm.staff.para_3))])
+              : _vm._e()
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("footer", { staticClass: "modal-card-foot" }, [
+        _c(
+          "button",
+          {
+            staticClass: "button is-small is-primary",
+            attrs: { type: "button" },
+            on: {
+              click: function($event) {
+                _vm.SELECT_STYLIST(_vm.staff)
+                _vm.$router.push("totals-by-stylist")
+                _vm.$emit("close")
+              }
+            }
+          },
+          [
+            _vm._v(
+              "Choose " + _vm._s(_vm.staff.first_name) + " as your stylist"
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "button is-small",
+            attrs: { type: "button" },
+            on: {
+              click: function($event) {
+                return _vm.$emit("close")
+              }
+            }
+          },
+          [_vm._v("Choose a different stylist")]
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=template&id=ccbf315e&":
+/*!*****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/calculators/Colour.vue?vue&type=template&id=ccbf315e& ***!
+  \*****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "section" },
+    [
+      _c(_vm.selector, { tag: "component" }),
+      _vm._v(" "),
+      _vm.level.id ? _c("ColourSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedColour.id && !_vm.isColourCorrection
+        ? _c("ColourAddOnSelector")
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedColourAddOn.id ? _c("TreatmentSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedTreatment.id ||
+      (_vm.isColourCorrection && _vm.selectedColour.id)
+        ? _c("FinishSelector")
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedFinish.id ? _c("FinishAddOnSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedColour.id
+        ? _c(_vm.totalsView, { tag: "component" })
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=template&id=108f4363&":
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/calculators/CuttingStyling.vue?vue&type=template&id=108f4363& ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "section" },
+    [
+      _c(_vm.selector, { tag: "component" }),
+      _vm._v(" "),
+      _vm.level.id ? _c("FinishSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedFinish.id ? _c("FinishAddOnSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedFinishAddOn.id ? _c("TreatmentSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedFinish.id
+        ? _c(_vm.totalsView, { tag: "component" })
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=template&id=ca7ea0be&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/calculators/Men.vue?vue&type=template&id=ca7ea0be& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "section" },
+    [
+      _c(_vm.selector, { tag: "component" }),
+      _vm._v(" "),
+      _vm.level.id ? _c("MensCutSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedMensCut.id ? _c("MensColourSelector") : _vm._e(),
+      _vm._v(" "),
+      _vm.selectedMensCut.id
+        ? _c(_vm.totalsView, { tag: "component" })
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=template&id=75836751&":
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/selectors/LevelSelector.vue?vue&type=template&id=75836751& ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-level",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select Level of your stylist\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.level
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.level.name) + "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.level.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", [
+                  _vm._v("At Jakata we have stylists from "),
+                  _c("strong", [_vm._v("Graduate Stylist")]),
+                  _vm._v(" level up to "),
+                  _c("strong", [_vm._v("Advanced Senior")]),
+                  _vm._v(
+                    ". The cost with each level reflects how much experience they have.\n        A Graduate stylist has 2-3 years experience, a Stylist 3-5 years experience, a Senior Stylist 5+ years experience."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("Our "),
+                  _c("strong", [_vm._v("Junior stylists")]),
+                  _vm._v(" are based at our training Academy "),
+                  _c("strong", [_vm._v("Base Hairdressing")]),
+                  _vm._v(" if you're looking for our most affordable option.")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("All of our Senior Stylists have the "),
+                  _c("strong", [_vm._v("Schwarzkopf Colour Masters")]),
+                  _vm._v(
+                    " qualification.\n          Our Advanced Seniors are the most in-demand stylists with a wealth of experience and also oversee the running of the salon."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "has-text-level is-size-5" }, [
+                  _c("strong", [
+                    _vm._v(
+                      "Please select a stylist level below - you can change this at any time to see the price difference"
+                    )
+                  ])
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-multiline is-mobile" },
+            _vm._l(_vm.levels, function(l, i) {
+              return _c("div", { key: i, staticClass: "column" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-small is-level is-outlined",
+                    class: { activeLevel: i === _vm.level.id - 1 },
+                    on: {
+                      click: function($event) {
+                        _vm.SELECT_LEVEL(l)
+                        _vm.selectItem(i)
+                      }
+                    }
+                  },
+                  [_vm._v("\n          " + _vm._s(l.name) + "\n        ")]
+                )
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=template&id=a955c3ba&":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/selectors/StylistSelector.vue?vue&type=template&id=a955c3ba& ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-level",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select your stylist\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.stylist.name
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.stylist.name) + "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.salon.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v("Please select your salon")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "columns is-multiline is-mobile" },
+                  _vm._l(_vm.salons, function(salon, index) {
+                    return _c("div", { staticClass: "column" }, [
+                      _c(
+                        "figure",
+                        {
+                          staticClass: "image salonSelect",
+                          on: {
+                            click: function($event) {
+                              return _vm.UPDATE_SALON(salon)
+                            }
+                          }
+                        },
+                        [
+                          _c("img", {
+                            attrs: { src: salon.image, alt: salon.name }
+                          })
+                        ]
+                      )
+                    ])
+                  }),
+                  0
+                )
+              ])
+            : _c("div", { staticClass: "section" }, [
+                !_vm.stylist.id
+                  ? _c("div", [
+                      _c("p", { staticClass: "is-size-5" }, [
+                        _vm._v("Now select your stylist")
+                      ]),
+                      _vm._v(" "),
+                      _c("br")
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "columns is-multiline is-mobile" },
+                  _vm._l(_vm.salonStylists, function(stylist, i) {
+                    return _c("div", { staticClass: "column" }, [
+                      _c(
+                        "button",
+                        {
+                          key: i,
+                          staticClass: "button is-small is-level is-outlined",
+                          class: { activeStylist: i === _vm.activeItem },
+                          on: {
+                            click: function($event) {
+                              _vm.SELECT_LEVEL(
+                                _vm.levels.filter(function(l) {
+                                  return l.id === stylist.level
+                                })[0]
+                              )
+                              _vm.SELECT_STYLIST(stylist)
+                              _vm.selectItem(i)
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n            " +
+                              _vm._s(stylist.first_name) +
+                              "\n          "
+                          )
+                        ]
+                      )
+                    ])
+                  }),
+                  0
+                )
+              ])
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae&":
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/ColourAddOnSelector.vue?vue&type=template&id=e3ea85ae& ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-colour-add-on",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select A Colour Add-on\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.selectedColourAddOn.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedColourAddOn.service) +
+                          ": " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedColourAddOnPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.selectedColourAddOn.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v("If you're going lighter you'll probably need a "),
+                  _c("strong", [_vm._v("Toner")]),
+                  _vm._v(" to achieve a beautiful colour.")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "If you want fashion toning (silver/lilac/pink etc) Select "
+                  ),
+                  _c("strong", [_vm._v("Complex Toner")])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("For vibrant fashion colours select "),
+                  _c("strong", [_vm._v("Crazy Colour")])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("If you're having foils and need a "),
+                  _c("strong", [_vm._v("Colour in-between")]),
+                  _vm._v(" (to cover grey, etc) select this option")
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-mobile is-multiline" },
+            _vm._l(_vm.colourAddOnPrices, function(service, i) {
+              return _c("div", { staticClass: "column" }, [
+                _c("div", {
+                  staticClass: "button is-small is-colour-add-on is-outlined",
+                  class: { activeSelectedColourAddOn: i === _vm.activeItem },
+                  domProps: { textContent: _vm._s(service.service) },
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit(
+                        "UPDATE_SELECTED_COLOUR_ADD_ON",
+                        service
+                      )
+                      _vm.isOpen = false
+                      _vm.selectItem(i)
+                    }
+                  }
+                })
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=template&id=a20dc7f6&":
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/ColourSelector.vue?vue&type=template&id=a20dc7f6& ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-colour",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select A colour Service\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.selectedColour.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedColour.service) +
+                          " " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedColourPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.colourCat && !_vm.selectedColour.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v("We pride ourselves in our creative colouring work")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("From Classic "),
+                  _c("strong", [_vm._v("foiling techniques")]),
+                  _vm._v(" to full head colours, beautiful seamless "),
+                  _c("strong", [_vm._v("Balayage's")]),
+                  _vm._v(" to bold striking "),
+                  _c("strong", [_vm._v("Ombre's")])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("Our team love to create statement looks too! "),
+                  _c("strong", [_vm._v("Full head bleaching")]),
+                  _vm._v(" with "),
+                  _c("strong", [_vm._v("pastel tones")]),
+                  _vm._v(" and "),
+                  _c("strong", [_vm._v("crazy colours")]),
+                  _vm._v(" for those Instagram ready looks!")
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "has-text-colour" }, [
+                  _c("strong", [
+                    _vm._v(
+                      "Select the most appropriate colour service category from the list below. You can always come back and edit it later"
+                    )
+                  ])
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.colourCat
+            ? _c("div", { staticClass: "section" }, [
+                _vm.colourCat === 5
+                  ? _c("div", [
+                      _c("p", { staticClass: "is-size-5 has-text-danger" }, [
+                        _vm._v(
+                          "Pricing for a colour correction requires a full, in depth consultation as there are so many factors to consider, dependant on how much corrective work is required."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "We've based these colour correction prices on an average typical cost as a guideline to help you select the best stylist for your budget. Please be aware the price could be more expensive or potentially cheaper - get booked in for a consultation for an accurate price."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("br"),
+                      _c("br")
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                !_vm.selectedColour.id
+                  ? _c("p", { staticClass: "has-text-colour" }, [
+                      _c("strong", [_vm._v("Now choose a colour service")])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("If you can't see the service you want "),
+                  _c(
+                    "strong",
+                    {
+                      staticClass: "back-link has-text-colour",
+                      on: {
+                        click: function($event) {
+                          return _vm.$store.commit(
+                            "CHANGE_COLOUR_CAT",
+                            (_vm.colourCat = null)
+                          )
+                        }
+                      }
+                    },
+                    [_vm._v("click to go back to the categories >")]
+                  )
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("div", { staticClass: "section" }, [
+            !_vm.colourCat
+              ? _c("div", { staticClass: "columns is-multiline is-mobile" }, [
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-small",
+                        class: { activeColour: _vm.colourCat === 1 },
+                        on: {
+                          click: function($event) {
+                            _vm.$store.commit("CHANGE_COLOUR_CAT", 1),
+                              _vm.$store.commit(
+                                "UPDATE_IS_COLOUR_CORRECTION",
+                                false
+                              )
+                          }
+                        }
+                      },
+                      [_vm._v("\n            Classic Colours\n          ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-small",
+                        class: { activeColour: _vm.colourCat === 2 },
+                        on: {
+                          click: function($event) {
+                            _vm.$store.commit("CHANGE_COLOUR_CAT", 2),
+                              _vm.$store.commit(
+                                "UPDATE_IS_COLOUR_CORRECTION",
+                                false
+                              )
+                          }
+                        }
+                      },
+                      [_vm._v("\n            Foiling Techniques\n          ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-small",
+                        class: { activeColour: _vm.colourCat === 3 },
+                        on: {
+                          click: function($event) {
+                            _vm.$store.commit("CHANGE_COLOUR_CAT", 3),
+                              _vm.$store.commit(
+                                "UPDATE_IS_COLOUR_CORRECTION",
+                                false
+                              )
+                          }
+                        }
+                      },
+                      [_vm._v("\n            Creative Colouring\n          ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-small",
+                        class: { activeColour: _vm.colourCat === 4 },
+                        on: {
+                          click: function($event) {
+                            _vm.$store.commit("CHANGE_COLOUR_CAT", 4),
+                              _vm.$store.commit(
+                                "UPDATE_IS_COLOUR_CORRECTION",
+                                false
+                              )
+                          }
+                        }
+                      },
+                      [_vm._v("\n            Full Head Bleaching\n          ")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "column" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "button is-small",
+                        class: { activeColour: _vm.colourCat === 5 },
+                        on: {
+                          click: function($event) {
+                            _vm.$store.commit("CHANGE_COLOUR_CAT", 5),
+                              _vm.$store.commit(
+                                "UPDATE_IS_COLOUR_CORRECTION",
+                                true
+                              )
+                          }
+                        }
+                      },
+                      [_vm._v("\n            Corrective Colouring\n          ")]
+                    )
+                  ])
+                ])
+              : _c("div", [
+                  _c(
+                    "div",
+                    { staticClass: "columns is-multiline is-mobile" },
+                    _vm._l(_vm.filteredColourPrices, function(service, i) {
+                      return _c("div", { key: i, staticClass: "column" }, [
+                        _c("button", {
+                          staticClass: "button is-small is-outlined is-colour",
+                          class: { activeSelectedColour: i === _vm.activeItem },
+                          domProps: { textContent: _vm._s(service.service) },
+                          on: {
+                            click: function($event) {
+                              _vm.$store.commit(
+                                "UPDATE_SELECTED_COLOUR",
+                                service
+                              )
+                              _vm.isOpen = false
+                              _vm.selectItem(i)
+                            }
+                          }
+                        })
+                      ])
+                    }),
+                    0
+                  )
+                ])
+          ])
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=template&id=b047157c&":
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/FinishAddOnSelector.vue?vue&type=template&id=b047157c& ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-finish-add-on",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select A Finish Add-on\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.selectedFinishAddOn.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedFinishAddOn.service) +
+                          ": " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedFinishAddOnPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.selectedFinishAddOn.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v("A perfect finish is a given with all our work. "),
+                  _c("strong", [_vm._v("Straightening")]),
+                  _vm._v(", "),
+                  _c("strong", [_vm._v("waving")]),
+                  _vm._v(" and certain\n        "),
+                  _c("strong", [_vm._v("curl techniques")]),
+                  _vm._v(
+                    " come as standard but sometimes you just want that little bit more…"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("If you want a volumous "),
+                  _c("strong", [_vm._v("curly blow")]),
+                  _vm._v(" or "),
+                  _c("strong", [_vm._v("vintage pincurls")]),
+                  _vm._v(
+                    " to set off your new look it all takes extra time and skill so click the add-on."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("Going on a "),
+                  _c("strong", [_vm._v("special night out")]),
+                  _vm._v(" or to a "),
+                  _c("strong", [_vm._v("festival")]),
+                  _vm._v("? Select the extra styling or up-do option.")
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("em", [
+                    _vm._v(
+                      "If you're happy with our standard exceptional styling then go ahead and click 'none'"
+                    )
+                  ])
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-multiline is-mobile" },
+            _vm._l(_vm.finishAddOnPrices, function(service, i) {
+              return _c("div", { key: i, staticClass: "column" }, [
+                _c("div", {
+                  staticClass: "button is-small is-finish-add-on is-outlined",
+                  class: { activeSelectedFinishAddOn: i === _vm.activeItem },
+                  domProps: { textContent: _vm._s(service.service) },
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit(
+                        "UPDATE_SELECTED_FINISH_ADD_ON",
+                        service
+                      )
+                      _vm.isOpen = false
+                      _vm.selectItem(i)
+                    }
+                  }
+                })
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=template&id=a84e0f68&":
+/*!**********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/FinishSelector.vue?vue&type=template&id=a84e0f68& ***!
+  \**********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-finish",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select A Cut or Finish service\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.selectedFinish.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedFinish.service) +
+                          ": " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedFinishPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.selectedFinish.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v(
+                    "Our team are trained to the highest level in cutting & styling hair."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "From classic, bold looks to choppy, textured styles - we'll be able to create a look perfectly suited to you."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _c("em", [
+                    _vm._v(
+                      "If you're wanting that little bit more to your styling then choose an add-on in the next section"
+                    )
+                  ])
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-multiline is-mobile" },
+            _vm._l(_vm.finishPrices, function(service, i) {
+              return _c("div", { key: i, staticClass: "column" }, [
+                _c("div", {
+                  staticClass: "button is-small is-finish is-outlined",
+                  class: { activeSelectedFinish: i === _vm.activeItem },
+                  domProps: { textContent: _vm._s(service.service) },
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit("UPDATE_SELECTED_FINISH", service)
+                      _vm.isOpen = false
+                      _vm.selectItem(i)
+                    }
+                  }
+                })
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=template&id=d65a617c&":
+/*!**************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/MensColourSelector.vue?vue&type=template&id=d65a617c& ***!
+  \**************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-finish",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select Your Colour Service\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.selectedMensColour.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedMensColour.service) +
+                          ": " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedMensColourPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-multiline is-mobile" },
+            _vm._l(_vm.mensColourPrices, function(service, i) {
+              return _c("div", { key: i, staticClass: "column" }, [
+                _c("div", {
+                  staticClass: "button is-small is-finish is-outlined",
+                  class: { activeSelectedFinish: i === _vm.activeItem },
+                  domProps: { textContent: _vm._s(service.service) },
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit("UPDATE_SELECTED_MENS_COLOUR", service)
+                      _vm.isOpen = false
+                      _vm.selectItem(i)
+                    }
+                  }
+                })
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=template&id=3598b34c&":
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/MensCutSelector.vue?vue&type=template&id=3598b34c& ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-colour",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v(
+                    "\n          Select your Men's Cutting and styling service\n        "
+                  )
+                ]),
+                _vm._v(" "),
+                _vm.selectedMensCut.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedMensCut.service) +
+                          ": " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedMensCutPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-multiline is-mobile" },
+            _vm._l(_vm.mensCutPrices, function(service, i) {
+              return _c("div", { key: i, staticClass: "column" }, [
+                _c("div", {
+                  staticClass: "button is-small is-finish is-outlined",
+                  class: { activeSelectedFinish: i === _vm.activeItem },
+                  domProps: { textContent: _vm._s(service.service) },
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit("UPDATE_SELECTED_MENS_CUT", service)
+                      _vm.isOpen = false
+                      _vm.selectItem(i)
+                    }
+                  }
+                })
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=template&id=fd7fe1a6&":
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/services/TreatmentSelector.vue?vue&type=template&id=fd7fe1a6& ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "has-background-white" },
+    [
+      _c(
+        "b-collapse",
+        {
+          staticClass: "panel is-treatment",
+          attrs: {
+            "aria-id": "contentIdForA11y2",
+            animation: "slide",
+            open: _vm.isOpen
+          },
+          on: {
+            "update:open": function($event) {
+              _vm.isOpen = $event
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "panel-heading",
+              attrs: {
+                slot: "trigger",
+                role: "button",
+                "aria-controls": "contentIdForA11y2"
+              },
+              slot: "trigger"
+            },
+            [
+              _c("div", { staticClass: "level" }, [
+                _c("div", { staticClass: "level-left" }, [
+                  _vm._v("\n          Select A Hair Treatment\n        ")
+                ]),
+                _vm._v(" "),
+                _vm.selectedTreatment.id
+                  ? _c("div", { staticClass: "level-right" }, [
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.selectedTreatment.service) +
+                          ": " +
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedTreatmentPrice)
+                          ) +
+                          "\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          !_vm.selectedTreatment.id
+            ? _c("div", { staticClass: "section" }, [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v(
+                    "If you want to keep your hair in perfect condition we recommend having one of our intensive treatments."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("Our "),
+                  _c("strong", [_vm._v("Schwarzkopf BC")]),
+                  _vm._v(
+                    " treatments are the most affordable option with a treatment selected to match your hair type."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "If you're looking for a more luxurious option then our "
+                  ),
+                  _c("strong", [_vm._v("Kevin Murphy TREAT.ME")]),
+                  _vm._v(
+                    " range will tantalise your senses and restore your hairs condition to it's former glory."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("For any heavy bleaching services we recommend "),
+                  _c("strong", [_vm._v("Olaplex")]),
+                  _vm._v(" and for already damaged hair Schwarzkopf BC "),
+                  _c("strong", [_vm._v("Fibre Clinix")]),
+                  _vm._v(" for a customised treatment suited to your hair type")
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-mobile is-multiline" },
+            _vm._l(_vm.treatmentPrices, function(service, i) {
+              return _c("div", { staticClass: "column" }, [
+                _c("div", {
+                  staticClass: "button is-small is-treatment is-outlined",
+                  class: { activeSelectedTreatment: i === _vm.activeItem },
+                  domProps: { textContent: _vm._s(service.service) },
+                  on: {
+                    click: function($event) {
+                      _vm.$store.commit("UPDATE_SELECTED_TREATMENT", service)
+                      _vm.isOpen = false
+                      _vm.selectItem(i)
+                    }
+                  }
+                })
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=template&id=5f1791a9&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/totals/LevelTotal.vue?vue&type=template&id=5f1791a9& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "section box" }, [
+    _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column is-8" }, [
+        !_vm.allSelected
+          ? _c("div", [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("p", { staticClass: "is-size-7" }, [
+                _vm._v(
+                  "Feel free to experiment with your other selections too!"
+                )
+              ])
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.allSelected
+          ? _c("div", [
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v("Are you happy with this price?")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "If it's pushing your budget select a different stylist level or see how much it would cost to upgrade to a more experienced stylist"
+                )
+              ])
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column has-text-right" }, [
+        _c("div", { staticClass: "section price" }, [
+          _vm.allSelected
+            ? _c("p", { staticClass: "is-size-3 has-text-right" }, [
+                _vm._v("Total: " + _vm._s(_vm._f("toCurrency")(_vm.totalCost)))
+              ])
+            : _c("p", { staticClass: "is-size-6 has-text-right" }, [
+                _vm._v(
+                  "Running Total: " +
+                    _vm._s(_vm._f("toCurrency")(_vm.totalCost))
+                )
+              ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-6 has-text-right" }, [
+            _vm._v("with " + _vm._s(_vm.level.name))
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm.allSelected
+            ? _c("div", [
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-warning is-small",
+                    class: [_vm.level.id > 1 ? "" : "disabled"],
+                    on: { click: _vm.INCREASE_LEVEL }
+                  },
+                  [_vm._v("\n            < Down a level\n          ")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-warning is-small",
+                    class: [
+                      _vm.level.id > 0 && _vm.level.id < 7 ? "" : "disabled"
+                    ],
+                    on: { click: _vm.DECREASE_LEVEL }
+                  },
+                  [_vm._v("\n            Up a level >\n          ")]
+                )
+              ])
+            : _vm._e()
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm.allSelected
+      ? _c("div", [
+          _c("div", { staticClass: "columns" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "column has-text-right" },
+              [
+                _c(
+                  "RouterLink",
+                  {
+                    staticClass: "button is-primary",
+                    attrs: { to: { name: "totals-by-level" } }
+                  },
+                  [_vm._v("Show Stylists")]
+                )
+              ],
+              1
+            )
+          ])
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "is-size-7" }, [
+      _c("strong", [_vm._v("Try the price with different stylist levels")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-7" }, [
+      _c("p", [
+        _vm._v(
+          "Once you're happy with everything click the 'Show Stylist' button"
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=template&id=7135acf8&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/totals/PriceTotal.vue?vue&type=template&id=7135acf8& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "section box" }, [
+    _c("div", { staticClass: "level" }, [
+      _c("div", { staticClass: "level-left" }, [
+        _c("div", [
+          _c("p", { class: [_vm.allSelected ? "is-size-5" : "is-size-7"] }, [
+            _c("strong", [
+              _vm._v("Try the price with different stylist levels")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v("use the buttons at the top")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-7" }, [
+            _vm._v("Feel free to experiment with your other selections too!")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "level-right" }, [
+        _c("div", { staticClass: "section price" }, [
+          _vm.allSelected
+            ? _c("p", { staticClass: "is-size-3 has-text-right" }, [
+                _vm._v("Total: " + _vm._s(_vm._f("toCurrency")(_vm.totalCost)))
+              ])
+            : _c("p", { staticClass: "is-size-6 has-text-right" }, [
+                _vm._v(
+                  "Running Total: " +
+                    _vm._s(_vm._f("toCurrency")(_vm.totalCost))
+                )
+              ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-6 has-text-right" }, [
+            _vm._v("with " + _vm._s(_vm.stylistName))
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm.allSelected
+      ? _c("div", { staticClass: "level" }, [
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column is-10" }, [
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v("Are you happy with this price?")
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "If it's pushing your budget select a different stylist level or see how much it would cost to upgrade to a more experienced sylist"
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button is-danger is-small",
+                  class: [_vm.level > 0 && _vm.level < 7 ? "" : "disabled"],
+                  on: { click: _vm.decreaseLevel }
+                },
+                [_vm._v("< Down a level")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "button is-primary is-small",
+                  class: [this.level > 1 ? "" : "disabled"],
+                  on: { click: _vm.increaseLevel }
+                },
+                [_vm._v("Up a level >")]
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Once you're happy with everything click the 'Show Stylist' button"
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column has-text-right" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button is-primary",
+                on: { click: _vm.onClickButton }
+              },
+              [_vm._v("Show Stylists")]
+            )
+          ])
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=template&id=6adb3e57&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/components/totals/StylistTotal.vue?vue&type=template&id=6adb3e57& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "section box" }, [
+    _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column is-8" }, [
+        !_vm.allSelected
+          ? _c("div", [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("p", { staticClass: "is-size-7" }, [
+                _vm._v(
+                  "Feel free to experiment with your other selections too!"
+                )
+              ])
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.allSelected
+          ? _c("div", [
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v("Are you happy with this price?")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "is-size-5" }, [
+                _vm._v(
+                  "Experiment with the different stylists and change your service selections."
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "is-size-5",
+                  on: {
+                    click: function($event) {
+                      return _vm.UPDATE_SELECTOR("LevelSelector")
+                    }
+                  }
+                },
+                [
+                  _c("strong", [
+                    _vm._v(
+                      "Alternatively, If you'd like to try different stylist levels\n            across all our sites click here >"
+                    )
+                  ])
+                ]
+              )
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column has-text-right" }, [
+        _c("div", { staticClass: "section price" }, [
+          _vm.allSelected
+            ? _c("p", { staticClass: "is-size-3 has-text-right" }, [
+                _vm._v("Total: " + _vm._s(_vm._f("toCurrency")(_vm.totalCost)))
+              ])
+            : _c("p", { staticClass: "is-size-6 has-text-right" }, [
+                _vm._v(
+                  "Running Total: " +
+                    _vm._s(_vm._f("toCurrency")(_vm.totalCost))
+                )
+              ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-6 has-text-right" }, [
+            _vm._v(
+              "with " +
+                _vm._s(_vm.stylist.first_name) +
+                " " +
+                _vm._s(_vm.stylist.last_name)
+            )
+          ]),
+          _vm._v(" "),
+          _c("br")
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm.allSelected
+      ? _c("div", [
+          _c("div", { staticClass: "columns" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "column has-text-right" },
+              [
+                _c(
+                  "RouterLink",
+                  {
+                    staticClass: "button is-primary is-small",
+                    attrs: { to: { name: "totals-by-stylist" } }
+                  },
+                  [_vm._v("Next")]
+                )
+              ],
+              1
+            )
+          ])
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "is-size-7" }, [
+      _c("strong", [_vm._v("Try the price with different stylists")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-7" }, [
+      _c("p", [_vm._v("Once you're happy with everything click 'next'")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=template&id=0b6cd425&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Calculator.vue?vue&type=template&id=0b6cd425& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [_c("keep-alive", [_c(_vm.calculator, { tag: "component" })], 1)],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Finish.vue?vue&type=template&id=180542b6&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Finish.vue?vue&type=template&id=180542b6& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "price-calc section" }, [
+    _c("p", { staticClass: "is-size-4" }, [
+      _vm._v("We'll save you're quote and send it to you!")
+    ]),
+    _vm._v(" "),
+    _c("p", [
+      _vm._v(
+        "Just fill in your details below and we'll email it over and send a text message link too."
+      )
+    ]),
+    _vm._v(" "),
+    _vm.submitStatus != "OK"
+      ? _c(
+          "form",
+          {
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                return _vm.submit($event)
+              }
+            }
+          },
+          [
+            _c("div", { staticClass: "field" }, [
+              _c("label", { staticClass: "label has-text-white" }, [
+                _vm._v("Full Name")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model.trim",
+                      value: _vm.$v.name.$model,
+                      expression: "$v.name.$model",
+                      modifiers: { trim: true }
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.$v.name.$error },
+                  attrs: { placeholder: "Your Full Name" },
+                  domProps: { value: _vm.$v.name.$model },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(
+                        _vm.$v.name,
+                        "$model",
+                        $event.target.value.trim()
+                      )
+                    },
+                    blur: function($event) {
+                      return _vm.$forceUpdate()
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _vm.submitStatus === "ERROR" && !_vm.$v.name.required
+                ? _c("div", { staticClass: "help is-danger" }, [
+                    _vm._v("\n        Your name is required\n      ")
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("label", { staticClass: "label has-text-white" }, [
+                _vm._v("Mobile Number")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model.trim",
+                      value: _vm.$v.mobile.$model,
+                      expression: "$v.mobile.$model",
+                      modifiers: { trim: true }
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.$v.mobile.$error },
+                  attrs: { placeholder: "Your Mobile Number" },
+                  domProps: { value: _vm.$v.mobile.$model },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(
+                        _vm.$v.mobile,
+                        "$model",
+                        $event.target.value.trim()
+                      )
+                    },
+                    blur: function($event) {
+                      return _vm.$forceUpdate()
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
+                  ? _c("div", { staticClass: "help is-danger" }, [
+                      _vm._v(
+                        "\n          Your mobile number is required\n        "
+                      )
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.submitStatus === "ERROR" && !_vm.$v.email.numeric
+                  ? _c("div", { staticClass: "help is-danger" }, [
+                      _vm._v(
+                        "\n          A valid mobile number is required\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("label", { staticClass: "label has-text-white" }, [
+                _vm._v("Email Address")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "control" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model.trim",
+                      value: _vm.$v.email.$model,
+                      expression: "$v.email.$model",
+                      modifiers: { trim: true }
+                    }
+                  ],
+                  staticClass: "input",
+                  class: { "is-danger": _vm.$v.email.$error },
+                  attrs: { placeholder: "Your Email Address" },
+                  domProps: { value: _vm.$v.email.$model },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(
+                        _vm.$v.email,
+                        "$model",
+                        $event.target.value.trim()
+                      )
+                    },
+                    blur: function($event) {
+                      return _vm.$forceUpdate()
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _vm.submitStatus === "ERROR" && !_vm.$v.email.required
+                  ? _c("div", { staticClass: "help is-danger" }, [
+                      _vm._v("\n          Email Address is required\n        ")
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.submitStatus === "ERROR" && !_vm.$v.email.email
+                  ? _c("div", { staticClass: "help is-danger" }, [
+                      _vm._v(
+                        "\n          Valid Email Address is required\n        "
+                      )
+                    ])
+                  : _vm._e()
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c("div", { staticClass: "control" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "button is-primary",
+                    attrs: {
+                      type: "submit",
+                      disabled: _vm.submitStatus === "PENDING"
+                    }
+                  },
+                  [_vm._v("Send")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _c("br")
+            ])
+          ]
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.submitStatus === "OK"
+      ? _c("div", [
+          _c("p", { staticClass: "is-size-4 has-text-primary" }, [
+            _vm._v(
+              "Great! You'll receive your estimated quote via email and text message very soon!"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "In the meantime we recommend booking in for a consultation with your chosen stylist. Call " +
+                _vm._s(_vm.salon.phone) +
+                " to book or use the online booking " +
+                _vm._s(_vm.salon.bookings)
+            )
+          ])
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Intro.vue?vue&type=template&id=3ab33099&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Intro.vue?vue&type=template&id=3ab33099& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
+    _c("div", { staticClass: "section column is-8" }, [
+      _c("h1", { staticClass: "title is-3" }, [
+        _vm._v("Let us match the best stylist for your budget")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "is-size-4" }, [
+        _vm._v(
+          "The vast array of services we offer along with our wide range of stylist levels makes quoting for our services\n      less than straight forward!"
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("p", { staticClass: "is-size-5" }, [
+        _c("strong", [
+          _vm._v("Have you been to " + _vm._s(_vm.salon.name) + " before?")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "button",
+          class: [_vm.regular ? "is-primary" : ""],
+          on: {
+            click: function($event) {
+              return _vm.UPDATE_REGULAR(true)
+            }
+          }
+        },
+        [_vm._v("Yes")]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "button",
+          class: [!_vm.regular ? "is-primary" : ""],
+          on: {
+            click: function($event) {
+              return _vm.UPDATE_REGULAR(false)
+            }
+          }
+        },
+        [_vm._v("No")]
+      ),
+      _vm._v(" "),
+      _c("br"),
+      _c("br"),
+      _vm._v(" "),
+      _c("div", [
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "section columns is-multiline service-selector" },
+          [
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "service-link colour",
+                  on: {
+                    click: function($event) {
+                      _vm.UPDATE_CALCULATOR("Colour")
+                      _vm.RESET_STATE()
+                      _vm.$router.push({ name: "selector" })
+                    }
+                  }
+                },
+                [_c("p", [_vm._v("Colour, Cutting & Styling")])]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "service-link cutting",
+                  on: {
+                    click: function($event) {
+                      _vm.UPDATE_CALCULATOR("CuttingStyling")
+                      _vm.RESET_STATE()
+                      _vm.$router.push({ name: "selector" })
+                    }
+                  }
+                },
+                [_c("p", [_vm._v("Cutting/Styling only")])]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "service-link men",
+                  on: {
+                    click: function($event) {
+                      _vm.UPDATE_CALCULATOR("Men")
+                      _vm.RESET_STATE()
+                      _vm.$router.push({ name: "selector" })
+                    }
+                  }
+                },
+                [_c("p", [_vm._v("Men's Hairdressing")])]
+              )
+            ])
+          ]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("That's why we created our comprehensive "),
+      _c("strong", [_vm._v("price calculator")]),
+      _vm._v(
+        ", a simple way for you to get a bespoke quote for the\n      services you want us to do, with the ability to experiment with different services and change the stylist level\n      until you find a price and stylist that suits you!"
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "title is-5" }, [
+      _c("strong", [
+        _vm._v(
+          "To get started select the type of service you require from the options below..."
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/Selector.vue?vue&type=template&id=6dd80d42&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/Selector.vue?vue&type=template&id=6dd80d42& ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
+    _c("div", { staticClass: "section column is-8" }, [
+      _c("h1", { staticClass: "title is-4" }, [
+        _vm._v("How do you want us to create your quote?")
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "is-size-5" }, [
+        _vm._v(
+          "Are you looking for a quote for a specific stylist or do you want us give you pricing based on stylist level?"
+        )
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("div", { staticClass: "level" }, [
+        _c("div", { staticClass: "level-left" }, [
+          _c("div", { staticClass: "level-item" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button is-colour",
+                on: {
+                  click: function($event) {
+                    _vm.UPDATE_SELECTOR("StylistSelector")
+                    _vm.$router.push("calculator")
+                  }
+                }
+              },
+              [_vm._v("\n            Quote for a specific stylist\n          ")]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "level-right" }, [
+          _c("div", { staticClass: "level-item" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button is-colour",
+                on: {
+                  click: function($event) {
+                    _vm.UPDATE_SELECTOR("LevelSelector")
+                    _vm.$router.push("calculator")
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  "\n            Quote based on a stylist level\n          "
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=template&id=4740b873&":
+/*!*****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/StaffSelection.vue?vue&type=template&id=4740b873& ***!
+  \*****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.staff.length
+    ? _c("div", { staticClass: "staff-selection" }, [
+        _vm.s.id !== _vm.salon.id
+          ? _c("img", {
+              attrs: { src: _vm.s.logo, alt: _vm.s.name, width: 200 }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "columns is-multiline is-mobile" },
+          _vm._l(_vm.staff, function(stylist, index) {
+            return _c(
+              "div",
+              {
+                staticClass: "section column is-4",
+                on: {
+                  click: function($event) {
+                    return _vm.cardModal(index)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "card has-background-colour" }, [
+                  _c("div", { staticClass: "card-image" }, [
+                    _c("figure", { staticClass: "image is-square" }, [
+                      _c("img", {
+                        attrs: {
+                          src: stylist.remote_image,
+                          alt: stylist.first_name + stylist.last_name
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card-content" }, [
+                      _c("div", { staticClass: "media" }, [
+                        _c("div", { staticClass: "media-content" }, [
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "title is-6 has-text-white has-text-centered"
+                            },
+                            [
+                              _vm._v(
+                                _vm._s(stylist.first_name) +
+                                  " " +
+                                  _vm._s(stylist.last_name)
+                              )
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
+          }),
+          0
+        )
+      ])
+    : _vm._e()
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=template&id=5dae1db2&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue?vue&type=template&id=5dae1db2& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
+    _c(
+      "div",
+      { staticClass: "section column is-8" },
+      [
+        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selections")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v("You've chosen the following services:")
+        ]),
+        _vm._v(" "),
+        _c("table", { staticClass: "table" }, [
+          _vm.selectedColourPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice)))
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.selectedColourAddOnPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedColourAddOn.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    _vm._s(_vm._f("toCurrency")(_vm.selectedColourAddOnPrice))
+                  )
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.selectedTreatmentPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    _vm._s(_vm._f("toCurrency")(_vm.selectedTreatmentPrice))
+                  )
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.selectedFinishPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice)))
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.selectedFinishAddOnPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedFinishAddOn.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    _vm._s(_vm._f("toCurrency")(_vm.selectedFinishAddOnPrice))
+                  )
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.selectedMensColourPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedMensColour.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    _vm._s(_vm._f("toCurrency")(_vm.selectedMensColourPrice))
+                  )
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.selectedMensCutPrice
+            ? _c("tr", [
+                _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(_vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice)))
+                ])
+              ])
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v(
+            "The total estimated cost is: " +
+              _vm._s(_vm._f("toCurrency")(_vm.totalCost))
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-7" }, [
+          _vm._v(
+            "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _vm.hasStaff
+          ? _c("h2", { staticClass: "is-size-4" }, [
+              _vm._v(
+                "Here are the " +
+                  _vm._s(_vm.salon.name) +
+                  " stylists that fit your budget:"
+              )
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.hasStaff
+          ? _c("StaffSelection", {
+              attrs: { staff: _vm.thisStaff, s: _vm.salon }
+            })
+          : _c("div", [
+              _c("p", { staticClass: "is-size-4" }, [
+                _c("strong", { staticClass: "has-text-danger" }, [
+                  _vm._v(
+                    "Unfortunately there are no staff at your chosen level at " +
+                      _vm._s(_vm.salon.name)
+                  )
+                ])
+              ])
+            ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _vm.hasOtherStaff
+          ? _c(
+              "div",
+              [
+                _vm.hasStaff
+                  ? _c("p", { staticClass: "is-size-4" }, [
+                      _vm._v(
+                        "We also have these stylists at a similar price in our other salon"
+                      )
+                    ])
+                  : _c("p", { staticClass: "is-size-5" }, [
+                      _vm._v(
+                        "These are the other stylists from our other salons within your price range..."
+                      )
+                    ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _vm._l(_vm.salons, function(s) {
+                  return _c(
+                    "div",
+                    [
+                      _c("StaffSelection", {
+                        attrs: { staff: _vm.otherStaff(s.id), s: s }
+                      })
+                    ],
+                    1
+                  )
+                })
+              ],
+              2
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.hasStaff || _vm.hasOtherStaff
+          ? _c("div", [
+              _c("p", { staticClass: "is-size-5" }, [
+                _vm._v(
+                  "Click on a stylist to find out more about them and select them."
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v(
+                  "Are you happy with your selection or do you want to adapt your options?"
+                )
+              ])
+            ])
+          : _c("div", [
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v("Please click below to adapt your choice")
+              ])
+            ]),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "RouterLink",
+          {
+            staticClass: "button is-primary",
+            attrs: { to: { name: "calculator" } }
+          },
+          [_vm._v("Change Choices")]
+        )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=template&id=95a6c728&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue?vue&type=template&id=95a6c728& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
+    _c(
+      "div",
+      { staticClass: "section column is-8" },
+      [
+        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Stylists")]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v("Here are the stylists that fit your budget")
+        ]),
+        _vm._v(" "),
+        _c(
+          "ul",
+          _vm._l(_vm.selectedStylists, function(stylist) {
+            return _c("li", [
+              _vm._v("\n        " + _vm._s(stylist.name) + "\n      ")
+            ])
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v(
+            "The total estimated cost is: " +
+              _vm._s(_vm._f("toCurrency")(_vm.price))
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v(
+            "Are you happy with your selection or do you want to adapt your options?"
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "RouterLink",
+          {
+            staticClass: "button is-primary",
+            attrs: { to: { name: "calculator" } }
+          },
+          [_vm._v("Change Choices")]
+        )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=template&id=0ff64e8e&":
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/araquach-price-calc/views/endpoint/TotalsByStylist.vue?vue&type=template&id=0ff64e8e& ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
+    _c(
+      "div",
+      { staticClass: "section column is-8" },
+      [
+        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selection")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-mobile" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-4" }, [
+              _vm._v(
+                "You've chosen the following services with " +
+                  _vm._s(_vm.stylist.first_name) +
+                  " " +
+                  _vm._s(_vm.stylist.last_name)
+              )
+            ]),
+            _vm._v(" "),
+            _c("table", { staticClass: "table" }, [
+              _vm.selectedColour && _vm.selectedColour.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice))
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.selectedColourAddOn && _vm.selectedColourAddOn.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedColourAddOn.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("toCurrency")(_vm.selectedColourAddOnPrice)
+                        )
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.selectedTreatment && _vm.selectedTreatment.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(_vm._f("toCurrency")(_vm.selectedTreatmentPrice))
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.selectedFinish && _vm.selectedFinish.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice))
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.selectedFinishAddOn && _vm.selectedFinishAddOn.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedFinishAddOn.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("toCurrency")(_vm.selectedFinishAddOnPrice)
+                        )
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.selectedMensCut && _vm.selectedMensCut.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice))
+                      )
+                    ])
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.selectedMensColour && _vm.selectedMensColour.price > 0
+                ? _c("tr", [
+                    _c("td", [_vm._v(_vm._s(_vm.selectedMensColour.service))]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("toCurrency")(_vm.selectedMensColourPrice)
+                        )
+                      )
+                    ])
+                  ])
+                : _vm._e()
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-4" }, [
+              _vm._v(
+                "The total estimated cost is: " +
+                  _vm._s(_vm._f("toCurrency")(_vm.totalCost))
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                attrs: {
+                  src: _vm.stylist.remote_image,
+                  alt: _vm.stylist.first_name + _vm.stylist.last_name
+                }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-7" }, [
+          _vm._v(
+            "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v(
+            "Are you happy with your selection or do you want to adapt your options?"
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "RouterLink",
+          {
+            staticClass: "button is-primary",
+            attrs: { to: { name: "finish" } }
+          },
+          [_vm._v("I'm Happy!")]
+        ),
+        _vm._v(" "),
+        _c(
+          "RouterLink",
+          {
+            staticClass: "button is-primary",
+            attrs: { to: { name: "calculator" } }
+          },
+          [_vm._v("Change Choices")]
+        )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
 
 /***/ }),
 
@@ -48440,6 +55252,12 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.filter('textLimit', function (text, length) {
   return text.substring(0, length);
 });
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.filter("toCurrency", function (amount) {
+  return Number(amount).toLocaleString('en-GB', {
+    style: 'currency',
+    currency: 'GBP'
+  });
+});
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   router: _router__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -50249,6 +57067,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_team_profiles_RubyProfile__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/team/profiles/RubyProfile */ "./src/js/components/team/profiles/RubyProfile.vue");
 /* harmony import */ var _components_team_profiles_SophieProfile__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/team/profiles/SophieProfile */ "./src/js/components/team/profiles/SophieProfile.vue");
 /* harmony import */ var _components_bookings_Bookings__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/bookings/Bookings */ "./src/js/components/bookings/Bookings.vue");
+/* harmony import */ var araquach_price_calc_router_calcRoutes__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! araquach-price-calc/router/calcRoutes */ "./node_modules/araquach-price-calc/router/calcRoutes.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
 
 
 
@@ -50362,10 +57194,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     name: 'bookings',
     component: _components_bookings_Bookings__WEBPACK_IMPORTED_MODULE_20__["default"] // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
 
-  }, {
+  }].concat(_toConsumableArray(araquach_price_calc_router_calcRoutes__WEBPACK_IMPORTED_MODULE_21__["default"]), [{
     path: '/:notFound(.*)',
     redirect: '/'
-  }]
+  }])
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
 

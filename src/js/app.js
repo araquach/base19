@@ -18,6 +18,12 @@ Vue.filter('textLimit', function (text, length) {
     return text.substring(0, length)
 })
 
+Vue.filter("toCurrency",  amount => Number(amount).toLocaleString('en-GB',
+    {
+        style: 'currency',
+        currency: 'GBP'
+    }))
+
 new Vue({
     el: '#app',
     router,
