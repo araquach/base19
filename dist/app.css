@@ -22266,17 +22266,13 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   }
 }
 
-.panel-heading {
+.price-calc .panel-heading {
   font-size: 1rem;
   border-radius: 0;
 }
 
-.has-background-white:first-of-type {
+.price-calc .price-calc:first-of-type {
   margin-top: 3rem;
-}
-
-.price-calc {
-  padding-top: 8rem;
 }
 
 .price-calc h1,
@@ -22284,6 +22280,10 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
 .price-calc p,
 .price-calc strong {
   color: #FFFFFF;
+}
+
+.price-calc h1 {
+  margin-top: 3rem;
 }
 
 .price-calc p {
@@ -22417,6 +22417,11 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   color: #FFF;
   background-color: #0d0d0d;
   border: 1px solid #FFF;
+}
+
+.price-calc .box {
+  background-color: black;
+  border: 1px solid white;
 }
 
 li {

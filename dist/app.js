@@ -23292,7 +23292,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "section" },
+    { staticClass: "price-calc section" },
     [
       _c(_vm.selector, { tag: "component" }),
       _vm._v(" "),
@@ -23342,7 +23342,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "section" },
+    { staticClass: "price-calc section" },
     [
       _c(_vm.selector, { tag: "component" }),
       _vm._v(" "),
@@ -23383,7 +23383,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "section" },
+    { staticClass: "price-calc section" },
     [
       _c(_vm.selector, { tag: "component" }),
       _vm._v(" "),
@@ -23422,7 +23422,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -23583,7 +23583,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -23740,7 +23740,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -23874,7 +23874,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24169,7 +24169,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24317,7 +24317,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24444,7 +24444,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24547,7 +24547,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24652,7 +24652,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "has-background-white" },
+    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24789,7 +24789,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "section box" }, [
+  return _c("div", { staticClass: "price-calc section box" }, [
     _c("div", { staticClass: "columns" }, [
       _c("div", { staticClass: "column is-8" }, [
         !_vm.allSelected
@@ -24935,7 +24935,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "section box" }, [
+  return _c("div", { staticClass: "price-calc section box" }, [
     _c("div", { staticClass: "level" }, [
       _c("div", { staticClass: "level-left" }, [
         _c("div", [
@@ -25055,7 +25055,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "section box" }, [
+  return _c("div", { staticClass: "price-calc section box" }, [
     _c("div", { staticClass: "columns" }, [
       _c("div", { staticClass: "column is-8" }, [
         !_vm.allSelected
@@ -57285,8 +57285,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
