@@ -14,35 +14,10 @@ $light-arctic: #6d808c;
 $dark-arctic: #425559;
 $darkest-arctic: #0d0d0d;
 
-$DarkBlue: rgb(74,63,228);
-$MidBlue: rgb(77,80,255);
-$LightBlue: rgb(80,100,255);
-$LighterBlue: rgb(86,141,255);
-$LightestBlue: rgb(91,174,255);
-$SuperLightBlue: rgb(94,189,255);
-
-$level:  $MidBlue;
-$colour: $DarkBlue;
-$colour-add-on:  $MidBlue;
-$treatment: $LightBlue;
-$finish: $LighterBlue;
-$finish-add-on: $LightestBlue;
-
-@import "~bulma/sass/utilities/derived-variables";
-
-$addColors: (
-        "level":($level, $white),
-        "colour":($colour, $white),
-        "colour-add-on":($colour-add-on, $white),
-        "treatment":($treatment, $white),
-        "finish":($finish, $white),
-        "finish-add-on":($finish-add-on, $white)
-);
-$colors: map-merge($colors, $addColors);
-
+@import "~araquach-price-calc/styles/dark_colours";
 @import "~bulma/bulma.sass";
 @import "~buefy/src/scss/buefy";
-@import "priceCalc";
+@import "~araquach-price-calc/styles/dark";
 
 li {
   line-height: 1.5rem;
@@ -275,7 +250,9 @@ section.section {
   }
 }
 
-
+#prices {
+  padding-top: 5rem;
+}
 
 /* Review Feed */
 

@@ -1801,7 +1801,7 @@ a.has-text-finish-add-on:focus {
 
 a.box:hover,
 a.box:focus {
-  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px #3273dc;
+  box-shadow: 0 0.5em 1em -0.125em rgba(109, 128, 140, 0.1), 0 0 0 1px #6d808c;
 }
 
 a.box:active {
@@ -5586,7 +5586,7 @@ a.tag:hover {
   color: #363636;
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1.125;
+  line-height: 1.4;
 }
 
 .title strong {
@@ -22266,13 +22266,6 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   }
 }
 
-#prices {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/dist/img/blog/blog_tall.jpg") #b293ac center top no-repeat;
-  background-size: cover;
-  min-height: 90rem;
-  padding-top: 6rem;
-}
-
 .price-calc a strong {
   color: #5064ff;
 }
@@ -22447,7 +22440,7 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
 }
 
 .price-calc .box {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
   border: 1px solid white;
 }
 
@@ -22688,6 +22681,10 @@ p {
 
 #blog #blog-body a {
   color: #00d1b2;
+}
+
+#prices {
+  padding-top: 5rem;
 }
 
 /* Review Feed */
