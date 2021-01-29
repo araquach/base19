@@ -1217,7 +1217,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([
     {
         path: '/prices',
-        name: 'intro',
+        name: 'prices',
         component: _views_Intro__WEBPACK_IMPORTED_MODULE_0__["default"]
     },
     {
@@ -21632,6 +21632,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -23292,7 +23304,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc section" },
+    { staticClass: "section" },
     [
       _c(_vm.selector, { tag: "component" }),
       _vm._v(" "),
@@ -23342,7 +23354,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc section" },
+    { staticClass: "section" },
     [
       _c(_vm.selector, { tag: "component" }),
       _vm._v(" "),
@@ -23383,7 +23395,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc section" },
+    { staticClass: "section" },
     [
       _c(_vm.selector, { tag: "component" }),
       _vm._v(" "),
@@ -23422,7 +23434,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -23474,8 +23485,31 @@ var render = function() {
                   ? _c("div", [
                       _c("p", [
                         _vm._v(
-                          "Base Hairdressing is an Academy Junior Stylists up to Graduate Stylists. If you're looking for a more experienced stylist check out our other salons Paul Kemp Hairdressing and Jakata."
-                        )
+                          "Base Hairdressing is an Academy Junior Stylists up to Graduate Stylists. If you're looking for a more experienced stylist check out our other salons "
+                        ),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "has-text-warning",
+                            attrs: {
+                              href:
+                                "https://www.paulkemphairdressing.com/prices"
+                            }
+                          },
+                          [_vm._v("Paul Kemp Hairdressing")]
+                        ),
+                        _vm._v(" and "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "has-text-warning",
+                            attrs: {
+                              href: "https://www.jakatasalon.co.uk/prices"
+                            }
+                          },
+                          [_vm._v("Jakata")]
+                        ),
+                        _vm._v(".")
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "has-text-level is-size-5" }, [
@@ -23505,7 +23539,16 @@ var render = function() {
                         _vm._v("Our "),
                         _c("strong", [_vm._v("Junior stylists")]),
                         _vm._v(" are based at our training Academy "),
-                        _c("strong", [_vm._v("Base Hairdressing")]),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "has-text-warning",
+                            attrs: {
+                              href: "https://www.basehairdressing.com/prices"
+                            }
+                          },
+                          [_c("strong", [_vm._v("Base Hairdressing")])]
+                        ),
                         _vm._v(
                           " if you're looking for our most affordable option."
                         )
@@ -23583,7 +23626,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -23666,9 +23708,106 @@ var render = function() {
             : _c("div", { staticClass: "section" }, [
                 !_vm.stylist.id
                   ? _c("div", [
-                      _c("p", { staticClass: "is-size-5" }, [
-                        _vm._v("Now select your stylist")
-                      ]),
+                      _vm.salon.id === 3
+                        ? _c("div", [
+                            _c("p", [
+                              _vm._v(
+                                "Base Hairdressing is an Academy Junior Stylists up to Graduate Stylists. If you're looking for a more experienced stylist check out our pricing at our other salons\n            "
+                              ),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "has-text-warning",
+                                  attrs: {
+                                    href:
+                                      "https://www.paulkemphairdressing.com/prices"
+                                  }
+                                },
+                                [_vm._v("Paul Kemp Hairdressing")]
+                              ),
+                              _vm._v(" and "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "has-text-warning",
+                                  attrs: {
+                                    href: "https://www.jakatasalon.co.uk/prices"
+                                  }
+                                },
+                                [_vm._v("Jakata")]
+                              ),
+                              _vm._v(".")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "has-text-level is-size-5" },
+                              [
+                                _c("strong", [
+                                  _vm._v(
+                                    "Please select your stylist below - you can change this at any time to see the price difference"
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        : _c("div", [
+                            _c("p", [
+                              _vm._v(
+                                "At " +
+                                  _vm._s(_vm.salon.name) +
+                                  " we have stylists from "
+                              ),
+                              _c("strong", [_vm._v("Graduate Stylist")]),
+                              _vm._v(" level up to "),
+                              _c("strong", [_vm._v("Advanced Senior")]),
+                              _vm._v(
+                                ". The cost with each level reflects how much experience they have.\n            A Graduate stylist has 2-3 years experience, a Stylist 3-5 years experience, a Senior Stylist 5+ years experience."
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _vm._v("Our "),
+                              _c("strong", [_vm._v("Junior stylists")]),
+                              _vm._v(" are based at our training Academy "),
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "has-text-warning",
+                                  attrs: {
+                                    href:
+                                      "https://www.basehairdressing.com/prices"
+                                  }
+                                },
+                                [_c("strong", [_vm._v("Base Hairdressing")])]
+                              ),
+                              _vm._v(
+                                " if you're looking for our most affordable option."
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _vm._v("All of our Senior Stylists have the "),
+                              _c("strong", [
+                                _vm._v("Schwarzkopf Colour Masters")
+                              ]),
+                              _vm._v(
+                                " qualification.\n            Our Advanced Seniors are the most in-demand stylists with a wealth of experience and also oversee the running of the salon."
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "p",
+                              { staticClass: "has-text-level is-size-5" },
+                              [
+                                _c("strong", [
+                                  _vm._v(
+                                    "Please select a stylist level below - you can change this at any time to see the price difference"
+                                  )
+                                ])
+                              ]
+                            )
+                          ]),
                       _vm._v(" "),
                       _c("br")
                     ])
@@ -23740,7 +23879,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -23874,7 +24012,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24016,8 +24153,8 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "button is-small",
-                        class: { activeColour: _vm.colourCat === 1 },
+                        staticClass: "button is-small is-outlined is-colour",
+                        class: { activeSelectedColour: _vm.colourCat === 1 },
                         on: {
                           click: function($event) {
                             _vm.$store.commit("CHANGE_COLOUR_CAT", 1),
@@ -24036,8 +24173,8 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "button is-small",
-                        class: { activeColour: _vm.colourCat === 2 },
+                        staticClass: "button is-small is-outlined is-colour",
+                        class: { activeSelectedColour: _vm.colourCat === 2 },
                         on: {
                           click: function($event) {
                             _vm.$store.commit("CHANGE_COLOUR_CAT", 2),
@@ -24056,8 +24193,8 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "button is-small",
-                        class: { activeColour: _vm.colourCat === 3 },
+                        staticClass: "button is-small is-outlined is-colour",
+                        class: { activeSelectedColour: _vm.colourCat === 3 },
                         on: {
                           click: function($event) {
                             _vm.$store.commit("CHANGE_COLOUR_CAT", 3),
@@ -24076,8 +24213,8 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "button is-small",
-                        class: { activeColour: _vm.colourCat === 4 },
+                        staticClass: "button is-small is-outlined is-colour",
+                        class: { activeSelectedColour: _vm.colourCat === 4 },
                         on: {
                           click: function($event) {
                             _vm.$store.commit("CHANGE_COLOUR_CAT", 4),
@@ -24096,7 +24233,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "button is-small",
+                        staticClass: "button is-small is-outlined is-colour",
                         class: { activeColour: _vm.colourCat === 5 },
                         on: {
                           click: function($event) {
@@ -24169,7 +24306,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24317,7 +24453,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24444,7 +24579,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24547,7 +24681,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -24652,7 +24785,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "price-calc" },
     [
       _c(
         "b-collapse",
@@ -25197,6 +25329,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "price-calc", attrs: { id: "prices" } },
     [_c("keep-alive", [_c(_vm.calculator, { tag: "component" })], 1)],
     1
   )
@@ -25223,225 +25356,231 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "price-calc section" }, [
-    _c("p", { staticClass: "is-size-4" }, [
-      _vm._v("We'll save you're quote and send it to you!")
-    ]),
-    _vm._v(" "),
-    _c("p", [
-      _vm._v(
-        "Just fill in your details below and we'll email it over and send a text message link too."
-      )
-    ]),
-    _vm._v(" "),
-    _vm.submitStatus != "OK"
-      ? _c(
-          "form",
-          {
-            on: {
-              submit: function($event) {
-                $event.preventDefault()
-                return _vm.submit($event)
+  return _c(
+    "div",
+    { staticClass: "price-calc section", attrs: { id: "prices" } },
+    [
+      _c("h1", { staticClass: "is-size-4" }, [
+        _vm._v("We'll save you're quote and send it to you!")
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Just fill in your details below and we'll email it over and send a text message link too."
+        )
+      ]),
+      _vm._v(" "),
+      _vm.submitStatus != "OK"
+        ? _c(
+            "form",
+            {
+              on: {
+                submit: function($event) {
+                  $event.preventDefault()
+                  return _vm.submit($event)
+                }
               }
-            }
-          },
-          [
-            _c("div", { staticClass: "field" }, [
-              _c("label", { staticClass: "label has-text-white" }, [
-                _vm._v("Full Name")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "control" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model.trim",
-                      value: _vm.$v.name.$model,
-                      expression: "$v.name.$model",
-                      modifiers: { trim: true }
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.$v.name.$error },
-                  attrs: { placeholder: "Your Full Name" },
-                  domProps: { value: _vm.$v.name.$model },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(
-                        _vm.$v.name,
-                        "$model",
-                        $event.target.value.trim()
-                      )
-                    },
-                    blur: function($event) {
-                      return _vm.$forceUpdate()
-                    }
-                  }
-                })
-              ]),
-              _vm._v(" "),
-              _vm.submitStatus === "ERROR" && !_vm.$v.name.required
-                ? _c("div", { staticClass: "help is-danger" }, [
-                    _vm._v("\n        Your name is required\n      ")
-                  ])
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("label", { staticClass: "label has-text-white" }, [
-                _vm._v("Mobile Number")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "control" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model.trim",
-                      value: _vm.$v.mobile.$model,
-                      expression: "$v.mobile.$model",
-                      modifiers: { trim: true }
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.$v.mobile.$error },
-                  attrs: { placeholder: "Your Mobile Number" },
-                  domProps: { value: _vm.$v.mobile.$model },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(
-                        _vm.$v.mobile,
-                        "$model",
-                        $event.target.value.trim()
-                      )
-                    },
-                    blur: function($event) {
-                      return _vm.$forceUpdate()
-                    }
-                  }
-                }),
+            },
+            [
+              _c("div", { staticClass: "field" }, [
+                _c("label", { staticClass: "label has-text-white" }, [
+                  _vm._v("Full Name")
+                ]),
                 _vm._v(" "),
-                _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
-                  ? _c("div", { staticClass: "help is-danger" }, [
-                      _vm._v(
-                        "\n          Your mobile number is required\n        "
-                      )
-                    ])
-                  : _vm._e(),
+                _c("div", { staticClass: "control" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model.trim",
+                        value: _vm.$v.name.$model,
+                        expression: "$v.name.$model",
+                        modifiers: { trim: true }
+                      }
+                    ],
+                    staticClass: "input",
+                    class: { "is-danger": _vm.$v.name.$error },
+                    attrs: { placeholder: "Your Full Name" },
+                    domProps: { value: _vm.$v.name.$model },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.$v.name,
+                          "$model",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
+                      }
+                    }
+                  })
+                ]),
                 _vm._v(" "),
-                _vm.submitStatus === "ERROR" && !_vm.$v.email.numeric
+                _vm.submitStatus === "ERROR" && !_vm.$v.name.required
                   ? _c("div", { staticClass: "help is-danger" }, [
-                      _vm._v(
-                        "\n          A valid mobile number is required\n        "
-                      )
+                      _vm._v("\n        Your name is required\n      ")
                     ])
                   : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("label", { staticClass: "label has-text-white" }, [
-                _vm._v("Email Address")
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "control" }, [
-                _c("input", {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model.trim",
-                      value: _vm.$v.email.$model,
-                      expression: "$v.email.$model",
-                      modifiers: { trim: true }
-                    }
-                  ],
-                  staticClass: "input",
-                  class: { "is-danger": _vm.$v.email.$error },
-                  attrs: { placeholder: "Your Email Address" },
-                  domProps: { value: _vm.$v.email.$model },
-                  on: {
-                    input: function($event) {
-                      if ($event.target.composing) {
-                        return
+              _c("div", { staticClass: "field" }, [
+                _c("label", { staticClass: "label has-text-white" }, [
+                  _vm._v("Mobile Number")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "control" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model.trim",
+                        value: _vm.$v.mobile.$model,
+                        expression: "$v.mobile.$model",
+                        modifiers: { trim: true }
                       }
-                      _vm.$set(
-                        _vm.$v.email,
-                        "$model",
-                        $event.target.value.trim()
-                      )
-                    },
-                    blur: function($event) {
-                      return _vm.$forceUpdate()
+                    ],
+                    staticClass: "input",
+                    class: { "is-danger": _vm.$v.mobile.$error },
+                    attrs: { placeholder: "Your Mobile Number" },
+                    domProps: { value: _vm.$v.mobile.$model },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.$v.mobile,
+                          "$model",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
+                      }
                     }
-                  }
-                }),
+                  }),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
+                    ? _c("div", { staticClass: "help is-danger" }, [
+                        _vm._v(
+                          "\n          Your mobile number is required\n        "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.email.numeric
+                    ? _c("div", { staticClass: "help is-danger" }, [
+                        _vm._v(
+                          "\n          A valid mobile number is required\n        "
+                        )
+                      ])
+                    : _vm._e()
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("label", { staticClass: "label has-text-white" }, [
+                  _vm._v("Email Address")
+                ]),
                 _vm._v(" "),
-                _vm.submitStatus === "ERROR" && !_vm.$v.email.required
-                  ? _c("div", { staticClass: "help is-danger" }, [
-                      _vm._v("\n          Email Address is required\n        ")
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.submitStatus === "ERROR" && !_vm.$v.email.email
-                  ? _c("div", { staticClass: "help is-danger" }, [
-                      _vm._v(
-                        "\n          Valid Email Address is required\n        "
-                      )
-                    ])
-                  : _vm._e()
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { staticClass: "field" }, [
-              _c("div", { staticClass: "control" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "button is-primary",
-                    attrs: {
-                      type: "submit",
-                      disabled: _vm.submitStatus === "PENDING"
+                _c("div", { staticClass: "control" }, [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model.trim",
+                        value: _vm.$v.email.$model,
+                        expression: "$v.email.$model",
+                        modifiers: { trim: true }
+                      }
+                    ],
+                    staticClass: "input",
+                    class: { "is-danger": _vm.$v.email.$error },
+                    attrs: { placeholder: "Your Email Address" },
+                    domProps: { value: _vm.$v.email.$model },
+                    on: {
+                      input: function($event) {
+                        if ($event.target.composing) {
+                          return
+                        }
+                        _vm.$set(
+                          _vm.$v.email,
+                          "$model",
+                          $event.target.value.trim()
+                        )
+                      },
+                      blur: function($event) {
+                        return _vm.$forceUpdate()
+                      }
                     }
-                  },
-                  [_vm._v("Send")]
-                )
+                  }),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.email.required
+                    ? _c("div", { staticClass: "help is-danger" }, [
+                        _vm._v(
+                          "\n          Email Address is required\n        "
+                        )
+                      ])
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.submitStatus === "ERROR" && !_vm.$v.email.email
+                    ? _c("div", { staticClass: "help is-danger" }, [
+                        _vm._v(
+                          "\n          Valid Email Address is required\n        "
+                        )
+                      ])
+                    : _vm._e()
+                ])
               ]),
               _vm._v(" "),
               _c("br"),
-              _c("br")
+              _vm._v(" "),
+              _c("div", { staticClass: "field" }, [
+                _c("div", { staticClass: "control" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "button is-primary",
+                      attrs: {
+                        type: "submit",
+                        disabled: _vm.submitStatus === "PENDING"
+                      }
+                    },
+                    [_vm._v("Send")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _c("br")
+              ])
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.submitStatus === "OK"
+        ? _c("div", [
+            _c("p", { staticClass: "is-size-4 has-text-primary" }, [
+              _vm._v(
+                "Great! You'll receive your estimated quote via email and text message very soon!"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "In the meantime we recommend booking in for a consultation with your chosen stylist. Call " +
+                  _vm._s(_vm.salon.phone) +
+                  " to book or use the online booking " +
+                  _vm._s(_vm.salon.bookings)
+              )
             ])
-          ]
-        )
-      : _vm._e(),
-    _vm._v(" "),
-    _vm.submitStatus === "OK"
-      ? _c("div", [
-          _c("p", { staticClass: "is-size-4 has-text-primary" }, [
-            _vm._v(
-              "Great! You'll receive your estimated quote via email and text message very soon!"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "In the meantime we recommend booking in for a consultation with your chosen stylist. Call " +
-                _vm._s(_vm.salon.phone) +
-                " to book or use the online booking " +
-                _vm._s(_vm.salon.bookings)
-            )
           ])
-        ])
-      : _vm._e()
-  ])
+        : _vm._e()
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -25465,121 +25604,128 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
-    _c("div", { staticClass: "section column is-8" }, [
-      _c("h1", { staticClass: "title is-3" }, [
-        _vm._v("Let us match the best stylist for your budget")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "is-size-4" }, [
-        _vm._v(
-          "The vast array of services we offer along with our wide range of stylist levels makes quoting for our services\n      less than straight forward!"
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c("p", { staticClass: "is-size-5" }, [
-        _c("strong", [
-          _vm._v("Have you been to " + _vm._s(_vm.salon.name) + " before?")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "button",
-          class: [_vm.regular ? "is-primary" : ""],
-          on: {
-            click: function($event) {
-              return _vm.UPDATE_REGULAR(true)
-            }
-          }
-        },
-        [_vm._v("Yes")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "button",
-          class: [!_vm.regular ? "is-primary" : ""],
-          on: {
-            click: function($event) {
-              return _vm.UPDATE_REGULAR(false)
-            }
-          }
-        },
-        [_vm._v("No")]
-      ),
-      _vm._v(" "),
-      _c("br"),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", [
-        _vm._m(1),
+  return _c(
+    "div",
+    {
+      staticClass: "price-calc section columns is-centered",
+      attrs: { id: "prices" }
+    },
+    [
+      _c("div", { staticClass: "section column is-8" }, [
+        _c("h1", { staticClass: "title is-3" }, [
+          _vm._v("Let us match the best stylist for your budget")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v(
+            "The vast array of services we offer along with our wide range of stylist levels makes quoting for our services\n      less than straight forward!"
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-5" }, [
+          _c("strong", [
+            _vm._v("Have you been to " + _vm._s(_vm.salon.name) + " before?")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("br"),
         _vm._v(" "),
         _c(
-          "div",
-          { staticClass: "section columns is-multiline service-selector" },
-          [
-            _c("div", { staticClass: "column" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "service-link colour",
-                  on: {
-                    click: function($event) {
-                      _vm.UPDATE_CALCULATOR("Colour")
-                      _vm.RESET_STATE()
-                      _vm.$router.push({ name: "selector" })
+          "button",
+          {
+            staticClass: "button",
+            class: [_vm.regular ? "is-primary" : ""],
+            on: {
+              click: function($event) {
+                return _vm.UPDATE_REGULAR(true)
+              }
+            }
+          },
+          [_vm._v("Yes")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "button",
+            class: [!_vm.regular ? "is-primary" : ""],
+            on: {
+              click: function($event) {
+                return _vm.UPDATE_REGULAR(false)
+              }
+            }
+          },
+          [_vm._v("No")]
+        ),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "section columns is-multiline service-selector" },
+            [
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "service-link colour",
+                    on: {
+                      click: function($event) {
+                        _vm.UPDATE_CALCULATOR("Colour")
+                        _vm.RESET_STATE()
+                        _vm.$router.push({ name: "selector" })
+                      }
                     }
-                  }
-                },
-                [_c("p", [_vm._v("Colour, Cutting & Styling")])]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "service-link cutting",
-                  on: {
-                    click: function($event) {
-                      _vm.UPDATE_CALCULATOR("CuttingStyling")
-                      _vm.RESET_STATE()
-                      _vm.$router.push({ name: "selector" })
+                  },
+                  [_c("p", [_vm._v("Colour, Cutting & Styling")])]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "service-link cutting",
+                    on: {
+                      click: function($event) {
+                        _vm.UPDATE_CALCULATOR("CuttingStyling")
+                        _vm.RESET_STATE()
+                        _vm.$router.push({ name: "selector" })
+                      }
                     }
-                  }
-                },
-                [_c("p", [_vm._v("Cutting/Styling only")])]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "service-link men",
-                  on: {
-                    click: function($event) {
-                      _vm.UPDATE_CALCULATOR("Men")
-                      _vm.RESET_STATE()
-                      _vm.$router.push({ name: "selector" })
+                  },
+                  [_c("p", [_vm._v("Cutting/Styling only")])]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "service-link men",
+                    on: {
+                      click: function($event) {
+                        _vm.UPDATE_CALCULATOR("Men")
+                        _vm.RESET_STATE()
+                        _vm.$router.push({ name: "selector" })
+                      }
                     }
-                  }
-                },
-                [_c("p", [_vm._v("Men's Hairdressing")])]
-              )
-            ])
-          ]
-        )
+                  },
+                  [_c("p", [_vm._v("Men's Hairdressing")])]
+                )
+              ])
+            ]
+          )
+        ])
       ])
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = [
   function() {
@@ -25628,63 +25774,75 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
-    _c("div", { staticClass: "section column is-8" }, [
-      _c("h1", { staticClass: "title is-4" }, [
-        _vm._v("How do you want us to create your quote?")
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "is-size-5" }, [
-        _vm._v(
-          "Are you looking for a quote for a specific stylist or do you want us give you pricing based on stylist level?"
-        )
-      ]),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
-        _c("div", { staticClass: "level-left" }, [
-          _c("div", { staticClass: "level-item" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button is-colour",
-                on: {
-                  click: function($event) {
-                    _vm.UPDATE_SELECTOR("StylistSelector")
-                    _vm.$router.push("calculator")
-                  }
-                }
-              },
-              [_vm._v("\n            Quote for a specific stylist\n          ")]
-            )
-          ])
+  return _c(
+    "div",
+    {
+      staticClass: "price-calc section columns is-centered",
+      attrs: { id: "prices" }
+    },
+    [
+      _c("div", { staticClass: "section column is-8" }, [
+        _c("h1", { staticClass: "title is-4" }, [
+          _vm._v("How do you want us to create your quote?")
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "level-right" }, [
-          _c("div", { staticClass: "level-item" }, [
-            _c(
-              "button",
-              {
-                staticClass: "button is-colour",
-                on: {
-                  click: function($event) {
-                    _vm.UPDATE_SELECTOR("LevelSelector")
-                    _vm.$router.push("calculator")
+        _c("p", { staticClass: "is-size-5" }, [
+          _vm._v(
+            "Are you looking for a quote for a specific stylist or do you want us give you pricing based on stylist level?"
+          )
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", { staticClass: "level" }, [
+          _c("div", { staticClass: "level-left" }, [
+            _c("div", { staticClass: "level-item" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button is-colour",
+                  on: {
+                    click: function($event) {
+                      _vm.UPDATE_SELECTOR("StylistSelector")
+                      _vm.$router.push("calculator")
+                    }
                   }
-                }
-              },
-              [
-                _vm._v(
-                  "\n            Quote based on a stylist level\n          "
-                )
-              ]
-            )
+                },
+                [
+                  _vm._v(
+                    "\n            Quote for a specific stylist\n          "
+                  )
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "level-right" }, [
+            _c("div", { staticClass: "level-item" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "button is-colour",
+                  on: {
+                    click: function($event) {
+                      _vm.UPDATE_SELECTOR("LevelSelector")
+                      _vm.$router.push("calculator")
+                    }
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n            Quote based on a stylist level\n          "
+                  )
+                ]
+              )
+            ])
           ])
         ])
       ])
-    ])
-  ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -25796,208 +25954,221 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
-    _c(
-      "div",
-      { staticClass: "section column is-8" },
-      [
-        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selections")]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-4" }, [
-          _vm._v("You've chosen the following services:")
-        ]),
-        _vm._v(" "),
-        _c("table", { staticClass: "table" }, [
-          _vm.selectedColourPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(_vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice)))
-                ])
-              ])
-            : _vm._e(),
+  return _c(
+    "div",
+    {
+      staticClass: "price-calc section columns is-centered",
+      attrs: { id: "prices" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "section column is-8" },
+        [
+          _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selections")]),
           _vm._v(" "),
-          _vm.selectedColourAddOnPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedColourAddOn.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(
-                    _vm._s(_vm._f("toCurrency")(_vm.selectedColourAddOnPrice))
-                  )
-                ])
-              ])
-            : _vm._e(),
+          _c("p", { staticClass: "is-size-4" }, [
+            _vm._v("You've chosen the following services:")
+          ]),
           _vm._v(" "),
-          _vm.selectedTreatmentPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(
-                    _vm._s(_vm._f("toCurrency")(_vm.selectedTreatmentPrice))
-                  )
+          _c("table", { staticClass: "table" }, [
+            _vm.selectedColourPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice))
+                    )
+                  ])
                 ])
-              ])
-            : _vm._e(),
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.selectedColourAddOnPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedColourAddOn.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedColourAddOnPrice))
+                    )
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.selectedTreatmentPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedTreatmentPrice))
+                    )
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.selectedFinishPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice))
+                    )
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.selectedFinishAddOnPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedFinishAddOn.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedFinishAddOnPrice))
+                    )
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.selectedMensColourPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedMensColour.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedMensColourPrice))
+                    )
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.selectedMensCutPrice
+              ? _c("tr", [
+                  _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
+                  _vm._v(" "),
+                  _c("td", [
+                    _vm._v(
+                      _vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice))
+                    )
+                  ])
+                ])
+              : _vm._e()
+          ]),
           _vm._v(" "),
-          _vm.selectedFinishPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(_vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice)))
-                ])
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.selectedFinishAddOnPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedFinishAddOn.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(
-                    _vm._s(_vm._f("toCurrency")(_vm.selectedFinishAddOnPrice))
-                  )
-                ])
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.selectedMensColourPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedMensColour.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(
-                    _vm._s(_vm._f("toCurrency")(_vm.selectedMensColourPrice))
-                  )
-                ])
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          _vm.selectedMensCutPrice
-            ? _c("tr", [
-                _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
-                _vm._v(" "),
-                _c("td", [
-                  _vm._v(_vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice)))
-                ])
-              ])
-            : _vm._e()
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-4" }, [
-          _vm._v(
-            "The total estimated cost is: " +
-              _vm._s(_vm._f("toCurrency")(_vm.totalCost))
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-7" }, [
-          _vm._v(
-            "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _vm.hasStaff
-          ? _c("h2", { staticClass: "is-size-4" }, [
-              _vm._v(
-                "Here are the " +
-                  _vm._s(_vm.salon.name) +
-                  " stylists that fit your budget:"
-              )
-            ])
-          : _vm._e(),
-        _vm._v(" "),
-        _vm.hasStaff
-          ? _c("StaffSelection", {
-              attrs: { staff: _vm.thisStaff, s: _vm.salon }
-            })
-          : _c("div", [
-              _c("p", { staticClass: "is-size-4" }, [
-                _c("strong", { staticClass: "has-text-danger" }, [
-                  _vm._v(
-                    "Unfortunately there are no staff at your chosen level at " +
-                      _vm._s(_vm.salon.name)
-                  )
-                ])
-              ])
-            ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _vm.hasOtherStaff
-          ? _c(
-              "div",
-              [
-                _vm.hasStaff
-                  ? _c("p", { staticClass: "is-size-4" }, [
-                      _vm._v(
-                        "We also have these stylists at a similar price in our other salon"
-                      )
-                    ])
-                  : _c("p", { staticClass: "is-size-5" }, [
-                      _vm._v(
-                        "These are the other stylists from our other salons within your price range..."
-                      )
-                    ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _vm._l(_vm.salons, function(s) {
-                  return _c(
-                    "div",
-                    [
-                      _c("StaffSelection", {
-                        attrs: { staff: _vm.otherStaff(s.id), s: s }
-                      })
-                    ],
-                    1
-                  )
-                })
-              ],
-              2
+          _c("p", { staticClass: "is-size-4" }, [
+            _vm._v(
+              "The total estimated cost is: " +
+                _vm._s(_vm._f("toCurrency")(_vm.totalCost))
             )
-          : _vm._e(),
-        _vm._v(" "),
-        _vm.hasStaff || _vm.hasOtherStaff
-          ? _c("div", [
-              _c("p", { staticClass: "is-size-5" }, [
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-7" }, [
+            _vm._v(
+              "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
+            )
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm.hasStaff
+            ? _c("h2", { staticClass: "is-size-4" }, [
                 _vm._v(
-                  "Click on a stylist to find out more about them and select them."
+                  "Here are the " +
+                    _vm._s(_vm.salon.name) +
+                    " stylists that fit your budget:"
                 )
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.hasStaff
+            ? _c("StaffSelection", {
+                attrs: { staff: _vm.thisStaff, s: _vm.salon }
+              })
+            : _c("div", [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _c("strong", { staticClass: "has-text-danger" }, [
+                    _vm._v(
+                      "Unfortunately there are no staff at your chosen level at " +
+                        _vm._s(_vm.salon.name)
+                    )
+                  ])
+                ])
               ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "is-size-4" }, [
-                _vm._v(
-                  "Are you happy with your selection or do you want to adapt your options?"
-                )
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm.hasOtherStaff
+            ? _c(
+                "div",
+                [
+                  _vm.hasStaff
+                    ? _c("p", { staticClass: "is-size-4" }, [
+                        _vm._v(
+                          "We also have these stylists at a similar price in our other salon"
+                        )
+                      ])
+                    : _c("p", { staticClass: "is-size-5" }, [
+                        _vm._v(
+                          "These are the other stylists from our other salons within your price range..."
+                        )
+                      ]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _vm._l(_vm.salons, function(s) {
+                    return _c(
+                      "div",
+                      [
+                        _c("StaffSelection", {
+                          attrs: { staff: _vm.otherStaff(s.id), s: s }
+                        })
+                      ],
+                      1
+                    )
+                  })
+                ],
+                2
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.hasStaff || _vm.hasOtherStaff
+            ? _c("div", [
+                _c("p", { staticClass: "is-size-5" }, [
+                  _vm._v(
+                    "Click on a stylist to find out more about them and select them."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v(
+                    "Are you happy with your selection or do you want to adapt your options?"
+                  )
+                ])
               ])
-            ])
-          : _c("div", [
-              _c("p", { staticClass: "is-size-4" }, [
-                _vm._v("Please click below to adapt your choice")
-              ])
-            ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          {
-            staticClass: "button is-primary",
-            attrs: { to: { name: "calculator" } }
-          },
-          [_vm._v("Change Choices")]
-        )
-      ],
-      1
-    )
-  ])
+            : _c("div", [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v("Please click below to adapt your choice")
+                ])
+              ]),
+          _vm._v(" "),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "RouterLink",
+            {
+              staticClass: "button is-primary",
+              attrs: { to: { name: "calculator" } }
+            },
+            [_vm._v("Change Choices")]
+          )
+        ],
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -26021,55 +26192,62 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
-    _c(
-      "div",
-      { staticClass: "section column is-8" },
-      [
-        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Stylists")]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-4" }, [
-          _vm._v("Here are the stylists that fit your budget")
-        ]),
-        _vm._v(" "),
-        _c(
-          "ul",
-          _vm._l(_vm.selectedStylists, function(stylist) {
-            return _c("li", [
-              _vm._v("\n        " + _vm._s(stylist.name) + "\n      ")
-            ])
-          }),
-          0
-        ),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-4" }, [
-          _vm._v(
-            "The total estimated cost is: " +
-              _vm._s(_vm._f("toCurrency")(_vm.price))
+  return _c(
+    "div",
+    {
+      staticClass: "price-calc section columns is-centered",
+      attrs: { id: "prices" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "section column is-8" },
+        [
+          _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Stylists")]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-4" }, [
+            _vm._v("Here are the stylists that fit your budget")
+          ]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            _vm._l(_vm.selectedStylists, function(stylist) {
+              return _c("li", [
+                _vm._v("\n        " + _vm._s(stylist.name) + "\n      ")
+              ])
+            }),
+            0
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-4" }, [
+            _vm._v(
+              "The total estimated cost is: " +
+                _vm._s(_vm._f("toCurrency")(_vm.price))
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-4" }, [
+            _vm._v(
+              "Are you happy with your selection or do you want to adapt your options?"
+            )
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "RouterLink",
+            {
+              staticClass: "button is-primary",
+              attrs: { to: { name: "calculator" } }
+            },
+            [_vm._v("Change Choices")]
           )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-4" }, [
-          _vm._v(
-            "Are you happy with your selection or do you want to adapt your options?"
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          {
-            staticClass: "button is-primary",
-            attrs: { to: { name: "calculator" } }
-          },
-          [_vm._v("Change Choices")]
-        )
-      ],
-      1
-    )
-  ])
+        ],
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -26093,172 +26271,187 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "price-calc section columns is-centered" }, [
-    _c(
-      "div",
-      { staticClass: "section column is-8" },
-      [
-        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selection")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns is-mobile" }, [
-          _c("div", { staticClass: "column is-7" }, [
-            _c("p", { staticClass: "is-size-4" }, [
-              _vm._v(
-                "You've chosen the following services with " +
-                  _vm._s(_vm.stylist.first_name) +
-                  " " +
-                  _vm._s(_vm.stylist.last_name)
-              )
+  return _c(
+    "div",
+    {
+      staticClass: "price-calc section columns is-centered",
+      attrs: { id: "prices" }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "section column is-8" },
+        [
+          _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selection")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "columns is-mobile" }, [
+            _c("div", { staticClass: "column is-7" }, [
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v(
+                  "You've chosen the following services with " +
+                    _vm._s(_vm.stylist.first_name) +
+                    " " +
+                    _vm._s(_vm.stylist.last_name)
+                )
+              ]),
+              _vm._v(" "),
+              _c("table", { staticClass: "table" }, [
+                _vm.selectedColour && _vm.selectedColour.price > 0
+                  ? _c("tr", [
+                      _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice))
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.selectedColourAddOn && _vm.selectedColourAddOn.price > 0
+                  ? _c("tr", [
+                      _c("td", [
+                        _vm._v(_vm._s(_vm.selectedColourAddOn.service))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedColourAddOnPrice)
+                          )
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.selectedTreatment && _vm.selectedTreatment.price > 0
+                  ? _c("tr", [
+                      _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedTreatmentPrice)
+                          )
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.selectedFinish && _vm.selectedFinish.price > 0
+                  ? _c("tr", [
+                      _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice))
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.selectedFinishAddOn && _vm.selectedFinishAddOn.price > 0
+                  ? _c("tr", [
+                      _c("td", [
+                        _vm._v(_vm._s(_vm.selectedFinishAddOn.service))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedFinishAddOnPrice)
+                          )
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.selectedMensCut && _vm.selectedMensCut.price > 0
+                  ? _c("tr", [
+                      _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice))
+                        )
+                      ])
+                    ])
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.selectedMensColour && _vm.selectedMensColour.price > 0
+                  ? _c("tr", [
+                      _c("td", [
+                        _vm._v(_vm._s(_vm.selectedMensColour.service))
+                      ]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          _vm._s(
+                            _vm._f("toCurrency")(_vm.selectedMensColourPrice)
+                          )
+                        )
+                      ])
+                    ])
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "is-size-4" }, [
+                _vm._v(
+                  "The total estimated cost is: " +
+                    _vm._s(_vm._f("toCurrency")(_vm.totalCost))
+                )
+              ])
             ]),
             _vm._v(" "),
-            _c("table", { staticClass: "table" }, [
-              _vm.selectedColour && _vm.selectedColour.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice))
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.selectedColourAddOn && _vm.selectedColourAddOn.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedColourAddOn.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(
-                          _vm._f("toCurrency")(_vm.selectedColourAddOnPrice)
-                        )
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.selectedTreatment && _vm.selectedTreatment.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(_vm._f("toCurrency")(_vm.selectedTreatmentPrice))
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.selectedFinish && _vm.selectedFinish.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice))
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.selectedFinishAddOn && _vm.selectedFinishAddOn.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedFinishAddOn.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(
-                          _vm._f("toCurrency")(_vm.selectedFinishAddOnPrice)
-                        )
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.selectedMensCut && _vm.selectedMensCut.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice))
-                      )
-                    ])
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.selectedMensColour && _vm.selectedMensColour.price > 0
-                ? _c("tr", [
-                    _c("td", [_vm._v(_vm._s(_vm.selectedMensColour.service))]),
-                    _vm._v(" "),
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(
-                          _vm._f("toCurrency")(_vm.selectedMensColourPrice)
-                        )
-                      )
-                    ])
-                  ])
-                : _vm._e()
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "is-size-4" }, [
-              _vm._v(
-                "The total estimated cost is: " +
-                  _vm._s(_vm._f("toCurrency")(_vm.totalCost))
-              )
+            _c("div", { staticClass: "column" }, [
+              _c("figure", { staticClass: "image" }, [
+                _c("img", {
+                  attrs: {
+                    src: _vm.stylist.remote_image,
+                    alt: _vm.stylist.first_name + _vm.stylist.last_name
+                  }
+                })
+              ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c("figure", { staticClass: "image" }, [
-              _c("img", {
-                attrs: {
-                  src: _vm.stylist.remote_image,
-                  alt: _vm.stylist.first_name + _vm.stylist.last_name
-                }
-              })
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-7" }, [
-          _vm._v(
-            "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
+          _c("p", { staticClass: "is-size-7" }, [
+            _vm._v(
+              "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "is-size-4" }, [
+            _vm._v(
+              "Are you happy with your selection or do you want to adapt your options?"
+            )
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "RouterLink",
+            {
+              staticClass: "button is-primary",
+              attrs: { to: { name: "finish" } }
+            },
+            [_vm._v("I'm Happy!")]
+          ),
+          _vm._v(" "),
+          _c(
+            "RouterLink",
+            {
+              staticClass: "button is-primary",
+              attrs: { to: { name: "calculator" } }
+            },
+            [_vm._v("Change Choices")]
           )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-4" }, [
-          _vm._v(
-            "Are you happy with your selection or do you want to adapt your options?"
-          )
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _c("br"),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          {
-            staticClass: "button is-primary",
-            attrs: { to: { name: "finish" } }
-          },
-          [_vm._v("I'm Happy!")]
-        ),
-        _vm._v(" "),
-        _c(
-          "RouterLink",
-          {
-            staticClass: "button is-primary",
-            attrs: { to: { name: "calculator" } }
-          },
-          [_vm._v("Change Choices")]
-        )
-      ],
-      1
-    )
-  ])
+        ],
+        1
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -28639,7 +28832,7 @@ var render = function() {
             [
               _c(
                 "b-navbar-item",
-                { attrs: { tag: "router-link", to: { name: "intro" } } },
+                { attrs: { tag: "router-link", to: { name: "prices" } } },
                 [_vm._v("\n                  Prices\n                ")]
               ),
               _vm._v(" "),

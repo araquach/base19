@@ -14,21 +14,19 @@ $light-arctic: #6d808c;
 $dark-arctic: #425559;
 $darkest-arctic: #0d0d0d;
 
-// PriceCalc colours
-$SuperDarkBlue: rgb(8,12,16);
-$DarkestBlue: rgb(29,45,80);
-$DarkBlue: rgb(32,54,97);
-$MidBlue: rgb(41,72,126);
-$LightBlue: rgb(96,119,168);
-$LighterBlue: rgb(132,155,196);
-$LightestBlue: rgb(163,185,223);
+$DarkBlue: rgb(74,63,228);
+$MidBlue: rgb(77,80,255);
+$LightBlue: rgb(80,100,255);
+$LighterBlue: rgb(86,141,255);
+$LightestBlue: rgb(91,174,255);
+$SuperLightBlue: rgb(94,189,255);
 
-$level: $DarkBlue;
-$colour: $DarkestBlue;
-$colour-add-on: $DarkBlue;
-$treatment: $MidBlue;
-$finish: $LightBlue;
-$finish-add-on: $LighterBlue;
+$level:  $MidBlue;
+$colour: $DarkBlue;
+$colour-add-on:  $MidBlue;
+$treatment: $LightBlue;
+$finish: $LighterBlue;
+$finish-add-on: $LightestBlue;
 
 @import "~bulma/sass/utilities/derived-variables";
 

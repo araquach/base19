@@ -1,20 +1,21 @@
+#prices {
+  background: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.90)), url("/dist/img/blog/blog_tall.jpg") #b293ac center top no-repeat;
+  background-size: cover;
+  min-height: 90rem;
+  padding-top: 6rem;
+}
+
 .price-calc {
+  a strong {
+    color: $LightBlue;
 
-  .panel-heading {
-    font-size: 1rem;
-    border-radius: 0;
-  }
-
-  .price-calc:first-of-type {
-    margin-top: 3rem;
+    &:hover {
+      opacity: .7;
+    }
   }
 
   h1, h2, p, strong {
     color: #FFFFFF;
-  }
-
-  h1 {
-    margin-top: 3rem;
   }
 
   p {
@@ -31,6 +32,31 @@
 
   .section {
     padding: 1rem;
+  }
+
+  .panel-heading {
+    font-size: 1rem;
+    border-radius: 0;
+  }
+
+  .panel.is-level {
+    border-bottom: 1px solid $level;
+  }
+
+  .panel.is-colour {
+    border-bottom: 1px solid $colour;
+  }
+
+  .panel.is-colour-add-on {
+    border-bottom: 1px solid $colour-add-on;
+  }
+
+  .panel.is-finish {
+    border-bottom: 1px solid $finish;
+  }
+
+  .price-calc:first-of-type {
+    margin-top: 3rem;
   }
 
   .prices {
@@ -147,7 +173,7 @@
   }
 
   .box {
-    background-color: black;
+    background-color: rgba(0,0,0,.5);
     border: 1px solid white;
   }
 }
