@@ -1206,6 +1206,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_endpoint_TotalsByLevel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../views/endpoint/TotalsByLevel */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByLevel.vue");
 /* harmony import */ var _views_endpoint_TotalsByPrice__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../views/endpoint/TotalsByPrice */ "./node_modules/araquach-price-calc/views/endpoint/TotalsByPrice.vue");
 /* harmony import */ var _views_Finish__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../views/Finish */ "./node_modules/araquach-price-calc/views/Finish.vue");
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../store/store */ "./node_modules/araquach-price-calc/store/store.js");
+
 
 
 
@@ -1228,27 +1230,62 @@ __webpack_require__.r(__webpack_exports__);
     {
         path: '/prices/calculator',
         name: 'calculator',
-        component: _views_Calculator__WEBPACK_IMPORTED_MODULE_1__["default"]
+        component: _views_Calculator__WEBPACK_IMPORTED_MODULE_1__["default"],
+        beforeEnter: (to, from, next) => {
+            if(_store_store__WEBPACK_IMPORTED_MODULE_7__["default"].state.calc.calculator) {
+                next()
+            } else {
+                next({name: 'prices'})
+            }
+        }
     },
     {
         path: '/prices/total-by-price',
         name: 'totals-by-price',
-        component: _views_endpoint_TotalsByPrice__WEBPACK_IMPORTED_MODULE_5__["default"]
+        component: _views_endpoint_TotalsByPrice__WEBPACK_IMPORTED_MODULE_5__["default"],
+        beforeEnter: (to, from, next) => {
+            if(_store_store__WEBPACK_IMPORTED_MODULE_7__["default"].state.calc.calculator) {
+                next()
+            } else {
+                next({name: 'prices'})
+            }
+        }
     },
     {
         path: '/prices/total-by-level',
         name: 'totals-by-level',
-        component: _views_endpoint_TotalsByLevel__WEBPACK_IMPORTED_MODULE_4__["default"]
+        component: _views_endpoint_TotalsByLevel__WEBPACK_IMPORTED_MODULE_4__["default"],
+        beforeEnter: (to, from, next) => {
+            if(_store_store__WEBPACK_IMPORTED_MODULE_7__["default"].state.calc.calculator) {
+                next()
+            } else {
+                next({name: 'prices'})
+            }
+        }
     },
     {
         path: '/prices/total-by-stylist',
         name: 'totals-by-stylist',
-        component: _views_endpoint_TotalsByStylist__WEBPACK_IMPORTED_MODULE_3__["default"]
+        component: _views_endpoint_TotalsByStylist__WEBPACK_IMPORTED_MODULE_3__["default"],
+        beforeEnter: (to, from, next) => {
+            if(_store_store__WEBPACK_IMPORTED_MODULE_7__["default"].state.calc.calculator) {
+                next()
+            } else {
+                next({name: 'prices'})
+            }
+        }
     },
     {
         path: '/prices/finish',
         name: 'finish',
-        component: _views_Finish__WEBPACK_IMPORTED_MODULE_6__["default"]
+        component: _views_Finish__WEBPACK_IMPORTED_MODULE_6__["default"],
+        beforeEnter: (to, from, next) => {
+            if(_store_store__WEBPACK_IMPORTED_MODULE_7__["default"].state.calc.calculator) {
+                next()
+            } else {
+                next({name: 'prices'})
+            }
+        }
     }
 ]);
 
@@ -1570,6 +1607,36 @@ const getters = {
 }
 
 
+
+/***/ }),
+
+/***/ "./node_modules/araquach-price-calc/store/store.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/araquach-price-calc/store/store.js ***!
+  \*********************************************************/
+/*! exports provided: store, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "store", function() { return store; });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/calc */ "./node_modules/araquach-price-calc/store/modules/calc.js");
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"])
+
+const store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
+    modules: {
+        calc: _modules_calc__WEBPACK_IMPORTED_MODULE_2__
+    }
+})
+
+/* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
 
@@ -22868,7 +22935,17 @@ __webpack_require__.r(__webpack_exports__);
   computed: {
     ...Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapState"])({
       salon: state => state.calc.salon
-    })
+    }),
+
+    cardStyle() {
+      if (this.s.id === 1) {
+        return 'has-background-Jakata'
+      } else if(this.s.id === 2) {
+        return 'has-background-PK'
+      } else {
+        return 'has-background-Base'
+      }
+    }
   }
 });
 
@@ -25801,7 +25878,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "button is-colour",
+                  staticClass: "button is-level",
                   on: {
                     click: function($event) {
                       _vm.UPDATE_SELECTOR("StylistSelector")
@@ -25823,7 +25900,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "button is-colour",
+                  staticClass: "button is-level",
                   on: {
                     click: function($event) {
                       _vm.UPDATE_SELECTOR("LevelSelector")
@@ -25902,26 +25979,30 @@ var render = function() {
                       })
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "card-content" }, [
-                      _c("div", { staticClass: "media" }, [
-                        _c("div", { staticClass: "media-content" }, [
-                          _c(
-                            "p",
-                            {
-                              staticClass:
-                                "title is-6 has-text-white has-text-centered"
-                            },
-                            [
-                              _vm._v(
-                                _vm._s(stylist.first_name) +
-                                  " " +
-                                  _vm._s(stylist.last_name)
-                              )
-                            ]
-                          )
+                    _c(
+                      "div",
+                      { staticClass: "card-content", class: _vm.cardStyle },
+                      [
+                        _c("div", { staticClass: "media" }, [
+                          _c("div", { staticClass: "media-content" }, [
+                            _c(
+                              "p",
+                              {
+                                staticClass:
+                                  "title is-6 has-text-white has-text-centered"
+                              },
+                              [
+                                _vm._v(
+                                  _vm._s(stylist.first_name) +
+                                    " " +
+                                    _vm._s(stylist.last_name)
+                                )
+                              ]
+                            )
+                          ])
                         ])
-                      ])
-                    ])
+                      ]
+                    )
                   ])
                 ])
               ]
@@ -57478,8 +57559,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
