@@ -19,6 +19,7 @@ import LucyProfile from './components/team/profiles/LucyProfile'
 import RubyProfile from './components/team/profiles/RubyProfile'
 import SophieProfile from './components/team/profiles/SophieProfile'
 import Bookings from "./components/bookings/Bookings"
+import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 
 Vue.use(Router)
@@ -131,6 +132,11 @@ const router = new Router({
             name: 'bookings',
             component: Bookings
             // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+        },
+        {
+            path: '/reopening',
+            name: 'reopening',
+            component: Reopening
         },
 
         ...calcRoutes,
