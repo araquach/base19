@@ -1,5 +1,5 @@
 module github.com/araquach/base19
 
-go 1.12
+go 1.14
 
-require github.com/araquach/salonserver v0.0.24
+require github.com/araquach/salonserver v0.1.2

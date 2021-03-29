@@ -83,7 +83,10 @@
               </div>
             </div>
           </form>
-          <div v-if="submitStatus === 'OK'">
+          <div v-if="submitStatus === 'OK' && error">
+            <p class="is-size-4 has-text-warning">{{ error }}</p>
+          </div>
+          <div v-if="submitStatus === 'OK' && !error">
             <p class="is-size-4 has-text-primary">Thanks for registering! Your stylist will be in touch just before we reopen. Please only register once. See you soon</p>
           </div>
         </div>
@@ -111,7 +114,8 @@ export default {
       stylist: '',
       time_slot: '',
       salon: 3,
-      submitStatus: null
+      submitStatus: null,
+      error: null
     }
   },
 
@@ -140,6 +144,7 @@ export default {
         })
             .then(response => {
               this.submitStatus = 'OK'
+              this.error = response.data.message
             })
             .catch((e) => {
               console.error(e)

@@ -4318,6 +4318,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -4329,7 +4332,8 @@ __webpack_require__.r(__webpack_exports__);
       stylist: '',
       time_slot: '',
       salon: 3,
-      submitStatus: null
+      submitStatus: null,
+      error: null
     };
   },
   validations: {
@@ -4369,6 +4373,7 @@ __webpack_require__.r(__webpack_exports__);
           salon: this.salon
         }).then(function (response) {
           _this.submitStatus = 'OK';
+          _this.error = response.data.message;
         })["catch"](function (e) {
           console.error(e);
         });
@@ -27413,7 +27418,15 @@ var render = function() {
                 )
               : _vm._e(),
             _vm._v(" "),
-            _vm.submitStatus === "OK"
+            _vm.submitStatus === "OK" && _vm.error
+              ? _c("div", [
+                  _c("p", { staticClass: "is-size-4 has-text-warning" }, [
+                    _vm._v(_vm._s(_vm.error))
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.submitStatus === "OK" && !_vm.error
               ? _c("div", [
                   _c("p", { staticClass: "is-size-4 has-text-primary" }, [
                     _vm._v(
