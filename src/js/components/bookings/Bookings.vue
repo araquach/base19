@@ -47,7 +47,7 @@
                     <option value="Adam">Adam</option>
                     <option value="Jimmy">Jimmy</option>
                     <option value="Lucy">Lucy</option>
-                    <option value="Lauren">Lauren</option>
+                    <option value="Lauren-W">Lauren</option>
                     <option value="Sophie">Sophie</option>
                     <option value="Ruby">Ruby</option>
                     <option value="Beth">Beth</option>
