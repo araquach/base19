@@ -51,7 +51,7 @@
                     <option value="Sophie">Sophie</option>
                     <option value="Ruby">Ruby</option>
                     <option value="Beth">Beth</option>
-                    <option value="Not Sure">Not Sure</option>
+                    <option value="B Not Sure">Not Sure</option>
                   </select>
                 </div>
               </div>
