@@ -8,18 +8,21 @@
             <b-navbar-item tag="router-link" to="/#about" v-scroll-to="'#about'">
                 About
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/#corona" v-scroll-to="'#corona'">
-                Corona
-            </b-navbar-item>
             <b-navbar-item tag="router-link" to="/#team" v-scroll-to="'#team'">
                 Team
             </b-navbar-item>
             <b-navbar-item tag="router-link" to="/#blog" v-scroll-to="'#blog'">
                 Blog
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/#offers" v-scroll-to="'#offers'">
-                Offers
+            <b-navbar-item tag="router-link" to="/blog/back-soon">
+                Reopening
             </b-navbar-item>
+            <b-navbar-item tag="router-link" to="/#corona" v-scroll-to="'#corona'">
+                Corona
+            </b-navbar-item>
+<!--            <b-navbar-item tag="router-link" to="/#offers" v-scroll-to="'#offers'">-->
+<!--              Offers-->
+<!--            </b-navbar-item>-->
             <b-navbar-dropdown label="More">
 <!--                <b-navbar-item tag="router-link" :to="{ name: 'prices' }">-->
 <!--                  Prices-->

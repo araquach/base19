@@ -25,6 +25,8 @@ github.com/araquach/salonserver v0.1.1 h1:CW31zs8jlozWPRVcTdqM91As3jOrPpg1x/QOrT
 github.com/araquach/salonserver v0.1.1/go.mod h1:hHst2MpiOt6J3HgE0+8Pl1I6mpa+x8Hs7PPm4VlNvhY=
 github.com/araquach/salonserver v0.1.2 h1:THVyvd2cKOvKIqY2a+U7M5KMuq5GNjHb4NVZQrbKOYk=
 github.com/araquach/salonserver v0.1.2/go.mod h1:hHst2MpiOt6J3HgE0+8Pl1I6mpa+x8Hs7PPm4VlNvhY=
+github.com/araquach/salonserver v0.1.6 h1:pQMY4JaiK5gwXoT33Y18cpOY0GQfx8QoQuVxSslHveQ=
+github.com/araquach/salonserver v0.1.6/go.mod h1:hHst2MpiOt6J3HgE0+8Pl1I6mpa+x8Hs7PPm4VlNvhY=
 github.com/cockroachdb/apd v1.1.0/go.mod h1:8Sl8LxpKi29FqWXR16WEFZRNSz3SoPzUzeMeY4+DwBQ=
 github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
 github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
