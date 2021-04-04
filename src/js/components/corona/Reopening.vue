@@ -14,6 +14,9 @@
         <p>Please be aware that you'll receive your call from your stylists mobile number as they are not in work. Make sure you don't miss it, and check your voicemail.</p>
         <p class="has-text-weight-bold">The guidelines remain the same as before we closed - at least initially. We'll keep you posted of any changes. You can see them here:
           <a href="https://www.basehairdressing.com/corona">Covid Guidelines</a></p>
+        <p class="has-text-danger">Please be aware our skin test procedure has been updated and the duration between tests has been reduced to 6 months from 12 months. Find out if you need a skin test here: </p>
+        <router-link class="is-size-5" to="/blog/allergy-alert-test">Allergy Alert Test Info ></router-link>
+        <br><br>
         <p class="is-size-4">We can't wait to see you and make your hair look amazing again!<br>Take care and see you soon!</p>
       </div>
     </div>
