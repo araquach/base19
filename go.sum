@@ -27,6 +27,8 @@ github.com/araquach/salonserver v0.1.2 h1:THVyvd2cKOvKIqY2a+U7M5KMuq5GNjHb4NVZQr
 github.com/araquach/salonserver v0.1.2/go.mod h1:hHst2MpiOt6J3HgE0+8Pl1I6mpa+x8Hs7PPm4VlNvhY=
 github.com/araquach/salonserver v0.1.6 h1:pQMY4JaiK5gwXoT33Y18cpOY0GQfx8QoQuVxSslHveQ=
 github.com/araquach/salonserver v0.1.6/go.mod h1:hHst2MpiOt6J3HgE0+8Pl1I6mpa+x8Hs7PPm4VlNvhY=
+github.com/araquach/salonserver v0.1.7 h1:vX4Hx76mNP2waDzNfJ7l7BirdECiuJBeTVP01Bvgdt8=
+github.com/araquach/salonserver v0.1.7/go.mod h1:FKQFsQXJUd07a9Btz+zW1vNUSV4HkjZl4WR9PXuErOY=
 github.com/cockroachdb/apd v1.1.0/go.mod h1:8Sl8LxpKi29FqWXR16WEFZRNSz3SoPzUzeMeY4+DwBQ=
 github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
 github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
@@ -165,6 +167,8 @@ github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXf
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81PSLYec5m4=
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
+github.com/textmagic/textmagic-rest-go v0.0.0-20150929053809-461c1f376968 h1:zYv9bi1pALCK34taYbkki9PHBoYoVLZYWHKB3mIEbEY=
+github.com/textmagic/textmagic-rest-go v0.0.0-20150929053809-461c1f376968/go.mod h1:ZqUrU/sp2+XVAXWTWW3GrAjc51SXVyKUmu+B4FYtjf4=
 github.com/zenazn/goji v0.9.0/go.mod h1:7S9M489iMyHBNxwZnk9/EHS098H4/F6TATF2mIxtB1Q=
 go.uber.org/atomic v1.3.2/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=
 go.uber.org/atomic v1.4.0/go.mod h1:gD2HeocX3+yG+ygLZcrzQJaqmWj9AIm7n08wl/qW/PE=

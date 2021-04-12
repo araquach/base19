@@ -87,7 +87,7 @@
             <p class="is-size-4 has-text-warning">{{ error }}</p>
           </div>
           <div v-if="submitStatus === 'OK' && !error">
-            <p class="is-size-4 has-text-primary">Thanks for registering! Your stylist will be in touch just before we reopen. Please only register once. See you soon</p>
+            <p class="is-size-4 has-text-primary">Thanks for registering! Your stylist will be in touch soon to book you in.</p>
           </div>
         </div>
       </div>
