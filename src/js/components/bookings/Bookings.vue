@@ -4,7 +4,6 @@
       <div class="section column is-6">
         <h1 class="title">Register for your appointment</h1>
         <p class="is-size-5">Our phone lines and online bookings are remaining closed while we deal with our backlog of clients. Our usual systems will be switched back on within the next couple of weeks.</p>
-        <p>Please note: our stylists are all pretty much fully booked until May, with only a few cut & Style and men's hair appointments remaining</p>
         <p>If you want to book an appointment, please register here and we'll contact you as soon as we can.</p>
         <p>If you need to cancel or change your appointment please leave a message on our voicemail or contact us using Facebook Messenger</p>
         <p class="is-size-4"><strong class="has-text-white">Thanks for your patience and we look forward to seeing you soon!</strong></p>
