@@ -14,7 +14,7 @@
             <b-navbar-item tag="router-link" to="/#blog" v-scroll-to="'#blog'">
                 Blog
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/blog/back-soon">
+            <b-navbar-item tag="router-link" to="/blog/base-reopening">
                 Reopening
             </b-navbar-item>
             <b-navbar-item tag="router-link" to="/#corona" v-scroll-to="'#corona'">

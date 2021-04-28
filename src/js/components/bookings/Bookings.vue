@@ -2,10 +2,11 @@
   <section class="section bookings-info hero is-fullheight is-dark">
     <div class="columns">
       <div class="section column is-6">
-        <h1 class="title">Register for Your Appointment</h1>
-        <p class="is-size-5">Our phone lines and online bookings are closed throughout the lockdown. Our usual systems will be switched back on when we re-open.</p>
-        <p>If you want to book an appointment please register here and your stylist will contact you shortly before we re-open to get you booked in.</p>
-        <p class="is-size-4"><strong>See you soon!</strong></p>
+        <h1 class="title">Register for your appointment</h1>
+        <p class="is-size-5">Our phone lines and online bookings are remaining closed while we deal with our backlog of clients. Our usual systems will be switched back on within the next couple of weeks.</p>
+        <p>If you want to book an appointment, please register here and we'll contact you as soon as we can.</p>
+        <p>If you need to cancel or change your appointment please leave a message on our voicemail or contact us using Facebook Messenger</p>
+        <p class="is-size-4"><strong class="has-text-white">Thanks for your patience and we look forward to seeing you soon!</strong></p>
         <div>
           <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
             <div class="field">
@@ -87,7 +88,7 @@
             <p class="is-size-4 has-text-warning">{{ error }}</p>
           </div>
           <div v-if="submitStatus === 'OK' && !error">
-            <p class="is-size-4 has-text-primary">Thanks for registering! Your stylist will be in touch soon to book you in.</p>
+            <p class="is-size-4 has-text-primary">Thanks for registering! We'll be in touch soon to book you in.</p>
           </div>
         </div>
       </div>
