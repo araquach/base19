@@ -4323,6 +4323,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -27760,18 +27761,24 @@ var render = function() {
       _c("div", { staticClass: "columns" }, [
         _c("div", { staticClass: "section column is-6" }, [
           _c("h1", { staticClass: "title" }, [
-            _vm._v("Register for Your Appointment")
+            _vm._v("Register for your appointment")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "is-size-5" }, [
             _vm._v(
-              "Our phone lines and online bookings are closed throughout the lockdown. Our usual systems will be switched back on when we re-open."
+              "Our phone lines and online bookings are remaining closed while we deal with our backlog of clients. Our usual systems will be switched back on within the next couple of weeks."
             )
           ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "If you want to book an appointment please register here and your stylist will contact you shortly before we re-open to get you booked in."
+              "If you want to book an appointment, please register here and we'll contact you as soon as we can."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "If you need to cancel or change your appointment please leave a message on our voicemail or contact us using Facebook Messenger"
             )
           ]),
           _vm._v(" "),
@@ -28151,7 +28158,7 @@ var render = function() {
               ? _c("div", [
                   _c("p", { staticClass: "is-size-4 has-text-primary" }, [
                     _vm._v(
-                      "Thanks for registering! Your stylist will be in touch soon to book you in."
+                      "Thanks for registering! We'll be in touch soon to book you in."
                     )
                   ])
                 ])
@@ -28187,7 +28194,11 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("p", { staticClass: "is-size-4" }, [
-      _c("strong", [_vm._v("See you soon!")])
+      _c("strong", { staticClass: "has-text-white" }, [
+        _vm._v(
+          "Thanks for your patience and we look forward to seeing you soon!"
+        )
+      ])
     ])
   }
 ]
@@ -29752,7 +29763,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "b-navbar-item",
-            { attrs: { tag: "router-link", to: "/blog/back-soon" } },
+            { attrs: { tag: "router-link", to: "/blog/base-reopening" } },
             [_vm._v("\n                Reopening\n            ")]
           ),
           _vm._v(" "),
@@ -58899,8 +58910,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/adamcarter/GoSites/base19/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/adam-home/GoSites/base19/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/adam-home/GoSites/base19/src/app.scss */"./src/app.scss");
 
 
 /***/ })
