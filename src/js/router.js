@@ -21,6 +21,7 @@ import SophieProfile from './components/team/profiles/SophieProfile'
 import Bookings from "./components/bookings/Bookings"
 import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
+import Quote from "./components/quote/Quote"
 
 Vue.use(Router)
 
@@ -140,6 +141,12 @@ const router = new Router({
         },
 
         ...calcRoutes,
+
+        {
+            path: '/quote/:id',
+            name: 'quote',
+            component: Quote
+        },
 
         {
             path: '/:notFound(.*)', redirect: '/'
