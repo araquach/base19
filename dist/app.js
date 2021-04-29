@@ -3288,15 +3288,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      quote: {}
+    };
+  },
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('/api/get-quote').then(function (r) {
+    axios.get('/api/get-quote-details/6').then(function (r) {
       return r.data;
     }).then(function (r) {
       return _this.quote = r.quote;
@@ -32640,178 +32641,47 @@ var render = function() {
       attrs: { id: "prices" }
     },
     [
-      _c(
-        "div",
-        { staticClass: "section column is-8" },
-        [
-          _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selection")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "columns is-mobile" }, [
-            _c("div", { staticClass: "column is-7" }, [
-              _c("p", { staticClass: "is-size-4" }, [
-                _vm._v(
-                  "You've chosen the following services with " +
-                    _vm._s(_vm.stylist.first_name) +
-                    " " +
-                    _vm._s(_vm.stylist.last_name)
-                )
-              ]),
-              _vm._v(" "),
-              _c("table", { staticClass: "table" }, [
-                _vm.selectedColour && _vm.selectedColour.price > 0
-                  ? _c("tr", [
-                      _c("td", [_vm._v(_vm._s(_vm.selectedColour.service))]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(_vm._f("toCurrency")(_vm.selectedColourPrice))
-                        )
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.selectedColourAddOn && _vm.selectedColourAddOn.price > 0
-                  ? _c("tr", [
-                      _c("td", [
-                        _vm._v(_vm._s(_vm.selectedColourAddOn.service))
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(
-                            _vm._f("toCurrency")(_vm.selectedColourAddOnPrice)
-                          )
-                        )
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.selectedTreatment && _vm.selectedTreatment.price > 0
-                  ? _c("tr", [
-                      _c("td", [_vm._v(_vm._s(_vm.selectedTreatment.service))]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(
-                            _vm._f("toCurrency")(_vm.selectedTreatmentPrice)
-                          )
-                        )
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.selectedFinish && _vm.selectedFinish.price > 0
-                  ? _c("tr", [
-                      _c("td", [_vm._v(_vm._s(_vm.selectedFinish.service))]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(_vm._f("toCurrency")(_vm.selectedFinishPrice))
-                        )
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.selectedFinishAddOn && _vm.selectedFinishAddOn.price > 0
-                  ? _c("tr", [
-                      _c("td", [
-                        _vm._v(_vm._s(_vm.selectedFinishAddOn.service))
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(
-                            _vm._f("toCurrency")(_vm.selectedFinishAddOnPrice)
-                          )
-                        )
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.selectedMensCut && _vm.selectedMensCut.price > 0
-                  ? _c("tr", [
-                      _c("td", [_vm._v(_vm._s(_vm.selectedMensCut.service))]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(_vm._f("toCurrency")(_vm.selectedMensCutPrice))
-                        )
-                      ])
-                    ])
-                  : _vm._e(),
-                _vm._v(" "),
-                _vm.selectedMensColour && _vm.selectedMensColour.price > 0
-                  ? _c("tr", [
-                      _c("td", [
-                        _vm._v(_vm._s(_vm.selectedMensColour.service))
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          _vm._s(
-                            _vm._f("toCurrency")(_vm.selectedMensColourPrice)
-                          )
-                        )
-                      ])
-                    ])
-                  : _vm._e()
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "is-size-4" }, [
-                _vm._v(
-                  "The total estimated cost is: " +
-                    _vm._s(_vm._f("toCurrency")(_vm.totalCost))
-                )
-              ])
+      _c("div", { staticClass: "section column is-8" }, [
+        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selection")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "columns is-mobile" }, [
+          _c("div", { staticClass: "column is-7" }, [
+            _c("p", { staticClass: "is-size-4" }, [
+              _vm._v(
+                "You've chosen the following services with " +
+                  _vm._s(_vm.quote.stylist.first_name) +
+                  " " +
+                  _vm._s(_vm.quote.stylist.last_name)
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c("figure", { staticClass: "image" }, [
-                _c("img", {
-                  attrs: {
-                    src: _vm.stylist.remote_image,
-                    alt: _vm.stylist.first_name + _vm.stylist.last_name
-                  }
-                })
-              ])
+            _c("p", { staticClass: "is-size-4" }, [
+              _vm._v(
+                "The total estimated cost is: " +
+                  _vm._s(_vm._f("toCurrency")(_vm.quote.price))
+              )
             ])
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "is-size-7" }, [
-            _vm._v(
-              "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "is-size-4" }, [
-            _vm._v(
-              "Are you happy with your selection or do you want to adapt your options?"
-            )
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _c("br"),
-          _vm._v(" "),
-          _c(
-            "RouterLink",
-            {
-              staticClass: "button is-primary",
-              attrs: { to: { name: "finish" } }
-            },
-            [_vm._v("I'm Happy!")]
-          ),
-          _vm._v(" "),
-          _c(
-            "RouterLink",
-            {
-              staticClass: "button is-primary",
-              attrs: { to: { name: "calculator" } }
-            },
-            [_vm._v("Change Choices")]
+          _c("div", { staticClass: "column" }, [
+            _c("figure", { staticClass: "image" }, [
+              _c("img", {
+                attrs: {
+                  src: _vm.quote.stylist.remote_image,
+                  alt:
+                    _vm.quote.stylist.first_name + _vm.quote.stylist.last_name
+                }
+              })
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-7" }, [
+          _vm._v(
+            "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
           )
-        ],
-        1
-      )
+        ])
+      ])
     ]
   )
 }
