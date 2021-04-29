@@ -22274,29 +22274,28 @@ __webpack_require__.r(__webpack_exports__);
   methods:{
     quote() {
       const services = []
-      if (this.selectedColour.id) {
+      if (this.selectedColour.id && this.selectedColourPrice > 0) {
         services.push({"service": `${this.selectedColour.service}`, "price": this.selectedColourPrice})
       }
-      if (this.selectedColourAddOn.id) {
+      if (this.selectedColourAddOn.id && this.selectedColourAddOnPrice > 0) {
         services.push({"service": `${this.selectedColourAddOn.service}`, "price": this.selectedColourAddOnPrice})
       }
-      if (this.selectedTreatment.id) {
+      if (this.selectedTreatment.id && this.selectedTreatmentPrice > 0) {
         services.push({"service": `${this.selectedTreatment.service}`, "price": this.selectedTreatmentPrice})
       }
-      if (this.selectedFinish.id) {
+      if (this.selectedFinish.id && this.selectedFinishPrice > 0) {
         services.push({"service": `${this.selectedFinish.service}`, "price": this.selectedFinishPrice})
       }
-      if (this.selectedFinishAddOn.id) {
+      if (this.selectedFinishAddOn.id && this.selectedFinishAddOnPrice > 0) {
         services.push({"service": `${this.selectedFinishAddOn.service}`, "price": this.selectedFinishAddOnPrice})
       }
-      if (this.selectedMensColour.id) {
+      if (this.selectedMensColour.id && this.selectedMensColourPrice > 0) {
         services.push({"service": `${this.selectedMensColour.service}`, "price": this.selectedMensColourPrice})
       }
-      if (this.selectedMensCut.id) {
+      if (this.selectedMensCut.id && this.selectedMensCutPrice > 0) {
         services.push({"service": `${this.selectedMensCut.service}`, "price": this.selectedMensCutPrice})
       }
-
-      return {services, "total": this.totalCost, "stylist": this.stylist.first_name + " " + this.stylist.last_name, "salon": this.salon.name}
+      return {services, "total": this.totalCost, "stylist": {"name": this.stylist.first_name + " " + this.stylist.last_name, "image": this.stylist.remote_image}, "salon": this.salon}
     },
 
     submit() {
@@ -22306,6 +22305,7 @@ __webpack_require__.r(__webpack_exports__);
         this.submitStatus = 'ERROR'
       } else {
         axios.post('api/send-quote-details', {
+          salon_id: this.salon.id,
           name: this.name,
           mobile: this.mobile,
           email: this.email,
@@ -28217,7 +28217,7 @@ var render = function() {
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
-      _vm.submitStatus != "OK"
+      _vm.submitStatus !== "OK"
         ? _c(
             "form",
             {
