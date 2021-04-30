@@ -18819,7 +18819,9 @@ p {
 }
 
 #prices {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/dist/img/bgrounds/bookings_2.jpg") center top no-repeat;
   padding-top: 5rem;
+  min-height: 60rem;
 }
 
 /* Review Feed */
