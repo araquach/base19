@@ -2321,7 +2321,7 @@ __webpack_require__.r(__webpack_exports__);
       id: 3,
       name: 'Base Hairdressing',
       logo: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/base.png',
-      image: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/small/base.png'
+      image: '/dist/img/logos/base.png'
     });
     this.$store.dispatch('loadStylists');
     this.$store.dispatch('loadServices');
@@ -3266,28 +3266,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -3297,10 +3275,10 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('/api/get-quote-details/6').then(function (r) {
-      return r.data;
+    axios.get("/api/get-quote-details/".concat(this.$route.params.id)).then(function (r) {
+      return r.data.quote;
     }).then(function (r) {
-      return _this.quote = r.quote;
+      return _this.quote = r;
     });
   }
 });
@@ -32641,47 +32619,72 @@ var render = function() {
       attrs: { id: "prices" }
     },
     [
-      _c("div", { staticClass: "section column is-8" }, [
-        _c("h1", { staticClass: "title is-2" }, [_vm._v("Your Selection")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "columns is-mobile" }, [
-          _c("div", { staticClass: "column is-7" }, [
-            _c("p", { staticClass: "is-size-4" }, [
-              _vm._v(
-                "You've chosen the following services with " +
-                  _vm._s(_vm.quote.stylist.first_name) +
-                  " " +
-                  _vm._s(_vm.quote.stylist.last_name)
-              )
+      _vm.quote.salon
+        ? _c("div", { staticClass: "section column is-8" }, [
+            _c("img", {
+              attrs: {
+                src: _vm.quote.salon.image,
+                alt: _vm.quote.salon.name,
+                width: "200"
+              }
+            }),
+            _vm._v(" "),
+            _c("br"),
+            _c("br"),
+            _vm._v(" "),
+            _c("h1", { staticClass: "title is-4" }, [
+              _vm._v("Your Estimated Quote")
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "is-size-4" }, [
+            _c("div", { staticClass: "columns is-mobile" }, [
+              _c("div", { staticClass: "column is-7" }, [
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v("Here are the services you have chosen with "),
+                  _c("strong", [_vm._v(_vm._s(_vm.quote.stylist.name))])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "table",
+                  { staticClass: "table" },
+                  _vm._l(_vm.quote.services, function(item) {
+                    return _c("tr", [
+                      _c("td", [_vm._v(_vm._s(item.service))]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(_vm._s(_vm._f("toCurrency")(item.price)))
+                      ])
+                    ])
+                  }),
+                  0
+                ),
+                _vm._v(" "),
+                _c("p", { staticClass: "is-size-4" }, [
+                  _vm._v(
+                    "The total estimated cost of your services: " +
+                      _vm._s(_vm._f("toCurrency")(_vm.quote.total))
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c("figure", { staticClass: "image" }, [
+                  _c("img", {
+                    attrs: {
+                      src: _vm.quote.stylist.image,
+                      alt: _vm.quote.stylist.name
+                    }
+                  })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "is-size-7" }, [
               _vm._v(
-                "The total estimated cost is: " +
-                  _vm._s(_vm._f("toCurrency")(_vm.quote.price))
+                "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
               )
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c("figure", { staticClass: "image" }, [
-              _c("img", {
-                attrs: {
-                  src: _vm.quote.stylist.remote_image,
-                  alt:
-                    _vm.quote.stylist.first_name + _vm.quote.stylist.last_name
-                }
-              })
-            ])
           ])
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "is-size-7" }, [
-          _vm._v(
-            "Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service"
-          )
-        ])
-      ])
+        : _vm._e()
     ]
   )
 }

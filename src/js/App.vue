@@ -18,7 +18,7 @@ export default {
         id: 3,
         name: 'Base Hairdressing',
         logo: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/base.png',
-        image: 'https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/logos/small/base.png'
+        image: '/dist/img/logos/base.png'
       })
       this.$store.dispatch('loadStylists')
       this.$store.dispatch('loadServices')
