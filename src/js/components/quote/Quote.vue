@@ -38,7 +38,7 @@ export default {
 
   mounted() {
     axios
-        .get(`/api/get-quote-details/${this.$route.params.id}`)
+        .get(`/api/get-quote-details/${this.$route.params.link}`)
         .then(r => r.data.quote)
         .then(r => this.quote = r)
   }

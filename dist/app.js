@@ -3275,7 +3275,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    axios.get("/api/get-quote-details/".concat(this.$route.params.id)).then(function (r) {
+    axios.get("/api/get-quote-details/".concat(this.$route.params.link)).then(function (r) {
       return r.data.quote;
     }).then(function (r) {
       return _this.quote = r;
@@ -4501,9 +4501,10 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_23__.default({
     name: 'reopening',
     component: _components_corona_Reopening__WEBPACK_IMPORTED_MODULE_19__.default
   }].concat(_toConsumableArray(araquach_price_calc_router_calcRoutes__WEBPACK_IMPORTED_MODULE_20__.default), [{
-    path: '/quote/:id',
+    path: '/quote/:link',
     name: 'quote',
-    component: _components_quote_Quote__WEBPACK_IMPORTED_MODULE_21__.default
+    component: _components_quote_Quote__WEBPACK_IMPORTED_MODULE_21__.default,
+    props: true
   }, {
     path: '/:notFound(.*)',
     redirect: '/'
@@ -22200,6 +22201,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -22277,14 +22280,19 @@ __webpack_require__.r(__webpack_exports__);
       return {services, "total": this.totalCost, "stylist": {"name": this.stylist.first_name + " " + this.stylist.last_name, "image": this.stylist.remote_image}, "salon": this.salon}
     },
 
+    createRandomLink() {
+      return (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
+    },
+
     submit() {
       console.log('submit!')
       this.$v.$touch()
       if (this.$v.$invalid) {
         this.submitStatus = 'ERROR'
       } else {
-        axios.post('api/send-quote-details', {
+        axios.post('api/save-quote-details', {
           salon_id: this.salon.id,
+          link: this.createRandomLink(),
           name: this.name,
           mobile: this.mobile,
           email: this.email,
@@ -28180,10 +28188,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "price-calc section column is-8", attrs: { id: "prices" } },
-    [
+  return _c("div", { attrs: { id: "prices" } }, [
+    _c("div", { staticClass: "price-calc section column is-8" }, [
       _c("h1", { staticClass: "is-size-4" }, [
         _vm._v("We'll save you're quote and send it to you!")
       ]),
@@ -28246,7 +28252,7 @@ var render = function() {
                 _vm._v(" "),
                 _vm.submitStatus === "ERROR" && !_vm.$v.name.required
                   ? _c("div", { staticClass: "help is-danger" }, [
-                      _vm._v("\n        Your name is required\n      ")
+                      _vm._v("\n          Your name is required\n        ")
                     ])
                   : _vm._e()
               ]),
@@ -28291,7 +28297,7 @@ var render = function() {
                   _vm.submitStatus === "ERROR" && !_vm.$v.mobile.required
                     ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
-                          "\n          Your mobile number is required\n        "
+                          "\n            Your mobile number is required\n          "
                         )
                       ])
                     : _vm._e(),
@@ -28299,7 +28305,7 @@ var render = function() {
                   _vm.submitStatus === "ERROR" && !_vm.$v.email.numeric
                     ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
-                          "\n          A valid mobile number is required\n        "
+                          "\n            A valid mobile number is required\n          "
                         )
                       ])
                     : _vm._e()
@@ -28346,7 +28352,7 @@ var render = function() {
                   _vm.submitStatus === "ERROR" && !_vm.$v.email.required
                     ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
-                          "\n          Email Address is required\n        "
+                          "\n            Email Address is required\n          "
                         )
                       ])
                     : _vm._e(),
@@ -28354,7 +28360,7 @@ var render = function() {
                   _vm.submitStatus === "ERROR" && !_vm.$v.email.email
                     ? _c("div", { staticClass: "help is-danger" }, [
                         _vm._v(
-                          "\n          Valid Email Address is required\n        "
+                          "\n            Valid Email Address is required\n          "
                         )
                       ])
                     : _vm._e()
@@ -28403,8 +28409,8 @@ var render = function() {
             ])
           ])
         : _vm._e()
-    ]
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

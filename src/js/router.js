@@ -143,9 +143,10 @@ const router = new Router({
         ...calcRoutes,
 
         {
-            path: '/quote/:id',
+            path: '/quote/:link',
             name: 'quote',
-            component: Quote
+            component: Quote,
+            props: true
         },
 
         {

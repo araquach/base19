@@ -18461,6 +18461,9 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
 .price-calc .section {
   padding: 1rem;
 }
+.price-calc .panel {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .price-calc .panel-heading {
   font-size: 1rem;
   border-radius: 0;
@@ -18547,19 +18550,19 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
   }
 }
 .price-calc .cutting {
-  background: url("https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/menu_pics/cutting.png") center center no-repeat;
+  background: url("/dist/img/prices/cut.png") center center no-repeat;
   background-size: cover;
 }
 .price-calc .colour {
-  background: url("https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/menu_pics/colour.png") center center no-repeat;
+  background: url("/dist/img/prices/colour.png") center center no-repeat;
   background-size: cover;
 }
 .price-calc .extensions {
-  background: url("https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/menu_pics/extensions.png") center center no-repeat;
+  background: url("/dist/img/prices/extensions.png") center center no-repeat;
   background-size: cover;
 }
 .price-calc .men {
-  background: url("https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/menu_pics/men.png") center center no-repeat;
+  background: url("/dist/img/prices/mens.png") center center no-repeat;
   background-size: cover;
 }
 .price-calc .disabled {
@@ -18568,10 +18571,12 @@ MIT (https://github.com/Wikiki/bulma-steps/blob/master/LICENSE)
 .price-calc .staff-selection {
   margin-bottom: 2rem;
 }
+.price-calc .table {
+  background: none;
+}
 .price-calc .table td {
-  color: #FFF;
-  background-color: #0d0d0d;
   border: 1px solid #FFF;
+  color: #FFF;
 }
 .price-calc .box {
   background-color: black;
