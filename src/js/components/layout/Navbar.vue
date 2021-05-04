@@ -14,12 +14,9 @@
             <b-navbar-item tag="router-link" to="/#blog" v-scroll-to="'#blog'">
                 Blog
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/blog/base-reopening">
-                Reopening
-            </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/#corona" v-scroll-to="'#corona'">
-                Corona
-            </b-navbar-item>
+<!--            <b-navbar-item tag="router-link" to="/#corona" v-scroll-to="'#corona'">-->
+<!--                Corona-->
+<!--            </b-navbar-item>-->
 <!--            <b-navbar-item tag="router-link" to="/#offers" v-scroll-to="'#offers'">-->
 <!--              Offers-->
 <!--            </b-navbar-item>-->
@@ -39,12 +36,12 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-<!--                  <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">-->
-<!--                      <strong>Book Now</strong>-->
-<!--                  </a>-->
-                  <b-navbar-item tag="router-link" class="button is-primary" :to="{ name: 'bookings' }">
-                    Book Now
-                  </b-navbar-item>
+                  <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary">
+                      <strong>Book Now</strong>
+                  </a>
+<!--                  <b-navbar-item tag="router-link" class="button is-primary" :to="{ name: 'bookings' }">-->
+<!--                    Book Now-->
+<!--                  </b-navbar-item>-->
                   <b-navbar-item tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
                       Contact Us
                   </b-navbar-item>
