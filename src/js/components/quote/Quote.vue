@@ -1,7 +1,7 @@
 <template>
   <div id="prices" class="price-calc section columns is-centered">
     <div v-if="info.quote" class="section column is-8">
-      <img :src="info.quote.salon.image" :alt="info.quote.salon.name" width="200">
+      <img src="dist/img/logos/base.png" alt="Base Hairdressing" width="200">
       <br><br>
       <h1 class="title is-3">Estimated Quote for {{ info.name }}</h1>
       <div class="columns is-mobile">
