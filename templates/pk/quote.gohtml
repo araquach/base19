@@ -131,7 +131,7 @@ img.g-img + div {
 	background: #000000;
 }
 .bg_dark{
-	background: rgba(22, 21, 26, 0.8);
+	background: rgba(32, 19, 11, 0.9);
 }
 .email-section{
 	padding:2.5em;
@@ -351,7 +351,7 @@ ul.social li{
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td style="text-align: center;">
-			            <img src="https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/quote_email/base_logo-01.png" width="250" alt="Base Hairdressing">
+			            <img src="https://9dd4398ac4d52ba12cab-f1aee8fa44b57276f7c290953cbe1cf5.ssl.cf5.rackcdn.com/quote_email/pk-01.png" width="300" alt="Paul Kemp Hairdressing">
 			          </td>
           		</tr>
           	</table>
@@ -378,42 +378,33 @@ ul.social li{
 		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 		            		<tr>
                       <td valign="middle" width="50%">
-                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                          <tr>
-                            <td class="text-services" style="text-align: left; padding: 20px 30px;">
-                            	<div class="heading-section">
-                                    <h2 style="font-size: 22px;">Your Services</h2>
-                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                        {{range $value := .Services}}
-                                        <tr style="text-align: left;">
-                                            <td>
-                                                {{$value.Service}}
-                                            </td>
-                                            <td>
-                                                {{printf "£%.2f" $value.Price}}
-                                            </td>
-                                        </tr>
-                                        {{end}}
-                                        <tr>
-                                            <td>
-                                                <strong>Total:</strong>
-                                            </td>
-                                            <td>
-                                                <strong>{{printf "£%.2f" .Total}}</strong>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <p>*estimated prices</p>
-                                    </div>
-                            </td>
-                          </tr>
-                        </table>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              {{range $value := .Services}}
+                              <tr style="text-align: left;">
+                                  <td>
+                                      {{$value.Service}}
+                                  </td>
+                                  <td>
+                                      {{printf "£%.2f" $value.Price}}
+                                  </td>
+                              </tr>
+                              {{end}}
+                              <tr>
+                                  <td>
+                                      <strong>Total:</strong>
+                                  </td>
+                                  <td>
+                                      <strong>{{printf "£%.2f" .Total}}</strong>
+                                  </td>
+                              </tr>
+                          </table>
+                          <p>*estimated prices</p>
                       </td>
                       <td valign="middle" width="50%">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                           <tr>
                             <td>
-                              <img src="{{.Stylist.Image}}" alt="{{.Stylist.Name}}" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                <img src="{{.Stylist.Image}}" alt="{{.Stylist.Name}}" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
                             </td>
                           </tr>
                         </table>
@@ -425,25 +416,25 @@ ul.social li{
 		        </table>
 		      </td>
 		    </tr><!-- end:tr -->
-        {{ if not .Regular }}
-        <tr>
-          <td valign="middle" class="hero hero-2 bg_white" style="padding: 2em 0 4em 0; ">
-            <table>
-            	<tr>
-            		<td style="border: 2px solid #777; padding: 10px;">
-            			<div class="text" style="padding: 0 2.5em; text-align: center;">
-            				<h2>Special Offer</h2>
-                    		As it's your first time to us we're offering you<br>
-                    		<span style="font-size: 40px; color: rgb(224, 105, 8);">20% off</span><br>
-                    		<span style="font-size: 25px; color: rgb(224, 105, 8);">your first visit</span><br>
-							Bringing the price to just {{printf "£%.2f" .Discount}}<br>
-                    		<em>valid until {{ .Expires }}</em>
-            			</div>
-            		</td>
-            	</tr>
-            </table>
-          </td>
-	      </tr><!-- end tr -->
+          {{ if not .Regular }}
+          <tr>
+              <td valign="middle" class="hero hero-2 bg_white" style="padding: 2em 0 4em 0; ">
+                  <table>
+                      <tr>
+                          <td style="border: 2px solid #777; padding: 10px;">
+                              <div class="text" style="padding: 0 2.5em; text-align: center;">
+                                  <h2>Special Offer</h2>
+                                  As it's your first time to us we're offering you<br>
+                                  <span style="font-size: 40px; color: rgb(224, 105, 8);">20% off</span><br>
+                                  <span style="font-size: 25px; color: rgb(224, 105, 8);">your first visit</span><br>
+                                  Bringing the price to just {{printf "£%.2f" .Discount}}<br>
+                                  <em>valid until {{ .Expires }}</em>
+                              </div>
+                          </td>
+                      </tr>
+                  </table>
+              </td>
+          </tr><!-- end tr -->
           {{ end }}
         <tr>
           <td valign="middle" class="hero hero-2 bg_white" style="padding: 2em 0 4em 0;">
@@ -469,11 +460,11 @@ ul.social li{
             		<td>
             			<div class="text" style="padding: 0 2.5em; text-align: center;">
             				<p style="color: #fff;">
-                      Base Hairdressing<br>
-                      90/92 Bridge Street<br>
+                      Paul Kemp Hairdressing<br>
+                      83 Sankey Street<br>
                       Warrington<br>
-                      WA1 2RF<br>
-                      <strong>01925 444449</strong>
+                      WA1 1SL<br>
+                      <strong>01925 444488</strong>
                     <p>
             			</div>
             		</td>
