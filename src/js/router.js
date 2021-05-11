@@ -28,30 +28,20 @@ Vue.use(Router)
 const router = new Router({
     mode: 'history',
     scrollBehavior (to, from, savedPosition) {
-        if (to.matched.some(m => m.meta.disableScroll)) return;
-
-        const position = {
-            x: 0,
-            y: 0
-        };
-
-        if (savedPosition) {
-            position.x = savedPosition.x;
-            position.y = savedPosition.y;
+        if (to.hash) {
+            return {
+                selector: to.hash,
+                behavior: 'smooth',
+            }
+        } else {
+            return { x: 0, y: 0 }
         }
-
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(position)
-            }, 200)
-        })
     },
     routes: [
         {
             path: '',
             name: 'main',
-            component: Main,
-            meta: { disableScroll: true }
+            component: Main
         },
         {
             path: '/info',
