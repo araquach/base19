@@ -28,7 +28,12 @@ Vue.use(Router)
 const router = new Router({
     mode: 'history',
     scrollBehavior (to, from, savedPosition) {
-        return { x: 0, y: 0 };
+        if (to.hash) {
+            return {
+                selector: to.hash,
+                behavior: 'smooth',
+            }
+        }
     },
     routes: [
         {
