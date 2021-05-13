@@ -29,6 +29,7 @@
         <p class="is-size-2 is-marginless has-text-warning">20% off</p>
         <p class="is-size-5 has-text-warning">your first visit!</p>
         <p class="is-size-4">Bringing the cost of your services to just {{ info.quote.total * .8 | toCurrency}}</p>
+        <p class="is-size-3">Offer Code: QG20</p>
         <p>Offer Expires: {{ expireDate }}</p>
       </div>
       <p>Book in far a FREE consultation with {{ info.quote.stylist.name }} and show her this message.</p>
