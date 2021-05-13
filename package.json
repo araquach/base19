@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/araquach/govue#readme",
   "devDependencies": {
-    "araquach-price-calc": "^1.1.37",
+    "araquach-price-calc": "^1.2.2",
     "axios": "^0.21.1",
     "buefy": "^0.8.20",
     "bulma": "^0.8.2",

@@ -1,0 +1,13 @@
+Here's your personalised quote with {{.Stylist.Name}}
+Your services:
+{{range $value := .Services}}
+{{$value.Service}}: {{$value.Price}}
+{{end}}
+Total: {{printf "£%.2f" .Total}}
+*estimated prices
+{{ if not .Regular }}
+Special Offer
+As it's your first time to us we're offering you 20% off your first visit - bringing the price to just {{printf "£%.2f" .Discount}}
+Offer Code: QG20
+valid until {{ .Expires }}
+{{end}}
