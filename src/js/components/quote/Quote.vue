@@ -34,7 +34,6 @@
       </div>
       <p>Book in far a FREE consultation with {{ info.quote.stylist.name }} and show her this message.</p>
       <p class="is-size-7">Please note: a full consultation is required to determine the exact price - a skin test is required 48hrs before any colour service</p>
-
     </div>
   </div>
 </template>
