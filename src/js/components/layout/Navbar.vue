@@ -1,18 +1,21 @@
 <template>
     <b-navbar class="is-fixed-top is-spaced">
         <template slot="start">
-            <b-navbar-item tag="router-link" to="/#home" v-scroll-to="'#home'">
+            <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#home' }" v-scroll-to="'#home'">
                 Home
             </b-navbar-item>
             <a href="" ></a>
-            <b-navbar-item tag="router-link" to="/#about" v-scroll-to="'#about'">
+            <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#about' }" v-scroll-to="'#about'">
                 About
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/#team" v-scroll-to="'#team'">
+            <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#team' }" v-scroll-to="'#team'">
                 Team
             </b-navbar-item>
-            <b-navbar-item tag="router-link" to="/#blog" v-scroll-to="'#blog'">
+            <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#blog' }" v-scroll-to="'#blog'">
                 Blog
+            </b-navbar-item>
+            <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#price' }" v-scroll-to="'#price'">
+              Prices
             </b-navbar-item>
 <!--            <b-navbar-item tag="router-link" to="/#corona" v-scroll-to="'#corona'">-->
 <!--                Corona-->
@@ -24,11 +27,11 @@
 <!--                <b-navbar-item tag="router-link" :to="{ name: 'prices' }">-->
 <!--                  Prices-->
 <!--                </b-navbar-item>-->
-                <b-navbar-item tag="router-link" to="/#joinus" v-scroll-to="'#joinus'">
+                <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#joinus' }" v-scroll-to="'#joinus'">
                     Join Us
                 </b-navbar-item>
                 <hr class="navbar-divider">
-                <b-navbar-item tag="router-link" to="/#models" v-scroll-to="'#models'">
+                <b-navbar-item tag="router-link" :to="{ name: 'main', hash: '#models' }" v-scroll-to="'#models'">
                     Models
                 </b-navbar-item>
             </b-navbar-dropdown>
@@ -42,7 +45,7 @@
 <!--                  <b-navbar-item tag="router-link" class="button is-primary" :to="{ name: 'bookings' }">-->
 <!--                    Book Now-->
 <!--                  </b-navbar-item>-->
-                  <b-navbar-item tag="router-link" class="button is-light" to="/#contact" v-scroll-to="'#contact'">
+                  <b-navbar-item tag="router-link" class="button is-light" :to="{ name: 'contact', hash: '#contact' }" v-scroll-to="'#contact'">
                       Contact Us
                   </b-navbar-item>
                 </div>

@@ -223,6 +223,11 @@ section.section {
   background-size: cover;
 }
 
+.prices {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/prices.jpg") center top no-repeat;
+  background-size: cover;
+}
+
 #profile {
   .section.columns {
     padding-top: 0;
