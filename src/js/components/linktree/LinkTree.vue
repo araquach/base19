@@ -48,18 +48,12 @@
   </div>
 </template>
 <script>
+import {mapState} from 'vuex'
 export default {
-  data() {
-    return {
-      newsItems: []
-    }
-  },
-
-  mounted() {
-    axios.get("/api/news-items").then(response => this.newsItems = response.data.slice(0, 3))
-        .catch(error => {
-          console.log(error)
-        })
+  computed: {
+    ...mapState({
+      newsItems: state => state.base.newsItems
+    }),
   }
 }
 </script>

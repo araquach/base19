@@ -23,6 +23,7 @@ export default {
     },
 
     created() {
+      this.$store.dispatch('loadNewsItems')
       this.$store.dispatch('loadSalons')
       this.$store.commit('UPDATE_SALON', {
         id: 3,
