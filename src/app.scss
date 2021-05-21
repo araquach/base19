@@ -313,6 +313,22 @@ section.section {
   }
 }
 
+#link-tree {
+  background: rgb(21, 21, 26);
+  background: linear-gradient(142deg, rgba(15, 14, 19, 0.8) 0%, rgba(33, 33, 50, 0.8) 35%, rgba(40, 42, 47, 0.8) 100%), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
+  background-size: cover;
+  p {
+    margin-bottom: 4rem;
+  }
+  .box {
+    border-radius: 40px;
+    color: #01012d;
+  }
+  .social {
+    margin-top: 5rem;
+  }
+}
+
 /* transition styling */
 
 .fade-enter, .fade-leave-active {

@@ -1,6 +1,8 @@
 <template>
     <div>
+      <div v-if="!isLinkTree">
         <Navbar/>
+      </div>
         <RouterView/>
     </div>
 </template>
@@ -11,6 +13,14 @@ import Main from './components/layout/Main'
 
 export default {
     components: {Navbar, Main},
+
+    computed: {
+      isLinkTree() {
+        if (this.$route.name === 'link-tree') {
+          return true
+        }
+      }
+    },
 
     created() {
       this.$store.dispatch('loadSalons')

@@ -1,9 +1,9 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue"
+import Router from "vue-router"
 import Main from "./components/layout/Main"
 import HomeInfo from "./components/home/HomeInfo"
 import AboutInfo from "./components/about/AboutInfo"
-import TeamInfo from './components/team/TeamInfo'
+import TeamInfo from "./components/team/TeamInfo"
 import TeamAll from "./components/team/TeamAll"
 import TeamDetail from "./components/team/TeamDetail"
 import BlogInfo from "./components/blog/BlogInfo"
@@ -14,14 +14,15 @@ import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
 import BethProfile from "./components/team/profiles/BethProfile"
-import LaurenProfile from './components/team/profiles/LaurenProfile'
-import LucyProfile from './components/team/profiles/LucyProfile'
-import RubyProfile from './components/team/profiles/RubyProfile'
-import SophieProfile from './components/team/profiles/SophieProfile'
+import LaurenProfile from "./components/team/profiles/LaurenProfile"
+import LucyProfile from "./components/team/profiles/LucyProfile"
+import RubyProfile from "./components/team/profiles/RubyProfile"
+import SophieProfile from "./components/team/profiles/SophieProfile"
 import Bookings from "./components/bookings/Bookings"
 import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
+import LinkTree from "./components/linktree/LinkTree"
 
 Vue.use(Router)
 
@@ -154,6 +155,11 @@ const router = new Router({
             name: 'quote',
             component: Quote,
             props: true
+        },
+        {
+            path: '/link-tree',
+            name: 'link-tree',
+            component: LinkTree
         },
 
         {
