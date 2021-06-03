@@ -43,6 +43,18 @@
                             </div>
                         </div>
                         <div class="field">
+                          <label class="label has-text-white">Email Address</label>
+                          <div class="control">
+                            <input class="input" :class="{ 'is-danger': $v.email.$error }" v-model.trim="$v.email.$model" placeholder="Your Email address">
+                            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.email.required">
+                              Email Address is required
+                            </div>
+                            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.email.email">
+                              <p>Valid Email address is required</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="field">
                             <label class="label has-text-white">Current Position</label>
                             <div class="control">
                                 <div class="select" :class="{ 'is-danger': $v.position.$error }">
@@ -60,6 +72,24 @@
                             Position is required
                         </div>
                         <div class="field">
+                          <label class="label has-text-white">Tell us a bit about yourself</label>
+                          <div class="control">
+                            <textarea class="textarea" :class="{ 'is-danger': $v.about.$error }" v-model.trim="$v.about.$model" placeholder="Tell us about yourself?"/>
+                          </div>
+                        </div>
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.about.required">
+                          About yourself is required
+                        </div>
+                        <div class="field">
+                          <label class="label has-text-white">Why did you choose hairdressing as a career?</label>
+                          <div class="control">
+                            <textarea class="textarea" :class="{ 'is-danger': $v.why_hair.$error }" v-model.trim="$v.why_hair.$model" placeholder="Why did you choose hairdressing?"/>
+                          </div>
+                        </div>
+                        <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.why_hair.required">
+                          Why hairdressing required
+                        </div>
+                        <div class="field">
                             <label class="label has-text-white">Tell us why you want to join the Base team</label>
                             <div class="control">
                                 <textarea class="textarea" :class="{ 'is-danger': $v.why_us.$error }" v-model.trim="$v.why_us.$model" placeholder="Why do you want to join Base?"/>
@@ -71,7 +101,7 @@
                         <br>
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary" type="submit" :disabled="submitStatus === 'PENDING'">Apply</button>
+                                <button class="button is-primary" type="submit" :disabled="loading">Apply</button>
                             </div>
                             <br><br>
                         </div>
@@ -93,52 +123,51 @@
 </template>
 
 <script>
-    import {required, numeric} from 'vuelidate/lib/validators'
+    import {required, numeric, email} from 'vuelidate/lib/validators'
     export default {
         data() {
             return {
                 showInfo: false,
                 name: '',
                 mobile: '',
+                email: '',
                 position: '',
                 why_us: '',
                 salon: 3,
                 role: "Apprentice",
-                submitStatus: null
+                submitStatus: null,
+                loading: false
             }
         },
 
         validations: {
-            name: { required },
-            mobile: { required, numeric },
-            position: { required },
-            why_us: { required }
+          name: { required },
+          mobile: { required, numeric },
+          email:  { required, email},
+          position: { required },
+          about: { required },
+          why_hair: { required },
+          why_us: { required }
         },
 
         methods:{
-            info() {
-                return `Name: ${this.name}
-                Role: ${this.role}
-                Mobile: ${this.mobile}
-                Position: ${this.position}
-                Why Choose us?: ${this.why_us}
-                `
-            },
-
-            submit() {
+          submit() {
                 console.log('submit!')
                 this.$v.$touch()
                 if (this.$v.$invalid) {
                     this.submitStatus = 'ERROR'
                 } else {
+                  this.loading = true
                     axios.post('/api/joinus', {
                         name: this.name,
                         mobile: this.mobile,
+                        email: this.email,
                         position: this.position,
+                        about: this.about,
+                        why_hair: this.why_hair,
                         why_us: this.why_us,
                         salon: this.salon,
-                        role: this.role,
-                        info: this.info()
+                        role: this.role
                     })
                         .then(response => {
                             this.submitStatus = 'OK'

@@ -1,0 +1,8 @@
+New {{.Role}} applicant for Base Hairdressing
+Name: {{.Name}}
+Mobile: {{.Mobile}}
+Email: {{.Email}}
+Position: {{.Position}}
+About Yourself: {{.About}}
+Why Hair: {{.WhyHair}}
+Why Us: {{.WhyUs}}
