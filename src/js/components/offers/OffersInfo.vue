@@ -21,11 +21,11 @@
                   <div class="media">
                     <div class="media-content">
                       <h1 class="subtitle has-text-white">Special Offer with Ruby, Sophie & Beth for new clients</h1>
-                      <p class="has-text-white">Colour & Cut for just £35</p>
+                      <p class="has-text-white">Colour & Cut for just £40</p>
                     </div>
                   </div>
                   <div class="content is-size-6-mobile has-text-white">
-                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 30/11/20</p>
+                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 31/07/21</p>
                   </div>
                 </div>
               </div>
@@ -41,11 +41,11 @@
                   <div class="media">
                     <div class="media-content">
                       <h1 class="subtitle has-text-white">Special Offer with Lucy & Lauren for new clients to Base</h1>
-                      <p class="has-text-white">Colour & Cut for just £50</p>
+                      <p class="has-text-white">Colour & Cut for just £55</p>
                     </div>
                   </div>
                   <div class="content is-size-6-mobile has-text-white">
-                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 30/11/20</p>
+                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 31/07/21</p>
                   </div>
                 </div>
               </div>

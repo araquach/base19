@@ -12,6 +12,9 @@
       <router-link :to="{ name: 'team' }" class="box">
         Learn all about our amazing team members
       </router-link>
+      <router-link :to="{ name: 'offers' }" class="box">
+        Check out our latest offers
+      </router-link>
       <router-link :to="{ name: 'models' }" class="box">
         Sign up to be a model on our training days
       </router-link>
