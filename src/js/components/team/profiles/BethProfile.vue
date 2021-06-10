@@ -122,7 +122,7 @@
   export default {
     data() {
       return {
-        showOffer: false
+        showOffer: true
       }
     }
   }

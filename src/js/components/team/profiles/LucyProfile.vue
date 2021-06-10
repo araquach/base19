@@ -124,7 +124,7 @@
     </div>
     <div v-if="showOffer" class="section">
       <h2 class="title is-3 has-text-white">Special Offer with me!</h2>
-      <p>I've launched a special offer for new clients that runs until the end of November. I'd love you to take advantage of it!</p>
+      <p>I've launched a special offer for new clients that runs until the end of July. I'd love you to take advantage of it!</p>
       <router-link class="has-text-white is-size-4" :to="{ name: 'offers' }">Click here to find out more ></router-link>
     </div>
   </div>
@@ -133,7 +133,7 @@
 export default {
   data() {
     return {
-      showOffer: false
+      showOffer: true
     }
   }
 }
