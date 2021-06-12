@@ -146,6 +146,10 @@ section.section {
 
 .team {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg-2.jpg") top center no-repeat;
+  @include until($tablet) {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg-2-mob.jpg") top center no-repeat;
+    background-size: cover;
+  }
   background-size: cover;
 }
 
