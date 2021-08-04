@@ -25,7 +25,7 @@
                     </div>
                   </div>
                   <div class="content is-size-6-mobile has-text-white">
-                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 31/07/21</p>
+                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 30/08/21</p>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@
                     </div>
                   </div>
                   <div class="content is-size-6-mobile has-text-white">
-                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 31/07/21</p>
+                    <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 30/08/21</p>
                   </div>
                 </div>
               </div>
