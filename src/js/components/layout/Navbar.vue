@@ -11,15 +11,15 @@
       <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'main', hash: '#team' }" tag="router-link">
         Team
       </b-navbar-item>
-      <b-navbar-item v-scroll-to="'#blog'" :to="{ name: 'main', hash: '#blog' }" tag="router-link">
-        Blog
-      </b-navbar-item>
+      <b-navbar-item v-scroll-to="'#price'" :to="{ name: 'main', hash: '#price' }" tag="router-link">
+          Prices
+        </b-navbar-item>
       <b-navbar-item v-scroll-to="'#offers'" tag="router-link" to="/#offers">
         Offers
       </b-navbar-item>
       <b-navbar-dropdown label="More">
-        <b-navbar-item v-scroll-to="'#price'" :to="{ name: 'main', hash: '#price' }" tag="router-link">
-          Prices
+        <b-navbar-item v-scroll-to="'#blog'" :to="{ name: 'main', hash: '#blog' }" tag="router-link">
+          Blog
         </b-navbar-item>
         <b-navbar-item v-scroll-to="'#joinus'" :to="{ name: 'main', hash: '#joinus' }" tag="router-link">
           Join Us
