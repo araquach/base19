@@ -77,6 +77,8 @@
         <p class="subtitle is-size-6 has-text-white">and dont forget to like and follow!</p>
         <a href="https://www.instagram.com/hairby_sophiey/">
           <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span> hairby_sophiey</p>
+          <br>
+          <router-link class="button is-primary" :to="{ name: 'stylist-prices', params: { stylist: 'sophie' } }">Get a quote with me!</router-link>
         </a>
       </div>
       <div class="column">

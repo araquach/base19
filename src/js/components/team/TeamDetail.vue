@@ -16,6 +16,7 @@
       </div>
       <ReviewFeed :staffMember="staffMember"/>
       <br>
+
       <div v-if="teamMember.slug !== 'eve' && teamMember.slug !== 'becca' && teamMember.slug !== 'sarah' && teamMember.slug !== 'jamie'">
         <router-link :to="{ name : teamMember.slug + '-profile' }" class="is-size-5 has-text-warning">Find out more
           about {{ teamMember.first_name }} here >
@@ -23,7 +24,9 @@
       </div>
       <br>
       <br>
-      <a class="button" @click="$router.push({ name: 'team', hash: '#' + teamMember.slug })">Back to the full team</a>
+      <router-link class="button" :to="{ name : 'stylist-prices', params: { stylist: teamMember.slug } }">Get a quote with {{ teamMember.first_name }}</router-link>
+      <br><br>
+      <router-link class="button" :to="{ name: 'team', hash: '#' + teamMember.slug }">Back to the full team</router-link>
     </div>
   </div>
 </template>

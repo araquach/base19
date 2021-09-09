@@ -81,6 +81,8 @@
         <a href="https://www.instagram.com/hairbabe.b/">
           <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span> hairbabe.b</p>
         </a>
+        <br>
+        <router-link class="button is-primary" :to="{ name: 'stylist-prices', params: { stylist: 'beth' } }">Get a quote with me!</router-link>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
