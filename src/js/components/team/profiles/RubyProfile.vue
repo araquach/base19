@@ -73,6 +73,8 @@
         <a href="https://www.instagram.com/leturhaird0wn/">
           <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span> leturhaird0wn</p>
         </a>
+        <br>
+        <router-link class="button is-primary" :to="{ name: 'stylist-prices', params: { stylist: 'ruby' } }">Get a quote with me!</router-link>
       </div>
       <div class="column">
         <div class="tile is-ancestor is-flex">
