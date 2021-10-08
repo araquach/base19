@@ -139,8 +139,8 @@ const router = new Router({
         {
             path: '/bookings',
             name: 'bookings',
-            component: Bookings
-            // beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+            // component: Bookings
+            beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
         },
         {
             path: '/reopening',
