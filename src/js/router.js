@@ -18,11 +18,11 @@ import LaurenProfile from "./components/team/profiles/LaurenProfile"
 import LucyProfile from "./components/team/profiles/LucyProfile"
 import RubyProfile from "./components/team/profiles/RubyProfile"
 import SophieProfile from "./components/team/profiles/SophieProfile"
-import Bookings from "./components/bookings/Bookings"
 import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
 import LinkTree from "./components/linktree/LinkTree"
+import HourChanges from "./components/hourChanges/hourChanges"
 
 Vue.use(Router)
 
@@ -161,7 +161,12 @@ const router = new Router({
             name: 'link-tree',
             component: LinkTree
         },
-
+        {
+            path: '/:name',
+            name: 'hour-changes',
+            component: HourChanges,
+            props: true
+        },
         {
             path: '/:notFound(.*)', redirect: '/'
         }
