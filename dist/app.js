@@ -2754,13 +2754,19 @@ __webpack_require__.r(__webpack_exports__);
     name: function name() {
       var lower = this.$route.params.name;
       return lower.charAt(0).toUpperCase() + lower.slice(1);
-    },
-    hours: function hours() {
-      if (this.$route.params.name === "adam") {
-        return "2pm";
-      } else {
-        return "4pm";
-      }
+    }
+  },
+  created: function created() {
+    if (this.$route.params.name === "adam") {
+      this.newHours = {
+        thursday: "2pm",
+        saturday: "9am"
+      };
+    } else {
+      this.newHours = {
+        thursday: "4pm",
+        saturday: "8:30am"
+      };
     }
   }
 });
@@ -34853,9 +34859,15 @@ var render = function() {
           _vm._m(0),
           _vm._v(" "),
           _c("p", { staticClass: "is-size-4" }, [
-            _vm._v("\n        Thursday " + _vm._s(_vm.hours) + " to 8pm"),
+            _vm._v(
+              "\n        Thursday " + _vm._s(_vm.newHours.thursday) + " to 8pm"
+            ),
             _c("br"),
-            _vm._v("\n        Saturday 9am to 4.30pm\n      ")
+            _vm._v(
+              "\n        Saturday " +
+                _vm._s(_vm.newHours.saturday) +
+                " to 4:30pm\n      "
+            )
           ]),
           _vm._v(" "),
           _vm._m(1),
@@ -34889,7 +34901,9 @@ var render = function() {
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "If you are already booked in for your next appointment - don't worry, it will remain the same and Jimmy will discuss the options for your following booking"
+              "If you are already booked in for your next appointment - don't worry, it will remain the same and " +
+                _vm._s(_vm.name) +
+                " will discuss the options for your following booking"
             )
           ]),
           _vm._v(" "),
