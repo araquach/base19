@@ -143,6 +143,11 @@ const router = new Router({
             beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
         },
         {
+            path: '/gift-voucher',
+            name: 'gift-voucher',
+            beforeEnter() {location.href = 'https://gift-cards.phorest.com/salons/basehairacademy'}
+        },
+        {
             path: '/reopening',
             name: 'reopening',
             component: Reopening
