@@ -14,7 +14,7 @@
       <b-navbar-item v-scroll-to="'#price'" :to="{ name: 'main', hash: '#price' }" tag="router-link">
           Prices
         </b-navbar-item>
-      <b-navbar-item v-scroll-to="'#offers'" tag="router-link" to="/#offers">
+      <b-navbar-item v-if="!hideOffers" v-scroll-to="'#offers'" tag="router-link" to="/#offers">
         Offers
       </b-navbar-item>
       <b-navbar-dropdown label="More">
@@ -45,3 +45,14 @@
     </template>
   </b-navbar>
 </template>
+<script>
+import {mapState} from "vuex"
+
+export default {
+  computed: {
+    ...mapState({
+      hideOffers: state => state.base.hideOffers
+    })
+  }
+}
+</script>
