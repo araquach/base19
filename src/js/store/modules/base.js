@@ -1,8 +1,13 @@
 import axios from 'axios'
+import format from "date-fns/format";
+import {addWeeks} from "date-fns";
+
+const today = new Date()
 
 export const state = {
-    hideOffers: true,
+    hideOffers: false,
     newsItems: [],
+    endDate: format(addWeeks(today, 4), "dd/MM/yy")
 }
 
 export const getters = {

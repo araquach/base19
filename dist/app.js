@@ -363,9 +363,7 @@ const getters = {
 
     selectedTreatmentPrice: state => {
         if (state.selectedTreatment.price > 0) {
-            if (state.level.id === 4 && state.selectedTreatment.id === 43) {
-                return state.selectedTreatment.price + 5
-            } else if (state.level.id === 3 && state.selectedTreatment.id === 43) {
+            if (state.level.id === 3 && state.selectedTreatment.id === 43) {
                 return state.selectedTreatment.price + 8
             } else if (state.level.id <= 2 && state.selectedTreatment.id === 43) {
                 return state.selectedTreatment.price + 15
@@ -3465,11 +3463,35 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)({
     hideOffers: function hideOffers(state) {
       return state.base.hideOffers;
+    },
+    endDate: function endDate(state) {
+      return state.base.endDate;
     }
   }))
 });
@@ -3838,6 +3860,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -3960,12 +3989,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      showOffer: true
-    };
-  }
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)({
+    hideOffers: function hideOffers(state) {
+      return state.base.hideOffers;
+    }
+  }))
 });
 
 /***/ }),
@@ -3981,6 +4011,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -4118,12 +4155,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      showOffer: true
-    };
-  }
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)({
+    hideOffers: function hideOffers(state) {
+      return state.base.hideOffers;
+    }
+  }))
 });
 
 /***/ }),
@@ -4291,6 +4329,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -4415,12 +4460,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      showOffer: true
-    };
-  }
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)({
+    hideOffers: function hideOffers(state) {
+      return state.base.hideOffers;
+    }
+  }))
 });
 
 /***/ }),
@@ -4436,6 +4482,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -4555,12 +4608,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      showOffer: true
-    };
-  }
+  computed: _objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_0__.mapState)({
+    hideOffers: function hideOffers(state) {
+      return state.base.hideOffers;
+    }
+  }))
 });
 
 /***/ }),
@@ -4839,10 +4893,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var date_fns_format__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns/format */ "./node_modules/date-fns/esm/format/index.js");
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns */ "./node_modules/date-fns/esm/addWeeks/index.js");
 
+
+
+var today = new Date();
 var state = {
-  hideOffers: true,
-  newsItems: []
+  hideOffers: false,
+  newsItems: [],
+  endDate: (0,date_fns_format__WEBPACK_IMPORTED_MODULE_1__.default)((0,date_fns__WEBPACK_IMPORTED_MODULE_2__.default)(today, 4), "dd/MM/yy")
 };
 var getters = {};
 var mutations = {
@@ -36710,12 +36770,62 @@ var render = function() {
         ? _c("div", [
             _vm._m(0),
             _vm._v(" "),
-            _vm._m(1),
+            _c("div", { staticClass: "columns" }, [
+              _c("div", { staticClass: "column" }, [
+                _c("div", { staticClass: "card" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-content" }, [
+                    _vm._m(2),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "content is-size-6-mobile has-text-white"
+                      },
+                      [
+                        _c("p", { staticClass: "is-size-7" }, [
+                          _vm._v(
+                            "Skin test required 48 hours before any colour service. Offer Ends " +
+                              _vm._s(_vm.endDate)
+                          )
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "column" }, [
+                _c("div", { staticClass: "card" }, [
+                  _vm._m(3),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-content" }, [
+                    _vm._m(4),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "content is-size-6-mobile has-text-white"
+                      },
+                      [
+                        _c("p", { staticClass: "is-size-7" }, [
+                          _vm._v(
+                            "Skin test required 48 hours before any colour service. Offer Ends " +
+                              _vm._s(_vm.endDate)
+                          )
+                        ])
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ]),
             _vm._v(" "),
             _c(
               "div",
               [
-                _vm._m(2),
+                _vm._m(5),
                 _vm._v(" "),
                 _c(
                   "router-link",
@@ -36774,13 +36884,19 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", { staticClass: "is-size-4" }, [
           _vm._v(
-            "Ruby, Sophie & Beth are all fast progressing Advanced Junior Stylists, each of them producing outstanding work."
+            "Ruby, Sophie & Beth are all qualified hairdressers now, each of them producing outstanding work."
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "is-size-4" }, [
+          _vm._v(
+            "Becca & Eve are an even more affordable option! Their work is extremely advanced for their level meaning you get an amazing look at a fraction of the price!"
           )
         ]),
         _vm._v(" "),
         _c("p", { staticClass: "is-size-5" }, [
           _vm._v(
-            "If you're looking for a great new look at a fraction of the cost then book in with one of them for a consultation to see what they can do for you!"
+            "If you're looking for a great new look then book in with one of them for a consultation to see what they can do for you!"
           )
         ])
       ])
@@ -36790,47 +36906,60 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "columns" }, [
-      _c("div", { staticClass: "column" }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-image" }, [
-            _c("figure", { staticClass: "image is-square" }, [
-              _c("img", {
-                attrs: {
-                  src: "/dist/img/offers/js_offer.jpg",
-                  alt: "Junior Stylist Offer"
-                }
-              })
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-content" }, [
-            _c("div", { staticClass: "media" }, [
-              _c("div", { staticClass: "media-content" }, [
-                _c("h1", { staticClass: "subtitle has-text-white" }, [
-                  _vm._v(
-                    "Special Offer with Ruby, Sophie & Beth for new clients"
-                  )
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "has-text-white" }, [
-                  _vm._v("Colour & Cut for just £40")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "content is-size-6-mobile has-text-white" },
-              [
-                _c("p", { staticClass: "is-size-7" }, [
-                  _vm._v(
-                    "Skin test required 48 hours before any colour service. Offer Ends 30/11/21"
-                  )
-                ])
-              ]
-            )
-          ])
+    return _c("div", { staticClass: "card-image" }, [
+      _c("figure", { staticClass: "image is-square" }, [
+        _c("img", {
+          attrs: {
+            src: "/dist/img/offers/js_offer.jpg",
+            alt: "Graduate Stylist Offer"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "media" }, [
+      _c("div", { staticClass: "media-content" }, [
+        _c("h1", { staticClass: "subtitle has-text-white" }, [
+          _vm._v("Special Offer with Ruby, Sophie & Beth for new clients")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "has-text-white" }, [
+          _vm._v("25% off your first visit")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-image" }, [
+      _c("figure", { staticClass: "image is-square" }, [
+        _c("img", {
+          attrs: {
+            src: "/dist/img/offers/js_offer.jpg",
+            alt: "Junior Stylist Offer"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "media" }, [
+      _c("div", { staticClass: "media-content" }, [
+        _c("h1", { staticClass: "subtitle has-text-white" }, [
+          _vm._v("Special Offer with Becca & Eve for new clients")
+        ]),
+        _vm._v(" "),
+        _c("p", { staticClass: "has-text-white" }, [
+          _vm._v("25% off your first visit")
         ])
       ])
     ])
@@ -37496,7 +37625,7 @@ var render = function() {
         _vm._m(5)
       ]),
       _vm._v(" "),
-      _vm.showOffer
+      !_vm.hideOffers
         ? _c(
             "div",
             { staticClass: "section" },
@@ -37817,7 +37946,7 @@ var render = function() {
       _vm._v(" "),
       _vm._m(2),
       _vm._v(" "),
-      _vm.showOffer
+      !_vm.hideOffers
         ? _c(
             "div",
             { staticClass: "section" },
@@ -38579,7 +38708,7 @@ var render = function() {
         _vm._m(5)
       ]),
       _vm._v(" "),
-      _vm.showOffer
+      !_vm.hideOffers
         ? _c(
             "div",
             { staticClass: "section" },
@@ -38967,7 +39096,7 @@ var render = function() {
         _vm._m(5)
       ]),
       _vm._v(" "),
-      _vm.showOffer
+      !_vm.hideOffers
         ? _c(
             "div",
             { staticClass: "section" },
