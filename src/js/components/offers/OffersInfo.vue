@@ -15,7 +15,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-square">
-                  <img src="/dist/img/offers/js_offer.jpg" alt="Graduate Stylist Offer">
+                  <img src="/dist/img/offers/ruby_sophie_beth.png" alt="Graduate Stylist Offer">
                 </figure>
               </div>
               <div class="card-content">
@@ -35,7 +35,7 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-square">
-                  <img src="/dist/img/offers/js_offer.jpg" alt="Junior Stylist Offer">
+                  <img src="/dist/img/offers/becca_eve.png" alt="Junior Stylist Offer">
                 </figure>
               </div>
               <div class="card-content">
