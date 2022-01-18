@@ -5,8 +5,9 @@
           <div class="column is-8-desktop">
             <h1 class="title">Special Offers</h1>
             <h2 class="subtitle">For a limited time only</h2>
-            <p class="is-size-4">Ruby, Sophie & Beth are all fast progressing Advanced Junior Stylists, each of them producing outstanding work.</p>
-            <p class="is-size-5">If you're looking for a great new look at a fraction of the cost then book in with one of them for a consultation to see what they can do for you!</p>
+            <p class="is-size-4">Ruby, Sophie & Beth are all qualified hairdressers now, each of them producing outstanding work.</p>
+            <p class="is-size-4">Becca & Eve are an even more affordable option! Their work is extremely advanced for their level meaning you get an amazing look at a fraction of the price!</p>
+            <p class="is-size-5">If you're looking for a great new look then book in with one of them for a consultation to see what they can do for you!</p>
           </div>
         </div>
         <div class="columns">
@@ -14,18 +15,38 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-square">
-                  <img src="/dist/img/offers/js_offer.jpg" alt="Junior Stylist Offer">
+                  <img src="/dist/img/offers/ruby_sophie_beth.png" alt="Graduate Stylist Offer">
                 </figure>
               </div>
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
                     <h1 class="subtitle has-text-white">Special Offer with Ruby, Sophie & Beth for new clients</h1>
-                    <p class="has-text-white">Colour & Cut for just £40</p>
+                    <p class="has-text-white">25% off your first visit</p>
                   </div>
                 </div>
                 <div class="content is-size-6-mobile has-text-white">
-                  <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends 30/11/21</p>
+                  <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends {{ endDate }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-square">
+                  <img src="/dist/img/offers/becca_eve.png" alt="Junior Stylist Offer">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <h1 class="subtitle has-text-white">Special Offer with Becca & Eve for new clients</h1>
+                    <p class="has-text-white">25% off your first visit</p>
+                  </div>
+                </div>
+                <div class="content is-size-6-mobile has-text-white">
+                  <p class="is-size-7">Skin test required 48 hours before any colour service. Offer Ends {{ endDate }}</p>
                 </div>
               </div>
             </div>
@@ -54,7 +75,8 @@ import {mapState} from "vuex"
 export default {
   computed: {
     ...mapState({
-      hideOffers: state => state.base.hideOffers
+      hideOffers: state => state.base.hideOffers,
+      endDate: state => state.base.endDate
     })
   }
 }
