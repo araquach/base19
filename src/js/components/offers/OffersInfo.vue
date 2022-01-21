@@ -22,7 +22,7 @@
                 <div class="media">
                   <div class="media-content">
                     <h1 class="subtitle has-text-white">Special Offer with Ruby, Sophie & Beth for new clients</h1>
-                    <p class="has-text-white">25% off your first visit</p>
+                    <p class="has-text-white is-size-3">25% off your first visit</p>
                   </div>
                 </div>
                 <div class="content is-size-6-mobile has-text-white">
@@ -42,7 +42,7 @@
                 <div class="media">
                   <div class="media-content">
                     <h1 class="subtitle has-text-white">Special Offer with Becca & Eve for new clients</h1>
-                    <p class="has-text-white">25% off your first visit</p>
+                    <p class="has-text-white is-size-3">25% off your first visit</p>
                   </div>
                 </div>
                 <div class="content is-size-6-mobile has-text-white">
