@@ -15,11 +15,11 @@
                 <div class="is-size-5">
                     <h3 class="title is-4">Opening Hours</h3>
                     <p>Monday: Closed<br>
-                        Tuesday: 9am - 6pm<br>
+                        Tuesday: 9am - 5pm<br>
                         Wednesday: 11am - 8pm<br>
                         Thursday: 11am - 8pm<br>
-                        Friday: 9am - 6pm<br>
-                        Saturday: 8am - 4:30pm</p>
+                        Friday: 9am - 5pm<br>
+                        Saturday: 8.30am - 4:30pm</p>
                 </div>
             </div>
             <hr class="is-mobile">
