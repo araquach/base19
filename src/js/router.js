@@ -22,7 +22,6 @@ import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
 import LinkTree from "./components/linktree/LinkTree"
-import HourChanges from "./components/hourChanges/hourChanges"
 
 Vue.use(Router)
 
@@ -165,12 +164,6 @@ const router = new Router({
             path: '/link-tree',
             name: 'link-tree',
             component: LinkTree
-        },
-        {
-            path: '/:name',
-            name: 'hour-changes',
-            component: HourChanges,
-            props: true
         },
         {
             path: '/:notFound(.*)', redirect: '/'
