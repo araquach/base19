@@ -22,6 +22,7 @@ import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
 import LinkTree from "./components/linktree/LinkTree"
+import Leaver from "./components/leaver/Leaver"
 
 Vue.use(Router)
 
@@ -164,6 +165,11 @@ const router = new Router({
             path: '/link-tree',
             name: 'link-tree',
             component: LinkTree
+        },
+        {
+            path: '/ruby-leaving',
+            name: 'leaver',
+            component: Leaver
         },
         {
             path: '/:notFound(.*)', redirect: '/'
