@@ -7,7 +7,7 @@
           working in the salon.
           She has been offered an opportunity to study for a degree in digital healthcare science which she decided was
           an opportunity too good to let go of.</p>
-        <p>It's been a real pleasure having Ruby carry out her apprenticeship with us. She recently passed her endpoint
+        <p>It's been a real pleasure having Ruby carry out her apprenticeship with us. She recently completed her apprenticeship
           with a distinction. The door is always open if she decides that hairdressing is the career for her!</p>
         <p>Ruby's last day in the salon will be <strong>Friday 18th March</strong>. If you have an appointment booked in
           with her, one of our team will be in touch to discuss the options.</p>
