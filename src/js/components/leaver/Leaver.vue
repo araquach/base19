@@ -1,7 +1,7 @@
 <template>
   <section class="section hour-changes hero is-fullheight is-dark">
     <div class="columns">
-      <div class="column is-8-desktop">
+      <div class="column is-8">
         <h1 class="title">Ruby is moving on...</h1>
         <p class="is-size-5">As a regular client of Ruby we wanted to let you know that she is no longer going to be
           working in the salon.
