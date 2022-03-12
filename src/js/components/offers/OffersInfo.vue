@@ -5,7 +5,7 @@
           <div class="column is-8-desktop">
             <h1 class="title">Special Offers</h1>
             <h2 class="subtitle">For a limited time only</h2>
-            <p class="is-size-4">Ruby, Sophie & Beth are all qualified hairdressers now, each of them producing outstanding work.</p>
+            <p class="is-size-4">Sophie & Beth are both qualified hairdressers now, each of them producing outstanding work.</p>
             <p class="is-size-4">Becca & Eve are an even more affordable option! Their work is extremely advanced for their level meaning you get an amazing look at a fraction of the price!</p>
             <p class="is-size-5">If you're looking for a great new look then book in with one of them for a consultation to see what they can do for you!</p>
           </div>
@@ -21,7 +21,7 @@
               <div class="card-content">
                 <div class="media">
                   <div class="media-content">
-                    <h1 class="subtitle has-text-white">Special Offer with Ruby, Sophie & Beth for new clients</h1>
+                    <h1 class="subtitle has-text-white">Special Offer with Sophie & Beth for new clients</h1>
                     <p class="has-text-white is-size-3">25% off your first visit</p>
                   </div>
                 </div>
