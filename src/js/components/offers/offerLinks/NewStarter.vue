@@ -3,10 +3,10 @@
     <div class="box">
       <div class="columns">
         <div class="column">
-          <img src="/dist/img/offer/individual/abbi.jpg" alt="Abbi Green">
+          <img src="/dist/img/offers/jamie_sarah.png" alt="Jamie & Sarah's Special Offer">
         </div>
         <section class="column is-8">
-          <h2 class="title is-2 has-text-white">20% off first visit to Jamie & Sarah</h2>
+          <h2 class="title is-3 has-text-white">25% off first visit to Jamie & Sarah</h2>
           <p class="is-size-4">Both of these upcoming stylists are looking to build their skills</p>
           <p>A Colour & Cut from just £30</p>
           <p>Find out more here ></p>
@@ -21,7 +21,7 @@ import {mapState} from "vuex"
 export default {
   computed: {
     ...mapState({
-      endDate: state => state.jakata.endDate
+      endDate: state => state.base.endDate
     })
   }
 }

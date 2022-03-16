@@ -15,8 +15,10 @@
           <p>Just mention the offer at the time of your visit</p>
           <p class="small">(Offer ends {{ endDate }} - Skin Test required 48 hrs before any colour service - offer for new clients to Base Hairdressing)</p>
           <br>
-          <router-link :to="{ name: 'team-detail', params: { slug: 'beth' } }" class="button is-primary">Find out more about Beth</router-link>
-          <router-link :to="{ name: 'team-detail', params: { slug: 'sophie' } }" class="button is-primary">Find out more about Sophie</router-link>
+          <div class="offer-team-links">
+            <router-link :to="{ name: 'team-detail', params: { slug: 'beth' } }" class="button is-primary">Find out more about Beth</router-link>
+            <router-link :to="{ name: 'team-detail', params: { slug: 'sophie' } }" class="button is-primary">Find out more about Sophie</router-link>
+          </div>
         </div>
       </div>
     </div>

@@ -9,6 +9,10 @@ import TeamDetail from "./components/team/TeamDetail"
 import BlogInfo from "./components/blog/BlogInfo"
 import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
+import NewStarterOffer from "./components/offers/singleOffers/NewStarter"
+import ApprenticeOffer from "./components/offers/singleOffers/Apprentice"
+import JnrStylistOffer from "./components/offers/singleOffers/JnrStylist"
+import GraduateOffer from "./components/offers/singleOffers/Graduate";
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
@@ -115,6 +119,26 @@ const router = new Router({
             path: '/offers',
             name: 'offers',
             component: OffersInfo
+        },
+        {
+            path: '/offers/new-starter',
+            name: 'new-starter-offer',
+            component: NewStarterOffer
+        },
+        {
+            path: '/offers/apprentice',
+            name: 'apprentice-offer',
+            component: ApprenticeOffer
+        },
+        {
+            path: '/offers/jnr-stylist',
+            name: 'jnr-stylist-offer',
+            component: JnrStylistOffer
+        },
+        {
+            path: '/offers/graduate',
+            name: 'graduate-offer',
+            component: GraduateOffer
         },
         {
             path: '/joinus',

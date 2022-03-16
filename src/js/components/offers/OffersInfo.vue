@@ -1,12 +1,12 @@
 <template>
-    <section class="section offers-info hero is-fullheight is-dark">
+    <section id="offers" class="section offers-info hero is-fullheight is-dark">
       <div v-if="!hideOffers">
         <div class="columns is-vcentered">
-          <div class="column is-8-desktop">
+          <div class="column is-10">
             <h1 class="title">{{ showMonth }}'s Special Offers</h1>
-            <LaurenLucy v-if="showOffers.laurenLucy"/>
-            <LaylaAbbi v-if="showOffers.laylaAbbi"/>
-            <Lucy v-if="showOffers.lucy"/>
+            <Graduate v-if="showOffers.graduate"/>
+            <Apprentice v-if="showOffers.apprentice"/>
+            <NewStarter v-if="showOffers.newStarter"/>
           </div>
         </div>
       </div>
@@ -28,16 +28,17 @@ export default {
   data() {
     return {
       showOffers: {
-        laurenLucy: true,
-        laylaAbbi: true,
-        abbi: false,
+        newStarter: true,
+        apprentice: true,
+        jnrStylist: false,
+        graduate: true
       }
     }
   },
 
   computed: {
     ...mapState({
-      hideOffers: state => state.jakata.hideOffers
+      hideOffers: state => state.base.hideOffers
     }),
 
     showMonth() {

@@ -232,6 +232,26 @@ section.section {
   background-size: cover;
 }
 
+#offers {
+  padding-top: 3rem;
+  color: #FFF;
+  .box {
+    background-color: black;
+    border: 1px solid #FFF;
+    margin-bottom: 3rem;
+    color: #FFF;
+  }
+  .image {
+    margin: 3rem 0;
+  }
+}
+
+.offer-team-links {
+  a {
+    margin-bottom: .5rem;
+  }
+}
+
 #profile {
   .section.columns {
     padding-top: 0;
