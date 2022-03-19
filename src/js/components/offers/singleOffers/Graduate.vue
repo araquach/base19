@@ -8,7 +8,7 @@
           <p class="is-size-5">For a short time only take advantage of this incredible offer with either of them!</p>
           <br>
           <figure class="image">
-            <img src="/dist/img/offers/sophie_beth.png" alt="Beth & Sophie's Offer">
+            <img src="/dist/img/offers/graduate_offer.png" alt="Beth & Sophie's Offer">
           </figure>
           <br>
           <p class="is-size-5"><strong>Come in for a FREE consultation with one of them  and if you like the ideas they up with then book in to get 25% off your first visit with them!</strong></p>
