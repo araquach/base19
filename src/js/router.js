@@ -27,6 +27,7 @@ import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
 import LinkTree from "./components/linktree/LinkTree"
 import Leaver from "./components/leaver/Leaver"
+import Bookings from "./views/Bookings"
 
 Vue.use(Router)
 
@@ -163,9 +164,14 @@ const router = new Router({
         {
             path: '/bookings',
             name: 'bookings',
-            // component: Bookings
-            beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+            component: Bookings
         },
+        // {
+        //     path: '/bookings',
+        //     name: 'bookings',
+        //     // component: Bookings
+        //     beforeEnter() {location.href = 'https://phorest.com/book/salons/basehairacademy'}
+        // },
         {
             path: '/gift-voucher',
             name: 'gift-voucher',
