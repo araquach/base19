@@ -5,6 +5,6 @@
     <p>If you hover over the name of the service an in-depth description is given of each one.</p>
     <p>If you're going for a big style change it could be worth coming in for a free consultation with your chosen stylist first to discuss your ideas. You can also book this through the online booking.</p>
     <p>If you have any questions you can always call the salon on 01925 444449 during our opening hours and one of our team will advise you and get you booked in.</p>
-    <a href="https://phorest.com/book/salons/jakatasalon" class="button is-primary"><strong>Book Now</strong></a>
+    <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary"><strong>Book Now</strong></a>
   </div>
 </template>
