@@ -28,6 +28,7 @@ import Quote from "./components/quote/Quote"
 import LinkTree from "./components/linktree/LinkTree"
 import Leaver from "./components/leaver/Leaver"
 import Bookings from "./views/Bookings"
+import TopSpender from "./views/TopSpender"
 
 Vue.use(Router)
 
@@ -195,6 +196,11 @@ const router = new Router({
             path: '/link-tree',
             name: 'link-tree',
             component: LinkTree
+        },
+        {
+            path: '/gift',
+            name: 'top-spender',
+            component: TopSpender
         },
         {
             path: '/ruby-leaving',
