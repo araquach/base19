@@ -1,6 +1,6 @@
 <template>
   <section class="section top-spender hero is-fullheight is-dark">
-    <div class="columns is-vcentered">
+    <div class="columns">
       <div class="column is-7-desktop">
         <h1 class="title is-1">A BIG thank you from the team</h1>
         <p class="is-size-4">As a loyal customer to the salon we'd like to thank you for your continued support.</p>
@@ -12,7 +12,7 @@
         </figure>
         <p class="is-size-4">Your stylist will give you yours on your next visit!</p>
         <p>Just show the text message we sent you</p>
-        <p><em>Thanks again for trusting Base to look after you and see you in the salon soon</em></p>
+        <p class="is-size-4"><em>Thanks again for trusting Base to look after you and see you in the salon soon!</em></p>
       </div>
       <div class="column">
 
