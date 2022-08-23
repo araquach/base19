@@ -12,7 +12,8 @@ import OffersInfo from "./components/offers/OffersInfo"
 import NewStarterOffer from "./components/offers/singleOffers/NewStarter"
 import ApprenticeOffer from "./components/offers/singleOffers/Apprentice"
 import JnrStylistOffer from "./components/offers/singleOffers/JnrStylist"
-import GraduateOffer from "./components/offers/singleOffers/Graduate";
+import GraduateOffer from "./components/offers/singleOffers/Graduate"
+import LaylaOffer from "./components/offers/singleOffers/Layla"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
@@ -141,6 +142,11 @@ const router = new Router({
             path: '/offers/graduate',
             name: 'graduate-offer',
             component: GraduateOffer
+        },
+        {
+            path: '/offers/layla',
+            name: 'layla-offer',
+            component: LaylaOffer
         },
         {
             path: '/joinus',
