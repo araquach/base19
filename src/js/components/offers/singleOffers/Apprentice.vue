@@ -12,10 +12,6 @@
           </figure>
           <br>
           <p class="is-size-5"><strong>Come in for a FREE consultation with one of them and if you like the ideas they up with then book in to get 25% off your first visit with them!</strong></p>
-          <p><em>Please note: Jamie and Sarah are currently only carrying out basic cutting and colouring services. If
-            you are looking for a more advanced stylist
-            <router-link :to="{name: 'apprentice-offer'}">click here</router-link>
-          </em></p>
           <p class="is-size-4"><strong>Call 01925 444449 to book</strong><br>
             or use our online booking (link at top of page)</p>
           <p>Just mention the offer at the time of your visit</p>
