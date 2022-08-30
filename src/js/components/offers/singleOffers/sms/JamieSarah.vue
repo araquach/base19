@@ -6,7 +6,7 @@
           <h2 class="title is-2 is-size-4-mobile has-text-white">Special offer with Jamie & Sarah</h2>
           <p>As we've not seen you in the salon for a while we'd like you to take advantage of this amazing offer with our two talented stylists Jamie and Sarah.</p>
           <p class="is-size-5">They are both progressing fast and are now looking to build their client bases.</p>
-          <p class="is-size-5">If you're looking for an amazing style at a fraction of the cost,get booked in with one of them!</p>
+          <p class="is-size-5">If you're looking for an amazing style at a fraction of the cost, get booked in with one of them!</p>
           <br>
           <figure class="image">
             <img src="/dist/img/offers/jamie_sarah.png" alt="Jamie & Sarah's Offer">
