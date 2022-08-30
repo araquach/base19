@@ -11,6 +11,7 @@ import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
 import NewStarterOffer from "./components/offers/singleOffers/NewStarter"
 import ApprenticeOffer from "./components/offers/singleOffers/Apprentice"
+import JamieSarahOffer from "./components/offers/singleOffers/sms/JamieSarah"
 import JnrStylistOffer from "./components/offers/singleOffers/JnrStylist"
 import GraduateOffer from "./components/offers/singleOffers/Graduate"
 import LaylaOffer from "./components/offers/singleOffers/Layla"
@@ -132,6 +133,11 @@ const router = new Router({
             path: '/offers/apprentice',
             name: 'apprentice-offer',
             component: ApprenticeOffer
+        },
+        {
+            path: '/sms/jamie-sarah',
+            name: 'jamie-sarah-offer',
+            component: JamieSarahOffer
         },
         {
             path: '/offers/jnr-stylist',
