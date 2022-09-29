@@ -1,14 +1,11 @@
 <template>
   <div>
     <h1 class="title is-4">Existing Colour Clients</h1>
-    <p class="is-size-4">We're currently in the process of updating the online booking system to take into account for the complexity of
-      colour services and to prevent new clients to the salon booking in for the wrong services.</p>
-    <p>If you've been a regular user of the system then unfortunately there will be some issues when rebooking colour
-      services. We're working hard to get it up and running again but in the meantime we recommend calling the salon to
-      make your booking.</p>
-    <p><em>Cutting and Styling services are all available to book online but <span class="has-text-warning">you will unfortunately not be able to book a
-      colour service.</span></em></p>
-    <p>We will keep you updated when the system is back up and running properly, thanks for your patience.</p>
-    <p class="has-text-warning is-size-4">Call 01925 444449 to make a booking</p>
+    <p class="is-size-4">If you've been a regular user of the system you might encounter an issue rebooking colour
+      services if your skin test record hasn't been updated on our system.</p>
+    <p>If you've had a colour or skin test <strong>within 6 months</strong> and you're blocked from booking online, please call the salon and ask to have your
+      <strong>skin test record activated</strong>. This will allow you to use the online booking moving forward</p>
+    <p>If you're unsure which service to select please call the salon to be advised.</p>
+    <a href="https://phorest.com/book/salons/basehairacademy" class="button is-primary"><strong>Book Now</strong></a>
   </div>
 </template>
