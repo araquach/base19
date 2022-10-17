@@ -17,11 +17,11 @@
       <ReviewFeed :staffMember="staffMember"/>
       <br>
 
-      <div v-if="teamMember.slug !== 'eve' && teamMember.slug !== 'becca' && teamMember.slug !== 'sarah' && teamMember.slug !== 'jamie'">
-        <router-link :to="{ name : teamMember.slug + '-profile' }" class="is-size-5 has-text-warning">Find out more
-          about {{ teamMember.first_name }} here >
-        </router-link>
-      </div>
+<!--      <div v-if="teamMember.slug !== 'eve' && teamMember.slug !== 'becky' && teamMember.slug !== 'lauryn' && teamMember.slug !== 'sarah' && teamMember.slug !== 'jamie'">-->
+<!--        <router-link :to="{ name : teamMember.slug + '-profile' }" class="is-size-5 has-text-warning">Find out more-->
+<!--          about {{ teamMember.first_name }} here >-->
+<!--        </router-link>-->
+<!--      </div>-->
       <br>
       <br>
       <router-link class="button" :to="{ name : 'stylist-prices', params: { stylist: teamMember.slug } }">Get a quote with {{ teamMember.first_name }}</router-link>
