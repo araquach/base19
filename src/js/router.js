@@ -9,6 +9,7 @@ import TeamDetail from "./components/team/TeamDetail"
 import BlogInfo from "./components/blog/BlogInfo"
 import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
+import GeneralOffer from "./components/offers/singleOffers/November"
 import NewStarterOffer from "./components/offers/singleOffers/NewStarter"
 import ApprenticeOffer from "./components/offers/singleOffers/Apprentice"
 import JamieSarahOffer from "./components/offers/singleOffers/sms/JamieSarah"
@@ -123,6 +124,11 @@ const router = new Router({
             path: '/offers',
             name: 'offers',
             component: OffersInfo
+        },
+        {
+            path: '/offers/general',
+            name: 'general-offer',
+            component: GeneralOffer
         },
         {
             path: '/offers/new-starter',
