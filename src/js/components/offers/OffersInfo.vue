@@ -18,6 +18,7 @@
       </div>
     </section>
 </template>
+
 <script>
 import {mapState} from "vuex"
 import General from "./offerLinks/November"
