@@ -32,6 +32,7 @@ import LinkTree from "./components/linktree/LinkTree"
 import Leaver from "./components/leaver/Leaver"
 import Bookings from "./views/Bookings"
 import TopSpender from "./views/TopSpender"
+import GhdPromo from "./views/GhdPromo"
 
 Vue.use(Router)
 
@@ -219,6 +220,11 @@ const router = new Router({
             path: '/your-gift',
             name: 'top-spender',
             component: TopSpender
+        },
+        {
+            path: '/ghd',
+            name: 'ghd-promo',
+            component: GhdPromo
         },
         {
             path: '/ruby-leaving',

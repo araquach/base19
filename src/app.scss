@@ -237,6 +237,11 @@ section.section {
   background-size: cover;
 }
 
+.ghdPromo {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/dist/img/bgrounds/ghd1.jpg") center top no-repeat;
+  background-size: cover;
+}
+
 #offers {
   padding-top: 3rem;
   color: #FFF;
