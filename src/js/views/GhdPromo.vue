@@ -6,7 +6,7 @@
         <img src="/dist/img/ghdPromo/ghd_logo.png" alt="GHD" width="250">
         <h1 class="title is-2">Black Wednesday Event</h1>
         <p class="is-size-5">Do you struggle to know how to use your hot tools to get the best results? Or are you unsure about which tool is the right choice for you?</p>
-        <p class="is-size-4">We're hosting a free GHD demo event at <strong>Base (Academy for PK and Jakata)</strong> on Wednesday 25th November between 4pm and 8pm.</p>
+        <p class="is-size-4">We're hosting a free GHD demo event at <strong>Base (Academy for PK and Jakata)</strong> on Wednesday 23rd November between 4pm and 8pm.</p>
         <p class="has-text-warning is-size-4">Drop in to learn all the tips and tricks you need to get the best from your GHD’s and discover the best stylers for your needs.</p>
         <br>
         <figure class="image">
