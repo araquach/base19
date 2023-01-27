@@ -33,6 +33,7 @@ import Leaver from "./components/leaver/Leaver"
 import Bookings from "./views/Bookings"
 import TopSpender from "./views/TopSpender"
 import GhdPromo from "./views/GhdPromo"
+import OpenEvening from "./views/OpenEvening.vue"
 
 Vue.use(Router)
 
@@ -225,6 +226,11 @@ const router = new Router({
             path: '/ghd',
             name: 'ghd-promo',
             component: GhdPromo
+        },
+        {
+            path: '/open-evening',
+            name: 'open-day',
+            component: OpenEvening
         },
         {
             path: '/ruby-leaving',
