@@ -72,15 +72,17 @@
                 <img src="/dist/img/openEvening/apprentice.png" alt="">
               </div>
             </div>
-
           </div>
         </form>
+        <div v-if="submitStatus === 'OK'">
+          <p class="is-size-4 has-text-primary">Thanks for your interest! We'll be in touch soon to confirm.</p>
+        </div>
       </div>
     </div>
   </section>
 </template>
 <script>
-import {email, numeric, required} from 'vuelidate/lib/validators'
+import {numeric, required} from 'vuelidate/lib/validators'
 
 export default {
   data() {

@@ -8969,7 +8969,9 @@ var render = function render() {
       type: "submit",
       disabled: _vm.loading
     }
-  }, [_vm._v("Submit")])]), _vm._v(" "), _c("br"), _vm._v(" "), _c("hr"), _vm._v(" "), _vm._m(2)])]) : _vm._e()])])]);
+  }, [_vm._v("Submit")])]), _vm._v(" "), _c("br"), _vm._v(" "), _c("hr"), _vm._v(" "), _vm._m(2)])]) : _vm._e(), _vm._v(" "), _vm.submitStatus === "OK" ? _c("div", [_c("p", {
+    staticClass: "is-size-4 has-text-primary"
+  }, [_vm._v("Thanks for your interest! We'll be in touch soon to confirm.")])]) : _vm._e()])])]);
 };
 
 var staticRenderFns = [function () {
