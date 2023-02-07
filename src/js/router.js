@@ -34,6 +34,7 @@ import Bookings from "./views/Bookings"
 import TopSpender from "./views/TopSpender"
 import GhdPromo from "./views/GhdPromo"
 import OpenEvening from "./views/OpenEvening.vue"
+import Feedback from "./components/feedback/Feedback.vue"
 
 Vue.use(Router)
 
@@ -231,6 +232,11 @@ const router = new Router({
             path: '/open-evening',
             name: 'open-day',
             component: OpenEvening
+        },
+        {
+            path: '/feedback',
+            name: 'feedback',
+            component: Feedback
         },
         {
             path: '/ruby-leaving',
