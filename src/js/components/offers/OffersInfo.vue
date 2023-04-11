@@ -2,7 +2,7 @@
     <section id="offers" class="section offers-info hero is-fullheight is-dark">
       <div v-if="!hideOffers">
         <div class="columns is-vcentered">
-          <div class="column is-10">
+          <div class="section column is-10">
             <h1 class="title">{{ showMonth }}'s Special Offers</h1>
             <General v-if="showOffers.general" />
             <NewStarter v-if="showOffers.newStarter"/>
@@ -10,6 +10,7 @@
             <JnrStylist v-if="showOffers.jnrStylist"/>
             <Graduate v-if="showOffers.graduate"/>
             <Layla v-if="showOffers.layla"/>
+            <Katie v-if="showOffers.katie"/>
           </div>
         </div>
       </div>
@@ -27,19 +28,21 @@ import JnrStylist from "../../components/offers/offerLinks/JnrStylist"
 import Apprentice from "../../components/offers/offerLinks/Apprentice"
 import NewStarter from "../../components/offers/offerLinks/NewStarter"
 import Layla from "../../components/offers/offerLinks/Layla"
+import Katie from "../../components/offers/offerLinks/Katie"
 import format from "date-fns/format"
 
 export default {
-  components: {General, Layla, Graduate, JnrStylist, Apprentice, NewStarter},
+  components: {Katie, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter},
   data() {
     return {
       showOffers: {
-        general: true,
+        general: false,
         newStarter: false,
         apprentice: false,
         jnrStylist: false,
         graduate: false,
-        layla: false
+        layla: false,
+        katie: true
       }
     }
   },

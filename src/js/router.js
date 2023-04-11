@@ -16,6 +16,7 @@ import JamieSarahOffer from "./components/offers/singleOffers/sms/JamieSarah"
 import JnrStylistOffer from "./components/offers/singleOffers/JnrStylist"
 import GraduateOffer from "./components/offers/singleOffers/Graduate"
 import LaylaOffer from "./components/offers/singleOffers/Layla"
+import KatieOffer from "./components/offers/singleOffers/Katie"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
@@ -162,6 +163,11 @@ const router = new Router({
             path: '/offers/layla',
             name: 'layla-offer',
             component: LaylaOffer
+        },
+        {
+            path: '/offers/katie',
+            name: 'katie-offer',
+            component: KatieOffer
         },
         {
             path: '/joinus',
