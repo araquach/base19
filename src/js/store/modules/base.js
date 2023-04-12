@@ -7,7 +7,7 @@ const today = new Date()
 export const state = {
     hideOffers: false,
     newsItems: [],
-    endDate: format(addWeeks(today, 4), "dd/MM/yy")
+    endDate: "31/5/23"
 }
 
 export const getters = {

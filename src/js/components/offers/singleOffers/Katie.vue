@@ -16,9 +16,8 @@
           <div class="buttons">
             <a href="https://phorest.com/book/salons/basehairacademy#/service-category?id=0P2QrXkTppoqXslH0K5ttQ" class="button">Book Your Consultation</a>
           </div>
-          <p><a class="has-text-primary is-size-5" href="https://www.basehairdressing.com/blog/introducing-katie">To find out more about Katie check out our blog ></a></p>
-          <p><a class="has-text-primary is-size-5" href="https://www.instagram.com/beautybykatelouise/" target="_blank">You
-            can follow Katie on Instagram here ></a></p>
+          <p class="is-size-5">To find out more about Katie check out our <a class="has-text-primary" href="https://www.basehairdressing.com/blog/introducing-katie">latest blog post</a></p>
+          <p class="is-size-5">You can follow Katie on Instagram here <a class="has-text-primary" href="https://www.instagram.com/beautybykatelouise/" target="_blank">@beautybykatelouise</a></p>
           <br>
           <p>Just mention the offer at the time of your visit</p>
           <p class="small">(Offer ends {{ endDate }} - Skin Test required 48 hrs before any colour service)</p>

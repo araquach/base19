@@ -4,13 +4,13 @@
         <div class="columns is-vcentered">
           <div class="section column is-10">
             <h1 class="title">{{ showMonth }}'s Special Offers</h1>
+            <Katie v-if="showOffers.katie"/>
             <General v-if="showOffers.general" />
             <NewStarter v-if="showOffers.newStarter"/>
             <Apprentice v-if="showOffers.apprentice"/>
             <JnrStylist v-if="showOffers.jnrStylist"/>
             <Graduate v-if="showOffers.graduate"/>
             <Layla v-if="showOffers.layla"/>
-            <Katie v-if="showOffers.katie"/>
           </div>
         </div>
       </div>
