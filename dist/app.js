@@ -3207,7 +3207,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         general: false,
         newStarter: false,
         apprentice: false,
-        jnrStylist: false,
+        jnrStylist: true,
         graduate: false,
         layla: false,
         katie: true
@@ -7212,7 +7212,7 @@ var render = function render() {
     staticClass: "title is-2 is-size-4-mobile has-text-white"
   }, [_vm._v("Special offer with our Junior Stylists")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("p", {
     staticClass: "is-size-5"
-  }, [_vm._v("With over two years in salon experience and our expert education team on hand to consult at all times you\n          are guaranteed five star hair services at a fraction of the cost.")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("br"), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c("p", {
+  }, [_vm._v("With over two years in salon experience and our expert education team on hand to consult at all times you\n          are guaranteed five star hair services at a fraction of the cost.")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("br"), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5), _vm._v(" "), _c("p", {
     staticClass: "small"
   }, [_vm._v("(Offer ends " + _vm._s(_vm.endDate) + " - Skin Test required 48 hrs before any colour service - offer for new clients to Base Hairdressing)")]), _vm._v(" "), _c("br")])])]) : _c("div", [_c("h1", {
     staticClass: "title is-4"
@@ -7257,6 +7257,13 @@ var staticRenderFns = [function () {
       href: "https://phorest.com/book/salons/basehairacademy#/service-category?id=0P2QrXkTppoqXslH0K5ttQ"
     }
   }, [_vm._v("Book Your Consultation")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("p", {
+    staticClass: "is-size-5"
+  }, [_vm._v("Quote "), _c("strong", [_vm._v("JS20")]), _vm._v(" during your visit")]);
 }, function () {
   var _vm = this,
       _c = _vm._self._c;
@@ -28461,7 +28468,7 @@ module.exports = function (cssWithMappingToString) {
   \**********************/
 /***/ (() => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: $alpha: 0.8 0.5 is not a number.\n    ╷\n246 │   background: linear-gradient(rgba(0,0,0,.8.5), rgba(0,0,0,.8.5)), url(\"/dist/img/openEvening/stairs.jpg\") center top no-repeat;\n    │                               ^^^^^^^^^^^^^^^^\n    ╵\n  /Users/adam-home/GoSites/base19/src/app.scss 246:31  root stylesheet\n    at processResult (/Users/adam-home/GoSites/base19/node_modules/webpack/lib/NormalModule.js:758:19)\n    at /Users/adam-home/GoSites/base19/node_modules/webpack/lib/NormalModule.js:860:5\n    at /Users/adam-home/GoSites/base19/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /Users/adam-home/GoSites/base19/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/Users/adam-home/GoSites/base19/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/adam-home/GoSites/base19/node_modules/sass-loader/dist/index.js:73:7\n    at Function.call$2 (/Users/adam-home/GoSites/base19/node_modules/sass/sass.dart.js:99696:16)\n    at render_closure1.call$2 (/Users/adam-home/GoSites/base19/node_modules/sass/sass.dart.js:85096:12)\n    at _RootZone.runBinary$3$3 (/Users/adam-home/GoSites/base19/node_modules/sass/sass.dart.js:29643:18)\n    at _FutureListener.handleError$1 (/Users/adam-home/GoSites/base19/node_modules/sass/sass.dart.js:28163:21)");
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: $alpha: 0.8 0.5 is not a number.\n    ╷\n246 │   background: linear-gradient(rgba(0,0,0,.8.5), rgba(0,0,0,.8.5)), url(\"/dist/img/openEvening/stairs.jpg\") center top no-repeat;\n    │                               ^^^^^^^^^^^^^^^^\n    ╵\n  /Users/adamcarter/GoSites/base19/src/app.scss 246:31  root stylesheet\n    at processResult (/Users/adamcarter/GoSites/base19/node_modules/webpack/lib/NormalModule.js:758:19)\n    at /Users/adamcarter/GoSites/base19/node_modules/webpack/lib/NormalModule.js:860:5\n    at /Users/adamcarter/GoSites/base19/node_modules/loader-runner/lib/LoaderRunner.js:400:11\n    at /Users/adamcarter/GoSites/base19/node_modules/loader-runner/lib/LoaderRunner.js:252:18\n    at context.callback (/Users/adamcarter/GoSites/base19/node_modules/loader-runner/lib/LoaderRunner.js:124:13)\n    at /Users/adamcarter/GoSites/base19/node_modules/sass-loader/dist/index.js:73:7\n    at Function.call$2 (/Users/adamcarter/GoSites/base19/node_modules/sass/sass.dart.js:99696:16)\n    at render_closure1.call$2 (/Users/adamcarter/GoSites/base19/node_modules/sass/sass.dart.js:85096:12)\n    at _RootZone.runBinary$3$3 (/Users/adamcarter/GoSites/base19/node_modules/sass/sass.dart.js:29643:18)\n    at _FutureListener.handleError$1 (/Users/adamcarter/GoSites/base19/node_modules/sass/sass.dart.js:28163:21)");
 
 /***/ }),
 

@@ -39,7 +39,7 @@ export default {
         general: false,
         newStarter: false,
         apprentice: false,
-        jnrStylist: false,
+        jnrStylist: true,
         graduate: false,
         layla: false,
         katie: true

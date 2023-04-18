@@ -17,6 +17,7 @@
           <div class="buttons">
             <a href="https://phorest.com/book/salons/basehairacademy#/service-category?id=0P2QrXkTppoqXslH0K5ttQ" class="button">Book Your Consultation</a>
           </div>
+            <p class="is-size-5">Quote <strong>JS20</strong> during your visit</p>
           <div class="offer-team-links">
             <p class="is-size-5">Get inspired by Sarah's love for natural locks on Instagram <a href="https://www.instagram.com/breathof.freshhair/" class="has-text-primary"> @breatheof.freshhair</a></p>
             <p class="is-size-5">Check out Jamie's grid <a href="https://www.instagram.com/jamiebanninghair/" class="has-text-primary">@jamiebanninghair</a> for even more creativity!</p>
@@ -34,6 +35,7 @@
 </template>
 <script>
 import {mapState} from "vuex"
+
 export default {
   computed: {
     ...mapState({
