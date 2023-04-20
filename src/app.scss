@@ -145,16 +145,16 @@ section.section {
 }
 
 .team {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg-2.jpg") top center no-repeat;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-wide.jpg") top center no-repeat;
   @include until($tablet) {
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-bg-2-mob.jpg") top center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-tall.jpg") top center no-repeat;
     background-size: cover;
   }
   background-size: cover;
 }
 
 .team-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/base-team-bg-2.jpg") top center no-repeat;
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/base-team-wide.jpg") top center no-repeat;
   background-size: cover;
 }
 
@@ -243,7 +243,7 @@ section.section {
 }
 
 .openEvening {
-  background: linear-gradient(rgba(0,0,0,.8.5), rgba(0,0,0,.8.5)), url("/dist/img/openEvening/stairs.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("/dist/img/openEvening/stairs.jpg") center top no-repeat;
   background-size: cover;
 }
 
