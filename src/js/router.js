@@ -35,6 +35,7 @@ import TopSpender from "./views/TopSpender"
 import GhdPromo from "./views/GhdPromo"
 import OpenEvening from "./views/OpenEvening.vue"
 import Feedback from "./components/feedback/Feedback.vue"
+import JellyBeans from "./views/JellyBeans.vue"
 
 Vue.use(Router)
 
@@ -242,6 +243,11 @@ const router = new Router({
             path: '/ruby-leaving',
             name: 'leaver',
             component: Leaver
+        },
+        {
+            path: '/jellybeans',
+            name: 'jellybeans',
+            component: JellyBeans
         },
         {
             path: '/:notFound(.*)', redirect: '/'
