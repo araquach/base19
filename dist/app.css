@@ -18774,8 +18774,14 @@ p {
 }
 
 .jellybeans {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/dist/img/bgrounds/jellybeans.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/dist/img/bgrounds/jellybeans.jpg") center top no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 1023px) {
+  .jellybeans {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/dist/img/bgrounds/jellybeans.jpg") right top no-repeat;
+    background-size: cover;
+  }
 }
 
 #offers {

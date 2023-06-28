@@ -247,6 +247,7 @@ const router = new Router({
         {
             path: '/jellybeans',
             name: 'jellybeans',
+            component: JellyBeans
         },
         {
             path: '/:notFound(.*)', redirect: '/'
