@@ -145,9 +145,9 @@ section.section {
 }
 
 .team {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-wide.jpg") top center no-repeat;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-wide_2.jpg") top center no-repeat;
   @include until($tablet) {
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-tall.jpg") top center no-repeat;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-tall_2.jpg") top center no-repeat;
     background-size: cover;
   }
   background-size: cover;
