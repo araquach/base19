@@ -9,8 +9,8 @@
                 <p class="is-size-5">90/92 Bridge Street<br>
                     Warrington<br>
                     WA1 2RF</p>
-                <h3 class="title is-4">Telephone:</h3>
-                <p class="is-size-4">01925 444449</p>
+                <h3 class="title is-4 phone-link">Telephone:</h3>
+                <a href="tel:01925444449" class="is-size-4">01925 444449</a>
                 <hr>
                 <div class="is-size-5">
                     <h3 class="title is-4">Opening Hours</h3>
