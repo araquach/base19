@@ -10,7 +10,7 @@
                     Warrington<br>
                     WA1 2RF</p>
                 <h3 class="title is-4 phone-link">Call Us:</h3>
-                <a href="tel:01925444449" class="is-size-4 button is-small is-primary">01925 444449</a>
+                <a id="call-us" href="tel:01925444449" class="is-size-4 button is-small is-primary">01925 444449</a>
                 <hr>
                 <div class="is-size-5">
                     <h3 class="title is-4">Opening Hours</h3>

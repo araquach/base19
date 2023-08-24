@@ -101,12 +101,12 @@
                         <br>
                         <div class="field">
                             <div class="control">
-                                <button class="button is-primary" type="submit" :disabled="loading">Apply</button>
+                                <button id="join-us" class="button is-primary" type="submit" :disabled="loading">Apply</button>
                             </div>
                             <br><br>
                         </div>
                     </form>
-                    <div v-if="submitStatus === 'OK'">
+                    <div id="join-us-message" v-if="submitStatus === 'OK'">
                         <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes available</p>
                     </div>
                 </div>
