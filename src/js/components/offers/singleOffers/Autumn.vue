@@ -15,7 +15,7 @@
             <router-link :to="{ name: 'bookings' }" class="button is-primary">Book a FREE consultation</router-link>
           </div>
           <br>
-          <p class="small">(Offer ends {{ endDate }} - Skin Test required 48 hrs before any colour service - offer exclusively for clients new to Base Hairdressing - Quote offer code AUTUMN OFFER at time of booking to secure this discount</p>
+          <p class="small">Offer ends {{ endDate }} - Skin Test required 48 hrs before any colour service - offer exclusively for clients new to Base Hairdressing - Quote offer code AUTUMN OFFER at time of booking to secure this discount</p>
         </div>
       </div>
     </div>
