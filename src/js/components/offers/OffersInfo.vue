@@ -3,8 +3,9 @@
       <div v-if="!hideOffers">
         <div class="columns is-vcentered">
           <div class="section column is-10">
-            <h1 class="title">{{ showMonth }}'s Special Offers</h1>
+            <h1 class="title">Special Offers This Autumn</h1>
             <Katie v-if="showOffers.katie"/>
+            <Autumn v-if="showOffers.autumn"/>
             <General v-if="showOffers.general" />
             <NewStarter v-if="showOffers.newStarter"/>
             <Apprentice v-if="showOffers.apprentice"/>
@@ -29,20 +30,22 @@ import Apprentice from "../../components/offers/offerLinks/Apprentice"
 import NewStarter from "../../components/offers/offerLinks/NewStarter"
 import Layla from "../../components/offers/offerLinks/Layla"
 import Katie from "../../components/offers/offerLinks/Katie"
+import Autumn from "./offerLinks/Autumn.vue";
 import format from "date-fns/format"
 
 export default {
-  components: {Katie, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter},
+  components: {Katie, Autumn, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter},
   data() {
     return {
       showOffers: {
         general: false,
         newStarter: false,
         apprentice: false,
-        jnrStylist: true,
+        jnrStylist: false,
         graduate: false,
         layla: false,
-        katie: true
+        katie: false,
+        autumn: true,
       }
     }
   },

@@ -16,6 +16,7 @@ import JnrStylistOffer from "./components/offers/singleOffers/JnrStylist"
 import GraduateOffer from "./components/offers/singleOffers/Graduate"
 import LaylaOffer from "./components/offers/singleOffers/Layla"
 import KatieOffer from "./components/offers/singleOffers/Katie"
+import AutumnOffer from "./components/offers/singleOffers/Autumn.vue"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
@@ -163,6 +164,11 @@ const router = new Router({
             path: '/offers/katie',
             name: 'katie-offer',
             component: KatieOffer
+        },
+        {
+            path: '/offers/autumn',
+            name: 'autumn-offer',
+            component: AutumnOffer
         },
         {
             path: '/joinus',
