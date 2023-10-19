@@ -8,9 +8,7 @@
         <h2 class="title-new is-1 is-4-mobile has-text-white">Recommend your friends</h2>
         <h2 class="title-new-sub is-3 is-size-4-mobile has-text-white">Give £20 + Get £20</h2>
         <p class="is-size-4">When you refer someone to <strong>Base Hairdressing</strong>, not only will your friend
-          receive
-          <strong>£20 OFF</strong>, but
-          you'll also receive <strong>£20 OFF</strong> for every friend who becomes a new client!</p>
+          receive<strong>£20 OFF</strong>, but you'll also receive <strong>£20 OFF</strong> for every friend who becomes a new client!</p>
         <br>
         <figure class="image">
           <img src="/dist/img/refer/refer_wide.png" alt="Refer a Friend">
@@ -21,7 +19,7 @@
           personalised
           referral link.</p>
         <p class="is-size-5">You will need to <strong>log in</strong> if you aren't already and hit <strong>'referrals
-          program'</strong> to access your shareable link</p>
+          program'</strong> to access your shareable link.</p>
         <p class="is-size-4"><strong>Share your referral link with your friends</strong>, allowing them to claim their
           <strong>£20 voucher</strong> either online or by giving us a call.</p>
         <h2 class="title-new is-3">NEW TO BOOKING ONLINE?</h2>
@@ -38,7 +36,7 @@
           <strong>online booking</strong>
           account, making sharing from any device effortless.</p>
         <p class="is-size-5">Your voucher will remain valid for a generous <strong>12 weeks</strong> from the date of issue and your referred friend's
-          voucher will remain valid for <strong>8 weeks</strong> from the date of issue</p>
+          voucher will remain valid for <strong>8 weeks</strong> from the date of issue.</p>
         <p class="title-new-sub">Every Friend Referred is a Step Closer to Your Next Stunning Look for Less!</p>
       </div>
     </div>
