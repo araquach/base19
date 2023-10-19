@@ -8,16 +8,19 @@
       <b-navbar-item v-scroll-to="'#about'" :to="{ name: 'main', hash: '#about' }" tag="router-link">
         About
       </b-navbar-item>
-      <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'main', hash: '#team' }" tag="router-link">
-        Team
-      </b-navbar-item>
       <b-navbar-item v-scroll-to="'#price'" :to="{ name: 'main', hash: '#price' }" tag="router-link">
-          Prices
-        </b-navbar-item>
+        Prices
+      </b-navbar-item>
+      <b-navbar-item :to="{ name: 'referrals' }" tag="router-link">
+        Referrals
+      </b-navbar-item>
       <b-navbar-item v-if="!hideOffers" v-scroll-to="'#offers'" tag="router-link" to="/#offers">
         Offers
       </b-navbar-item>
       <b-navbar-dropdown label="More">
+        <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'main', hash: '#team' }" tag="router-link">
+          Team
+        </b-navbar-item>
         <b-navbar-item v-scroll-to="'#blog'" :to="{ name: 'main', hash: '#blog' }" tag="router-link">
           Blog
         </b-navbar-item>
@@ -33,9 +36,9 @@
     <template slot="end">
       <b-navbar-item tag="div">
         <div class="buttons">
-<!--          <a class="button is-primary" href="https://phorest.com/book/salons/basehairacademy">-->
-<!--            <strong>Book Now</strong>-->
-<!--          </a>-->
+          <!--          <a class="button is-primary" href="https://phorest.com/book/salons/basehairacademy">-->
+          <!--            <strong>Book Now</strong>-->
+          <!--          </a>-->
           <b-navbar-item tag="router-link" class="button is-primary" :to="{name: 'bookings'}">
             Book Now
           </b-navbar-item>

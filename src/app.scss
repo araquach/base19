@@ -2,11 +2,11 @@
 @import "~bulma/sass/utilities/functions";
 
 $navbar-item-color: #FFF;
-$navbar-item-hover-background-color: rgba(25,25,25,.7);
+$navbar-item-hover-background-color: rgba(25, 25, 25, .7);
 $navbar-dropdown-background-color: rgba(25, 25, 25, 0.7);
 
-$card-background-color: rgba(0,0,0,0.8);
-$card-shadow: 0 0 1px 0 rgb(255,255,255);
+$card-background-color: rgba(0, 0, 0, 0.8);
+$card-shadow: 0 0 1px 0 rgb(255, 255, 255);
 
 $lightest-grey: #dce2f2;
 $light-grey: #99aabf;
@@ -15,6 +15,7 @@ $dark-arctic: #425559;
 $darkest-arctic: #0d0d0d;
 
 @import "~araquach-price-calc/styles/dark_colours";
+@import "overrides";
 @import "~bulma/bulma.sass";
 @import "~buefy/src/scss/buefy";
 @import "~araquach-price-calc/styles/dark";
@@ -31,15 +32,16 @@ li {
 
 a.navbar-burger {
   &:hover {
-      color: #FFF;
-    background-color: rgba(10,10,10,.5);
+    color: #FFF;
+    background-color: rgba(10, 10, 10, .5);
   }
-  background-color: rgba(10,10,10,.5);
+
+  background-color: rgba(10, 10, 10, .5);
 }
 
 .navbar-menu {
   @include until($desktop) {
-    background-color: rgba(10,10,10,.5);
+    background-color: rgba(10, 10, 10, .5);
 
     .navbar-dropdown {
       a.navbar-item {
@@ -64,16 +66,17 @@ strong {
 
 .hero.is-fullheight .hero-body.show {
   align-items: flex-end;
+
   h1 {
     font-size: 4rem;
     @include until($desktop) {
       font-size: 3rem;
     }
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   }
 
   h2 {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     font-size: 1.7rem;
   }
 
@@ -110,24 +113,29 @@ section.section {
 /* Page Background Styling */
 
 #home {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url("/dist/img/bgrounds/b6.jpg") center center no-repeat;
   background-size: cover;
 
   .social {
     margin-top: 2rem;
+
     img {
       opacity: .7;
+
       &:hover {
         opacity: 1;
       }
     }
   }
+
   figure {
     margin-bottom: 2rem;
   }
+
   .directory {
     opacity: .7;
     padding-left: 3rem;
+
     a {
       color: coral;
     }
@@ -135,123 +143,123 @@ section.section {
 }
 
 .about {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .about-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/dist/img/bgrounds/b1.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .team {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-wide_2.jpg") top center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/base-team-wide_2.jpg") top center no-repeat;
   @include until($tablet) {
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/base-team-tall_2.jpg") top center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/base-team-tall_2.jpg") top center no-repeat;
     background-size: cover;
   }
   background-size: cover;
 }
 
 .team-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/base-team-wide.jpg") top center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/dist/img/bgrounds/base-team-wide.jpg") top center no-repeat;
   background-size: cover;
 }
 
 .joinus {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .joinus-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/dist/img/bgrounds/b2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .models {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .models-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/dist/img/bgrounds/b5.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .offers {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/offers.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/offers.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .offers-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/offers.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/dist/img/bgrounds/offers.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .blog {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/b3.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .blog-info {
-  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url("/dist/img/bgrounds/b3.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url("/dist/img/bgrounds/b3.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .contact {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .contact-info {
-  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url("/dist/img/bgrounds/b7.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .bookings-info {
-  background: linear-gradient(to right, rgba(0,0,0,.65), rgba(0,0,0,0)), url("/dist/img/bgrounds/bookings_2.jpg") center top no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, .65), rgba(0, 0, 0, 0)), url("/dist/img/bgrounds/bookings_2.jpg") center top no-repeat;
   background-size: cover;
   @include until($tablet) {
-    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("/dist/img/bgrounds/bookings_2.jpg") right top no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("/dist/img/bgrounds/bookings_2.jpg") right top no-repeat;
     background-size: cover;
   }
 }
 
 .corona {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/corona_1.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/corona_1.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .corona-info {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/dist/img/bgrounds/corona_2.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/dist/img/bgrounds/corona_2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .prices {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.4)), url("/dist/img/bgrounds/prices.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .4)), url("/dist/img/bgrounds/prices.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .top-spender {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/dist/img/bgrounds/corona_2.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/dist/img/bgrounds/corona_2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .ghdPromo {
-  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("/dist/img/bgrounds/ghd1.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/dist/img/bgrounds/ghd1.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .openEvening {
-  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("/dist/img/openEvening/stairs.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/dist/img/openEvening/stairs.jpg") center top no-repeat;
   background-size: cover;
 }
 
 .jellybeans {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("/dist/img/bgrounds/jellybeans.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/dist/img/bgrounds/jellybeans.jpg") center top no-repeat;
   background-size: cover;
   @include until($desktop) {
-    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url("/dist/img/bgrounds/jellybeans.jpg") right top no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url("/dist/img/bgrounds/jellybeans.jpg") right top no-repeat;
     background-size: cover;
   }
 }
@@ -259,12 +267,14 @@ section.section {
 #offers {
   padding-top: 3rem;
   color: #FFF;
+
   .box {
     background-color: black;
     border: 1px solid #FFF;
     margin-bottom: 3rem;
     color: #FFF;
   }
+
   .image {
     margin: 3rem 0;
   }
@@ -276,14 +286,58 @@ section.section {
   }
 }
 
-#profile {
-  .section.columns {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    &:first-of-type {
-      padding-top: 2rem
+.new-title {
+  h1 {
+    font-size: 2rem;
+    font-family: "bebas-neue-pro-expanded", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    span {
+      font-size: 5rem;
+      font-family: "bebas-neue-pro-expanded", sans-serif;
+      font-weight: 700;
+      font-style: normal;
     }
+  }
+}
+
+#profile {
+  .profile-title {
+    h1 {
+      font-size: 2rem;
+      font-family: "bebas-neue-pro-expanded", sans-serif;
+      font-weight: 200;
+      font-style: normal;
+      line-height: normal;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      span {
+        font-size: 5rem;
+        font-family: "bebas-neue-pro-expanded", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    }
+  }
+  h3 {
+    font-size: 2em;
+    font-family: "bebas-neue-pro-expanded", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: .7rem;
+  }
+}
+
+.section.columns {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &:first-of-type {
+    padding-top: 2rem
   }
 }
 
@@ -306,6 +360,7 @@ section.section {
 
   ul {
     margin-bottom: 2rem;
+
     li {
       margin-bottom: .7rem;
     }
@@ -319,7 +374,7 @@ section.section {
 }
 
 #prices {
-  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("/dist/img/prices/prices.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url("/dist/img/prices/prices.jpg") center top no-repeat;
   padding-top: 5rem;
   min-height: 90rem;
   background-size: cover;
@@ -380,29 +435,39 @@ section.section {
   background: rgb(21, 21, 26);
   background: linear-gradient(142deg, rgba(15, 14, 19, 0.8) 0%, rgba(33, 33, 50, 0.8) 35%, rgba(40, 42, 47, 0.8) 100%), url("/dist/img/bgrounds/base-inside.jpg") center top no-repeat;
   background-size: cover;
+
   p {
     margin-bottom: 4rem;
   }
+
   .box {
     border-radius: 40px;
     color: #01012d;
   }
+
   .social {
     margin-top: 5rem;
   }
 }
 
 .hour-changes {
-  background: linear-gradient(to right, rgba(0,0,0,.65), rgba(0,0,0,.65)), url("/dist/img/bgrounds/bookings_2.jpg") center top no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url("/dist/img/bgrounds/bookings_2.jpg") center top no-repeat;
   background-size: cover;
 }
 
 /* transition styling */
 
 .fade-enter, .fade-leave-active {
-   opacity: 0;
+  opacity: 0;
 }
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .15s;
+}
+
+@media(max-width: $tablet) {
+  .columns.is-reversed-mobile {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }

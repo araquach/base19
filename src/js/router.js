@@ -21,11 +21,15 @@ import JoinusInfo from "./components/joinus/JoinusInfo"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
-import BethProfile from "./components/team/profiles/BethProfile"
-import LaurenProfile from "./components/team/profiles/LaurenProfile"
-import LucyProfile from "./components/team/profiles/LucyProfile"
-import RubyProfile from "./components/team/profiles/RubyProfile"
-import SophieProfile from "./components/team/profiles/SophieProfile"
+import LaylaProfile from "./components/team/profiles/LaylaProfile.vue"
+import VikkiProfile from "./components/team/profiles/VikkiProfile.vue"
+import BeckyProfile from "./components/team/profiles/BeckyProfile.vue"
+import DaisyProfile from "./components/team/profiles/DaisyProfile.vue";
+import JamieProfile from "./components/team/profiles/JamieProfile.vue";
+import KatieProfile from "./components/team/profiles/KatieProfile.vue";
+import LilyProfile from "./components/team/profiles/LilyProfile.vue";
+import SarahProfile from "./components/team/profiles/SarahProfile.vue";
+import JasmineProfile from "./components/team/profiles/JasmineProfile.vue";
 import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
@@ -37,6 +41,8 @@ import GhdPromo from "./views/GhdPromo"
 import OpenEvening from "./views/OpenEvening.vue"
 import Feedback from "./components/feedback/Feedback.vue"
 import JellyBeans from "./views/JellyBeans.vue"
+import Referrals from "./views/Referrals.vue";
+
 
 Vue.use(Router)
 
@@ -90,29 +96,49 @@ const router = new Router({
             props: true
         },
         {
-            path: '/beth-profile',
-            name: 'beth-profile',
-            component: BethProfile,
+            path: '/layla-profile',
+            name: 'layla-profile',
+            component: LaylaProfile,
         },
         {
-            path: '/sophie-profile',
-            name: 'sophie-profile',
-            component: SophieProfile,
+            path: '/vikki-profile',
+            name: 'vikki-profile',
+            component: VikkiProfile,
         },
         {
-            path: '/ruby-profile',
-            name: 'ruby-profile',
-            component: RubyProfile,
+            path: '/becky-profile',
+            name: 'becky-profile',
+            component: BeckyProfile,
         },
         {
-            path: '/lucy-profile',
-            name: 'lucy-profile',
-            component: LucyProfile,
+            path: '/daisy-profile',
+            name: 'daisy-profile',
+            component: DaisyProfile,
         },
         {
-            path: '/lauren-profile',
-            name: 'lauren-profile',
-            component: LaurenProfile,
+            path: '/jamie-profile',
+            name: 'jamie-profile',
+            component: JamieProfile,
+        },
+        {
+            path: '/katie-profile',
+            name: 'katie-profile',
+            component: KatieProfile,
+        },
+        {
+            path: '/lily-profile',
+            name: 'lily-profile',
+            component: LilyProfile,
+        },
+        {
+            path: '/sarah-profile',
+            name: 'sarah-profile',
+            component: SarahProfile,
+        },
+        {
+            path: '/jasmine-profile',
+            name: 'jasmine-profile',
+            component: JasmineProfile,
         },
         {
             path: '/blog',
@@ -129,6 +155,11 @@ const router = new Router({
             path: '/offers',
             name: 'offers',
             component: OffersInfo
+        },
+        {
+            path: '/refer-a-friend',
+            name: 'referrals',
+            component: Referrals
         },
         {
             path: '/offers/general',

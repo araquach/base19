@@ -1,0 +1,17 @@
+// _overrides.scss
+
+// Define your new style
+.title-new {
+  @extend .title; // This ensures .new-title inherits all of .title's styles
+
+  // Now, specify the properties you want to change/override
+  font-family: "bebas-neue-pro-expanded", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.title-new-sub {
+  @extend .title-new; // This ensures .new-title inherits all of .title's styles
+  font-weight: 200 !important;
+}
