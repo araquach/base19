@@ -2,7 +2,6 @@
   <section class="section offers-info hero is-fullheight is-dark">
     <div class="section columns">
       <div class="column is-9-desktop">
-
         <img src="/dist/img/base_logo.svg" alt="Base Hairdressing" width=250>
         <br><br>
         <h2 class="title-new is-1 is-4-mobile has-text-white">Recommend your friends</h2>

@@ -42,6 +42,7 @@ import OpenEvening from "./views/OpenEvening.vue"
 import Feedback from "./components/feedback/Feedback.vue"
 import JellyBeans from "./views/JellyBeans.vue"
 import Referrals from "./views/Referrals.vue";
+import OnlineStore from "./views/OnlineStore.vue";
 
 
 Vue.use(Router)
@@ -285,6 +286,11 @@ const router = new Router({
             path: '/jellybeans',
             name: 'jellybeans',
             component: JellyBeans
+        },
+        {
+            path: '/online-store',
+            name: 'online-store',
+            component: OnlineStore
         },
         {
             path: '/:notFound(.*)', redirect: '/'

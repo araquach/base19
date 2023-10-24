@@ -22,7 +22,7 @@
   "devDependencies": {
     "araquach-price-calc": "1.6.8",
     "axios": "^0.21.1",
-    "buefy": "^0.8.20",
+    "buefy": "^0.9.25",
     "bulma": "^0.9.4",
     "cross-env": "^7.0.3",
     "date-fns": "^2.21.1",
