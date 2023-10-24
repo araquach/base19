@@ -5,7 +5,7 @@
         <img src="/dist/img/base_logo.svg" alt="Base Hairdressing" width=250>
         <br><br>
         <h2 class="title-new is-1 is-4-mobile has-text-white">Recommend your friends</h2>
-        <h2 class="title-new-sub is-3 is-size-4-mobile has-text-white">Give £20 + Get £20</h2>
+        <h2 class="title-new-sub is-3 is-size-4-mobile has-text-white">Give £20 | Get £20</h2>
         <p class="is-size-4">When you refer someone to <strong>Base Hairdressing</strong>, not only will your friend
           receive<strong>£20 OFF</strong>, but you'll also receive <strong>£20 OFF</strong> for every friend who becomes a new client!</p>
         <br>
@@ -32,8 +32,7 @@
         <p class="is-size-4">Once your friend becomes our valued client, you will automatically receive <strong>your £20
           voucher</strong> via email.</p>
         <p class="is-size-5">Additionally, your voucher will be conveniently stored on your <strong>client card</strong> and in your
-          <strong>online booking</strong>
-          account, making sharing from any device effortless.</p>
+          <strong>online booking</strong> account, making redeeming it effortless.</p>
         <p class="is-size-5">Your voucher will remain valid for a generous <strong>12 weeks</strong> from the date of issue and your referred friend's
           voucher will remain valid for <strong>8 weeks</strong> from the date of issue.</p>
         <p class="title-new-sub">Every Friend Referred is a Step Closer to Your Next Stunning Look for Less!</p>
