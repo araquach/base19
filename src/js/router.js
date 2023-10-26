@@ -288,8 +288,8 @@ const router = new Router({
             component: JellyBeans
         },
         {
-            path: '/online-store',
-            name: 'online-store',
+            path: '/online-shop',
+            name: 'online-shop',
             component: OnlineStore
         },
         {

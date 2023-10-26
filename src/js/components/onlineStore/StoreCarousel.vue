@@ -1,23 +1,16 @@
 <template>
   <b-carousel :indicator-inside="true">
-    <b-carousel-item v-for="(item, i) in images" :key="i">
-      <a href=""><b-image class="image" :src="item"></b-image></a>
+    <b-carousel-item v-for="(item, i) in banners" :key="i">
+      <a :href="item.url">
+        <b-image class="image is-hidden-tablet" :src="`/dist/img/store/banners/mobile/${item.image}`"></b-image>
+        <b-image class="image is-hidden-mobile" :src="`/dist/img/store/banners/desktop/${item.image}`"></b-image>
+      </a>
     </b-carousel-item>
   </b-carousel>
 </template>
-
 <script>
 export default {
-  data() {
-    return {
-      images: [
-        '/dist/img/store/tiles/bc.png',
-        '/dist/img/store/tiles/fibre_clinix.png',
-        '/dist/img/store/tiles/ghd.png',
-        '/dist/img/store/tiles/k18.png'
-      ]
-    }
-  }
+  props: ['banners'],
 }
 </script>
 
