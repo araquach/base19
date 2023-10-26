@@ -1,10 +1,8 @@
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
-github.com/araquach/salonserver v1.1.80 h1:q8Rlsyh6nDMqtvnXDcObE6imjGFZLHMS1nvW6mBGNdM=
-github.com/araquach/salonserver v1.1.80/go.mod h1:3kgj5hCcYzKNiTutuxlXv/XJwvO1GGp7++et/Hnqg2A=
-github.com/araquach/salonserver v1.1.81 h1:plsPtv5hEcuwccYGEvXUWHsQkMu5YY9QH5atb1RlZ10=
-github.com/araquach/salonserver v1.1.81/go.mod h1:3kgj5hCcYzKNiTutuxlXv/XJwvO1GGp7++et/Hnqg2A=
+github.com/araquach/salonserver v1.1.94 h1:vKBz7grLLUK+MWIX9mpIRLPnTMCJ87vyo9XaNIJO0fA=
+github.com/araquach/salonserver v1.1.94/go.mod h1:3kgj5hCcYzKNiTutuxlXv/XJwvO1GGp7++et/Hnqg2A=
 github.com/cockroachdb/apd v1.1.0 h1:3LFP3629v+1aKXU5Q37mxmRxX/pIu1nijXydLShEq5I=
 github.com/cockroachdb/apd v1.1.0/go.mod h1:8Sl8LxpKi29FqWXR16WEFZRNSz3SoPzUzeMeY4+DwBQ=
 github.com/coreos/go-systemd v0.0.0-20190321100706-95778dfbb74e/go.mod h1:F5haX7vjVVG0kc13fIWeqUViNPyEJxv/OmvnBo0Yme4=
