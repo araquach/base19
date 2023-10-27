@@ -1,13 +1,11 @@
 <template>
-  <b-carousel :indicator-inside="true">
+  <b-carousel :indicator="false" :pause-info="false">
     <b-carousel-item v-for="(item, i) in banners" :key="i">
       <div class="image-container">
         <!-- Mobile image -->
         <b-image class="image is-hidden-tablet" :src="`/dist/img/store/banners/mobile/${item.image}`"></b-image>
-
         <!-- Clickable Area for Mobile: Adjust positioning as needed -->
         <a :href="item.url" class="clickable-region is-hidden-tablet"></a>
-
         <!-- Desktop/Tablet image -->
         <a :href="item.url">
           <b-image class="image is-hidden-mobile" :src="`/dist/img/store/banners/desktop/${item.image}`"></b-image>
