@@ -26,7 +26,7 @@
           create one to access your referral link,
           ensuring you use the <strong>same email and mobile number</strong> you already have registered with us at the
           salon.</p>
-        <p class="is-size-5">Feel free to call us if you need check what email you have registered.</p>
+        <p class="is-size-5">Feel free to call us if you need to check what email you have registered.</p>
         <a class="button is-white" href="https://www.phorest.com/salon/basehairacademy/account/referrals-program">Get your referral link</a>
         <br><br>
         <p class="is-size-4">Once your friend becomes our valued client, you will automatically receive <strong>your £20
