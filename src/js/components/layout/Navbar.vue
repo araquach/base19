@@ -18,6 +18,9 @@
         Offers
       </b-navbar-item>
       <b-navbar-dropdown label="More">
+        <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'online-store' }" tag="router-link">
+          Online Shop
+        </b-navbar-item>
         <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'main', hash: '#team' }" tag="router-link">
           Team
         </b-navbar-item>
