@@ -9,9 +9,10 @@
           or <strong>Pre-Apprenticeship scheme</strong> could be for you!</p>
         <p>Base is the foundation upon which our wider business thrives, we lay the foundations for success. Once our
           apprentices qualify as skilled stylists, they transition to our sister salons <strong>Jakata Salon</strong>
-          and<strong>Paul Kemp Hairdressing</strong>, where they continue to grow and refine their craft. These sister sites provide them
+          and <strong>Paul Kemp Hairdressing</strong>, where they continue to grow and refine their craft. These sister sites provide them
           with new opportunities to expand their horizons, build their clientele, and make their mark in the industry. We take
           great pride in nurturing their talent and supporting their professional development every step of the way.</p>
+        <br>
         <h2 class="title is-5">PRE APPRENTICESHIP SCHEME</h2>
         <p>Our 'Pre Apprenticeship Scheme' is perfect for anyone with an interest in hair that would like to try out the
           industry before they leave school or enrol in any further education. We offer <strong>Saturday, evening and term
@@ -20,6 +21,7 @@
             Salon</strong>. You'll receive training
           from the start and plenty of hands on experience, which can fast track you to interview stage for our
           apprenticeship scheme.</p>
+        <br>
         <h2 class="title is-5">APPRENTICESHIP SCHEME</h2>
         <p>When you embark on our transformative 2-year apprenticeship scheme, you will be dedicating five days a week
           to sculpting your skills and unleashing your creative potential. Proudly partnered and accredited by <strong>Paragon
@@ -36,6 +38,7 @@
         <p>As you grow, we open columns for you to take bookings, ensuring your progression within the industry and you
           will complete your qualification with an end-point assessment, followed by an interview process to enrol in
           our in-house 'graduate scheme' to further hone your skills.</p>
+        <br>
         <h2 class="title is-5">Empowering Growth: Training & Opportunities at Base</h2>
         <p>Base continuously invests in staff and training, dedicating substantial resources to stay at the forefront of
           the industry. Throughout your career at Base you will continue to undergo re-education opportunities with
