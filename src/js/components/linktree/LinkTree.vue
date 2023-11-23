@@ -1,8 +1,8 @@
 <template>
   <div id="link-tree" class="has-text-centered">
-    <div class="pt-5">
+    <div class="section pt-5">
       <img src="/dist/img/linktree/linktree.png" alt="Base Hairdressing" width="230">
-      <h1 class="title-new is-2 lt-title">THE BASE HAIRDRESSING<br>TRAINING ACADEMY</h1>
+      <h1 class="title-new is-3 lt-title">THE BASE HAIRDRESSING<br>TRAINING ACADEMY</h1>
     </div>
     <div class="section columns is-centered is-mobile">
       <div class="column is-9 has-text-centered is-size-5">
