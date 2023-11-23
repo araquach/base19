@@ -11,6 +11,11 @@
   text-transform: uppercase;
 }
 
+.title-new-mid {
+  @extend .title-new; // This ensures .new-title inherits all of .title's styles
+  font-weight: 400 !important;
+}
+
 .title-new-sub {
   @extend .title-new; // This ensures .new-title inherits all of .title's styles
   font-weight: 200 !important;

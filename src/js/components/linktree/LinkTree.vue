@@ -1,51 +1,58 @@
 <template>
-  <div id="link-tree" class="section columns is-centered">
-    <div class="column is-7 has-text-centered is-size-5 has-text-weight-bold">
-      <img src="/dist/img/linktree/linktree.png" alt="Base Hairdressing" width="130">
-      <p class="is-size-4 has-text-weight-bold has-text-white">@basehairdressing</p>
-      <router-link :to="{ name: 'prices' }" class="box">
-        Get a tailor made price with our quote generator
+  <div id="link-tree" class="section columns is-centered is-mobile">
+    <div class="column is-7 has-text-centered is-size-5">
+      <div>
+        <img src="/dist/img/linktree/linktree.png" alt="Base Hairdressing" width="230">
+      </div>
+      <h1 class="title-new is-2 lt-title">THE BASE HAIRDRESSING<br>TRAINING ACADEMY</h1>
+      <router-link :to="{ name: 'bookings' }" class="box lt-bookings">
+        <span class="title-new-mid">BOOK ONLINE</span>
       </router-link>
-      <router-link :to="{ name: 'about'}" class="box">
-        Find out what Base is all about!
+      <router-link :to="{ name: 'prices' }" class="box lt-quote">
+        <span class="title-new-mid has-text-white">ONLINE QUOTE</span>
       </router-link>
-      <router-link :to="{ name: 'team' }" class="box">
-        Learn all about our amazing team members
+      <router-link :to="{ name: 'joinus'}" class="box lt-join-us">
+        <span class="title-new-mid has-text-white">JOIN THE TEAM</span>
       </router-link>
-      <router-link :to="{ name: 'gift-voucher' }" class="box">
-        Buy a Gift Voucher online
+      <router-link :to="{ name: 'models' }" class="box lt-models">
+        <span class="title-new-mid has-text-white">MODEL SIGNUP</span>
       </router-link>
-      <router-link :to="{ name: 'offers' }" class="box">
-        Check out our latest offers
+      <router-link :to="{ name: 'online-shop' }" class="box lt-shop">
+        <span class="title-new-mid has-text-white">THE BASE SHOP</span>
       </router-link>
-      <router-link :to="{ name: 'models' }" class="box">
-        Sign up to be a model on our training days
+      <router-link :to="{ name: 'blog-info' }" class="box lt-blog">
+        <span class="title-new-mid has-text-white">THE BASE BLOG</span>
       </router-link>
-      <router-link :to="{ name: 'joinus' }" class="box">
-        Want to join our team? Apply here
+      <router-link :to="{ name: 'main' }" class="box lt-website">
+        <span class="title-new-mid has-text-white">WEBSITE</span>
       </router-link>
-      <router-link v-for="newsItem in newsItems" :key="newsItem.id" :to="{ name: 'blog-post', params: {slug: newsItem.slug} }" class="box">
-        {{ newsItem.title }}
-      </router-link>
-      <div class="columns social is-mobile">
-        <div class="column is-2 is-offset-3">
+
+      <div class="columns social is-mobile is-centered">
+        <div class="column is-2">
           <figure class="image is-square">
             <a href="https://www.instagram.com/basehairdressing/">
-              <img src="/dist/img/home/social/Insta2.svg" alt="Instagram">
+              <img src="/dist/img/linktree/instagram.svg" alt="Instagram">
             </a>
           </figure>
         </div>
         <div class="column is-2">
           <figure class="image is-square">
             <a href="https://www.facebook.com/basehairdressing/">
-              <img src="/dist/img/home/social/fb.svg" alt="Facebook">
+              <img src="/dist/img/linktree/facebook.svg" alt="Facebook">
             </a>
           </figure>
         </div>
         <div class="column is-2">
           <figure class="image is-square">
             <a href="https://www.pinterest.co.uk/basehairdressing/">
-              <img src="/dist/img/home/social/pinterest.svg" alt="Pinterest">
+              <img src="/dist/img/linktree/pinterest.svg" alt="Pinterest">
+            </a>
+          </figure>
+        </div>
+        <div class="column is-2">
+          <figure class="image is-square">
+            <a href="https://www.tiktok.com/@basehairdressing">
+              <img src="/dist/img/linktree/tiktok.svg" alt="TikTok">
             </a>
           </figure>
         </div>
@@ -53,13 +60,5 @@
     </div>
   </div>
 </template>
-<script>
-import {mapState} from 'vuex'
-export default {
-  computed: {
-    ...mapState({
-      newsItems: state => state.base.newsItems
-    }),
-  }
-}
+<script setup>
 </script>
