@@ -29,7 +29,7 @@
         </router-link>
 
         <div class="columns social is-mobile is-centered">
-          <div class="column is-2">
+          <div class="column is-2 is-1-mobile">
             <figure class="image is-square">
               <a href="https://www.instagram.com/basehairdressing/">
                 <img src="/dist/img/linktree/instagram.svg" alt="Instagram">
