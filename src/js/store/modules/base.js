@@ -5,7 +5,7 @@ import {addWeeks} from "date-fns";
 const today = new Date()
 
 export const state = {
-    hideOffers: false,
+    hideOffers: true,
     newsItems: [],
     endDate: "30/11/23"
 }
