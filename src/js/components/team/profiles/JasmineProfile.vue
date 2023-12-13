@@ -68,6 +68,10 @@
       <router-link class="button is-primary" :to="{ name: 'stylist-prices', params: { stylist: 'jasmine' } }">Get a quote
         with me!
       </router-link>
+      <br><br>
+      <router-link class="button is-small is-white" :to="{ name: 'team', hash: '#becky' }">
+        Back to the full team
+      </router-link>
     </div>
   </div>
 </template>

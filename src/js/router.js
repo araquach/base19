@@ -90,54 +90,54 @@ const router = new Router({
             name: 'team',
             component: TeamAll
         },
+        // {
+        //     path: '/team/:slug',
+        //     name: 'team-detail',
+        //     component: TeamDetail,
+        //     props: true
+        // },
         {
-            path: '/team/:slug',
-            name: 'team-detail',
-            component: TeamDetail,
-            props: true
-        },
-        {
-            path: '/layla-profile',
+            path: '/team/layla',
             name: 'layla-profile',
             component: LaylaProfile,
         },
         {
-            path: '/vikki-profile',
+            path: '/team/vikki',
             name: 'vikki-profile',
             component: VikkiProfile,
         },
         {
-            path: '/becky-profile',
+            path: '/team/becky',
             name: 'becky-profile',
             component: BeckyProfile,
         },
         {
-            path: '/daisy-profile',
+            path: '/team/daisy',
             name: 'daisy-profile',
             component: DaisyProfile,
         },
         {
-            path: '/jamie-profile',
+            path: '/team/jamie',
             name: 'jamie-profile',
             component: JamieProfile,
         },
         {
-            path: '/katie-profile',
+            path: '/team/katie',
             name: 'katie-profile',
             component: KatieProfile,
         },
         {
-            path: '/lily-profile',
+            path: '/team/lily',
             name: 'lily-profile',
             component: LilyProfile,
         },
         {
-            path: '/sarah-profile',
+            path: '/team/sarah',
             name: 'sarah-profile',
             component: SarahProfile,
         },
         {
-            path: '/jasmine-profile',
+            path: '/team/jasmine',
             name: 'jasmine-profile',
             component: JasmineProfile,
         },

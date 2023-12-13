@@ -4,7 +4,7 @@
 
         <div class="columns is-multiline">
             <div v-for="(tm, id) in teamMembers" class="section column is-4">
-                <router-link :to="{ name: 'team-detail', params: { slug: tm.slug } }">
+                <router-link :to="{ name: `${tm.slug}-profile` }">
                     <div class="card has-background-black">
                         <div class="card-image">
                             <figure class="image is-4by5">
@@ -18,6 +18,9 @@
                                     <p class="subtitle has-text-white">{{tm.level_name}}</p>
                                 </div>
                             </div>
+                          <div class="content is-size-7-mobile has-text-white">
+                            <p>{{tm.para_1}}</p>
+                          </div>
                             <div class="content is-size-5-mobile has-text-white">
                                 <p class="price">Average Cut &amp; Colour price &pound;{{tm.price}}</p>
                             </div>

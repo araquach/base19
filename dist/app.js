@@ -8169,10 +8169,7 @@ var render = function render() {
     }, [_c("router-link", {
       attrs: {
         to: {
-          name: "team-detail",
-          params: {
-            slug: tm.slug
-          }
+          name: "".concat(tm.slug, "-profile")
         }
       }
     }, [_c("div", {
@@ -8197,6 +8194,8 @@ var render = function render() {
     }, [_vm._v(_vm._s(tm.first_name) + " " + _vm._s(tm.last_name))]), _vm._v(" "), _c("p", {
       staticClass: "subtitle has-text-white"
     }, [_vm._v(_vm._s(tm.level_name))])])]), _vm._v(" "), _c("div", {
+      staticClass: "content is-size-7-mobile has-text-white"
+    }, [_c("p", [_vm._v(_vm._s(tm.para_1))])]), _vm._v(" "), _c("div", {
       staticClass: "content is-size-5-mobile has-text-white"
     }, [_c("p", {
       staticClass: "price"
@@ -8373,7 +8372,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8507,7 +8514,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8639,7 +8654,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8765,7 +8788,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -8899,7 +8930,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9025,7 +9064,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9151,7 +9198,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9277,7 +9332,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -9403,7 +9466,15 @@ var render = function render() {
         }
       }
     }
-  }, [_vm._v("Get a quote\n      with me!\n    ")])], 1)]);
+  }, [_vm._v("Get a quote\n      with me!\n    ")]), _vm._v(" "), _c("br"), _c("br"), _vm._v(" "), _c("router-link", {
+    staticClass: "button is-small is-white",
+    attrs: {
+      to: {
+        name: "team",
+        hash: "#becky"
+      }
+    }
+  }, [_vm._v("\n      Back to the full team\n    ")])], 1)]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -10304,45 +10375,47 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_44__["default"]({
     path: '/team',
     name: 'team',
     component: _components_team_TeamAll__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }, {
-    path: '/team/:slug',
-    name: 'team-detail',
-    component: _components_team_TeamDetail__WEBPACK_IMPORTED_MODULE_5__["default"],
-    props: true
-  }, {
-    path: '/layla-profile',
+  },
+  // {
+  //     path: '/team/:slug',
+  //     name: 'team-detail',
+  //     component: TeamDetail,
+  //     props: true
+  // },
+  {
+    path: '/team/layla',
     name: 'layla-profile',
     component: _components_team_profiles_LaylaProfile_vue__WEBPACK_IMPORTED_MODULE_21__["default"]
   }, {
-    path: '/vikki-profile',
+    path: '/team/vikki',
     name: 'vikki-profile',
     component: _components_team_profiles_VikkiProfile_vue__WEBPACK_IMPORTED_MODULE_22__["default"]
   }, {
-    path: '/becky-profile',
+    path: '/team/becky',
     name: 'becky-profile',
     component: _components_team_profiles_BeckyProfile_vue__WEBPACK_IMPORTED_MODULE_23__["default"]
   }, {
-    path: '/daisy-profile',
+    path: '/team/daisy',
     name: 'daisy-profile',
     component: _components_team_profiles_DaisyProfile_vue__WEBPACK_IMPORTED_MODULE_24__["default"]
   }, {
-    path: '/jamie-profile',
+    path: '/team/jamie',
     name: 'jamie-profile',
     component: _components_team_profiles_JamieProfile_vue__WEBPACK_IMPORTED_MODULE_25__["default"]
   }, {
-    path: '/katie-profile',
+    path: '/team/katie',
     name: 'katie-profile',
     component: _components_team_profiles_KatieProfile_vue__WEBPACK_IMPORTED_MODULE_26__["default"]
   }, {
-    path: '/lily-profile',
+    path: '/team/lily',
     name: 'lily-profile',
     component: _components_team_profiles_LilyProfile_vue__WEBPACK_IMPORTED_MODULE_27__["default"]
   }, {
-    path: '/sarah-profile',
+    path: '/team/sarah',
     name: 'sarah-profile',
     component: _components_team_profiles_SarahProfile_vue__WEBPACK_IMPORTED_MODULE_28__["default"]
   }, {
-    path: '/jasmine-profile',
+    path: '/team/jasmine',
     name: 'jasmine-profile',
     component: _components_team_profiles_JasmineProfile_vue__WEBPACK_IMPORTED_MODULE_29__["default"]
   }, {
