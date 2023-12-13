@@ -48,7 +48,7 @@
     <div>
       <hr>
       <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
-      <a href="https://www.instagram.com/beautybykatelouise/">
+      <a href="https://www.instagram.com/hair_bykatelouise/">
         <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span>
           beautybykatelouise</p>
       </a>
@@ -57,7 +57,7 @@
         with me!
       </router-link>
       <br><br>
-      <router-link class="button is-small is-white" :to="{ name: 'team', hash: '#becky' }">
+      <router-link class="button is-small is-white" :to="{ name: 'team', hash: '#katie' }">
         Back to the full team
       </router-link>
     </div>
