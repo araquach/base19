@@ -5,7 +5,7 @@
         <div class="profile-title">
           <h1>HEY THERE, I'M<br><span>KATIE.</span></h1>
         </div>
-        <p class="is-size-5">I'm a passionate graduate stylist on a mission to create hair magic. With a dash of Sagittarius determination, I'm all about crafting incredible transformations that leave my clients beaming. My true artistic flair shines in hair ups, where I get to let my creativity run wild. The spotlight shone on me when I clinched an avant-garde hair up award in 2022 – a testament to my innovation and skill.</p>
+        <p class="is-size-5">I'm a passionate graduate stylist <strong>on a mission to create hair magic</strong>. With a dash of Sagittarius determination, I'm all about crafting incredible transformations that leave my clients beaming. My true artistic flair shines in hair ups, where I get to let my creativity run wild. <strong>The spotlight shone on me when I clinched an avant-garde hair up award in 2022</strong> – a testament to my innovation and skill.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -19,15 +19,15 @@
           <img src="/dist/img/team/profiles/katie/katie_2.jpg" alt="Katie">
         </figure>
       </div>
-      <div class="column is-7">
-        <p>For me, this isn't just a job – it's a calling to bring joy and confidence to every chair I touch. Whether it's suggesting the perfect products or cheering up a client, I'm all in.</p>
-        <p>My knack for motivating and connecting with others has made me a cherished team member. And if you're wondering, I'd still be here even if I wasn't getting paid – that's how much I adore making people happy.</p>
+      <div class="column is-7 is-size-5">
+        <p>For me, this isn't just a job – <strong>it's a calling to bring joy and confidence</strong> to every chair I touch. Whether it's suggesting the perfect products or cheering up a client, <strong>I'm all in</strong>.</p>
+        <p>My knack for motivating and connecting with others has made me a cherished team member. And if you're wondering, <strong>I'd still be here even if I wasn't getting paid</strong> – that's how much I adore making people happy.</p>
       </div>
     </div>
     <div class="columns">
-      <div class="column is-7">
+      <div class="column is-7 is-size-5">
         <p>Beyond the salon, I'm grooving to the rhythm of 80's music and soaking in live performances.</p>
-        <p>My journey into hairdressing started amidst my media makeup course, but my heart swiftly swayed towards hair. Fast forward three years, and I've become an expert in delivering exceptional service and unforgettable experiences.</p>
+        <p>My journey into hairdressing started amidst my media makeup course, but <strong>my heart swiftly swayed towards hair</strong>. Fast forward three years, and I've become an expert in delivering exceptional service and unforgettable experiences.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -41,9 +41,8 @@
           <img src="/dist/img/team/profiles/katie/katie_4.jpg" alt="Katie">
         </figure>
       </div>
-      <div class="column is-7">
-        <p>As I journey forward, I've set my sights on teaching hair. But for now, I'm relishing in the world of hairdressing, where every day brings a new canvas to paint my creativity upon.</p>
-        <p>Could do with more...</p>
+      <div class="column is-7 is-size-5">
+        <p>As I journey forward, <strong>I've set my sights on teaching hair</strong>. But for now, <strong>I'm relishing in the world of hairdressing</strong>, where every day brings a new canvas to paint my creativity upon.</p>
       </div>
     </div>
     <div>

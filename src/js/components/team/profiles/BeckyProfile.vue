@@ -6,8 +6,8 @@
           <h1>HEY THERE, I'M<br><span>BECKY.</span></h1>
         </div>
         <p class="is-size-5">I'm a 21-year-old apprentice at <strong>Base Hairdressing</strong>. It's been about a year since
-          I joined this amazing team. When I'm not in the salon, I'm hanging out with my two incredible horses, Tali and
-          Sunni – they're like family to me. Socialising with friends is another favourite pastime of mine.</p>
+          I joined this amazing team. When I'm not in the salon, I'm hanging out with my two incredible horses, <strong>Tali and
+            Sunni</strong> – they're like family to me. Socialising with friends is another favourite pastime of mine.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -26,18 +26,18 @@
           University. But during lockdown, <strong>I discovered my true calling – hairdressing</strong>. I've always been a chatterbox,
           and my friends would probably add "funny" to the list too</p>
         <p>Seeing transformations happen right before my eyes is pure magic. And guess what? I'm not just good with
-          scissors and colour, I'm a bit of a horse whisperer too. My passion extends beyond the salon, and my two
-          horses, Tali and Sunni, are living proof of that. My proudest moment? Schooling my own horse – it's been a
+          scissors and colour, <strong>I'm a bit of a horse whisperer too</strong>. My passion extends beyond the salon, and my two
+          horses, Tali and Sunni, are living proof of that. My proudest moment? <strong>Schooling my own horse</strong> – it's been a
           true accomplishment.</p>
       </div>
     </div>
     <div class="columns">
       <div class="column is-7">
         <h3>My specialities...</h3>
-        <p class="is-size-5">Short cuts are my specialty, and I absolutely love helping clients style their hair at home with confidence.
+        <p class="is-size-5"><strong>Short cuts are my specialty</strong>, and I absolutely love helping clients style their hair at home with confidence.
           When clients come back weeks later with their hair still looking amazing, it's like the biggest stamp of
           approval.</p>
-        <p>I've got quite the fan club for my work on <strong>vivid, blondes, and balayage.</strong> But whether you're a bold
+        <p>I've got quite the fan club for my work on <strong>vivid, blondes, and balayage</strong>. But whether you're a bold
           risk-taker or looking for something more subtle, I'm here to make you feel amazing.</p>
       </div>
       <div class="column">

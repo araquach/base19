@@ -28,7 +28,7 @@
     </div>
     <div class="columns">
       <div class="column is-7">
-        <p>Nothing beats leisurely walks with my mum, sisters, and Franklin. My family means the world to me, and their unwavering support fuels my passion for this craft.</p>
+        <p>Nothing beats leisurely walks with my mum, sisters, and Franklin. <strong>My family means the world to me</strong>, and their unwavering support fuels my passion for this craft.</p>
         <p class="is-size-5">So, if you're looking for someone who's <strong>creative, kind, and trustworthy</strong>, that's me – Daisy.</p>
         <h3>My goal?</h3>
         <p class="is-size-5">To be the unique and skilled hairstylist who brings out the best in your hair and helps you rock your confidence.</p>
