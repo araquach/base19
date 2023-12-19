@@ -258,6 +258,11 @@ const router = new Router({
             component: LinkTree
         },
         {
+            path: '/links',
+            name: 'link-tree',
+            component: LinkTree
+        },
+        {
             path: '/your-gift',
             name: 'top-spender',
             component: TopSpender
