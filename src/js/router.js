@@ -5,7 +5,6 @@ import HomeInfo from "./components/home/HomeInfo"
 import AboutInfo from "./components/about/AboutInfo"
 import TeamInfo from "./components/team/TeamInfo"
 import TeamAll from "./components/team/TeamAll"
-import TeamDetail from "./components/team/TeamDetail"
 import BlogInfo from "./components/blog/BlogInfo"
 import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
@@ -30,6 +29,7 @@ import KatieProfile from "./components/team/profiles/KatieProfile.vue";
 import LilyProfile from "./components/team/profiles/LilyProfile.vue";
 import SarahProfile from "./components/team/profiles/SarahProfile.vue";
 import JasmineProfile from "./components/team/profiles/JasmineProfile.vue";
+import KamProfile from "./components/team/profiles/KamProfile.vue";
 import Reopening from "./components/corona/Reopening"
 import calcRoutes from "araquach-price-calc/router/calcRoutes"
 import Quote from "./components/quote/Quote"
@@ -140,6 +140,11 @@ const router = new Router({
             path: '/team/jasmine',
             name: 'jasmine-profile',
             component: JasmineProfile,
+        },
+        {
+            path: '/team/kam',
+            name: 'kam-profile',
+            component: KamProfile,
         },
         {
             path: '/blog',
