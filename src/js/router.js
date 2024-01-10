@@ -43,6 +43,7 @@ import Feedback from "./components/feedback/Feedback.vue"
 import JellyBeans from "./views/JellyBeans.vue"
 import Referrals from "./views/Referrals.vue";
 import OnlineStore from "./views/OnlineStore.vue";
+import NewYear from "./components/offers/singleOffers/NewYear.vue";
 
 
 Vue.use(Router)
@@ -206,6 +207,11 @@ const router = new Router({
             path: '/offers/autumn',
             name: 'autumn-offer',
             component: AutumnOffer
+        },
+        {
+            path: '/offers/newyear',
+            name: 'new-year-offer',
+            component: NewYear
         },
         {
             path: '/joinus',

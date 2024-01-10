@@ -12,6 +12,7 @@
             <JnrStylist v-if="showOffers.jnrStylist"/>
             <Graduate v-if="showOffers.graduate"/>
             <Layla v-if="showOffers.layla"/>
+            <NewYear v-if="showOffers.newYear"/>
           </div>
         </div>
       </div>
@@ -31,10 +32,11 @@ import NewStarter from "../../components/offers/offerLinks/NewStarter"
 import Layla from "../../components/offers/offerLinks/Layla"
 import Katie from "../../components/offers/offerLinks/Katie"
 import Autumn from "./offerLinks/Autumn.vue";
+import NewYear from "./offerLinks/NewYear.vue";
 import format from "date-fns/format"
 
 export default {
-  components: {Katie, Autumn, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter},
+  components: {Katie, Autumn, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter, NewYear},
   data() {
     return {
       showOffers: {
@@ -45,7 +47,8 @@ export default {
         graduate: false,
         layla: false,
         katie: false,
-        autumn: true,
+        autumn: false,
+        newYear: true
       }
     }
   },
