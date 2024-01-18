@@ -3,7 +3,7 @@
     <div v-if="!hideOffers">
       <div class="section columns">
         <div class="column is-9-desktop">
-          <h2 class="title is-2 is-size-4-mobile has-text-white">New Year Offer!</h2>
+          <h2 class="title is-2 has-text-white">New Year Offer!</h2>
           <p class="is-size-3">We've missed you!</p>
           <p class="is-size-4">Bag yourself a FREE hair cut when you book in for a colour this January and February.</p>
           <br>
