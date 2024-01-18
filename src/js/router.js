@@ -44,6 +44,7 @@ import JellyBeans from "./views/JellyBeans.vue"
 import Referrals from "./views/Referrals.vue";
 import OnlineStore from "./views/OnlineStore.vue";
 import NewYear from "./components/offers/singleOffers/NewYear.vue";
+import NewYearSMS from "./components/offers/singleOffers/sms/NewYear.vue"
 
 
 Vue.use(Router)
@@ -212,6 +213,11 @@ const router = new Router({
             path: '/offers/newyear',
             name: 'new-year-offer',
             component: NewYear
+        },
+        {
+            path: '/sms/newyear',
+            name: 'new-year-sms-offer',
+            component: NewYearSMS
         },
         {
             path: '/joinus',
