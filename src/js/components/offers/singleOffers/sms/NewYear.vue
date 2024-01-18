@@ -23,6 +23,7 @@
             <router-link :to="{ name: 'bookings' }" class="button is-primary">Book a FREE consultation</router-link>
           </div>
           <br>
+          <p class="is-size-4">Or call 01925 444449 to book</p>
           <p class="small is-size-7">FREE CUT when you book in for a colour in January or February with Katie/Sarah/Becky/Daisy/Jas/Lily/Kam (excludes education team) - Offer valid until 29.02.2024 - Cannot be used in conjunction with any other offer - Skin Test required 48 hrs before any colour service - Quote BASE NEW YEAR at time of booking to secure this discount </p>
         </div>
       </div>
