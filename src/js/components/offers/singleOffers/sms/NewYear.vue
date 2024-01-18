@@ -24,6 +24,16 @@
           </div>
           <br>
           <p class="is-size-4">Or call 01925 444449 to book</p>
+          <br>
+          <div class="box">
+            <p class="is-size-4">If you're looking for a more senior stylist then check out our offers at our other salons -
+              <strong>Jakata & Paul Kemp Hairdressing</strong></p>
+            <div class="buttons">
+              <a class="button is-primary" href="https://www.jakatasalon.co.uk/sms/newyear">Jakata Offers</a>
+              <a class="button is-primary" href="https://www.paulkemphairdressing.com/sms/newyear">PK Offers</a>
+            </div>
+          </div>
+
           <p class="small is-size-7">FREE CUT when you book in for a colour in January or February with Katie/Sarah/Becky/Daisy/Jas/Lily/Kam (excludes education team) - Offer valid until 29.02.2024 - Cannot be used in conjunction with any other offer - Skin Test required 48 hrs before any colour service - Quote BASE NEW YEAR at time of booking to secure this discount </p>
         </div>
       </div>
