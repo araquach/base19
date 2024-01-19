@@ -3,8 +3,8 @@
     <div v-if="!hideOffers">
       <div class="section columns">
         <div class="column is-9-desktop">
-          <h2 class="title is-2 has-text-white">New Year Offer!</h2>
-          <p class="is-size-3">We've missed you!</p>
+          <h2 class="title is-2 has-text-white">Celebrate the New Year with a Fresh Look!</h2>
+          <p class="is-size-3">We've Missed You and Can't Wait to Welcome You Back!</p>
           <p class="is-size-4">Bag yourself a FREE hair cut when you book in for a colour this January and February.</p>
           <br>
           <figure class="image">
@@ -20,14 +20,13 @@
           </ul>
           <br>
           <div class="offer-team-links">
-            <router-link :to="{ name: 'bookings' }" class="button is-primary">Book a FREE consultation</router-link>
+            <router-link :to="{ name: 'bookings' }" class="button is-primary">Book Your Welcome Back Consultation!</router-link>
           </div>
           <br>
-          <p class="is-size-4">Or call 01925 444449 to book</p>
+          <p class="is-size-4">Prefer to Book by Phone? Call Us on 01925 444449</p>
           <br>
           <div class="box">
-            <p class="is-size-4">If you're looking for a more senior stylist then check out our offers at our other salons -
-              <strong>Jakata & Paul Kemp Hairdressing</strong></p>
+            <p class="is-size-4">Looking for Something Different? Our Senior Stylists at <strong>Jakata & Paul Kemp Hairdressing</strong> are Ready to Welcome You Too!</p>
             <div class="buttons">
               <a class="button is-primary" href="https://www.jakatasalon.co.uk/sms/newyear">Jakata Offers</a>
               <a class="button is-primary" href="https://www.paulkemphairdressing.com/sms/newyear">PK Offers</a>
