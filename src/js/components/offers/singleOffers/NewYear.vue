@@ -27,8 +27,8 @@
           <div class="box">
             <p class="is-size-4">Looking for Something Different? Our Senior Stylists at <strong>Jakata & Paul Kemp Hairdressing</strong> are Ready to Welcome You Too!</p>
             <div class="buttons">
-              <a class="button is-primary" href="https://www.jakatasalon.co.uk/sms/newyear">Jakata Offers</a>
-              <a class="button is-primary" href="https://www.paulkemphairdressing.com/sms/newyear">PK Offers</a>
+              <a class="button is-primary" href="https://www.jakatasalon.co.uk/offers/newyear">Jakata Offers</a>
+              <a class="button is-primary" href="https://www.paulkemphairdressing.com/offers/newyear">PK Offers</a>
             </div>
           </div>
           <p class="small is-size-7">FREE CUT when you book in as a new client for a colour in January or February with Katie/Sarah/Jamie/Becky/Daisy/Jas/Lily/Kam (excludes education team) - Offer valid until 29.02.2024 - Cannot be used in conjunction with any other offer - Skin Test required 48 hrs before any colour service - offer exclusively for clients new to Base Hairdressing - Quote BASE NEW YEAR at time of booking to secure this discount </p>

@@ -6,6 +6,9 @@
     </div>
     <div class="section columns is-centered is-mobile">
       <div class="column is-9 has-text-centered is-size-5">
+        <router-link :to="{ name: 'refer' }" class="box lt-refer">
+          <span class="title-new-mid has-text-white">REFER A FRIEND</span>
+        </router-link>
         <router-link :to="{ name: 'bookings' }" class="box lt-bookings">
           <span class="title-new-mid">BOOK ONLINE</span>
         </router-link>
@@ -23,9 +26,6 @@
         </router-link>
         <router-link :to="{ name: 'blog-info' }" class="box lt-blog">
           <span class="title-new-mid has-text-white">THE BASE BLOG</span>
-        </router-link>
-        <router-link :to="{ name: 'main' }" class="box lt-website">
-          <span class="title-new-mid has-text-white">WEBSITE</span>
         </router-link>
 
         <div class="columns social is-mobile is-centered">
