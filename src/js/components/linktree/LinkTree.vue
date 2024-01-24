@@ -1,7 +1,9 @@
 <template>
   <div id="link-tree" class="has-text-centered">
     <div class="section pt-5">
-      <img src="/dist/img/linktree/linktree.png" alt="Base Hairdressing" width="230">
+      <router-link :to="{name: 'home'}">
+        <img src="/dist/img/linktree/linktree.png" alt="Base Hairdressing" width="230">
+      </router-link>
       <h1 class="title-new is-3 lt-title">THE BASE HAIRDRESSING<br>TRAINING ACADEMY</h1>
     </div>
     <div class="section columns is-centered is-mobile">
