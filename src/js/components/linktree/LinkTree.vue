@@ -8,7 +8,7 @@
     </div>
     <div class="section columns is-centered is-mobile">
       <div class="column is-9 has-text-centered is-size-5">
-        <router-link :to="{ name: 'refer' }" class="box lt-refer">
+        <router-link :to="{ name: 'referrals' }" class="box lt-refer">
           <span class="title-new-mid has-text-white">REFER A FRIEND</span>
         </router-link>
         <router-link :to="{ name: 'bookings' }" class="box lt-bookings">
