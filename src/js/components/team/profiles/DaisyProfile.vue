@@ -55,7 +55,7 @@
       <p class="title is-4 has-text-white">To see more of my work check out my Instagram page</p>
       <a href="https://www.instagram.com/daisyheathhair/">
         <p class="is-size-5 has-text-white"><span class="icon"><i class="fab fa-instagram-square"></i></span>
-          becky.y.hair</p>
+          daisyheathhair</p>
       </a>
       <br>
       <router-link class="button is-primary" :to="{ name: 'stylist-prices', params: { stylist: 'daisy' } }">Get a quote
