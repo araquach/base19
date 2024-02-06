@@ -5,7 +5,7 @@
         <div class="profile-title">
           <h1>HEY THERE, I'M<br><span>LILY.</span></h1>
         </div>
-        <p class="is-size-5">Hey, I'm Lily, and if there's one thing you should know about me, it's that <strong>I'm always up for a challenge</strong>. Working as a team to achieve something great is my thing, and I thrive on collaborating with different and new people. As an apprentice, I've found my calling and a platform to express <strong>my passion for hair</strong>.</p>
+        <p class="is-size-4">Hey, I'm Lily, and if there's one thing you should know about me, it's that <strong>I'm always up for a challenge</strong>. Working as a team to achieve something great is my thing, and I thrive on collaborating with different and new people. As an apprentice, I've found my calling and a platform to express <strong>my passion for hair</strong>.</p>
       </div>
       <div class="column">
         <figure class="image is-square">

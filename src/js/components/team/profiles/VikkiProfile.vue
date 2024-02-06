@@ -5,7 +5,7 @@
         <div class="profile-title">
           <h1>HEY THERE, I'M<br><span>VIKKI.</span></h1>
         </div>
-        <p class="is-size-5">I'm a spirited hairstylist and educator with a deep love for all things hair and a heart full of passion. My life revolves around two incredible forces: <strong>family and the vibrant world of hairstyling</strong>. And with a boy and a girl who keep me endlessly entertained and on my toes, my world is a symphony of laughter, growth, and love.</p>
+        <p class="is-size-4">I'm a spirited hairstylist and educator with a deep love for all things hair and a heart full of passion. My life revolves around two incredible forces: <strong>family and the vibrant world of hairstyling</strong>. And with a boy and a girl who keep me endlessly entertained and on my toes, my world is a symphony of laughter, growth, and love.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
