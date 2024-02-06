@@ -24,7 +24,7 @@ import LaylaProfile from "./components/team/profiles/LaylaProfile.vue"
 import VikkiProfile from "./components/team/profiles/VikkiProfile.vue"
 import BeckyProfile from "./components/team/profiles/BeckyProfile.vue"
 import DaisyProfile from "./components/team/profiles/DaisyProfile.vue";
-import JamieProfile from "./components/team/profiles/JamieProfile.vue";
+import JamieProfile from "./components/team/profiles/archive/JamieProfile.vue";
 import KatieProfile from "./components/team/profiles/KatieProfile.vue";
 import LilyProfile from "./components/team/profiles/LilyProfile.vue";
 import SarahProfile from "./components/team/profiles/SarahProfile.vue";

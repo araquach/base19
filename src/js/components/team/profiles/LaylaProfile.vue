@@ -5,7 +5,7 @@
         <div class="profile-title">
           <h1>HEY THERE, I'M<br><span>LAYLA.</span></h1>
         </div>
-        <p class="is-size-5">I'm a fusion of creativity, compassion, and boundless energy. With over <strong>7 enriching years in the world of hairdressing</strong>, I'm not just a stylist; I'm a passionate advocate for self-expression. As the <strong>Manager and Head of Education at Base Hairdressing</strong>, I have the incredible privilege of mentoring aspiring stylists, sharing my expertise, and igniting their artistic flames.</p>
+        <p class="is-size-4">I'm a fusion of creativity, compassion, and boundless energy. With over <strong>7 enriching years in the world of hairdressing</strong>, I'm not just a stylist; I'm a passionate advocate for self-expression. As the <strong>Manager and Head of Education at Base Hairdressing</strong>, I have the incredible privilege of mentoring aspiring stylists, sharing my expertise, and igniting their artistic flames.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -20,9 +20,9 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p>My role at Base goes beyond shaping hairstyles; I also play a pivotal role in <strong>content creation</strong>. I participate in guiding and coaching all the apprentices, alongside the marketing and social media executive, on how to craft <strong>scroll-stopping content</strong> for both their personal online portfolios and the Base Hairdressing social accounts</p>
-        <p>It's a dynamic and exciting part of my job, where I get to encourage and nurture the apprentices' creativity and teach them how to make a visual impact in the digital world.</p>
-        <p>For me, hairdressing isn't just a job; it's a canvas where I bring visions to life. <strong>The thrill of crafting vivid colors and editorial masterpieces sets my heart racing</strong>. <strong>Balayage and color correction</strong>? Consider them my specialty – I relish the challenge of transforming a canvas into a stunning work of art.</p>
+        <p class="is-size-5">My role at Base goes beyond shaping hairstyles; I also play a pivotal role in <strong>content creation</strong>. I participate in guiding and coaching all the apprentices, alongside the marketing and social media executive, on how to craft <strong>scroll-stopping content</strong> for both their personal online portfolios and the Base Hairdressing social accounts</p>
+        <p class="is-size-5">It's a dynamic and exciting part of my job, where I get to encourage and nurture the apprentices' creativity and teach them how to make a visual impact in the digital world.</p>
+        <p class="is-size-5">For me, hairdressing isn't just a job; it's a canvas where I bring visions to life. <strong>The thrill of crafting vivid colors and editorial masterpieces sets my heart racing</strong>. <strong>Balayage and color correction</strong>? Consider them my specialty – I relish the challenge of transforming a canvas into a stunning work of art.</p>
       </div>
     </div>
     <div class="columns">
@@ -43,9 +43,9 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p>But it's not just about hair – it's about <strong>building connections</strong>. My clients aren't just appointments; they're stories waiting to be told. Through open conversations, I ensure every client feels heard and understood. <strong>A judgment-free zone, where authenticity reigns and self-confidence soars</strong>.</p>
-        <p>What drives me? Beyond the vibrant colors and striking styles, it's <strong>my family and my fascination with spirituality and witchcraft</strong>. Outside the salon, you'll often find me lost in a world of editorial photoshoots, turning visions into reality one click at a time.</p>
-        <p>Looking ahead, my aspirations are sky-high. I dream of <strong>sculpting Base Hairdressing into the most sought-after academy in the North West</strong>. And that's not all – I yearn to collaborate with Schwarzkopf, shaping hair collections and education. For me, hairdressing isn't just a career; it's a journey of growth, artistry, and inspiring others to find their own path of self-expression.</p>
+        <p class="is-size-5">But it's not just about hair – it's about <strong>building connections</strong>. My clients aren't just appointments; they're stories waiting to be told. Through open conversations, I ensure every client feels heard and understood. <strong>A judgment-free zone, where authenticity reigns and self-confidence soars</strong>.</p>
+        <p class="is-size-5">What drives me? Beyond the vibrant colors and striking styles, it's <strong>my family and my fascination with spirituality and witchcraft</strong>. Outside the salon, you'll often find me lost in a world of editorial photoshoots, turning visions into reality one click at a time.</p>
+        <p class="is-size-4">Looking ahead, my aspirations are sky-high. I dream of <strong>sculpting Base Hairdressing into the most sought-after academy in the North West</strong>. And that's not all – I yearn to collaborate with Schwarzkopf, shaping hair collections and education. For me, hairdressing isn't just a career; it's a journey of growth, artistry, and inspiring others to find their own path of self-expression.</p>
       </div>
     </div>
     <div>

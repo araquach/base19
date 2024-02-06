@@ -20,15 +20,15 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p>In three words, I'd describe myself as <strong>confident, happy, and talkative</strong> – qualities that have always helped me connect with others. At work, what really gets me going is <strong>interacting with new people every single day</strong>. It's like a breath of fresh air, and I absolutely love it.</p>
-        <p>But there's more to me than just my hairstyling journey. I've been an <strong>equestrian enthusiast since I was seven years old</strong>. Horse riding is my escape and a bond that's close to my heart. It's also an interesting fact about me that often surprises people.</p>
+        <p class="is-size-5">In three words, I'd describe myself as <strong>confident, happy, and talkative</strong> – qualities that have always helped me connect with others. At work, what really gets me going is <strong>interacting with new people every single day</strong>. It's like a breath of fresh air, and I absolutely love it.</p>
+        <p class="is-size-5">But there's more to me than just my hairstyling journey. I've been an <strong>equestrian enthusiast since I was seven years old</strong>. Horse riding is my escape and a bond that's close to my heart. It's also an interesting fact about me that often surprises people.</p>
       </div>
     </div>
     <div class="columns">
       <div class="column is-7">
-        <p>While I don't have a specialisation just yet, I've got my eyes set on the future. I'm on a mission to <strong>help people fall in love with their hair</strong>. Professionally, that's what truly drives me – the ability to make someone's day by making their hair shine.</p>
-        <p>Outside of work, you'll often find me in the company of animals. I'm deeply passionate about <strong>animals and their well-being</strong>. That compassion and care extend to my work as well, where I consistently solve challenges for my clients, helping them rediscover their confidence and beauty.</p>
-        <p>So, whether it's shampooing or styling, <strong>I pour my heart into every task</strong>. If you're looking for a stylist who's not only enthusiastic but also caring, I'm your go-to. I'm Lily, and I'm here to make your hair dreams come true.</p>
+        <p class="is-size-5" >While I don't have a specialisation just yet, I've got my eyes set on the future. I'm on a mission to <strong>help people fall in love with their hair</strong>. Professionally, that's what truly drives me – the ability to make someone's day by making their hair shine.</p>
+        <p class="is-size-5" >Outside of work, you'll often find me in the company of animals. I'm deeply passionate about <strong>animals and their well-being</strong>. That compassion and care extend to my work as well, where I consistently solve challenges for my clients, helping them rediscover their confidence and beauty.</p>
+        <p class="is-size-5" >So, whether it's shampooing or styling, <strong>I pour my heart into every task</strong>. If you're looking for a stylist who's not only enthusiastic but also caring, I'm your go-to. I'm Lily, and I'm here to make your hair dreams come true.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -43,8 +43,8 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p></p>
-        <p></p>
+        <p class="is-size-5"></p>
+        <p class="is-size-4"></p>
       </div>
     </div>
     <div>

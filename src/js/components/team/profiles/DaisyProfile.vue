@@ -5,7 +5,7 @@
         <div class="profile-title">
           <h1>HEY THERE, I'M<br><span>DAISY.</span></h1>
         </div>
-        <p class="is-size-5">I've always had a burning dream of being a <strong>hairstylist</strong>. I'll admit, I let other people's opinions sway me, so I ended up at college pursuing something I wasn't truly interested in. But you know what they say – the heart wants what it wants.</p>
+        <p class="is-size-4">I've always had a burning dream of being a <strong>hairstylist</strong>. I'll admit, I let other people's opinions sway me, so I ended up at college pursuing something I wasn't truly interested in. But you know what they say – the heart wants what it wants.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -21,7 +21,7 @@
       </div>
       <div class="column is-7">
         <p class="is-size-5">During lockdown, something inside me clicked, and I rediscovered my passion for <strong>hairdressing</strong>. So, I took the plunge, and here I am.</p>
-        <p>I've always been a bit of an introvert, a tad shy, but that all changes around the right people and I'm the happiest version of myself whilst working at
+        <p class="is-size-5">I've always been a bit of an introvert, a tad shy, but that all changes around the right people and I'm the happiest version of myself whilst working at
           <strong>Base Hairdressing Training Academy</strong>.</p>
         <p>When it comes to my career, I'm all about making people fall in love with their hair. I find immense satisfaction in seeing the transformations I bring to life. </p>
       </div>
@@ -46,8 +46,8 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p>More Copy Needed</p>
-        <p>Lorum ipsum etc</p>
+        <p class="is-size-5">More Copy Needed</p>
+        <p class="is-size-4">Lorum ipsum etc</p>
       </div>
     </div>
     <div>
