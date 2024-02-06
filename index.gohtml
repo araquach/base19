@@ -48,5 +48,15 @@
 
         gtag('config', 'UA-159305666-1');
     </script>
+    <script>
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('a[href="/bookings"]')) {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-11239287994/D0SUCLz_vY8ZELrZp-8p'
+                });
+            }
+        })
+
+    </script>
 </body>
 </html>
