@@ -55,7 +55,7 @@ export const getters = {
                 .filter(applicant => applicant.follow_up === 'maybe')
                 .sort((a, b) => b.id - a.id);
 
-            return [...unselectedGroup, ...definitelyGroup, ...maybeGroup];
+            return [...definitelyGroup, ...maybeGroup, ...unselectedGroup];
         }
     }
 }
@@ -150,13 +150,16 @@ export const actions = {
     updateApplicant({state, commit, getters}, {id, newNote, followUp}) {
         let updates = {};
         const user = getters.userName;
-        const notes = state.applicant.notes || [];
-        const created = format(new Date(), "dd/MM/yy");
-        notes.push(`${user} | ${created}: ${newNote}`);
-        updates.notes = notes
+        if (newNote) {
+            const notes = state.applicant.notes || [];
+            const created = format(new Date(), "dd/MM/yy");
+            notes.push(`${user} | ${created}: ${newNote}`);
+            updates.notes = notes
+        }
 
-        updates.follow_up = followUp;
-
+        if (followUp) {
+            updates.follow_up = followUp;
+        }
 
         console.log(updates)
 
