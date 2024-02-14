@@ -17,6 +17,8 @@ import LaylaOffer from "./components/offers/singleOffers/Layla"
 import KatieOffer from "./components/offers/singleOffers/Katie"
 import AutumnOffer from "./components/offers/singleOffers/Autumn.vue"
 import JoinusInfo from "./components/joinus/JoinusInfo"
+import JoinusApplicants from "./components/joinus/admin/JoinusApplicants.vue";
+import JoinusApplicant from "./components/joinus/admin/JoinusApplicant.vue";
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
@@ -45,7 +47,6 @@ import Referrals from "./views/Referrals.vue";
 import OnlineStore from "./views/OnlineStore.vue";
 import NewYear from "./components/offers/singleOffers/NewYear.vue";
 import NewYearSMS from "./components/offers/singleOffers/sms/NewYear.vue"
-
 
 Vue.use(Router)
 
@@ -223,6 +224,17 @@ const router = new Router({
             path: '/joinus',
             name: 'joinus',
             component: JoinusInfo
+        },
+        {
+            path: '/applicants',
+            name: 'joinus-applicants',
+            component: JoinusApplicants
+        },
+        {
+            path: '/applicant/:id',
+            name: 'joinus-applicant',
+            component: JoinusApplicant,
+            props: true
         },
         {
             path: '/models',
