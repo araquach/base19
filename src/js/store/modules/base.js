@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { format } from 'date-fns'
+import {format} from 'date-fns'
 
 const today = new Date()
 
@@ -16,7 +16,7 @@ export const state = {
 
 export const getters = {
     userName: state => {
-        switch(state.userPin) {
+        switch (state.userPin) {
             case "1234":
                 return "Layla"
             case "4321":
@@ -27,7 +27,7 @@ export const getters = {
     },
 
     salonName: state => {
-        switch(state.applicant.salon) {
+        switch (state.applicant.salon) {
             case 1:
                 return 'Jakata';
             case 2:
@@ -61,7 +61,7 @@ export const getters = {
 }
 
 export const mutations = {
-    SET_NEWS_ITEMS (state, newsItems) {
+    SET_NEWS_ITEMS(state, newsItems) {
         state.newsItems = newsItems
     },
 
@@ -75,7 +75,7 @@ export const mutations = {
         }
     },
 
-    SET_JOIN_US_APPLICANTS (state, applicants) {
+    SET_JOIN_US_APPLICANTS(state, applicants) {
         state.applicants = applicants
     },
 
@@ -93,7 +93,7 @@ export const mutations = {
 }
 
 export const actions = {
-    loadNewsItems ({ commit }) {
+    loadNewsItems({commit}) {
         axios
             .get('/api/news-items')
             .then(response => response.data.slice(0, 3))
@@ -103,7 +103,7 @@ export const actions = {
 
     },
 
-    loadJoinUsApplicants ({ commit }) {
+    loadJoinUsApplicants({commit}) {
         axios
             .get('/api/joinus-applicants')
             .then(response => response.data)
@@ -126,21 +126,44 @@ export const actions = {
             });
     },
 
-    updateApplicant({ commit, state, getters }, { applicant, newNote }) {
-        // Add the new note to the applicant's notes array if it exists
-        if (newNote) {
-            const user = getters.userName
-            const notes = applicant.notes || [];
-            const created = format(new Date(), "dd/MM/yy")
-            notes.push(`${user} | ${created}: ${newNote}`)
-            applicant.notes = notes;
-        }
+    // updateApplicant({ commit, state, getters }, { applicant, newNote }) {
+    //     // Add the new note to the applicant's notes array if it exists
+    //     if (newNote) {
+    //         const user = getters.userName
+    //         const notes = applicant.notes || [];
+    //         const created = format(new Date(), "dd/MM/yy")
+    //         notes.push(`${user} | ${created}: ${newNote}`)
+    //         applicant.notes = notes;
+    //     }
+    //
+    //     return axios
+    //         .put(`/api/joinus-applicant`, applicant)
+    //         .then(response => {
+    //             // Update the state with the modified applicant
+    //             commit('UPDATE_APPLICANT', applicant);
+    //         })
+    //         .catch(error => {
+    //             console.log(error);
+    //         });
+    // },
+
+    updateApplicant({state, commit, getters}, {id, newNote, followUp}) {
+        let updates = {};
+        const user = getters.userName;
+        const notes = state.applicant.notes || [];
+        const created = format(new Date(), "dd/MM/yy");
+        notes.push(`${user} | ${created}: ${newNote}`);
+        updates.notes = notes
+
+        updates.follow_up = followUp;
+
+
+        console.log(updates)
 
         return axios
-            .put(`/api/joinus-applicant`, applicant)
+            .patch(`/api/joinus-applicant/${id}`, updates)
             .then(response => {
-                // Update the state with the modified applicant
-                commit('UPDATE_APPLICANT', applicant);
+                commit('UPDATE_APPLICANT', response.data); // Assuming response.data is the updated applicant
             })
             .catch(error => {
                 console.log(error);

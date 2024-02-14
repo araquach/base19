@@ -84,8 +84,9 @@ export default {
     async updateDetails() {
       // Dispatch the updated applicant and the new note to the store
       await this.$store.dispatch("updateApplicant", {
-        applicant: this.applicant,
-        newNote: this.newNote
+        id: this.applicant.id,
+        newNote: this.newNote,
+        followUp: this.applicant.follow_up
       });
 
       // Clear the new note textarea after submission
