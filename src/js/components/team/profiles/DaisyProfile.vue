@@ -5,7 +5,10 @@
         <div class="profile-title">
           <h1>HEY THERE, I'M<br><span>DAISY.</span></h1>
         </div>
-        <p class="is-size-4">I've always had a burning dream of being a <strong>hairstylist</strong>. I'll admit, I let other people's opinions sway me, so I ended up at college pursuing something I wasn't truly interested in. But you know what they say – the heart wants what it wants.</p>
+        <p class="is-size-4">I've always had a <strong>burning dream</strong> of being a hairstylist. I'll admit, I let other people's
+          opinions sway me, so I ended up at college pursuing something I wasn't truly interested in. But you know what
+          they say, <strong>the heart wants what it wants</strong>. During lockdown, something inside me clicked, and I rediscovered my
+          <strong>passion for hairdressing</strong>. So, I took the plunge, and here I am.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -20,18 +23,24 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p class="is-size-5">During lockdown, something inside me clicked, and I rediscovered my passion for <strong>hairdressing</strong>. So, I took the plunge, and here I am.</p>
-        <p class="is-size-5">I've always been a bit of an introvert, a tad shy, but that all changes around the right people and I'm the happiest version of myself whilst working at
-          <strong>Base Hairdressing Training Academy</strong>.</p>
-        <p>When it comes to my career, I'm all about making people fall in love with their hair. I find immense satisfaction in seeing the transformations I bring to life. </p>
+        <p class="is-size-5">But here's something unique about me that not everyone knows, I’m a <strong>mirror twin</strong>. That's
+          right, I have a twin sibling who's my mirror image, and it's always been an intriguing aspect of my life.
+          Growing up, we shared an extraordinary bond, almost like two halves of the same whole. While we may look
+          alike, our personalities couldn't be more different, yet complementary in a fascinating way.</p>
+        <p class="is-size-5">I've always been a bit of an introvert, a tad shy, but that all changes around the right
+          people, and I'm the happiest version of myself whilst working at <strong>Base Hairdressing Training Academy</strong>. When it
+          comes to my career, I'm all about making people fall in love with their hair. I find immense satisfaction in
+          seeing the transformations I bring to life.</p>
       </div>
     </div>
     <div class="columns">
       <div class="column is-7">
-        <p class="is-size-5">Nothing beats leisurely walks with my mum, sisters, and Franklin. <strong>My family means the world to me</strong>, and their unwavering support fuels my passion for this craft.</p>
-        <p class="is-size-5">So, if you're looking for someone who's <strong>creative, kind, and trustworthy</strong>, that's me – Daisy.</p>
-        <h3>My goal?</h3>
-        <p class="is-size-5">To be the unique and skilled hairstylist who brings out the best in your hair and helps you rock your confidence.</p>
+        <p class="is-size-5">At <strong>Base Hairdressing Training Academy</strong>, I'm not just a hairstylist; I'm an apprentice
+          learning from our team of experts. Immersing myself in this environment allows me to absorb knowledge, refine
+          my techniques, and cultivate my passion for hairdressing. </p>
+        <p class="is-size-5">Every day presents a new opportunity for growth and discovery as I work alongside seasoned
+          professionals who generously share their expertise. Being part of this dynamic team fuels my determination to
+          excel in the craft and contribute positively to the world of hairstyling.</p>
       </div>
       <div class="column">
         <figure class="image is-square">
@@ -46,8 +55,13 @@
         </figure>
       </div>
       <div class="column is-7">
-        <p class="is-size-5">More Copy Needed</p>
-        <p class="is-size-4">Lorum ipsum etc</p>
+        <p class="is-size-5">Beyond my professional endeavours, I find solace in the company of my family and my
+          adorable dog, Franklin. At heart, I'm a bookworm who can get lost in the world of literature, and I can't
+          resist the allure of good music. Nothing beats leisurely walks with my mom, sisters, and Franklin. My family
+          means the world to me, and their unwavering support fuels my passion for this craft.</p>
+        <p class="is-size-4">So, if you're looking for someone who's <strong>creative, kind, and trustworthy</strong>, that's me, Daisy.
+          My goal? To be the <strong>unique and skilled hairstylist</strong> who brings out the best in your hair and helps you rock your
+          confidence.</p>
       </div>
     </div>
     <div>
