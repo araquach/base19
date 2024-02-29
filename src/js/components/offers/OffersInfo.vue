@@ -3,7 +3,7 @@
       <div v-if="!hideOffers">
         <div class="columns is-vcentered">
           <div class="section column is-10">
-            <h1 class="title">Special Offers This Autumn</h1>
+            <h1 class="title">Spring Time Offers</h1>
             <Katie v-if="showOffers.katie"/>
             <Autumn v-if="showOffers.autumn"/>
             <General v-if="showOffers.general" />
@@ -13,6 +13,7 @@
             <Graduate v-if="showOffers.graduate"/>
             <Layla v-if="showOffers.layla"/>
             <NewYear v-if="showOffers.newYear"/>
+            <Spring v-if="showOffers.spring"/>
           </div>
         </div>
       </div>
@@ -33,10 +34,11 @@ import Layla from "../../components/offers/offerLinks/Layla"
 import Katie from "../../components/offers/offerLinks/Katie"
 import Autumn from "./offerLinks/Autumn.vue";
 import NewYear from "./offerLinks/NewYear.vue";
-import format from "date-fns/format"
+import Spring from "./offerLinks/Spring.vue";
+import format from "date-fns/format";
 
 export default {
-  components: {Katie, Autumn, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter, NewYear},
+  components: {Katie, Autumn, General, Layla, Graduate, JnrStylist, Apprentice, NewStarter, NewYear, Spring},
   data() {
     return {
       showOffers: {
@@ -48,7 +50,8 @@ export default {
         layla: false,
         katie: false,
         autumn: false,
-        newYear: true
+        newYear: false,
+        spring: true,
       }
     }
   },

@@ -47,6 +47,8 @@ import Referrals from "./views/Referrals.vue";
 import OnlineStore from "./views/OnlineStore.vue";
 import NewYear from "./components/offers/singleOffers/NewYear.vue";
 import NewYearSMS from "./components/offers/singleOffers/sms/NewYear.vue"
+import Spring from "./components/offers/singleOffers/Spring.vue"
+import SpringSMS from "./components/offers/singleOffers/sms/Spring.vue"
 
 Vue.use(Router)
 
@@ -216,9 +218,19 @@ const router = new Router({
             component: NewYear
         },
         {
+            path: '/offers/spring',
+            name: 'spring-offer',
+            component: Spring
+        },
+        {
             path: '/sms/newyear',
             name: 'new-year-sms-offer',
             component: NewYearSMS
+        },
+        {
+            path: '/sms/spring',
+            name: 'spring-sms-offer',
+            component: SpringSMS
         },
         {
             path: '/joinus',
