@@ -49,6 +49,8 @@ import NewYear from "./components/offers/singleOffers/NewYear.vue";
 import NewYearSMS from "./components/offers/singleOffers/sms/NewYear.vue"
 import Spring from "./components/offers/singleOffers/Spring.vue"
 import SpringSMS from "./components/offers/singleOffers/sms/Spring.vue"
+import SarahMove from "./views/SarahMove.vue"
+import KatieMove from "./views/KatieMove.vue"
 
 Vue.use(Router)
 
@@ -327,6 +329,16 @@ const router = new Router({
             path: '/ruby-leaving',
             name: 'leaver',
             component: Leaver
+        },
+        {
+            path: '/sarah-move',
+            name: 'sarah-move',
+            component: SarahMove
+        },
+        {
+            path: '/katie-move',
+            name: 'katie-move',
+            component: KatieMove
         },
         {
             path: '/jellybeans',
