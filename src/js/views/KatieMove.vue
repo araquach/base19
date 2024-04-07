@@ -10,7 +10,7 @@
         <h2 class="title is-4">Book Your Next Appointment with Katie at Jakata!</h2>
         <p>Katie is eager to welcome you at <strong>Jakata</strong> as she continues her journey. We're excited for you to experience her great styling in this new chapter.</p>
         <p><strong>The great news is, Jakata is just around the corner from Base, making it easy for you to follow Katie in her next step. Here’s where you can find her:</strong></p>
-        <p class="is-size-5">Jakata Salon <br>27 Rylands Street <br>Warrington <br> WA1 1SL</p>
+        <p class="is-size-5">Jakata Salon <br>27 Rylands Street <br>Warrington <br> WA1 1EJ</p>
         <p class="is-size-5">Telephone: 01925 242960</p>
         <p class="is-size-5"><em>If you already have an appointment booked with Katie, it will be automatically transferred to Jakata.</em></p>
         <p class="is-size-3">Thank You for Your Support!</p>

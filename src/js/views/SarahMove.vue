@@ -11,7 +11,7 @@
         <p>Starting <strong>April 9th</strong>, all of her appointments will be at <strong>Jakata</strong>. We're eager for you to join us in this new chapter and experience the same great styling by Sarah in a new setting.</p>
         <p><strong>The great news is you don’t have to travel far to find Sarah - Jakata is just around the corner from
           Base. You can find the salon here:</strong></p>
-        <p class="is-size-5">Jakata Salon <br>27 Rylands Street <br>Warrington <br> WA1 1SL</p>
+        <p class="is-size-5">Jakata Salon <br>27 Rylands Street <br>Warrington <br> WA1 1EJ</p>
         <p class="is-size-5">Telephone: 01925 242960</p>
         <p class="is-size-5"><em>If you already have an appointment with Sarah it will be automatically transferred over to Jakata.</em></p>
         <p class="is-size-3">Thank You for Your Support!</p>
