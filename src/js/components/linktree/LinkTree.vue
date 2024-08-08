@@ -8,7 +8,7 @@
     </div>
     <div class="section columns is-centered is-mobile">
       <div class="column is-9 has-text-centered is-size-5">
-        <a v-if="$route.path === '/links'" href="https://www.salonhub.uk/skintest-renew/3" class="box lt-blog">
+        <a v-if="$route.path === '/links'" href="https://www.salonhub.uk/skintest-in-salon/3" class="box lt-blog">
           <span class="title-new-mid has-text-white">SKIN TEST UPDATE</span>
         </a>
         <router-link :to="{ name: 'referrals' }" class="box lt-refer">
