@@ -10,15 +10,15 @@ import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
 import GeneralOffer from "./components/offers/singleOffers/November"
 import NewStarterOffer from "./components/offers/singleOffers/NewStarter"
-import ApprenticeOffer from "./components/offers/singleOffers/Apprentice"
-import JnrStylistOffer from "./components/offers/singleOffers/JnrStylist"
+import ApprenticeOffer from "./components/offers/singleOffers/summer/Apprentice.vue"
+import JnrStylistOffer from "./components/offers/singleOffers/summer/JuniorStylist.vue"
 import GraduateOffer from "./components/offers/singleOffers/Graduate"
 import LaylaOffer from "./components/offers/singleOffers/Layla"
 import KatieOffer from "./components/offers/singleOffers/Katie"
 import AutumnOffer from "./components/offers/singleOffers/Autumn.vue"
 import JoinusInfo from "./components/joinus/JoinusInfo"
-import JoinusApplicants from "./components/joinus/admin/JoinusApplicants.vue";
-import JoinusApplicant from "./components/joinus/admin/JoinusApplicant.vue";
+import JoinusApplicants from "./components/joinus/admin/JoinusApplicants.vue"
+import JoinusApplicant from "./components/joinus/admin/JoinusApplicant.vue"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
@@ -185,12 +185,12 @@ const router = new Router({
             component: NewStarterOffer
         },
         {
-            path: '/offers/apprentice',
+            path: '/offers/apprentice-stylist',
             name: 'apprentice-offer',
             component: ApprenticeOffer
         },
         {
-            path: '/offers/jnr-stylist',
+            path: '/offers/junior-stylist',
             name: 'jnr-stylist-offer',
             component: JnrStylistOffer
         },
