@@ -3,7 +3,7 @@
     <div v-if="!hideOffers">
       <div class="section columns">
         <div class="column is-9-desktop">
-          <h2 class="title is-2 has-text-white">Revamp Your Hair This Summer!</h2>
+          <h2 class="title is-2 has-text-white">Revamp Your Hair This Autumn!</h2>
           <p class="is-size-4">Get incredible value with our skilled Apprentices, <strong>Jaz, Lily & Kam</strong>.</p>
           <p>Book now for unbeatable low prices, with all work overseen by our expert stylists and education team. Quality is never compromised!</p>
           <br>

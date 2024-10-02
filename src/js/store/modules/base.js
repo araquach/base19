@@ -7,7 +7,7 @@ export const state = {
     userPin: window.localStorage.getItem('userPin') || "",
     hideOffers: false,
     newsItems: [],
-    endDate: "28/09/24",
+    endDate: "31/10/24",
     applicants: [],
     applicant: {},
     showAllApplicants: false,

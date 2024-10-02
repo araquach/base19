@@ -3,7 +3,7 @@
     <div v-if="!hideOffers">
       <div class="section columns">
         <div class="column is-9-desktop">
-          <h2 class="title is-2 has-text-white">Elevate Your Style This Summer!</h2>
+          <h2 class="title is-2 has-text-white">Elevate Your Style This Autumn!</h2>
           <p class="is-size-4">Discover amazing value with our talented Junior Stylists,<strong> Becky and Daisy</strong>.</p>
           <p class="is-size-5">Book now and enjoy 25% off your appointment, quality hairdressing at a price you'll love.</p>
           <p class="is-size-5"><em>Limited slots available, so don't miss out!</em></p>
@@ -13,7 +13,7 @@
           </figure>
           <br>
           <p class="is-size-4">Top notch service without the premium price tag. Full availability Tuesday through to Saturday.</p>
-          <p class="is-size-5">Book in for a FREE consultation with Becky or Daisy to take advantage of our Summer Offer.</p>
+          <p class="is-size-5">Book in for a FREE consultation with Becky or Daisy to take advantage of our Special Offer.</p>
           <p class="is-size-4">Offer Code: JUNIOR25</p>
           <br>
           <div class="offer-team-links">
