@@ -8,7 +8,7 @@
           <p>Book now for unbeatable low prices, with all work overseen by our expert stylists and education team. Quality is never compromised!</p>
           <br>
           <figure class="image">
-            <img src="/dist/img/offers/summer_app_wide.png" alt="Summer Offer">
+            <img src="/dist/img/offers/apprentice_wide_2.png" alt="Autumn Offer">
           </figure>
           <br>
           <p class="is-size-4">Available Thursdays and Fridays only - limited slots, so don't miss out!</p>

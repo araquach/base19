@@ -3,10 +3,10 @@
     <div class="box">
       <div class="columns">
         <div class="column">
-          <img src="/dist/img/offers/summer_app_square.png" alt="Summer offer">
+          <img src="/dist/img/offers/apprentice_square_2.png" alt="Summer offer">
         </div>
         <section class="column is-8">
-          <h2 class="title is-3 has-text-white">Revamp Your Hair This Summer!</h2>
+          <h2 class="title is-3 has-text-white">Revamp Your Hair for Autumn!</h2>
           <p class="is-size-4">Get incredible value with our skilled Apprentices, Jaz, Lily & Kam.</p>
           <p class="is-size-5">25% Off for a limited time for new clients</p>
           <p class="is-size-4">Find out more ></p>

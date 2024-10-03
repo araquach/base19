@@ -9,7 +9,7 @@
           <p class="is-size-5"><em>Limited slots available, so don't miss out!</em></p>
           <br>
           <figure class="image">
-            <img src="/dist/img/offers/summer_js_wide.png" alt="Summer Offer">
+            <img src="/dist/img/offers/junior_wide_2.png" alt="Autumn Offer">
           </figure>
           <br>
           <p class="is-size-4">Top notch service without the premium price tag. Full availability Tuesday through to Saturday.</p>
