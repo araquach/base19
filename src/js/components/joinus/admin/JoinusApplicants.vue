@@ -5,6 +5,20 @@
     </div>
     <div v-if="userPin" class="section">
       <h1 class="title has-text-white">Applicants</h1>
+      <div class="buttons">
+        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'all')">
+          All
+        </button>
+        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'definitely')">
+          Definitely
+        </button>
+        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'maybe')">
+          Maybe
+        </button>
+        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'no')">
+          No
+        </button>
+      </div>
       <table class="table">
         <th>Date</th>
         <th>Name</th>
@@ -13,7 +27,7 @@
         <th>Role</th>
         <th>Position</th>
         <tbody>
-        <tr v-for="applicant in filteredApplicants" :key="applicant.id" :class="getFollowUpClass(applicant.follow_up)">
+        <tr v-for="applicant in filteredByCategory" :key="applicant.id" :class="getFollowUpClass(applicant.follow_up)">
           <td>{{ formatDate(applicant.created_at) }}</td>
           <td><router-link :to="{ name: 'joinus-applicant', params: { id: applicant.id } }">{{ applicant.name }}</router-link></td>
           <td>{{ applicant.email }}</td>
@@ -45,7 +59,7 @@ export default {
   },
 
   computed: {
-    ...mapGetters(['filteredApplicants']),
+    ...mapGetters(['filteredApplicants', 'filteredByCategory']),
     ...mapState({
       loading: state => state.base.loading,
       applicants: state => state.base.applicants,

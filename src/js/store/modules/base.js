@@ -11,7 +11,8 @@ export const state = {
     applicants: [],
     applicant: {},
     showAllApplicants: false,
-    loading: true
+    loading: true,
+    sortCriteria: 'all'
 }
 
 export const getters = {
@@ -41,21 +42,37 @@ export const getters = {
 
     filteredApplicants: state => {
         if (state.showAllApplicants) {
-            return state.applicants.sort((a, b) => b.id - a.id);
+            return state.applicants.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
         } else {
             let unselectedGroup = state.applicants
                 .filter(applicant => applicant.follow_up === '')
-                .sort((a, b) => b.id - a.id);
-
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
             let definitelyGroup = state.applicants
                 .filter(applicant => applicant.follow_up === 'definitely')
-                .sort((a, b) => b.id - a.id);
-
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
             let maybeGroup = state.applicants
                 .filter(applicant => applicant.follow_up === 'maybe')
-                .sort((a, b) => b.id - a.id);
-
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
             return [...definitelyGroup, ...maybeGroup, ...unselectedGroup];
+        }
+    },
+
+    filteredByCategory: state => {
+        if (state.sortCriteria === 'all') {
+            let unselectedGroup = state.applicants
+                .filter(applicant => applicant.follow_up === '')
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            let definitelyGroup = state.applicants
+                .filter(applicant => applicant.follow_up === 'definitely')
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            let maybeGroup = state.applicants
+                .filter(applicant => applicant.follow_up === 'maybe')
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            return [...definitelyGroup, ...maybeGroup, ...unselectedGroup];
+        } else {
+            return state.applicants
+                .filter(applicant => applicant.follow_up === state.sortCriteria)
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
         }
     }
 }
@@ -88,7 +105,11 @@ export const mutations = {
     },
 
     SET_LOADING(state, status) {
-        state.loading = status
+        state.loading = status;
+    },
+
+    SET_SORT_CRITERIA(state, payload) {
+        state.sortCriteria = payload;
     }
 }
 
@@ -125,27 +146,6 @@ export const actions = {
                 commit('SET_LOADING', false)
             });
     },
-
-    // updateApplicant({ commit, state, getters }, { applicant, newNote }) {
-    //     // Add the new note to the applicant's notes array if it exists
-    //     if (newNote) {
-    //         const user = getters.userName
-    //         const notes = applicant.notes || [];
-    //         const created = format(new Date(), "dd/MM/yy")
-    //         notes.push(`${user} | ${created}: ${newNote}`)
-    //         applicant.notes = notes;
-    //     }
-    //
-    //     return axios
-    //         .put(`/api/joinus-applicant`, applicant)
-    //         .then(response => {
-    //             // Update the state with the modified applicant
-    //             commit('UPDATE_APPLICANT', applicant);
-    //         })
-    //         .catch(error => {
-    //             console.log(error);
-    //         });
-    // },
 
     updateApplicant({state, commit, getters}, {id, newNote, followUp}) {
         let updates = {};
