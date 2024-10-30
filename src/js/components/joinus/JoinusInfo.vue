@@ -109,10 +109,10 @@
                 <div class="select" :class="{ 'is-danger': $v.role.$error }">
                   <select v-model.trim="$v.role.$model">
                     <option value="default">Please select</option>
-                    <option value="stylist">Stylist</option>
-                    <option value="apprentice">Apprentice</option>
-                    <option value="saturday">Saturday/Evening</option>
-                    <option value="other">Other</option>
+                    <option value="Stylist">Stylist</option>
+                    <option value="Apprentice">Apprentice</option>
+                    <option value="Saturday">Saturday/Evening</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
