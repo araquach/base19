@@ -63,10 +63,10 @@
       <hr class="is-mobile">
       <div id="joinusErr" class="section column">
         <h1 class="title is-3">Apply Here</h1>
-        <div>
+        <div v-if="submitStatus !== 'OK'">
           <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the
             application form and we'll be in touch soon!</p>
-          <form v-if="submitStatus !== 'OK'" @submit.prevent="submit">
+          <form @submit.prevent="submit">
             <div class="field">
               <label class="label has-text-white">Full Name</label>
               <div class="control">
@@ -102,6 +102,23 @@
                   <p>Valid Email address is required</p>
                 </div>
               </div>
+            </div>
+            <div class="field">
+              <label class="label has-text-white">Role</label>
+              <div class="control">
+                <div class="select" :class="{ 'is-danger': $v.role.$error }">
+                  <select v-model.trim="$v.role.$model">
+                    <option value="default">Please select</option>
+                    <option value="stylist">Stylist</option>
+                    <option value="apprentice">Apprentice</option>
+                    <option value="saturday">Saturday/Evening</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.role.required">
+              Role is required
             </div>
             <div class="field">
               <label class="label has-text-white">Current Position</label>
@@ -159,10 +176,10 @@
               <br><br>
             </div>
           </form>
-          <div id="join-us-message" v-if="submitStatus === 'OK'">
-            <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes
-              available</p>
-          </div>
+        </div>
+        <div id="join-us-message" v-if="submitStatus === 'OK'">
+          <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes
+            available</p>
         </div>
       </div>
     </div>
@@ -189,7 +206,7 @@ export default {
       position: '',
       why_us: '',
       salon: 3,
-      role: "Apprentice",
+      role: '',
       submitStatus: null,
       loading: false
     }
@@ -199,6 +216,7 @@ export default {
     name: {required},
     mobile: {required, numeric},
     email: {required, email},
+    role: {required},
     position: {required},
     about: {required},
     why_hair: {required},
@@ -217,15 +235,16 @@ export default {
           name: this.name,
           mobile: this.mobile,
           email: this.email,
+          role: this.role,
           position: this.position,
           about: this.about,
           why_hair: this.why_hair,
           why_us: this.why_us,
           salon: this.salon,
-          role: this.role
         })
             .then(response => {
               this.submitStatus = 'OK'
+              window.scrollTo({ top: 0, behavior: 'smooth' })
             })
             .catch((e) => {
               console.error(e)
