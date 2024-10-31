@@ -69,6 +69,10 @@ export const getters = {
                 .filter(applicant => applicant.follow_up === 'maybe')
                 .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
             return [...definitelyGroup, ...maybeGroup, ...unselectedGroup];
+        } else if (state.sortCriteria === 'uncategorised') {
+            return state.applicants
+                .filter(applicant => applicant.follow_up === '')
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
         } else {
             return state.applicants
                 .filter(applicant => applicant.follow_up === state.sortCriteria)

@@ -18,6 +18,9 @@
         <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'no')">
           No
         </button>
+        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'uncategorised')">
+          Uncategorised
+        </button>
       </div>
       <table class="table">
         <th>Date</th>

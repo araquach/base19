@@ -29,7 +29,7 @@
           <form @submit.prevent="updateDetails">
             <h2 class="title is-4 has-text-white">Notes</h2>
             <div v-for="note in reversedNotes" class="box">
-              {{ note }}
+              <pre>{{ note }}</pre>
             </div>
             <textarea v-model="newNote" class="textarea" placeholder="Add notes here"></textarea>
             <br>
@@ -138,5 +138,10 @@ export default {
 <style scoped>
 .section {
   padding-top: 6rem;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 </style>
