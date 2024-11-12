@@ -51,7 +51,17 @@
             <br>
             <p v-if="updateSuccess" class="has-text-success">Updated successfully!</p>
             <button v-if="showUpdateButton" type="submit" class="button is-primary">Update Notes</button>
-            <br><br>
+            <div class="box">
+              <h2 class="title is-5">Email Response</h2>
+              <div v-if="!applicant.email_response" class="buttons">
+                <button class="button is-danger">
+                  Unsuccessful
+                </button>
+                <button class="button is-warning">
+                  Maybe
+                </button>
+              </div>
+            </div>
             <router-link :to="{ name: 'joinus-applicants'}" class="button is-warning">
               Back to all applicants
             </router-link>

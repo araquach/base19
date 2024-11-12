@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, table, td, p {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .logo-placeholder {
+            width: 150px;
+            height: 60px;
+            background-color: #e0e0e0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4; margin: 0; padding: 0;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td align="center" style="padding: 20px 0;">
+            <table class="container" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td align="left">
+                        <!-- Logo Placeholder -->
+                        <div class="logo-placeholder"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding-top: 20px;">
+                        <h2 style="font-size: 24px; margin: 0; color: #333333;">Your application to {{.SalonName}}</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding-top: 10px; color: #333333;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">
+                            Hi {{.FirstName }},
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            Thank you for your interest in joining the {{.SalonName}} team and for taking the time to apply.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            After careful consideration, we have decided to move forward with other candidates for this role. We truly appreciate your enthusiasm for { {.SalonName}}, and we wish you all the best in your career journey.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            Warm regards,<br>
+                            {{.SalonName}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

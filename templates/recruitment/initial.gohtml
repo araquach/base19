@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, table, td, p {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .logo-placeholder {
+            width: 150px;
+            height: 60px;
+            background-color: #e0e0e0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body style="background-color: #f4f4f4; margin: 0; padding: 0;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td align="center" style="padding: 20px 0;">
+            <table class="container" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <td align="left">
+                        <!-- Logo -->
+                        <img src="/dist/img/email/base.png" alt="Base Hairdressing" class="logo">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding-top: 20px;">
+                        <h2 style="font-size: 24px; margin: 0; color: #333333;">Thank You for Your Application to {{.SalonName}}</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" style="padding-top: 10px; color: #333333;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">
+                            Hi {{.Name}},
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            Thank you for your interest in joining the {{.SalonName}} team!
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            We’re currently reviewing applications on a periodic basis due to the high volume of interest. If you don’t hear back immediately, please rest assured that your application is still under consideration.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            As we have limited roles available, we carefully assess all candidates before making decisions. Once our review is complete, we’ll be in touch to update you on the next steps.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            Thank you for your patience and for considering a future with us!
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.6;">
+                            Best regards,<br>
+                            {{.SalonName}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

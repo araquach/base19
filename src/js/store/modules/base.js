@@ -175,5 +175,9 @@ export const actions = {
             .catch(error => {
                 console.log(error);
             });
+    },
+    sendApplicantEmail({commit, payload}) {
+        return axios
+            .patch()
     }
 }
