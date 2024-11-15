@@ -1,4 +1,4 @@
-Hi {{.FirstName}},
+Hi {{.Name}},
 Thank you for your application to join the {{.SalonName}} team. We’ve reviewed recent applications and are impressed with your qualifications and experience!
 We’re very interested in learning more about you and hope you’re still enthusiastic about the role. We’ll be in touch soon to discuss the possibility of an initial informal interview.
 Thank you once again for your interest in {{.SalonName}}.

@@ -29,6 +29,7 @@
         <th>Mobile</th>
         <th>Role</th>
         <th>Position</th>
+        <th>Email Sent</th>
         <tbody>
         <tr v-for="applicant in filteredByCategory" :key="applicant.id" :class="getFollowUpClass(applicant.follow_up)">
           <td>{{ formatDate(applicant.created_at) }}</td>
@@ -37,6 +38,7 @@
           <td>{{ applicant.mobile }}</td>
           <td>{{ applicant.role }}</td>
           <td>{{ applicant.position }}</td>
+          <td>{{ applicant.email_response }}</td>
         </tr>
         </tbody>
       </table>

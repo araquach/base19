@@ -10,50 +10,65 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            background-color: #ffffff;
+            background-color: #ffffff !important;
             padding: 20px;
         }
-        .logo-placeholder {
-            width: 150px;
-            height: 60px;
-            background-color: #e0e0e0;
-            display: inline-block;
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+        h2, p {
+            color: #333333 !important;
+        }
+        /* Media query for dark mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212 !important;
+            }
+            .container {
+                background-color: #1e1e1e !important;
+            }
+            .logo {
+                content: url('{{.LogoLinkWhite}}') !important;
+            }
+            h2, p {
+                color: #f4f4f4 !important;
+            }
         }
     </style>
 </head>
-<body style="background-color: #f4f4f4; margin: 0; padding: 0;">
+<body style="background-color: #f4f4f4 !important; margin: 0; padding: 0;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
     <tr>
         <td align="center" style="padding: 20px 0;">
-            <table class="container" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+            <table class="container" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff !important;">
                 <tr>
                     <td align="left">
-                        <!-- Logo Placeholder -->
-                        <div class="logo-placeholder"></div>
+                        <img src="{{.LogoLink}}" alt="Base Hairdressing" class="logo">
                     </td>
                 </tr>
                 <tr>
                     <td align="left" style="padding-top: 20px;">
-                        <h2 style="font-size: 24px; margin: 0; color: #333333;">Your application to join {{.SalonName}}</h2>
+                        <h2 style="font-size: 24px; margin: 0; color: #333333 !important;">Follow up on application to {{.SalonName}}</h2>
                     </td>
                 </tr>
                 <tr>
-                    <td align="left" style="padding-top: 10px; color: #333333;">
-                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">
-                            Hi {{.FirstName}},
+                    <td align="left" style="padding-top: 10px;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px 0; color: #333333 !important;">
+                            <strong>Hi {{.Name}}</strong>,
                         </p>
-                        <p style="font-size: 16px; line-height: 1.6;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px 0; color: #333333 !important;">
                             Thank you for your application to join the {{.SalonName}} team. We’ve reviewed recent applications and are impressed with your qualifications and experience!
                         </p>
-                        <p style="font-size: 16px; line-height: 1.6;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px 0; color: #333333 !important;">
                             We’re very interested in learning more about you and hope you’re still enthusiastic about the role. We’ll be in touch soon to discuss the possibility of an initial informal interview.
                         </p>
-                        <p style="font-size: 16px; line-height: 1.6;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px 0; color: #333333 !important;">
                             Thank you once again for your interest in {{.SalonName}}.
                         </p>
-                        <p style="font-size: 16px; line-height: 1.6;">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0; color: #333333 !important;">
                             Best regards,<br>
-                            The {{.SalonName}} Team
+                            <strong>{{.SalonName}}</strong>
                         </p>
                     </td>
                 </tr>

@@ -1,4 +1,4 @@
-Hi {{.FirstName}},
+Hi {{.Name}},
 
 Thank you for your interest in joining the {{.SalonName}} team and for taking the time to apply.
 
