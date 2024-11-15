@@ -51,7 +51,22 @@
             <br>
             <p v-if="updateSuccess" class="has-text-success">Updated successfully!</p>
             <button v-if="showUpdateButton" type="submit" class="button is-primary">Update Notes</button>
-            <br><br>
+            <div v-if="!applicant.email_response" class="box">
+              <div v-if="!emailSent">
+                <h2 class="title is-5">Email Response</h2>
+                <div class="buttons">
+                  <button @click.prevent="sendEmailResponse('unsuccessful')" class="button is-danger">
+                    Unsuccessful
+                  </button>
+                  <button @click.prevent="sendEmailResponse('maybe')" class="button is-warning">
+                    Maybe
+                  </button>
+                </div>
+              </div>
+              <div v-else>
+                <p>Email Successfully sent to candidate</p>
+              </div>
+            </div>
             <router-link :to="{ name: 'joinus-applicants'}" class="button is-warning">
               Back to all applicants
             </router-link>
@@ -76,6 +91,7 @@ export default {
       newNote: "",
       originalFollowUp: "",
       updateSuccess: false,
+      emailSent: false,
     }
   },
 
@@ -97,6 +113,22 @@ export default {
       setTimeout(() => {
         this.updateSuccess = false;
       }, 2000);
+    },
+
+   async sendEmailResponse(emailType) {
+     let emailData = {
+       ID: this.applicant.id,
+       EmailResponse: emailType,
+     }
+     console.log(emailData);
+      try {
+       const response = await axios.patch("/api/joinus-email-response", emailData);
+        console.log('Response:', response.data);
+        this.emailSent = true;
+      } catch (error) {
+        console.error('Error updating data:', error.response?.data || error.message);
+        this.$emit('update-failed', error); // Emit an event on failure (optional)
+      }
     }
   },
 

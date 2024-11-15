@@ -180,6 +180,7 @@
         <div id="join-us-message" v-if="submitStatus === 'OK'">
           <p class="is-size-4 has-text-primary">Thanks for applying! We'll be in touch when a position becomes
             available</p>
+          <p class="is-size-5 has-text-primary">If you're considering our other salons too (Paul Kemp Hairdressing and Jakata) there's no need to apply again as we're all connected and this application covers all 3 salons!</p>
         </div>
       </div>
     </div>

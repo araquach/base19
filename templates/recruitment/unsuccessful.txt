@@ -1,0 +1,8 @@
+Hi {{.Name}},
+
+Thank you for your interest in joining the {{.SalonName}} team and for taking the time to apply.
+
+After careful consideration, we have decided to move forward with other candidates for this role. We truly appreciate your enthusiasm for {{.SalonName}}, and we wish you all the best in your career journey.
+
+Warm regards,
+{{.SalonName}}

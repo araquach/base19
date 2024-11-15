@@ -1,0 +1,7 @@
+Hi {{.Name}},
+Thank you for your interest in joining the {{.SalonName}} team
+We’re currently reviewing applications on a periodic basis due to the high volume of interest. If you don’t hear back immediately, please rest assured that your application is still under consideration.
+As we have limited roles available, we carefully assess all candidates before making decisions. Once our review is complete, we’ll be in touch to update you on the next steps.
+Thank you for your patience and for considering a future with us!
+Best regards
+{{.SalonName}}
