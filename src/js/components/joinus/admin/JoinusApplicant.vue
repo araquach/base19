@@ -9,7 +9,11 @@
       <p>Salon Applied to: {{ salonName }}</p>
       <p>Mobile: {{ applicant.mobile }}</p>
       <p>Email: {{ applicant.email }}</p>
-      <p>Role: {{ applicant.role }}</p>
+      <p>Role: {{ applicant.role }}
+        <button v-if="applicant.role === 'apprentice' || applicant.role === 'Apprentice'" @click="changeRole"
+                class="button is-small is-warning ml-5">Change to Saturday
+        </button>
+      </p>
       <p>Position: {{ applicant.position }}</p>
       <div class="column is-8">
         <div class="box">
@@ -115,20 +119,31 @@ export default {
       }, 2000);
     },
 
-   async sendEmailResponse(emailType) {
-     let emailData = {
-       ID: this.applicant.id,
-       EmailResponse: emailType,
-     }
-     console.log(emailData);
+    async sendEmailResponse(emailType) {
+      let emailData = {
+        ID: this.applicant.id,
+        EmailResponse: emailType,
+      }
+      console.log(emailData);
       try {
-       const response = await axios.patch("/api/joinus-email-response", emailData);
+        const response = await axios.patch("/api/joinus-email-response", emailData);
         console.log('Response:', response.data);
         this.emailSent = true;
       } catch (error) {
         console.error('Error updating data:', error.response?.data || error.message);
         this.$emit('update-failed', error); // Emit an event on failure (optional)
       }
+    },
+
+    async changeRole() {
+      axios.patch(`/api/joinus-update-role/${this.applicant.id}`)
+          .then(response => {
+            console.log('Applicant updated:', response.data);
+            this.applicant.role = 'Saturday'
+          })
+          .catch(error => {
+            console.error('Error updating applicant:', error);
+          });
     }
   },
 
