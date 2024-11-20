@@ -73,6 +73,9 @@ export const getters = {
             return state.applicants
                 .filter(applicant => applicant.follow_up === '')
                 .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+        } else if (state.sortCriteria === 'archived') {
+            return state.applicants
+                .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
         } else {
             return state.applicants
                 .filter(applicant => applicant.follow_up === state.sortCriteria)
@@ -108,6 +111,10 @@ export const mutations = {
         state.applicant = payload
     },
 
+    REMOVE_APPLICANT(state, id) {
+        state.applicants = state.applicants.filter(applicant => applicant.id !== id);
+    },
+
     SET_LOADING(state, status) {
         state.loading = status;
     },
@@ -128,12 +135,13 @@ export const actions = {
 
     },
 
-    loadJoinUsApplicants({commit}) {
+    loadJoinUsApplicants({commit}, status) {
         axios
-            .get('/api/joinus-applicants')
+            .get(`/api/joinus-applicants/${status}`)
             .then(response => response.data)
             .then(applicants => {
                 commit('SET_JOIN_US_APPLICANTS', applicants)
+                commit('SET_SORT_CRITERIA',status)
             })
     },
 
@@ -176,8 +184,8 @@ export const actions = {
                 console.log(error);
             });
     },
-    sendApplicantEmail({commit, payload}) {
-        return axios
-            .patch()
-    }
+
+    removeApplicant({commit}, id) {
+        commit('REMOVE_APPLICANT', id);
+    },
 }

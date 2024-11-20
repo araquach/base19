@@ -71,6 +71,10 @@
                 <p>Email Successfully sent to candidate</p>
               </div>
             </div>
+            <button v-if="applicant.follow_up !== 'archived'" @click="archiveApplicant" class="button is-danger">
+              Archive Applicant
+            </button>
+            <br><br>
             <router-link :to="{ name: 'joinus-applicants'}" class="button is-warning">
               Back to all applicants
             </router-link>
@@ -144,6 +148,20 @@ export default {
           .catch(error => {
             console.error('Error updating applicant:', error);
           });
+    },
+
+    async archiveApplicant() {
+      try {
+        const response = await axios.delete(`/api/delete-applicant/${this.applicant.id}`);
+        if (response.status === 204) {
+          console.log('Applicant successfully deleted');
+          this.$store.dispatch('removeApplicant', this.applicant.id)
+          this.$router.push({ name: 'joinus-applicants' });
+        }
+      } catch (error) {
+        console.error('Error deleting applicant:', error);
+        this.error = error;
+      }
     }
   },
 

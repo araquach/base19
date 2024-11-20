@@ -6,20 +6,23 @@
     <div v-if="userPin" class="section">
       <h1 class="title has-text-white">Applicants</h1>
       <div class="buttons">
-        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'all')">
+        <button class="button is-primary" @click="changeApplicantStatus('all')">
           All
         </button>
-        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'definitely')">
+        <button class="button is-primary" @click="changeApplicantStatus('definitely')">
           Definitely
         </button>
-        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'maybe')">
+        <button class="button is-primary" @click="changeApplicantStatus('maybe')">
           Maybe
         </button>
-        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'no')">
+        <button class="button is-primary" @click="changeApplicantStatus('no')">
           No
         </button>
-        <button class="button is-primary" @click="$store.commit('SET_SORT_CRITERIA', 'uncategorised')">
+        <button class="button is-primary" @click="changeApplicantStatus('uncategorised')">
           Uncategorised
+        </button>
+        <button class="button is-primary" @click="changeApplicantStatus('archived')">
+          Archived
         </button>
       </div>
       <table class="table">
@@ -30,15 +33,23 @@
         <th>Role</th>
         <th>Position</th>
         <th>Email Sent</th>
+        <th>Archive</th>
         <tbody>
         <tr v-for="applicant in filteredByCategory" :key="applicant.id" :class="getFollowUpClass(applicant.follow_up)">
           <td>{{ formatDate(applicant.created_at) }}</td>
-          <td><router-link :to="{ name: 'joinus-applicant', params: { id: applicant.id } }">{{ applicant.name }}</router-link></td>
+          <td>
+            <router-link v-if="!applicant.deleted_at" :to="{ name: 'joinus-applicant', params: { id: applicant.id } }">{{ applicant.name }}</router-link>
+            <span v-else>{{ applicant.name }}</span>
+          </td>
           <td>{{ applicant.email }}</td>
           <td>{{ applicant.mobile }}</td>
           <td>{{ applicant.role }}</td>
           <td>{{ applicant.position }}</td>
           <td>{{ applicant.email_response }}</td>
+          <td>
+            <button v-if="!applicant.deleted_at" @click="archiveApplicant(applicant.id)" class="button is-danger is-small">Archive</button>
+            <span v-else class="has-text-danger">Archived</span>
+          </td>
         </tr>
         </tbody>
       </table>
@@ -60,6 +71,23 @@ export default {
 
     getFollowUpClass: function(followUpStatus) {
       return followUpStatus === 'definitely' ? 'definitely' : followUpStatus === 'maybe' ? 'maybe' : followUpStatus === 'no' ? 'discarded' : '';
+    },
+
+    async changeApplicantStatus(status) {
+      await this.$store.dispatch("loadJoinUsApplicants", status)
+    },
+
+    async archiveApplicant(id) {
+      try {
+        const response = await axios.delete(`/api/delete-applicant/${id}`);
+        if (response.status === 204) {
+          console.log('Applicant successfully deleted');
+          this.$store.dispatch('removeApplicant', id); // Dispatch the action to update state
+        }
+      } catch (error) {
+        console.error('Error deleting applicant:', error);
+        this.error = error;
+      }
     }
   },
 
@@ -73,7 +101,7 @@ export default {
   },
 
   created() {
-    this.$store.dispatch('loadJoinUsApplicants')
+    this.$store.dispatch('loadJoinUsApplicants', "all")
   }
 }
 </script>
