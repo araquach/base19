@@ -80,20 +80,27 @@
             </router-link>
           </form>
         </div>
+        <br>
+        <button class="button" @click="openMessagingPanel">Open Messages</button>
+
+        <!-- Messaging Panel -->
+        <MessagingPanel />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import UserForm from "./UserForm.vue"
-import {mapActions, mapGetters, mapState} from 'vuex'
+import UserForm from "./UserForm.vue";
+import MessagingPanel from "./MessagingPanel.vue";
+import { mapActions, mapGetters, mapState } from "vuex";
 import format from "date-fns/format";
 
 export default {
-  components: {UserForm},
+  components: { UserForm, MessagingPanel },
 
-  props: ['id'],
+  props: ["id"],
+
   data() {
     return {
       newNote: "",
@@ -104,7 +111,18 @@ export default {
   },
 
   methods: {
-    ...mapActions(['fetchApplicant']),
+    // Map Vuex actions
+    ...mapActions(["openPanel", "closePanel", "fetchMessages", "fetchApplicant"]),
+
+    async openMessagingPanel() {
+      try {
+        this.openPanel();
+        await this.fetchMessages(); // Fetch messages for the current applicant
+      } catch (error) {
+        console.error("Failed to open messaging panel:", error);
+      }
+    },
+
     async updateDetails() {
       // Dispatch the updated applicant and the new note to the store
       await this.$store.dispatch("updateApplicant", {
@@ -124,29 +142,30 @@ export default {
     },
 
     async sendEmailResponse(emailType) {
-      let emailData = {
+      const emailData = {
         ID: this.applicant.id,
         EmailResponse: emailType,
       }
       console.log(emailData);
       try {
         const response = await axios.patch("/api/joinus-email-response", emailData);
-        console.log('Response:', response.data);
+        console.log("Response:", response.data);
         this.emailSent = true;
       } catch (error) {
-        console.error('Error updating data:', error.response?.data || error.message);
-        this.$emit('update-failed', error); // Emit an event on failure (optional)
+        console.error("Error updating data:", error.response?.data || error.message);
+        this.$emit("update-failed", error); // Emit an event on failure (optional)
       }
     },
 
     async changeRole() {
-      axios.patch(`/api/joinus-update-role/${this.applicant.id}`)
-          .then(response => {
-            console.log('Applicant updated:', response.data);
-            this.applicant.role = 'Saturday'
+      axios
+          .patch(`/api/joinus-update-role/${this.applicant.id}`)
+          .then((response) => {
+            console.log("Applicant updated:", response.data);
+            this.applicant.role = "Saturday";
           })
-          .catch(error => {
-            console.error('Error updating applicant:', error);
+          .catch((error) => {
+            console.error("Error updating applicant:", error);
           });
     },
 
@@ -154,32 +173,37 @@ export default {
       try {
         const response = await axios.delete(`/api/delete-applicant/${this.applicant.id}`);
         if (response.status === 204) {
-          console.log('Applicant successfully deleted');
-          this.$store.dispatch('removeApplicant', this.applicant.id)
-          this.$router.push({ name: 'joinus-applicants' });
+          console.log("Applicant successfully deleted");
+          this.$store.dispatch("removeApplicant", this.applicant.id);
+          this.$router.push({ name: "joinus-applicants" });
         }
       } catch (error) {
-        console.error('Error deleting applicant:', error);
+        console.error("Error deleting applicant:", error);
         this.error = error;
       }
-    }
+    },
   },
 
   computed: {
-    ...mapGetters(['salonName', 'userName']),
+    // Map Vuex getters and state
+    ...mapGetters(["salonName", "userName"]),
     ...mapState({
       applicant: state => state.base.applicant,
-      loading: state => state.base.loading,
-      userPin: state => state.base.userPin
+      loading: (state) => state.base.loading,
+      userPin: (state) => state.base.userPin,
+      isPanelOpen: (state) => state.messaging.isPanelOpen,
     }),
+
+    // Format the applicant creation date
     formatDate() {
       const date = new Date(this.applicant.created_at);
       if (isNaN(date)) {
-        return 'Date is not available';
+        return "Date is not available";
       }
       return format(date, "do MMM yyyy");
     },
 
+    // Reverse the notes array
     reversedNotes() {
       if (!this.applicant.notes || this.applicant.notes.length === 0) {
         return [];
@@ -187,6 +211,7 @@ export default {
       return this.applicant.notes.slice().reverse();
     },
 
+    // Check if the update button should be shown
     showUpdateButton() {
       return this.newNote.trim() !== "" || this.originalFollowUp !== this.applicant.follow_up;
     },
@@ -194,7 +219,16 @@ export default {
 
   async created() {
     await this.fetchApplicant(this.id);
+    await this.$store.dispatch("fetchMessages");
     this.originalFollowUp = this.applicant.follow_up;
+  },
+
+  beforeRouteLeave(to, from, next) {
+    // Close the messaging panel before leaving the route
+    if (this.isPanelOpen) {
+      this.closePanel();
+    }
+    next(); // Proceed to the next route
   },
 };
 </script>
