@@ -3,8 +3,8 @@
     <div v-if="!hideOffers">
       <div class="section columns">
         <div class="column is-9-desktop">
-          <h2 class="title is-2 is-size-4-mobile has-text-white mb-1">Revamp Your Hair with 25% OFF!</h2>
-          <h2 class="title is-4">for New Clients to Base</h2>
+          <h2 class="title is-2 is-size-4-mobile has-text-white mb-2">New Clients: Revamp Your Hair </h2>
+            <h2 class="title is-2 is-size-4-mobile has-text-white">with 25% OFF!</h2>
           <p class="is-size-5">Get incredible value with our skilled apprentices. Book now for unbeatable low prices, and choose from a range of apprentice levels based on your desired style and budget.</p>
           <h3 class="title is-4 mb-3 mt-5">Average price for...</h3>
           <p class="is-size-5"><strong>Jaz, Lily & Kam: £70 (£53 inc discount)</strong></p>
