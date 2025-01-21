@@ -44,8 +44,8 @@ export default {
       showOffers: {
         general: false,
         newStarter: false,
-        apprentice: true,
-        jnrStylist: true,
+        apprentice: false,
+        jnrStylist: false,
         graduate: false,
         layla: false,
         katie: false,
