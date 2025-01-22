@@ -16,11 +16,11 @@
           <br>
           <p class="is-size-5">All work is overseen by our expert stylists and education team, ensuring quality is never compromised!</p>
           <p class="is-size-5"><strong>Come in for a FREE consultation with one of them  and if you like the ideas they up with then book in to get 25% off your first visit with them!</strong></p>
-          <p class="is-size-4"><strong>Call 01925 444449 to book</strong><br>
-            or use our online booking (link at top of page)</p>
-          <div class="offer-team-links">
+          <div class="buttons">
             <router-link :to="{ name: 'team' }" class="button is-primary">Check out the full team</router-link>
+            <a href="https://www.phorest.com/salon/basehairacademy/book/service-selection?showSpecialOffers=false" class="button is-primary">Book a Consultation</a>
           </div>
+          <p class="is-size-4"><strong>Prefer to Book by Phone? Call Us on 01925 444449</strong></p>
           <br>
           <p class="small">(Offer ends {{ endDate }} - Skin Test required 48 hrs before any colour service - offer for new clients to Base Hairdressing)</p>
           <p>Just mention the offer at the time of your visit</p>
