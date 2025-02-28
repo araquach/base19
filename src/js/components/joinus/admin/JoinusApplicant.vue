@@ -55,14 +55,14 @@
             <br>
             <p v-if="updateSuccess" class="has-text-success">Updated successfully!</p>
             <button v-if="showUpdateButton" type="submit" class="button is-primary">Update Notes</button>
-            <div class="box">
+            <div v-if="applicant.email_response !== 'unsuccessful'" class="box">
               <div v-if="!emailSent">
                 <h2 class="title is-5">Email Response</h2>
                 <div class="buttons">
                   <button v-if="applicant.email_response !== 'unsuccessful'" @click.prevent="sendEmailResponse('unsuccessful')" class="button is-danger">
                     Unsuccessful
                   </button>
-                  <button v-if="applicant.email_response !== 'maybe'" @click.prevent="sendEmailResponse('maybe')" class="button is-warning">
+                  <button v-if="applicant.email_response !== 'maybe' && applicant.email_response !== 'unsuccessful'" @click.prevent="sendEmailResponse('maybe')" class="button is-warning">
                     Maybe
                   </button>
                 </div>
