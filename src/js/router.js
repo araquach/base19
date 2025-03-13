@@ -52,6 +52,8 @@ import Spring from "./components/offers/singleOffers/Spring.vue"
 import SpringSMS from "./components/offers/singleOffers/sms/Spring.vue"
 import SarahMove from "./views/SarahMove.vue"
 import KatieMove from "./views/KatieMove.vue"
+import DaisyMove from "./views/DaisyMove.vue";
+import BeckyMove from "./views/BeckyMove.vue";
 
 Vue.use(Router)
 
@@ -340,6 +342,16 @@ const router = new Router({
             path: '/katie-move',
             name: 'katie-move',
             component: KatieMove
+        },
+        {
+            path: '/daisy-move',
+            name: 'daisy-move',
+            component: DaisyMove
+        },
+        {
+            path: '/becky-move',
+            name: 'becky-move',
+            component: BeckyMove
         },
         {
             path: '/jellybeans',
