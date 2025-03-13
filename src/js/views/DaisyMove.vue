@@ -5,7 +5,7 @@
       <div class="column is-8">
         <p class="is-size-5">We're delighted to share that <strong>Daisy</strong> is taking a significant step in her career by joining our sister salon,
           <strong>Jakata</strong>, from April.</p>
-        <p>Daisy has excelled in her apprenticeship, earning a <strong>distinction</strong> and proving her skills as a junior stylist. Her dedication to her craft has prepared her for this exciting new role at
+        <p>Daisy has excelled in her apprenticeship and is ready to move to Graduate Stylist position. Her dedication to her craft has prepared her for this exciting new role at
           <strong>Jakata</strong>, where she will continue to offer her exceptional styling services.</p>
         <h2 class="title is-4">Book Your Next Appointment with Daisy at Jakata!</h2>
         <p>Starting from April all of her appointments will be at <strong>Jakata</strong>. We're eager for you to join us in this new chapter and experience the same great styling by Daisy in a new setting.</p>
