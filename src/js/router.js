@@ -54,6 +54,7 @@ import SarahMove from "./views/SarahMove.vue"
 import KatieMove from "./views/KatieMove.vue"
 import DaisyMove from "./views/DaisyMove.vue";
 import BeckyMove from "./views/BeckyMove.vue";
+import PriceIncrease from "./views/PriceIncrease.vue";
 
 Vue.use(Router)
 
@@ -362,6 +363,12 @@ const router = new Router({
             path: '/online-shop',
             name: 'online-shop',
             component: OnlineStore
+        },
+        {
+            path: '/new-prices',
+            name: 'new-prices',
+            component: PriceIncrease,
+
         },
         {
             path: '/:notFound(.*)', redirect: '/'
