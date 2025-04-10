@@ -5,9 +5,9 @@ const today = new Date()
 
 export const state = {
     userPin: window.localStorage.getItem('userPin') || "",
-    hideOffers: true,
+    hideOffers: false,
     newsItems: [],
-    endDate: "28/03/25",
+    endDate: "30/04/25",
     applicants: [],
     applicant: {},
     showAllApplicants: false,
