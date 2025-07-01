@@ -10,7 +10,7 @@
           <p class="is-size-5"><strong>Jaz, Lily & Kam: £80 (£60 inc discount)</strong></p>
           <br>
           <figure class="image">
-            <img src="/dist/img/offers/feb25_wide.png" alt="New Client Offers">
+            <img src="/dist/img/offers/july25_wide.png" alt="New Client Offers">
           </figure>
           <br>
           <p class="is-size-5">All work is overseen by our expert stylists and education team, ensuring quality is never compromised!</p>
