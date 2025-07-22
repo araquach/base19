@@ -55,6 +55,7 @@ import KatieMove from "./views/KatieMove.vue"
 import DaisyMove from "./views/DaisyMove.vue";
 import BeckyMove from "./views/BeckyMove.vue";
 import PriceIncrease from "./views/PriceIncrease.vue";
+import Policies from "./views/Policies.vue";
 
 Vue.use(Router)
 
@@ -363,6 +364,11 @@ const router = new Router({
             path: '/online-shop',
             name: 'online-shop',
             component: OnlineStore
+        },
+        {
+            path: '/policies',
+            name: 'policies',
+            component: Policies,
         },
         {
             path: '/new-prices',

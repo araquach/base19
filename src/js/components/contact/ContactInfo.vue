@@ -19,7 +19,9 @@
                         Wednesday: 11am - 8pm<br>
                         Thursday: 11am - 8pm<br>
                         Friday: 9am - 5pm<br>
-                        Saturday: 8.30am - 4:30pm</p>
+                        Saturday: 8.30am - 4:30pm<br>
+                        Sunday: Closed
+                    </p>
                 </div>
             </div>
             <hr class="is-mobile">
