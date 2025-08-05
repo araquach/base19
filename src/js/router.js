@@ -25,10 +25,10 @@ import ContactInfo from "./components/contact/ContactInfo"
 import CoronaInfo from "./components/corona/CoronaInfo"
 import LaylaProfile from "./components/team/profiles/LaylaProfile.vue"
 import VikkiProfile from "./components/team/profiles/VikkiProfile.vue"
-import BeckyProfile from "./components/team/profiles/BeckyProfile.vue"
-import DaisyProfile from "./components/team/profiles/DaisyProfile.vue";
+import BeckyProfile from "./components/team/profiles/archive/BeckyProfile.vue"
+import DaisyProfile from "./components/team/profiles/archive/DaisyProfile.vue";
 import JamieProfile from "./components/team/profiles/archive/JamieProfile.vue";
-import KatieProfile from "./components/team/profiles/KatieProfile.vue";
+import KatieProfile from "./components/team/profiles/archive/KatieProfile.vue";
 import LilyProfile from "./components/team/profiles/LilyProfile.vue";
 import SarahProfile from "./components/team/profiles/SarahProfile.vue";
 import JasmineProfile from "./components/team/profiles/JasmineProfile.vue";
@@ -56,6 +56,9 @@ import DaisyMove from "./views/DaisyMove.vue";
 import BeckyMove from "./views/BeckyMove.vue";
 import PriceIncrease from "./views/PriceIncrease.vue";
 import Policies from "./views/Policies.vue";
+import BrookeProfile from "./components/team/profiles/BrookeProfile.vue";
+import MollyProfile from "./components/team/profiles/MollyProfile.vue";
+import MaisieProfile from "./components/team/profiles/MaisieProfile.vue";
 
 Vue.use(Router)
 
@@ -157,6 +160,21 @@ const router = new Router({
             path: '/team/kam',
             name: 'kam-profile',
             component: KamProfile,
+        },
+        {
+            path: '/team/brooke',
+            name: 'brooke-profile',
+            component: BrookeProfile,
+        },
+        {
+            path: '/team/mollie',
+            name: 'molly-profile',
+            component: MollyProfile,
+        },
+        {
+            path: '/team/maisie',
+            name: 'maisie-profile',
+            component: MaisieProfile,
         },
         {
             path: '/blog',
