@@ -59,6 +59,7 @@ import Policies from "./views/Policies.vue";
 import BrookeProfile from "./components/team/profiles/BrookeProfile.vue";
 import MollyProfile from "./components/team/profiles/MollyProfile.vue";
 import MaisieProfile from "./components/team/profiles/MaisieProfile.vue";
+import Sept25 from "./components/offers/singleOffers/sept25/Sept25.vue";
 
 Vue.use(Router)
 
@@ -190,7 +191,7 @@ const router = new Router({
         {
             path: '/offers',
             name: 'offers',
-            component: Feb25
+            component: Sept25
         },
         {
             path: '/refer-a-friend',
