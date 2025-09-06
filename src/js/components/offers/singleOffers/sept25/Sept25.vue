@@ -3,11 +3,17 @@
     <div v-if="!hideOffers">
       <div class="section columns">
         <div class="column is-9-desktop">
-          <h2 class="title is-2 is-size-4-mobile has-text-white mb-2">New Client Offer!</h2>
-          <p class="is-size-4">Support Jaz, Lily and Kam as they go full time with our exclusive New Client 25% OFF offer.</p>
-          <figure class="image">
-            <img src="/dist/img/offers/september25.png" alt="Jaz, Lily & Kam">
+          <h2 class="title is-2 is-size-3-mobile has-text-white mb-4">New Client Offer!</h2>
+          <p class="is-size-4 mb-6">Support Jaz, Lily and Kam as they go full time with our exclusive New Client 25% OFF offer.</p>
+          <!-- Original image (hidden on mobile) -->
+          <figure class="image is-hidden-mobile">
+            <img src="/dist/img/offers/september25.png" alt="Jaz, Lily & Kam" class="mb-6">
           </figure>
+          <!-- Square image (hidden on tablet and up) -->
+          <figure class="image is-square is-hidden-tablet">
+            <img src="/dist/img/offers/september25_square.png" alt="Jaz, Lily & Kam" class="mb-6">
+          </figure>
+
           <br>
           <p class="is-size-5"><strong>Book a FREE consultation with Jaz, Lily or Kam and enjoy professional results at a fraction of the cost.</strong></p>
           <p class="is-size-5">Our team are now full-time in the salon and progressing towards the end of their apprenticeship journeys, every service is fully supported by our experienced educators, so you’re always in safe hands.</p>
