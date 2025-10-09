@@ -18,6 +18,7 @@
           <p class="is-size-5">Brooke, Molly and Maisie are now taking on new clients as their columns open up.</p>
           <p>Each Stylist is approaching promotion level, which means prices will soon increase, so now’s the perfect time to secure an appointment at today’s lower price.</p>
           <p class="is-size-5"><strong>Also enjoy a FREE consultation and experience quality hairdressing at a fraction of the cost, all under the guidance of our expert educators.</strong></p>
+         <p>A typical Colour and Cut price with our apprentices is just £35! (including discount)</p>
           <p><em>Please note: all of our new starters are currently only carrying out basic cutting and colouring services. If
             you are looking for a more advanced stylist
             <router-link :to="{name: 'jnr-stylist-offer'}" class="has-text-primary"><strong>click here</strong></router-link>
