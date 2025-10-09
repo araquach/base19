@@ -8,21 +8,16 @@ import TeamAll from "./components/team/TeamAll"
 import BlogInfo from "./components/blog/BlogInfo"
 import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
-import GeneralOffer from "./components/offers/singleOffers/November"
-import NewStarterOffer from "./components/offers/singleOffers/NewStarter"
-import ApprenticeOffer from "./components/offers/singleOffers/summer/Apprentice.vue"
-import JnrStylistOffer from "./components/offers/singleOffers/summer/JuniorStylist.vue"
-import GraduateOffer from "./components/offers/singleOffers/Graduate"
-import LaylaOffer from "./components/offers/singleOffers/Layla"
-import KatieOffer from "./components/offers/singleOffers/Katie"
-import AutumnOffer from "./components/offers/singleOffers/Autumn.vue"
-import Feb25 from "./components/offers/singleOffers/feb25/Feb25.vue";
+import GeneralOffer from "./components/offers/categories/General"
+import NewStarterOffer from "./components/offers/categories/NewStarter"
+import ApprenticeOffer from "./components/offers/categories/Apprentice"
+import JnrStylistOffer from "./components/offers/categories/JuniorStylist"
+import GraduateOffer from "./components/offers/categories/Graduate"
 import JoinusInfo from "./components/joinus/JoinusInfo"
 import JoinusApplicants from "./components/joinus/admin/JoinusApplicants.vue"
 import JoinusApplicant from "./components/joinus/admin/JoinusApplicant.vue"
 import ModelsInfo from "./components/models/ModelsInfo"
 import ContactInfo from "./components/contact/ContactInfo"
-import CoronaInfo from "./components/corona/CoronaInfo"
 import LaylaProfile from "./components/team/profiles/LaylaProfile.vue"
 import VikkiProfile from "./components/team/profiles/VikkiProfile.vue"
 import BeckyProfile from "./components/team/profiles/archive/BeckyProfile.vue"
@@ -47,9 +42,6 @@ import JellyBeans from "./views/JellyBeans.vue"
 import Referrals from "./views/Referrals.vue";
 import OnlineStore from "./views/OnlineStore.vue";
 import NewYear from "./components/offers/singleOffers/NewYear.vue";
-import NewYearSMS from "./components/offers/singleOffers/sms/NewYear.vue"
-import Spring from "./components/offers/singleOffers/Spring.vue"
-import SpringSMS from "./components/offers/singleOffers/sms/Spring.vue"
 import SarahMove from "./views/SarahMove.vue"
 import KatieMove from "./views/KatieMove.vue"
 import DaisyMove from "./views/DaisyMove.vue";
@@ -59,7 +51,6 @@ import Policies from "./views/Policies.vue";
 import BrookeProfile from "./components/team/profiles/BrookeProfile.vue";
 import MollyProfile from "./components/team/profiles/MollyProfile.vue";
 import MaisieProfile from "./components/team/profiles/MaisieProfile.vue";
-import Sept25 from "./components/offers/singleOffers/sept25/Sept25.vue";
 
 Vue.use(Router)
 
@@ -191,12 +182,7 @@ const router = new Router({
         {
             path: '/offers',
             name: 'offers',
-            component: Sept25
-        },
-        {
-            path: '/refer-a-friend',
-            name: 'referrals',
-            component: Referrals
+            component: OffersInfo
         },
         {
             path: '/offers/general',
@@ -209,7 +195,7 @@ const router = new Router({
             component: NewStarterOffer
         },
         {
-            path: '/offers/apprentice-stylist',
+            path: '/offers/apprentice',
             name: 'apprentice-offer',
             component: ApprenticeOffer
         },
@@ -224,39 +210,14 @@ const router = new Router({
             component: GraduateOffer
         },
         {
-            path: '/offers/layla',
-            name: 'layla-offer',
-            component: LaylaOffer
-        },
-        {
-            path: '/offers/katie',
-            name: 'katie-offer',
-            component: KatieOffer
-        },
-        {
-            path: '/offers/autumn',
-            name: 'autumn-offer',
-            component: AutumnOffer
-        },
-        {
             path: '/offers/newyear',
             name: 'new-year-offer',
             component: NewYear
         },
         {
-            path: '/offers/spring',
-            name: 'spring-offer',
-            component: Spring
-        },
-        {
-            path: '/sms/newyear',
-            name: 'new-year-sms-offer',
-            component: NewYearSMS
-        },
-        {
-            path: '/sms/spring',
-            name: 'spring-sms-offer',
-            component: SpringSMS
+            path: '/refer-a-friend',
+            name: 'referrals',
+            component: Referrals
         },
         {
             path: '/joinus',
@@ -283,11 +244,6 @@ const router = new Router({
             path: '/contact',
             name: 'contact',
             component: ContactInfo
-        },
-        {
-            path: '/corona',
-            name: 'corona',
-            component: CoronaInfo
         },
         {
             path: '/bookings',
