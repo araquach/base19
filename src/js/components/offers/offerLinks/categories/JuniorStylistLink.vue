@@ -3,12 +3,12 @@
     <div class="box">
       <div class="columns">
         <div class="column">
-          <img src="/dist/img/offers/september25_square.png" alt="Jaz, Lily & Kam">
+          <img src="/dist/img/offers/march26_js_square.jpg" alt="Jaz, Lily & Kam">
         </div>
         <section class="column is-8">
-          <h2 class="title is-3 has-text-white">25% off with our incredible Junior Stylists</h2>
-          <p>If you're new to Base take advantage of this amazing offer with Lily, Kam & Jasmine</p>
-          <p>A Colour & Cut from just £70 for new clients</p>
+          <h2 class="title is-3 has-text-white">A Colour & Cut Package for just £70</h2>
+          <p>With our incredible Junior Stylists</p>
+          <p>If you're new to Base take advantage of this amazing offer with Lily & Jasmine</p>
           <p class="is-size-4">Find out more here ></p>
         </section>
       </div>
