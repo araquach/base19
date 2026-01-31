@@ -41,7 +41,7 @@
           </ul>
           <p class="mb-5"><em>If you're looking for a more advanced stylist <router-link :to="{name: 'jnr-stylist-offer'}" class="has-text-primary"><strong>click here</strong></router-link></em></p>
           <div class="buttons">
-            <a href="https://www.phorest.com/salon/basehairacademy/book/service-selection?showSpecialOffers=false" class="button is-primary">Book a Consultation</a>
+            <a href="https://phorest.com/book/salons/basehairacademy#/service-category?id=0P2QrXkTppoqXslH0K5ttQ" class="button is-primary">Book a FREE Consultation</a>
           </div>
           <p class="is-size-4"><strong>Prefer to Book by Phone? Call Us on 01925 444449</strong></p>
           <p>Just mention the offer at the time of your visit</p>
