@@ -200,7 +200,7 @@ const router = new Router({
             component: ApprenticeOffer
         },
         {
-            path: '/offers/junior-stylist',
+            path: '/offers/juniorstylist',
             name: 'jnr-stylist-offer',
             component: JnrStylistOffer
         },
