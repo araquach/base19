@@ -6,7 +6,7 @@
           <h2 class="title is-2 is-size-3-mobile has-text-white mb-1">Beautiful Results, Expertly Overseen</h2>
           <p class="is-size-5">Your first visit made easy: full colour, cut & blowdry for £55 with our apprentice team</p>
           <p>This offer is ideal for new clients who want great value without compromising on quality on their first visit to Base Hairdressing.</p>
-          <p>Our Apprentice Stylists <strong>Brooke, Molly and Maisie</strong> deliver carefully executed salon services within our training academy environment. All work is costly overseen by our experienced educators to ensure high standards and a supportive, progressional salon experience.</p>
+          <p>Our Apprentice Stylists <strong>Brooke, Molly and Maisie</strong> deliver carefully executed salon services within our training academy environment. All work is overseen by our experienced educators to ensure high standards and a supportive, progressional salon experience.</p>
           <br>
           <!-- Original image (hidden on mobile) -->
           <figure class="image is-hidden-mobile">

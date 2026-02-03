@@ -29,7 +29,7 @@
           <ul>
             <li>Full colour (excludes colour correction services)</li>
             <li>Cut & Blowdry</li>
-            <li>Expert overusing from senior educators</li>
+            <li>Expert oversight from senior educators</li>
           </ul>
           <h2 class="title is-4 mt-5 mb-3">Why book this?</h2>
           <ul class="mb-4">
