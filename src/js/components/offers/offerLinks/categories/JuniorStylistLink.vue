@@ -8,7 +8,7 @@
         <section class="column is-8">
           <h2 class="title is-3 has-text-white">A Colour & Cut Package for just £70</h2>
           <p>With our incredible Junior Stylists</p>
-          <p>If you're new to Base take advantage of this amazing offer with Lily & Jasmine</p>
+          <p>If you're new to Base take advantage of this amazing offer with Lily, Jasmine & Kam</p>
           <p class="is-size-4">Find out more here ></p>
         </section>
       </div>

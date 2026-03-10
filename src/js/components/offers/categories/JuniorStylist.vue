@@ -6,7 +6,7 @@
           <h2 class="title is-2 is-size-3-mobile has-text-white mb-1">Confident Colour, Beautifully Delivered</h2>
           <p class="is-size-5">A full colour, cut & blowdry for £70 — exceptional quality at an introductory price</p>
           <p>This offer is perfect for new clients looking for a balance of experience, quality and value on their first visit to Base Hairdressing.</p>
-          <p>Our Junior Stylists <strong>Lily and Jaz</strong> are confident, developing professionals who deliver consistently strong results. As part of our training academy, all services are supported and overseen by experienced educators to ensure exceptional standards.</p>
+          <p>Our Junior Stylists <strong>Lily, Jaz & Kam</strong> are confident, developing professionals who deliver consistently strong results. As part of our training academy, all services are supported and overseen by experienced educators to ensure exceptional standards.</p>
           <br>
           <!-- Original image (hidden on mobile) -->
           <figure class="image is-hidden-mobile">
@@ -24,6 +24,8 @@
           <a href="https://www.instagram.com/x.hairbylil.x" class="is-size-4 has-text-primary">Lily: @x.hairbylil.x</a>
           <br>
           <a href="https://www.instagram.com/jas_did.my.hair" class="is-size-4 has-text-primary">Jasmine @jas_did.my.hair</a>
+          <br>
+          <a href="https://www.instagram.com/kamronharleyhair" class="is-size-4 has-text-primary">Kam: @kamronharleyhair</a>
           <br>
           <h2 class="title is-4 mt-5 mb-3">What’s included?</h2>
           <ul>
