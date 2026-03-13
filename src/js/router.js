@@ -51,6 +51,7 @@ import Policies from "./views/Policies.vue";
 import BrookeProfile from "./components/team/profiles/BrookeProfile.vue";
 import MollyProfile from "./components/team/profiles/MollyProfile.vue";
 import MaisieProfile from "./components/team/profiles/MaisieProfile.vue";
+import General from "./components/offers/singleOffers/General.vue";
 
 Vue.use(Router)
 
@@ -183,6 +184,11 @@ const router = new Router({
             path: '/offers',
             name: 'offers',
             component: OffersInfo
+        },
+        {
+            path: '/offers/new-client',
+            name: 'new-client-offer',
+            component: General
         },
         {
             path: '/offers/general',
