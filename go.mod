@@ -2,7 +2,7 @@ module github.com/araquach/base19
 
 go 1.25.0
 
-require github.com/araquach/salonserver v1.2.8
+require github.com/araquach/salonserver v1.2.9
 
 require (
 	filippo.io/edwards25519 v1.2.0 // indirect
@@ -28,7 +28,7 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
-	github.com/lib/pq v1.11.2 // indirect
+	github.com/lib/pq v1.12.0 // indirect
 	github.com/mailgun/mailgun-go/v3 v3.6.4 // indirect
 	github.com/mailru/easyjson v0.9.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -45,4 +45,4 @@ require (
 	gorm.io/gorm v1.31.1 // indirect
 )
 
-replace github.com/araquach/salonserver => ../salonserver
+//replace github.com/araquach/salonserver => ../salonserver
