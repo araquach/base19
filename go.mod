@@ -6,6 +6,8 @@ require github.com/araquach/salonserver v1.2.8
 
 require (
 	filippo.io/edwards25519 v1.2.0 // indirect
+	github.com/BurntSushi/toml v0.3.1 // indirect
+	github.com/adrg/frontmatter v0.2.0 // indirect
 	github.com/go-chi/chi v4.1.2+incompatible // indirect
 	github.com/go-sql-driver/mysql v1.9.3 // indirect
 	github.com/gomarkdown/markdown v0.0.0-20260217112301-37c66b85d6ab // indirect
@@ -43,4 +45,4 @@ require (
 	gorm.io/gorm v1.31.1 // indirect
 )
 
-//replace github.com/araquach/salonserver => ../salonserver
+replace github.com/araquach/salonserver => ../salonserver
