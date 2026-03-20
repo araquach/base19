@@ -1,5 +1,6 @@
 <template>
   <div id="team-member" class="section columns has-background-black">
+
     <div class="section column">
       <figure class="image is-4by5">
         <img :alt="teamMember.first_name" :src="staffMontage">
