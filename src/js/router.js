@@ -264,11 +264,11 @@ const router = new Router({
             name: 'jellybeans',
             component: JellyBeans
         },
-        {
-            path: '/online-shop',
-            name: 'online-shop',
-            component: OnlineStore
-        },
+        // {
+        //     path: '/online-shop',
+        //     name: 'online-shop',
+        //     component: OnlineStore
+        // },
         {
             path: '/policies',
             name: 'policies',

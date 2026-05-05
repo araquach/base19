@@ -26,9 +26,9 @@
         <router-link :to="{ name: 'models' }" class="box lt-models">
           <span class="title-new-mid has-text-white">MODEL SIGNUP</span>
         </router-link>
-        <router-link :to="{ name: 'online-shop' }" class="box lt-shop">
-          <span class="title-new-mid has-text-white">THE BASE SHOP</span>
-        </router-link>
+<!--        <router-link :to="{ name: 'online-shop' }" class="box lt-shop">-->
+<!--          <span class="title-new-mid has-text-white">THE BASE SHOP</span>-->
+<!--        </router-link>-->
         <router-link :to="{ name: 'blog-info' }" class="box lt-blog">
           <span class="title-new-mid has-text-white">THE BASE BLOG</span>
         </router-link>

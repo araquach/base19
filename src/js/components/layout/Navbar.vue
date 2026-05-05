@@ -21,9 +21,9 @@
         <b-navbar-item :to="{ name: 'policies' }" tag="router-link">
           Policies
         </b-navbar-item>
-        <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'online-shop' }" tag="router-link">
-          Online Shop
-        </b-navbar-item>
+<!--        <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'online-shop' }" tag="router-link">-->
+<!--          Online Shop-->
+<!--        </b-navbar-item>-->
         <b-navbar-item v-scroll-to="'#team'" :to="{ name: 'main', hash: '#team' }" tag="router-link">
           Team
         </b-navbar-item>
