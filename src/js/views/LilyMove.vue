@@ -5,10 +5,10 @@
       <div class="column is-8">
         <p class="is-size-5">We're excited to let you know that <strong>Lily</strong> will soon be joining our sister salon,
           <strong>Jakata</strong>, as she takes the next step in her journey with us.</p>
-        <p>Lily has worked incredibly hard throughout her training and development and is now progressing into a Graduate Stylist role. We’re so proud of how far she’s come, and she’ll now continue building her career at
+        <p>Lily has worked incredibly hard throughout her training and development and has already established herself as a Graduate Stylist. We’re so proud of how far she’s come, and she’ll now continue building her career at
           <strong>Jakata</strong>, where she’ll be welcoming both existing and new clients.</p>
         <h2 class="title is-4">Book Your Next Appointment with Lily at Jakata!</h2>
-        <p>From April onwards, all of Lily’s appointments will take place at <strong>Jakata</strong>. We’d love for you to continue supporting her in this exciting new chapter and enjoy the same great experience in her new salon home.</p>
+        <p>From June onwards, all of Lily’s appointments will take place at <strong>Jakata</strong>. We’d love for you to continue supporting her in this exciting new chapter and enjoy the same great experience in her new salon home.</p>
         <p><strong>The good news is you won’t need to travel far — Jakata is only just around the corner from Base. You can find the salon here:</strong></p>
         <p class="is-size-5">Jakata Salon <br>27 Rylands Street <br>Warrington <br> WA1 1EJ</p>
         <p class="is-size-5">Telephone: 01925 242960</p>
