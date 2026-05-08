@@ -40,6 +40,8 @@ import PriceIncrease from "./views/PriceIncrease.vue";
 import Policies from "./views/Policies.vue";
 import General from "./components/offers/singleOffers/General.vue";
 import TeamProfile from "./components/team/TeamProfile.vue";
+import JasmineMove from "./views/JasmineMove.vue";
+import LilyMove from "./views/LilyMove.vue";
 
 Vue.use(Router)
 
@@ -258,6 +260,16 @@ const router = new Router({
             path: '/becky-move',
             name: 'becky-move',
             component: BeckyMove
+        },
+        {
+            path: '/jasmine-move',
+            name: 'jasmine-move',
+            component: JasmineMove
+        },
+        {
+            path: '/lily-move',
+            name: 'lily-move',
+            component: LilyMove
         },
         {
             path: '/jellybeans',
