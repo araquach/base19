@@ -8,6 +8,7 @@ import TeamAll from "./components/team/TeamAll"
 import BlogInfo from "./components/blog/BlogInfo"
 import BlogPost from "./components/blog/BlogPost"
 import OffersInfo from "./components/offers/OffersInfo"
+import Oct26 from "./components/offers/singleOffers/Oct26/Oct26.vue";
 import GeneralOffer from "./components/offers/categories/General"
 import NewStarterOffer from "./components/offers/categories/NewStarter"
 import ApprenticeOffer from "./components/offers/categories/Apprentice"
@@ -108,7 +109,7 @@ const router = new Router({
         {
             path: '/offers',
             name: 'offers',
-            component: OffersInfo
+            component: Oct26
         },
         {
             path: '/offers/new-client',
