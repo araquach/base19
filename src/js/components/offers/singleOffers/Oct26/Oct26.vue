@@ -8,13 +8,8 @@
           <p class="is-size-4 mb-4">Enjoy <strong>25% OFF</strong> your first visit at Base Hairdressing.</p>
           <p>Our team deliver carefully executed salon services within our training academy environment. Every service is overseen by experienced educators to ensure high standards, attention to detail and a supportive salon experience.</p>
           <br>
-          <!-- Original image (hidden on mobile) -->
-          <figure class="image is-hidden-mobile">
+          <figure class="image">
             <img src="/dist/img/offers/oct26.jpg" alt="25% OFF" class="mb-4">
-          </figure>
-          <!-- Square image (hidden on tablet and up) -->
-          <figure class="image is-square is-hidden-tablet">
-            <img src="/dist/img/offers/september25_square.png" alt="Jaz, Lily & Kam" class="mb-4">
           </figure>
           <h2 class="title is-4 mt-5 mb-3">Why book with us?</h2>
           <ul class="mb-4">
