@@ -43,6 +43,7 @@ import General from "./components/offers/singleOffers/General.vue";
 import TeamProfile from "./components/team/TeamProfile.vue";
 import JasmineMove from "./views/JasmineMove.vue";
 import LilyMove from "./views/LilyMove.vue";
+import Lapsed from "./components/offers/lapsed/Lapsed.vue";
 
 Vue.use(Router)
 
@@ -110,6 +111,11 @@ const router = new Router({
             path: '/offers',
             name: 'offers',
             component: Oct26
+        },
+        {
+            path: '/welcome-back',
+            name: 'lapsed',
+            component: Lapsed
         },
         {
             path: '/offers/new-client',

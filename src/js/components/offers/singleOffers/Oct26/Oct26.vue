@@ -20,8 +20,8 @@
           </ul>
           <p class="is-size-5"><strong>Book a FREE consultation with any of our amazing team to experience professional results at a fraction of the cost!</strong></p>
           <p class="is-size-5">Every service is fully supported by our experienced educators, so you’re always in safe hands.</p>
-          <p>Average Colour & Cut price for Brooke, Maisie & Molly: £60 (including discount)</p>
-          <p class="mb-5">Average Colour & Cut price for Liv, Bonnie & Emily: £30 (including discount)</p>
+          <p>Average Colour & Cut price for Brooke: £60 (including discount)</p>
+          <p class="mb-5">Average Colour & Cut price for Liv, Bonnie & Emily: £40 (including discount)</p>
           <div class="buttons">
             <router-link :to="{ name: 'team' }" class="button is-primary">Check out the full team</router-link>
             <a href="https://www.phorest.com/salon/basehairacademy/book/service-selection?showSpecialOffers=false" class="button is-primary">Book a Consultation</a>
