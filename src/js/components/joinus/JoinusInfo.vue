@@ -67,6 +67,11 @@
           <p class="is-size-4">If Base sounds like the perfect place to carry out your apprenticeship just fill out the
             application form and we'll be in touch soon!</p>
           <form @submit.prevent="submit">
+            <div class="recruitment-honeypot" aria-hidden="true">
+              <label for="recruitment-website">Leave this field empty</label>
+              <textarea id="recruitment-website" name="website" v-model="website" tabindex="-1" autocomplete="off" data-lpignore="true" data-1p-ignore="true"></textarea>
+            </div>
+            <p v-if="errorMessage" class="help is-danger" role="alert">{{ errorMessage }}</p>
             <div class="field">
               <label class="label has-text-white">Full Name</label>
               <div class="control">
@@ -85,7 +90,7 @@
                 <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.required">
                   Mobile number is required
                 </div>
-                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.numeric">
+                <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.mobile.phone">
                   <p>Valid Mobile number is required</p>
                 </div>
               </div>
@@ -117,7 +122,7 @@
                 </div>
               </div>
             </div>
-            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.role.required">
+            <div class="help is-danger" v-if="submitStatus === 'ERROR' && $v.role.$invalid">
               Role is required
             </div>
             <div class="field">
@@ -135,7 +140,7 @@
                 </div>
               </div>
             </div>
-            <div class="help is-danger" v-if="submitStatus === 'ERROR' && !$v.position.required">
+            <div class="help is-danger" v-if="submitStatus === 'ERROR' && $v.position.$invalid">
               Position is required
             </div>
             <div class="field">
@@ -195,7 +200,10 @@
 </template>
 
 <script>
-import {required, numeric, email} from 'vuelidate/lib/validators'
+import {required, email, minLength, maxLength} from 'vuelidate/lib/validators'
+
+const phone = value => /^[+0-9() .-]+$/.test(value) && (value.match(/[0-9]/g) || []).length >= 10 && (value.match(/[0-9]/g) || []).length <= 15
+const answer = value => /[^\d\s\p{P}\p{S}]/u.test(value || '')
 
 export default {
   data() {
@@ -204,32 +212,38 @@ export default {
       name: '',
       mobile: '',
       email: '',
-      position: '',
+      position: 'default',
+      about: '',
+      why_hair: '',
+      website: '',
+      errorMessage: '',
       why_us: '',
       salon: 3,
-      role: '',
+      role: 'default',
       submitStatus: null,
       loading: false
     }
   },
 
   validations: {
-    name: {required},
-    mobile: {required, numeric},
-    email: {required, email},
-    role: {required},
-    position: {required},
-    about: {required},
-    why_hair: {required},
-    why_us: {required}
+    name: {required, minLength: minLength(2), maxLength: maxLength(100)},
+    mobile: {required, phone, maxLength: maxLength(30)},
+    email: {required, email, maxLength: maxLength(254)},
+    role: {required, allowed: value => ['Stylist', 'Apprentice', 'Saturday', 'Other'].includes(value)},
+    position: {required, allowed: value => ['at school/college', 'new to hairdressing', 'partway through', 'already qualified', 'other'].includes(value)},
+    about: {required, minLength: minLength(10), maxLength: maxLength(5000), answer},
+    why_hair: {required, minLength: minLength(10), maxLength: maxLength(5000), answer},
+    why_us: {required, minLength: minLength(10), maxLength: maxLength(5000), answer}
   },
 
   methods: {
     submit() {
-      console.log('submit!')
+      if (this.loading) return
+      this.errorMessage = ''
       this.$v.$touch()
       if (this.$v.$invalid) {
         this.submitStatus = 'ERROR'
+        this.errorMessage = 'Please check your details, select both dropdowns and give each written answer at least 10 characters (maximum 5,000).'
       } else {
         this.loading = true
         axios.post('/api/joinus', {
@@ -242,16 +256,47 @@ export default {
           why_hair: this.why_hair,
           why_us: this.why_us,
           salon: this.salon,
-        })
+          website: this.website,
+        }, { timeout: 30000 })
             .then(response => {
               this.submitStatus = 'OK'
               window.scrollTo({ top: 0, behavior: 'smooth' })
             })
             .catch((e) => {
-              console.error(e)
+              this.submitStatus = 'ERROR'
+              const response = e.response
+              const serverMessage = response && typeof response.data === 'string' ? response.data.trim() : ''
+              const savedButEmailFailed = [
+                'Failed to parse HTML email template',
+                'Failed to parse text email template',
+                'Failed to send email',
+                'Failed to parse HTML email template for applicant',
+                'Failed to parse text email template for applicant',
+                'Failed to send email to applicant'
+              ].includes(serverMessage)
+              if (savedButEmailFailed) {
+                this.errorMessage = 'Your application was saved, but we could not complete the confirmation emails. Please do not submit again. ' + serverMessage + '.'
+              } else if (response && response.status === 429) {
+                this.errorMessage = 'Too many attempts. Please wait a while before trying again.'
+              } else if (serverMessage === 'Failed to save data') {
+                this.errorMessage = 'Your application could not be saved. Please contact us if the problem continues.'
+              } else {
+                this.errorMessage = (response && response.data && response.data.message) || 'We could not confirm your application. Please contact us before submitting again.'
+              }
             })
+            .finally(() => { this.loading = false })
       }
     }
   }
 }
 </script>
+
+<style scoped>
+.recruitment-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+</style>
